@@ -1,0 +1,79 @@
+### YamlMime:Landing
+title: יכולת Audience insights ב- Dynamics 365 Customer Insights
+summary: עיבוד, האחדה וארגון של נתוני לקוחות ממקורות מרובים. צור ונהל פרופילי לקוחות ופילוח בזמן אמת. שלב נתוני לקוחות עם מערכות אחרות כדי להפוך אותם לשימושיים אף יותר.
+metadata:
+  title: תיעוד Audience insights
+  description: מרכז עזרה עם קישורים עיקריים עבור Audience Insights.
+  ms.service: customer-insights
+  ms.subservice: audience-insights
+  ms.topic: landing-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.date: 10/16/2020
+  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: he-IL
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4405900"
+landingContent:
+- title: אודות audience insights
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: סקירת מוצר
+      url: overview.md
+    - text: תכונות חדשות ומעודכנות
+      url: whats-new-audience-insights.md
+    - text: אתר הקהילה
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+- title: עיבוד מקורות נתונים
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: הוסף מקורות נתונים
+      url: data-sources.md
+    - text: רענון מצטבר
+      url: incremental-refresh-data-sources.md
+    - text: הכרת ישויות
+      url: entities.md
+- title: איחוד נתונים
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: מיפוי
+      url: map-entities.md
+    - text: התאמה
+      url: match-entities.md
+    - text: מזג
+      url: merge-entities.md
+- title: מיקוד פרופילי לקוחות
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: קביעת תצורה של קשרי גומלין
+      url: relationships.md
+    - text: רשימת הפעילויות של הלקוח
+      url: activities.md
+    - text: הבאת מודלי למידת מכונה משלך
+      url: custom-models.md
+- title: ייצוא נתוני לקוחות
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: הגדרת יעדי ייצוא
+      url: export-destinations.md
+    - text: כרטיסי לקוחות ביישומי Dynamics 365
+      url: customer-card-add-in.md
+    - text: מחבר Power BI
+      url: export-power-bi.md
+- title: ניהול היישום
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: קביעת תצורת המערכת
+      url: system.md
+    - text: הגדרת הרשאות משתמש
+      url: permissions.md
+    - text: ניהול סביבות מרובות
+      url: manage-environments.md
