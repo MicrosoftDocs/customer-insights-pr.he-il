@@ -1,0 +1,108 @@
+### YamlMime:Landing
+metadata:
+  title: מרכז העזרה עבור Dynamics 365 Customer Insights
+  author: m-hartmann
+  description: מצא מאמרים רלוונטיים כדי להתחיל בעבודה עם תוכן עזרה.
+  ms.author: mhart
+  ms.date: 10/29/2020
+  ms.service: customer-insights
+  ms.topic: landing-page
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: he-IL
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4405917"
+title: תיעוד Dynamics 365 Customer Insights
+summary: מצא משאבים מועילים כדי להתחיל בעבודה וללמוד על תכונות ויכולות של Customer Insights.
+landingContent:
+- title: הכר את Customer Insights
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: מבט כולל על Customer Insights
+      url: overview.md
+    - text: תוכניות הפצה
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: קבלת גישה לסביבה שלך
+      url: https://home.ci.ai.dynamics.com/
+- title: תחילת העבודה עם audience insights
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: הירשם לגרסת ניסיון
+      url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+    - text: מה חדש
+      url: audience-insights/whats-new-audience-insights.md
+    - text: תיעוד Audience insights
+      url: audience-insights/index.yml
+- title: שמור על קשר
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: הצטרף לקהילת Dynamics 365
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: שתף את הרעיונות שלך
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: דווח על בעיה
+      url: https://go.microsoft.com/fwlink/?linkid=2079641
+- title: ערכות לימוד של Audience insights
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: צור סביבה חדשה
+      url: audience-insights/home.md
+    - text: מהו פרופיל לקוח מאוחד
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - text: עבודה עם האפליקציה
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+- title: ייצוא תובנות audience insights
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: הגדרת יעדי ייצוא
+      url: audience-insights/export-destinations.md
+    - text: כרטיסי לקוחות ביישומי Dynamics 365
+      url: audience-insights/customer-card-add-in.md
+    - text: מחבר Power BI
+      url: audience-insights/export-power-bi.md
+- title: ניהול audience insights
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: קביעת תצורת המערכת
+      url: audience-insights/system.md
+    - text: הגדרת הרשאות משתמש
+      url: audience-insights/permissions.md
+    - text: ניהול סביבות מרובות
+      url: audience-insights/manage-environments.md
+- title: אודות תובנות מעורבות (Preview)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: מבט כולל על יכולת
+      url: engagement-insights/overview.md
+    - text: תנאים ומושגים
+      url: engagement-insights/glossary.md
+    - text: התחל בעבודה
+      url: engagement-insights/get-started.md
+- title: דוחות עבור תובנות לגבי מעורבות (Preview)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: הצג דוחות
+      url: engagement-insights/view-reports.md
+    - text: יצירת דוחות מותאמים אישית
+      url: engagement-insights/custom-reports.md
+    - text: הצגת דוח פרופילים מאוחדים
+      url: engagement-insights/profile-reports.md
+- title: אירועים עבור תובנות לגבי מעורבות (Preview)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: יצירת אירועים ממוקדים
+      url: engagement-insights/refined-events.md
+    - text: ייצוא אירועים
+      url: engagement-insights/export-events.md
+    - text: מחיקה וייצוא של נתונים אישיים
+      url: engagement-insights/delete-export-personal-data.md
