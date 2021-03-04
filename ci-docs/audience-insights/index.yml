@@ -6,16 +6,16 @@ metadata:
   description: מרכז עזרה עם קישורים עיקריים עבור Audience Insights.
   ms.service: customer-insights
   ms.subservice: audience-insights
-  ms.topic: landing-page
+  ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.date: 10/16/2020
-  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
-  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.openlocfilehash: ba5229067c7c338b4f8d0503aaf80f25b6c4002c
+  ms.sourcegitcommit: a8f7d5d0008b2d7d0ff0daeb746126abfc82c253
   ms.translationtype: HT
   ms.contentlocale: he-IL
-  ms.lasthandoff: 11/03/2020
-  ms.locfileid: "4405900"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "4745722"
 landingContent:
 - title: אודות audience insights
   linkLists:
@@ -27,36 +27,36 @@ landingContent:
       url: whats-new-audience-insights.md
     - text: אתר הקהילה
       url: https://go.microsoft.com/fwlink/?linkid=2073991
-- title: עיבוד מקורות נתונים
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: הוסף מקורות נתונים
-      url: data-sources.md
-    - text: רענון מצטבר
-      url: incremental-refresh-data-sources.md
-    - text: הכרת ישויות
-      url: entities.md
 - title: איחוד נתונים
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: מיפוי
-      url: map-entities.md
-    - text: התאמה
-      url: match-entities.md
-    - text: מזג
-      url: merge-entities.md
-- title: מיקוד פרופילי לקוחות
+    - text: מבט כולל על מקורות נתונים
+      url: data-sources.md
+    - text: מבט כולל על איחוד
+      url: data-unification.md
+    - text: הכרת ישויות
+      url: entities.md
+- title: העשרה ומיקוד של נתונים
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: העשרת פרופילי לקוחות
+      url: enrichment-hub.md
     - text: קביעת תצורה של קשרי גומלין
       url: relationships.md
     - text: רשימת הפעילויות של הלקוח
       url: activities.md
-    - text: הבאת מודלי למידת מכונה משלך
-      url: custom-models.md
+- title: קבל תובנות
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: צור פלחים
+      url: segments.md
+    - text: צור מדדים
+      url: measures.md
+    - text: השלם נתונים בעזרת חיזויים
+      url: predictions.md
 - title: ייצוא נתוני לקוחות
   linkLists:
   - linkListType: how-to-guide
