@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 2537cfb5dde0d1ce1af16f585f0bf91d15ea1870
-ms.sourcegitcommit: a6e7df90d61450e00886753eb5db116f2f35bb6c
+ms.openlocfilehash: 3f1019ace424f89320c5a0d5058e928f4cbc7e62
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4653981"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269837"
 ---
 # <a name="subscription-churn-prediction-preview-sample-guide"></a>מדריך לדוגמה לחיזוי של נטישת מנויים (מהדורת Preview)
 
@@ -46,10 +46,9 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
    - **DateOfBirth**: תאריך
    - **CreatedOn**: תאריך/שעה/אזור
 
-   [!div class="mx-imgBorder"]
-   ![המרת תאריך הלידה לתאריך](media/ecommerce-dob-date.PNG "המרת תאריך הלידה לתאריך")
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="המר את תאריך הלידה לתאריך.":::
 
-1. בשדה 'שם' בחלונית הימנית, שנה את שם מקור נתונים שלך מ **שאילתה** ל- **eCommerceContacts**
+1. בשדה **שם** בחלונית הימנית, שנה את שם מקור נתונים שלך מ **שאילתה** ל- **eCommerceContacts**
 
 1. שמור את מקור הנתונים.
 
@@ -67,7 +66,7 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
    - **RewardsPoints**: מספר שלם
    - **CreatedOn**: תאריך/שעה
 
-1. בשדה 'שם' בחלונית הימנית, שנה את שם מקור נתונים שלך מ **שאילתה** ל- **loyCustomers**.
+1. בשדה **שם** בחלונית הימנית, שנה את שם מקור הנתונים שלך מ **שאילתה** ל- **loyCustomers**.
 
 1. שמור את מקור הנתונים.
 
@@ -90,7 +89,7 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
    - **Is_auto_renew**: ‏True/False
    - **RecurringFrequencyInMonths**: מספר שלם
 
-1. בשדה 'שם' בחלונית הימנית, שנה את שם מקור נתונים שלך מ **שאילתה** ל- **SubscriptionHistory**.
+1. בשדה **שם** בחלונית הימנית, שנה את שם מקור הנתונים שלך מ **שאילתה** ל- **SubscriptionHistory**.
 
 1. שמור את מקור הנתונים.
 
@@ -230,3 +229,6 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 כעת יש לך פלח שמתעדכן באופן דינאמי, המזהה לקוחות בסיכון גבוה לנטישה עבור עסק זה של מנויים.
 
 למידע נוסף: [יצירה וניהול של פלחים](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,14 +9,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: adkuppa
 manager: shellyha
-ms.openlocfilehash: a720641f7499fc71ff5bceeba48d296c51f77242
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 68aa1b56fb634da80a0c64db72f778d57507104d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643954"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269699"
 ---
-# <a name="overview-about-data-sources"></a>מבט כולל על מקורות נתונים
+# <a name="data-sources-overview"></a>מבט כולל על מקורות נתונים
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
@@ -49,7 +49,7 @@ ms.locfileid: "4643954"
 |עובר רענון    |עיבוד נתונים מתבצע. באפשרותך לבטל פעולה זו על-ידי בחירה באפשרות **עצור רענון** בעמודה **פעולות**. עצירת הרענון של מקור נתונים תחזיר אותו למצב האחרון שלו.       |
 |השליחה נכשלה     |עיבוד הנתונים נתקל בשגיאות.         |
 
-בחר **מצב רענון** כדי לסקור פרטים נוספים במצב הרענון, לרבות פרטי שגיאה ועדכוני תהליך במורד הזרם.
+בחר את הערך בעמודה **מצב** של מקור נתונים כלשהו כדי לסקור פרטים נוספים. בחלונית **פרטי התקדמות**, הרחב את **מקורות נתונים**. בחר **הצג פרטים** לקבלת מידע נוסף אודות מצב הרענון, לרבות פרטי שגיאה ועדכוני תהליך במורד הזרם.
 
 טעינת הנתונים עשויה להימשך זמן מה. לאחר רענון מוצלח, ניתן לסקור את הנתונים שעובדו בדף **ישויות**. לקבלת מידע נוסף, ראה [ישויות](entities.md).
 
@@ -76,3 +76,6 @@ ms.locfileid: "4643954"
 2. בחר את שלוש הנקודות האנכיות לצד מקור הנתונים שברצונך להסיר ובחר **מחק** מהתפריט הנפתח.
 
 3. אשר את המחיקה.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

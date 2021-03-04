@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 055708ed3f9f468cad83ecf976a460814bf05199
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 81540ad2f490cf566f031233543b3cb6aa838033
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643594"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269791"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>מדריך לדוגמה לחיזוי נטישה של עסקאות (מהדורת Preview)
 
@@ -49,7 +49,7 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
    [!div class="mx-imgBorder"]
    ![המרת תאריך הלידה לתאריך](media/ecommerce-dob-date.PNG "המרת תאריך הלידה לתאריך")
 
-1. בשדה 'שם' בחלונית הימנית, שנה את שם מקור נתונים שלך מ **שאילתה** ל- **eCommerceContacts**
+1. בשדה **שם** בחלונית הימנית, שנה את שם מקור נתונים שלך מ **שאילתה** ל- **eCommerceContacts**
 
 1. שמור את מקור הנתונים.
 
@@ -66,7 +66,7 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
    - **PurchasedOn**: תאריך/שעה
    - **TotalPrice**: מטבע
    
-1. בשדה 'שם' בחלונית הימנית, שנה את שם מקור נתונים שלך מ **שאילתה** ל- **eCommercePurchases**.
+1. בשדה **שם** בחלונית הימנית, שנה את שם מקור הנתונים שלך מ **שאילתה** ל- **eCommercePurchases**.
 
 1. שמור את מקור הנתונים.
 
@@ -84,7 +84,7 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
    - **RewardsPoints**: מספר שלם
    - **CreatedOn**: תאריך/שעה
 
-1. בשדה 'שם' בחלונית הימנית, שנה את שם מקור נתונים שלך מ **שאילתה** ל- **loyCustomers**.
+1. בשדה **שם** בחלונית הימנית, שנה את שם מקור הנתונים שלך מ **שאילתה** ל- **loyCustomers**.
 
 1. שמור את מקור הנתונים.
 
@@ -166,7 +166,7 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 
      :::image type="content" source="media/model-levers.PNG" alt-text="בחר את מנופי המודל 'חלון חיזוי' ו'הגדרת נטישה'.":::
 
-1. בחר **היסטוריית רכישות‬ (נדרש)** ובחר **הוסף נתונים** להיסטוריית המנויים.
+1. בחר **היסטוריית רכישות‬ (נדרש)** ובחר **הוסף נתונים** עבור היסטוריית רכישות.
 
 1. הוסף את הישות **eCommercePurchases : eCommerce** ומפה את השדות מ- eCommerce לשדות המתאימים הנדרשים על-ידי המודל.
 
@@ -204,3 +204,6 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 כעת יש לך פלח שמתעדכן באופן דינאמי, המזהה לקוחות בסיכון גבוה לנטישה עבור עסק זה של מנויים.
 
 למידע נוסף: [יצירה וניהול של פלחים](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

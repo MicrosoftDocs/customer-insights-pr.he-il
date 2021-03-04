@@ -5,16 +5,16 @@ ms.date: 09/21/2020
 ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: d497ca779a337c512a7254524f597cff226bcb45
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 0607a4644ac7d7beb19e4faecf012efcd197d48c
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405869"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5477089"
 ---
 # <a name="connector-for-power-bi-preview"></a>Connector עבור Power BI (תצוגה מקדימה)
 
@@ -31,7 +31,7 @@ ms.locfileid: "4405869"
 
 1. בחר **הצג יותר** וחפש את **Dynamics 365 Customer Insights**.
 
-1. בחר את התוצאה ובחר **התחבר**.
+1. בחר **התחבר**.
 
 1. **התחבר** עם אותו חשבון ארגוני שבו אתה משתמש עבור Customer Insights ובחר **התחבר**.
    > [!NOTE]
@@ -52,3 +52,22 @@ ms.locfileid: "4405869"
 ### <a name="work-with-a-subset-of-data"></a>עבוד עם קבוצת משנה של נתונים
 
 שקול לעבוד עם ערכת משנה של הנתונים שלך. לדוגמה, באפשרותך ליצור [פלחים](segments.md) במקום לייצא את כל רשומות הלקוחות אל Power BI.
+
+## <a name="troubleshooting"></a>פתרון בעיות
+
+### <a name="customer-insights-environment-doesnt-show-in-power-bi"></a>סביבת Customer Insights לא מוצגת ב- Power BI
+
+סביבות שיש להן יותר מ[קשר](relationships.md) אחד מוגדר בין שתי ישויות זהות ב- audience insights לא יהיו זמינות במחבר Power BI.
+
+באפשרותך לזהות ולהסיר את הקשרים הכפולים.
+
+1. ב- audience insights, עבור אל **נתונים** > **קשרים** בסביבה שחסרה לך ב- Power BI.
+2. זהה קשרים כפולים:
+   - בדוק אם יש יותר מקשר אחד המוגדר בין אותן שתי ישויות.
+   - בדוק אם נוצר קשר בין שתי ישויות שנכללות שתיהן בתהליך האיחוד. יש קשר משתמע המוגדר בין כל הישויות הנכללות בתהליך האיחוד.
+3. הסר כל קשר כפול שזוהה.
+
+לאחר הסרת הקשרים הכפולים, נסה לקבוע שוב את תצורת מחבר Power BI. הסביבה צריכה להיות זמינה כעת.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
+

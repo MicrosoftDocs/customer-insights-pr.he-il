@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 2cf01029ef6b64fe566022d09ce65bca3603189c
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 9e7a6e944d37d25f4c25846644278b39b3ddd08e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643909"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269285"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>סכימות ישויות ב- Common Data Model
 
@@ -45,3 +45,6 @@ ms.locfileid: "4643909"
 באפשרותך להציג ישויות ב- [Common Data Model Entity Navigator](https://microsoft.github.io/CDM/). בחר את לחצן **טען מ- GitHub!** ונווט אל **foundationCommon** > **crmCommon** > **פתרונות** > **customerInsights** שם תמצא רשימה של ישויות Customer Insights ואת ההגדרות שלהן.
 > [!div class="mx-imgBorder"]
 > ![CDM Entity Navigator המציג את הישות CustomerActivity](media/CDM-entity-navigator.png "CDM Entity Navigator המציג את הישות CustomerActivity")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

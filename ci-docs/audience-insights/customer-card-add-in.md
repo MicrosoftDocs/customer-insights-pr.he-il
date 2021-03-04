@@ -1,7 +1,7 @@
 ---
 title: התקנה וקביעת תצורה של תוספת כרטיס הלקוח
 description: התקן והגדר את תוספת כרטיס לקוח ל- Dynamics 365 Customer Insights.
-ms.date: 08/04/2020
+ms.date: 01/20/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: aab5deaf89b4b019f6688a1bca950ec2277ad5fb
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: a6d5b49380ed129cf147698a16f5f3f597bf7fbc
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644044"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268045"
 ---
 # <a name="customer-card-add-in-preview"></a>תוספת כרטיס לקוח (תצוגה מקדימה)
 
@@ -28,7 +28,7 @@ ms.locfileid: "4644044"
 - פרופילי לקוחות [שנקלטו מיישום Dynamics 365 באמצעות Common Data Service](connect-power-query.md).
 - יש [להוסיף כמשתמשים](permissions.md) את המשתמשים ב'תוספת כרטיס לקוח' ב- Audience Insights.
 - [יכולות חיפוש וסינון מוגדרות](search-filter-index.md).
-- שליטה דמוגרפית: שדות דמוגרפיים, כגון גיל או מגדר, זמינים בפרופיל הלקוח המאוחד.
+- שליטה דמוגרפית: שדות דמוגרפיים (כגון גיל או מגדר) זמינים בפרופיל הלקוח המאוחד.
 - פקד העשרה: דורש [העשרות](enrichment-hub.md) פעילות שחלות על פרופילי לקוחות.
 - בקרת בינה: דורש נתונים שנוצרו באמצעות Azure Machine Learning ([חיזויים](predictions.md) או [מודלים מותאמים אישית](custom-models.md))
 - בקרת מדידה: דורש [מדידות מוגדרות](measures.md).
@@ -92,10 +92,26 @@ ms.locfileid: "4644044"
 
 1. בתיבת הדו **מאפייני שדה**, נקה את תיבת הסימון **הצג תווית בטופס**.
 
-1. בחר באפשרות **אינטרנט** עבור הפקד. לפקד העשרה, בחר את סוג ההעשרה שברצונך להציג על ידי הגדרת שדה **סוג העשרה**. עליך להוסיף פקד העשרה נפרד לכל סוג העשרה.
+1. בחר באפשרות **אינטרנט** עבור הפקד. לפקד העשרה, בחר את סוג ההעשרה שברצונך להציג על ידי הגדרת שדה **סוג העשרה**. הוסף בקרת העשרה נפרדת לכל סוג העשרה.
 
 1. בחר **שמור** ו **פרסם** כדי לפרסם את טופס יצירת הקשר המעודכן.
 
 1. עבור אל טופס יצירת הקשר שפורסם. תראה את הפקד החדש שהתווסף. ייתכן שיהיה עליך לבצע כניסה בפעם הראשונה שתשתמש בו.
 
 1. כדי להתאים אישית את מה שברצונך להציג בפקד המותאם אישית, בחר את לחצן העריכה בפינה הימנית העליונה.
+
+## <a name="upgrade-customer-card-add-in"></a>שדרוג של תוספת כרטיס לקוח
+'תוספת כרטיס הלקוח' אינה משודרגת באופן אוטומטי. כדי לשדרג לגירסה האחרונה, בצע הליך זה ביישום Dynamics 365 שמותקנת בו התוספת.
+
+1. ביישום Dynamics 365, עבור אל **הגדרות** > **התאמה אישית** ובחר **פתרונות**.
+
+1. בטבלת התוספות, חפש את **CustomerInsightsCustomerCard** ובחר את השורה.
+
+1. בחר את **החל שדרוג פתרון** בסרגל הפעולות.
+
+   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="שדרג את הפתרון באזור ההתאמה האישית של יישומי Dynamics 365":::
+
+1. לאחר הפעלת תהליך השדרוג, תראה מחוון טעינה עד לסיום השדרוג. אם אין גרסה חדשה יותר, השדרוג יציג הודעת שגיאה.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

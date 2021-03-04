@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 1c95cba333266a73959de0a3afe1c8677130a3ec
-ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
+ms.openlocfilehash: dcef8f0547009e1488f1abe91423fa0bf5b061de
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4667230"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267433"
 ---
 # <a name="customer-activities"></a>פעילויות של לקוחות
 
@@ -44,13 +44,13 @@ ms.locfileid: "4667230"
 
 1. במקטע **הגדרת קשר**, קבע את תצורת הפרטים לחיבור נתוני הפעילות שלך ללקוח המתאים שלה.
 
-   > [!div class="mx-imgBorder"]
-   > ![הגדרת קשר הישות](media/activities-entities-define.png "הגדרת קשר הישות")
-
     - **שדה ישות פעילות**: בחר את השדה בישות הפעילות שלך שישמש ליצירת קשר עם ישות אחרת.
     - **ישות לקוח**: בחר את ישות הלקוח של המקור המתאימה שאיתה ישות הפעילות תהיה בקשר. באפשרותך להתייחס רק לישויות לקוח מקור אלה המשמשות בתהליך איחוד הנתונים.
     - **שדה ישות לקוח**: שדה זה מציג את המפתח הראשי של ישות הלקוח של המקור כפי שנבחר בתהליך המפה. שדה מפתח ראשי זה בישות הלקוח של המקור משמש ליצירת קשר עם ישות הפעילות.
     - **שם**: אם כבר קיים קשר בין ישות פעילות זו לבין ישות הלקוח של המקור שנבחר, שם הקשר יהיה במצב לקריאה בלבד. אם לא קיים קשר כזה, קשר חדש ייווצר עם השם שסופק כאן.
+   
+   > [!div class="mx-imgBorder"]
+   > ![הגדרת קשר הישות](media/activities-entities-define.png "הגדרת קשר הישות")
 
 1. בחר **שמור** כדי להחיל את השינויים.
 
@@ -82,3 +82,6 @@ ms.locfileid: "4667230"
 3. בחר בסמל **מחק**.
 
 4. אשר את המחיקה.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

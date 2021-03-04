@@ -1,20 +1,20 @@
 ---
 title: ייצוא נתוני Customer Insights אל מארחי SPTF
 description: למד כיצד להגדיר את החיבור אל מארח SFTP.
-ms.date: 06/05/2020
+ms.date: 01/27/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: c2529744d7a26a06324b79cad6a8001d75903545
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: ddba55b3ca159c0095371e46385dcf1d3ed4a63d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643504"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267999"
 ---
 # <a name="connector-for-sftp-preview"></a>מחבר עבור SFTP‏ (Preview)
 
@@ -24,7 +24,7 @@ ms.locfileid: "4643504"
 
 - זמינות של מארח SFTP ואישורים מתאימים.
 
-## <a name="connect-to-sftp"></a>התחברות ל- SFTP
+## <a name="connect-to-sftp"></a>התחבר ל- SFTP
 
 1. עבור אל **מנהל** > **יעדי ייצוא**.
 
@@ -32,23 +32,22 @@ ms.locfileid: "4643504"
 
 1. תן ליעד שלך שם הניתן לזיהוי בשדה **שם תצוגה**.
 
-1. ספק **שם משתמש**, **סיסמה** ו **שם מארח** עבור חשבון SPTF שלך. דוגמה: אם תיקיית הבסיס של שרת SPTF שלך היא /root/folder, וברצונך לבצע ייצוא של הנתונים אל /root/folder/ci_export_destination_folder, המארח צריך להיות sftp://<server_address>/ci_export_destination_folder".
+1. ספק **שם משתמש**, **סיסמה**, **שם מארח** ו **תיקיית ייצוא** עבור חשבון SFTP שלך.
 
 1. בחר **אימות** כדי לבדוק את החיבור.
 
-1. לאחר אימות מוצלח, בחר אם ברצונך לייצא את הנתונים כשהם **מכווצים** או **לא מכווצים**, ובחר את **מפריד בין שדות** עבור הקבצים המיוצאים.
+1. לאחר האימות המוצלח, בחר אם ברצונך לייצא את הנתונים שלך כשהם **דחוסים** או **לא דחוסים** ובחר את **מפריד השדה** עבור הקבצים המיוצאים.
 
 1. בחר **אני מסכים** כדי לאשר **פרטיות ותאימות נתונים**.
 
 1. בחר **הבא** כדי להתחיל בהגדרת הייצוא.
 
-## <a name="configure-the-connection"></a>הגדרת החיבור
+## <a name="configure-the-export"></a>קביעת תצורה של הייצוא
 
-1. בחר **תכונות לקוח** שברצונך לייצא. ניתן לייצא תכונה אחת או כמה תכונות.
+1. בחר את הישויות, לדוגמה פלחים, שברצונך לייצא.
 
-1. בחר **הבא**.
-
-1. בחר את הפלחים שברצונך לייצא.
+   > [!NOTE]
+   > כל ישות שנבחרה תכלול עד חמישה קבצי פלט בעת הייצוא. 
 
 1. בחר **שמור**.
 
@@ -56,7 +55,15 @@ ms.locfileid: "4643504"
 
 באפשרותך [לייצא נתונים לפי דרישה](export-destinations.md). הייצוא יפעל גם בכל [רענון מתוזמן](system.md#schedule-tab).
 
+## <a name="known-limitations"></a>מגבלות ידועות
+
+- זמן הריצה של ייצוא תלוי בביצועי המערכת שלך. מומלץ שתי ליבות CPU וזיכרון של 1‎ GB כתצורה מינימלית עבור השרת שלך. 
+- ייצוא ישויות עם עד 100 מיליון פרופילי לקוחות יכול להימשך 90 דקות בעת שימוש בתצורה המינימלית המומלצת של שתי ליבות CPU וזיכרון של 1‎ GB. 
+
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 
 כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים דרך SPTF, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אבל אתה אחראי לוודא שיעד הייצוא עומד בכל התחייבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 מנהל המערכת של Dynamics 365 Customer Insights שלך יכול להסיר יעד ייצוא זה בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

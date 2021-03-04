@@ -1,20 +1,20 @@
 ---
 title: העשרה באמצעות HERE Technologies להעשרה של צד שלישי
 description: מידע כללי אודות העשרה של צד שלישי באמצעות HERE Technologies.
-ms.date: 10/27/2020
+ms.date: 12/10/2020
 ms.reviewer: jodahl
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 7082fcfec099c3c9436b233c193be23625f6691a
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 258e37de9d9685d9ebc30b3c6b8d238d583431b4
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668679"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269515"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>העשרת פרופילי לקוחות באמצעות HERE Technologies‏ (Preview)
 
@@ -43,7 +43,11 @@ HERE Technologies היא חברת פלטפורמת מיקום המספקת נת�
 
 1. אשר את שני ערכי הקלט על-ידי בחירת **התחבר ל- HERE**.
 
-1. בחר **הוסף נתונים** ובחר אם ברצונך למפות שדות לכתובת הראשית ו/או המשנית. באפשרותך לציין מיפוי שדות עבור שתי הכתובות (לדוגמה, כתובת בבית וכתובת עסק) ולהעשיר את הפרופילים עבור שתי הכתובות בנפרד. בחר **הבא**.
+1.  בחר **הוסף נתונים** ובחר את **ערכת נתוני הלקוח** שברצונך להעשיר עם נתונים מיקום מ- HERE Technologies. באפשרותך לבחור את הישות **לקוח** כדי להעשיר את כל פרופילי הלקוחות שלך או לבחור ישות פלח כדי להעשיר רק פרופילי לקוחות הנכללים בפלח זה.
+
+    :::image type="content" source="media/enrichment-HERE-configuration-customer-data-set.png" alt-text="צילום מסך בעת בחירה של ערכת נתוני הלקוח.":::
+
+1. בחר אם ברצונך למפות שדות לכתובת הראשית ו/או המשנית. באפשרותך לציין מיפוי שדות עבור שתי הכתובות (לדוגמה, כתובת בבית וכתובת עסק) ולהעשיר את הפרופילים עבור שתי הכתובות בנפרד. בחר **הבא**.
 
 1. הגדר באילו שדות מהפרופילים המאוחדים שלך יש להשתמש כדי לחפש נתוני מיקום מתאימים מ- HERE Technologies. השדות **רחוב 1** ו **מיקוד** נדרשים עבור הכתובת הראשית ו/או המשנית שנבחרה. עבור דיוק התאמות גבוה יותר, ניתן להוסיף שדות נוספים.
 
@@ -68,3 +72,6 @@ HERE Technologies היא חברת פלטפורמת מיקום המספקת נת�
 
 כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל HERE Technologies, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אבל אתה אחראי לוודא ש- HERE Technologies עומדת בכל התחייבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר העשרה זו בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

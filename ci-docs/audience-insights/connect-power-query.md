@@ -5,16 +5,16 @@ ms.date: 09/29/2020
 ms.reviewer: adkuppa
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8a170cc5b64b4b383501021232c83948e838a0e2
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405888"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267770"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>התחבר למקור נתונים של Power Query
 
@@ -28,7 +28,10 @@ Power Query מציע מערך רחב של מחברים לקליטת נתונים
 
 1. בחר את השיטה **ייבא נתונים** ובחר **הבא**.
 
-1. הזן **שם** עבור מקור נתונים ובחר **הבא** כדי ליצור את מקור הנתונים.
+1. הזן **שם** עבור מקור נתונים ובחר **הבא** כדי ליצור את מקור הנתונים. קווים מנחים של שם: 
+   - התחל עם אות.
+   - השתמש באותיות ומספרים בלבד. אסור להזין תווים מיוחדים ורווחים.
+   - השתמש בין 3 ל- 64 תווים.
 
 1. בחר אחד [מהמחברים הזמינים](#available-power-query-data-sources). בדוגמה זו אנו בוחרים את המחבר **טקסט/CSV**.
 
@@ -77,3 +80,6 @@ Power Query מציע מערך רחב של מחברים לקליטת נתונים
 3. החל את השינויים והטרנספורמציות שלך בדו-שיח **Power Query - ערוך שאילתות** כפי שמתואר בסעיף [צור מקור נתונים חדש](#create-a-new-data-source).
 
 4. בחר **שמור** ב- Power Query לאחר השלמת העריכות כדי לשמור את השינויים שעשית.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,16 +5,16 @@ ms.date: 06/05/2020
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8260e3b5e529f3d54678d9d6e11aebb2795e27fd
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: c839f9dc7e403412c0e3d936392d45a43bc63545
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643684"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269975"
 ---
 # <a name="connector-for-facebook-ads-manager-preview"></a>מחבר ל- Facebook Ads Manager‏ (preview)
 
@@ -62,7 +62,16 @@ ms.locfileid: "4643684"
 
 באפשרותך [לייצא נתונים לפי דרישה](export-destinations.md). הייצוא יפעל גם בכל [רענון מתוזמן](system.md#schedule-tab).
 
+## <a name="known-limitations"></a>מגבלות ידועות
+
+- עד 10 מיליון פרופילי לקוחות לכל ייצוא אל Facebook Ads Manager 
+- הייצוא ל- Facebook Ads Manager מוגבל לפלחים
+- ייצוא פלחים עם מיליון פרופילים בסך הכל עשוי להימשך עד 90 דקות
+
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 
 כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל Facebook Ads Manager, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אבל אתה אחראי לוודא ש- Facebook Adsעומדת בכל התחייבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 מנהל המערכת של Dynamics 365 Customer Insights שלך יכול להסיר יעד ייצוא זה בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

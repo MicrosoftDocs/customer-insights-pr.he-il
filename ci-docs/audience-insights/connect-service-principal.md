@@ -1,20 +1,20 @@
 ---
 title: התחברות לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות
-description: השתמש במנהל שירות של Azure עבור audience insights כדי להתחבר לאגם הנתונים שלך בעת צירופו לתובנות קהל.
-ms.date: 11/24/2020
+description: השתמש במנהל שירות של Azure עבור audience insights כדי להתחבר לאגם הנתונים שלך בעת צירופו ל- audience insights.
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2fae278d34fa02b9168ac70dfa8dd351653245e
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644089"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267723"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>התחברות לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure עבור audience insights
 
@@ -22,7 +22,9 @@ ms.locfileid: "4644089"
 
 באפשרותך להשתמש במנהל השירות כדי [להוסיף או לערוך תיקיית Common Data Model כמקור נתונים](connect-common-data-model.md) או [ליצור סביבה חדשה או לעדכן סביבה קיימת](manage-environments.md#create-an-environment-in-an-existing-organization) באופן מאובטח.
 
-אתה זקוק להרשאות מנהל עבור המנוי שלך ב- Azure כדי ליצור את מנהל השירות.
+> [!IMPORTANT]
+> - חשבון האחסון של Azure Data Lake Gen2 שמתכוון להשתמש במנהל השירות חייב להיות בעל [מרחב שמות הירארכי (HNS) מופעל](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - אתה זקוק להרשאות מנהל עבור המנוי שלך ב- Azure כדי ליצור את מנהל השירות.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>יצירת מנהל שירות של Azure עבור audience insights
 
@@ -83,7 +85,7 @@ ms.locfileid: "4644089"
 
 בצע את השלבים הבאים כדי לספק את המידע הנדרש על הגישה שנבחרה.
 
-### <a name="resounce-based-storage-account-connection"></a>חיבור לחשבון אחסון מבוסס-משאב
+### <a name="resource-based-storage-account-connection"></a>חיבור לחשבון אחסון מבוסס-משאב
 
 1. עבור אל [פורטל הניהול של Azure](https://portal.azure.com), היכנס למנוי שלך ופתח את חשבון האחסון.
 
@@ -108,7 +110,8 @@ ms.locfileid: "4644089"
 1. סקור את **מנוי**, **קבוצת משאבים** ו **שם** של חשבון האחסון כדי לוודא שאתה בוחר את הערכים המתאימים ב- Audience Insights.
 
 1. ב- Audience Insights, בחר את הערכים עבור השדות המתאימים בעת צירוף חשבון האחסון.
-
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="הזן את מידע המזהה של משאב חשבון האחסון.":::
    
 1. המשך בשלבים הנותרים ב- Audience Insights כדי לצרף את חשבון האחסון.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

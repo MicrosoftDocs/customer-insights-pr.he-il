@@ -4,16 +4,16 @@ description: עבוד עם מודלים מותאמים אישית מ- Azure Mach
 ms.date: 11/19/2020
 ms.reviewer: zacook
 ms.service: dynamics-365-ai
-ms.topic: article
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: ef248086b30b870359970529a7bfb37792be62d5
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668904"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267235"
 ---
 # <a name="custom-machine-learning-models"></a>מודלי למידת מכונה מותאמים אישית
 
@@ -46,15 +46,15 @@ ms.locfileid: "4668904"
 
 1. בחר את שירות האינטרנט Machine Learning Studio (קלאסי) או את קו הצינור Azure Machine Learning ברשימה הנפתחת **שירות אינטרנט המכיל את המודל שלך**. לאחר מכן בחר **הבא**.
    - קבל מידע נוסף אודות [פרסום שירות אינטרנט ב- Machine Learning Studio (קלאסי)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - קבל מידע נוסף אודות [פרסום קו צינור ב- Azure Machine Learning באמצעות המעצב](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) או [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). 
-     > [!NOTE]
-     > עליך לפרסם את קו הצינור שלך תחת [נקודת קצה של קו צינור](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+   - קבל מידע נוסף אודות [פרסום קו צינור ב- Azure Machine Learning באמצעות המעצב](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) או [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). עליך לפרסם את קו הצינור שלך תחת [נקודת קצה של קו צינור](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. עבור כל **קלט של שירות אינטרנט**, בחר את **ישות** המתאימה מתוך Customer Insights ובחר **הבא**.
+   > [!NOTE]
+   > זרימת העבודה של המודל המותאם אישית תחיל היוריסטיקה למיפוי שדות הקלט של שירות האינטרנט לתכונות הישות בהתבסס על השם וסוג הנתונים של השדה. תראה שגיאה אם לא ניתן למפות שדה שירות אינטרנט לישות.
 
    > [!div class="mx-imgBorder"]
    > ![קביעת תצורה של זרימת עבודה](media/intelligence-screen2-updated.png "קביעת תצורה של זרימת עבודה")
-
+   
 1. בשלב **פרמטרים של פלט מודל**, הגדר את המאפיינים הבאים:
    - Machine Learning Studio (קלאסי)
       1. הזן את הפלט **שם הישות** שברצונך שתוצאות הפלט של שירות האינטרנט יזרמו אליו.
@@ -112,3 +112,6 @@ ms.locfileid: "4668904"
 1. בחר **מחיקה**, ואשר את המחיקה.
 
 זרימת העבודה שלך תימחק. [הישות](entities.md) שנוצרה כאשר יצרת את זרימת העבודה ממשיכה להתקיים וניתן להציג אותה דרך הדף **ישויות**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

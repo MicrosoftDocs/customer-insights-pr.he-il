@@ -4,17 +4,17 @@ description: ייבא נתונים מאגם נתונים מנוהל של Common 
 ms.date: 09/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
 ms.reviewer: adkuppa
-ms.openlocfilehash: 029857e2bbb5f6357a5c01138ceaad78887b7518
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 18b6cd3fdaf5b738877a73b520b91dbc6ded40de
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643399"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267815"
 ---
 # <a name="connect-to-data-in-a-common-data-service-managed-data-lake"></a>התחבר לנתונים בתוך אגם נתונים מנוהל של Common Data Service
 
@@ -34,7 +34,10 @@ ms.locfileid: "4643399"
 
 3. בחר **התחבר אל Common Data Service** ובחר **הבא**.
 
-4. הזן **שם** עבור מקור הנתונים ובחר **הבא**.
+4. הזן **שם** עבור מקור הנתונים ובחר **הבא**. קווים מנחים של שם: 
+   - התחל עם אות.
+   - השתמש באותיות ומספרים בלבד. אסור להזין תווים מיוחדים ורווחים.
+   - השתמש בין 3 ל- 64 תווים.
 
 5. ספק **כתובת שרת** של ארגון Common Data Service שלך ובחר **התחבר**.
 
@@ -65,3 +68,6 @@ ms.locfileid: "4643399"
 3. בחר באפשרות **ערוך** מתוך הרשימה.
 
 4. בחר ישויות נוספות מרשימת הישויות הזמינה ובחר **שמור**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

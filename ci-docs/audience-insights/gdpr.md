@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f276a73feca52023391ad92fbc84359921b85328
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: ed9aa09fba938606611c6ce86c2b250c5e19c606
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405895"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268687"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>בקשות של של זכויות נושא נתונים (DSR) במסגרת GDPR
 
@@ -75,3 +75,6 @@ Audience Insights מציע את חוויות המוצר הבאות למחיקת 
 1. שלח דואר אלקטרוני אל D365CI@microsoft.com עם ציון כתובת הדואר האלקטרוני של המשתמש בבקשה. צוות Customer Insights ישלח דואר לכתובת הדואר הרשומה של מנהל הדייר, עם בקשה לאשר ייצוא נתונים.
 2. יש לקבל את האישור לייצוא הנתונים עבור המשתמש המבוקש.
 3. קבל את הנתונים המיוצאים באמצעות כתובת הדואר של מנהל הדייר.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

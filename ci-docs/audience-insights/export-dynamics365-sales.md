@@ -1,20 +1,20 @@
 ---
 title: ייצוא נתוני Customer Insights אל Dynamics 365 Sales
 description: למדו כיצד להגדיר את החיבור אל Dynamics 365 Sales.
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: af0824e69dfdf620a0ac756e32a9bd3dd85e5151
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 0013c4e6a96401d6cdbea55ed38f85f5e10dcc56
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643819"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269009"
 ---
 # <a name="connector-for-dynamics-365-sales-preview"></a>מחבר עבור Dynamics 365 Sales (תצוגה מקדימה)
 
@@ -24,7 +24,10 @@ ms.locfileid: "4643819"
 
 ## <a name="prerequisite"></a>דרישה מוקדמת
 
-רשומות איש קשר [מ- Dynamics 365 Sales עובדו באמצעות Common Data Service](connect-power-query.md).
+1. רשומות אנשי קשר מוכרחות להיות קיימות ב- Dynamics 365 Sales לפני שתוכל לייצא פלח מ- Customer Insights אל Sales. המשך לקרוא על אופן הקליטה של אנשי קשר ב- [Dynamics 365 Sales באמצעות Common Data Services](connect-power-query.md).
+
+   > [!NOTE]
+   > ייצוא פלחים מ- audience insights אל Sales לא ייצור רשומות אנשי קשר חדשות במופעי Sales. יש לקלוט את רשומות אנשי הקשר מ- Sales ב- audience insights ולהשתמש בהן כמקור נתונים. יש גם לכלול אותן בישות 'לקוח' המאוחדת כדי למפות מזהי לקוחות למזהי אנשי קשר לפני ייצוא הפלחים.
 
 ## <a name="configure-the-connector-for-sales"></a>קביעת תצורת המחבר עבור Sales
 
@@ -49,3 +52,6 @@ ms.locfileid: "4643819"
 ## <a name="export-the-data"></a>ייצוא הנתונים
 
 באפשרותך [לייצא נתונים לפי דרישה](export-destinations.md). הייצוא יפעל גם בכל [רענון מתוזמן](system.md#schedule-tab).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

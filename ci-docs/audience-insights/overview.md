@@ -1,30 +1,26 @@
 ---
-title: יכולת Audience insights
-description: מבט כולל על יכולת Dynamics 365 Customer Insights audience insights.
-ms.date: 02/05/2020
+title: מבט כולל על Audience insights עבור Dynamics 365 Customer Insights
+description: מבט כולל על Audience insights עבור Dynamics 365 Customer Insights.
+ms.date: 01/18/2021
 ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 82763b294484cca4a3982f4ebef6f914a02f5cca
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 735aae12abebd2d6d9b6aedb5835164834f480c0
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405898"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476996"
 ---
-# <a name="dynamics-365-customer-insights-audience-insights-capability"></a>יכולת Dynamics 365 Customer Insights audience insights
+# <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>מבט כולל על Audience insights עבור Dynamics 365 Customer Insights
 
-חוויית הלקוח נמצאת בבסיסן של שאיפות הטרנספורמציה הדיגיטלית של כל ארגון. כדי להתחרות בשוק של ימינו, ארגונים מוכרחים לבנות קשרים משמעותיים עם הלקוחות שלהם ברמה האישית. היכולת להתאים אישית באופן יעיל בקנה המידה המתאים דורשת תצוגה שלמה ואחידה של לקוח.
+Audience insights עוזר לך לבנות הבנה מעמיקה יותר של הלקוחות שלך. חבר נתונים ממקורות עסקיים, התנהגותיים ותצפיתיים שונים כדי ליצור תצוגת לקוח ב- 360 מעלות. השתמש בתובנות אלה כדי לקדם חוויות ותהליכים המתמקדים בלקוח. אחד והבן את נתוני הלקוחות ורתום אותם לצורך תובנות ופעולות חכמות.
 
-Audience insights עוזר לך לבנות הבנה מעמיקה יותר של הלקוחות שלך. חבר נתונים ממקורות עסקיים, התנהגותיים ותצפיתיים שונים כדי ליצור תצוגת לקוח ב- 360 מעלות. השתמש בתובנות אלה כדי לקדם חוויות ותהליכים המתמקדים בלקוח.
-
-**אחד והבן את נתוני הלקוחות ורתום אותם לצורך תובנות ופעולות חכמות.**
-
-בעזרת Audience Insights, ארגונים יכולים:  
+## <a name="main-benefits"></a>היתרונות העיקריים 
 
 - **למנוע מאגרי נתונים מבודדים ולאחד נתוני לקוחות**
 
@@ -33,15 +29,15 @@ Audience insights עוזר לך לבנות הבנה מעמיקה יותר של �
 
 - **להעשיר באמצעות בינת קהל הנכללת ב- Microsoft Graph**
 
-  - בנה פרופילי לקוחות עשירים יותר על-ידי שילוב בינת קהל הנכללת ב- Microsoft Graph.  
+  - בנה פרופילי לקוחות עשירים יותר על-ידי [שילוב בינת קהל הנכללת ב- Microsoft Graph](enrichment-microsoft-graph.md).  
 
 - **להעצים את התהליכים העסקיים וחוויות לקוח מותאמות אישית**
 
   - קדם מעורבות מותאמת אישית בין ערוצים - העצם מומחי שיווק, מכירות ושירות בעזרת תובנות לקוח הקשריות המוכנות לשימוש וכרטיסי פרופיל לקוח מותאמים הנכללים ביישומים העסקיים שהם משתמשים בהם כבר מדי יום
   - הפוך חוויות ותהליכים ממוקדי לקוחות לאוטומטיים בהתבסס על פרופילים, מדידות עסקיות ופלחים הניתנים להתאמה אישית.
-  - אפשר והרחב חוויות קו עסקי המוכללות ב- Microsoft Power Platform. בנה במהירות יישומים עם תובנות מוטבעות באמצעות גישת מעט קוד עוצמתית מ- PowerApps.  
+  - אפשר והרחב חוויות קו עסקי המוכללות ב- [Microsoft Power Platform](https://powerplatform.microsoft.com/). בנה במהירות יישומים עם תובנות מוטבעות באמצעות גישת מעט קוד עוצמתית מ- PowerApps.  
 
-Audience insights כולל יכולות עבור המשתמשים העיקריים הבאים:
+## <a name="key-audiences"></a>קהלים עיקריים
 
 - **אנליסטים של נתונים / מנהלי מערכת:**
 
@@ -58,5 +54,8 @@ Audience insights כולל יכולות עבור המשתמשים העיקריי
 
 - **אנליסטים עסקיים:**
 
-  - בנה פרופילים הניתנים להתאמה אישית, הגדר מדדים וצור פלחים כדי לקבל תצוגה של 360 מעלות של הלקוח שלך, הספציפית לארגון שלך.  
-  - השתמש במחברים מוכנים לשימוש עבור PowerApps או Microsoft Power BI או ממשקי API כדי להציג תובנות ביישומים העסקיים או בפתרונות BI שלך.  
+  - בנה פרופילים הניתנים להתאמה אישית, הגדר מדדים, צור פלחים והפק תועלת מניתוח תחזיתי כדי לקבל תצוגה של 360 מעלות של הלקוח שלך, הספציפית לארגון שלך.  
+  - השתמש במחברים מוכנים לשימוש עבור מספר יישומים של Microsoft ושל צד שלישי או ממשקי API כדי להמשיך ולעבד את התובנות.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

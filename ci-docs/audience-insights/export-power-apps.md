@@ -1,20 +1,20 @@
 ---
 title: מחבר Power Apps
 description: התחבר ל- Power Apps ו- Power Automate.
-ms.date: 08/21/2020
+ms.date: 01/19/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: b6ec103e29e218b2f27bfc1193300ea793a6b30b
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 5a8bbb9a09218d54228589d43c21c8894680b56e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405866"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268917"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>מחבר Microsoft Power Apps (תצוגה מקדימה)
 
@@ -31,7 +31,7 @@ Customer Insights הוא אחד מהמקורות הזמינים [הרבים עב
 לאחר הוספת Customer Insights כחיבור נתונים, באפשרותך לבחור את הישויות הבאות ב- Power Apps:
 
 - לקוח: כדי להשתמש בנתונים מ[פרופיל הלקוח המאוחד](customer-profiles.md).
-- פעילות לקוחות מאוחדים: כדי להציג את [ציר הזמן של הפעילות](activities.md) ביישום.
+- UnifiedActivity: כדי להציג את [ציר הזמן של הפעילות](activities.md) ביישום.
 
 ## <a name="limitations"></a>מגבלות
 
@@ -72,3 +72,6 @@ Customer Insights הוא אחד מהמקורות הזמינים [הרבים עב
 1. כדי להציג את ציר הזמן המאוחד עבור לקוח, הוסף רכיב גלריה והוסף את מאפיין הפריטים: **Filter('UnifiedActivity', CustomerId = {Customer_Id})**
 
     דוגמה: Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
