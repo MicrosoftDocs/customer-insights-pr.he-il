@@ -2,19 +2,19 @@
 title: העשרה עם ייבוא מותאם אישית של SPTF
 description: מידע כללי אודות העשרת ייבוא מותאם אישית של SPTF.
 ms.date: 11/18/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: jdahl
-ms.author: mhart
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f25dcc08d96d36507e47af0d7b184003ae095819
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: d9e095ef793cbd25415864f76a541dce68fafe47
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269607"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595856"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>העשרת פרופילי לקוחות עם נתונים מותאמים אישית (Preview)
 
@@ -50,7 +50,7 @@ ms.locfileid: "5269607"
 
 ## <a name="defining-field-mappings"></a>הגדרת מיפויי שדות 
 
-הספריה המכילה את הקובץ המיועד לייבוא בשרת SPTF מוכרחה גם לכלול קובץ *model.json*. קובץ זה מגדיר את הסכימה לשימוש עבור ייבוא הנתונים. יש להשתמש בסכימה [Common Data Model](https://docs.microsoft.com/common-data-model/) כדי לציין את מיפוי השדה. דוגמה פשוטה לקובץ model.json נראית כך:
+הספריה המכילה את הקובץ המיועד לייבוא בשרת SPTF מוכרחה גם לכלול קובץ *model.json*. קובץ זה מגדיר את הסכימה לשימוש עבור ייבוא הנתונים. יש להשתמש בסכימה [Common Data Model](/common-data-model/) כדי לציין את מיפוי השדה. דוגמה פשוטה לקובץ model.json נראית כך:
 
 ```
 {

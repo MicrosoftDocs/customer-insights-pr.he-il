@@ -2,19 +2,19 @@
 title: העשרת פרופילי לקוחות באמצעות Microsoft Graph
 description: השתמש בנתונים קנייניים מ- Microsoft Graph כדי להעשיר את נתוני הלקוחות שלך עם קירבות למותג ותחום עניין.
 ms.date: 12/10/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: kishorem-MS
+ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 2c95369c778f592bc1460799aca0fa8cff813d68
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: aa46dac4f9c0d27881371877b14a92a6725710da
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269331"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596454"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>העשרת פרופילי לקוחות עם קירבות למוצג ותחום עניין (תצוגה מקדימה)
 
@@ -33,7 +33,7 @@ ms.locfileid: "5269331"
 
 אנו משתמשים בנתוני חיפוש מקוונים מ- Microsoft Graph כדי למצוא קירבות עבור מותגים ותחומי עניין בפלחי שוק דמוגרפיים שונים (מוגדרים לפי גיל, מגדר או מיקום). נפח החיפוש המקוון עבור מותג או תחום עניין קובע את מידת הקירבה של פלח שוק דמוגרפי, בהשוואה לפלחי שוק אחרים, למותג או לתחום עניין זה.
 
-[קבל מידע נוסף אודות Microsoft Graph](https://docs.microsoft.com/graph/overview).
+[קבל מידע נוסף אודות Microsoft Graph](/graph/overview).
 
 ## <a name="affinity-level-and-score"></a>רמת קירבה וניקוד
 

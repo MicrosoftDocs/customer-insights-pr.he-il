@@ -2,19 +2,19 @@
 title: ייצוא נתוני Customer Insights אל אחסון Blob של Azure
 description: למד כיצד להגדיר את החיבור לאחסון Blob של Azure.
 ms.date: 09/18/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ecacf20365e78ced8859dfa54b1b16cb923c00eb
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 0986ee5caf5fa079994ca584fb2c4d9294ddb80b
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269193"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596178"
 ---
 # <a name="connector-for-azure-blob-storage-preview"></a>מחבר לאחסון Blob של Azure (תצוגה מקדימה)
 
@@ -27,8 +27,8 @@ ms.locfileid: "5269193"
 1. תחת **אחסון Blob של Azure**, בחר **הגדר**.
 
 1. הזן **שם חשבון**, **מפתח חשבון** ו **גורם מכיל** עבור חשבון אחסון Blob של Azure.
-    - כדי לקבל מידע נוסף אודות אופן מציאת שם החשבון ומפתח החשבון של אחסון Blob של Azure, ראה [ניהול הגדרות חשבון אחסון בפורטל Azure](https://docs.microsoft.com/azure/storage/common/storage-account-manage).
-    - כדי ללמוד כיצד ליצור גורם מכיל, ראה [יצירת גורם מכיל](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+    - כדי לקבל מידע נוסף אודות אופן מציאת שם החשבון ומפתח החשבון של אחסון Blob של Azure, ראה [ניהול הגדרות חשבון אחסון בפורטל Azure](/azure/storage/common/storage-account-manage).
+    - כדי ללמוד כיצד ליצור גורם מכיל, ראה [יצירת גורם מכיל](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 1. תן ליעד שלך שם הניתן לזיהוי בשדה **שם תצוגה**.
 
@@ -42,7 +42,7 @@ ms.locfileid: "5269193"
 
 - עבור ישויות מקור וישויות שנוצרו על-ידי המערכת: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`
   - דוגמה: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
-- ה-model.json עבור הישויות המיוצאות יימצא ברמת % ExportDestinationName%
+- ה- model.json עבור הישויות שיוצאו ישכון ברמה %ExportDestinationName%
   - דוגמה: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 
 ## <a name="export-the-data"></a>ייצוא הנתונים

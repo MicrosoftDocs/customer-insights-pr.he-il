@@ -1,31 +1,31 @@
 ---
 title: שפות נתמכות עבור Audience Insights
 description: הבן והגדר את התמיכה בשפה.
-ms.date: 04/27/2020
+ms.date: 02/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+author: pkieffer
+ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 84c4011e61058729a0ed0b7123df8a9227b0f083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: cbf37b55ea6c54d912200a1f7167126925b35443
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268181"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595473"
 ---
 # <a name="supported-languages-for-audience-insights-capability"></a>שפות נתמכות עבור היכולת Audience Insights
 
-יכולת Audience Insights של Dynamics 365 Customer Insights תומכת במספר שפות. נושא זה מפרט את השפות הזמינות ומספק תמיכה בהחלפה ביניהן, וכן מבט כולל על התוכן המתורגם.
+Audience Insights עבור Dynamics 365 Customer Insights מתורגם לשפות רבות. הרשימה הבאה כוללת שפות זמינות ומידע על מה שמתורגם. באפשרותך גם לקבל מידע נוסף אודות אופן השינוי של הגדרות השפה. 
 
 ## <a name="languages"></a>שפות
 
 | שם שפת (אנגלית)|  שם שפה (שפת האם) |
 | ------------- | ------------- |
 | בסקית | euskara |
-| בולגרית | Български |
+| בולגרית | български |
 | קטלאנית‬‬ | català |
 | סינית (פשוטה) | 中文(简体) |
 | סינית (מסורתית) | 中文(繁體) |
@@ -42,20 +42,20 @@ ms.locfileid: "5268181"
 | יוונית | Ελληνικά |
 | הינדי | हिंदी |
 | הונגרית | magyar |
-| אינדונזית | Bahasa Indonesia |
+| אינדונזית | אינדונזיה |
 | איטלקית | italiano |
 | יפנית | 日本語 |
-| קזחית | Қазақ |
+| קזחית | қазақ тілі |
 | קוריאנית | 한국어 |
 | לטבית | latviešu |
 | ליטאית | lietuvių |
-| מלאית | Bahasa Melayu |
-| נורווגית (Bokmål) | norsk (bokmål) |
-| פולנית | Polski |
+| מלאית | Melayu |
+| נורווגית (ספרותית) | norsk bokmål |
+| פולנית | polski |
 | פורטוגזית (ברזיל) | português |
 | פורטוגזית (פורטוגל) | português |
 | רומנית | română |
-| רוסית | Русский |
+| רוסית | pусский |
 | סרבית (קירילית) | српски |
 | סרבית (לטינית) | srpski |
 | סלובקית | slovenčina |

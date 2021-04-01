@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
-ms.author: mhart
-ms.reviewer: ameetj
+ms.author: ameetj
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8a861d62bdfee6a3a82468fe1ab4a3fbbdad43d4
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 71881f7e1f9448fe0a7d6d92b8102b8b42de7c2a
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270205"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598340"
 ---
 # <a name="use-models-based-on-azure-machine-learning-studio-classic"></a>שימוש במודלים המבוססים על Azure Machine Learning Studio (קלאסי)
 
@@ -37,7 +37,7 @@ ms.locfileid: "5270205"
 
 1. חפש **סביבת העבודה לסטודיו למידת מכונה** ובחר **צור**.
 
-1. הזן את הפרטים הנדרשים כדי [ליצור את סביבת העבודה](https://docs.microsoft.com/azure/machine-learning/studio/create-workspace). בחר את **שכבת תמחור תוכנית של שירות אינטרנט** המבוססת על כמות הנתונים שבכוונך לייבא. לקבלת הביצועים הטובים ביותר, בחר את **המיקום** הכי קרוב מבחינתך.
+1. הזן את הפרטים הנדרשים כדי [ליצור את סביבת העבודה](/azure/machine-learning/studio/create-workspace). בחר את **שכבת תמחור תוכנית של שירות אינטרנט** המבוססת על כמות הנתונים שבכוונך לייבא. לקבלת הביצועים הטובים ביותר, בחר את **המיקום** הכי קרוב מבחינתך.
 
 1. לאחר יצירת המשאב יופיע לוח המחוונים של סביבת העבודה של סטודיו ללמידת מכונה. בחר **הפעל את סטודיו ללמידת מכונה**.
 
@@ -65,7 +65,7 @@ ms.locfileid: "5270205"
 
    ![הגדר שירות אינטרנט חזוי](media/predictive-webservice-control.png)
 
-1. לאחר שהניסוי בשירות האינטרנט החזוי יצליח, תוכל לפרוס אותו לתזמון אוטומטי. כדי ששירות האינטרנט יעבוד עם Customer Insights, בחר **פרוס שירות אינטרנט** > **פרוס תצוגה מקדימה של שירות אינטרנט [חדש]**. [קבל מידע נוסף על יכולות שירות האינטרנט](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
+1. לאחר שהניסוי בשירות האינטרנט החזוי יצליח, תוכל לפרוס אותו לתזמון אוטומטי. כדי ששירות האינטרנט יעבוד עם Customer Insights, בחר **פרוס שירות אינטרנט** > **פרוס תצוגה מקדימה של שירות אינטרנט [חדש]**. [קבל מידע נוסף על יכולות שירות האינטרנט](/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
 
    ![פרוס שירות אינטרנט חזוי](media/predictive-webservice-deploy.png)
 
@@ -116,7 +116,7 @@ ms.locfileid: "5270205"
 
 ![מודל נטישה בסטודיו למידת מכונה של Azure](media/azure-machine-learning-model.png)
 
-אנו מיישמים גם טכניקה הנקראת **חשיבות תכונת הפרמוטציה**, היבט חשוב באופטימיזציה של המודל. לדגמים המוכללים אין מעט תובנות לגבי ההשפעה של תכונה ספציפית כלשהי על החיזוי הסופי. מחשבון חשיבות התכונות משתמש באלגוריתם מותאם אישית כדי לחשב את ההשפעה של תכונות בודדות על התוצאה עבור מודל ספציפי. חשיבות התכונות מנורמלת בין ‎ +1 לבין ‎-1. השפעה שלילית פירושה שלתכונה המקבילה יש השפעה שלילית על התוצאה ויש להסיר אותה מהמודל. השפעה חיובית מצביעה על כך שהתכונה תורמת רבות לחיזוי. ערכים אלה אינם מקדמי מתאם מכיוון שהם מדדים שונים. למידע נוסף, ראה [חשיבות תכונת הפרמוטציה](https://docs.microsoft.com/azure/machine-learning/studio-module-reference/permutation-feature-importance).
+אנו מיישמים גם טכניקה הנקראת **חשיבות תכונת הפרמוטציה**, היבט חשוב באופטימיזציה של המודל. לדגמים המוכללים אין מעט תובנות לגבי ההשפעה של תכונה ספציפית כלשהי על החיזוי הסופי. מחשבון חשיבות התכונות משתמש באלגוריתם מותאם אישית כדי לחשב את ההשפעה של תכונות בודדות על התוצאה עבור מודל ספציפי. חשיבות התכונות מנורמלת בין ‎ +1 לבין ‎-1. השפעה שלילית פירושה שלתכונה המקבילה יש השפעה שלילית על התוצאה ויש להסיר אותה מהמודל. השפעה חיובית מצביעה על כך שהתכונה תורמת רבות לחיזוי. ערכים אלה אינם מקדמי מתאם מכיוון שהם מדדים שונים. למידע נוסף, ראה [חשיבות תכונת הפרמוטציה](/azure/machine-learning/studio-module-reference/permutation-feature-importance).
 
 כל [ניסוי הנטישה זמין בגלריית ה- AI של Azure](https://gallery.azure.ai/Experiment/Hotel-Churn-Predictive-Exp).
 
@@ -168,7 +168,7 @@ ms.locfileid: "5270205"
 
 ## <a name="integrate-custom-models"></a>שילוב מודלים מותאמים אישית
 
-כדי להשתמש בתחזיות אלה ב- Customer Insights, עליך לבצע **ייצוא** של התחזיות יחד עם מזהי הלקוחות. [יצא אותן לאותו מיקום אחסון של Azure Blob](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs) שאליו אתה מייצא את נתוני המקור. ניתן לתזמן את שירות האינטרנט החזוי לפעול באופן קבוע ולעדכון הניקוד.
+כדי להשתמש בתחזיות אלה ב- Customer Insights, עליך לבצע **ייצוא** של התחזיות יחד עם מזהי הלקוחות. [יצא אותן לאותו מיקום אחסון של Azure Blob](/azure/storage/common/storage-import-export-data-from-blobs) שאליו אתה מייצא את נתוני המקור. ניתן לתזמן את שירות האינטרנט החזוי לפעול באופן קבוע ולעדכון הניקוד.
 
 ניתן להשתמש בנתונים שנוצרו על-ידי המודל המותאם אישית להעשרת נתוני הלקוחות שלך. למידע נוסף ראה [דגמי למידת מכונה מותאמים אישית](custom-models.md).
 

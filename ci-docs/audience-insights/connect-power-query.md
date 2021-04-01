@@ -2,23 +2,23 @@
 title: קליטת נתונים דרך מחבר Power Query
 description: מחברים למקורות נתונים מבוססים על Power Query.
 ms.date: 09/29/2020
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: b9a1b30e37c3792aa7bdfcfc177da9e8a32c324d
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267770"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596914"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>התחבר למקור נתונים של Power Query
 
-Power Query מציע מערך רחב של מחברים לקליטת נתונים. רוב המחברים הללו נתמכים על ידי Dynamics 365 Customer Insights. הוספת מקורות נתונים המבוססים על מחברי Power Query בדרך כלל פועלת לפי השלבים המתוארים בסעיף הבא. עם זאת, בהתאם למחבר שבו אתה משתמש, נדרש מידע שונה. למידע נוסף, עיין בתיעוד של מחברים בודדים ב- [הפניית מחבר של Power Query](https://docs.microsoft.com/power-query/connectors/).
+Power Query מציע מערך רחב של מחברים לקליטת נתונים. רוב המחברים הללו נתמכים על ידי Dynamics 365 Customer Insights. הוספת מקורות נתונים המבוססים על מחברי Power Query בדרך כלל פועלת לפי השלבים המתוארים בסעיף הבא. עם זאת, בהתאם למחבר שבו אתה משתמש, נדרש מידע שונה. למידע נוסף, עיין בתיעוד של מחברים בודדים ב- [הפניית מחבר של Power Query](/power-query/connectors/).
 
 ## <a name="create-a-new-data-source"></a>צור מקור נתונים חדש
 
@@ -44,7 +44,7 @@ Power Query מציע מערך רחב של מחברים לקליטת נתונים
    > [!div class="mx-imgBorder"]
    > ![תיבת דו-שיח של עריכת שאילתות](media/data-manager-configure-edit-queries.png "תיבת דו-שיח של עריכת שאילתות")
 
-1. באפשרותך גם לשנות את הנתונים שלך. בחר ישות לעריכה או להמרה. השתמש באפשרויות בחלון Power Query כדי להחיל טרנספורמציות. כל טרנספורמציה מופיעה בחלק **צעדים שבוצעו**. Power Query מספק מספר אפשרויות טרנספורמציה שנבנו מראש. לקבלת מידע נוסף, ראה [טרנספורמציות ב- Power Query](https://docs.microsoft.com/power-query/power-query-what-is-power-query#transformations).
+1. באפשרותך גם לשנות את הנתונים שלך. בחר ישות לעריכה או להמרה. השתמש באפשרויות בחלון Power Query כדי להחיל טרנספורמציות. כל טרנספורמציה מופיעה בחלק **צעדים שבוצעו**. Power Query מספק מספר אפשרויות טרנספורמציה שנבנו מראש. לקבלת מידע נוסף, ראה [טרנספורמציות ב- Power Query](/power-query/power-query-what-is-power-query#transformations).
 
 1. באפשרותך להוסיף ישויות נוספות למקור הנתונים על-ידי בחירה באפשרות **קבל נתונים** בתיבת הדו-שיח **עריכת שאילתות**.
 
@@ -59,7 +59,7 @@ Power Query מציע מערך רחב של מחברים לקליטת נתונים
 
 ## <a name="available-power-query-data-sources"></a>מקורות נתונים זמינים של Power Query
 
-ראה את [הפניה למחבר Power Query](https://docs.microsoft.com/power-query/connectors/) לקבלת רשימה עדכנית של מחברים שתוכל לבחור לייבא נתונים ל- Customer Insights. 
+ראה את [הפניה למחבר Power Query](/power-query/connectors/) לקבלת רשימה עדכנית של מחברים שתוכל לבחור לייבא נתונים ל- Customer Insights. 
 
 מחברים עם סימן ביקורת בעמודה **Customer Insights (זרימות נתונים)** זמינים ליצירת מקורות נתונים חדשים המבוססים על Power Query. עיין בתיעוד של מחבר ספציפי כדי ללמוד עוד על התנאים המוקדמים שלו, המגבלות ופרטים אחרים.
 

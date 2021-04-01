@@ -1,7 +1,7 @@
 ---
 title: תכונות חדשות ועתידיות
 description: מידע על תכונות חדשות, שיפורים ותיקוני באגים.
-ms.date: 02/02/2021
+ms.date: 03/08/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,18 +9,18 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 9183c8af4fb9f9f08ac63d8d0cd37c6868bba310
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 96c0b871eeaaf0976e5c718f37f883f4410977dc
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270433"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598432"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>מה חדש ביכולת Audience Insights של Dynamics 365 Customer Insights
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-אנו גאים להכריז על העדכונים החדשים ביותר שלנו! מאמר זה מסכם תכונות של Public Preview, שיפורים בזמינות הכללית ועדכוני תכונות. כדי לראות את התוכניות ארוכות הטווח בנוגע לתכונות, ראה את [תוכניות ההפצה של ‎Dynamics 365 ושל Power Platform](https://docs.microsoft.com/dynamics365/release-plans/).
+אנו גאים להכריז על העדכונים החדשים ביותר שלנו! מאמר זה מסכם תכונות של Public Preview, שיפורים בזמינות הכללית ועדכוני תכונות. כדי לראות את התוכניות ארוכות הטווח בנוגע לתכונות, ראה את [תוכניות ההפצה של ‎Dynamics 365 ושל Power Platform](/dynamics365/release-plans/).
 
 ניתן גם לצפות בסרטון הבא כדי לקבל מידע נוסף על היכולות שתוכננו בחצי השנה האחרונה.
 
@@ -30,6 +30,40 @@ ms.locfileid: "5270433"
 
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="february-2021-updates"></a>עדכוני פברואר 2021
+
+העדכונים בפברואר 2021 כוללים מספר תכונות, שדרוגי ביצועים ותיקוני באגים.
+
+#### <a name="extensibility"></a>יכולת הרחבה
+
+- **ייצא פלחים אל AdRoll**
+
+  הרחבנו את יעדי הייצוא שלנו כך שיכללו את AdRoll. כעת תוכל לייצא פלחים מ- Customer Insights לקהלי AdRoll ולהשתמש בהם כבסיס לפרסום שלך. למידע נוסף, ראה [מחבר עבור AdRoll](export-adroll.md).
+
+#### <a name="segments"></a>פלחי שוק
+ 
+- **שכפל פלח**
+  
+  כדי ליצור פלח חדש המבוסס על פלח קיים, כעת תוכל לשכפל פלח ולערוך את הפלח המשוכפל כדי למקד אותו עוד יותר. 
+
+- **הוסף תכונות נוספות לפלח**
+
+  כעת תוכל לכלול תכונות בפלט הפלח שלך, גם אם תכונות אלה אינן חלק מפרופיל הלקוח. לדוגמא, כלול מזהי מנוי בפלח למרות שהוא חלק מישות המנוי שיש לו קשר M:1 עם ישות הלקוח. כל עוד התכונה שייכת לישות הקשורה לישות הלקוח, כעת תוכל לכלול תכונות אלה.  
+
+#### <a name="predictions"></a>חיזויים
+
+- **צור המלצות על מוצרים חזויות**
+
+  אחד מהשלבים הראשונים הדרושים לשיפור הכנסות העסק ולבניית נאמנות הלקוחות באמצעות התאמה אישית ומעורבות הוא ההבנה של מה שלקוחות מעוניינים לרכוש. מתן המלצות למוצרים שאינם מתאימים לתחומי העניין של הלקוח יכול ליצור תחושת ניתוק בין הלקוח לעסק שלך, ובסופו של דבר להגביל את ההכנסות הפוטנציאליות ואת החוויה עבור לקוח. 
+
+  באמצעות הנתונים שלך תוכל כעת ליצור חיזויים בנוגע למוצרים שהלקוחות שלך עשויים לרכוש בעתיד. למידע נוסף ראה [חיזוי המלצה על מוצר](predict-product-recommendation.md).
+
+#### <a name="system-administration"></a>ניהול מערכת
+
+- **סביבת העתקה תומכת בסוגים נוספים של מקורות נתונים**
+
+  מנהלי מערכת יכולים להעתיק תצורות סביבה לסביבה חדשה באותו ארגון. תכונה זו מרחיבה את הפונקציונליות של סביבת ההעתקה למקרים שבהם נעשה שימוש במקורות נתונים המבוססים על data lake של Common Data Service ותיקיית Common Data Model.
 
 ## <a name="january-2021-updates"></a>עדכוני ינואר 2021
 

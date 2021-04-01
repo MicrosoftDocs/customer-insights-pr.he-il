@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267723"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596500"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>התחברות לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure עבור audience insights
 
@@ -23,7 +23,7 @@ ms.locfileid: "5267723"
 באפשרותך להשתמש במנהל השירות כדי [להוסיף או לערוך תיקיית Common Data Model כמקור נתונים](connect-common-data-model.md) או [ליצור סביבה חדשה או לעדכן סביבה קיימת](manage-environments.md#create-an-environment-in-an-existing-organization) באופן מאובטח.
 
 > [!IMPORTANT]
-> - חשבון האחסון של Azure Data Lake Gen2 שמתכוון להשתמש במנהל השירות חייב להיות בעל [מרחב שמות הירארכי (HNS) מופעל](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - חשבון האחסון של Azure Data Lake Gen2 שמתכוון להשתמש במנהל השירות חייב להיות בעל [מרחב שמות הירארכי (HNS) מופעל](/azure/storage/blobs/data-lake-storage-namespace).
 > - אתה זקוק להרשאות מנהל עבור המנוי שלך ב- Azure כדי ליצור את מנהל השירות.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>יצירת מנהל שירות של Azure עבור audience insights
@@ -48,7 +48,7 @@ ms.locfileid: "5267723"
 
 ### <a name="create-a-new-service-principal"></a>יצירת מנהל שירות חדש
 
-1. התקן את הגירסה האחרונה של **Azure Active Directory PowerShell for Graph**. לקבלת מידע נוסף, ראה [התקנת Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+1. התקן את הגירסה האחרונה של **Azure Active Directory PowerShell for Graph**. לקבלת מידע נוסף, ראה [התקנת Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
    - במחשב שלך, בחר את מקש Windows במקלדת שלך וחפש את **Windows PowerShell** ואת **הפעל כמנהל מערכת**.
    
    - בחלון PowerShell שנפתח, הזן `Install-Module AzureAD`.
