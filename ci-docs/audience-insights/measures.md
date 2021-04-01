@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
-ms.reviewer: wameng
+ms.author: wameng
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5bcee3b4c51880740715575b18fd7a4dbf87e6d0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 202ea22d290be04e54ce9676b6b693162354607f
+ms.sourcegitcommit: d3eb07dcc72624a2d5cfc95c7ea9faaa2c1b6001
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269929"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "5654733"
 ---
 # <a name="define-and-manage-measures"></a>הגדרה וניהול של מדדים
 
@@ -72,8 +72,8 @@ ms.locfileid: "5269929"
    1. בחר **ערוך ממדים** כדי להוסיף תכונות נתונים שברצונך לקבץ לפיהן את ערכי המדד. לדוגמה, עיר או מגדר. כברירת מחדל, הממד *מזהה לקוח* נבחר כדי ליצור *מדדים ברמת לקוח*. באפשרותך להסיר את ממד ברירת המחדל אם ברצונך ליצור *מדדים ברמת עסק*.
    1. בחר **בוצע** כדי להוסיף את הממדים למדד.
 
-1. אם קיימים נתיבים מרובים בין ישות הנתונים שמיפית לישות 'לקוח', עליך לבחור באחד מ[נתיבי קשר הישות](relationships.md) שנקבעו. תוצאות המדידה עשויות להשתנות בהתאם לנתיב שנבחר.
-   1. בחר **העדפות נתונים** ובחר את נתיב הישות שיש להשתמש בו לזיהוי המדד שלך.
+1. אם קיימים נתיבים מרובים בין ישות הנתונים שמיפית לישות *לקוח*, עליך לבחור באחד מ[נתיבי קשר הישות](relationships.md) שנקבעו. תוצאות המדידה עשויות להשתנות בהתאם לנתיב שנבחר. 
+   1. בחר **העדפות נתונים** ובחר את נתיב הישות שיש להשתמש בו לזיהוי המדד שלך. אם קיים נתיב אחד בלבד אל הישות *לקוח*, פקד זה לא יופיע.
    1. בחר **בוצע** כדי להחיל את הבחירה שלך. 
 
    :::image type="content" source="media/measures-data-preferences.png" alt-text="בחר את נתיב הישות עבור המדד.":::

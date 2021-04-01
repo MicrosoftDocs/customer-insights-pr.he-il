@@ -2,19 +2,19 @@
 title: קליטת נתונים בזמן אמת ומגבלות
 description: מידע כללי על יכולות בזמן אמת ב- Audience Insights.
 ms.date: 10/27/2020
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 7421ed9d2cb399d546815b2d1b0ea5ec51ca6b6d
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3c84cfe7441eb026c1fd45eda1f72421388d01d7
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270281"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598570"
 ---
 # <a name="real-time-data-ingestion-preview"></a>קליטת נתונים בזמן אמת (תצוגה מקדימה)
 
@@ -54,7 +54,7 @@ ms.locfileid: "5270281"
 
 ישנן שתי דרכים להתחבר לממשק ה- API בזמן אמת:
 
-- [באופן עקיף](#connect-via-the-dynamics-365-customer-insights-connector), באמצעות מחבר [Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/)
+- [באופן עקיף](#connect-via-the-dynamics-365-customer-insights-connector), באמצעות מחבר [Dynamics 365 Customer Insights](/connectors/customerinsights/)
 - [באופן ישיר](#connect-directly-to-the-real-time-api), עם קוד
 
 שתי הדרכים חולקות את התנאים המוקדמים הבאים:
@@ -66,13 +66,13 @@ ms.locfileid: "5270281"
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>התחברות דרך מחבר Dynamics 365 Customer Insights
 
-ה- API בזמן אמת יכול לקלוט נתונים מחבר Power Platform ייעודי, מחבר [Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/), מבלי לכתוב ולפרוס קוד כלשהו.    
-המחבר יכול לבצע את אותן פעולות בזמן אמת כמו ה- API. אתה זקוק לרישיון תקף עבור מחברים מתקדמים. לקבלת מידע נוסף, ראה [שאלות נפוצות בנוגע לרישוי Power Apps ו- Power Automate](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
+ה- API בזמן אמת יכול לקלוט נתונים מחבר Power Platform ייעודי, מחבר [Dynamics 365 Customer Insights](/connectors/customerinsights/), מבלי לכתוב ולפרוס קוד כלשהו.    
+המחבר יכול לבצע את אותן פעולות בזמן אמת כמו ה- API. אתה זקוק לרישיון תקף עבור מחברים מתקדמים. לקבלת מידע נוסף, ראה [שאלות נפוצות בנוגע לרישוי Power Apps ו- Power Automate](/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps ו/או Power Automate](https://docs.microsoft.com/connectors/)
-- [יישומים לוגיים של Azure](https://docs.microsoft.com/azure/connectors/apis-list)
+- Power Platform [Power Apps ו/או Power Automate](/connectors/)
+- [יישומים לוגיים של Azure](/azure/connectors/apis-list)
 
-לקבלת פרטים אודות יצירת זרימות, עיין ב[תיעוד Power Automate](https://docs.microsoft.com/power-automate/).
+לקבלת פרטים אודות יצירת זרימות, עיין ב[תיעוד Power Automate](/power-automate/).
 
 ## <a name="connect-directly-to-the-real-time-api"></a>התחברות ישירות לממשק ה- API בזמן אמת
 

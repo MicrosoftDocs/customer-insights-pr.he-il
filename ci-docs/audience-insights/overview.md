@@ -2,19 +2,19 @@
 title: מבט כולל על Audience insights עבור Dynamics 365 Customer Insights
 description: מבט כולל על Audience insights עבור Dynamics 365 Customer Insights.
 ms.date: 01/18/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: overview
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 735aae12abebd2d6d9b6aedb5835164834f480c0
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: 146994b739748c615ca002add4e64216da6c1dea
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5476996"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598631"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>מבט כולל על Audience insights עבור Dynamics 365 Customer Insights
 
@@ -25,7 +25,7 @@ Audience insights עוזר לך לבנות הבנה מעמיקה יותר של �
 - **למנוע מאגרי נתונים מבודדים ולאחד נתוני לקוחות**
 
   - חבר ואחד את הנתונים שלך בקלות - שלב נתונים של עסקאות, תצפיות ואופני פעולה [ממקורות נתונים פופולריים על-ידי שימוש במחברים שנבנו מראש](data-sources.md).
-  - בצע טרנספורמציה חכמה של נתוני לקוחות - בנה פרופילי לקוחות מאוחדים התואמים ל- [Common Data Model](https://docs.microsoft.com/common-data-model/). פענח את זהויות הלקוחות בעזרת המלצות המונעות על-ידי AI/ML.
+  - בצע טרנספורמציה חכמה של נתוני לקוחות - בנה פרופילי לקוחות מאוחדים התואמים ל- [Common Data Model](/common-data-model/). פענח את זהויות הלקוחות בעזרת המלצות המונעות על-ידי AI/ML.
 
 - **להעשיר באמצעות בינת קהל הנכללת ב- Microsoft Graph**
 
@@ -42,7 +42,7 @@ Audience insights עוזר לך לבנות הבנה מעמיקה יותר של �
 - **אנליסטים של נתונים / מנהלי מערכת:**
 
   - קבל גישה לאוסף עשיר של מחברים כדי לעבד את כל נתוני הלקוחות שלך.
-  - היכולת לאחד נתוני לקוחות ולהפוך אותם לתבנית [Common Data Model](https://docs.microsoft.com/common-data-model/).
+  - היכולת לאחד נתוני לקוחות ולהפוך אותם לתבנית [Common Data Model](/common-data-model/).
   - העשר את מידע הלקוחות בעזרת תובנות מבינת קהל הנכללת ב- Microsoft Graph, כגון זיקה למותג ותחומי עניין.
   - תצורת "לחיצות לא קוד" וחוויית איתור באגים כדי לסייע להגדיר את Audience Insights בקלות ולזהות בעיות אפשריות.
   - נקה ותקנן נתוני לקוחות בין מקורות שונים בעזרת המלצות המופעלות על-ידי AI.  
