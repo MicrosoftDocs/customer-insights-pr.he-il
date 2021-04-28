@@ -1,67 +1,35 @@
 ---
 title: ייצוא נתוני Customer Insights אל Google Ads
-description: למד כיצד לקבוע את תצורת החיבור אל Google Ads.
-ms.date: 11/18/2020
-ms.reviewer: mhart
+description: למד כיצד להגדיר את החיבור ולייצא אל Google Ads.
+ms.date: 03/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: phkieffer
 ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6d9a25af3913e755cccec745c532b35aef3cccf9
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: f4c094e486577d00d8c0c64e8527829820b335f6
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598248"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759694"
 ---
-# <a name="connector-for-google-ads-preview"></a>מחבר עבור Google Ads‏ (Preview)
+# <a name="export-segments-to-google-ads-preview"></a>ייצוא פלחים אל Google Ads‏ (Preview)
 
 יצא פלחים של פרופילי לקוחות מאוחדים אל רשימת קהלים של Google Ads והשתמש בהם כדי לפרסם ב- Google Search‏, Gmail, YouTube, ו- Google Display Network. 
 
-## <a name="prerequisites"></a>דרישות מוקדמות
+## <a name="prerequisites-for-connection"></a>דרישות מוקדמות לחיבור
 
 -   יש לך [חשבון Google Ads](https://ads.google.com/) ואישורי מנהל מערכת מתאימים.
+-   יש לך [אסימון מפתח Google Ads מאושר](https://developers.google.com/google-ads/api/docs/first-call/dev-token) 
+-   אתה מקיים את הדרישות של [מדיניות התאמת הלקוח](https://support.google.com/adspolicy/answer/6299717)
+-   אתה מקיים את הדרישות של [גדלי רשימת שיווק מחדש](https://support.google.com/google-ads/answer/7558048) 
+
 -   קיימים קהלים ב- Google Ads ומזהים מתאימים. למידע נוסף, ראה [קהלי Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
 -   יש לך [פלחים מוגדרים](segments.md)
 -   פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדות המייצגים כתובת דוא"ל, שם פרטי ושם משפחה
-
-## <a name="connect-to-google-ads"></a>התחבר ל- Google Ads
-
-1. עבור אל **מנהל** > **יעדי ייצוא**.
-
-1. תחת **Google Ads**, בחר **הגדר**.
-
-1. תן ליעד הייצוא שלך שם הניתן לזיהוי בשדה **שם תצוגה**.
-
-1. הזן את **[מזהה הלקוח של Google Ads](https://support.google.com/google-ads/answer/1704344)**.
-
-1. הזן את **[אסימון המפתח המאושר של Google Ads](https://developers.google.com/google-ads/api/docs/first-call/dev-token)**.
-
-1. בחר **אני מסכים** כדי לאשר **פרטיות ותאימות נתונים**.
-
-1. הזן את **[מזהה קהל Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** ובחר **התחבר** כדי לאתחל את החיבור אל Google Ads.
-
-1. בחר **בצע אימות באמצעות Google Ads** וספק את אישורי Google Ads שלך.
-
-1. בחר **הוסף את עצמך כמשתמש ייצוא** וספק את אישורי Customer Insights שלך.
-
-   :::image type="content" source="media/export-segments-googleads.PNG" alt-text="יצא צילום מסך עבור חיבור Google Ads":::
-
-1. בחר **הבא** להגדרת התצורה של הייצוא.
-
-## <a name="configure-the-connector"></a>קביעת תצורת המחבר
-
-1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. חזור על אותם שלבים עבור השדות **שם פרטי** ו **שם משפחה**.
-
-1. בחר את הפלחים שברצונך לייצא. באפשרותך לייצא עד מיליון פרופילי לקוחות בסך הכל ל- Google Ads.
-
-1. בחר **שמור**.
-
-## <a name="export-the-data"></a>ייצוא הנתונים
-
-באפשרותך [לייצא נתונים לפי דרישה](export-destinations.md). הייצוא יפעל גם בכל [רענון מתוזמן](system.md#schedule-tab). ב- Google Ads, באפשרותך למצוא כעת את הפלחים שלך תחת [קהלי Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en/).
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
@@ -69,6 +37,48 @@ ms.locfileid: "5598248"
 - הייצוא ל- Google Ads מוגבל לפלחים.
 - ייצוא פלחים עם מיליון פרופילים בסך הכל עשוי להימשך עד חמש דקות בשל מגבלות בצד הספק. 
 - ההתאמה ב- Google Ads יכולה להימשך עד 48 שעות.
+
+## <a name="set-up-connection-to-google-ads"></a>הגדרת חיבור אל Google Ads
+
+1. עבור אל **ניהול** > **חיבורים**.
+
+1. בחר **הוסף חיבור** ובחר **Google Ads** כדי לקבוע את תצורת החיבור.
+
+1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**. השם וסוג החיבור מתארים חיבור זה. מומלץ לבחור שם המסביר את המטרה והיעד של החיבור.
+
+1. בחר מי יכול להשתמש בחיבור זה. אם לא תנקוט שום פעולה, ברירת המחדל תהיה מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
+
+1. הזן את **[מזהה הלקוח של Google Ads](https://support.google.com/google-ads/answer/1704344)**.
+
+1. הזן את **[אסימון המפתח המאושר של Google Ads](https://developers.google.com/google-ads/api/docs/first-call/dev-token)**.
+
+1. בחר **אני מסכים** כדי לאשר **פרטיות ותאימות נתונים**.
+
+1. בחר **בצע אימות באמצעות Google Ads** וספק את אישורי Google Ads שלך.
+
+1. בחר **הוסף את עצמך כמשתמש ייצוא** וספק את אישורי Customer Insights שלך.
+
+1. בחר **שמור** כדי להשלים את החיבור. 
+
+## <a name="configure-an-export"></a>קביעת תצורה של ייצוא
+
+באפשרותך לקבוע תצורת ייצוא זה אם יש לך גישה לחיבור מסוג זה. לקבלת מידע נוסף, ראה [הרשאות הדרושות לקביעת תצורה של ייצוא](export-destinations.md#set-up-a-new-export).
+
+1. עבור אל **נתונים** > **פעולות ייצוא**.
+
+1. כדי ליצור ייצוא חדש, בחר **הוסף יעד**.
+
+1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע Google Ads. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
+
+1. הזן את **[מזהה קהל Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** ובחר **התחבר** כדי לאתחל את החיבור אל Google Ads.
+
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. חזור על אותם שלבים עבור השדות **שם פרטי** ו **שם משפחה**.
+
+1. בחר את הפלחים שברצונך לייצא. באפשרותך לייצא עד מיליון פרופילי לקוחות בסך הכל ל- Google Ads.
+
+שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
+
+הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
 
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 

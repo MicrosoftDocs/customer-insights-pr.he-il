@@ -1,6 +1,6 @@
 ---
-title: ייצוא נתוני Customer Insights אל AdRoll
-description: למד כיצד להגדיר את החיבור ולייצא אל AdRoll.
+title: ייצוא נתוני Customer Insights אל RollWorks
+description: למד כיצד להגדיר את החיבור ולייצא אל RollWorks.
 ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,36 +9,36 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e8f4d4ee6b2c6cdec513b700641db568fa16076d
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: 4979f0147dea2270f11342c1bb6b0693f3c24aea
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5895960"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760543"
 ---
-# <a name="export-segment-lists-to-adroll-preview"></a>ייצוא רשימות פלחים אל AdRoll‏ (Preview)
+# <a name="export-segment-lists-to-rollworks-preview"></a>ייצוא רשימות פלחים אל RollWorks‏ (Preview)
 
-יצא פלחים של פרופילי לקוח מאוחדים אל AdRoll והשתמש בהם עבור פרסום. 
+יצא פלחים של פרופילי לקוחות מאוחדים אל RollWorks והשתמש בהם עבור פרסום. 
 
 ## <a name="prerequisites-for-a-connection"></a>דרישות מוקדמות לחיבור
 
--   יש לך [חשבון AdRoll](https://www.adroll.com/) ואישורי מנהל מערכת מתאימים.
+-   יש לך [חשבון RollWorks](https://www.rollworks.com/) ואישורי מנהל מערכת מתאימים.
 -   יש לך [פלחים מוגדרים](segments.md) ב- Audience Insights.
 -   פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדה המייצג כתובת דוא"ל.
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- באפשרותך לייצא עד 250,000 פרופילים לייצוא אל AdRoll.
-- אין באפשרותך לייצא פלחים עם פחות מ- 100 פרופילים ל- AdRoll. 
-- הייצוא ל- AdRoll מוגבל לפלחים.
-- ייצוא של עד 250,000 פרופילים ל- AdRoll יכול להימשך עד 10 דקות. 
-- מספר הפרופילים שתוכל לייצא ל- AdRoll תלוי ומוגבל בחוזה שלך עם AdRoll.
+- באפשרותך לייצא עד 250,000 פרופילים לכל ייצוא אל RollWorks.
+- אינך יכול לייצא פלחים עם פחות מ- 100 פרופילים אל RollWorks. 
+- הייצוא אל RollWorks מוגבל לפלחים.
+- ייצוא של עד 250,000 פרופילים ל- RollWorks יכול להימשך עד 10 דקות. 
+- מספר הפרופילים שבאפשרותך לייצא ל- RollWorks תלוי ומוגבל בחוזה שלך עם RollWorks.
 
-## <a name="set-up-connection-to-adroll"></a>הגדרת חיבור אל AdRoll
+## <a name="set-up-connection-to-rollworks"></a>הגדרת חיבור אל RollWorks
 
 1. עבור אל **ניהול** > **חיבורים**.
 
-1. בחר **הוסף חיבור** ובחר **AdRoll** כדי לקבוע את תצורת החיבור.
+1. בחר **הוסף חיבור** ובחר **RollWorks** כדי לקבוע את תצורת החיבור.
 
 1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**. השם וסוג החיבור מתארים חיבור זה. מומלץ לבחור שם המסביר את המטרה והיעד של החיבור.
 
@@ -46,9 +46,9 @@ ms.locfileid: "5895960"
 
 1. בחר **אני מסכים** כדי לאשר **פרטיות ותאימות נתונים**.
 
-1. בחר **התחבר** כדי לאתחל את החיבור אל AdRoll.
+1. בחר **התחבר** כדי לאתחל את החיבור ל- RollWorks.
 
-1. בחר **בצע אימות באמצעות AdRoll** וספק את אישורי מנהל המערכת שלך עבור AdRoll. 
+1. בחר **בצע אימות מול RollWorks** וספק את אישורי מנהל המערכת שלך עבור RollWorks.
 
 1. בחר **הוסף את עצמך כמשתמש ייצוא** וספק את אישורי Customer Insights שלך.
 
@@ -62,11 +62,11 @@ ms.locfileid: "5895960"
 
 1. כדי ליצור ייצוא חדש, בחר **הוסף יעד**.
 
-1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע AdRoll. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
+1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע RollWorks. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
 
-1. הזן את **מזהה מפרסם AdRoll** לקבלת מידע נוסף, ראה [פרופילי מפרס AdRoll](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
+1. הזן את **מזהה מפרסם RollWorks** [פריט ניתן לפרסום של RollWorks](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 
-3. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. ייצוא פלחים אל AdRoll הוא הכרחי.
+3. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. יש לייצא פלחים אל RollWorks.
 
 1. בחר את הפלחים שברצונך לייצא. בחר פלח עם 100 חברים לפחות. אין באפשרותך לייצא פלחים קטנים יותר. בנוסף, הגודל המרבי של פלח לייצוא הוא 250,000 חברים לייצוא. 
 
@@ -79,6 +79,6 @@ ms.locfileid: "5895960"
 
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל AdRoll, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אבל אתה אחראי לוודא ש- AdRoll עומדת בכל התחייבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
+כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל RollWorks, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, לרבות נתונים שעשויים להיות רגישים, כגון נתונים אישיים. Microsoft תעביר נתונים כאלה בהנחייתך, אך אתה אחראי להבטיח ש- RollWorks עומד בכל מחויבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 
 מנהל המערכת של Dynamics 365 Customer Insights שלך יכול להסיר יעד ייצוא זה בכל עת כדי להפסיק את השימוש בפונקציונליות זו.

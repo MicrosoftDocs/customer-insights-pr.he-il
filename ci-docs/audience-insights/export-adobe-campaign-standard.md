@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights אל Adobe Campaign Standard
 description: למד כיצד להשתמש ב- audience insights ב- Adobe Campaign Standard.
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: a5d0154c3d7c473dcba03fac0847bafcf97de2f2
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: b6c010d84119c2fa8b3ef99017c65f9939bf28c4
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596316"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760282"
 ---
 # <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>שימוש בפלחי Customer Insights ב- Adobe Campaign Standard (preview)‎
 
@@ -48,15 +48,21 @@ ms.locfileid: "5596316"
 
 ## <a name="export-your-target-audience"></a>ייצוא קהל היעד שלך
 
+### <a name="configure-a-connection"></a>קביעת תצורה של חיבור
+
 לאחר שקהל היעד שלנו זוהה, נוכל להגדיר את הייצוא מ- audience insights לחשבון אחסון Blob של Azure.
 
-1. ב- audience insights, עבור אל **ניהול** > **יעדי ייצוא**.
+1. בתובנות קהלים, עבור אל **ניהול** > **חיבורים**.
 
-1. באריח **Adobe Campaign**, בחר **הגדר**.
+1. בחר **הוסף חיבור** ובחר **Adobe Campaign** כדי לקבוע את תצורת החיבור או בחר **הגדר** באריח **Adobe Campaign**
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="אריח תצורה עבור Adobe Campaign Standard.":::
 
-1. ספק **שם תצוגה** עבור יעד ייצוא חדש זה והזן את **שם החשבון**, **מפתח החשבון** ו **הגורם המכיל** של חשבון אחסון Blob של Azure שאליו ברצונך לייצא את הפלח.  
+1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**. השם וסוג החיבור מתארים חיבור זה. מומלץ לבחור שם המסביר את המטרה והיעד של החיבור.
+
+1. בחר מי יכול להשתמש בחיבור זה. אם לא תנקוט שום פעולה, ברירת המחדל תהיה מנהלי מערכת. לקבלת מידע נוסף, ראה [הרשאות הדרושות לקביעת תצורה של ייצוא](export-destinations.md#set-up-a-new-export).
+
+1. הזן את **שם חשבון**, **מפתח חשבון** ו **גורם מכיל** של חשבון אחסון Blob של Azure שלך שאליו ברצונך לייצא את הפלח.  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="צילום מסך של תצורת חשבון האחסון. "::: 
 
@@ -64,7 +70,17 @@ ms.locfileid: "5596316"
 
    - כדי ללמוד כיצד ליצור גורם מכיל, ראה [יצירת גורם מכיל](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
-1. בחר **הבא**.
+1. בחר **שמור** כדי להשלים את החיבור.
+
+### <a name="configure-an-export"></a>קביעת תצורה של ייצוא
+
+באפשרותך לקבוע תצורת ייצוא זה אם יש לך גישה לחיבור מסוג זה. לקבלת מידע נוסף, ראה [הרשאות הדרושות לקביעת תצורה של ייצוא](export-destinations.md#set-up-a-new-export).
+
+1. עבור אל **נתונים** > **פעולות ייצוא**.
+
+1. כדי ליצור ייצוא חדש, בחר **הוסף ייצוא**.
+
+1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע Adobe Campaign. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
 
 1. בחר את הפלח שברצונך לייצא. בדוגמה זו, זהו **ChurnProneCustomers**.
 
@@ -83,11 +99,9 @@ ms.locfileid: "5596316"
 
 1. בחר **שמור**.
 
-לאחר שמירת יעד הייצוא, תמצא אותו ב **ניהול** > **פעולות ייצוא** > **יעדי הייצוא שלי**.
+לאחר שמירת יעד הייצוא, תמצא אותו תחת **נתונים** > **פעולות ייצוא**.
 
-:::image type="content" source="media/export-destination-adobe-campaign-standard.png" alt-text="צילום מסך עם רשימת פעולות ייצוא ופלח לדוגמה מודגשים.":::
-
-כעת באפשרותך [לייצא את הפלח לפי דרישה](export-destinations.md#export-data-on-demand). הייצוא יפעל גם בכל [רענון מתוזמן](system.md).
+כעת באפשרותך [לייצא את הפלח לפי דרישה](export-destinations.md#run-exports-on-demand). הייצוא יפעל גם בכל [רענון מתוזמן](system.md).
 
 > [!NOTE]
 > ודא שמספר הרשומות בפלח המיוצא לא חורג ממגבלה המותרת של רישיון Adobe Campaign Standard.

@@ -9,12 +9,12 @@ ms.topic: overview
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 146994b739748c615ca002add4e64216da6c1dea
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 8fdfe16d609fbebd53703b56f4e0252125bedf8f
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598631"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896466"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>מבט כולל על Audience insights עבור Dynamics 365 Customer Insights
 
@@ -27,9 +27,9 @@ Audience insights עוזר לך לבנות הבנה מעמיקה יותר של �
   - חבר ואחד את הנתונים שלך בקלות - שלב נתונים של עסקאות, תצפיות ואופני פעולה [ממקורות נתונים פופולריים על-ידי שימוש במחברים שנבנו מראש](data-sources.md).
   - בצע טרנספורמציה חכמה של נתוני לקוחות - בנה פרופילי לקוחות מאוחדים התואמים ל- [Common Data Model](/common-data-model/). פענח את זהויות הלקוחות בעזרת המלצות המונעות על-ידי AI/ML.
 
-- **להעשיר באמצעות בינת קהל הנכללת ב- Microsoft Graph**
+- **העשרה בעזרת בינת הקהל שלך**
 
-  - בנה פרופילי לקוחות עשירים יותר על-ידי [שילוב בינת קהל הנכללת ב- Microsoft Graph](enrichment-microsoft-graph.md).  
+  - בנה פרופילי לקוחות עשירים יותר על-ידי [שילוב נתונים מועשרים](enrichment-hub.md).  
 
 - **להעצים את התהליכים העסקיים וחוויות לקוח מותאמות אישית**
 
@@ -43,7 +43,7 @@ Audience insights עוזר לך לבנות הבנה מעמיקה יותר של �
 
   - קבל גישה לאוסף עשיר של מחברים כדי לעבד את כל נתוני הלקוחות שלך.
   - היכולת לאחד נתוני לקוחות ולהפוך אותם לתבנית [Common Data Model](/common-data-model/).
-  - העשר את מידע הלקוחות בעזרת תובנות מבינת קהל הנכללת ב- Microsoft Graph, כגון זיקה למותג ותחומי עניין.
+  - העשר את מידע הלקוחות בעזרת תובנות מבינת קהל, כגון זיקה למותג ותחומי עניין.
   - תצורת "לחיצות לא קוד" וחוויית איתור באגים כדי לסייע להגדיר את Audience Insights בקלות ולזהות בעיות אפשריות.
   - נקה ותקנן נתוני לקוחות בין מקורות שונים בעזרת המלצות המופעלות על-ידי AI.  
 

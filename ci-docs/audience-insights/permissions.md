@@ -1,7 +1,7 @@
 ---
 title: ניהול הרשאות משתמש
 description: קבל מידע אודות הרשאות ותפקידי משתמשים.
-ms.date: 10/27/2020
+ms.date: 03/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: e58bb1a3bd4c0920ff984daffabbf16162185f3d
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 8638489dba908d4504278916d2c28454e3ea9e18
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595703"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760374"
 ---
 # <a name="user-permissions"></a>הרשאות משתמשים
 
@@ -31,7 +31,7 @@ ms.locfileid: "5595703"
 - הצג וחקור חקור את דף **העשרה**.
 - חקור וייצא ישויות בדף **ישויות**.
 - הצגת המצב של תהליכי מערכת בדף **מערכת**.
-- יצא פלחים מהדף **פלחים**.
+- הצג פעולות ייצוא בדף **פעולות ייצוא**.
 - התקן והשתמש בלוח המחוונים **Power BI Customer Insights**.
 
 ## <a name="contributor"></a>משתתף
@@ -43,6 +43,7 @@ ms.locfileid: "5595703"
 - צור פלחים באמצעות הדף **פלחים**.
 - צור מדידות בדף **מדידות**.
 - ניהול תצורה והעשרת פרופילי לקוחות מהדף **העשרה** (להעשרה ראשונה בלבד).
+- נהל וצור פעולות ייצוא בהתבסס על חיבורים ששותפו עם משתתפים. [קבל מידע נוסף אודות האופן שבו מנהלי מערכת מאפשרים למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 ## <a name="administrator"></a>מנהל מערכת
 
@@ -50,8 +51,9 @@ ms.locfileid: "5595703"
 - שנה הגדרות בדף **מערכת**, כולל שפת העבודה ולוחות הזמנים לרענון עבור תהליכי המערכת.
 - הצג והוסף הרשאות בדף **הרשאות**.
 - קבע הגדרות חיפוש וסינון עבור הדף 'לקוחות' בדף **אינדקס חיפוש וסינון** (נגיש דרך דף **לקוחות**).
-- הגדר את יעדי הפלחים של Dynamics 365 Sales בדף **יעדי ייצוא**.
+- נהל חיבורים ואפשר אותם עבור תפקידי משתמש אחרים בדף **חיבורים**.
 - ניהול תצורה והעשרת פרופילי לקוחות מהדף **העשרה** (לכל ההעשרות).
+- נהל וצור פעולות ייצוא בדף **פעולות ייצוא**.
 - התקן את **תוספת כרטיס לקוחות** והשתמש בה.
 - הוסף והשתמש ב **מחבר Power Apps**.
 - אפשר שימוש ב[ממשקי API של Customer Insights](apis.md).

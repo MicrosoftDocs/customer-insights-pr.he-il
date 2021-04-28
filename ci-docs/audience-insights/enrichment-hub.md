@@ -1,7 +1,7 @@
 ---
 title: העשרת פרופילי לקוחות מאוחדים
 description: השתמש ביכולות כדי להעשיר את נתוני הלקוחות שלך.
-ms.date: 11/02/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 36e6f7f8fcd64fc2591e913910918b83bf27567b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 10c338b89a6f9971912d05986c105cba1221b01b
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597696"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896006"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>העשרה לפרופילי לקוחות (תצוגה מקדימה)
 
@@ -27,8 +27,8 @@ ms.locfileid: "5597696"
 
 בכרטיסיה **גלה**, תוכל למצוא את ההעשרה הבאה:
 
-- [מותגים](enrichment-microsoft-graph.md) מסופקים על ידי Microsoft Graph
-- [תחומי עניין](enrichment-microsoft-graph.md) מסופקים על-ידי Microsoft Graph.
+- [מותגים](enrichment-microsoft.md) שסופקו על-ידי Microsoft
+- [תחומי עניין](enrichment-microsoft.md) שסופקו על-ידי Microsoft
 - [נתוני החברה](enrichment-leadspace.md) מסופקים על-ידי Leadspace
 - [נתונים דמוגרפיים](enrichment-experian.md) מסופקים על-ידי Experian
 - [נתוני מיקום](enrichment-here.md) מסופקים על-ידי HERE Technologies
@@ -40,7 +40,7 @@ ms.locfileid: "5597696"
 
 עבור אל **העשרה שלי** כדי לראות את כל ההעשרה המוגדרת. כל העשרה מיוצגת כשורה הכוללת מידע נוסף על ההעשרה.
 
-בחר העשרה כדי לראות את האפשרויות הזמינות. לחלופין, ניתן לבחור בשלוש נקדות (...) בפריט של רשימה כדי לראות את האפשרויות.
+בחר העשרה כדי לראות את האפשרויות הזמינות. באפשרותך גם לבחור את שלוש הנקודות (...) בפריט רשימה כדי לראות את האפשרויות.
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="אפשרויות לניהול ההעשרות ברשימת ההעשרות":::
 
@@ -52,5 +52,12 @@ ms.locfileid: "5597696"
 
 באפשרותך להפעיל פעולות העשרה מרובות בבת אחת או לבטלן על ידי בחירתן מתוך רשימה. אפשרויות תצוגה ועריכה אינן זמינות כפעולה בצובר והן פועלות רק עבור העשרה אחת בכל פעם.
 
+## <a name="enrichments-and-connections"></a>העשרות וחיבורים
+
+העשרות צד שלישי מוגדרות באמצעות [חיבורים](connections.md), אשר מנהל מערכת מגדיר עם אישורים ומספק הסכמה עבור העברות נתונים. החיבור יכול לשמש את מנהלי המערכת והמשתתפים לקביעת תצורה של העשרות.  
+
+## <a name="multiple-enrichments-of-the-same-type"></a>העשרות מרובות מאותו סוג
+
+הישות שיש להעשיר מצוינת במהלך קביעת תצורת ההעשרה, אשר מאפשרת לך להעשיר רק ערכת משנה של הפרופילים שלך. לדוגמה, העשר נתונים רק עבור פלח ספציפי. באפשרותך לקבוע תצורה של מספר העשרות מאותו סוג ולהשתמש מחדש באותו חיבור. לחלק מההעשרות יהיו מגבלות על מספר ההעשרות מאותו הסוג שניתן ליצור. ניתן לראות את המגבלות והשימוש הנוכחי בדף **העשרה**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

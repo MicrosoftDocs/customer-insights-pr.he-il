@@ -1,7 +1,7 @@
 ---
 title: יצירה וניהול של סביבות
 description: למד כיצד להירשם לשירות וכיצד לנהל סביבות.
-ms.date: 02/01/2021
+ms.date: 03/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 1c2dfdd2889b5cb6c5285b4d7cc7f52a3d6de4d1
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 8cc1401251ed7c45c598bd4a8fb33a9709fabbc8
+ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598294"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5887987"
 ---
 # <a name="manage-environments"></a>ניהול סביבות
 
@@ -44,6 +44,9 @@ ms.locfileid: "5598294"
 
 קיימות שתי דרכים ליצירת סביבה חדשה. אתה יכול לציין הגדרה חדשה לחלוטין או שתוכל להעתיק כמה הגדרות תצורה מסביבה קיימת.
 
+> [!NOTE]
+> ארגונים יכולים ליצור *שתי* סביבות עבור כל רישיון Customer Insights. אם הארגון שלך רוכש יותר מרישיון אחד, [צור קשר עם צוות התמיכה שלנו](https://go.microsoft.com/fwlink/?linkid=2079641) כדי להגדיל את מספר הסביבות הזמינות. לקבלת מידע נוסף על קיבולת והרחבת קיבולת, הורד את [מדריך הרישוי של Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544) .
+
 כדי ליצור סביבה:
 
 1. בחר את בורר **הסביבה** בכותרת היישום.
@@ -55,14 +58,14 @@ ms.locfileid: "5598294"
 
 1. בתוך הדו-שיח **צור סביבה חדשה**, בחר **סביבה חדשה**.
 
-   אם ברצונך [להעתיק נתונים מהסביבה הנוכחית](#additional-considerations-for-copy-configuration-preview), בחר **העתק מהסביבה הקיימת**. תראה רשימה של כל הסביבות הזמינות בארגון שלך, שממנה אתה יכול להעתיק נתונים.
+   אם ברצונך [להעתיק נתונים מהסביבה הנוכחית](#considerations-for-copy-configuration-preview), בחר **העתק מהסביבה הקיימת**. תראה רשימה של כל הסביבות הזמינות בארגון שלך, שממנה אתה יכול להעתיק נתונים.
 
 1. ציין את הפרטים הבאים:
    - **שם**: השם עבור סביבה זו. שדה זה כבר מלא אם העתקת מסביבה קיימת, אך אתה יכול לשנות אותו.
    - **אזור**: האזור שבו השירות נפרס ומתארח.
    - **סוג**: בחר אם ברצונך ליצור סביבת ייצור או ארגז חול.
 
-2. באופן אופציונלי, באפשרותך לבחור **הגדרות מתקדמות**:
+1. באופן אופציונלי, באפשרותך לבחור **הגדרות מתקדמות**:
 
    - **שמור את כל הנתונים ב-**: מציין היכן ברצונך לאחסן את נתוני הפלט שנוצרים מ- Customer Insights. יהיו לך שתי אפשרויות: **אחסון Customer Insights** (‏Azure Data Lake המנוהל על-ידי צוות Customer Insights) ו- **Azure Data Lake Storage Gen2** (‏Azure Data Lake Storage משלך). כברירת מחדל, אפשרות האחסון של Customer Insights נבחרת.
 
@@ -75,20 +78,20 @@ ms.locfileid: "5598294"
 
    - עבור האפשרות Azure Data Lake Storage Gen2, באפשרותך לבחור בין שימוש באפשרות מבוססת-משאב לאפשרות מבוססת-מנוי עבור אימות. לקבלת מידע נוסף, ראה [חיבור audience insights לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure](connect-service-principal.md). השם **גורם מכיל** לא ניתן לשינוי ויהיה "customerinsights".
    
-   - אם ברצונך להשתמש ב [חיזויים](predictions.md) או לקבוע תצורה של שיתוף נתונים עם יישומים ופתרונות בהתבסס על Microsoft Dataverse, ספק את כתובת ה- URL של סביבת Microsoft Dataverse תחת **קבע תצורה של שיתוף נתונים באמצעות Microsoft Dataverse והפוך יכולות נוספות לזמינות**. בחר **הפוך שיתוף נתונים לזמין** כדי לשתף נתוני פלט של Customer Insights עם Data Lake מנוהל של Microsoft Dataverse.
+   - אם אתה רוצה להשתמש ב [חיזויים](predictions.md), קבע תצורה של שיתוף נתונים עם יישומים ופתרונות בהתבסס על Microsoft Dataverse, או הפוך קליטת נתונים לזמינה מתוך מקורות הנתונים המקומיים, ספק את כתובת ה- URL של סביבת Microsoft Dataverse תחת **קבע תצורת שיתוף נתונים עם Microsoft Dataverse והפוך יכולות נוספות לזמינות**. בחר **הפוך שיתוף נתונים לזמין** כדי לשתף נתוני פלט של Customer Insights עם Data Lake מנוהל של Microsoft Dataverse.
 
      > [!NOTE]
      > - שיתוף נתונים עם Data Lake מנוהל של Microsoft Dataverse אינו נתמך כעת כשאתה שומר את כל הנתונים ב- Azure Data Lake Storage שלך.
      > - [חיזוי של ערכים חסרים בישות](predictions.md) אינו נתמך כעת כשאתה הופך שיתוף נתונים לזמין עם Data Lake מנוהל של Microsoft Dataverse.
 
      > [!div class="mx-imgBorder"]
-     > ![אפשרויות קביעת תצורה כדי להפוך שיתוף נתונים לזמין באמצעות Microsoft Dataverse](media/Datasharing-with-DataverseMDL.png)
+     > ![אפשרויות קביעת תצורה כדי להפוך שיתוף נתונים לזמין באמצעות Microsoft Dataverse](media/datasharing-with-DataverseMDL.png)
 
    כאשר אתה מפעיל תהליכים, כגון קליטת נתונים או יצירת פלחים, תיקיות מתאימות ייווצרו בחשבון האחסון שציינת לעיל. קבצי נתונים וקבצי model.json ייווצרו ויתווספו לתיקיות המשנה בהתאמה לפי התהליך שאתה מפעיל.
 
    אם אתה יוצר סביבות מרובות של Customer Insights ובוחר לשמור את ישויות הפלט מסביבות אלה בחשבון האחסון שלך, תיקיות נפרדות ייווצרו עבור כל סביבה עם ci_<environmentid> בגורם המכיל.
 
-### <a name="additional-considerations-for-copy-configuration-preview"></a>שיקולים נוספים לתצורת העתק (Preview)
+### <a name="considerations-for-copy-configuration-preview"></a>שיקולים לתצורת העתקה (Preview)
 
 הגדרות התצורה הבאות מועתקות:
 
@@ -136,6 +139,18 @@ ms.locfileid: "5598294"
 4. אם סביבה מוגדרת לאחסון נתונים ב- Azure Data Lake Storage Gen2, באפשרותך לעדכן את **מפתח חשבון**. עם זאת, אינך יכול לשנות את **שם החשבון** או השם של **גורם מכיל**.
 
 5. לחלופין, באפשרותך לעדכן מחיבור מבוסס-מפתח חשבון לחיבור מבוסס-משאב או מבוסס-מנוי. לאחר השדרוג, לא תוכל לחזור למפתח החשבון לאחר העדכון. לקבלת מידע נוסף, ראה [חיבור audience insights לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure](connect-service-principal.md). אין באפשרותך לשנות מידע **גורם מכיל** בעת עדכון החיבור.
+
+6. לחלופין, באפשרותך לספק כתובת URL של סביבת Microsoft Dataverse תחת **קביעת תצורת שיתוף נתונים עם Microsoft Dataverse והפיכת יכולות נוספות לזמינות**. יכולות אלה כוללות שיתוף נתונים עם יישומים ופתרונות בהתבסס על Microsoft Dataverse, קליטת נתונים ממקורות נתונים מקומיים או השימוש ב[חיזויים](predictions.md). בחר **הפוך שיתוף נתונים לזמין** כדי לשתף נתוני פלט של Customer Insights עם Data Lake מנוהל של Microsoft Dataverse.
+
+   > [!NOTE]
+   > - שיתוף נתונים עם Data Lake מנוהל של Microsoft Dataverse אינו נתמך כעת כשאתה שומר את כל הנתונים ב- Azure Data Lake Storage שלך.
+   > - [חיזוי של ערכים חסרים בישות](predictions.md) אינו נתמך כעת כשאתה הופך לזמין שיתוף נתונים עם Data Lake מנוהל של Microsoft Dataverse.
+
+   כשתהפוך שיתוף נתונים עם Microsoft Dataverse לזמין, יופעל רענון מלא של מקורות הנתונים שלך ותהליכים אחרים. אם תהליכים פועלים כעת ומוצבים בתור, לא תראה אפשרות להפוך שיתוף נתונים עם Microsoft Dataverse לזמין. באפשרותך להמתין להשלמת התהליכים או לבטל אותם כדי להפוך שיתוף נתונים לזמין. 
+   
+   :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="אפשרויות קביעת תצורה כדי להפוך שיתוף נתונים לזמין עם Microsoft Dataverse.":::
+   
+   כאשר אתה מפעיל תהליכים, כגון קליטת נתונים או יצירת פלחים, תיקיות מתאימות ייווצרו בחשבון האחסון שציינת לעיל. קבצי נתונים וקבצי model.json ייווצרו ויתווספו לתיקיות המשנה המתאימות, בהתאם לתהליך שאתה מפעיל.
 
 ## <a name="reset-an-existing-environment"></a>איפוס סביבה קיימת
 

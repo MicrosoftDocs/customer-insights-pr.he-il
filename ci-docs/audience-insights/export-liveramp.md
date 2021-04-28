@@ -1,7 +1,7 @@
 ---
 title: ‏‎מחבר ‎LiveRamp‏‏‏‏
-description: למד כיצד לייצא נתונים אל LiveRamp.
-ms.date: 12/02/2020
+description: למד כיצד להגדיר את החיבור ואת הייצוא אל LiveRamp.
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,29 +9,31 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 6ef4388b0e8ba8bc5866807765d8a872d41c9c14
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 987457966fe1fc034d9e3cd2a1ce33902c7a84f4
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597558"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760328"
 ---
-# <a name="liverampreg-connector-preview"></a>מחבר LiveRamp&reg; (תצוגה מקדימה)
+# <a name="export-segments-to-liverampreg-preview"></a>ייצוא פלחים אל LiveRamp&reg;‏ (Preview)
 
-הפעל את הנתונים שלך ב- LiveRamp כדי להתחבר ליותר מ- 500 פלטפורמות במערכות אקולוגיות דיגיטליות, חברתיות ומערכות אקולוגיות של טלוויזיה. עבוד עם הנתונים שלך ב- LiveRamp כדי להתמקד, להשמיט ולהתאים אישית קמפיינים פרסומיים.
+הפעל את הנתונים שלך ב- LiveRamp כדי להתחבר ליותר מ- 500 פלטפורמות בעולם הדיגיטלי, החברתי ובעולם הטלוויזיות. עבוד עם הנתונים שלך ב- LiveRamp כדי להתמקד, להשמיט ולהתאים אישית קמפיינים פרסומיים.
 
-## <a name="prerequisites"></a>דרישות מוקדמות
+## <a name="prerequisites-for-a-connection"></a>דרישות מוקדמות לחיבור
 
 - כדי להשתמש במחבר זה אתה זקוק למנוי LiveRamp.
 - כדי לקבל מנוי, [צור קשר ישירות עם LiveRamp](https://liveramp.com/contact/). [קבל מידע נוסף אודות LiveRamp Onboarding](https://liveramp.com/our-platform/data-onboarding/).
 
-## <a name="connect-to-liveramp"></a>התחברות אל LiveRamp
+## <a name="set-up-connection-to-liveramp"></a>הגדרת חיבור אל LiveRamp
 
-1. ב- audience insights, עבור אל **ניהול** > **יעדי ייצוא**.
+1. עבור אל **ניהול** > **חיבורים**.
 
-1. באריח **LiveRamp**, בחר **הגדר**.
+1. בחר **הוסף חיבור** ובחר **LiveRamp** כדי לקבוע את תצורת החיבור.
 
-1. תן ליעד שלך שם הניתן לזיהוי בשדה **שם תצוגה**.
+1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**. השם וסוג החיבור מתארים חיבור זה. מומלץ לבחור שם המסביר את המטרה והיעד של החיבור.
+
+1. בחר מי יכול להשתמש בחיבור זה. אם לא תנקוט שום פעולה, ברירת המחדל תהיה מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. ספק **שם משתמש** וכן **סיסמה** עבור חשבון LiveRamp Secure FTP‏ (SFTP) שלך.
 אישורים אלה עשויים להיות שונים מאישור LiveRamp Onboarding.
@@ -40,15 +42,25 @@ ms.locfileid: "5597558"
 
 1. לאחר אימות מוצלח, ספק את הסכמתך עבור **פרטיות נתונים ותאימות** על-ידי בחירת תיבת הסימון **אני מסכים**.
 
-1. בחר **הבא** כדי להגדיר את מחבר LiveRamp.
+1. בחר **שמור** כדי להשלים את החיבור.
 
-## <a name="configure-the-connector"></a>קביעת תצורת המחבר
+## <a name="configure-an-export"></a>קביעת תצורה של ייצוא
+
+באפשרותך לקבוע תצורת ייצוא זה אם יש לך גישה לחיבור מסוג זה. לקבלת מידע נוסף, ראה [הרשאות הדרושות לקביעת תצורה של ייצוא](export-destinations.md#set-up-a-new-export).
+
+1. עבור אל **נתונים** > **פעולות ייצוא**.
+
+1. כדי ליצור ייצוא חדש, בחר **הוסף יעד**.
+
+1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע LiveRamp. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
 
 1. בשדה **בחר את מזהה המפתח שלך**, בחר **דואר אלקטרוני**, **שם וכתובת** או **טלפון** כדי לשלוח ל- LiveRamp עבור פענוח זהות.
+   > [!div class="mx-imgBorder"]
+   > ![מחבר LiveRamp עם מיפוי תכונות](media/export-liveramp-segments.png "מחבר LiveRamp עם מיפוי תכונות")
 
 1. מפה את התכונות המתאימות מישות הלקוח המאוחד שלך עבור מזהה המפתח שנבחר.
 
-1. בחר **הוסף תכונה** כדי למפות תכונות נוספות שיישלחו ל- LiveRamp.
+1. בחר **הוסף תכונה** כדי למפות תכונות נוספות לשליחה אל LiveRamp.
 
    > [!TIP]
    > שליחת תכונות מזהה מפתח נוספות ל- LiveRamp עשויה להשיג לך שיעור התאמה גבוה יותר.
@@ -57,13 +69,10 @@ ms.locfileid: "5597558"
 
 1. בחר **שמור**.
 
-> [!div class="mx-imgBorder"]
-> ![מחבר LiveRamp עם מיפוי תכונות](media/export-liveramp-segments.png "מחבר LiveRamp עם מיפוי תכונות")
+שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
 
-## <a name="export-the-data"></a>ייצוא הנתונים
+הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
 
-הייצוא יתחיל בקרוב אם כל הדרישות המוקדמות עבור ייצוא יושלמו. הייצוא יפעל גם בכל [רענון מתוזמן](system.md#schedule-tab).
-לאחר השלמת הייצוא בהצלחה, תוכל להיכנס ל- LiveRamp Onboarding כדי להפעיל ולהפיץ את הנתונים שלך.
 
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 
