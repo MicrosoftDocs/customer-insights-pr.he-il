@@ -1,7 +1,7 @@
 ---
-title: יעדי ייצוא
-description: יצא נתונים ונהל יעדי ייצוא.
-ms.date: 07/21/2020
+title: ייצוא נתונים מ- Customer Insights
+description: נהל פעולות ייצוא לשיתוף נתונים.
+ms.date: 03/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,102 +9,73 @@ ms.topic: conceptual
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5557442983f8c48cd46387009e0060beb6e764bb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 354ce9ef30fe918975d06290430996c84f8bd3f7
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596086"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896144"
 ---
-# <a name="export-destinations-preview-overview"></a><span data-ttu-id="5bbed-103">מבט כולל על יעדי ייצוא (Preview)</span><span class="sxs-lookup"><span data-stu-id="5bbed-103">Export destinations (preview) overview</span></span>
+# <a name="exports-preview-overview"></a><span data-ttu-id="7daea-103">מבט כולל על פעולות ייצוא (Preview)</span><span class="sxs-lookup"><span data-stu-id="7daea-103">Exports (preview) overview</span></span>
 
-<span data-ttu-id="5bbed-104">הדף **יעדי ייצוא** מציג את כל המיקומים שהגדרת לייצא נתונים אליהם.</span><span class="sxs-lookup"><span data-stu-id="5bbed-104">The **Export destinations** page shows you all locations you've set up to export data to.</span></span> <span data-ttu-id="5bbed-105">ניתן להוסיף יעדים חדשים לייצוא.</span><span class="sxs-lookup"><span data-stu-id="5bbed-105">You can also add new destinations for export.</span></span> <span data-ttu-id="5bbed-106">בנוסף, הוא מציג אפשרויות ייצוא הזמינות כעת.</span><span class="sxs-lookup"><span data-stu-id="5bbed-106">Additionally, it shows export currently available options.</span></span> <span data-ttu-id="5bbed-107">קבל סקירה מהירה, תיאור וגלה מה אפשר לעשות עם כל אפשרות להרחבה.</span><span class="sxs-lookup"><span data-stu-id="5bbed-107">Get a quick overview, description, and find out what you can do with each extensibility option.</span></span> <span data-ttu-id="5bbed-108">ייצא פרופילים, מדדים וקטעים מאוחדים ליישומים נתמכים שרלוונטיים לעסק שלך.</span><span class="sxs-lookup"><span data-stu-id="5bbed-108">Export unified profiles, measures, and segments to supported apps relevant for your business.</span></span>
+<span data-ttu-id="7daea-104">הדף **פעולות ייצוא** מציג לך את כל פעולות הייצוא שהוגדרו.</span><span class="sxs-lookup"><span data-stu-id="7daea-104">The **Exports** page shows you all configured exports.</span></span> <span data-ttu-id="7daea-105">פעולות ייצוא משתפות נתונים ספציפיים עם יישומים שונים.</span><span class="sxs-lookup"><span data-stu-id="7daea-105">Exports share specific data with various applications.</span></span> <span data-ttu-id="7daea-106">הן יכולות לכלול פרופילי לקוח או ישויות, תוכניות ופרטי מיפוי.</span><span class="sxs-lookup"><span data-stu-id="7daea-106">They can include customer profiles or entities, schemas, and mapping details.</span></span> <span data-ttu-id="7daea-107">כל ייצוא דורש [חיבור, שהוגדר על-ידי מנהל מערכת, לניהול אימות וגישה](connections.md).</span><span class="sxs-lookup"><span data-stu-id="7daea-107">Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md).</span></span>
 
-<span data-ttu-id="5bbed-109">עבור אל **ניהול** > **יעדי ייצוא** כדי למצוא את אפשרויות ההרחבה הבאות:</span><span class="sxs-lookup"><span data-stu-id="5bbed-109">Go to **Admin** > **Export destinations** to find the following extensibility options:</span></span>
+> [!NOTE]
+> <span data-ttu-id="7daea-108">עד מרץ 2021, פעולות ייצוא יצרו חיבור לשירות המתאים באופן אוטומטי.</span><span class="sxs-lookup"><span data-stu-id="7daea-108">Until March 2021, exports created a connection to the corresponding service automatically.</span></span> <span data-ttu-id="7daea-109">פעולות ייצוא דורשות כעת [חיבור, שנוצר ושותף על-ידי מנהל מערכת](connections.md) לפני שתוכל ליצור אותן.</span><span class="sxs-lookup"><span data-stu-id="7daea-109">Exports now require a [connection, created and shared by an administrator](connections.md) before you can create them.</span></span>
 
-- [<span data-ttu-id="5bbed-110">Adobe Campaign Standard</span><span class="sxs-lookup"><span data-stu-id="5bbed-110">Adobe Campaign Standard</span></span>](export-adobe-campaign-standard.md)
-- [<span data-ttu-id="5bbed-111">Adobe Experience Platform</span><span class="sxs-lookup"><span data-stu-id="5bbed-111">Adobe Experience Platform</span></span>](export-adobe-experience-platform.md)
-- [<span data-ttu-id="5bbed-112">AdRoll</span><span class="sxs-lookup"><span data-stu-id="5bbed-112">AdRoll</span></span>](export-adroll.md)
-- [<span data-ttu-id="5bbed-113">Autopilot</span><span class="sxs-lookup"><span data-stu-id="5bbed-113">Autopilot</span></span>](export-autopilot.md)
-- [<span data-ttu-id="5bbed-114">Azure Blob Storage</span><span class="sxs-lookup"><span data-stu-id="5bbed-114">Azure Blob Storage</span></span>](export-azure-blob-storage.md)
-- [<span data-ttu-id="5bbed-115">Azure Data Lake Storage Gen2</span><span class="sxs-lookup"><span data-stu-id="5bbed-115">Azure Data Lake Storage Gen2</span></span>](export-azure-data-lake-storage-gen2.md)
-- [<span data-ttu-id="5bbed-116">תוכנית Bot עבור Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="5bbed-116">Bot for Microsoft Teams</span></span>](export-teams-bot.md)
-- [<span data-ttu-id="5bbed-117">Customer Insights API</span><span class="sxs-lookup"><span data-stu-id="5bbed-117">Customer Insights API</span></span>](apis.md)
-- [<span data-ttu-id="5bbed-118">DotDigital</span><span class="sxs-lookup"><span data-stu-id="5bbed-118">DotDigital</span></span>](export-dotdigital.md)
-- [<span data-ttu-id="5bbed-119">Dynamics 365 Customer Service (תוספת כרטיס לקוח)</span><span class="sxs-lookup"><span data-stu-id="5bbed-119">Dynamics 365 Customer Service (Customer Card Add-in)</span></span>](customer-card-add-in.md)
-- [<span data-ttu-id="5bbed-120">Dynamics 365 Marketing</span><span class="sxs-lookup"><span data-stu-id="5bbed-120">Dynamics 365 Marketing</span></span>](export-dynamics365-marketing.md)
-- [<span data-ttu-id="5bbed-121">Dynamics 365 Sales</span><span class="sxs-lookup"><span data-stu-id="5bbed-121">Dynamics 365 Sales</span></span>](export-dynamics365-sales.md)
-- [<span data-ttu-id="5bbed-122">מרכז המכירות של Dynamics 365 (תוספת כרטיס לקוח)</span><span class="sxs-lookup"><span data-stu-id="5bbed-122">Dynamics 365 Sales Hub (Customer Card Add-in)</span></span>](customer-card-add-in.md)
-- [<span data-ttu-id="5bbed-123">Facebook Ads Manager</span><span class="sxs-lookup"><span data-stu-id="5bbed-123">Facebook Ads Manager</span></span>](export-facebook.md)
-- [<span data-ttu-id="5bbed-124">Google Ads</span><span class="sxs-lookup"><span data-stu-id="5bbed-124">Google Ads</span></span>](export-google-ads.md)
-- [<span data-ttu-id="5bbed-125">LiveRamp&reg;</span><span class="sxs-lookup"><span data-stu-id="5bbed-125">LiveRamp&reg;</span></span>](export-liveramp.md)
-- [<span data-ttu-id="5bbed-126">Mailchimp</span><span class="sxs-lookup"><span data-stu-id="5bbed-126">Mailchimp</span></span>](export-mailchimp.md)
-- [<span data-ttu-id="5bbed-127">Marketo</span><span class="sxs-lookup"><span data-stu-id="5bbed-127">Marketo</span></span>](export-marketo.md)
-- [<span data-ttu-id="5bbed-128">Power Automate</span><span class="sxs-lookup"><span data-stu-id="5bbed-128">Power Automate</span></span>](export-power-automate.md)
-- [<span data-ttu-id="5bbed-129">Power Apps</span><span class="sxs-lookup"><span data-stu-id="5bbed-129">Power Apps</span></span>](export-power-apps.md)
-- [<span data-ttu-id="5bbed-130">Power BI</span><span class="sxs-lookup"><span data-stu-id="5bbed-130">Power BI</span></span>](export-power-bi.md)
-- [<span data-ttu-id="5bbed-131">SendGrid</span><span class="sxs-lookup"><span data-stu-id="5bbed-131">SendGrid</span></span>](export-sendgrid.md)
-- [<span data-ttu-id="5bbed-132">SFTP</span><span class="sxs-lookup"><span data-stu-id="5bbed-132">SFTP</span></span>](export-sftp.md)
+<span data-ttu-id="7daea-110">עבור אל **נתונים** > **פעולות ייצוא** להצגת דף פעולות הייצוא.</span><span class="sxs-lookup"><span data-stu-id="7daea-110">Go to **Data** > **Exports** to view the exports page.</span></span> <span data-ttu-id="7daea-111">לכל תפקידי המשתמש יש גישה להצגת פעולות ייצוא מוגדרות.</span><span class="sxs-lookup"><span data-stu-id="7daea-111">All user roles have access to view configured exports.</span></span> <span data-ttu-id="7daea-112">השתמש בשדה החיפוש בסרגל הפקודות כדי למצוא פעולות ייצוא לפי השם, שם החיבור או סוג החיבור שלהן.</span><span class="sxs-lookup"><span data-stu-id="7daea-112">Use of the search field in the command bar to find exports by their name, connection name, or connection type.</span></span>
 
-## <a name="add-a-new-export-destination"></a><span data-ttu-id="5bbed-133">הוספת יעד ייצוא חדש</span><span class="sxs-lookup"><span data-stu-id="5bbed-133">Add a new export destination</span></span>
+## <a name="set-up-a-new-export"></a><span data-ttu-id="7daea-113">הגדרת ייצוא חדש</span><span class="sxs-lookup"><span data-stu-id="7daea-113">Set up a new export</span></span>
 
-<span data-ttu-id="5bbed-134">כדי להוסיף יעדי ייצוא, יש לך [הרשאות מנהל מערכת](permissions.md).</span><span class="sxs-lookup"><span data-stu-id="5bbed-134">To add export destinations, you have [administrator permissions](permissions.md).</span></span> <span data-ttu-id="5bbed-135">אם תייצא אל שירותי Microsoft, נניח ששני השירותים הם באותו ארגון.</span><span class="sxs-lookup"><span data-stu-id="5bbed-135">If you export to Microsoft services, we assume both services are in the same organization.</span></span>
+<span data-ttu-id="7daea-114">כדי להגדיר או לערוך ייצוא, אתה זקוק לחיבורים שזמינים עבורך.</span><span class="sxs-lookup"><span data-stu-id="7daea-114">To set up or edit an export, you need to have connections available to you.</span></span> <span data-ttu-id="7daea-115">חיבורים תלויים ב[תפקיד המשתמש](permissions.md) שלך:</span><span class="sxs-lookup"><span data-stu-id="7daea-115">Connections depend on your [user role](permissions.md):</span></span>
+- <span data-ttu-id="7daea-116">למנהלי מערכת יש גישה לכל החיבורים.</span><span class="sxs-lookup"><span data-stu-id="7daea-116">Administrators have access to all connections.</span></span> <span data-ttu-id="7daea-117">הם יכולים גם ליצור חיבורים חדשים בעת הגדרת ייצוא.</span><span class="sxs-lookup"><span data-stu-id="7daea-117">They can also create new connections when setting up an export.</span></span>
+- <span data-ttu-id="7daea-118">למשתתפים יכולה להיות גישה לחיבורים ספציפיים.</span><span class="sxs-lookup"><span data-stu-id="7daea-118">Contributors can have access to specific connections.</span></span> <span data-ttu-id="7daea-119">הם תלויים במנהלי מערכת כדי להגדיר ולשתף חיבורים.</span><span class="sxs-lookup"><span data-stu-id="7daea-119">They depend on administrators to configure and share connections.</span></span> <span data-ttu-id="7daea-120">לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).</span><span class="sxs-lookup"><span data-stu-id="7daea-120">For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).</span></span>
+- <span data-ttu-id="7daea-121">המציגים יכולים רק להציג פעולות ייצוא קיימות, אבל לא ליצור אותן.</span><span class="sxs-lookup"><span data-stu-id="7daea-121">Viewers can only view existing exports but not create them.</span></span>
 
-1. <span data-ttu-id="5bbed-136">עבור אל **מנהל** > **יעדי ייצוא**.</span><span class="sxs-lookup"><span data-stu-id="5bbed-136">Go to **Admin** > **Export destinations**.</span></span>
+1. <span data-ttu-id="7daea-122">עבור אל **נתונים** > **פעולות ייצוא**.</span><span class="sxs-lookup"><span data-stu-id="7daea-122">Go to **Data** > **Exports**.</span></span>
 
-1. <span data-ttu-id="5bbed-137">עבור אל הכרטיסיה **יעדי הייצוא שלי**.</span><span class="sxs-lookup"><span data-stu-id="5bbed-137">Switch to the **My export destinations** tab.</span></span>
+1. <span data-ttu-id="7daea-123">בחר **הוסף ייצוא** כדי ליצור יעד ייצוא חדש.</span><span class="sxs-lookup"><span data-stu-id="7daea-123">Select **Add export** to create a new export destination.</span></span>
 
-1. <span data-ttu-id="5bbed-138">בחר **הוסף יעד** כדי ליצור יעד ייצוא חדש.</span><span class="sxs-lookup"><span data-stu-id="5bbed-138">Select **Add destination** to create a new export destination.</span></span>
+1. <span data-ttu-id="7daea-124">בחלונית **הגדרת ייצוא**, בחר את החיבור שיש להשתמש בו.</span><span class="sxs-lookup"><span data-stu-id="7daea-124">In the **Set up export** pane, select which connection to use.</span></span> <span data-ttu-id="7daea-125">[חיבורים](connections.md) מנוהלים על-ידי מנהלי מערכת.</span><span class="sxs-lookup"><span data-stu-id="7daea-125">[Connections](connections.md) are managed by administrators.</span></span> 
 
-1. <span data-ttu-id="5bbed-139">בחלונית **הוסף יעד**, בחר את **סוג** של יעד הייצוא ברשימה הנפתחת.</span><span class="sxs-lookup"><span data-stu-id="5bbed-139">In the **Add destination** pane, select the **Type** of export destination in the drop-down.</span></span>
+1. <span data-ttu-id="7daea-126">ספק את הפרטים הדרושים ובחר **שמור** כדי ליצור את הייצוא.</span><span class="sxs-lookup"><span data-stu-id="7daea-126">Provide the required details and select **Save** to create the export.</span></span>
 
-1. <span data-ttu-id="5bbed-140">ספק את הפרטים הנדרשים ובחר **הבא** כדי ליצור את יעד הייצוא.</span><span class="sxs-lookup"><span data-stu-id="5bbed-140">Provide the required details and select **Next** to create the export destination.</span></span>
+### <a name="edit-an-export"></a><span data-ttu-id="7daea-127">ערוך ייצוא</span><span class="sxs-lookup"><span data-stu-id="7daea-127">Edit an export</span></span>
 
-<span data-ttu-id="5bbed-141">באפשרותך גם לבחור **הגדר** באריח בכרטיסיה **גלה**.</span><span class="sxs-lookup"><span data-stu-id="5bbed-141">You can also select **Set up** on a tile on the **Discover** tab.</span></span>
+1. <span data-ttu-id="7daea-128">בחר את שלוש הנקודות האנכיות עבור יעד הייצוא שברצונך לערוך.</span><span class="sxs-lookup"><span data-stu-id="7daea-128">Select the vertical ellipsis for the export destination you want to edit.</span></span>
 
-## <a name="view-export-destinations"></a><span data-ttu-id="5bbed-142">הצג יעדי ייצוא</span><span class="sxs-lookup"><span data-stu-id="5bbed-142">View Export destinations</span></span>
+1. <span data-ttu-id="7daea-129">בחר **ערוך** מהתפריט הנפתח.</span><span class="sxs-lookup"><span data-stu-id="7daea-129">Select **Edit** from the drop-down menu.</span></span>
 
-<span data-ttu-id="5bbed-143">לאחר יצירת יעדי ייצוא, תמצא אותם בטבלה שבכרטיסיה **יעדי הייצוא שלי**. טבלה זו כוללת שלוש עמודות:</span><span class="sxs-lookup"><span data-stu-id="5bbed-143">After creating export destinations, you'll find them in a table on the **My export destinations** tab. This table has three columns:</span></span>
+1. <span data-ttu-id="7daea-130">שנה את הערכים שברצונך לעדכן ובחר **שמור**.</span><span class="sxs-lookup"><span data-stu-id="7daea-130">Change the values you want to update and select **Save**.</span></span>
 
-- <span data-ttu-id="5bbed-144">**שם תצוגה**: השם שהזנת בעת יצירת היעד.</span><span class="sxs-lookup"><span data-stu-id="5bbed-144">**Display name**: The name you entered when creating the destination.</span></span>
-- <span data-ttu-id="5bbed-145">**סוג**: סוג יעד הייצוא שהגדרת בעת יצירת היעד.</span><span class="sxs-lookup"><span data-stu-id="5bbed-145">**Type**: The export destination type you set when creating the destination.</span></span>
-- <span data-ttu-id="5bbed-146">**נוצר**: התאריך שבו יצרת את היעד.</span><span class="sxs-lookup"><span data-stu-id="5bbed-146">**Created**: The date you created the destination.</span></span>
+## <a name="view-exports-and-export-details"></a><span data-ttu-id="7daea-131">הצגת פעולות ייצוא ופרטי ייצוא</span><span class="sxs-lookup"><span data-stu-id="7daea-131">View Exports and export details</span></span>
 
-## <a name="edit-an-export-destination"></a><span data-ttu-id="5bbed-147">עריכת יעד ייצוא</span><span class="sxs-lookup"><span data-stu-id="5bbed-147">Edit an export destination</span></span>
+<span data-ttu-id="7daea-132">לאחר יצירת יעדי ייצוא, הם מופיעים ב **נתונים** > **פעולות ייצוא**.</span><span class="sxs-lookup"><span data-stu-id="7daea-132">After creating export destinations, they are listed on **Data** > **Exports**.</span></span> <span data-ttu-id="7daea-133">כל המשתמשים יכולים לראות אילו נתונים משותפים ואת המצב העדכני שלהם.</span><span class="sxs-lookup"><span data-stu-id="7daea-133">All users can see which data is shared and its latest status.</span></span>
 
-1. <span data-ttu-id="5bbed-148">בחר את שלוש הנקודות האנכיות עבור יעד הייצוא שברצונך לערוך.</span><span class="sxs-lookup"><span data-stu-id="5bbed-148">Select the vertical ellipsis for the Export destination you want to edit.</span></span>
+1. <span data-ttu-id="7daea-134">עבור אל **נתונים** > **פעולות ייצוא**.</span><span class="sxs-lookup"><span data-stu-id="7daea-134">Go to **Data** > **Exports**.</span></span>
 
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="5bbed-149">![שלוש נקודות אנכיות](media/export-destinations-page-ellipsis.png "שלוש נקודות אנכיות")</span><span class="sxs-lookup"><span data-stu-id="5bbed-149">![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")</span></span>
+1. <span data-ttu-id="7daea-135">משתמשים ללא הרשאות עריכה שבוחרים **הצג** במקום **ערוך** רואים את פרטי הייצוא.</span><span class="sxs-lookup"><span data-stu-id="7daea-135">Users without edit permissions select **View** instead of **Edit** see the export details.</span></span>
 
-1. <span data-ttu-id="5bbed-150">בחר **ערוך** מהתפריט הנפתח.</span><span class="sxs-lookup"><span data-stu-id="5bbed-150">Select **Edit** from the dropdown menu.</span></span>
+1. <span data-ttu-id="7daea-136">חלונית צד זו מציגה את הגדרת הייצוא הזה.</span><span class="sxs-lookup"><span data-stu-id="7daea-136">This side pane shows the set up of this export.</span></span> <span data-ttu-id="7daea-137">ללא הרשאות עריכה, אינך יכול לשנות ערכים.</span><span class="sxs-lookup"><span data-stu-id="7daea-137">Without edit permissions, you can't change values.</span></span> <span data-ttu-id="7daea-138">בחר **סגור** כדי לחזור לדף פעולות הייצוא.</span><span class="sxs-lookup"><span data-stu-id="7daea-138">Select **Close** to return to the exports page.</span></span>
 
-1. <span data-ttu-id="5bbed-151">שנה את הערכים הדורשים עדכון ובחר **שמור**.</span><span class="sxs-lookup"><span data-stu-id="5bbed-151">Change the values that require update and select **Save**.</span></span>
+## <a name="run-exports-on-demand"></a><span data-ttu-id="7daea-139">הפעלת פעולות ייצוא לפי דרישה</span><span class="sxs-lookup"><span data-stu-id="7daea-139">Run exports on demand</span></span>
 
-## <a name="export-data-on-demand"></a><span data-ttu-id="5bbed-152">ייצוא נתונים לפי דרישה</span><span class="sxs-lookup"><span data-stu-id="5bbed-152">Export data on demand</span></span>
+<span data-ttu-id="7daea-140">לאחר קביעת התצורה של ייצוא, הוא יפעל עם כל [רענון מתוזמן](system.md#schedule-tab) כל עוד יש לו חיבור פעיל.</span><span class="sxs-lookup"><span data-stu-id="7daea-140">After configuring an export, it will run with every [scheduled refresh](system.md#schedule-tab) as long as it has a working connection.</span></span>
 
-<span data-ttu-id="5bbed-153">לאחר קביעת התצורה של מחבר ליעד ייצוא, הייצוא יפעל בכל [רענון מתוזמן](system.md#schedule-tab).</span><span class="sxs-lookup"><span data-stu-id="5bbed-153">After configuring a connector for an export destination, exports will run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+<span data-ttu-id="7daea-141">כדי לייצא נתונים מבלי להמתין לרענון מתוזמן, עבור אל **נתונים** > **פעולות ייצוא**.</span><span class="sxs-lookup"><span data-stu-id="7daea-141">To export data without waiting for a scheduled refresh, go to **Data** > **Exports**.</span></span> <span data-ttu-id="7daea-142">עומדות בפניך שתי אפשרויות:</span><span class="sxs-lookup"><span data-stu-id="7daea-142">You have two options:</span></span>
 
-<span data-ttu-id="5bbed-154">כדי לייצא נתונים מבלי לחכות לרענון מתוזמן, עבור אל הכרטיסיה **יעדי הייצוא שלי** ב **ניהול** > **יעדי ייצוא**.</span><span class="sxs-lookup"><span data-stu-id="5bbed-154">To export data without waiting for a scheduled refresh, go the **My export destinations** tab on **Admin** > **Export destinations**.</span></span>
+- <span data-ttu-id="7daea-143">כדי להפעיל את כל פעולות הייצוא, בחר **הפעל הכל** בסרגל הפקודות.</span><span class="sxs-lookup"><span data-stu-id="7daea-143">To run all exports, select **Run all** in the command bar.</span></span> 
+- <span data-ttu-id="7daea-144">כדי להפעיל ייצוא יחיד, בחר את שלוש הנקודות (...) בפריט הרשימה ובחר **הפעל**.</span><span class="sxs-lookup"><span data-stu-id="7daea-144">To run a single export, select the ellipsis (...) on a list item and then choose **Run**.</span></span>
 
-> [!div class="mx-imgBorder"]
-> <span data-ttu-id="5bbed-155">![שלוש נקודות אנכיות](media/export-destinations-page-ellipsis.png "שלוש נקודות אנכיות")</span><span class="sxs-lookup"><span data-stu-id="5bbed-155">![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")</span></span>
+## <a name="remove-an-export"></a><span data-ttu-id="7daea-145">הסרת ייצוא</span><span class="sxs-lookup"><span data-stu-id="7daea-145">Remove an Export</span></span>
 
-- <span data-ttu-id="5bbed-156">בחר **ייצוא** מעל הרשימה כדי להפעיל את הייצוא בכל יעדי הייצוא בו-זמנית.</span><span class="sxs-lookup"><span data-stu-id="5bbed-156">Select **Export** above the list to run the export to all export destinations simultaneously.</span></span>
-- <span data-ttu-id="5bbed-157">בחר את שלוש הנקודות (...) אחרי פריט רשימה ולאחר מכן בחר את האפשרות **ייצוא** כדי להפעיל את הייצוא עבור יעד ייצוא יחיד.</span><span class="sxs-lookup"><span data-stu-id="5bbed-157">Select the ellipsis (...) after a list item and then choose the **Export** option to run the export for a single export destination.</span></span>
+1. <span data-ttu-id="7daea-146">עבור אל **נתונים** > **פעולות ייצוא**.</span><span class="sxs-lookup"><span data-stu-id="7daea-146">Go to **Data** > **Exports**.</span></span>
 
-## <a name="remove-an-export-destination"></a><span data-ttu-id="5bbed-158">הסר יעד ייצוא</span><span class="sxs-lookup"><span data-stu-id="5bbed-158">Remove an Export destination</span></span>
+1. <span data-ttu-id="7daea-147">בחר את שלוש הנקודות האנכיות עבור הייצוא שברצונך להסיר.</span><span class="sxs-lookup"><span data-stu-id="7daea-147">Select the vertical ellipsis for the Export you want to remove.</span></span>
 
-<span data-ttu-id="5bbed-159">להסרת יעד ייצוא, התחל מהדף **יעדי ייצוא** הראשי.</span><span class="sxs-lookup"><span data-stu-id="5bbed-159">To remove an Export destination, start from the main **Export destinations** page.</span></span>
+1. <span data-ttu-id="7daea-148">בחר **הסר** מהתפריט הנפתח.</span><span class="sxs-lookup"><span data-stu-id="7daea-148">Select **Remove** from the dropdown menu.</span></span>
 
-1. <span data-ttu-id="5bbed-160">בחר את שלוש הנקודות האנכיות עבור יעד הייצוא שברצונך להסיר.</span><span class="sxs-lookup"><span data-stu-id="5bbed-160">Select the vertical ellipsis for the Export destination you want to remove.</span></span>
-
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="5bbed-161">![שלוש נקודות אנכיות](media/export-destinations-page-ellipsis.png "שלוש נקודות אנכיות")</span><span class="sxs-lookup"><span data-stu-id="5bbed-161">![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")</span></span>
-
-2. <span data-ttu-id="5bbed-162">בחר **הסר** מהתפריט הנפתח.</span><span class="sxs-lookup"><span data-stu-id="5bbed-162">Select **Remove** from the dropdown menu.</span></span>
-
-3. <span data-ttu-id="5bbed-163">אשר את ההסרה על-ידי בחירת **הסר** במסך האישור.</span><span class="sxs-lookup"><span data-stu-id="5bbed-163">Confirm the removal by selecting **Remove** on the confirmation screen.</span></span>
+1. <span data-ttu-id="7daea-149">אשר את ההסרה על-ידי בחירת **הסר** במסך האישור.</span><span class="sxs-lookup"><span data-stu-id="7daea-149">Confirm the removal by selecting **Remove** on the confirmation screen.</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
