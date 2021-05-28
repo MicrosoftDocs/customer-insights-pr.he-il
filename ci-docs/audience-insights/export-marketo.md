@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01290d5fae7af1737b73373d75e334ae1ed67d37
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b5a644e286bd44d4ebf7d1837255326c005b48d6
+ms.sourcegitcommit: 74cd4fa9cbb784d9dff174c0eec7b4dcb408d66b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759822"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059317"
 ---
 # <a name="export-segments-to-marketo-preview"></a>ייצוא פלחים ל- Marketo‏ (Preview)
 
@@ -44,7 +44,7 @@ ms.locfileid: "5759822"
 
 1. בחר מי יכול להשתמש בחיבור זה. אם לא תנקוט שום פעולה, ברירת המחדל תהיה מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. הזן את **[מזהה הלקוח של Marketo, סוד הלקוח ושם מארח של נקודת קצה של REST](https://developers.marketo.com/rest-api/authentication/)**.
+1. הזן את **[מזהה הלקוח של Marketo, סוד הלקוח ושם מארח של נקודת קצה של REST](https://developers.marketo.com/rest-api/authentication/)**. שם המארח של נקודת הקצה REST הוא שם המארח בלבד, ללא `https://`. דוגמה:`xyz-abc-123.mktorest.com`. 
 
 1. בחר **אני מסכים** כדי לאשר את **פרטיות ותאימות הנתונים** ובחר **התחבר** כדי לאתחל את החיבור אל Marketo.
 
@@ -62,7 +62,7 @@ ms.locfileid: "5759822"
 
 1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע Marketo. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
 
-1. הזן את **[מזהה רשימת Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 
+1. הזן את **[מזהה רשימת Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. מזהה הרשימה הוא ערך מספרי בלבד. לדוגמה, אם מזהה רשימת Marketo שלך הוא ST12345A7, הסר את התו שמופיע לפני ואחרי הספרות והזן `12345`. 
 
 1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. 
 
@@ -74,7 +74,7 @@ ms.locfileid: "5759822"
 
 שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
 
-הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). ב- Marketo, באפשרותך למצוא כעת את הפלחים שלך תחת [רשימות Marketo](ttps://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
+הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). ב- Marketo, באפשרותך למצוא כעת את הפלחים שלך תחת [רשימות Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
 
 
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים

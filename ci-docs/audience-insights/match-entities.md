@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2eb84c44aa530346a73ba720106734d705a45f23
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2155042d86cda0cffee1588760a06d6c7eb7077e
+ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595565"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085623"
 ---
 # <a name="match-entities"></a>התאמת ישויות
 
@@ -103,6 +103,18 @@ ms.locfileid: "5595565"
 
 > [!NOTE]
 > סדר הכללים חשוב. אלגוריתם ההתאמה מנסה להתאים על בסיס הכלל הראשון שלך וממשיך לכלל השני רק אם לא זוהו התאמות עם הכלל הראשון.
+
+### <a name="change-the-entity-order-in-match-rules"></a>שנה את סדר הישויות בכללי ההתאמה
+
+באפשרותך לסדר מחדש את הישויות לפי כללי התאמה על מנת לשנות את הסדר שבו הן מעובדות. כללים שמתנגשים בגלל סדר ששונה יוסרו. עליך ליצור מחדש כללים שהוסרו בעזרת תצורה מעודכנת.
+
+1. עבור אל **נתונים** > **איחוד** > **התאמה** ובחר **ערוך**.
+
+1. בחלונית **ערוך כלל**, בחר בפקד **הזז למעלה/למטה** או גרור ושחרר ישויות לשינוי הסדר.
+
+   :::image type="content" source="media/reorder-match-rules.png" alt-text="אפשרויות לשינוי שבהן ישויות הזמנת עבודה מעובדות בשלב ההתאמה.":::
+
+1. בחר **בוצע** כדי לשמור את הכלל.
 
 ## <a name="define-deduplication-on-a-match-entity"></a>הגדרת ביטול כפילויות בישות מתאימה
 

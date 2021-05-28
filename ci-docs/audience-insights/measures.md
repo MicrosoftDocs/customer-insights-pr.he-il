@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 9a94a32a04f2a8beb661c27271fe96f23d998722
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 402e5ef3515bce0e6f56788781b7bd909738aaa6
+ms.sourcegitcommit: b833e333745d321edeaf96d3ed14458cbce02ff1
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887941"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049251"
 ---
 # <a name="define-and-manage-measures"></a>הגדרה וניהול של מדדים
 
@@ -34,7 +34,7 @@ ms.locfileid: "5887941"
 
 1. בחר **ערוך שם** וספק **שם** עבור המדד. 
    > [!NOTE]
-   > אם תצורת המדד החדשה שלך כוללת שני שדות בלבד, לדוגמה, 'מזהה לקוח' וחישוב אחד, הפלט יתווסף כעמודה חדשה לישות שנוצרה על-ידי המערכת הנקראת Customer_Measure. ותוכל לראות את ערך המדד בפרופיל הלקוח המאוחד. מדדים אחרים ייצרו ישויות משלהם.
+   > אם תצורת המדידה החדשה שלך כוללת שני שדות בלבד, למשל, CustomerID וחישוב אחד, הפלט יתווסף כעמודה חדשה לישות שנוצרה על-ידי המערכת, הנקראת Customer_Measure. ותוכל לראות את ערך המדד בפרופיל הלקוח המאוחד. מדדים אחרים ייצרו ישויות משלהם.
 
 1. באזור התצורה בחר בפונקציית הצבירה מתוך התפריט הנפתח **בחר פונקציה**. פונקציות צבירה כוללות: 
    - **Sum**

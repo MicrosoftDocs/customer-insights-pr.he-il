@@ -1,7 +1,7 @@
 ---
-title: התקנה וקביעת תצורה של תוספת כרטיס הלקוח
-description: התקן והגדר את תוספת כרטיס לקוח ל- Dynamics 365 Customer Insights.
-ms.date: 01/20/2021
+title: תוספת כרטיס לקוח עבור יישומי Dynamics 365
+description: הצג נתונים מתובנות לגבי קהלים ביישומי Dynamics 365 באמצעות תוספת זו.
+ms.date: 05/18/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,30 +9,31 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f3c4a01f9ce7749eeee72f7901620dae7cb9b8d3
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 88492943ddbf9ae30c64d92b261433b74f34f682
+ms.sourcegitcommit: d74430270f1b754322287c4f045d7febdae35be2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597328"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059589"
 ---
 # <a name="customer-card-add-in-preview"></a>תוספת כרטיס לקוח (תצוגה מקדימה)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-קבל תצוגה של 360 מעלות של הלקוחות שלך ישירות ביישומי Dynamics 365. הצג דמוגרפיה, תובנות וצירי זמן של פעילויות בעזרת תוספת כרטיס הלקוח.
+קבל תצוגה של 360 מעלות של הלקוחות שלך ישירות ביישומי Dynamics 365. כאשר התוספת 'כרטיס לקוח' מותקנת ביישום נתמך של Dynamics 365, אתה יכול לבחור להציג נתונים דמוגרפיים, תובנות וצירי זמן של פעילויות. התוספת תשלוף נתונים מ- Customer Insights מבלי להשפיע על הנתונים ביישום המחובר של Dynamics 365. 
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
-- יישום Dynamics 365 (כגון מרכז המכירות או מרכז שירות לקוחות), גרסה 9.0 ואילך עם הפעלת ממשק מאוחד.
-- פרופילי לקוחות [שנקלטו מיישום Dynamics 365 באמצעות Common Data Service](connect-power-query.md).
-- יש [להוסיף כמשתמשים](permissions.md) את המשתמשים ב'תוספת כרטיס לקוח' ב- Audience Insights.
-- [יכולות חיפוש וסינון מוגדרות](search-filter-index.md).
-- שליטה דמוגרפית: שדות דמוגרפיים (כגון גיל או מגדר) זמינים בפרופיל הלקוח המאוחד.
-- פקד העשרה: דורש [העשרות](enrichment-hub.md) פעילות שחלות על פרופילי לקוחות.
-- בקרת בינה: דורש נתונים שנוצרו באמצעות Azure Machine Learning ([חיזויים](predictions.md) או [מודלים מותאמים אישית](custom-models.md))
-- בקרת מדידה: דורש [מדידות מוגדרות](measures.md).
-- בקרת ציר הזמן: דורש [פעילויות מוגדרות](activities.md).
+- התוספת פועלת רק עם יישומים מונחי דגמים של Dynamics 365, כגון Sales או Customer Service, גירסה 9.0 ואילך.
+- על מנת שיתבצע מיפוי של נתוני Dynamics 365 לפרופילי הלקוח של תובנות לגבי קהלים, יש [לעבד אותם מיישום Dynamics 365 באמצעות המחבר Common Data Service](connect-power-query.md).
+- כל משתמשי Dynamics 365 של התוספת 'כרטיס לקוח' צריכים [להתווסף כמשתמשים](permissions.md) בתובנות לגבי קהלים כדי לראות את הנתונים.
+- [יכולות חיפוש וסינון מוגדרות](search-filter-index.md) בתובנות לגבי קהלים נדרשות על מנת שבדיקת המידע של נתונים תפעל.
+- כל בקרת תוספת מסתמכת על נתונים ספציפיים בתובנות לגבי קהלים:
+  - בקרת מדידה: דורש [מדידות מוגדרות](measures.md).
+  - בקרת בינה: מחייבת נתונים שנוצרו באמצעות [תחזיות](predictions.md) או [מודלים מותאמים אישית](custom-models.md).
+  - שליטה דמוגרפית: שדות דמוגרפיים (כגון גיל או מגדר) זמינים בפרופיל הלקוח המאוחד.
+  - פקד העשרה: דורש [העשרות](enrichment-hub.md) פעילות שחלות על פרופילי לקוחות.
+  - בקרת ציר הזמן: דורש [פעילויות מוגדרות](activities.md).
 
 ## <a name="install-the-customer-card-add-in"></a>התקן את תוספת כרטיס הלקוח
 
@@ -56,9 +57,9 @@ ms.locfileid: "5597328"
    > [!NOTE]
    > בדוק שחוסם הפריטים המוקפצים של הדפדפן אינו חוסם את חלון האימות בעת בחירת לחצן **היכנס**.
 
-1. בחר את הסביבה שממנה ברצונך להביא נתונים.
+1. בחר את הסביבה של Customer Insights שממנה ברצונך להביא נתונים.
 
-1. הגדר את מיפוי השדה לרשומות ביישום Dynamics 365.
+1. הגדר את מיפוי השדות לרשומות ביישום Dynamics 365. בהתאם לנתונים שלך ב- Customer Insights תוכל לבחור למפות את האפשרויות הבאות:
    - למיפוי עם איש קשר, בחר את השדה בישות 'לקוח' התואם למזהה של ישות איש הקשר שלך.
    - למיפוי עם תיק לקוח, בחר את השדה בישות 'לקוח' התואם למזהה של ישות תיק הלקוח שלך.
 

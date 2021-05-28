@@ -6,22 +6,19 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 354ce9ef30fe918975d06290430996c84f8bd3f7
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: c1078ed0ba259a6e9cde3c7ede3570890ae48e67
+ms.sourcegitcommit: 33a8e21b3bf6521bdb8346f81f79fce88091ddfd
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896144"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016615"
 ---
 # <a name="exports-preview-overview"></a>מבט כולל על פעולות ייצוא (Preview)
 
 הדף **פעולות ייצוא** מציג לך את כל פעולות הייצוא שהוגדרו. פעולות ייצוא משתפות נתונים ספציפיים עם יישומים שונים. הן יכולות לכלול פרופילי לקוח או ישויות, תוכניות ופרטי מיפוי. כל ייצוא דורש [חיבור, שהוגדר על-ידי מנהל מערכת, לניהול אימות וגישה](connections.md).
-
-> [!NOTE]
-> עד מרץ 2021, פעולות ייצוא יצרו חיבור לשירות המתאים באופן אוטומטי. פעולות ייצוא דורשות כעת [חיבור, שנוצר ושותף על-ידי מנהל מערכת](connections.md) לפני שתוכל ליצור אותן.
 
 עבור אל **נתונים** > **פעולות ייצוא** להצגת דף פעולות הייצוא. לכל תפקידי המשתמש יש גישה להצגת פעולות ייצוא מוגדרות. השתמש בשדה החיפוש בסרגל הפקודות כדי למצוא פעולות ייצוא לפי השם, שם החיבור או סוג החיבור שלהן.
 
