@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: b6bf4f715768b18d69be3bea4085acd96933e8da
-ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
+ms.openlocfilehash: 4e7065b61940ef0d7b2a30f96f6225df29e30383
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906903"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095649"
 ---
 # <a name="subscription-churn-prediction-preview"></a>חיזוי נטישת מנויים (תצוגה מקדימה)
 
@@ -147,30 +147,9 @@ ms.locfileid: "5906903"
        > [!div class="mx-imgBorder"]
        > ![רשימה המציגה גורמים משפיעים ואת חשיבותם בחיזוי תוצאת הנטישה](media/subscription-churn-influentialfactors.PNG "רשימה המציגה גורמים משפיעים ואת חשיבותם בחיזוי תוצאת הנטישה")
 
-## <a name="fix-a-failed-prediction"></a>תיקון של חיזוי כושל
+## <a name="manage-predictions"></a>ניהול חיזויים
 
-1. עבור אל **החיזויים שלי** ב- **בינה** > **חיזויים**.
-1. בחר את החיזוי שתרצה להציג ביומני שגיאה ובחר **יומנים**.
-   > [!div class="mx-imgBorder"]
-   > ![תצוגת סרגל התפריטים הכולל כפתורי סגירה, עריכה של מודל ויומנים](media/subscription-churn-logsbutton.PNG "תצוגת סרגל התפריטים הכולל כפתורי סגירה, עריכה של מודל ויומנים")
-1. סקירת כל השגיאות. יש מספר סוגים של שגיאות שיכולות להתרחש, והם מתארים איזה מצב גרם לשגיאה. לדוגמה, שגיאה שאין מספיק נתונים לחיזוי מדויק נפתרת בדרך כלל על-ידי טעינת נתונים נוספים.
-
-## <a name="refresh-a-prediction"></a>רענן חיזוי
-
-החיזוי יחודש באופן אוטומטי באותו [תזמון של רענון הנתונים](system.md#schedule-tab) כפי שהוגדר בהגדרות.
-
-1. עבור אל **החיזויים שלי** ב- **בינה** > **חיזויים**.
-1. בחר בשלוש הנקודות האנכיות לצד החיזוי שברצונך לרענן.
-1. בחר **רענן**.
-
-## <a name="delete-a-prediction"></a>מחק חיזוי
-
-1. עבור אל **החיזויים שלי** ב- **בינה** > **חיזויים**.
-1. בחר בשלוש הנקודות האנכיות לצד החיזוי שברצונך למחוק.
-1. בחר **מחק**.
-
-> [!NOTE]
-> מחיקת חיזוי תסיר את ישות הפלט.
+ניתן למטב, לפתור בעיות, לרענן או למחוק חיזויים. עיין בדוח השימושיות של נתוני הקלט כדי לגלות כיצד ליצור חיזוי במהירות רבה יותר ובצורה מהימנה יותר. לקבלת מידע נוסף, ראה [ניהול חיזויים](manage-predictions.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

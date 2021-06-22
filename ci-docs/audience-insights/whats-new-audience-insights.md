@@ -1,7 +1,7 @@
 ---
 title: תכונות חדשות ועתידיות
 description: מידע על תכונות חדשות, שיפורים ותיקוני באגים.
-ms.date: 05/06/2021
+ms.date: 06/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: c66b37d6e4d6ed830238566fbc09934832892b34
-ms.sourcegitcommit: 3f9981df97fa7b1f432a446d3f11936ea4cfbde5
+ms.openlocfilehash: 355dc22ac381145b231848830cefc47eda7968f4
+ms.sourcegitcommit: 6944c1592877eb92ec789df5f2e0dbecef638837
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "5988921"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6263252"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>מה חדש ביכולת Audience Insights של Dynamics 365 Customer Insights
 
@@ -26,6 +26,37 @@ ms.locfileid: "5988921"
 
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="may-2021-updates"></a>עדכוני מאי 2021
+
+העדכונים במאי 2021 כוללים מספר תכונות, שדרוגי ביצועים ותיקוני באגים.
+
+### <a name="data-ingestion"></a>קליטת נתונים
+
+- **התג או שנה הגדרה של מטה-נתונים או של ישות בעת צירוף נתונים מ- Azure Data Lake Storage** כעת באפשרותך להציג ולערוך הגדרה של מטה-נתונים או של ישות בתובנות לגבי קהל בעת צירוף נתונים מתיקיה של Common Data Model ב- Azure Data Lake Storage. יכולת זו מספקת משוב, אימות מודל ובדיקת שגיאות בזמן אמת. בדרך זו תוכל לערוך הן את model.json והן את manifest.json בצורה חלקה.
+
+### <a name="extensibility"></a>יכולת הרחבה
+
+- **פעולות ייצוא פלחים משופרות, לוח זמנים מותאם אישית ושכפול** כעת באפשרותך [לראות את כל המומחים עבור פלח ספציפי](export-destinations.md#view-exports-and-export-details) ברשימה. תצוגה חדשה זו עוזרת לקבועכיצד ייעשה שימוש בפלח ספציפי ולהתאים את הייצוא הקיים או ליצור פעולות ייצוא חדשות.    
+  באפשרותך [להגדיר לוחות זמנים לרענון מותאמים אישית](export-destinations.md#schedule-and-run-exports) לפעולות ייצוא בודדות או לכמה פעולות ייצוא בבת אחת. עד כה, כל פעולות הייצוא הופעלו בכל רענון של המערכת.    
+  במקום ליצור ייצוא חדש מאפס, תוכל להתבסס על ייצוא קיים כדי לחסוך זמן.
+
+- **ייצוא פלחים אל Microsoft Advertising** הרחבנו את יעדי הייצוא שלנו כך שיכללו את Microsoft Advertising. צור קהלים של Customer Match ב- Microsoft Advertising באמצעות נתוני פרופילי הלקוחות המאוחדים, והשתמש בקהלים אלה עבור הקמפיינים הפרסומיים שלך. לקבלת מידע נוסף, ראה [‏‫ייצוא פלחים אל Microsoft Advertising‏](export-microsoft-advertising.md).
+
+- **‏‫ייצוא פלחים אל LinkedIn Ads** הרחבנו את יעדי הייצוא כך שיכללו את ‏‫LinkedIn Ads ויאפשרו להשתמש ב- Contact Targeting וב- Company Targeting באמצעות LinkedIn על-ידי ייצוא הנתונים של פרופיל הלקוחות המאוחדים. לקבלת מידע נוסף, ראה [‏‫ייצוא פלחים אל LinkedIn Ads‏](export-linkedin-ads.md).
+
+
+- **ייצוא פלחים אל Omnisend** הרחבנו את יעדי הייצוא שלנו כך שיכללו את Omnisend. השתמש בפלחים שנוצרו בתובנות לגבי קהלים כדי ליצור קמפיינים, לספק שיווק בדואר אלקטרוני ולהשתמש בקבוצות ספציפיות של לקוחות באמצעות Omnisend. לקבלת מידע נוסף, ראה [‏‫ייצוא פלחים אל Omnisend‏](export-omnisend.md)
+
+### <a name="predictions"></a>חיזויים
+
+- **דוח שימושיות של נתוני קלט** דוח השימושיות של נתוני הקלט מספק תצוגה מאוחדת של השגיאות והאזהרות שהחיזויים המוכנים לשימוש עלולים ליצור. הוא מציג גם המלצות לשיפור ביצועי המודל.    
+  הדוח זמין לאחר שהמודל השלים את תהליך ההדרכה שלו. הוא נוצר עבור כל מודל בנפרד, בין אם הוא הושלם בהצלחה ובין אם לאו.
+  נכון לעכשיו, תכונה זו זמינה עבור ‏‫המודל 'נטישה של עסקאות' בלבד. לקבלת מידע, ראה [דוח שימושיות של נתוני קלט](manage-predictions.md#input-data-usability-report).
+
+### <a name="relationships"></a>קשרים
+
+- **רכיב המחשה של קשר** תצוגת רכיב ההמחשה של הקשר מאפשרת לראות את כל הקשרים הקיימים בין ישויות לבין העוצמה שלהן. קשרים מאורגנים כעת בקבוצות: המשתמש היוצר, המערכת קשרים שעברו בירושה. ניתן גם לייצא תצוגה כתמונה. למידע נוסף, ראה [הצגת קשרים](relationships.md#view-relationships). 
 
 ## <a name="april-2021-updates"></a>עדכוני אפריל 2021
 

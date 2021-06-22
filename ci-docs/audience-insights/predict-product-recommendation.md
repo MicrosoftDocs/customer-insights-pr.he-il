@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: e46e31131a2dd5235af8221eafcd2e1d1394f3d4
-ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
+ms.openlocfilehash: 01704f78cfe1f6ceeee19ff825fc65150894d4ed
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906765"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095557"
 ---
 # <a name="product-recommendation-prediction-preview"></a>חיזוי המלצות על מוצרים (Preview)
 
@@ -205,33 +205,9 @@ ms.locfileid: "5906765"
        > [!div class="mx-imgBorder"]
        > ![רשימה המציגה הצעות בעלות מהימנות גבוהה עבור ערכה נבחרת של לקוחות בודדים](media/product-recommendation-highconfidence.PNG "רשימה המציגה הצעות בעלות מהימנות גבוהה עבור ערכה נבחרת של לקוחות בודדים")
 
-## <a name="fix-a-failed-prediction"></a>תיקון של חיזוי כושל
+## <a name="manage-predictions"></a>ניהול חיזויים
 
-1. עבור אל **החיזויים שלי** ב- **בינה** > **חיזויים**.
-
-1. בחר את החיזוי שתרצה להציג ביומני שגיאה ובחר **יומנים**.
-
-1. סקירת כל השגיאות. יש מספר סוגים של שגיאות שיכולות להתרחש, והם מתארים איזה מצב גרם לשגיאה. לדוגמה, שגיאה שאין מספיק נתונים לחיזוי מדויק נפתרת בדרך כלל על-ידי טעינת נתונים נוספים אל Customer Insights.
-
-## <a name="refresh-a-prediction"></a>רענן חיזוי
-
-החיזויים עוברים רענון באופן אוטומטי באותו [לוח זמנים שבו הנתונים שלך עוברים רענון](system.md#schedule-tab) כפי שמוגדר בהגדרות.
-
-1. עבור אל **החיזויים שלי** ב- **בינה** > **חיזויים**.
-
-1. בחר בשלוש הנקודות האנכיות לצד החיזוי שברצונך לרענן.
-
-1. בחר **רענן**.
-
-## <a name="delete-a-prediction"></a>מחק חיזוי
-
-מחיקת חיזוי גם תסיר את ישות הפלט שלו.
-
-1. עבור אל **החיזויים שלי** ב- **בינה** > **חיזויים**.
-
-1. בחר בשלוש הנקודות האנכיות לצד החיזוי שברצונך למחוק.
-
-1. בחר **מחק**.
+ניתן למטב, לפתור בעיות, לרענן או למחוק חיזויים. עיין בדוח השימושיות של נתוני הקלט כדי לגלות כיצד ליצור חיזוי במהירות רבה יותר ובצורה מהימנה יותר. לקבלת מידע נוסף, ראה [ניהול חיזויים](manage-predictions.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

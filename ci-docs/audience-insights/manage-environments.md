@@ -1,7 +1,7 @@
 ---
 title: יצירה וניהול של סביבות
 description: למד כיצד להירשם לשירות וכיצד לנהל סביבות.
-ms.date: 03/26/2021
+ms.date: 06/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 8cc1401251ed7c45c598bd4a8fb33a9709fabbc8
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 06310ea6fc72f26e21e185a6abcb5d19d4b201f6
+ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887987"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6259100"
 ---
 # <a name="manage-environments"></a>ניהול סביבות
 
@@ -76,9 +76,9 @@ ms.locfileid: "5887987"
    > אנו תומכים רק בחשבונות אחסון של Azure Data Lake Gen2 מאותו אזור Azure שבחרת בעת יצירת הסביבה.
    > אנו תומכים רק בחשבונות אחסון התומכים במרחב שמות הירארכי (HNS) של Azure Data Lake Gen2.
 
-   - עבור האפשרות Azure Data Lake Storage Gen2, באפשרותך לבחור בין שימוש באפשרות מבוססת-משאב לאפשרות מבוססת-מנוי עבור אימות. לקבלת מידע נוסף, ראה [חיבור audience insights לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure](connect-service-principal.md). השם **גורם מכיל** לא ניתן לשינוי ויהיה "customerinsights".
+   - עבור האפשרות Azure Data Lake Storage Gen2, באפשרותך לבחור בין שימוש באפשרות מבוססת-משאב לאפשרות מבוססת-מנוי עבור אימות. לקבלת מידע נוסף, ראה [חיבור audience insights לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure](connect-service-principal.md). לא ניתן לשנות את שם **הגורם המכיל** והשם יהיה `customerinsights`.
    
-   - אם אתה רוצה להשתמש ב [חיזויים](predictions.md), קבע תצורה של שיתוף נתונים עם יישומים ופתרונות בהתבסס על Microsoft Dataverse, או הפוך קליטת נתונים לזמינה מתוך מקורות הנתונים המקומיים, ספק את כתובת ה- URL של סביבת Microsoft Dataverse תחת **קבע תצורת שיתוף נתונים עם Microsoft Dataverse והפוך יכולות נוספות לזמינות**. בחר **הפוך שיתוף נתונים לזמין** כדי לשתף נתוני פלט של Customer Insights עם Data Lake מנוהל של Microsoft Dataverse.
+   - אם ברצונך להשתמש ב [חיזויים](predictions.md), קבע תצורה של שיתוף נתונים עם Microsoft Dataverse, או הפוך קליטת נתונים לזמינה מתוך מקורות הנתונים המקומיים, ספק את כתובת ה- URL של סביבת Microsoft Dataverse תחת **קבע תצורת שיתוף נתונים עם Microsoft Dataverse והפוך יכולות נוספות לזמינות**. בחר **הפוך שיתוף נתונים לזמין** כדי לשתף נתוני פלט של Customer Insights עם Data Lake מנוהל של Microsoft Dataverse.
 
      > [!NOTE]
      > - שיתוף נתונים עם Data Lake מנוהל של Microsoft Dataverse אינו נתמך כעת כשאתה שומר את כל הנתונים ב- Azure Data Lake Storage שלך.
@@ -87,7 +87,7 @@ ms.locfileid: "5887987"
      > [!div class="mx-imgBorder"]
      > ![אפשרויות קביעת תצורה כדי להפוך שיתוף נתונים לזמין באמצעות Microsoft Dataverse](media/datasharing-with-DataverseMDL.png)
 
-   כאשר אתה מפעיל תהליכים, כגון קליטת נתונים או יצירת פלחים, תיקיות מתאימות ייווצרו בחשבון האחסון שציינת לעיל. קבצי נתונים וקבצי model.json ייווצרו ויתווספו לתיקיות המשנה בהתאמה לפי התהליך שאתה מפעיל.
+   כאשר אתה מפעיל תהליכים, כגון קליטת נתונים או יצירת פלחים, תיקיות מתאימות ייווצרו בחשבון האחסון שציינת לעיל. קבצי נתונים וקבצי model.json ייווצרו ויתווספו לתיקיות בהתבסס על שם התהליך.
 
    אם אתה יוצר סביבות מרובות של Customer Insights ובוחר לשמור את ישויות הפלט מסביבות אלה בחשבון האחסון שלך, תיקיות נפרדות ייווצרו עבור כל סביבה עם ci_<environmentid> בגורם המכיל.
 
@@ -146,7 +146,7 @@ ms.locfileid: "5887987"
    > - שיתוף נתונים עם Data Lake מנוהל של Microsoft Dataverse אינו נתמך כעת כשאתה שומר את כל הנתונים ב- Azure Data Lake Storage שלך.
    > - [חיזוי של ערכים חסרים בישות](predictions.md) אינו נתמך כעת כשאתה הופך לזמין שיתוף נתונים עם Data Lake מנוהל של Microsoft Dataverse.
 
-   כשתהפוך שיתוף נתונים עם Microsoft Dataverse לזמין, יופעל רענון מלא של מקורות הנתונים שלך ותהליכים אחרים. אם תהליכים פועלים כעת ומוצבים בתור, לא תראה אפשרות להפוך שיתוף נתונים עם Microsoft Dataverse לזמין. באפשרותך להמתין להשלמת התהליכים או לבטל אותם כדי להפוך שיתוף נתונים לזמין. 
+   לאחר שתהפוך שיתוף נתונים עם Microsoft Dataverse לזמין, יופעל רענון מלא של מקורות הנתונים שלך ותהליכים אחרים. אם תהליכים פועלים כעת, לא תראה אפשרות להפוך שיתוף נתונים עם Microsoft Dataverse לזמין. המתן שתהליכים אלה יושלמו או בטל אותם כדי להפוך שיתוף נתונים לזמין. 
    
    :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="אפשרויות קביעת תצורה כדי להפוך שיתוף נתונים לזמין עם Microsoft Dataverse.":::
    
