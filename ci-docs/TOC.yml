@@ -72,7 +72,7 @@
           href: audience-insights/enrichment-here.md
         - name: העשר עם Leadspace
           href: audience-insights/enrichment-leadspace.md
-        - name: העשיר עם Experian
+        - name: העשרה עם Experian
           href: audience-insights/enrichment-experian.md
         - name: העשרה עם ייבוא מותאם אישית של SPTF
           href: audience-insights/enrichment-SFTP-custom-import.md
@@ -136,6 +136,8 @@
           items:
             - name: מבט כולל על פעולות ייצוא
               href: audience-insights/export-destinations.md
+            - name: קמפיינים פעילים
+              href: audience-insights/export-active-campaign.md
             - name: AdRoll
               href: audience-insights/export-adroll.md
             - name: Autopilot
@@ -178,8 +180,12 @@
               href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
+            - name: Salesforce Marketing Cloud
+              href: audience-insights/export-salesforce.md
             - name: SendGrid
               href: audience-insights/export-sendgrid.md
+            - name: SendInBlue
+              href: audience-insights/export-sendinblue.md
             - name: Snapchat
               href: audience-insights/export-snapchat.md
             - name: SFTP
@@ -238,17 +244,17 @@
       items:
         - name: התחל בעבודה
           href: engagement-insights/get-started.md
-        - name: צור סביבת עבודה
+        - name: יצירת סביבת עבודה
           href: engagement-insights/create-workspace.md
-        - name: ציד את האתר בכלים
-          href: engagement-insights/instrument-website.md
+        - name: לכוד אירועים מאתרים ומאפליקציות למכשירים ניידים
+          href: engagement-insights/developer-resources.md
         - name: מושגים וטרמינולוגיה
           href: engagement-insights/glossary.md
     - name: אירועים
       items:
         - name: צור אירועים ושנה אותם
           href: engagement-insights/refined-events.md
-        - name: יצא אירועים
+        - name: ייצוא אירועים
           href: engagement-insights/export-events.md
     - name: דוחות
       items:
@@ -272,10 +278,18 @@
       items:
         - name: סקירה של משאבים למפתחים
           href: engagement-insights/developer-resources.md
-        - name: ערכת לימוד של Web SDK
+        - name: ערכת לימוד בנושא SDK לאינטרנט
           href: engagement-insights/advanced-SDK-implementation.md
         - name: דוגמה לערכת Web SDK
           href: engagement-insights/websdk-sample.md
+        - name: ערכת לימוד SDK Android
+          href: engagement-insights/get-started-android.md
+        - name: מדגם SDK Android
+          href: engagement-insights/androidsdk-sample.md
+        - name: ערכת לימוד iOS SDK
+          href: engagement-insights/get-started-ios.md
+        - name: מדגם iOS SDK
+          href: engagement-insights/iossdk-sample.md
     - name: ניהול
       items:
         - name: תפקידים והרשאות
