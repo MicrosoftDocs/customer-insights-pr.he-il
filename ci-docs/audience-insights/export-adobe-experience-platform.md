@@ -1,6 +1,6 @@
 ---
 title: ייצוא נתוני Customer Insights אל Adobe Experience Platform
-description: למד כיצד להשתמש ב- audience insights ב- Adobe Experience Platform.
+description: למד כיצד להשתמש בפלחי תובנות לגבי קהל בפלטפורמת Adobe Experience.
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 884f4d30f354bed29909d57be84dce4c8e46965a
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760102"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305525"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>שימוש בפלחי Customer Insights ב- Adobe Experience Platform (preview)‎
 
-כמשתמש של Audience Insights עבור Dynamics 365 Customer Insights, ייתכן שיצרת פלחים כדי להפוך את הקמפיינים השיווקיים שלך ליעילים יותר על-ידי התמקדות בקהלים רלוונטיים. כדי להשתמש בפלח מ- Audience Insights ב- Adobe Experience Platform וביישומים כמו Adobe Campaign Standard, עליך לבצע מספר שלבים המתוארים במאמר זה.
+כמשתמש בתובנות לגבי קהלים ב- Dynamics 365 Customer Insights, ייתכן שיצרת פלחים כדי לייעל את הקמפיינים השיווקיים שלך על ידי התמקדות בקהלים הרלוונטיים. כדי להשתמש בפלח מ- Audience Insights ב- Adobe Experience Platform וביישומים כמו Adobe Campaign Standard, עליך לבצע מספר שלבים המתוארים במאמר זה.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="תרשים התהליך של השלבים המתוארים במאמר זה.":::
 
@@ -55,19 +55,19 @@ ms.locfileid: "5760102"
 
 1. עבור אל **ניהול** > **חיבורים**.
 
-1. בחר **הוסף חיבור** ובחר **אחסון Blob של Azure** או בחר **הגדר** באריח **אחסון Blob של Azure**:
+1. בחר **הוסף חיבור** ובחר **Azure Blob Storage** או בחר **הגדר** בתוך אריח **Azure Blob Storage** כדי להגדיר את החיבור.
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="אריח 'קביעת תצורה' עבור אחסון Blob של Azure."::: כדי לקבוע את תצורת החיבור.
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="אריח 'קביעת תצורה' עבור אחסון Blob של Azure."::: 
 
 1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**. השם וסוג החיבור מתארים חיבור זה. מומלץ לבחור שם המסביר את המטרה והיעד של החיבור.
 
 1. בחר מי יכול להשתמש בחיבור זה. אם לא תנקוט שום פעולה, ברירת המחדל תהיה מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. הזן **שם חשבון**, **מפתח חשבון** ו **גורם מכיל** עבור חשבון אחסון Blob שלך שאליו ברצונך לייצא את הפלח.  
+1. הזן **שם חשבון**, **מפתח חשבון** ו **גורם מכיל** עבור חשבון Blob Storage שלך שאליו ברצונך לייצא את הפלח.  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="צילום מסך של תצורת חשבון האחסון. "::: 
    
-    - לקבלת מידע נוסף אודות האופן שבו ניתן למצוא שם חשבון ומפתח חשבון של אחסון Blob, ראה [ניהול הגדרות של חשבון אחסון בפורטל Azure](/azure/storage/common/storage-account-manage).
+    - לקבלת מידע נוסף אודות האופן שבו ניתן למצוא שם חשבון ומפתח חשבון של Blob Storage, ראה [ניהול הגדרות של חשבון אחסון בפורטל Azure](/azure/storage/common/storage-account-manage).
     - כדי ללמוד כיצד ליצור גורם מכיל, ראה [יצירת גורם מכיל](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 1. בחר **שמור** כדי להשלים את החיבור. 
@@ -80,7 +80,7 @@ ms.locfileid: "5760102"
 
 1. כדי ליצור ייצוא חדש, בחר **הוסף ייצוא**.
 
-1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע אחסון Blob של Azure. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
+1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע אחסון Blob של Azure. אם אינך רואה את שם הפלח הזה, אין קשרים זמינים עבורך מסוג זה.
 
 1. בחר את הפלח שברצונך לייצא. בדוגמה זו, זהו **ChurnProneCustomers**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "5760102"
 > [!NOTE]
 > ודא שמספר הרשומות בפלח המיוצא לא חורג ממגבלה המותרת של רישיון Adobe Campaign Standard.
 
-הנתונים המיוצאים מאוחסנים בגורם המכיל של אחסון Blob של Azure שהגדרת לעיל. נתיב התיקיה הבא נוצר אוטומטית בגורם המכיל שלך:
+הנתונים המיוצאים מאוחסנים בגורם המכיל של Azure Blob Storage שהגדרת לעיל. נתיב התיקיה הבא נוצר אוטומטית בגורם המכיל שלך:
 
 *%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
 
@@ -121,9 +121,10 @@ ms.locfileid: "5760102"
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>יצירת קהל ב- Adobe Campaign Standard
 
-כדי לשלוח את הדואר עבור קמפיין זה, נשתמש ב- Adobe Campaign Standard. לאחר ייבוא הנתונים אל Adobe Experience Platform, עלינו [ליצור קהל](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) ב- Adobe Campaign Standard באמצעות הנתונים ב- Adobe Experience Platform.
+כדי לשלוח את הדואר האלקטרוני עבור קמפיין זה, נשתמש ב- Adobe Campaign Standard. לאחר ייבוא הנתונים אל Adobe Experience Platform, עלינו [ליצור קהל](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) ב- Adobe Campaign Standard באמצעות הנתונים ב- Adobe Experience Platform.
 
-למד כיצד [להשתמש בבונה הפלחים](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html#building-a-segment) ב- Adobe Campaign Standard כדי להגדיר קהל המבוסס על הנתונים ב- Adobe Experience Platform.
+
+למד כיצד [להשתמש בבונה הפלחים](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) ב- Adobe Campaign Standard כדי להגדיר קהל המבוסס על הנתונים ב- Adobe Experience Platform.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>יצירה ושליחה של הדואר באמצעות Adobe Campaign Standard
 

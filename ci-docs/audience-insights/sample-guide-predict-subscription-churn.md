@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 324e5c19778230dd978b2f4e9156a2dd82b3d2bd
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: fa460fa5c79bc8a356ec5e90050ec85e05c55be8
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595519"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306304"
 ---
 # <a name="subscription-churn-prediction-preview-sample-guide"></a>מדריך לדוגמה לחיזוי של נטישת מנויים (מהדורת Preview)
 
@@ -22,7 +22,7 @@ ms.locfileid: "5595519"
 
 ## <a name="scenario"></a>תרחיש
 
-Contoso היא חברה המייצרת קפה איכותי ומכונות קפה, שאותם היא מוכרת דרך האתר שלה Contoso Coffee. לאחרונה הקימה החברה עסק של מנויים עבור הלקוחות שלה, המספק להם קפה על בסיס קבוע. מטרתה היא להבין אילו לקוחות הרשומים כמנויים עשויים לבטל את המנוי שלהם בחודשים הקרובים. הידיעה מי מהלקוחות **עשוי לנטוש**, יכולה לעזור לה לחסוך מאמצים שיווקיים על-ידי התמקדות בשימור הלקוחות.
+Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות גבוהה, ומוכרת אותם באמצעות אתר האינטרנט Contoso Coffee. לאחרונה הקימה החברה עסק של מנויים עבור הלקוחות שלה, המספק להם קפה על בסיס קבוע. מטרתה היא להבין אילו לקוחות הרשומים כמנויים עשויים לבטל את המנוי שלהם בחודשים הקרובים. הידיעה מי מהלקוחות **עשוי לנטוש**, יכולה לעזור לה לחסוך מאמצים שיווקיים על-ידי התמקדות בשימור הלקוחות.
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
@@ -128,9 +128,9 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 
 1. עבור אל הכרטיסיה **התאמה** ובחר **הגדר סדר**.
 
-1. ברשימה הנפתחת **ראשי**, בחר **eCommerceContacts : eCommerce** כמקור הראשי וכלול את כל הרשומות.
+1. בתפריט הנפתח **ראשי**, בחר **eCommerceContacts : ‏eCommerceContacts** כמקור העיקרי וכלול את כל הרשומות.
 
-1. ברשימה הנפתחת **ישות 2**, בחר **loyCustomers : LoyaltyScheme** וכלול את כל הרשומות.
+1. ברשימה הנפתחת **ישות 2**, בחר **LoyaltyScheme : ‏loyCustomers** וכלול את כל הרשומות.
 
    :::image type="content" source="media/unify-match-order.PNG" alt-text="איחוד התאמה של eCommerce ו- Loyalty.":::
 
@@ -138,16 +138,16 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 
 1. הוסף את התנאי הראשון שלך באמצעות FullName.
 
-   * עבור eCommerceContacts בחר **FullName** ברשימה הנפתחת.
-   * עבור loyCustomers בחר **FullName** ברשימה הנפתחת.
+   * עבור eCommerceContacts בחר **FullName** בתפריט הנפתח.
+   * עבור loyCustomers בחר **FullName** בתפריט הנפתח.
    * בחר את הרשימה הנפתחת **נרמל** ובחר **סוג (טלפון, שם, כתובת, ...)**.
    * הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
 
 1. הזן את השם **FullName, Email** עבור הכלל החדש.
 
    * הוסף תנאי שני לכתובת הדואר האלקטרוני על-ידי בחירה **הוסף תנאי**
-   * לישות eCommerceContacts, בחר **דואר** ברשימה הנפתחת.
-   * לישות loyCustomers, בחר **דואר** ברשימה הנפתחת. 
+   * עבור הישות eCommerceContacts, בחר **דואר אלקטרוני** בתפריט הנפתח.
+   * עבור הישות loyCustomers, בחר **דואר אלקטרוני** בתפריט הנפתח. 
    * השאר את השדה 'נרמל' ריק. 
    * הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
 

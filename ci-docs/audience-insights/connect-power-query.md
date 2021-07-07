@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: b9a1b30e37c3792aa7bdfcfc177da9e8a32c324d
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 50c231070ff9930c1ea82971bf4f8541a89d5027
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596914"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305892"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>התחבר למקור נתונים של Power Query
 
@@ -72,7 +72,7 @@ Power Query מציע מערך רחב של מחברים לקליטת נתונים
 
 1. ב- audience insights, עבור אל **נתונים** > **מקורות נתונים**.
 
-2. בחר את שלוש הנקודות האנכיות לצד מקור הנתונים שברצונך לשנות ובחר **ערוך** מהתפריט הנפתח.
+2. בחר את שלוש הנקודות האנכיות לצד מקור נתונים שברצונך לשנות ובחר **עריכה** מהתפריט הנפתח.
 
    > [!div class="mx-imgBorder"]
    > ![ערוך אפשרות](media/edit-option-data-sources.png "ערוך אפשרות")

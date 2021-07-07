@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 106dbc26f95b309821d738e1484b1eaa79dd225b
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896098"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304973"
 ---
 # <a name="connections-preview-overview"></a>מבט כולל על חיבורים (Preview)
 
@@ -74,7 +74,9 @@ ms.locfileid: "5896098"
 
 ## <a name="remove-a-connection"></a>הסרת חיבור
 
-אם החיבור שאתה מסיר משמש העשרות או פעולות ייצוא, עליך תחילה לנתק או להסיר אותן. תיבת הדו-שיח להסרה תנחה אותך אל ההעשרות או פעולות הייצוא הרלוונטיות. העשרות ופעולות ייצוא מנותקות הופכות ללא פעילות. הפעל אותן מחדש על-ידי הוספת חיבור נוסף בדף [העשרות](enrichment-hub.md) או [פעולות ייצוא](export-destinations.md).
+אם החיבור שאתה מסיר משמש העשרות או פעולות ייצוא, עליך תחילה לנתק או להסיר אותן. תיבת הדו-שיח להסרה תנחה אותך אל ההעשרות או פעולות הייצוא הרלוונטיות. 
+
+העשרות ופעולות ייצוא מנותקות הופכות ללא פעילות. הפעל אותן מחדש על-ידי הוספת חיבור נוסף בדף [העשרות](enrichment-hub.md) או [פעולות ייצוא](export-destinations.md).
 
 1. עבור אל **ניהול** > **חיבורים (preview)**.
 

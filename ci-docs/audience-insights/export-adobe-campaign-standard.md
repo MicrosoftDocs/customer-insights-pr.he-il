@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: b6c010d84119c2fa8b3ef99017c65f9939bf28c4
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 917ab9559416f3ee0ffd66e471e590e8da3faffc
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760282"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305387"
 ---
 # <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>שימוש בפלחי Customer Insights ב- Adobe Campaign Standard (preview)‎
 
-כמשתמש של Audience Insights עבור Dynamics 365 Customer Insights, ייתכן שיצרת פלחים כדי להפוך את הקמפיינים השיווקיים שלך ליעילים יותר על-ידי התמקדות בקהלים רלוונטיים. כדי להשתמש בפלח מ- Audience Insights ב- Adobe Experience Platform וביישומים כמו Adobe Campaign Standard, עליך לבצע מספר שלבים המתוארים במאמר זה.
+כמשתמש בתובנות לגבי קהלים ב- Dynamics 365 Customer Insights, ייתכן שיצרת פלחים כדי לייעל את הקמפיינים השיווקיים שלך על ידי התמקדות בקהלים הרלוונטיים. כדי להשתמש בפלח מ- Audience Insights ב- Adobe Experience Platform וביישומים כמו Adobe Campaign Standard, עליך לבצע מספר שלבים המתוארים במאמר זה.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="תרשים התהליך של השלבים המתוארים במאמר זה.":::
 
@@ -54,7 +54,7 @@ ms.locfileid: "5760282"
 
 1. בתובנות קהלים, עבור אל **ניהול** > **חיבורים**.
 
-1. בחר **הוסף חיבור** ובחר **Adobe Campaign** כדי לקבוע את תצורת החיבור או בחר **הגדר** באריח **Adobe Campaign**
+1. בחר **הוסף חיבור** ובחר **Adobe Campaign** כדי לקבוע את תצורת החיבור או בחר **הגדר** באריח **Adobe Campaign**.
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="אריח תצורה עבור Adobe Campaign Standard.":::
 
@@ -66,7 +66,7 @@ ms.locfileid: "5760282"
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="צילום מסך של תצורת חשבון האחסון. "::: 
 
-   - כדי לקבל מידע נוסף אודות אופן מציאת שם החשבון ומפתח החשבון של אחסון Blob של Azure, ראה [ניהול הגדרות חשבון אחסון בפורטל Azure](/azure/storage/common/storage-account-manage).
+   - כדי לקבל מידע נוסף אודות אופן מציאת שם החשבון ומפתח החשבון של Azure Blob Storage, ראה [ניהול הגדרות חשבון אחסון בפורטל Azure](/azure/storage/common/storage-account-manage).
 
    - כדי ללמוד כיצד ליצור גורם מכיל, ראה [יצירת גורם מכיל](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
@@ -80,7 +80,7 @@ ms.locfileid: "5760282"
 
 1. כדי ליצור ייצוא חדש, בחר **הוסף ייצוא**.
 
-1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע Adobe Campaign. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
+1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע Adobe Campaign. אם אינך רואה את שם הפלח הזה, אין קשרים זמינים עבורך מסוג זה.
 
 1. בחר את הפלח שברצונך לייצא. בדוגמה זו, זהו **ChurnProneCustomers**.
 
@@ -106,7 +106,7 @@ ms.locfileid: "5760282"
 > [!NOTE]
 > ודא שמספר הרשומות בפלח המיוצא לא חורג ממגבלה המותרת של רישיון Adobe Campaign Standard.
 
-הנתונים המיוצאים מאוחסנים בגורם המכיל של אחסון Blob של Azure שהגדרת לעיל. נתיב התיקיה הבא נוצר אוטומטית בגורם המכיל שלך:
+הנתונים המיוצאים מאוחסנים בגורם המכיל של Azure Blob Storage שהגדרת לעיל. נתיב התיקיה הבא נוצר אוטומטית בגורם המכיל שלך:
 
 *%ContainerName%/CustomerInsights_%instanceID%/% exportdestination-name%_%segmentname%_%timestamp%.csv*
 
@@ -118,7 +118,7 @@ ms.locfileid: "5760282"
 
 כדי להשתמש בפלח ב- Adobe Campaign Standard, עלינו להרחיב את סכימת הפרופיל ב- Adobe Campaign Standard כך שתכלול שני שדות נוספים. למד כיצד [להרחיב את משאב הפרופיל](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) עם שדות חדשים ב- Adobe Campaign Standard.
 
-בדוגמה שלנו, שדות אלה הם *שם פלח ותאריך פלח (אופציונלי).*
+בדוגמה שלנו, שדות אלה הם *שם פלח ותאריך פלח (אופציונלי)*.
 
 אנחנו נשתמש בשדות אלה כדי לזהות את הפרופילים ב- Adobe Campaign Standard שאנחנו רוצים להתמקד בהם עבור קמפיין זה.
 
@@ -128,7 +128,7 @@ ms.locfileid: "5760282"
 
 עכשיו כשהכל מוכן, עלינו לייבא את נתוני קהל המוכנים מ- audience insights אל Adobe Campaign Standard כדי ליצור פרופילים. למד [כיצד לייבא פרופילים ב- Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) באמצעות זרימת עבודה.
 
-זרימת העבודה של הייבוא בתמונה למטה הוגדרה לפעול כל 8 שעות ומחפשת פלחי audience insights שיוצאו (קובץ ‎.csv באחסון Blob של Azure). זרימת העבודה מחלצת את תוכן קובץ ה- ‎.csv בסדר עמודות שצוין. זרימת עבודה זו נבנתה על מנת לבצע טיפול בסיסי בשגיאות ולהבטיח שלכל רשומה יש כתובת דואר לפני שילוב הנתונים ב- Adobe Campaign Standard. זרימת העבודה גם מחלצת את שם הפלח משם הקובץ לפני העלאתו לנתוני פרופיל ACS.
+זרימת העבודה של הייבוא שבתמונה למטה הוגדרה לפעול כל שמונה שעות ולחפש פלחים מיוצאים של תובנות לגבי קהלים (קובץ csv‎. ב- Azure Blob Storage). זרימת העבודה מחלצת את תוכן קובץ ה- ‎.csv בסדר עמודות שצוין. זרימת עבודה זו נבנתה על מנת לבצע טיפול בסיסי בשגיאות ולהבטיח שלכל רשומה יש כתובת דואר לפני שילוב הנתונים ב- Adobe Campaign Standard. זרימת העבודה גם מחלצת את שם הפלח משם הקובץ לפני ביצוע Upsert לנתוני פרופיל Adobe Campaign Standard.
 
 :::image type="content" source="media/ACS-import-workflow.png" alt-text="צילום מסך של זרימת עבודה לייבוא בממשק המשתמש של Adobe Campaign Standard.":::
 

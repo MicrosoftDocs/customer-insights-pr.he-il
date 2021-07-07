@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 73d294a285b4ad706bec7fe925c1daa0b839ddd6
-ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
+ms.openlocfilehash: 19c1fbadb79ba22c0dc11aa7c3b5b2415add70a7
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129946"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306350"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>חיזוי ערכי אורך החיים של הלקוח‬ (CLV) - מדריך לדוגמה
 
@@ -123,9 +123,9 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
 
 1. עבור אל הכרטיסיה **התאמה** ובחר **הגדר סדר**.
 
-1. ברשימה הנפתחת **ראשי**, בחר **eCommerceContacts : eCommerce** כמקור הראשי וכלול את כל הרשומות.
+1. בתפריט הנפתח **ראשי**, בחר **eCommerceContacts : ‏eCommerceContacts** כמקור העיקרי וכלול את כל הרשומות.
 
-1. ברשימה הנפתחת **ישות 2**, בחר **loyCustomers : LoyaltyScheme** וכלול את כל הרשומות.
+1. ברשימה הנפתחת **ישות 2**, בחר **LoyaltyScheme : ‏loyCustomers** וכלול את כל הרשומות.
 
    ![איחוד התאמה של eCommerce ו- Loyalty.](media/unify-match-order.png)
 
@@ -133,16 +133,16 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
 
 1. הוסף את התנאי הראשון שלך באמצעות FullName.
 
-   - עבור eCommerceContacts בחר **FullName** ברשימה הנפתחת.
-   - עבור loyCustomers בחר **FullName** ברשימה הנפתחת.
-   - בחר את הרשימה הנפתחת **נרמל** ובחר **סוג (טלפון, שם, כתובת, ...)**.
+   - עבור eCommerceContacts בחר **FullName** בתפריט הנפתח.
+   - עבור loyCustomers בחר **FullName** בתפריט הנפתח.
+   - בחר את התפריט הנפתח **נרמל** ובחר **סוג (טלפון, שם, כתובת, ...)**.
    - הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
 
 1. הזן את השם **FullName, Email** עבור הכלל החדש.
 
    - הוסף תנאי שני לכתובת הדואר האלקטרוני על-ידי בחירה **הוסף תנאי**
-   - לישות eCommerceContacts, בחר **דואר** ברשימה הנפתחת.
-   - לישות loyCustomers, בחר **דואר** ברשימה הנפתחת.
+   - עבור הישות eCommerceContacts, בחר **דואר אלקטרוני** בתפריט הנפתח.
+   - עבור הישות loyCustomers, בחר **דואר אלקטרוני** בתפריט הנפתח.
    - השאר את השדה 'נרמל' ריק.
    - הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
 

@@ -9,12 +9,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 87bf8d7b9c23633ebdc929e15ac645c55cc21e4a
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 09d449e51a3a47ec916ab3d017419c9d9be1ffcf
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595381"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305711"
 ---
 # <a name="system-configuration"></a>קביעת תצורת המערכת‫
 
@@ -94,7 +94,7 @@ ms.locfileid: "5595381"
 
 ## <a name="api-usage-tab"></a>כרטיסיית שימוש בממשק API
 
-מצא פרטים אודות השימוש בזמן אמת ב- API וראה אילו אירועים התרחשו במסגרת זמן נתונה. בחר את מסגרת הזמן בתפריט הנפתח **בחר מסגרת זמן**. 
+מצא פרטים אודות השימוש בזמן אמת ב- API וראה אילו אירועים התרחשו במסגרת זמן נתונה. אתה בוחר את מסגרת הזמן בתפריט הנפתח **בחר מסגרת זמן**. 
 
 **שימוש ב- API** מכיל שלושה מקטעים: 
 - **קריאות API** - תרשים הממחיש את מספר השיחות המצטבר ל- API במסגרת הזמן שנבחרה.

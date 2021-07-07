@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: ccf4f661ecffb281556a4545b1f26ee809c697cd
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: 0496d10c994cd077a778a6e745e3774e316765ae
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5895914"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305203"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>העשרה של פרופילי חברות באמצעות Leadspace (תצוגה מקדימה)
 
@@ -36,7 +36,7 @@ Leadspace היא חברה למדעי נתונים המספקת פלטפורמת 
 
    :::image type="content" source="media/leadspace-tile.png" alt-text="צילום מסך של אריח Leadspace.":::
 
-1. ‏‏בחר [חיבור](connections.md) מהרשימה הנפתחת. צור קשר עם מנהל מערכת אם אין חיבור זמין. אם אתה מנהל מערכת, באפשרותך ליצור חיבור על-ידי בחירת **הוסף חיבור** ובחירת **Leadspace**. 
+1. בחר [חיבור](connections.md) מהרשימה הנפתחת. צור קשר עם מנהל מערכת אם אין חיבור זמין. אם אתה מנהל מערכת, באפשרותך ליצור חיבור על-ידי בחירת **הוסף חיבור** ובחירת **Leadspace**. 
 
 1. בחר **התחבר ל- Leadspace** כדי לאשר את החיבור.
 
@@ -57,13 +57,13 @@ Leadspace היא חברה למדעי נתונים המספקת פלטפורמת 
 
 עליך להיות מנהל מערכת כדי לקבוע תצורת חיבורים. בחר **הוסף חיבור** בעת קביעת תצורת העשרה *או* עבור אל **ניהול** > **חיבורים** ובחר **הגדר** באריח Leadspace.
 
-1. בחר **תחילת העבודה** 
+1. בחר **תחילת העבודה**. 
 
 1. הזן שם עבור החיבור בתיבה **שם תצוגה**.
 
 1. ספק אסימון Leadspace חוקי.
 
-1. סקור וספק את הסכמתך עבור **פרטיות נתונים ותאימות** על-ידי בחירת תיבת הסימון **אני מסכים**
+1. סקור את **פרטיות ותאימות נתונים** ותן את הסכמתך על-ידי בחירת **אני מסכים**.
 
 1. בחר **אימות** כדי לאמת את התצורה.
 
@@ -81,7 +81,7 @@ Leadspace היא חברה למדעי נתונים המספקת פלטפורמת 
 
 ## <a name="next-steps"></a>השלבים הבאים
 
-בנה על נתוני הלקוחות המועשרים שלך. צור [פלחים](segments.md), [מדדים](measures.md), ואפילו [ייצא את הנתונים](export-destinations.md) כדי לספק חוויות מותאמות אישית ללקוחות שלך.
+בנה על נתוני הלקוחות המועשרים שלך. צור [פלחים](segments.md) ו[מדידות](measures.md), ואפילו [יצא את הנתונים](export-destinations.md) כדי להעניק ללקוחות שלך חוויות מותאמות אישית.
 
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 

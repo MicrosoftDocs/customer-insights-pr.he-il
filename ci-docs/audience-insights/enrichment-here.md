@@ -1,5 +1,5 @@
 ---
-title: העשרה באמצעות HERE Technologies להעשרה של צד שלישי
+title: העשרה באמצעות העשרת צד שלישי של HERE Technologies
 description: מידע כללי אודות העשרה של צד שלישי באמצעות HERE Technologies.
 ms.date: 04/09/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 5d1f037377010153045c9255d2d01f98ebf1fdfd
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896052"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305295"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>העשרת פרופילי לקוחות באמצעות HERE Technologies‏ (Preview)
 
@@ -26,7 +26,7 @@ HERE Technologies היא חברת פלטפורמת מיקום המספקת נת�
 
 - יש לך מנוי פעיל ל- HERE Technologies. כדי לקבל מנוי, באפשרותך [להירשם כאן](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) או [ליצור קשר עם HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you) ישירות. [קבל מידע נוסף אודות העשרת מיקום של HERE Technologies.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- קיים [חיבור](connections.md) HERE זמין *או* שיש לך הרשאות [מנהל מערכת](permissions.md#administrator) ומפתח API של HERE Technologies.
+- [חיבור](connections.md) HERE זמין *או* שיש לך הרשאות [מנהל מערכת](permissions.md#administrator) ומפתח API של HERE Technologies.
 
 ## <a name="configure-the-enrichment"></a>קביעת תצורת ההעשרה
 
@@ -37,7 +37,7 @@ HERE Technologies היא חברת פלטפורמת מיקום המספקת נת�
    > [!div class="mx-imgBorder"]
    > ![אריח HERE Technologies](media/HERE-tile.png "אריח HERE Technologies")
 
-1. ‏‏בחר [חיבור](connections.md) מהרשימה הנפתחת. צור קשר עם מנהל מערכת אם אין חיבור זמין. אם אתה מנהל מערכת, באפשרותך ליצור חיבור על-ידי בחירת **הוסף חיבור**. בחר **HERE Technologies** מהתפריט הנפתח. 
+1. בחר [חיבור](connections.md) מהרשימה הנפתחת. צור קשר עם מנהל מערכת אם אין חיבור זמין. אם אתה מנהל מערכת, באפשרותך ליצור חיבור על-ידי בחירת **הוסף חיבור**. בחר **HERE Technologies** מהרשימה הנפתחת. 
 
 1. בחר **התחבר ל- HERE Technologies** כדי לאשר את הבחירה.
 
@@ -58,7 +58,7 @@ HERE Technologies היא חברת פלטפורמת מיקום המספקת נת�
 
 1. בחר **שמור העשרה** לאחר סקירת האפשרויות שלך.
 
-## <a name="configure-the-connection-for-here-technologies"></a>קביעת תצורת החיבור עבור HERE Technologies 
+## <a name="configure-the-connection-for-here-technologies"></a>הגדת את תצורת החיבור של HERE Technologies 
 
 עליך להיות מנהל מערכת כדי לקבוע תצורת חיבורים. בחר **הוסף חיבור** בעת קביעת תצורת העשרה *או* עבור אל **ניהול** > **חיבורים** ובחר **הגדר** באריח HERE Technologies.
 
@@ -66,13 +66,13 @@ HERE Technologies היא חברת פלטפורמת מיקום המספקת נת�
 
 1. ספק מפתח API חוקי של HERE Technologies.
 
-1. סקור וספק את הסכמתך עבור **פרטיות נתונים ותאימות** על-ידי בחירת תיבת הסימון **אני מסכים**
+1. סקור את **פרטיות ותאימות נתונים** ותן את הסכמתך על-ידי בחירת **אני מסכים**.
 
 1. בחר **אימות** כדי לאמת את התצורה.
 
 1. לאחר השלמת האימות, בחר **שמור**.
 
-> [!div class="mx-imgBorder"]
+   > [!div class="mx-imgBorder"]
    > ![דף תצורת החיבור של HERE Technologies](media/enrichment-HERE-connection.png "דף תצורת החיבור של HERE Technologies")
 
 ## <a name="enrichment-results"></a>תוצאות העשרה
@@ -85,7 +85,7 @@ HERE Technologies היא חברת פלטפורמת מיקום המספקת נת�
 
 ## <a name="next-steps"></a>השלבים הבאים
 
-בנה על נתוני הלקוחות המועשרים שלך. צור [פלחים](segments.md), [מדדים](measures.md), ואפילו [ייצא את הנתונים](export-destinations.md) כדי לספק חוויות מותאמות אישית ללקוחות שלך.
+בנה על נתוני הלקוחות המועשרים שלך. צור [פלחים](segments.md) ו[מדידות](measures.md), ואפילו [יצא את הנתונים](export-destinations.md) כדי להעניק ללקוחות שלך חוויות מותאמות אישית.
 
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 

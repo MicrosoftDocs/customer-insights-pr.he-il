@@ -1,7 +1,7 @@
 ---
 title: מחבר Power Automate | Microsoft Docs
 description: צור זרימות ב- Microsoft Power Automate מתוך Dynamics 365 Customer Insights.
-ms.date: 01/20/2021
+ms.date: 06/24/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ce2477d957a1792e0436a0dfc15a33621b1c89a9
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 57be0a204ef920b7a4bb31cf9a5b3a77f96eca0d
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976089"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305065"
 ---
 # <a name="power-automate-connector-preview"></a>מחבר Power Automate (תצוגה מקדימה)
 
@@ -28,12 +28,13 @@ ms.locfileid: "5976089"
 - הפעל כאשר רענון מקור נתונים מצליח.
 - הפעל כאשר סף כלשהו נחצה במקטע. הגורם המפעיל מוגבל לחצייה של סף כלפי מעלה.
 - הפעל כאשר סף כלשהו נחצה במדד עסקי. רק מדידות עסקיות ללא ממד נתמכות. הגורם המפעיל מוגבל לחצייה של סף כלפי מעלה.
-- הפעל כאשר רענון מלא של (מקורות נתונים, פלחים, מדידות,...) הושלם.
+- הפעל כאשר רענון מלא של (מקורות נתונים, פלחים, מדידות, ...) הושלם.
 - הפעל לאחר השלמת רענון של תהליך האיחוד (מפה, התאמה, מיזוג).
 
-[הגדר את הגורמים המפעילים ב- Power Automate](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/).
+[הגדר את הגורמים המפעילים ב- Power Automate.](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 
 ## <a name="power-automate-actions"></a>פעולות Power Automate
+
 מחבר Power Automate מספק פעולות אחרות לגורמים המפעילים הזמינים. לקבלת מידע נוסף, ראה [Dynamics 365 Customer Insights Connector](/connectors/customerinsights/).
 
 ## <a name="create-a-power-automate-flow"></a>צור זרימת Power Automate

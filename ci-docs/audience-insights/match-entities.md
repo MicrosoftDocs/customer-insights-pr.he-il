@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2155042d86cda0cffee1588760a06d6c7eb7077e
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 50b11e7d6f62d7a25eb25a0f2b1c4ad7d859def1
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085623"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306029"
 ---
 # <a name="match-entities"></a>התאמת ישויות
 
@@ -209,7 +209,7 @@ ms.locfileid: "6085623"
 
 באפשרותך להגדיר מחדש ולכוונן את רוב פרמטרי ההתאמה.
 
-:::image type="content" source="media/match-rules-management.png" alt-text="צילום מסך של התפריט הנפתח עם אפשרויות כלל התאמה.":::
+:::image type="content" source="media/match-rules-management.png" alt-text="צילום מסך של התפריט הנפתח עם אפשרויות לכלל התאמה.":::
 
 - **שנה את סדר הכללים** אם הגדרת מספר כללים. באפשרותך לסדר מחדש את כללי ההתאמה על-ידי בחירת האפשרויות **הזז למעלה** ו **הזז למטה** או באמצעות גרירה ושחרור.
 
@@ -247,7 +247,7 @@ ms.locfileid: "6085623"
 
 1. עבור אל **נתונים** > **מקורות נתונים** וקלוט את קבצי התבנית כישויות חדשות. לאחר השילוב תוכל להשתמש בהם כדי לציין את תצורת ההתאמה.
 
-1. לאחר העלאת הישויות והקבצים הזמינים, בחר שוב **התאמה אישית**. תראה אפשרויות לציון הישויות שתרצה לכלול. בחר את הישויות הרצויות מהתפריט הנפתח.
+1. לאחר העלאת הישויות והקבצים הזמינים, בחר שוב **התאמה אישית**. תראה אפשרויות לציון הישויות שתרצה לכלול. בחר את הישויות הנדרשות מהתפריט הנפתח.
 
    :::image type="content" source="media/custom-match-overrides.png" alt-text="צילום מסך של תיבת הדו-שיח לבחירת עקיפות עבור תרחיש התאמה מותאם אישית.":::
 

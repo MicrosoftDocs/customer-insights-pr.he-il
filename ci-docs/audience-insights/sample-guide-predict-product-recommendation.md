@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: b136084316da5ae17a8428236381f69e5c21f9ea
-ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
+ms.openlocfilehash: a85ee598ec747d0594755314e83a127ce0f2af95
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129900"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306167"
 ---
 # <a name="product-recommendation-prediction-preview-sample-guide"></a>מדריך לדוגמה של חיזוי המלצות על מוצרים (Preview)
 
@@ -105,9 +105,9 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
 
 1. עבור אל הכרטיסיה **התאמה** ובחר **הגדר סדר**.
 
-2. ברשימה הנפתחת **ראשי**, בחר **eCommerceContacts : eCommerce** כמקור הראשי וכלול את כל הרשומות.
+2. בתפריט הנפתח **ראשי**, בחר **eCommerceContacts : ‏eCommerceContacts** כמקור העיקרי וכלול את כל הרשומות.
 
-3. ברשימה הנפתחת **ישות 2**, בחר **loyCustomers : LoyaltyScheme** וכלול את כל הרשומות.
+3. ברשימה הנפתחת **ישות 2**, בחר **LoyaltyScheme : ‏loyCustomers** וכלול את כל הרשומות.
 
    ![איחוד התאמה של eCommerce ו- Loyalty.](media/unify-match-order.png)
 
@@ -115,16 +115,16 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
 
 5. הוסף את התנאי הראשון שלך באמצעות FullName.
 
-   - עבור eCommerceContacts בחר **FullName** ברשימה הנפתחת.
-   - עבור loyCustomers בחר **FullName** ברשימה הנפתחת.
+   - עבור eCommerceContacts בחר **FullName** בתפריט הנפתח.
+   - עבור loyCustomers בחר **FullName** בתפריט הנפתח.
    - בחר את הרשימה הנפתחת **נרמל** ובחר **סוג (טלפון, שם, כתובת, ...)**.
    - הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
 
 6. הזן את השם **FullName, Email** עבור הכלל החדש.
 
    - הוסף תנאי שני לכתובת הדואר האלקטרוני על-ידי בחירה **הוסף תנאי**
-   - לישות eCommerceContacts, בחר **דואר** ברשימה הנפתחת.
-   - לישות loyCustomers, בחר **דואר** ברשימה הנפתחת.
+   - עבור הישות eCommerceContacts, בחר **דואר אלקטרוני** בתפריט הנפתח.
+   - עבור הישות loyCustomers, בחר **דואר אלקטרוני** בתפריט הנפתח.
    - השאר את השדה 'נרמל' ריק.
    - הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
 

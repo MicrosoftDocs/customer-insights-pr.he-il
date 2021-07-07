@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 37d25aa038ea32b98f2d1850d7b42b701292438d
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: e20c7b7fd3989d7621cb7765f38b85c8ab4adfcb
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976043"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305111"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>ייצוא רשימת פלחים אל Facebook Ads Manager‏ (Preview)
 
@@ -22,12 +22,12 @@ ms.locfileid: "5976043"
 
 ## <a name="prerequisites-for-connection"></a>דרישות מוקדמות לחיבור
 
-- אתה זקוק ל [**חשבון מודעות של Facebook**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) שכולל [**חשבון עסקי של Facebook**](https://business.facebook.com/).
-- אתה צריך להיות מנהל מערכת ב [חשבון מודעות של **Facebook**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
+- נדרש [**Facebook חשבון מודעות**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account)הכולל [**Facebook חשבון עסקי של**](https://business.facebook.com/).
+- עליך להיות מנהל מערכת ב- [**Facebook חשבון מודעות**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- עד 10 מיליון פרופילי לקוחות לכל ייצוא אל Facebook .Ads Manager
+- עד 10 מיליון פריפילי לקוחות בכל ייצוא - Facebook Ads Manager.
 - הייצוא ל- Facebook Ads Manager מוגבל לפלחים.
 - צור או עדכן קהלים מותאמים אישית ב- Facebook מהסוג *רשימת לקוחות* בלבד.
 - ייצוא פלחים עם מיליון פרופילים בסך הכל עשוי להימשך עד 90 דקות.
@@ -42,11 +42,11 @@ ms.locfileid: "5976043"
 
 1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**. השם וסוג החיבור מתארים חיבור זה. מומלץ לבחור שם המסביר את המטרה והיעד של החיבור.
 
-1. בחר מי יכול להשתמש בחיבור זה. אם לא תנקוט שום פעולה, ברירת המחדל תהיה **מנהלי מערכת**. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. בחר מי יכול להשתמש בחיבור זה. אם לא תנקוט שום פעולה, ברירת המחדל תהיה מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. אימות באמצעות Facebook Ads: 
 
-   1. בחר **המשך עם Facebook** כדי להיכנס לחשבון המודעות שלך ב- Facebook.
+   1. בחר **המשך עם Facebook** כדי להיכנס לחשבון Facebook Ads שלך.
 
    1. אפשר את הרשאת **ניהול מודעות** לאחר אימות עם Facebook.
 
@@ -54,7 +54,7 @@ ms.locfileid: "5976043"
 
    1. בחר **קהל מותאם אישית קיים** מהרשימה הנפתחת או צור **קהל מותאם אישית חדש**. למידע נוסף ראה [**קהלים ב- Facebook Ads Manager**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).
       > [!NOTE]
-      > באפשרותך ליצור או לעדכן קהלים מותאמים אישית ב- Facebook מהסוג *רשימת לקוחות* עם ייצוא זה. במקרים מסוימים, אתה רואה קהלים מותאמים אישית מסוגים שונים ברשימה הנפתחת. בחירת סוג שונה מ *רשימת לקוחות* תגרום לכשל בייצוא. 
+      > באפשרותך ליצור או לעדכן קהלים מותאמים אישית ב- Facebook מהסוג *רשימת לקוחות* עם ייצוא זה. במקרים מסוימים יופיעו קהלים מותאמים אישית מסוגים שונים ברשימה הנפתחת. בחירת סוג שונה מ *רשימת לקוחות* תגרום לכשל בייצוא. 
 
 1. סקור את **פרטיות ותאימות נתונים** ובחר **אני מסכים**.
 
@@ -68,14 +68,15 @@ ms.locfileid: "5976043"
 
 1. כדי ליצור ייצוא חדש, בחר **הוסף יעד**. 
 
-1. בשדה **חיבור לייצוא**, בחר חיבור מתוך המקטע **Facebook Ads Manager**. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
+1. בשדה **חיבור לייצוא**, בחר חיבור מתוך המקטע **Facebook Ads Manager**. אם אינך רואה את שם הפלח הזה, אין קשרים זמינים עבורך מסוג זה.
 
 1. בתוך **בחר שדה מזהה מפתח**, בחר **דואר**, **שם וכתובת**, או **טלפון** כדי לשלוח אל Facebook Ads Manager. 
 
 1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**.
 
 1. מפה את התכונות המתאימות מישות הלקוח המאוחד שלך עבור מזהה המפתח שנבחר.
-   > [TIP] הסיכוי הטוב ביותר להתאמה הוא אם תבחר **דואר** כמזהה מפתח. הוספת מזהים נוספים עשויה לשפר את ההתאמה.
+   > [!TIP]
+   > הסיכוי הטוב ביותר להתאמה הוא אם תבחר **דואר** כמזהה מפתח. הוספת מזהים נוספים עשויה לשפר את ההתאמה.
 
 1. בחר **הוסף תכונה** כדי למפות תכונות נוספות לשליחה אל Facebook Ads Manager. תכונות מ- Facebook Ads Manager ממופות לשמות הידידותיים למשתמש הבאים: **FN** = **שם פרטי**, **LN** = **שם משפחה**, **FI** = **ראשי תיבות**, **PHONE** = **טלפון**, **GEN** = **מין**, **DOB** = **תאריך לידה**, **ST** = **מדינה בארה"ב**, **CT** = **עיר**, **ZIP** = **מיקוד**, **COUNTRY** = **מדינה / אזור**
 
@@ -85,12 +86,14 @@ ms.locfileid: "5976043"
 
 שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
 
-הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
+הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). 
+
+באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
 
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 
 כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל Facebook Ads Manager, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אבל אתה אחראי לוודא ש- Facebook Adsעומדת בכל התחייבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-מנהל המערכת של Dynamics 365 Customer Insights שלך יכול להסיר יעד ייצוא זה בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
+מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר יעד ייצוא זה בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

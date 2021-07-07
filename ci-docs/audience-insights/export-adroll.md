@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: dbebc3ee3978ca6ee9d1ad1c15c226479876709f
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 67bfa23d56b26ae592efa4d7197713664bb02623
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124366"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304825"
 ---
 # <a name="export-segments-to-adroll-preview"></a>ייצוא פלחים אל AdRoll‏ (Preview)
 
@@ -28,11 +28,11 @@ ms.locfileid: "6124366"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- באפשרותך לייצא עד 250,000 פרופילים לייצוא אל AdRoll.
+- באפשרותך לייצא ל- AdRoll עד 250,000 פרופילים בכל פעם.
 - אין באפשרותך לייצא פלחים עם פחות מ- 100 פרופילים ל- AdRoll. 
 - הייצוא ל- AdRoll מוגבל לפלחים.
 - ייצוא של עד 250,000 פרופילים ל- AdRoll יכול להימשך עד 10 דקות. 
-- מספר הפרופילים שתוכל לייצא ל- AdRoll תלוי ומוגבל בחוזה שלך עם AdRoll.
+- מספר הפרופילים שתוכל לייצא ל- AdRoll תלוי בחוזה שלך עם AdRoll.
 
 ## <a name="set-up-connection-to-adroll"></a>הגדרת חיבור אל AdRoll
 
@@ -62,23 +62,25 @@ ms.locfileid: "6124366"
 
 1. כדי ליצור ייצוא חדש, בחר **הוסף יעד**.
 
-1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע AdRoll. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
+1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע AdRoll. אם אינך רואה את שם הפלח הזה, אין קשרים זמינים עבורך מסוג זה.
 
-1. הזן את **מזהה מפרסם AdRoll** לקבלת מידע נוסף, ראה [פרופילי מפרס AdRoll](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
+1. הזן את **מזהה מפרסם AdRoll** שלך. למידע נוסף עיין ב[פרופילים של מפרסמי AdRoll](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 
 3. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. ייצוא פלחים אל AdRoll הוא הכרחי.
 
-1. בחר את הפלחים שברצונך לייצא. בחר פלח עם 100 חברים לפחות. אין באפשרותך לייצא פלחים קטנים יותר. בנוסף, הגודל המרבי של פלח לייצוא הוא 250,000 חברים לייצוא. 
+1. בחר את הפלחים שברצונך לייצא. בחר פלח עם 100 חברים לפחות. אין באפשרותך לייצא פלחים קטנים יותר. בנוסף, הגודל המרבי של פלח לייצוא הוא 250,000 חברים לכל ייצוא. 
 
 1. בחר **שמור**.
 
 שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
 
-הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
+הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). 
+
+באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
 
 
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 
 כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל AdRoll, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אבל אתה אחראי לוודא ש- AdRoll עומדת בכל התחייבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 
-מנהל המערכת של Dynamics 365 Customer Insights שלך יכול להסיר יעד ייצוא זה בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
+מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר יעד ייצוא זה בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
