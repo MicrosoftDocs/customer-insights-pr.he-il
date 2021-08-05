@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: c9adb4d7db74573d0512ae7a68a0e7ab51c994a0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304605"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554619"
 ---
 # <a name="customer-profiles"></a>פרופילי לקוחות
 
@@ -23,11 +23,11 @@ ms.locfileid: "6304605"
 הלקוחות יכולים להיות אנשים או ארגונים (תצוגה מקדימה). כל פרופיל לקוח או ארגון מיוצג על ידי אריח. בחר אריח כדי לראות מידע נוסף על אותו לקוח או ארגון ספציפי. השתמש בפקדי העימוד בתחתית הדף כדי לראות רשומות נוספות.
 
 > [!div class="mx-imgBorder"] 
-> ![פרופיל לקוח B2C](media/profiles-customers.png "פרופיל לקוח B2C")
+> ![פרופיל לקוח B2C.](media/profiles-customers.png "פרופיל לקוח B2C")
 
 ארגונים (תצוגה מקדימה)
 > [!div class="mx-imgBorder"] 
-> ![פרופיל לקוח B2B](media/profile-customers-b2b.png "פרופיל לקוח B2B")
+> ![פרופיל לקוח B2B.](media/profile-customers-b2b.png "פרופיל לקוח B2B")
 
 > [!NOTE]
 > אם אינך יכול לראות את האריחים כאשר אתה בוחר **לקוחות** בניווט, מנהל המערכת שלך צריך [להגדיר לפחות תכונה אחת ניתנת לחיפוש](search-filter-index.md) ב **אינדקס חיפוש וסינון**.
@@ -47,7 +47,7 @@ ms.locfileid: "6304605"
 2. סמן את התיבות לצד התכונות שברצונך לסנן לקוחות לפיהן.
 
    > [!div class="mx-imgBorder"] 
-   > ![פרופילי לקוחות](media/profiles-customers3.png "פרופילי לקוחות")
+   > ![פרופילי לקוחות.](media/profiles-customers3.png "פרופילי לקוחות")
 
 3. הסר את המסננים שלך על-ידי בחירת **נקה מסננים** בדף **לקוחות**.
 

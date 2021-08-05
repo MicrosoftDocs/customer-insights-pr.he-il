@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596500"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692114"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>התחברות לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure עבור audience insights
 
 כלים אוטומטיים המשתמשים בשירותי Azure צריכים תמיד להיות בעלי הרשאות מוגבלות. במקום כניסה ליישומים כמשתמש בעל הרשאות מלאות, Azure מספק מנהלי שירות. המשך לקרוא כדי ללמוד כיצד לחבר את audience insights לחשבון Azure Data Lake Storage Gen2 באמצעות מנהל שירות של Azure במקום מפתחות של חשבון אחסון. 
 
-באפשרותך להשתמש במנהל השירות כדי [להוסיף או לערוך תיקיית Common Data Model כמקור נתונים](connect-common-data-model.md) או [ליצור סביבה חדשה או לעדכן סביבה קיימת](manage-environments.md#create-an-environment-in-an-existing-organization) באופן מאובטח.
+באפשרותך להשתמש במנהל השירות כדי [להוסיף או לערוך תיקיית Common Data Model כמקור נתונים](connect-common-data-model.md) או [ליצור סביבה חדשה או לעדכן סביבה קיימת](get-started-paid.md) באופן מאובטח.
 
 > [!IMPORTANT]
 > - חשבון האחסון של Azure Data Lake Gen2 שמתכוון להשתמש במנהל השירות חייב להיות בעל [מרחב שמות הירארכי (HNS) מופעל](/azure/storage/blobs/data-lake-storage-namespace).
@@ -81,7 +81,7 @@ ms.locfileid: "5596500"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>הזן את מזהה משאב Azure או את פרטי מנוי Azure בקובץ המצורף לחשבון האחסון ב- Audience Insights.
 
-צרף חשבון אחסון ב- Azure Data Lake ל- Audience Insights כדי [לאחסן נתוני פלט](manage-environments.md) או [השתמש בו כמקור נתונים](connect-common-data-service-lake.md). הבחירה באפשרות Azure Data Lake מאפשרת לבחור בין גישה מבוססת-משאב או גישה מבוססת-מנוי.
+צרף חשבון אחסון ב- Azure Data Lake ל- Audience Insights כדי [לאחסן נתוני פלט](manage-environments.md) או [השתמש בו כמקור נתונים](connect-dataverse-managed-lake.md). הבחירה באפשרות Azure Data Lake מאפשרת לבחור בין גישה מבוססת-משאב או גישה מבוססת-מנוי.
 
 בצע את השלבים הבאים כדי לספק את המידע הנדרש על הגישה שנבחרה.
 

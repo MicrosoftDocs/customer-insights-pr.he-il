@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 00be15367001a5f4342d60bb284726ef7154d05c
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305295"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555308"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>העשרת פרופילי לקוחות באמצעות HERE Technologies‏ (Preview)
 
@@ -35,7 +35,7 @@ HERE Technologies היא חברת פלטפורמת מיקום המספקת נת�
 1. בחר **העשר את הנתונים שלי** באריח HERE Technologies ובחר **תחילת העבודה**.
 
    > [!div class="mx-imgBorder"]
-   > ![אריח HERE Technologies](media/HERE-tile.png "אריח HERE Technologies")
+   > ![אריח HERE Technologies.](media/HERE-tile.png "אריח HERE Technologies")
 
 1. בחר [חיבור](connections.md) מהרשימה הנפתחת. צור קשר עם מנהל מערכת אם אין חיבור זמין. אם אתה מנהל מערכת, באפשרותך ליצור חיבור על-ידי בחירת **הוסף חיבור**. בחר **HERE Technologies** מהרשימה הנפתחת. 
 
@@ -50,7 +50,7 @@ HERE Technologies היא חברת פלטפורמת מיקום המספקת נת�
 1. הגדר באילו שדות מהפרופילים המאוחדים שלך יש להשתמש כדי לחפש נתוני מיקום מתאימים מ- HERE Technologies. השדות **רחוב 1** ו **מיקוד** נדרשים עבור הכתובת הראשית ו/או המשנית שנבחרה. עבור דיוק התאמות גבוה יותר, ניתן להוסיף שדות נוספים.
 
    > [!div class="mx-imgBorder"]
-   > ![דף קביעת תצורה של העשרת HERE Technologies](media/enrichment-HERE-configuration.png "דף קביעת תצורה של העשרת HERE Technologies")
+   > ![דף קביעת תצורה של העשרת HERE Technologies.](media/enrichment-HERE-configuration.png "דף קביעת תצורה של העשרת HERE Technologies")
 
 1. בחר **הבא** כדי להשלים את מיפוי השדה.
 
@@ -73,7 +73,7 @@ HERE Technologies היא חברת פלטפורמת מיקום המספקת נת�
 1. לאחר השלמת האימות, בחר **שמור**.
 
    > [!div class="mx-imgBorder"]
-   > ![דף תצורת החיבור של HERE Technologies](media/enrichment-HERE-connection.png "דף תצורת החיבור של HERE Technologies")
+   > ![דף תצורת החיבור של HERE Technologies.](media/enrichment-HERE-connection.png "דף תצורת החיבור של HERE Technologies")
 
 ## <a name="enrichment-results"></a>תוצאות העשרה
 

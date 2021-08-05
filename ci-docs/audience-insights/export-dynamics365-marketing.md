@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 195bee789dc043057b47c12c8d93e6d53edb59cd
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: bd8189f8daee1a6aea75e75e116186f62a360ba4
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976801"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692482"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>שימוש בפלחים ב- Dynamics 365 Marketing‏ (Preview)
 
@@ -24,7 +24,7 @@ ms.locfileid: "5976801"
 
 ## <a name="prerequisite-for-a-connection"></a>דרישה מוקדמת לחיבור
 
-- רשומות אנשי קשר מוכרחות להיות קיימות ב- Dynamics 365 Marketing לפני שתוכל לייצא פלח מ- Customer Insights אל Marketing. המשך לקרוא על אופן הקליטה של אנשי קשר ב- [Dynamics 365 Marketing באמצעות Common Data Services](connect-power-query.md).
+- רשומות אנשי קשר מוכרחות להיות קיימות ב- Dynamics 365 Marketing לפני שתוכל לייצא פלח מ- Customer Insights אל Marketing. המשך לקרוא על אופן הקליטה של אנשי קשר ב- [Dynamics 365 Marketing באמצעות Microsoft Dataverse](connect-power-query.md).
 
   > [!NOTE]
   > ייצוא פלחים מ- audience insights אל Marketing לא ייצור רשומות אנשי קשר חדשות במופעי Marketing. יש לקלוט את רשומות אנשי הקשר מ- Marketing ב- audience insights ולהשתמש בהן כמקור נתונים. יש גם לכלול אותן בישות 'לקוח' המאוחדת כדי למפות מזהי לקוחות למזהי אנשי קשר לפני ייצוא הפלחים.

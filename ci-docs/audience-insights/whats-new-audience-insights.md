@@ -1,7 +1,7 @@
 ---
 title: תכונות חדשות ועתידיות
 description: מידע על תכונות חדשות, שיפורים ותיקוני באגים.
-ms.date: 06/15/2021
+ms.date: 07/19/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 355dc22ac381145b231848830cefc47eda7968f4
-ms.sourcegitcommit: 6944c1592877eb92ec789df5f2e0dbecef638837
+ms.openlocfilehash: 1c54d74c999eb4776074951a129019843017964e
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6263252"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692390"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>מה חדש ביכולת Audience Insights של Dynamics 365 Customer Insights
 
@@ -26,6 +26,28 @@ ms.locfileid: "6263252"
 
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="june-2021-updates"></a>עדכוני יוני 2021
+
+העדכונים ביוני 2021 כוללים מספר תכונות, שדרוגי ביצועים ותיקוני באגים.
+
+### <a name="data-ingestion"></a>קליטת נתונים
+
+- **עדכונים משופרים על התקדמות איחוד נתונים** כעת תוכל לצפות בעדכוני מצב דינמיים, משופרים ומפורטים על שלבי [תהליך איחוד הנתונים](data-unification.md). תכונה זו מאפשרת לך לעקוב אחר ההתקדמות המפורטת כדי להבין את זרימת התהליך ולנקוט פעולה אם צעד כלשהו דורש תשומת לב.
+
+### <a name="extensibility"></a>יכולת הרחבה
+
+- **ייצוא מקטעים ונתונים אחרים ל- Salesforce Marketing Cloud** הרחבנו את יעדי הייצוא שלנו כך שיכללו את [Salesforce Marketing Cloud](export-salesforce.md). כעת תוכל לייצא פלחים וסוגים אחרים של נתונים ל- Salesforce Marketing Cloud באמצעות ייצוא SFTP ממותג. ייבוא הנתונים יכול להיות אוטומטי לחלוטין ב- Salesforce וניתן להשתמש בו ליצירת קמפיינים שיווקיים יעילים יותר.  
+ 
+- **ייצוא פלחים ל- ActiveCampaign** הרחבנו את יעדי הייצוא כך שיכללו את [Active Campaign](export-active-campaign.md). כעת תוכל לייצא פלחים כדי ליצור קמפיינים שיווקיים, להפעיל שיווק בדואר אלקטרוני ולעבוד עם קבוצות ספציפיות של לקוחות ב- ActiveCampaign.
+ 
+- **ייצוא פלחים ל- Sendinblue** הרחבנו את יעדי הייצוא כך שיכללו את [Sendinblue](export-sendinblue.md). כעת תוכל לייצא פלחים כדי ליצור קמפיינים שיווקיים, להפעיל שיווק בדואר אלקטרוני ולעבוד עם קבוצות ספציפיות של לקוחות ב- Sendinblue.
+ 
+### <a name="ux-updates"></a>עדכוני UX 
+
+- **דף לקוחות ודף פרטי פרופיל חדשים ומשופרים** עיצבנו מחדש את דף הלקוחות ואת דפי פרטי הפרופיל כדי לשפר את חוויית המשתמש ולהביא לביצועים טובים יותר. שינויים אלה מאפשרים לך להציג, למיין, לחפש ולסנן לקוחות. מסננים מיוצגים כעת בכתובת ה- URL כדי לשתף את תוצאות החיפוש עם משתמשים אחרים בצורה חלקה. ניתן לשמור תוצאות חיפוש גם כפלח.    
+  דף הפרטים של פרופילי לקוחות מקבץ כעת נתונים בסעיפי משנה שונים כגון נתונים דמוגרפיים, מזהים ותכונות פרופיל נוספות לצורך קריאות משופרת. מקטעים אחרים בדף פרטי הפרופיל אינטראקטיביים יותר כעת. לדוגמה, מקטע הפעילויות מאפשר כעת סינון ומיון.
+
 
 ## <a name="may-2021-updates"></a>עדכוני מאי 2021
 
@@ -170,7 +192,7 @@ ms.locfileid: "6263252"
 
 - **סביבת העתקה תומכת בסוגים נוספים של מקורות נתונים**
 
-  מנהלי מערכת יכולים להעתיק תצורות סביבה לסביבה חדשה באותו ארגון. תכונה זו מרחיבה את הפונקציונליות של סביבת ההעתקה למקרים שבהם נעשה שימוש במקורות נתונים המבוססים על data lake של Common Data Service ותיקיית Common Data Model.
+  מנהלי מערכת יכולים להעתיק תצורות סביבה לסביבה חדשה באותו ארגון. תכונה זו מרחיבה את פונקציונליות העתקת הסביבה עבור מקרי שבהם נעשה שימוש במקורות נתונים המבוססים על אגם נתונים מנוהל של Microsoft Dataverse או בתיקיית Common Data Model.
 
 ## <a name="january-2021-updates"></a>עדכוני ינואר 2021
 

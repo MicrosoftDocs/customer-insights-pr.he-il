@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 36b7f7b2fac9497245cf6759506c53753972f173
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 7fc05aca61d1136f620019ee82dc6937ea39d8e5
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595994"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555124"
 ---
 # <a name="map-entities-and-attributes"></a>מיפוי ישויות ותכונות
 
@@ -35,14 +35,14 @@ ms.locfileid: "5595994"
 3. בחר את הישויות והתכונות שבהן תרצה להשתמש בשלבים *התאמה* ו- *מיזוג*. באפשרותך לבחור את התכונות הנדרשות בנפרד מהישות או לכלול את כל התכונות מהישות על ידי בחירה בתיבת הסימון **כלול את כל השדות** ברמת הישות. אנו ממליצים לבחור לפחות שתי ישויות כדי ליהנות מהיתרון של תהליך איחוד הנתונים.
 
    > [!div class="mx-imgBorder"]
-   > ![דוגמה של הוספת ישויות](media/data-manager-configure-map-add-entities-example.png "דוגמה של הוספת ישויות")
+   > ![דוגמה של הוספת ישויות.](media/data-manager-configure-map-add-entities-example.png "דוגמה של הוספת ישויות")
 
    בדוגמה זו אנו מוסיפים את הישויות **eCommerceContacts** ו- **loyCustomers**. על ידי בחירה בישויות אלה, תוכל להפיק תובנות ולדעת מי מלקוחות העסק המקוונים חברים בתכנית נאמנות.
    
    ניתן לחפש במילות מפתח בכל המאפיינים והישויות כדי לבחור את התכונות הנדרשות שברצונך למפות.
    
      > [!div class="mx-imgBorder"]
-   > ![דוגמה לשדות חיפוש](media/data-manager-configure-map-search-fields-example.png "דוגמה לשדות חיפוש")
+   > ![דוגמה לשדות חיפוש.](media/data-manager-configure-map-search-fields-example.png "דוגמה לשדות חיפוש")
 
 4. בחר **החל** כדי לאשר את הבחירות שלך.
 
@@ -55,7 +55,7 @@ ms.locfileid: "5595994"
 - **סוג סמנטי של תכונה**: קטגוריות של התכונות, כגון כתובת דואר אלקטרוני או שם. כדי להשתמש במודלים של AI עבור חיזויים חכמים של סמנטיקה, לחסוך זמן ולשפר את הדיוק, הגדר **מיפוי חכם** כ **פועל**. מיפוי חכם מדגיש המלצות סמנטיות מבוססות AI בשדה **סוג**. אם אתה מגדיר את מיפוי חכם ל **כבוי**, יוצגו לך המלצות המיפוי הרגילות שלנו. באפשרותך לבחור כל סוג סמנטי מרשימת האפשרויות הזמינות ולעקוף את הבחירה המוצעת.
 
 > [!div class="mx-imgBorder"]
-> ![סוג תכונה וחיזוי סמנטי](media/data-manager-configure-map-add-attributes-semantic-prediction.png "סוג תכונה וחיזוי סמנטי")
+> ![סוג תכונה וחיזוי סמנטי.](media/data-manager-configure-map-add-attributes-semantic-prediction.png "סוג תכונה וחיזוי סמנטי")
 
 ניתן גם להוסיף סוג סמנטי מותאם אישית. בחר את שדה הסוג עבור התכונה והקלד את שם הסוג הסמנטי המותאם אישית. בדרך זו, ניתן גם לשנות את סוגי התכונות שזוהו על-ידי המערכת.
 
@@ -64,7 +64,7 @@ ms.locfileid: "5595994"
 מאפיינים שאינם ממופים אוטומטית לסוג סמנטי מקובצים במקטע **הגדר את הנתונים בשדות הלא ממופים**. בחר בשדה סוג סמנטי עבור התכונות הלא ממופות, או הזן את שם סוג התכונה המותאמת אישית שלך.
 
 > [!div class="mx-imgBorder"]
-> ![מפתח ראשי וסוג תכונה](media/data-manager-configure-map-add-attributes.png "מפתח ראשי וסוג תכונה")
+> ![מפתח ראשי וסוג תכונה.](media/data-manager-configure-map-add-attributes.png "מפתח ראשי וסוג תכונה")
 
 > [!NOTE]
 > שדה אחד צריך למפות את הסוג הסמנטי Person.FullName כדי לאכלס את שם הלקוח בכרטיס הלקוח. אחרת, כרטיסי הלקוח ייראו חסרי שם. 
@@ -76,7 +76,7 @@ ms.locfileid: "5595994"
 2. בחלונית **ערוך שדות**, הוסף או הסר תכונות וישויות. השתמש בחיפוש או בגלול כדי למצוא ולבחור את התכונות והישויות המעניינות אותך. אינך יכול להסיר תכונה או ישות אם הם כבר תואמים.
 
    > [!div class="mx-imgBorder"]
-   > ![הוספה או הסרה של תכונות](media/configure-data-map-edit.png "הוספה או הסרה של תכונות")
+   > ![הוספה או הסרה של תכונות.](media/configure-data-map-edit.png "הוספה או הסרה של תכונות")
 
 3. בחר **החל**.
 

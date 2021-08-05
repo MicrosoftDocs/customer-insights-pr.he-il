@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 88492943ddbf9ae30c64d92b261433b74f34f682
-ms.sourcegitcommit: d74430270f1b754322287c4f045d7febdae35be2
+ms.openlocfilehash: 6a7137730ab8cc43bc93daf647d9d55d02d96cd8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059589"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692206"
 ---
 # <a name="customer-card-add-in-preview"></a>תוספת כרטיס לקוח (תצוגה מקדימה)
 
@@ -25,7 +25,7 @@ ms.locfileid: "6059589"
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
 - התוספת פועלת רק עם יישומים מונחי דגמים של Dynamics 365, כגון Sales או Customer Service, גירסה 9.0 ואילך.
-- על מנת שיתבצע מיפוי של נתוני Dynamics 365 לפרופילי הלקוח של תובנות לגבי קהלים, יש [לעבד אותם מיישום Dynamics 365 באמצעות המחבר Common Data Service](connect-power-query.md).
+- על מנת שיתבצע מיפוי של נתוני Dynamics 365 לפרופילי הלקוח של תובנות לגבי קהלים, יש [לעבד אותם מיישום Dynamics 365 באמצעות המחבר Microsoft Dataverse](connect-power-query.md).
 - כל משתמשי Dynamics 365 של התוספת 'כרטיס לקוח' צריכים [להתווסף כמשתמשים](permissions.md) בתובנות לגבי קהלים כדי לראות את הנתונים.
 - [יכולות חיפוש וסינון מוגדרות](search-filter-index.md) בתובנות לגבי קהלים נדרשות על מנת שבדיקת המידע של נתונים תפעל.
 - כל בקרת תוספת מסתמכת על נתונים ספציפיים בתובנות לגבי קהלים:
@@ -50,7 +50,7 @@ ms.locfileid: "6059589"
 1. בחר את הקישור **שם תצוגה** עבור הפתרון **תוספת כרטיס לקוח (תצוגה מקדימה) של Dynamics 365 Customer Insights**.
 
    > [!div class="mx-imgBorder"]
-   > ![‏‏בחר שם תצוגה](media/select-display-name.png "‏‏בחר שם תצוגה")
+   > ![‏‏בחר שם תצוגה.](media/select-display-name.png "‏‏בחר שם תצוגה")
 
 1. בחר **היכנס** והזן את האישורים עבור חשבון המנהל שאתה משתמש בו כדי לקבוע את תצורת Customer Insights.
 
@@ -64,7 +64,7 @@ ms.locfileid: "6059589"
    - למיפוי עם תיק לקוח, בחר את השדה בישות 'לקוח' התואם למזהה של ישות תיק הלקוח שלך.
 
    > [!div class="mx-imgBorder"]
-   > ![שדה מזהה איש קשר](media/contact-id-field.png "שדה מזהה איש קשר")
+   > ![שדה מזהה איש קשר.](media/contact-id-field.png "שדה מזהה איש קשר")
 
 1. בחר **שמור תצורה** כדי לשמור את ההגדרות.
 
@@ -83,7 +83,7 @@ ms.locfileid: "6059589"
 1. בחר בטופס יצירת הקשר שאליו ברצונך להוסיף את הפקדים של כרטיס לקוח.
 
     > [!div class="mx-imgBorder"]
-    > ![בחירת טופס של איש קשר](media/contact-active-forms.png "בחירת טופס של איש קשר")
+    > ![בחירת טופס של איש קשר.](media/contact-active-forms.png "בחירת טופס של איש קשר")
 
 1. כדי להוסיף פקד, בעורך הטפסים, גרור שדה כלשהו מ **סייר השדות** אל המקום שבו ברצונך שהפקד יופיע.
 
@@ -110,7 +110,7 @@ ms.locfileid: "6059589"
 
 1. בחר את **החל שדרוג פתרון** בסרגל הפעולות.
 
-   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="שדרג את הפתרון באזור ההתאמה האישית של יישומי Dynamics 365":::
+   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="שדרג את הפתרון באזור ההתאמה האישית של יישומי Dynamics 365.":::
 
 1. לאחר הפעלת תהליך השדרוג, תראה מחוון טעינה עד לסיום השדרוג. אם אין גרסה חדשה יותר, השדרוג יציג הודעת שגיאה.
 

@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: f588f45ed11efffbb335003642a4b92810153017
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 96fbd18a20e0df7abd4e79ff77e2c3a396e33ccc
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596776"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554206"
 ---
 # <a name="similar-customers-preview"></a>לקוחות דומים (Preview)
 
@@ -50,7 +50,7 @@ ms.locfileid: "5596776"
 לאחר עיבוד הפלח הדומה, מצא את הפלח החדש בדף **פלחים**.
 
 > [!div class="mx-imgBorder"]
-> ![פלח לקוחות דומה](media/expanded-segment.png "פלח לקוחות דומה")
+> ![פלח לקוחות דומה.](media/expanded-segment.png "פלח לקוחות דומה")
 
 בחר **הצג** בסרגל הפעולות לפתיחת פרטי הפלח. תצוגה זו מכילה מידע על חלוקת התוצאות של [ניקוד דמיון](#about-similarity-scores). תמצא גם את ערכי ניקוד הדמיון ב- **תצוגה מקדימה של חברי הפלח**.
 

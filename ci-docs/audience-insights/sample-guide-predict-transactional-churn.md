@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 49dad45c951f3c00d77ddd99faec48bfccada8b0
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 72f3bd1f32b813fef04dc14618331e3d707b5052
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306121"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6556262"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>מדריך לדוגמה לחיזוי נטישה של עסקאות (מהדורת Preview)
 
@@ -47,7 +47,7 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
    - **CreatedOn**: תאריך/שעה/אזור
 
    [!div class="mx-imgBorder"]
-   ![המרת תאריך הלידה לתאריך](media/ecommerce-dob-date.PNG "המרת תאריך הלידה לתאריך")
+   ![המרת תאריך הלידה לתאריך.](media/ecommerce-dob-date.PNG "המרת תאריך הלידה לתאריך")
 
 1. בשדה **שם** בחלונית הימנית, שנה את שם מקור נתונים שלך מ **שאילתה** ל- **eCommerceContacts**
 

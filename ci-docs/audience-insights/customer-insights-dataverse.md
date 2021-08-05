@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7157ad930f3cea17c12bd4f95028d291483329d3
-ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
+ms.openlocfilehash: 220e01a06711a5d35b8df09e265017a6d8fd0490
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6259192"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650043"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>עבודה עם נתונים של Customer Insights ב- Microsoft Dataverse
 
@@ -24,11 +24,11 @@ Customer Insights מציע את האפשרות להפוך ישויות פלט ל
 
 **ארגונים עם סביבות Dataverse קיימות**
 
-ארגונים שכבר משתמשים ב- Dataverse יכולים [להשתמש באחת מסביבות Dataverse הקיימות שלהם](manage-environments.md#create-an-environment-in-an-existing-organization) כאשר מנהל מערכת מגדיר תובנות לגבי קהלים. אספקת כתובת URL לסביבת Dataverse מצרפת אותה לסביבה החדשה של תובנות לגבי קהלים. כדי להבטיח את הביצועים הטובים ביותר שאפשר, יש לארח סביבות של Customer Insights ושל Dataverse באותו אזור.
+ארגונים שכבר משתמשים ב- Dataverse יכולים [להשתמש באחת מסביבות Dataverse הקיימות שלהם](get-started-paid.md) כאשר מנהל מערכת מגדיר תובנות לגבי קהלים. אספקת כתובת URL לסביבת Dataverse מצרפת אותה לסביבה החדשה של תובנות לגבי קהלים. כדי להבטיח את הביצועים הטובים ביותר שאפשר, יש לארח סביבות של Customer Insights ושל Dataverse באותו אזור.
 
 כדי לצרף סביבה של Dataverse, הרחב את **הגדרות מתקדמות** בעת יצירת סביבת התובנות לגבי קהלים. ספק את **כתובת ה- URL של סביבת Microsoft Dataverse** ובחר בתיבת הסימון **הפוך שיתוף נתונים לזמין‬‏‫**.
 
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt":::
+:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="Alt.":::
 
 **ארגון חדש**
 

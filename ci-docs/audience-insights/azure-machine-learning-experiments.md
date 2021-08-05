@@ -9,12 +9,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 3f97e22687ae4f5536d492bac83bdf9c711e2c94
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597420"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554436"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>שימוש במודלים מבוססי Azure Machine Learning
 
@@ -52,7 +52,7 @@ Azure Machine Learning Designer מספק בד ציור חזותי שבו נית�
      ב- Designer, פתח את **בחר עמודות בערכת נתונים** ובחר **הגדר כפרמטר של קו צינור** שבו אתה מספק שם עבור הפרמטר.
 
      > [!div class="mx-imgBorder"]
-     > ![ביטוי בפרמטרים של ערכת נתונים ב- Designer](media/intelligence-designer-dataset-parameters.png "ביטוי בפרמטרים של ערכת נתונים ב- Designer")
+     > ![ביטוי בפרמטרים של ערכת נתונים ב- Designer.](media/intelligence-designer-dataset-parameters.png "ביטוי בפרמטרים של ערכת נתונים ב- Designer")
    
 * פרמטר ערכת נתונים ב- SDK‏ (Python)
    
@@ -78,7 +78,7 @@ Azure Machine Learning Designer מספק בד ציור חזותי שבו נית�
 
 * Designer מספק את [המודול 'ייצוא נתונים'](/azure/machine-learning/algorithm-module-reference/export-data) המאפשר ייצוא של פלט קו צינור אל אחסון Azure. נכון לעכשיו, המודול מוכרח להשתמש בסוג מאגר הנתונים **אחסון Blob של Azure** ולבטא בפרמטרים את **מאגר הנתונים** ו **נתיב** יחסי. Customer Insights עוקף את שני הפרמטרים במהלך ביצוע קו הצינור עם מאגר נתונים ונתיב הנגישים למוצר.
    > [!div class="mx-imgBorder"]
-   > ![תצורת מודול 'ייצוא נתונים'](media/intelligence-designer-importdata.png "תצורת מודול 'ייצוא נתונים'")
+   > ![תצורת מודול 'ייצוא נתונים'.](media/intelligence-designer-importdata.png "תצורת מודול 'ייצוא נתונים'")
    
 * בעת כתיבת פלט ההיסק באמצעות קוד, באפשרותך להעלות את הפלט לנתיב בתוך *מאגר נתונים רשום* בסביבת העבודה. אם הנתיב ומאגר הנתונים מבוטאים בפרמטרים בקו הצינור, Customer Insights יוכל לקרוא ולייבא את פלט ההיסק. לעת עתה קיימת תמיכה בפלט טבלאי יחיד בתבנית csv. הנתיב מוכרח לכלול את שם הספריה ואת שם הקובץ.
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 50c231070ff9930c1ea82971bf4f8541a89d5027
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: b37bb5dfeed2326784ef276a93a04bec626aaf6e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305892"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554684"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>התחבר למקור נתונים של Power Query
 
@@ -42,7 +42,7 @@ Power Query מציע מערך רחב של מחברים לקליטת נתונים
 1. תיבת הדו-שיח **Power Query - ערוך שאילתות** מאפשרת לך לסקור ולחדד את הנתונים. הישויות שהמערכות זיהו במקור הנתונים שבחרת מופיעות בחלונית הימנית.
 
    > [!div class="mx-imgBorder"]
-   > ![תיבת דו-שיח של עריכת שאילתות](media/data-manager-configure-edit-queries.png "תיבת דו-שיח של עריכת שאילתות")
+   > ![תיבת דו-שיח של עריכת שאילתות.](media/data-manager-configure-edit-queries.png "תיבת דו-שיח של עריכת שאילתות")
 
 1. באפשרותך גם לשנות את הנתונים שלך. בחר ישות לעריכה או להמרה. השתמש באפשרויות בחלון Power Query כדי להחיל טרנספורמציות. כל טרנספורמציה מופיעה בחלק **צעדים שבוצעו**. Power Query מספק מספר אפשרויות טרנספורמציה שנבנו מראש. לקבלת מידע נוסף, ראה [טרנספורמציות ב- Power Query](/power-query/power-query-what-is-power-query#transformations).
 
@@ -75,7 +75,7 @@ Power Query מציע מערך רחב של מחברים לקליטת נתונים
 2. בחר את שלוש הנקודות האנכיות לצד מקור נתונים שברצונך לשנות ובחר **עריכה** מהתפריט הנפתח.
 
    > [!div class="mx-imgBorder"]
-   > ![ערוך אפשרות](media/edit-option-data-sources.png "ערוך אפשרות")
+   > ![ערוך אפשרות.](media/edit-option-data-sources.png "ערוך אפשרות")
 
 3. החל את השינויים והטרנספורמציות שלך בדו-שיח **Power Query - ערוך שאילתות** כפי שמתואר בסעיף [צור מקור נתונים חדש](#create-a-new-data-source).
 

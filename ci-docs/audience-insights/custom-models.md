@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 82f6f363497f8f1b45fa84acd49bcaed332e60e8
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 72ccb2d86c698939d0ff018b4d36203e793df9ae
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305634"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554849"
 ---
 # <a name="custom-machine-learning-models"></a>מודלי למידת מכונה מותאמים אישית
 
@@ -42,7 +42,7 @@ ms.locfileid: "6305634"
 1. תן לדגם המותאם אישית שם הניתן לזיהוי בשדה **שם**.
 
    > [!div class="mx-imgBorder"]
-   > ![צילום מסך של חלונית זרימת העבודה החדשה](media/new-workflowv2.png "צילום מסך של חלונית זרימת העבודה החדשה")
+   > ![צילום מסך של חלונית זרימת העבודה החדשה.](media/new-workflowv2.png "צילום מסך של חלונית זרימת העבודה החדשה")
 
 1. בחר ארגון שמכיל את שירות האינטרנט ב- **דייר שמכיל את שירות האינטרנט שלך**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "6305634"
    > זרימת העבודה של המודל המותאם אישית תחיל היוריסטיקה למיפוי שדות הקלט של שירות האינטרנט לתכונות הישות בהתבסס על השם וסוג הנתונים של השדה. תראה שגיאה אם לא ניתן למפות שדה שירות אינטרנט לישות.
 
    > [!div class="mx-imgBorder"]
-   > ![קביעת תצורה של זרימת עבודה](media/intelligence-screen2-updated.png "קביעת תצורה של זרימת עבודה")
+   > ![קביעת תצורה של זרימת עבודה.](media/intelligence-screen2-updated.png "קביעת תצורה של זרימת עבודה")
 
 1. בשלב **פרמטרים של פלט מודל**, הגדר את המאפיינים הבאים:
    - Machine Learning Studio (קלאסי)
@@ -70,12 +70,12 @@ ms.locfileid: "6305634"
       1. בחר את **שם הפרמטר של נתיב הפלט** של קו הצינור של האצווה שלך מהרשימה הנפתחת.
 
       > [!div class="mx-imgBorder"]
-      > ![חלונית של פרמטר פלט מודל](media/intelligence-screen3-outputparameters.png "חלונית של פרמטר פלט מודל")
+      > ![חלונית של פרמטר פלט מודל.](media/intelligence-screen3-outputparameters.png "חלונית של פרמטר פלט מודל")
 
 1. בחר את התכונה המתאימה מתוך הרשימה הנפתחת **מזהה לקוח בתוצאות** שמזהה לקוחות ובחר **שמור**.
 
    > [!div class="mx-imgBorder"]
-   > ![קשר את התוצאות לחלונית 'נתוני לקוחות'](media/intelligence-screen4-relatetocustomer.png "קשר את התוצאות לחלונית 'נתוני לקוחות'")
+   > ![קשר את התוצאות לחלונית 'נתוני לקוחות'.](media/intelligence-screen4-relatetocustomer.png "קשר את התוצאות לחלונית 'נתוני לקוחות'")
 
 1. תראה את המסך **זרימת עבודה נשמרה** עם פרטים על זרימת העבודה.    
    אם הגדרת זרימת עבודה עבור קו צינור של Azure Machine Learning‏, Audience Insights יצרף את סביבת העבודה המכילה את קו הצינור. Audience Insights יקבל תפקיד **משתתף** בסביבת העבודה של Azure.

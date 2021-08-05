@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f92b36ac5364ea8586f9cbba7ba03178641555c0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 9331cf8057850e2fbe03622831f388e73056d938
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304651"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555400"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>העשרת פרופילי לקוחות עם נתונים מותאמים אישית (Preview)
 
@@ -64,7 +64,7 @@ ms.locfileid: "6304651"
 1. לאחר השלמת האימות, ניתן לשמור את החיבור על ידי בחירת **שמור**.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian דף תצורת החיבור](media/enrichment-SFTP-connection.png "Experian דף תצורת חיבור")
+   > ![Experian דף תצורת החיבור.](media/enrichment-SFTP-connection.png "Experian דף תצורת חיבור")
 
 
 ## <a name="defining-field-mappings"></a>הגדרת מיפויי שדות 

@@ -9,19 +9,19 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: b6cc0ad1a47a6c00e3bf220271f42870fc53621b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a6131d4dddce48b0fba153bcefe5631e0d22d808
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597144"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554022"
 ---
 # <a name="customer-profiles-search--filter-index"></a>פרופילי לקוחות: אינדקס חיפוש וסינון
 
 תוצאת האיחוד של נתוני לקוחות היא ישות פרופיל לקוח המספקת תצוגה אחידה לבסיס הלקוחות הכולל. כדי [למצוא במהירות מידע על לקוח מסוים או על קבוצת לקוחות מסוימת](customer-profiles.md), באפשרותך לקבוע את תצורת היכולות **חיפוש** ו **סינון** בדף **לקוחות**. המשך לקרוא כדי ללמוד כיצד מנהלים יכולים לערוך את התכונות בדף **אינדקס חיפוש וסינון**, הזמינות למשתמשים לצורך חיפוש וסינון.
 
 > [!div class="mx-imgBorder"]
-> ![חיפוש מסנן](media/search-filter.png "מסנן חיפוש")
+> ![חיפוש מסנן.](media/search-filter.png "מסנן חיפוש")
 
 ## <a name="add-fields-and-specify-attributes"></a>הוספת שדות וציון תכונות
 

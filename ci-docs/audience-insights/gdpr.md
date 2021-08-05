@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9c453c9b416bff0e6362a8ccf7ff534f4efa1e00
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e832fbbdfb59cb06d98715223edca438d2c3a7f2
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597512"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554320"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>בקשות של של זכויות נושא נתונים (DSR) במסגרת GDPR
 
@@ -40,7 +40,7 @@ Audience Insights מציע את חוויות המוצר הבאות למחיקת 
    2. בדוק את המצב של מקור הנתונים תחת **מצב**. סימן וי פירושו שהרענון בוצע בהצלחה. משולש אזהרה פירושו שמשהו השתבש. אם מוצג משולש אזהרה, צור קשר עם D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
-> ![טיפול בבקשות מחיקה של GDPR של נתוני לקוחות](media/gdpr-data-sources.png "טיפול בבקשות מחיקה של GDPR של נתוני לקוחות")
+> ![טיפול בבקשות מחיקה של GDPR של נתוני לקוחות.](media/gdpr-data-sources.png "טיפול בבקשות מחיקה של GDPR של נתוני לקוחות")
 
 #### <a name="manage-delete-requests-for-user-data"></a>ניהול בקשות מחיקה עבור נתוני משתמשים
 
@@ -52,7 +52,7 @@ Audience Insights מציע את חוויות המוצר הבאות למחיקת 
 4. בחר **הסר**.
 
 > [!div class="mx-imgBorder"]
-> ![טיפול בבקשות מחיקה של GDPR עבור נתוני משתמשים](media/gdpr-permissions.png "טיפול בבקשות מחיקה של GDPR עבור נתוני משתמשים")
+> ![טיפול בבקשות מחיקה של GDPR עבור נתוני משתמשים.](media/gdpr-permissions.png "טיפול בבקשות מחיקה של GDPR עבור נתוני משתמשים")
 
 ## <a name="responding-to-gdpr-data-subject-export-requests"></a>תגובה לבקשות לייצוא נתוני GDPR
 

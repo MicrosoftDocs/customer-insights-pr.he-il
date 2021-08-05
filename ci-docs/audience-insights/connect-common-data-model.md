@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 385406b706890d741fec2694c190c0fada7809d7
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 49bab0605197912cd4b81ff193b914599a092792
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596546"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554895"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>חיבור לתיקיה של Common Data Model באמצעות חשבון Azure Data Lake
 
@@ -45,7 +45,7 @@ ms.locfileid: "5596546"
 
 1. באפשרותך לבחור בין שימוש באפשרות מבוססת-משאב לאפשרות מבוססת-מנוי עבור אימות. לקבלת מידע נוסף, ראה [חיבור audience insights לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure](connect-service-principal.md). הזן את פרטי **הגורם המכיל** ובחר **הבא**.
    > [!div class="mx-imgBorder"]
-   > ![תיבת דו-שיח להזנת פרטי חיבור חדשים עבור Azure Data Lake](media/enter-new-storage-details.png)
+   > ![תיבת דו-שיח להזנת פרטי חיבור חדשים עבור Azure Data Lake.](media/enter-new-storage-details.png)
    > [!NOTE]
    > אתה זקוק לאחד מהתפקידים הבאים לגורם המכיל או לחשבון האחסון שהוזכר לעיל כדי שתוכל להתחבר אליו וליצור מקור נתונים:
    >  - קורא נתונים של Blob אחסון
@@ -58,11 +58,11 @@ ms.locfileid: "5596546"
 
 1. תקבל רשימה של ישויות זמינות בקובץ model.json או בקובץ manifest.json שנבחר. ניתן לסקור ולבחור מרשימת הישויות ולבחור **שמור**. כל הישויות שנבחרו ייקלטו ממקור הנתונים החדש.
    > [!div class="mx-imgBorder"]
-   > ![תיבת דו-שיח המציגה רשימת ישויות מתוך קובץ model.json](media/review-entities.png)
+   > ![תיבת דו-שיח המציגה רשימת ישויות מתוך קובץ model.json.](media/review-entities.png)
 
 8. ציין באילו ישויות נתונים ברצונך להפוך יצירת פרופיל נתונים לזמינה ובחר **שמור**. יצירת פרופילים של נתונים הופכת ניתוח ויכולות אחרות לזמינים. באפשרותך לבחור את הישות השלמה, שבוחרת את כל התכונות מהישות, או לבחור בתכונות מסוימות לבחירתך. כברירת מחדל, אף ישות לא תופעל עבור יצירת פרופיל נתונים.
    > [!div class="mx-imgBorder"]
-   > ![תיבת דו-שיח המציגה פרופיל נתונים](media/dataprofiling-entities.png)
+   > ![תיבת דו-שיח המציגה פרופיל נתונים.](media/dataprofiling-entities.png)
 
 9. לאחר שמירת הבחירות שלך, הדף **מקורות מידע** נפתח. כעת אתה אמור לראות את החיבור לתיקייה Common Data Model כמקור נתונים.
 
@@ -81,12 +81,12 @@ ms.locfileid: "5596546"
 
 4. לבחירתך, תוכל לעדכן את **מפתח גישה** ולבחור **הבא**.
 
-   ![תיבת דו-שיח לעריכה ולעדכון של מפתח גישה עבור מקור נתונים קיים](media/edit-access-key.png)
+   ![תיבת דו-שיח לעריכה ולעדכון של מפתח גישה עבור מקור נתונים קיים.](media/edit-access-key.png)
 
 5. לחלופין, באפשרותך לעדכן מחיבור מפתח חשבון לחיבור מבוסס-משאב או מבוסס-מנוי. לקבלת מידע נוסף, ראה [חיבור audience insights לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure](connect-service-principal.md). אין באפשרותך לשנות מידע **גורם מכיל** בעת עדכון החיבור.
    > [!div class="mx-imgBorder"]
 
-   > ![תיבת דו-שיח להזנת פרטי חיבור עבור Azure Data Lake לחשבון אחסון קיים](media/enter-existing-storage-details.png)
+   > ![תיבת דו-שיח להזנת פרטי חיבור עבור Azure Data Lake לחשבון אחסון קיים.](media/enter-existing-storage-details.png)
 
    > [!NOTE]
    > אתה זקוק לאחד מהתפקידים הבאים לגורם המכיל או לחשבון האחסון שהוזכר לעיל כדי שתוכל להתחבר אליו וליצור מקור נתונים:

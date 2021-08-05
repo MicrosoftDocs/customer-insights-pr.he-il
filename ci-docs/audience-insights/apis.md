@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9326f821f9970ba2254ab804814e369abb677eb0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: f98af8fb1c1d1ae050a5273286d35cf276d9fb17
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304743"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554482"
 ---
 # <a name="work-with-customer-insights-apis"></a>עבודה עם ממשקי API של Customer Insights
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
  
    הפעלת ממשקי ה- API יוצרת מפתח מנוי ראשי ומשני עבור המופע שלך המשמש בבקשות ה- API. באפשרותך ליצור מחדש את המפתחות על-ידי בחירת **צור מחדש מפתח ראשי** או **צור מחדש מפתח משני** דרך **ניהול** > **הרשאות** > **ממשקי API**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="אפשר ממשקי API של Customer Insights":::
+   :::image type="content" source="media/enable-apis.gif" alt-text="הפוך ממשקי API של Customer Insights לזמינים.":::
 
 1. בחר **סקור את ממשקי ה- API שלנו** כדי [לנסות את ממשקי ה- API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -129,7 +129,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
  
    לחלופין, הפעל פקודה זו ב **קונסולת מנהל החבילות של NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="הוספת חבילת NuGet לפרוייקט Visual Studio":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="הוסף חבילת NuGet לפרוייקט Visual Studio.":::
 
 #### <a name="use-the-c-client-library"></a>השתמש בספריית הלקוחות C#‎
 
@@ -141,7 +141,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 1. העבר `HttpClient` זה אל המבנה של הלקוח `CustomerInsights`.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="דוגמה של httpclient":::
+   :::image type="content" source="media/httpclient-sample.png" alt-text="דוגמה של httpclient.":::
 
 1. בצע שיחות עם הלקוח ל"שיטות ההרחבה", למשל `GetAllInstancesAsync`. אם עדיפה גישה ל- `Microsoft.Rest.HttpOperationResponse` הבסיסי, השתמש ב"שיטות הודעת http" - לדוגמה `GetAllInstancesWithHttpMessagesAsync`.
 

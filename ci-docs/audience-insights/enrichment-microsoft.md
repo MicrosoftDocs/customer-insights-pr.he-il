@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 3b10fb23cca03ed918aa7fd46478b568d5ebbf1a
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305157"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555492"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>העשרת פרופילי לקוחות עם קירבות למוצג ותחום עניין (תצוגה מקדימה)
 
@@ -27,7 +27,7 @@ ms.locfileid: "6305157"
 כדי להגדיר העשרת קשרים עם תחום עניין, עבור אל הכרטיסיה **גלה** ובחר **העשר את הנתונים שלי** באריח **תחומי עניין**.
 
    > [!div class="mx-imgBorder"]
-   > ![אריחי מותגים ותחומי עניין](media/BrandsInterest-tile-Hub.png "אריחי מותגים ותחומי עניין")
+   > ![אריחי מותגים ותחומי עניין.](media/BrandsInterest-tile-Hub.png "אריחי מותגים ותחומי עניין")
 
 ## <a name="how-we-determine-affinities"></a>כיצד אנחנו קובעים זיקה
 
@@ -123,7 +123,7 @@ ms.locfileid: "6305157"
 
 לאחר הפעלת תהליך ההעשרה, עבור אל **ההעשרות שלי** כדי לסקור את המספר הכולל של לקוחות מועשרים ופירוט של מותגים ותחומי עניין בפרופילי הלקוחות המועשרים.
 
-:::image type="content" source="media/my-enrichments.png" alt-text="תצוגה מקדימה של תוצאות לאחר הפעלת תהליך העשרה":::
+:::image type="content" source="media/my-enrichments.png" alt-text="תצוגה מקדימה של תוצאות לאחר הפעלת תהליך העשרה.":::
 
 סקור את הנתונים המועשרים על-ידי בחירת **הצג נתונים מועשרים** בתרשים. נתונים מועשרים עבור מותגים מגיעים לישות **BrandAffinityFromMicrosoft**. נתונים עבור תחומי עניין נמצאים בישות **InterestAffinityFromMicrosoft**. תוכל למצוא ישויות אלה שרשומות בקבוצה **העשרה** גם ב- **נתונים** > **ישויות**.
 
@@ -131,7 +131,7 @@ ms.locfileid: "6305157"
 
 ניתן להציג קשרי מותגים ותחומי עניין גם בכרטיסי לקוח פרטיים. עבור אל **לקוחות** ובחר פרופיל לקוח. בכרטיס הלקוח תמצא תרשימים עבור המותגים או תחומי העניין שלאנשים בפרופיל הדמוגרפי של אותו לקוח יש זיקה אליהם.
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="כרטיס לקוח עם נתונים מועשרים":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="כרטיס לקוח עם נתונים מועשרים.":::
 
 ## <a name="next-steps"></a>השלבים הבאים
 

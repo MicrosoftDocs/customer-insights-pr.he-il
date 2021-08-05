@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 29f4320c798db62609283e3c48f0b47a4f0b982f
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: b54659f028a141fe8f351645d96e933d47568a39
+ms.sourcegitcommit: adb9c43ddaba25e511535d78a4bcf8815f154a7b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124274"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6362419"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>ייצוא פלחים אל Constant Contact‏ (Preview)
 
@@ -47,7 +47,7 @@ ms.locfileid: "6124274"
 
 1. בחר **התחבר** כדי לאתחל את החיבור ל- Constant Contact.
 
-1. בחר **אימות באמצעות AdRoll** וספק את אישורי מנהל המערכת שלך עבור Constant Contact. 
+1. בחר **אימות באמצעות Constant Contact** וספק את אישורי מנהל המערכת עבור Constant Contact. 
 
 1. בחר **הוסף את עצמך כמשתמש ייצוא** וספק את אישורי Customer Insights שלך.
 

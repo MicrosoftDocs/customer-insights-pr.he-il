@@ -1,7 +1,7 @@
 ---
 title: מחבר Power BI
 description: למד איך להשתמש במחבר Dynamics 365 Customer Insights ב- Power BI.
-ms.date: 09/21/2020
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: faeb95bd7d2fe3cb220308cdee559b3347c5af54
+ms.sourcegitcommit: f98b6b2058f384365f222d1f9ba0cc9ce801f09d
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596040"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661103"
 ---
 # <a name="connector-for-power-bi-preview"></a>Connector עבור Power BI (תצוגה מקדימה)
 
@@ -39,7 +39,7 @@ ms.locfileid: "5596040"
 
 1. בתיבת הדו-שיח **Navigator**. אתה רואה את רשימת הסביבות שיש לך גישה אליהן. הרחב סביבה ופתח כל אחת מהתיקיות (ישויות, מדידות, פלחים, העשרות). לדוגמה, פתח את התיקיה **ישויות** כדי לראות את כל הישויות שאתה יכול לייבא.
 
-   ![נווט במחבר Power BI](media/power-bi-navigator.png "נווט במחבר Power BI")
+   ![נווט במחבר Power BI.](media/power-bi-navigator.png "נווט במחבר Power BI")
 
 1. בחר את תיבות הסימון לצד הישויות שיש לכלול ו **טען**. באפשרותך לבחור ישויות מרובות מכמה סביבות.
 
@@ -68,5 +68,11 @@ ms.locfileid: "5596040"
 3. הסר כל קשר כפול שזוהה.
 
 לאחר הסרת הקשרים הכפולים, נסה לקבוע שוב את תצורת מחבר Power BI. הסביבה צריכה להיות זמינה כעת.
+
+### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>שגיאות בשדות תאריך בעת טעינת ישויות ב- Power BI Desktop
+
+בעת טעינת ישויות המכילות שדות עם תבנית תאריך כמו MM/DD/YYYY, אתה עשוי להיתקל בשגיאות עקב תבניות לא נכונות של אזור. חוסר התאמה זה קורה כאשר קובץ Power BI Desktop מוגדר לאזור שאינו אנגלית (ארצות הברית), מכיוון ששדות תאריכים בתובנות לגבי קהלים נשמרים בתבנית של ארה"ב.
+
+בקובץ Power BI Desktop יש הגדרת אזור אחת, המיושמת בעת אחזור נתונים. כדי לפרש שדות תאריכים אלה כראוי, הגדר את המיקום של קובץ ‎.BPI לאנגלית (ארצות הברית). [למד כיצד ניתן לשנות את האזור של קובץ Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

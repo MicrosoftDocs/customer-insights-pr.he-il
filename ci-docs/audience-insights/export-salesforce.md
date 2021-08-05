@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights ל- Salesforce Marketing Cloud
 description: למד כיצד להגדיר את החיבור ולייצא ל- Salesforce Marketing Cloud.
-ms.date: 06/24/2021
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 123f8b2dbb6140785dec6c1b4164d2f513f66a53
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
+ms.openlocfilehash: 8ce243918c2388e931a98df3bbe576ddf692f707
+ms.sourcegitcommit: 4823684a1399fd66ffecfce21735f2bc90a1733c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314618"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6660268"
 ---
 # <a name="export-segments-and-other-data-to-salesforce-marketing-cloud-preview"></a>ייצוא פלחים ונתונים אחרים ל- Salesforce Marketing Cloud‏ (Preview)
 
@@ -23,11 +23,6 @@ ms.locfileid: "6314618"
 ## <a name="prerequisites-for-connection"></a>דרישות מוקדמות לחיבור
 
 - זמינות של מארח SFTP ואישורי מנהל מערכת תואמים. [כיצד להגדיר מיקומי SFTP עבור Salesforce Marketing Cloud](https://help.salesforce.com/articleView?id=sf.mc_es_configure_enhanced_ftp.htm&type=5) 
-
-## <a name="known-limitations"></a>מגבלות ידועות
-
-- זמן הריצה של ייצוא תלוי בביצועי המערכת שלך. מומלץ שתי ליבות CPU וזיכרון של 1‎ GB כתצורה מינימלית עבור השרת שלך. 
-- ייצוא של ישויות עם עד 100 מיליון פרופילי לקוחות יכול להימשך 90 דקות בשימוש בתצורה המינימלית המומלצת. 
 
 ## <a name="set-up-the-connection-to-salesforce-marketing-cloud"></a>הגדרת החיבור ל- Salesforce Marketing Cloud
 

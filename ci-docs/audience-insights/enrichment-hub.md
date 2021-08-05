@@ -1,7 +1,7 @@
 ---
 title: העשרת פרופילי לקוחות מאוחדים
 description: השתמש ביכולות כדי להעשיר את נתוני הלקוחות שלך.
-ms.date: 04/09/2021
+ms.date: 07/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,19 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: c35e73b366fcd5db2ba5a757295ddda6db30efa0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.custom: intro-internal
+ms.openlocfilehash: d12c0a9dd65d31f9ae8a9cafeafab2767d57893e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305249"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555262"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>העשרה לפרופילי לקוחות (תצוגה מקדימה)
 
 השתמש בנתונים ממקורות כמו Microsoft ושותפים אחרים כדי להעשיר את נתוני הלקוחות שלך.
 
-:::image type="content" source="media/enrichment-hub-page.png" alt-text="דף מרכז ההעשרה":::
+:::image type="content" source="media/enrichment-hub-page.png" alt-text="דף מרכז ההעשרה.":::
 
 ב- audience insights, עבור אל **נתונים** > **העשרה** כדי לעבוד עם אפשרויות העשרה.  
 
@@ -42,17 +43,17 @@ ms.locfileid: "6305249"
 
 עבור אל הכרטיסיה **ההעשרות שלי** כדי לראות את כל ההעשרות שהוגדרו. כל העשרה מיוצגת כשורה הכוללת מידע נוסף על ההעשרה.
 
-בחר העשרה כדי לראות את האפשרויות הזמינות. באפשרותך גם לבחור את שלוש הנקודות (...) בפריט רשימה כדי לראות את האפשרויות.
+בחר את ההעשרה כדי לראות את האפשרויות הזמינות. באפשרותך גם לבחור את שלוש הנקודות (...) בפריט רשימה כדי לראות את האפשרויות. אם הגדרת מספר העשרות, תוכל להשתמש בתיבת החיפוש כדי למצוא אותה במהירות.
 
-:::image type="content" source="media/enrichment-hub-options-run.png" alt-text="אפשרויות לניהול ההעשרות ברשימת ההעשרות":::
+:::image type="content" source="media/enrichment-hub-options-run.png" alt-text="אפשרויות לניהול ההעשרות ברשימת ההעשרות.":::
 
 - **הצג** פרטי העשרה עם המספר של פרופילי לקוחות המועשרים.
 - **ערוך** את תצורת ההעשרה.
 - **הפעל** את העשרה לעדכון את פרופילי הלקוחות בנתונים העדכניים ביותר.
 - **השבת** העשרה קיימת כדי למנוע ממנה רענון אוטומטי עם כל רענון מתוזמן. נתונים מהרענון האחרון המוצלח ימשיכו להיות זמינים. **להפעיל** העשרה לא פעילה להפעלה מחדש של רענון אוטומטי בכל רענון מתוזמן.
-- **מחק** העשרה.
+- **מחק** את ההעשרה.
 
-באפשרותך להפעיל פעולות העשרה מרובות בבת אחת או לבטלן על ידי בחירתן מתוך רשימה. אפשרויות תצוגה ועריכה אינן זמינות כפעולה בצובר והן פועלות רק עבור העשרה אחת בכל פעם.
+הפעל או השבת העשרות מרובות בבת אחת על-ידי בחירתן ברשימה. אפשרויות ההצגה והעריכה אינן זמינות כפעולה בצובר. הן פועלות רק להעשרה אחת בכל פעם.
 
 ## <a name="enrichments-and-connections"></a>העשרות וחיבורים
 

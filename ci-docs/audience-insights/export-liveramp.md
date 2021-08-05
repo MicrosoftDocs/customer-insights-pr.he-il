@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 987457966fe1fc034d9e3cd2a1ce33902c7a84f4
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b377a3500c5d91962e59d46fbc259db5cc8fa7d0
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760328"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555446"
 ---
 # <a name="export-segments-to-liverampreg-preview"></a>ייצוא פלחים אל LiveRamp&reg;‏ (Preview)
 
@@ -56,7 +56,7 @@ ms.locfileid: "5760328"
 
 1. בשדה **בחר את מזהה המפתח שלך**, בחר **דואר אלקטרוני**, **שם וכתובת** או **טלפון** כדי לשלוח ל- LiveRamp עבור פענוח זהות.
    > [!div class="mx-imgBorder"]
-   > ![מחבר LiveRamp עם מיפוי תכונות](media/export-liveramp-segments.png "מחבר LiveRamp עם מיפוי תכונות")
+   > ![מחבר LiveRamp עם מיפוי תכונות.](media/export-liveramp-segments.png "מחבר LiveRamp עם מיפוי תכונות")
 
 1. מפה את התכונות המתאימות מישות הלקוח המאוחד שלך עבור מזהה המפתח שנבחר.
 

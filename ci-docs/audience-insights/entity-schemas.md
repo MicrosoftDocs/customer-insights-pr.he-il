@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6667e411a1b56e13105a6b59b7b5d249bc8141ea
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596362"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692306"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>סכימות ישויות ב- Common Data Model
 
@@ -24,7 +24,7 @@ ms.locfileid: "5596362"
 
 זהו מודל נתונים משותף שמאפשר ליישומים ולמשלבי נתונים לשתף פעולה בקלות רבה יותר על-ידי מתן הגדרת נתונים אחידה. Common Data Model כולל מערכת מטה-נתונים עשירים עם ישויות סטנדרטיות, קשרים, הירארכיות, תכונות ועוד. מקורו ביישומי Dynamics 365 והוא בעל קוד פתוח ב- GitHub עם יותר מ- 260 ישויות סטנדרטיות. מערכת גדולה של שותפים פנימיים וחיצוניים תורמת מושגים ספציפיים לתעשייה ל- Common Data Model.
 
-מערכות ופלטפורמות מרובות מיישמות כיום את Common Data Model, כולל זרימות הנתונים של Power BI ו- Azure Data Services. הוא כבר נתמך ב- Common Data Service,‏ Dynamics 365, Power Apps, Power BI, ושירותי נתונים עתידיים של Azure, אשר צוברים ערך ישירות כלפי [Open Data Initiative](https://www.microsoft.com/open-data-initiative).
+מערכות ופלטפורמות מרובות מיישמות את Common Data Model כיום, כולל זרימות נתונים של Power BI ו- Azure Data Services. הוא כבר נתמך ב- Microsoft Dataverse, Dynamics 365, Power Apps, Power BI ובשירותי הנתונים העתידיים של Azure, וצובר ערך ישירות לקראת ה- [Open Data Initiative](https://www.microsoft.com/open-data-initiative).
 
 ## <a name="customer-insights-entity-schemas"></a>סכימות ישות של Customer Insights
 
@@ -44,7 +44,7 @@ ms.locfileid: "5596362"
 
 באפשרותך להציג ישויות ב- [Common Data Model Entity Navigator](https://microsoft.github.io/CDM/). בחר את לחצן **טען מ- GitHub!** ונווט אל **foundationCommon** > **crmCommon** > **פתרונות** > **customerInsights** שם תמצא רשימה של ישויות Customer Insights ואת ההגדרות שלהן.
 > [!div class="mx-imgBorder"]
-> ![CDM Entity Navigator המציג את הישות CustomerActivity](media/CDM-entity-navigator.png "CDM Entity Navigator המציג את הישות CustomerActivity")
+> ![CDM Entity Navigator המציג את הישות CustomerActivity.](media/CDM-entity-navigator.png "CDM Entity Navigator המציג את הישות CustomerActivity")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

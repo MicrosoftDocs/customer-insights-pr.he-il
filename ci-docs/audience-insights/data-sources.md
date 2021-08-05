@@ -9,12 +9,13 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54dd7b629d4b4e7f640b932b0f9246e0602f46bd
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.custom: intro-internal
+ms.openlocfilehash: 0a017a37777adaaf7de079cf481ec10c70c7adba
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304697"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692436"
 ---
 # <a name="data-sources-overview"></a>מבט כולל על מקורות נתונים
 
@@ -30,13 +31,13 @@ ms.locfileid: "6304697"
 
 - [דרך עשרות מחברי Power Query](connect-power-query.md)
 - [דרך תיקית Common Data Model](connect-common-data-model.md)
-- [דרך אגם ה-Microsoft Dataverse שלך](connect-common-data-service-lake.md)
+- [דרך אגם ה-Microsoft Dataverse שלך](connect-dataverse-managed-lake.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>הוספת נתונים ממקורות נתונים מקומיים
 
-קליטת נתונים ממקורות נתונים מקומיים בתובנות לגבי קהלים נתמכת בהתבסס על זרימות הנתונים של Microsoft Power Platform. ניתן להפעיל זרימות נתונים ב- Customer Insights על-ידי [מתן כתובת ה- URL של סביבת Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) בעת הגדרת הסביבה.
+קליטת נתונים ממקורות נתונים מקומיים בתובנות לגבי קהלים נתמכת בהתבסס על זרימות הנתונים של Microsoft Power Platform. ניתן להפעיל זרימות נתונים ב- Customer Insights על-ידי [מתן כתובת ה- URL של סביבת Microsoft Dataverse](get-started-paid.md) בעת הגדרת הסביבה.
 
-מקורות נתונים שנוצרו לאחר שיוך סביבת Dataverse ל- Customer Insights ישתמשו ב[זרימות נתונים של Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) כברירת מחדל. זרימות נתונים תומכות בקישוריות מקומית באמצעות שער הנתונים. הסר וצור מחדש מקורות נתונים שהתקיימו לפני שסביבת Dataverse שויכה ל[שימוש בשערי הנתונים המקומיים](/data-integration/gateway/service-gateway-app.md).
+מקורות נתונים שנוצרו לאחר שיוך סביבת Dataverse ל- Customer Insights ישתמשו ב[זרימות נתונים של Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) כברירת מחדל. זרימות נתונים תומכות בקישוריות מקומית באמצעות שער הנתונים. הסר וצור מחדש מקורות נתונים שהתקיימו לפני שסביבת Dataverse שויכה ל[שימוש בשערי הנתונים המקומיים](/data-integration/gateway/service-gateway-app).
 
 שערי נתונים מסביבת Power BI או Power Apps קיימת יהיו גלויים ותוכל להשתמש בהם מחדש ב- Customer Insights. דף מקורות הנתונים מציג קישורים למעבר אל סביבת Microsoft Power Platform שבה תוכל להציג ולהגדיר את שערי הנתונים המקומיים.
 
@@ -45,7 +46,7 @@ ms.locfileid: "6304697"
 תראה את השם של כל מקור נתונים שעובד, את המצב שלו ואת הפעם האחרונה שבו הנתונים מאותו מקור רועננו. ניתן למיין את רשימת מקורות הנתונים לפי כל עמודה.
 
 > [!div class="mx-imgBorder"]
-> ![מקור נתונים נוסף](media/configure-data-datasource-added.png "מקור נתונים נוסף")
+> ![מקור נתונים נוסף.](media/configure-data-datasource-added.png "מקור נתונים נוסף")
 
 |סטאטוס  |תיאור  |
 |---------|---------|
