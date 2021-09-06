@@ -1,6 +1,6 @@
 ---
-title: ייצוא נתוני Customer Insights אל Adobe Experience Platform
-description: למד כיצד להשתמש בפלחי תובנות לגבי קהל בפלטפורמת Adobe Experience.
+title: ייצוא נתוני Customer Insights ל-Sendinblue Adobe Experience Platform
+description: למד כיצד להשתמש בפלחי תובנות קהל ב-Adobe Experience Platform.
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,31 +9,31 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: fac976a49b1b5c5485b75e1262135738c913bd2230be7df8aa0ec12c59734053
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305525"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032118"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>שימוש בפלחי Customer Insights ב- Adobe Experience Platform (preview)‎
+# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>שימוש בפלחים של Customer Insights ב-Adobe Experience Platform (תצוגה מקדימה).
 
-כמשתמש בתובנות לגבי קהלים ב- Dynamics 365 Customer Insights, ייתכן שיצרת פלחים כדי לייעל את הקמפיינים השיווקיים שלך על ידי התמקדות בקהלים הרלוונטיים. כדי להשתמש בפלח מ- Audience Insights ב- Adobe Experience Platform וביישומים כמו Adobe Campaign Standard, עליך לבצע מספר שלבים המתוארים במאמר זה.
+כמשתמש בתובנות לגבי קהלים ב- Dynamics 365 Customer Insights, ייתכן שיצרת פלחים כדי לייעל את הקמפיינים השיווקיים שלך על ידי התמקדות בקהלים הרלוונטיים. כדי להשתמש בקטע מתוך תובנות קהל ב-Adobe Experience Platform ויישומים כמו Adobe Campaign Standard, עליך לבצע מספר שלבים כמתואר במאמר זה.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="תרשים התהליך של השלבים המתוארים במאמר זה.":::
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
 -   רשיון Dynamics 365 Customer Insights
--   רישיון Adobe Experience Platform
+-   רשיון Adobe Experience Platform
 -   רישיון Adobe Campaign Standard
 -   חשבון אחסון Blob של Azure
 
 ## <a name="campaign-overview"></a>מבט כולל על קמפיין
 
-כדי להבין טוב יותר כיצד ניתן להשתמש בפלחים מתוך audience insights ב- Adobe Experience Platform, בוא נבחן קמפיין לדוגמה בדוי.
+כדי להבין טוב יותר כיצד תוכל להשתמש בפלחים מתוך תובנות קהל ב-Adobe Experience Platform, בוא נסתכל על קמפיין מדגם בדוי.
 
-נניח שהחברה שלך מציעה שירות חודשי מבוסס מנוי ללקוחות שלך בארצות הברית. ברצונך לזהות לקוחות שהמנויים שלהם אמורים להתחדש בשמונת הימים הקרובים אך טרם חידשו את המנוי. כדי לשמור לקוחות אלה, ברצונך לשלוח להם הצעת קידום מכירות דרך הדואר, באמצעות Adobe Experience Platform.
+נניח שהחברה שלך מציעה שירות חודשי מבוסס מנוי ללקוחות שלך בארצות הברית. ברצונך לזהות לקוחות שהמנויים שלהם אמורים להתחדש בשמונת הימים הקרובים אך טרם חידשו את המנוי. כדי לשמור על לקוחות אלה, תרצה לשלוח להם מבצע קידום מכירות דרך דוא"ל, באמצעות Adobe Experience Platform.
 
 בדוגמה זו, אנחנו רוצים להפעיל את קמפיין הדואר לקידום מכירות פעם אחת. מאמר זה אינו מכסה את מקרה השימוש של הפעלת הקמפיין יותר מפעם אחת.
 
@@ -93,7 +93,7 @@ ms.locfileid: "6305525"
 כעת באפשרותך [לייצא את הפלח לפי דרישה](export-destinations.md#run-exports-on-demand). הייצוא יפעל גם בכל [רענון מתוזמן](system.md).
 
 > [!NOTE]
-> ודא שמספר הרשומות בפלח המיוצא לא חורג ממגבלה המותרת של רישיון Adobe Campaign Standard.
+> ודא שמספר הרשומות בפלח המיוצא נמצאים במגבלת הרישיון שלך ל- Adobe Campaign Standard license.
 
 הנתונים המיוצאים מאוחסנים בגורם המכיל של Azure Blob Storage שהגדרת לעיל. נתיב התיקיה הבא נוצר אוטומטית בגורם המכיל שלך:
 
@@ -105,29 +105,29 @@ ms.locfileid: "6305525"
 
 דוגמה: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo/model.json
 
-## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>הגדרת Experience Data Model‏ (XDM) ב- Adobe Experience Platform
+## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>הגדר מודל נתוני ניסיון (XDM) ב-Adobe Experience Platform
 
-לפני שניתן יהיה להשתמש בנתונים המיוצאים מ- audience insights בתוך Adobe Experience Platform, עלינו להגדיר את סכימת Experience Data Model וכן [לקבוע את תצורת הנתונים עבור פרופיל הלקוח בזמן אמת](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
+לפני שניתן להשתמש בנתונים המיוצאים מתובנות קהל ב-Adobe Experience Platform, עלינו להגדיר את סכימת מודל נתוני החוויה ו- [להגדיר את הנתונים עבור פרופיל הלקוח בזמן אמת](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
 
 למד [מהו XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) והבן את [יסודות הרכב הסכימה](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema).
 
-## <a name="import-data-into-adobe-experience-platform"></a>ייבוא נתונים אל Adobe Experience Platform
+## <a name="import-data-into-adobe-experience-platform"></a>ייבוא נתונים לתוך Adobe Experience Platform
 
-עכשיו כשהכל מוכן, עלינו לייבא את נתוני קהל המוכנים מ- audience insights אל Adobe Experience Platform כדי ליצור פרופילים.
+כעת, כשהכל במקום, עלינו לייבא את הנתונים המוכנים של הקהל מתובנות קהל לתוך Adobe Experience Platform.
 
 תחילה, [צור חיבור למקור אחסון Blob של Azure](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).    
 
-לאחר הגדרת חיבור המקור, [קבע תצורה של תזרים נתונים](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) עבור חיבור לאצוות אחסון בענן כדי לייבא את פלט הפלח מ- audience insights אל Adobe Experience Platform.
+לאחר הגדרת חיבור המקור, [הגדר את תזרים הנתונים](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) לחיבור אצווה לאחסון ענן כדי לייבא את פלט הפלח מתובנות קהל אל Adobe Experience Platform.
 
-## <a name="create-an-audience-in-adobe-campaign-standard"></a>יצירת קהל ב- Adobe Campaign Standard
+## <a name="create-an-audience-in-adobe-campaign-standard"></a>צור קהל ב-Adobe Campaign Standard
 
-כדי לשלוח את הדואר האלקטרוני עבור קמפיין זה, נשתמש ב- Adobe Campaign Standard. לאחר ייבוא הנתונים אל Adobe Experience Platform, עלינו [ליצור קהל](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) ב- Adobe Campaign Standard באמצעות הנתונים ב- Adobe Experience Platform.
+כדי לשלוח את הדוא"ל עבור קמפיין זה, נשתמש ב- Adobe Campaign Standard. לאחר ייבוא הנתונים אל Adobe Experience Platform, אנחנו צריכים [ליצור קהל](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) ב- Adobe Campaign Standard באמצעות הנתונים ב- Adobe Experience Platform.
 
 
-למד כיצד [להשתמש בבונה הפלחים](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) ב- Adobe Campaign Standard כדי להגדיר קהל המבוסס על הנתונים ב- Adobe Experience Platform.
+למד איך [להשתמש בבונה פלחים](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) ב-Adobe Campaign Standard להגדרת קהל בהתבסס על הנתונים ב-Adobe Experience Platform.
 
-## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>יצירה ושליחה של הדואר באמצעות Adobe Campaign Standard
+## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>צור ושלח את הדוא"ל באמצעות Adobe Campaign Standard
 
 צור את תוכן הדואר ולאחר מכן [בדוק ושלח](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) את הדואר שלך.
 
-:::image type="content" source="media/contoso-sample-email.jpg" alt-text="דואר לדוגמה עם הצעת חידוש של Adobe Campaign Standard.":::
+:::image type="content" source="media/contoso-sample-email.jpg" alt-text="דוגמא לדואר אלקטרוני עם הצעת חידוש מאת Adobe Campaign Standard.":::
