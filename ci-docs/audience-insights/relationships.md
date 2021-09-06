@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
-ms.openlocfilehash: d5b9566ec88096fec31d8e164a51598159ec26d4
-ms.sourcegitcommit: ece48f80a7b470fb33cd36e3096b4f1e9190433a
+ms.openlocfilehash: 1853fcd8db2918a0b4a19fa0934e2f0ddbcf6d093c85fdf2068a13f954035dec
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6171165"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035232"
 ---
 # <a name="relationships-between-entities"></a>קשרים בין ישויות
 
@@ -82,7 +82,7 @@ ms.locfileid: "6171165"
 
 ### <a name="explore-the-relationship-visualizer"></a>סקירת רכיב ההמחשה של קשרים
 
-רכיב ההמחשה של הקשר מציג דיאגרמת רשת של הקשרים הקיימים בין ישויות מחוברות ואת העוצמה שלהם.
+רכיב ההמחשה של הקשר מציג דיאגרמת רשת של הקשרים הקיימים בין ישויות מחוברות ואת העוצמה שלהם. זה גם מדמה את נתיב הקשר.
 
 כדי להתאים אישית את התצוגה, באפשרותך לשנות את מיקום התיבות על-ידי גרירתן על בד הציור.
 
@@ -92,6 +92,20 @@ ms.locfileid: "6171165"
 - **יצא כתמונה**: שמור את התצוגה הנוכחית כקובץ תמונה.
 - **שנה לפריסה אופקית/אנכית**: שנה את היישור של הישויות והקשרים.
 - **עריכה**: עדכן מאפיינים של קשרים מותאמים אישית בחלונית העריכה ושמור שינויים.
+
+### <a name="relationship-path"></a>נתיב קשר גומלין
+
+נתיב הקשר מתאר את הישויות המחוברות בקשרים בין ישות מקור לישות יעד. הוא משמש בעת יצירת מקטע או מדד הכולל ישויות אחרות מאשר ישות הפרופיל המאוחד וישנן מספר אפשרויות להגיע לישות הפרופיל המאוחד.
+
+נתיב הקשר מודיע למערכת על הקשרים אליהם יש לגשת כדי לקבל גישה לישות הפרופיל המאוחד. נתיבי קשר שונים יכולים להניב תוצאות שונות.
+
+למשל הישות *eCommerce_eCommercePurchases* מכילה את הקשרים הבאים לפרופיל המאוחד *לקוח* ישות:
+
+- eCommerce_eCommercePurchases > Customer
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer 
+
+נתיב הקשר קובע באילו ישויות תוכל להשתמש בעת יצירת כללים למדידות או מקטעים. סביר להניח שבחירת האפשרות עם נתיב הקשר הארוך ביותר תניב פחות תוצאות מכיוון שהרשומות התואמות צריכות להיות חלק מכל הישויות. בדוגמה זו, על לקוח לרכוש סחורות באמצעות מסחר אלקטרוני (eCommerce_eCommercePurchases), בנקודת מכירה (POS_posPurchases) ולהשתתף בתוכנית הנאמנות שלנו (loyaltyScheme_loyCustomers). בעת בחירת האפשרות הראשונה, סביר להניח שתקבל יותר תוצאות מכיוון שלקוחות צריכים להתקיים רק בישות אחת נוספת.
 
 ## <a name="manage-existing-relationships"></a>ניהול קשרים קיימים 
 
@@ -105,6 +119,6 @@ ms.locfileid: "6171165"
 
 ## <a name="next-step"></a>השלב הבא
 
-קשרי מערכת וקשרים מותאמים אישית משמשים ל[יצירת פלחים](segments.md) המבוססים על מקורות נתונים מרובים שכבר אינם נפרדים.
+מערכת ו-קשרים מותאמים אישית משמשים בכדי [ליצור קטעים](segments.md) וגם [אמצעים](measures.md) בהתבסס על מספר מקורות נתונים שכבר אינם מושתקים.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

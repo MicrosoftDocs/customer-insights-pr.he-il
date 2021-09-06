@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights אל Dynamics 365 Marketing
 description: למד כיצד להגדיר את החיבור ולייצא אל Dynamics 365 Marketing.
-ms.date: 03/03/2021
+ms.date: 08/24/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bd8189f8daee1a6aea75e75e116186f62a360ba4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: b8e63a738abaf4fbb902e3edbf83f5a815978478
+ms.sourcegitcommit: 8e89575fe2acb4b289fc157fa7c4c29caf9be967
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692482"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7417206"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>שימוש בפלחים ב- Dynamics 365 Marketing‏ (Preview)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-השתמש ב[פלחים](segments.md) כדי ליצור קמפיינים וליצור קשר עם קבוצות ספציפיות של לקוחות באמצעות Dynamics 365 Marketing. למידע נוסף ראה [השתמש בקטעים מ- Dynamics 365 Customer Insights עם Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
+השתמש ב[פלחים](segments.md) כדי ליצור קמפיינים וליצור קשר עם קבוצות ספציפיות של לקוחות באמצעות Dynamics 365 Marketing. למידע נוסף ראה [השתמש בקטעים מ-Dynamics 365 Customer Insights עם Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments).
+
+אם אתה משתמש ביכולות החדשות של Dynamics 365 Marketing להפקת מסע הלקוח בזמן אמת ב-Dataverse org, אין צורך ליצור ייצוא רגיל ל-Dynamics 365 Marketing. אנשי קשר ומקטעים מתוך תובנות קהל זמינים ישירות ב-Dynamics 365 Marketing לאחר חיבור Marketing ו- Customer Insights. לפני מחיקת הייצוא הקיים, עיין בתיעוד בנושא [כיצד לחבר תובנות קהל ו-Dynamics 365 Marketing הפקת מסע הלקוח](/dynamics365/marketing/real-time-marketing-ci-profile).
 
 ## <a name="prerequisite-for-a-connection"></a>דרישה מוקדמת לחיבור
 

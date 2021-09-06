@@ -1,7 +1,7 @@
 ---
 title: סכימות ישות של Customer Insights ב- Common Data Model‏
 description: עבוד עם ישויות ב- Common Data Model.
-ms.date: 04/17/2020
+ms.date: 08/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: 66d846c3e9404ca7993cae742ea6e16833233fba
+ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692306"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380744"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>סכימות ישויות ב- Common Data Model
 
@@ -42,7 +42,7 @@ ms.locfileid: "6692306"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>הצגת ישויות באמצעות Common Data Model Entity Navigator
 
-באפשרותך להציג ישויות ב- [Common Data Model Entity Navigator](https://microsoft.github.io/CDM/). בחר את לחצן **טען מ- GitHub!** ונווט אל **foundationCommon** > **crmCommon** > **פתרונות** > **customerInsights** שם תמצא רשימה של ישויות Customer Insights ואת ההגדרות שלהן.
+באפשרותך להציג ישויות ב- [Common Data Model Entity Navigator](https://microsoft.github.io/CDM/). בחר ישות מהקטע Application Insights כדי לקבל את רשימת ישויות Customer Insights והגדרותיהם.
 > [!div class="mx-imgBorder"]
 > ![CDM Entity Navigator המציג את הישות CustomerActivity.](media/CDM-entity-navigator.png "CDM Entity Navigator המציג את הישות CustomerActivity")
 
