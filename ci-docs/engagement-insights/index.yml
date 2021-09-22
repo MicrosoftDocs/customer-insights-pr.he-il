@@ -1,0 +1,86 @@
+### YamlMime:Landing
+title: יכולת תובנות לגבי מעורבות (תצוגה מקדימה) ב- Dynamics 365 Customer Insights
+summary: אסוף נתונים עבור אתרי האינטרנט שלך. תחקור באופן אינטראקטיבי את האינטראקציות ואת השימוש של הלקוחות באתרים שלך. השתמש בשילוב המעמיק של תובנות לגבי מעורבות ותובנות לגבי קהלים, כדי להעשיר את ניתוח ההתנהגות בזמן אמת עם דוחות על פרופילי לקוחות. העשר את פרופילי הלקוחות בפעילויות באינטרנט כדי לקבל נתוני התנהגות בזמן אמת לצד נתונים רלוונטיים לגבי לקוחות. התאם את העסק שלך להפיק ערך מיידי מנתוני הלקוחות.
+metadata:
+  title: תיעוד של תובנות לגבי לקוחות (תצוגה מקדימה)
+  description: מרכז עזרה עם קישורי מפתח לתובנות לגבי מעורבות.
+  ms.service: customer-insights
+  ms.subservice: engagement-insights
+  ms.topic: hub-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.reviewer: mhart
+  ms.date: 07/30/2021
+  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.translationtype: HT
+  ms.contentlocale: he-IL
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7036239"
+landingContent:
+- title: אודות
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: מבט כולל על יכולת
+      url: overview.md
+    - text: תנאים ומושגים
+      url: glossary.md
+    - text: דלה תובנות מעורבות
+      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+- title: קליטה
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: התחל בעבודה
+      url: get-started.md
+    - text: יצירת סביבת עבודה
+      url: create-workspace.md
+    - text: ציד את האתר בכלים
+      url: instrument-website.md
+- title: דוחות
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: הצג דוחות
+      url: view-reports.md
+    - text: יצירת דוחות מותאמים אישית
+      url: custom-reports.md
+    - text: הצגת דוח פרופילים מאוחדים
+      url: profile-reports.md
+    - text: יצירת דוחות משפך
+      url: funnel-reports.md
+- title: אירועים
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: צור אירועים ממוקדים
+      url: refined-events.md
+    - text: ייצוא אירועים
+      url: export-events.md
+    - text: מחיקה וייצוא של נתונים אישיים
+      url: delete-export-personal-data.md
+- title: משאבים למפתחים
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: משאבים למפתחים
+      url: developer-resources.md
+    - text: מדגם WebSDK
+      url: websdk-sample.md
+    - text: תרחישים מתקדמים עבור SDK לאינטרנט
+      url: advanced-SDK-implementation.md
+    - text: מדגם SDK Android
+      url: get-started-android.md
+    - text: מדגם iOS SDK
+      url: get-started-ios.md
+- title: ניהול
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: נהל סביבות וסביבות עבודה
+      url: manage-environments-workspaces.md
+    - text: התחבר לתובנות לגבי קהלים
+      url: configure-connections.md
+    - text: נהל קובצי Cookie והסכמת משתמש
+      url: user-consent-storage.md
