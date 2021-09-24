@@ -14,8 +14,14 @@
       href: audience-insights/overview.md
     - name: תכונות חדשות ומעודכנות
       href: audience-insights/whats-new-audience-insights.md
-    - name: יצירת סביבה חדשה
-      href: audience-insights/get-started-paid.md
+    - name: התחל בעבודה
+      items:
+        - name: מדריך התחלה מהירה
+          href: audience-insights/get-started.md
+        - name: יצירת סביבה חדשה
+          href: audience-insights/get-started-paid.md
+        - name: סיור בתובנות לגבי קהלים
+          href: audience-insights/home.md
     - name: למד מודולים
       items:
         - name: קליטת נתונים
@@ -68,6 +74,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: כתובות משופרות
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: העשר עם Azure Maps
+          href: audience-insights/enrichment-azure-maps.md
         - name: העשרה בעזרת HERE Technologies
           href: audience-insights/enrichment-here.md
         - name: העשר עם Leadspace
@@ -230,21 +238,15 @@
           href: audience-insights/apis.md
         - name: הפניות API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-    - name: מגבלות שירות
-      href: audience-insights/service-limits.md
-    - name: בקשות DSR במסגרת תקנה GDPR
-      href: audience-insights/gdpr.md
 - name: תובנות לגבי מעורבות (Preview)
   items:
     - name: מרכז העזרה
       href: engagement-insights/index.yml
     - name: מבט כולל על יכולת
       href: engagement-insights/overview.md
-    - name: גירסת ניסיון ללא תשלום
-      href: 'https://pi.dynamics.com/'
     - name: התחל בעבודה
       items:
-        - name: התחל בעבודה
+        - name: מדריך התחלה מהירה
           href: engagement-insights/get-started.md
         - name: יצירת סביבת עבודה
           href: engagement-insights/create-workspace.md
@@ -300,18 +302,10 @@
           href: engagement-insights/user-roles.md
         - name: נהל סביבות וסביבות עבודה
           href: engagement-insights/manage-environments-workspaces.md
-        - name: הגדר מחברים
-          href: engagement-insights/configure-connections.md
         - name: נהל קובצי Cookie והסכמת משתמש
           href: engagement-insights/user-consent-storage.md
-    - name: GDPR
-      items:
-        - name: מחיקה וייצוא של נתונים אישיים
-          href: engagement-insights/delete-export-personal-data.md
     - name: זמינות אזורית
       href: engagement-insights/regional-availability.md
-    - name: מגבלות שירות
-      href: engagement-insights/quotas.md
 - name: שלב תובונת קהל ותובנות מעורבות
   items:
     - name: קישור תובנות קהל ותובנות מעורבות
@@ -320,5 +314,9 @@
       href: engagement-insights/integrate-audience-insights-segments.md
     - name: השתמש בממדים דמוגרפיים לפיצול נתונים התנהגותיים
       href: engagement-insights/curate-dimensions.md
+- name: מגבלות שירות
+  href: service-limits.md
+- name: זכויות ובקשות של DSR
+  href: dsr-rights-requests.md
 - name: קבל תמיכה
-  href: 'https://dynamics.microsoft.com/en-us/support/'
+  href: 'https://dynamics.microsoft.com/support/'

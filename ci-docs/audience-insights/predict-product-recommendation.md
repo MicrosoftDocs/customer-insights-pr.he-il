@@ -1,20 +1,20 @@
 ---
 title: חיזוי המלצות על מוצרים
 description: בצע חיזוי של המוצר שהלקוח עשוי לרכוש או לקיים איתם אינטראקציה.
-ms.date: 03/17/2021
+ms.date: 09/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: zacookmsft
-ms.author: zacook
+author: wmelewong
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 60d511181aa85e3e939eff3e5931f0de7807c01c8f38134ebca5c5604cd53871
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a75a245bc721d65643fa78d46f2be52291595a5a
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034957"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494540"
 ---
 # <a name="product-recommendation-prediction-preview"></a>חיזוי המלצות על מוצרים (Preview)
 
@@ -89,23 +89,24 @@ ms.locfileid: "7034957"
 
 ### <a name="add-required-data"></a>הוספת נתונים נדרשים
 
-1. בחר **הוסף נתונים** עבור **היסטוריית עסקאות לקוח** ובחר בישות המספקת את המידע על היסטוריית העסקאות/הרכישות כמתואר ב[דרישות מוקדמות](#prerequisites).
+1. בחר **הוסף נתונים** ובחר בסוג הפעילות בחלונית הצדדית שמכיל את המידע הדרוש על העסקה או היסטוריית הרכישה.
 
-1. מפה את השדות הסמנטיים לתכונות בישות היסטוריית הרכישות שלך ובחר **הבא**. לתיאורים של השדות, בדוק את [ה‏‫דרישות המוקדמות](#prerequisites).
-   > [!div class="mx-imgBorder"]
-   > ![הגדר את קשר הישות.](media/product-recommendation-purchasehistorymapping.PNG "דף היסטוריית רכישות המציג תכונות סמנטיות הממופות לשדות בישות היסטוריית הרכישות שנבחרה")
+1. תחת **בחר את הפעילויות**, בחר בפעילויות הספציפיות מהפעילות שנבחרה שברצונך שהחישוב יתמקד בה.
 
-1. אם השדות אינם מלאים, הגדר את הקשר מישות היסטוריית הרכישות שלך לישות *לקוח*.
-    1. בחר את **ישות היסטוריית הרכישות**.
-    1. בחר את **שדה** המזהה את הלקוח בישות היסטוריית הרכישות. עליו להתייחס למזהה הלקוח העיקרי של הישות *לקוח* שלך.
-    1. בחר את **ישות לקוח** שמתאימה לישות הלקוח העיקרית שלך.
-    1. הקלד שם המתאר את הקשר.
-       > [!div class="mx-imgBorder"]
-       > ![דף היסטוריית הרכישות המציג את היצירה של קשר עם הלקוח.](media/model-purchase-join.png "דף היסטוריית הרכישות המציג את היצירה של קשר עם הלקוח")
+   :::image type="content" source="media/product-recommendation-select-semantic-activity.PNG" alt-text="חלונית צדדית המציגה בחירת פעילויות תחת הסוג הסמנטי.":::
+
+1. אם עדיין לא מיפית את הפעילות לסוג סמנטי, בחר **ערוך** כדי לעשות זאת. החוויה המודרכת למיפוי פעילויות סמנטיות נפתחת. מפה את הנתונים שלך לשדות המתאימים בסוג הפעילות שנבחר.
+
+   :::image type="content" source="media/product-recommendation-set-activity-type.PNG" alt-text="סוג פעילות של הגדרת דף.":::
+
+1. לאחר מיפוי הפעילות לסוג הסמנטי המתאים, בחר **הבא** כדי להמשיך 
+ 
+1. מפה את התכונות הסמנטיות לשדות הנדרשים להפעלת המודל.
 
 1. בחר **שמור**.
 
 1. בחר **הבא**.
+
 
 ### <a name="configure-product-filters"></a>קביעת תצורה של מסנני מוצרים
 

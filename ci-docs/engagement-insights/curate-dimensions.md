@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 50bb800c9e097d03cc6f26f79819c741ab5e8baf
-ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.openlocfilehash: 8a3d7f9276330a6daacbe9428d84a371b81bbefe
+ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "7461104"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466349"
 ---
 # <a name="use-demographic-dimensions-for-splitting-behavioral-data"></a>השתמש בממדים דמוגרפיים לפיצול נתונים התנהגותיים
 
@@ -29,7 +29,7 @@ ms.locfileid: "7461104"
 - סביבת תובנות מעורבות שבה יש לך נתוני פרופילי לקוחות המקושרים לסביבת תובנות קהל שבה נוצרים פרופילי הלקוחות. מידע נוסף: [צור קישור בין תובנות קהל לבין תובנות מעורבות](integrate-audience-insights-engagement-insights.md)
 
 > [!NOTE]
-> לאחר שתיצור קישור בין וסביבות תובנות הקהל ותובנות מעורבות, ייתכן שתרצה רק נתונים ספציפיים למאפיינים של פרופילי לקוחות, שיכולים להיות שימושיים כממדים בתובנות מעורבות. למידע נוסף, עבור אל [אפשר תכונות ופלחים של פרופילים מאוחדים לתבונות קהל](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).<!--note from editor: Suggested. -->
+> לאחר שתיצור קישור בין וסביבות תובנות הקהל ותובנות מעורבות, ייתכן שתרצה רק נתונים ספציפיים למאפיינים של פרופילי לקוחות, שיכולים להיות שימושיים כממדים בתובנות מעורבות. למידע נוסף, עבור אל [אפשר תכונות ופלחים של פרופילים מאוחדים לתבונות קהל](integrate-audience-insights-engagement-insights.md#enable-audience-insights-unified-profiles-attributes-and-segments).
 
 ## <a name="create-a-new-custom-report"></a>צור דוח מותאם אישית חדש
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: e53d87c4f633cba09fecbc1c219f0ac2ec6bb5598a7902cbcf7398d26d6d7c6b
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 9eaeb0c93481283324f21122c9528ff5896b9866
+ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7029400"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "7469980"
 ---
 # <a name="customer-profiles-search--filter-index"></a>פרופילי לקוחות: אינדקס חיפוש וסינון
 
@@ -56,7 +56,7 @@ ms.locfileid: "7029400"
 
 2. בחר **שמור** כדי להחיל את השינויים.
 
-3. בחר באפשרות **הפעלה** לאחר שתהיה מוכן להחיל את ההגדרות שלך.
+3. בחר באפשרות **הפעלה** לאחר שתהיה מוכן להחיל את ההגדרות שלך. לאחר עיבוד השינויים, תמצא אותם ב[כרטיסי לקוחות בדף 'לקוח'](customer-profiles.md). 
 
 ## <a name="next-steps"></a>השלבים הבאים
 

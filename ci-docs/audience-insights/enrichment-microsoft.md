@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 726edb19a9fd97d80ae357103dc7d48ed38b005131ad44137b47d629a1c60b12
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 45c81a037258e42d8975e0372c104865a9d4cbfe
+ms.sourcegitcommit: 2acda3c5adf40bc3f5bbb4b2b4b6c22f84371da7
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033862"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466625"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>העשרת פרופילי לקוחות עם קירבות למוצג ותחום עניין (תצוגה מקדימה)
 
@@ -126,6 +126,8 @@ ms.locfileid: "7033862"
 :::image type="content" source="media/my-enrichments.png" alt-text="תצוגה מקדימה של תוצאות לאחר הפעלת תהליך העשרה.":::
 
 סקור את הנתונים המועשרים על-ידי בחירת **הצג נתונים מועשרים** בתרשים. נתונים מועשרים עבור מותגים מגיעים לישות **BrandAffinityFromMicrosoft**. נתונים עבור תחומי עניין נמצאים בישות **InterestAffinityFromMicrosoft**. תוכל למצוא ישויות אלה שרשומות בקבוצה **העשרה** גם ב- **נתונים** > **ישויות**.
+
+תראה תרשים עם מספר פרופילי הלקוחות המועשרים לאורך זמן ותצוגה מקדימה של הישות המועשרת. בחר **הצג עוד** באריח התצוגה המקדימה כדי לפתוח את הישות המועשרת.
 
 ## <a name="see-enrichment-data-on-the-customer-card"></a>ראה נתוני העשרה בכרטיס הלקוח
 

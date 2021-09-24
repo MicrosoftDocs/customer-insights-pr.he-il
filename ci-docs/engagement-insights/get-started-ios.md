@@ -4,17 +4,17 @@ description: למד כיצד להתאים אישית את ה- SDK של iOS ול�
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: de8291fc429ae6433301a47bfdf9a3271b1b77294fd58448c7aa6bd0783edc97
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f05929435eeee9cf3f891ab18842c5861e39d5ba
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036874"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494231"
 ---
 # <a name="get-started-with-the-ios-sdk"></a>תחילת העבודה עם iOS SDK
 
@@ -45,11 +45,36 @@ ms.locfileid: "7036874"
 
 - אם אין לך סביבת עבודה קיימת, בחר  **סביבת עבודה חדשה** ופעל לפי השלבים ליצירת [סביבת עבודה חדשה](create-workspace.md).
 
+- לאחר שתיצור סביבת עבודה, עבור אל **מנהל מערכת** > **סביבת עבודה** ולאחר מכן בחר **מדריך התקנה**.
+
 ## <a name="configure-the-sdk"></a>קביעת התצורה של SDK
 
-לאחר שתוריד את ה- SDK, תוכל לעבוד איתו ב- Xcode כדי לאפשר אירועים ולהגדיר אותם.
+לאחר שתוריד את ה- SDK, תוכל לעבוד איתו ב- Xcode כדי לאפשר אירועים ולהגדיר אותם. קיימות שתי דרכים לעשות זאת
 
-1. לאחר שתיצור סביבת עבודה, עבור אל **מנהל מערכת** > **סביבת עבודה** ולאחר מכן בחר **מדריך התקנה**.
+### <a name="option-1-using-cocoapods-recommended"></a>אפשרות 1: שימוש ב- CocoaPods (מומלץ)
+CocoaPods הוא מנהל תלות עבור פרוייקטים של Swift ו- Objective-C Cocoa. השימוש בו הופך את שילוב ה- SDK של התובנות בנוגע למעורבות עבור iOS לקל יותר. CocoaPods גם מאפשר לך לשדרג לגירסה העדכנית של ה- SDK של תובנות בנוגע למעורבות. כך באפשרותך להשתמש ב- CocoaPods כדי לשלב את ה- SDK של התובנות בנוגע למעורבות בפרוייקט Xcode שלך. 
+
+1. התקן את CocoaPods. 
+
+1. צור קובץ חדש בשם Podfile בתוך ספריית הבסיס של הפרוייקט והוסף לו את המשפטים הבאים. החלף את YOUR_TARGET_PROJECT_NAME בשם פרוייקט ה- Xcode שלך. 
+```objectivec
+platform :ios, '9.0'  
+
+ target '${YOUR_TARGET_PROJECT_NAME}' do 
+
+     use_frameworks!   
+
+     pod 'EIObjC.framework.debug' 
+
+     pod 'EIObjC.framework.release' 
+
+ end 
+```
+תצורת התרמיל לעיל מכילה הן את גירסאות איתור הבאגים והן את גירסאות ההפצה של ה- SDK. בחר את הגירסה המתאימה ביותר לפרוייקט שלך.
+
+1. התקן את התרמיל על-ידי ביצוע הפקודה הבאה: `pod install --repo-update `
+
+### <a name="option-2-using-download-link"></a>אפשרות 2: שימוש בקישור להורדה
 
 1. הורד את [ה- iOS SDK של תובנות לגבי מעורבות‬](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-ios-sdk.zip), ומקם את קובץ `EIObjC.xcframework` בתיקייה `Frameworks`.
 

@@ -4,17 +4,17 @@ description: למד כיצד להתאים אישית ולהפעיל את SDK ל-
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 77e63929bbcc7ecff34a3839af525b76ec3c7f21173ddc5f8f2d69f11c25c441
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a060ac60db71a7b0fb8c0d7a3b0e266004fbee6a
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036919"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494276"
 ---
 # <a name="get-started-with-the-android-sdk"></a>תחילת העבודה עם ה- SDK ל- Android
 
@@ -35,17 +35,38 @@ ms.locfileid: "7036919"
 
 - מפתח קליטה (ראה למטה הוראות כיצד להשיגו)
 
-## <a name="step-1-integrate-the-sdk-into-your-application"></a>שלב 1 שלב את ה- SDK ביישום שלך
+## <a name="integrate-the-sdk-into-your-application"></a>שלב את ה- SDK ביישום שלך
 התחל את התהליך על-ידי בחירת סביבת עבודה, בחירת הפלטפורמה הניידת של Android והורדת ה- SDK עבור Android.
 
 - השתמש במחליף סביבת העבודה בחלונית הניווט השמאלית כדי לבחור את סביבת העבודה שלך.
 
 - אם אין לך סביבת עבודה קיימת, בחר  **סביבת עבודה חדשה** ופעל לפי השלבים ליצירת [סביבת עבודה חדשה](create-workspace.md).
 
-## <a name="step-2-configure-the-sdk"></a>שלב 2 קביעת התצורה של SDK
+- לאחר שתיצור סביבת עבודה, עבור אל **מנהל מערכת** > **סביבת עבודה** ולאחר מכן בחר **מדריך התקנה**. 
 
-1. לאחר שתיצור סביבת עבודה, עבור אל **מנהל מערכת** > **סביבת עבודה** ולאחר מכן בחר **מדריך התקנה**. 
+## <a name="configure-the-sdk"></a>קביעת התצורה של SDK
 
+לאחר שתוריד את ה- SDK, תוכל לעבוד איתו ב- Android Studio כדי לאפשר אירועים ולהגדיר אותם. קיימות שתי דרכים לעשות זאת:
+### <a name="option-1-using-jitpack-recommended"></a>אפשרות 1: שימוש ב- JitPack (מומלץ)
+1. הוסף את מאגר JitPack ל- `build.gradle` המשמש כבסיס שלך:
+    ```gradle
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+    ```
+
+1. הוסף את התלות:
+    ```gradle
+    dependencies {
+        implementation 'com.github.microsoft:engagementinsights-sdk-android:1.0.0'
+        api 'com.google.code.gson:gson:2.8.1'
+    }
+    ```
+
+### <a name="option-2-using-download-link"></a>אפשרות 2: שימוש בקישור להורדה
 1. הורד את [Android SDKשל התובנות לגבי מעורבות](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip), ומקם את הקובץ `eiandroidsdk-debug.aar` בתיקיה `libs`.
 
 1. פתח את הקובץ `build.gradle` ברמת הפרוייקט והוסף את המקטעים הבאים:
@@ -62,7 +83,17 @@ ms.locfileid: "7036919"
     }
     ```
 
-1. קבע את תצורת ה- SDK של התובנות לגבי מעורבות באמצעות הקובץ `AndroidManifest.xml` שנמצא מתחת לתיקיה `manifests`. 
+1. הוסף הרשאה לרשת ולאינטרנט בקובץ `AndroidManifest.xml` שלך הממוקם תחת התיקיה `manifests`. 
+    ```xml
+    <manifest>
+        ...
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    ```
+    
+1. הגדר את ה- SDK של התובנות לגבי מעורבות באמצעות הקובץ `AndroidManifest.xml`. 
+
+## <a name="enable-auto-instrumentation"></a>הפעל מכשור אוטומטי
 1. העתק את מקטע ה- XML מ **מדריך ההתקנה**. `Your-Ingestion-Key` צריך להיות מאוכלס באופן אוטומטי.
 
    > [!NOTE]
@@ -85,7 +116,7 @@ ms.locfileid: "7036919"
    </application>
    ```
 
-1. הפוך את הלכידה האוטומטית של אירועי `View` לזמינה או ללא זמינה על-ידי הגדרת השדה `autoCapture` שלעיל כ- `true` או `false`.
+1. הפוך את הלכידה האוטומטית של אירועי `View` לזמינה או ללא זמינה על-ידי הגדרת השדה `autoCapture` שלעיל כ- `true` או `false`. לעת עתה יש להוסיף אירועי `Action` באופן ידני.
 
 1. (אופציונלי) תצורות אחרות כוללות את הגדרת כתובת ה- URL של מלקט נקודות הקצה. ניתן להוסיף אותן מתחת למטה-נתונים של מפתח הקליטה ב- `AndroidManifest.xml`:
     ```xml
@@ -94,9 +125,9 @@ ms.locfileid: "7036919"
             android:value="https://some-endpoint-url.com" />
     ```
 
-## <a name="step-3-initialize-the-sdk-from-mainactivity"></a>שלב 3 אתחל את ה- SDK מ- MainActivity 
+## <a name="implement-custom-events"></a>יישם אירועים בהתאמה אישית
 
-לאחר אתחול ה- SDK, תוכל לעבוד עם אירועים והמאפיינים שלהם בסביבת MainActivity.
+לאחר אתחול ה- SDK, תוכל לעבוד עם אירועים והמאפיינים שלהם בסביבת `MainActivity`.
 
     
 Java:
@@ -147,7 +178,7 @@ event.setProperty("ad_shown", true)
 analytics.trackEvent(event)
 ```
 
-### <a name="set-user-details-for-your-event-optional"></a>הגדר את פרטי משתמש לאירוע שלך (אופציונלי)
+## <a name="set-user-details-for-your-event-optional"></a>הגדר את פרטי משתמש לאירוע שלך (אופציונלי)
 
 SDK מאפשר לך להגדיר פרטי משתמש שניתן לשלוח עם כל אירוע. באפשרותך לציין את פרטי המשתמש על-ידי קריאה לממשק API `setUser(user: User)` ברמת `Analytics`.
 

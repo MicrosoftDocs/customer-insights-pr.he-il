@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: יכולת תובנות לגבי מעורבות (תצוגה מקדימה) ב- Dynamics 365 Customer Insights
+title: יכולת תובנות לגבי מעורבות ב- Dynamics 365 Customer Insights (Preview)
 summary: אסוף נתונים עבור אתרי האינטרנט שלך. תחקור באופן אינטראקטיבי את האינטראקציות ואת השימוש של הלקוחות באתרים שלך. השתמש בשילוב המעמיק של תובנות לגבי מעורבות ותובנות לגבי קהלים, כדי להעשיר את ניתוח ההתנהגות בזמן אמת עם דוחות על פרופילי לקוחות. העשר את פרופילי הלקוחות בפעילויות באינטרנט כדי לקבל נתוני התנהגות בזמן אמת לצד נתונים רלוונטיים לגבי לקוחות. התאם את העסק שלך להפיק ערך מיידי מנתוני הלקוחות.
 metadata:
-  title: תיעוד של תובנות לגבי לקוחות (תצוגה מקדימה)
+  title: תיעוד של תובנות לגבי מעורבות (Preview)
   description: מרכז עזרה עם קישורי מפתח לתובנות לגבי מעורבות.
   ms.service: customer-insights
   ms.subservice: engagement-insights
@@ -10,24 +10,24 @@ metadata:
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
-  ms.date: 07/30/2021
-  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
-  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.date: 09/15/2021
+  ms.openlocfilehash: bf2e40b1ca304e7b26687eaff298d2e70615cd2b
+  ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
   ms.translationtype: HT
   ms.contentlocale: he-IL
-  ms.lasthandoff: 08/10/2021
-  ms.locfileid: "7036239"
+  ms.lasthandoff: 09/15/2021
+  ms.locfileid: "7494185"
 landingContent:
 - title: אודות
   linkLists:
   - linkListType: overview
     links:
-    - text: מבט כולל על יכולת
+    - text: יתרונות יכולת
       url: overview.md
-    - text: תנאים ומושגים
+    - text: מילון מונחים
       url: glossary.md
-    - text: דלה תובנות מעורבות
-      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+    - text: תכונות חדשות ומעודכנות
+      url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 - title: קליטה
   linkLists:
   - linkListType: how-to-guide
@@ -38,28 +38,30 @@ landingContent:
       url: create-workspace.md
     - text: ציד את האתר בכלים
       url: instrument-website.md
-- title: דוחות
+- title: הצגה וסינון דוחות
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: הצג דוחות
       url: view-reports.md
-    - text: יצירת דוחות מותאמים אישית
-      url: custom-reports.md
     - text: הצגת דוח פרופילים מאוחדים
       url: profile-reports.md
-    - text: יצירת דוחות משפך
-      url: funnel-reports.md
-- title: אירועים
+    - text: השתמש בפלחי קהל לסינון דוחות
+      url: integrate-audience-insights-segments.md
+- title: נתח
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: יצירת דוחות משפך
+      url: funnel-reports.md
+    - text: נתח נתונים התנהגותיים
+      url: curate-dimensions.md
+    - text: יצירת דוחות מותאמים אישית
+      url: custom-reports.md
     - text: צור אירועים ממוקדים
       url: refined-events.md
     - text: ייצוא אירועים
       url: export-events.md
-    - text: מחיקה וייצוא של נתונים אישיים
-      url: delete-export-personal-data.md
 - title: משאבים למפתחים
   linkLists:
   - linkListType: reference
@@ -81,6 +83,10 @@ landingContent:
     - text: נהל סביבות וסביבות עבודה
       url: manage-environments-workspaces.md
     - text: התחבר לתובנות לגבי קהלים
-      url: configure-connections.md
+      url: integrate-audience-insights-engagement-insights.md
     - text: נהל קובצי Cookie והסכמת משתמש
       url: user-consent-storage.md
+    - text: מחיקה וייצוא של נתונים אישיים
+      url: delete-export-personal-data.md
+    - text: מגבלות שירות
+      url: ../service-limits.md

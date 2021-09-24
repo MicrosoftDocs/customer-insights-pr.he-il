@@ -4,17 +4,17 @@ description: כיצד ניתן ליצור סביבות וסביבות עבודה
 author: jusali
 ms.reviewer: mhart
 ms.author: jusali
-ms.date: 07/01/2021
+ms.date: 09/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: bf310b1a50ba7baac5d11d5f22ff42003fbba516efd7d165c00b59adc958da2e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a5b48db5ae23ea65bf608d67348d493bfdc7678f
+ms.sourcegitcommit: 0ceb46c4f57ab49d3a2ebb1c8a816bbafe979e3d
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034043"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7486036"
 ---
 # <a name="manage-environments-and-workspaces"></a>נהל סביבות וסביבות עבודה
 
@@ -85,13 +85,11 @@ ms.locfileid: "7034043"
 
 1. בחר **הוספת חברים** כדי להעניק גישה ו[להקצות תפקידים](user-roles.md). נכון לעכשיו, רק **מנהל סביבת עבודה** זמין.
 
-1. אם הגדרת [חיבור לתובנות לגבי קהלים](configure-connections.md), באפשרותך לבחור **אפשר גישה לנתוני פרופיל** כדי לאפשר לחבר לראות דוחות המבוססים על [פרופילי משתמשים](profile-reports.md).
-
 1. בחר **הוספת חברים** כדי להוסיף אותם לסביבת העבודה שלך.
 
 ## <a name="manage-an-environment"></a>ניהול סביבה
 
-כמנהל סביבה, באפשרותך לגשת לסביבה מתוך חלונית הניווט הימנית. באפשרותך להגדיר הגדרות של סביבה, מנהלי סביבה אחרים, סביבות עבודה ו[חיבורים לתובנות לגבי קהלים](configure-connections.md). בחר כרטיסיות כדי לעבור בין אזורים שונים במרכז הניהול.
+כמנהל סביבה, באפשרותך לגשת לסביבה מתוך חלונית הניווט הימנית. באפשרותך לקבוע תצורה של הגדרות סביבה, מנהלי סביבה אחרים וסביבות עבודה. בחר כרטיסיות כדי לעבור בין אזורים שונים במרכז הניהול.
 
 :::image type="content" source="media/New-environment.png" alt-text="מרכז ניהול הסביבה.":::
 
@@ -123,8 +121,6 @@ ms.locfileid: "7034043"
 
 1. בחר **הוספת חברים** כדי לעדכן חברים ו[להקצות תפקידים](user-roles.md). נכון לעכשיו, רק **מנהל סביבה** זמין.
 
-1. אם הגדרת [חיבור לתובנות לגבי קהלים](configure-connections.md), באפשרותך לבחור **אפשר גישה לנתוני פרופיל** כדי לאפשר לחבר לראות דוחות המבוססים על [פרופילי משתמשים](profile-reports.md).
-
 1. בחר **הוספת חברים** כדי להוסיף אותם לסביבה שלך.
 
 ### <a name="delete-an-environment"></a>מחיקת סביבה
@@ -143,7 +139,7 @@ ms.locfileid: "7034043"
 
 יצירת חיבורים לתובנות לגבי קהלים מאפשרת לראות דוחות בתובנות לגבי מעורבות על סמך פרופילים מאוחדים של לקוחות. 
 
-למידע נוסף, ראה [קביעת תצורה של חיבורים](configure-connections.md).
+למידע נוסף, ראה [צור קישור בין תובנות קהל לבין תובנות מעורבות](integrate-audience-insights-engagement-insights.md).
 
 ## <a name="manage-personal-data"></a>ניהול נתונים אישיים
 

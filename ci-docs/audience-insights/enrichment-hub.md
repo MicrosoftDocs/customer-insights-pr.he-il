@@ -1,7 +1,7 @@
 ---
 title: העשרת פרופילי לקוחות מאוחדים
 description: השתמש ביכולות כדי להעשיר את נתוני הלקוחות שלך.
-ms.date: 07/01/2021
+ms.date: 08/31/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: a64bbd754d4013d0a6243074ac9f55991547be82b269047a9937b583baf98697
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
+ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032529"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "7469979"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>העשרה לפרופילי לקוחות (תצוגה מקדימה)
 
@@ -29,6 +29,7 @@ ms.locfileid: "7032529"
 
 בכרטיסיה **גלה**, תוכל למצוא את ההעשרה הבאה:
 
+- [Azure Maps](enrichment-azure-maps.md) מסופק על-ידי Microsoft
 - [מותגים](enrichment-microsoft.md) שסופקו על-ידי Microsoft
 - [תחומי עניין](enrichment-microsoft.md) שסופקו על-ידי Microsoft
 - [כתובות משופרות](enrichment-enhanced-addresses.md) מסופקות על-ידי Microsoft
@@ -62,5 +63,17 @@ ms.locfileid: "7032529"
 ## <a name="multiple-enrichments-of-the-same-type"></a>העשרות מרובות מאותו סוג
 
 הישות שיש להעשיר מצוינת במהלך קביעת תצורת ההעשרה, אשר מאפשרת לך להעשיר רק ערכת משנה של הפרופילים שלך. לדוגמה, העשרת נתונים רק עבור פלח ספציפי. באפשרותך לקבוע תצורה של מספר העשרות מאותו סוג ולהשתמש מחדש באותו חיבור. לחלק מההעשרות יהיו מגבלות על מספר ההעשרות מאותו הסוג שניתן ליצור. ניתן לראות את המגבלות והשימוש הנוכחי בדף **העשרה**.
+
+## <a name="see-the-progress-of-the-enrichment-process"></a>ראה את התקדמות תהליך ההעשרה
+
+באפשרותך למצוא פרטים על עיבוד העשרה, כולל המצב שלה ובעיות אפשריות בעת ביצוע הרענון שלה או לאחר שהרענון הושלם. הבן אילו תהליכים מעורבים כדי לרענן העשרה ואת משך הזמן שנדרש להפעלת התהליכים. מצב ההעשרה נתמך עבור Experian,‏ Leadspace‏, HERE Technologies‏, SFTP Import ו- Azure Maps.
+
+כדי לראות את מצב ההעשרה
+
+1. עבור אל **נתונים** > **העשרה**. 
+1. בכרטיסיה **ההעשרות שלי**, בחר את מצב ההעשרה כדי לפתוח חלונית צדדית. 
+1. בחלונית **פרטי התקדמות**, הרחב את המקטע **העשרות**. 
+1. תחת ההעשרה שברצונך לראות את ההתקדמות שלה, בחר **הצג פרטים**. 
+1. בחלונית **פרטי משימה**, בחר **הצג פרטים** כדי לראות את התהליכים המעורבים בעדכון ההעשרה והמצב שלהם. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

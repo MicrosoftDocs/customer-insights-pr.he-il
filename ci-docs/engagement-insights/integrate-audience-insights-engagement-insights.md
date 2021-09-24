@@ -1,19 +1,19 @@
 ---
 title: צור קישור בין תובנות קהל לבין תובנות מעורבות
 description: צור קישור פעיל בין תובנות קהל לתובנות מעורבות כדי לאפשר שיתוף נתונים דו-כיווני.
-ms.date: 07/22/2021
+ms.date: 09/08/2021
 ms.service: customer-insights
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 870209a7e19fec464ec41462a02365771bd653bd
-ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.openlocfilehash: 0fdbc93292291814b2e1a62fee2c5ff796ae14e2
+ms.sourcegitcommit: 4e5b7ec50c7612765a9ec2c8673e0cc43b357abb
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "7461014"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487108"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>צור קישור בין תובנות קהל לבין תובנות מעורבות
 
@@ -26,14 +26,14 @@ ms.locfileid: "7461014"
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
 - יש לאחסן פרופילי תובנות קהל בחשבון Azure Data Lake Storage שבבעלותך או בתוך [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;אגם נתונים מנוהל. 
-
+- סביבת התובנות לגבי קהלים שלך צריכה לכלול סביבת Dataverse משויכת. ואם גם סביבה זו משתמשת ב- Dataverse עבור אחסון נתונים, הקפד לסמן את האפשרות **הפוך שיתוף נתונים לזמין** בתובנות לגבי קהלים. למידע נוסף, ראה [צור וקבע תצורה של סביבה בתשלום בתובנות לגבי קהלים](../audience-insights/get-started-paid.md).
 - אתה צריך הרשאות מנהל מערכת הן לתובנות מעורבות והן לסביבות תובנות קהל.
-
 - סביבות מקושרות חייבות להיות באותו אזור גיאוגרפי.
 
 > [!NOTE]
-> - אם המנוי שלך לתובנות קהל הוא ניסיוני, שמשתמש בתובנות קהל שמנוהל באופן פנימי באגם נתונים, צור קשר עם [pirequest@microsoft.com](mailto:pirequest@microsoft.com) לעזרה. 
-> - אם סביבת תובנות הקהל משתמשת ב-Azure Data Lake Storage שלך כדי לאחסן נתונים, עליך להוסיף מנהל שירות Azure לתובנות מעורבות לחשבון האחסון שלך. לפרטים, עבור אל [התחבר לחשבון Azure Data Lake Storage עם מנהל שירות Azure לתובנות קהל](../audience-insights/connect-service-principal.md). כמו כן, סביבת תובנות הקהל שלך צריכה לכלול סביבת [Dataverse משויכת](../audience-insights/get-started-paid.md). 
+> - אם המנוי שלך לתובנות לגבי קהלים הוא גירסת ניסיון המשתמשת בתובנות לגבי קהלים שמנוהל באופן פנימי באגם נתונים, צור קשר עם [pirequest@microsoft.com](mailto:pirequest@microsoft.com) לעזרה. 
+> - אם סביבת תובנות הקהל משתמשת ב-Azure Data Lake Storage שלך כדי לאחסן נתונים, עליך להוסיף מנהל שירות Azure לתובנות מעורבות לחשבון האחסון שלך. לפרטים, עבור אל [התחבר לחשבון Azure Data Lake Storage עם מנהל שירות Azure לתובנות קהל](../audience-insights/connect-service-principal.md). 
+
 
 ## <a name="create-an-environment-link"></a>צור קישור סביבה
 
@@ -75,6 +75,7 @@ ms.locfileid: "7461014"
 
    > [!IMPORTANT]
    > אם לא תוסיף במפורש משתמשים בשלב זה, הנתונים יוסתרו ממשתמשים בתובנות מעורבות.
+   > כדי שפלחי תובנות קהל יופיעו בתובנות מעורבות, עליך תחילה [להריץ תהליכי מיזוג וקבץ הורדה](../audience-insights/merge-entities.md). תהליכי קצב הורדה חשובים מכיוון שהם יוצרים טבלה ייחודית המכינה פלחי תובנות קהל לשיתוף עם תובנות מעורבות. (אם מתוזמן רענון מערכת, הוא יכלול באופן אוטומטי תהליכי קצב הורדה).
 
 1. סקור את הבחירות שלך ולאחר מכן לחץ על ‎ **סיום‎‎‎**.
 
