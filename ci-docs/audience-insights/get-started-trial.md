@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: f038dedd369ac9e623146b66528efa87c47a8c23769037d8709fa9b804a0b723
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3a235e924395a606b9332de3d205289288a597a9
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035416"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7558824"
 ---
 # <a name="set-up-a-trial-environment"></a>הגדרת סביבת ניסיון 
 
@@ -95,7 +95,7 @@ ms.locfileid: "7035416"
 
 - כברירת מחדל, גירסאות הניסיון פעילות למשך 30 יום. עם זאת, ניתן להאריך אותן לאחר היום ה- 23 בעת הכניסה לגירסת הניסיון.
 - לא ניתן להשתמש בחשבון Azure Data Lake Storage שלך כדי לאחסן נתוני פלט במהלך השימוש בגירסת ניסיון. עם זאת, תוכל לקלוט נתונים מחשבון Data Lake Storage.
-- ניתן לאחסון עד 3 GB נתונים בסביבת Dataverse שניתנת באופן אוטומטי עם תחילת השימוש בגירסת ניסיון של Customer Insights.
+- באפשרותך לאחסן עד ‎3 GB של נתונים בסביבת Dataverse המוקצית אוטומטית כשאתה מפעיל את גירסת הניסיון של Customer Insights.
 
 ## <a name="copy-data-from-a-trial-to-a-paid-subscription"></a>העתקת נתונים מגירסת ניסיון למינוי בתשלום
 

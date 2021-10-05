@@ -242,7 +242,7 @@
   items:
     - name: מרכז העזרה
       href: engagement-insights/index.yml
-    - name: מבט כולל על יכולת
+    - name: אודות תובנות לגבי מעורבות
       href: engagement-insights/overview.md
     - name: התחל בעבודה
       items:
@@ -306,7 +306,7 @@
           href: engagement-insights/user-consent-storage.md
     - name: זמינות אזורית
       href: engagement-insights/regional-availability.md
-- name: שלב תובונת קהל ותובנות מעורבות
+- name: שתף נתונים בין יכולות
   items:
     - name: קישור תובנות קהל ותובנות מעורבות
       href: engagement-insights/integrate-audience-insights-engagement-insights.md
@@ -318,5 +318,3 @@
   href: service-limits.md
 - name: זכויות ובקשות של DSR
   href: dsr-rights-requests.md
-- name: קבל תמיכה
-  href: 'https://dynamics.microsoft.com/support/'

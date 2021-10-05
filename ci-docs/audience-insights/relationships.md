@@ -1,20 +1,20 @@
 ---
 title: קשרים בין ישויות ונתיבי ישויות
 description: צור ונהל קשרים בין ישויות ממקורות נתונים מרובים.
-ms.date: 06/01/2020
+ms.date: 09/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: MichelleDevaney
-ms.author: midevane
+author: CadeSanthaMSFT
+ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: 1853fcd8db2918a0b4a19fa0934e2f0ddbcf6d093c85fdf2068a13f954035dec
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c639cfca30cf1b57ada7d728311210b7210a37ac
+ms.sourcegitcommit: f72d5b86dfdc7282c6c1918b1ab3962d7a1c9852
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035232"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7557353"
 ---
 # <a name="relationships-between-entities"></a>קשרים בין ישויות
 
@@ -93,11 +93,11 @@ ms.locfileid: "7035232"
 - **שנה לפריסה אופקית/אנכית**: שנה את היישור של הישויות והקשרים.
 - **עריכה**: עדכן מאפיינים של קשרים מותאמים אישית בחלונית העריכה ושמור שינויים.
 
-### <a name="relationship-path"></a>נתיב קשר גומלין
+## <a name="relationship-paths"></a>נתיבי קשר גומלין
 
-נתיב הקשר מתאר את הישויות המחוברות בקשרים בין ישות מקור לישות יעד. הוא משמש בעת יצירת מקטע או מדד הכולל ישויות אחרות מאשר ישות הפרופיל המאוחד וישנן מספר אפשרויות להגיע לישות הפרופיל המאוחד.
+נתיב קשר גומלין מתאר את הישויות המחוברות לקשרי גומלין בין ישות מקור לישות יעד. הוא משמש בעת יצירת מקטע או מדד הכולל ישויות אחרות מאשר ישות הפרופיל המאוחד וישנן מספר אפשרויות להגיע לישות הפרופיל המאוחד. 
 
-נתיב הקשר מודיע למערכת על הקשרים אליהם יש לגשת כדי לקבל גישה לישות הפרופיל המאוחד. נתיבי קשר שונים יכולים להניב תוצאות שונות.
+נתיב קשר גומלין מספק מידע למערכת לגבי קשרי הגומלין שדרכם יש לגשת לישות הפרופיל המאוחדת. נתיבי קשר שונים יכולים להניב תוצאות שונות.
 
 למשל הישות *eCommerce_eCommercePurchases* מכילה את הקשרים הבאים לפרופיל המאוחד *לקוח* ישות:
 
@@ -105,7 +105,43 @@ ms.locfileid: "7035232"
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Customer
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Customer 
 
-נתיב הקשר קובע באילו ישויות תוכל להשתמש בעת יצירת כללים למדידות או מקטעים. סביר להניח שבחירת האפשרות עם נתיב הקשר הארוך ביותר תניב פחות תוצאות מכיוון שהרשומות התואמות צריכות להיות חלק מכל הישויות. בדוגמה זו, על לקוח לרכוש סחורות באמצעות מסחר אלקטרוני (eCommerce_eCommercePurchases), בנקודת מכירה (POS_posPurchases) ולהשתתף בתוכנית הנאמנות שלנו (loyaltyScheme_loyCustomers). בעת בחירת האפשרות הראשונה, סביר להניח שתקבל יותר תוצאות מכיוון שלקוחות צריכים להתקיים רק בישות אחת נוספת.
+נתיב קשר גומלין קובע באילו ישויות ניתן להשתמש בעת יצירת כללים עבור מדידות או מקטעים. סביר להניח שבחירת האפשרות עם נתיב הקשר הארוך ביותר תניב פחות תוצאות מכיוון שהרשומות התואמות צריכות להיות חלק מכל הישויות. בדוגמה זו, על לקוח לרכוש סחורות באמצעות מסחר אלקטרוני (eCommerce_eCommercePurchases), בנקודת מכירה (POS_posPurchases) ולהשתתף בתוכנית הנאמנות שלנו (loyaltyScheme_loyCustomers). בעת בחירת האפשרות הראשונה, סביר להניח שתקבל יותר תוצאות מכיוון שלקוחות צריכים להתקיים רק בישות אחת נוספת.
+
+### <a name="direct-relationship"></a>קשר גומלין ישיר
+
+קשר גומלין מסווג כ **קשר גומלין ישיר** כאשר ישות מקור מתייחסת לישות יעד עם קשר גומלין אחד בלבד.
+
+לדוגמה, אם ישות פעילות הנקראת *eCommerce_eCommercePurchases* מתחברת לישות יעד *eCommerce_eCommerceContacts* דרך *ContactId* בלבד, זהו קשר גומלין ישיר.
+
+:::image type="content" source="media/direct_Relationship.png" alt-text="ישות המקור המתחברת ישירות לישות יעד.":::
+
+#### <a name="multi-path-relationship"></a>קשר גומלין של נתיבים מרובים
+
+**קשר גומלין של נתיבים מרובים** הוא סוג מיוחד של קשר גומלין ישיר המחבר ישות מקור ליותר מישות יעד אחת.
+
+לדוגמה, אם ישות פעילות הנקראת *eCommerce_eCommercePurchases* מתייחסת לשתי ישויות יעד, הן *eCommerce_eCommerceContacts* והן *loyaltyScheme_loyCustomers*, זהו קשר גומלין מרובה נתיבים.
+
+:::image type="content" source="media/multi-path_relationship.png" alt-text="ישות מקור מתחברת ישירות ליותר מישות יעד אחת דרך קשר גומלין מרובה דילוגים.":::
+
+### <a name="indirect-relationship"></a>קשר גומלין עקיף
+
+קשר גומלין מסווג כ **קשר גומלין עקיף** כאשר ישות מקור מתייחסת לישות נוספת אחת או יותר לפני שהיא מתייחסת לישות יעד.
+
+#### <a name="multi-hop-relationship"></a>קשר גומלין של דילוגים מרובים
+
+*קשר גומלין מרובה דילוגים* הוא *קשר גומלין עקיף* המאפשר לך לחבר ישות מקור לישות יעד דרך ישות מתווכת אחת או יותר.
+
+לדוגמה, אם ישות פעילות הנקראת *eCommerce_eCommercePurchasesWest* מתחברת לישות מתווכת הנקראת *eCommerce_eCommercePurchasesEast* ולאחר מכן מתחברת לישות יעד הנקראת *eCommerce_eCommerceContacts*, זהו קשר גומלין מרובה דילוגים.
+
+:::image type="content" source="media/multi-hop_relationship.png" alt-text="ישות מקור מתחברת ישירות לישות יעד עם ישות מתווכת.":::
+
+### <a name="multi-hop-multi-path-relationship"></a>קשר גומלין מרובה-דילוגים, מרובה-נתיבים
+
+ניתן להשתמש בקשרי גומלין מרובי דילוגים ומרובי נתינים ביחד כדי ליצור **קשרי גומלין מרובי דילוגים ומרובי נתיבים**. סוג מיוחד זה משלב את הפונקציות של **קשרי גומלין מרובי דילוגים** ו **קשרי גומלין מרובי נתיבים**. הוא מאפשר לך להתחבר ליותר מישות יעד אחת בעת השימוש בישויות מתווכות.
+
+לדוגמה, אם ישות פעילות הנקראת *eCommerce_eCommercePurchasesWest* מתחברת לישות מתווכת הנקראת *eCommerce_eCommercePurchasesEast* ולאחר מכן מתחברת לשתי ישויות יעד, הן *eCommerce_eCommerceContacts* והן *loyaltyScheme_loyCustomers*, זהו קשר גומלין מרובה-דילוגים ומרובה-נתיבים.
+
+:::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="ישות מקור מתחברת ישירות לישות יעד אחת ומתחברת לישות יעד אחרת באמצעות ישות מתווכת.":::
 
 ## <a name="manage-existing-relationships"></a>ניהול קשרים קיימים 
 
