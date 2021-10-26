@@ -1,7 +1,7 @@
 ---
 title: פלחים בתובנות לגבי קהלים
 description: מבט כולל על פלחים וכיצד ליצור ולנהל אותם.
-ms.date: 05/03/2021
+ms.date: 09/30/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: f1003b53b17e3ba2c37c0f2d94b89f7e97c2b6f10e28b7bbe93160e4c7f08d54
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036374"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617376"
 ---
 # <a name="segments-overview"></a>מבט כולל על פלחים
 
@@ -26,11 +26,19 @@ ms.locfileid: "7036374"
 
 ישנן מספר דרכים ליצור פלח חדש: 
 
-- פלח מורכב עם בונה פלחים: [פלח ריק](segment-builder.md#create-a-new-segment)
-- פלחים פשוטים עם אופרטור אחד: [פלח מהיר](segment-builder.md#quick-segments)
-- דרך מבוססת AI לאיתור לקוחות דומים: [לקוחות דומים](find-similar-customer-segments.md)
-- הצעות מופעלות AI המבוססות על מדדים או תכונות: [פלחים מוצעים לשיפור המדדים](suggested-segments.md)
-- הצעות המבוססות על פעילויות: [פלחים מוצעים על סמך פעילות של לקוחות](suggested-segments-activity.md)
+# <a name="individual-customers-b2c"></a>[לקוחות בודדים (B2C)](#tab/b2c)
+
+- פלח מורכב עם בונה פלחים: [בנה פלח משלך](segment-builder.md#create-a-new-segment) 
+- פלחים פשוטים עם אופרטור אחד: [פלח מהיר](segment-builder.md#quick-segments) 
+- דרך מבוססת AI לאיתור לקוחות דומים: [לקוחות דומים](find-similar-customer-segments.md) 
+- הצעות מופעלות AI המבוססות על מדדים או תכונות: [פלחים מוצעים לשיפור המדדים](suggested-segments.md) 
+- הצעות המבוססות על פעילויות: [פלחים מוצעים על סמך פעילות של לקוחות](suggested-segments-activity.md) 
+
+# <a name="business-accounts-b2b"></a>[תיקי לקוחות עסקיים (B2B)](#tab/b2b)
+
+- פלח מורכב עם בונה פלחים: [בנה פלח משלך](segment-builder.md#create-a-new-segment)
+
+---
 
 ## <a name="manage-existing-segments"></a>ניהול פלחים קיימים
 
@@ -70,9 +78,9 @@ ms.locfileid: "7036374"
 
 1. בחר **נהל יצוא** מרשימה הנפתחת של הפעולות.
 
-1. הדף **‏‫ייצוא (תצוגה מקדימה) עבור פלח‬** נפתח. תוכל לראות את כל פעולות הייצוא המוגדרות כשהן מקובצות לפי פעולות ייצוא שמכילות את הפלח הנוכחי או שאינן מכילות אותו.
+1. הדף **‏‫ייצוא (תצוגה מקדימה) עבור פלח‬** נפתח. באפשרותך לראות את כל פעולות הייצוא המוגדרות מקובצות בהתאם לכך שהן מכילות את הפלח הנוכחי או לא.
 
-   1. כדי להוסיף את הפלח שנבחר לייצוא, בחר את הייצוא ברשימה ובחר **הוסף פלח**.
+   1. כדי להוסיף את הפלח שנבחר לייצוא, **ערוך** את הייצוא המתאים לבחירת הפלח המתאים ולאחר מכן שמור. בסביבות עבור לקוחות בודדים תוכל במקום זאת לבחור את הייצוא ברשימה ולבחור **הוסף מקטע** כדי להגיע לאותה תוצאה.
 
    1. ליצירת ייצוא חדש עם הקטע הנבחר בחר **הוסף ייצוא**. לקבלת מידע נוסף על יצירת פעולות ייצוא, ראה [הגדרת ייצוא חדש](export-destinations.md#set-up-a-new-export).
 

@@ -1,32 +1,32 @@
 ---
 title: העשרת פרופילי החברה באמצעות Leadspace העשרה של צד שלישי
 description: מידע כללי אודות העשרה של צד שלישי באמצעות Leadspace.
-ms.date: 04/09/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: kishorem-MS
-ms.author: kishorem
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 34b73b37670ed45e2c31ea164c0788b793bee433829ce21317c83903f3fca1fe
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c57eb0ceb50e3b778acac72a4bbfd733a5b0c401
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031704"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617402"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>העשרה של פרופילי חברות באמצעות Leadspace (תצוגה מקדימה)
 
-Leadspace היא חברה למדעי נתונים המספקת פלטפורמת נתוני לקוחות B2B. היא מאפשרת ללקוחות עם פרופילי לקוחות אחידים לחברות להעשיר את הנתונים שלהם. העשרות כוללות תכונות נוספות כגון גודל חברה, מיקום, תעשייה ועוד.
+Leadspace היא חברה למדעי נתונים המספקת פלטפורמת נתוני לקוחות B2B. הוא מאפשר לסביבות עם פרופילי לקוחות מאוחדים המבוססים על חשבונות להעשיר את הנתונים שלהן. העשר *פרופילי לקוחות* עם תכונות כמו גודל חברה, מיקום או תעשייה. העשר *פרופילי אנשי קשר* עם תכונות כמו כותרת, אישיות או אימות דואר אלקטרוני.
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
 כדי להגדיר את Leadspace, הדרישות המוקדמות הבאות צריכות להתקיים:
 
 - יש לך רישיון Leadspace פעיל.
-- יש לך [פרופילי לקוחות מאוחדים](customer-profiles.md) עבור חברות.
-- חיבור Leadspace כבר הוגדר על-ידי מנהל מערכת או שיש לך הרשאות [מנהל מערכת](permissions.md#administrator) ואת ה"מפתח התמידי" (מכונה **אסימון Leadspace**). צור קשר ישירות עם [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) לקבלת פרטים על המוצר שלהם.
+- יש לך [פרופילי לקוחות מאוחדים](customer-profiles.md) המבוססים על חשבונות.
+- חיבור Leadspace כבר הוגדר על-ידי מנהל מערכת או שיש לך הרשאות [מנהל מערכת](permissions.md#administrator) ואת ה"מפתח התמידי" (מכונה **אסימון Leadspace**). צור קשר ישירות עם [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) לקבלת פרטים על המוצר שלהם.
 
 ## <a name="configure-the-enrichment"></a>קביעת תצורת ההעשרה
 
@@ -46,10 +46,14 @@ Leadspace היא חברה למדעי נתונים המספקת פלטפורמת 
 
 1. בחר **הבא** והגדר אילו שדות מתוך הפרופילים המאוחדים של משמשים כדי לחפש נתוני חברה מתאימים מ- Leadspace. השדה **שם חברה** הוא נדרש. לקבלת דיוק התאמות גבוה יותר, ניתן להוסיף עד שני שדות אחרים, **אתר אינטרנט של חברה** ו **מיקום חברה**.
 
-   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="חלונית מיפוי שדה Leadspace.":::
+   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="חלונית מיפוי שדה של Leadspace.":::
 
 1. בחר **הבא** כדי להשלים את מיפוי השדה.
 
+1. בחר בתיבת הסימון אם יש לך *פרופילי אנשי קשר* שברצונך להעשיר. תובנות לגבי קהלים ימפו באופן אוטומטי את השדות הנדרשים.
+
+   :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="העשרת רשומות אנשי קשר של Leadspace.":::
+ 
 1. ספק שם עבור ההעשרה ובחר **שמור העשרה** לאחר סקירת האפשרויות שלך.
 
 
@@ -81,7 +85,8 @@ Leadspace היא חברה למדעי נתונים המספקת פלטפורמת 
 
 ## <a name="next-steps"></a>השלבים הבאים
 
-בנה על נתוני הלקוחות המועשרים שלך. צור [פלחים](segments.md) ו[מדידות](measures.md), ואפילו [יצא את הנתונים](export-destinations.md) כדי להעניק ללקוחות שלך חוויות מותאמות אישית.
+
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 

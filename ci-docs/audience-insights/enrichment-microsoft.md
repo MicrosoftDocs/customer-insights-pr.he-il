@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 45c81a037258e42d8975e0372c104865a9d4cbfe
-ms.sourcegitcommit: 2acda3c5adf40bc3f5bbb4b2b4b6c22f84371da7
+ms.openlocfilehash: 51b150cbf5d9cfb3a5df42e680bcfa57ec5496cb
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466625"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617879"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>העשרת פרופילי לקוחות עם קירבות למוצג ותחום עניין (תצוגה מקדימה)
 
@@ -137,7 +137,7 @@ ms.locfileid: "7466625"
 
 ## <a name="next-steps"></a>השלבים הבאים
 
-בנה על נתוני הלקוחות המועשרים שלך. צור [פלחים](segments.md) ו[מדידות](measures.md), ואפילו [יצא את הנתונים](export-destinations.md) כדי להעניק ללקוחות שלך חוויות מותאמות אישית.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

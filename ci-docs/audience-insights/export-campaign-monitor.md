@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights אל Campaign Monitor
 description: למד כיצד להגדיר את החיבור ולייצא אל Campaign Monitor.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d2cc3ec944faa1d77ffb44e8abb422d753c5625d0ccef75cbb7efb14cb7c3741
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 063de14c4ffd51b3afd89786606d7b37626695dc
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031888"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618982"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>ייצוא פלחים אל Campaign Monitor‏ (Preview)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7031888"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- באפשרותך לייצא עד מיליון פרופילים לכל ייצוא אל Campaign Monitor.
+- באפשרותך לייצא עד מיליון פרופילי לקוחות לכל ייצוא אל Campaign Monitor.
 - הייצוא ל- Campaign Monitor מוגבל לפלחים.
-- ייצוא של עד מיליון פרופילים ל- Campaign Monitor יכול להימשך עד 20 דקות. 
-- מספר הפרופילים שבאפשרותך לייצא ל- Campaign Monitor תלוי ומוגבל בחוזה שלך עם Campaign Monitor.
+- ייצוא של עד מיליון פרופילי לקוחות אל Campaign Monitor עשוי להימשך עד 20 דקות. 
+- מספר פרופילי הלקוחות שתוכל לייצא אל Campaign Monitor תלוי בחוזה שלך עם Campaign Monitor ומוגבל בהתאם לתנאיו.
 
 ## <a name="set-up-connection-to-campaign-monitor"></a>הגדרת חיבור ל- Campaign Monitor
 
@@ -66,7 +66,7 @@ ms.locfileid: "7031888"
 1. הזן את [**מזהה רשימת Campaign Monitor**](https://www.campaignmonitor.com/api/getting-started/#your-list-id) שלך.    
    [צור את מפתח ה- API](https://www.campaignmonitor.com/api/getting-started/) דרך **הגדרות חשבון** ב- Campaign Monitor תחילה כדי להציג את מזהה רשימת ה- API.  
 
-3. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. יש לייצא פלחים אל Campaign Monitor.
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. יש לייצא פלחים אל Campaign Monitor.
 
 1. בחר **שמור**.
 

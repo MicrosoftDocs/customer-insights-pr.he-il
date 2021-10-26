@@ -4,18 +4,18 @@ description: סקירה כללית של משאבי העזרה כדי להתחי�
 ms.reviewer: mhart
 ms.author: jefhar
 author: mochimochi016
-ms.date: 08/31/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 644b125f5d140627d357630ded88dd6838d6edb7
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
+ms.openlocfilehash: 3505c15c4319c8cc8823bcd89d3b8adc944a87dd
+ms.sourcegitcommit: 565637f49cbdd05a82f42784f594c19cac299140
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494595"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "7623678"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-engagement-insights-capability-public-preview"></a>תחילת העבודה עם יכולת התובנות לגבי מעורבות של Dynamics 365 Customer Insights (תצוגה מקדימה ציבורית)
 
@@ -39,33 +39,47 @@ ms.locfileid: "7494595"
 
 1. בחר את האזור שלך וסמן את התיבה אם ברצונך להצטרף לקבלת עדכונים והצעות דוא"ל.
 
-1. סקור את **תנאי השימוש של תובנות לגבי מעורבות (Preview)** ואת **הצהרת הפרטיות** ולאחר מכן בחר **סייר בהדגמה** כדי לקבל הגדרות אלה.
+1. סקור את **תנאי השימוש** ואת **הצהרת הפרטיות** של תובנות לגבי מעורבות (Preview) ולאחר מכן בחר **סייר בהדגמה** כדי לקבל הגדרות אלה.
 
 1. חקור את המוצר באמצעות קבוצת נתונים לדוגמה.
 
-##  <a name="step-3-set-up-a-workspace-and-add-code-to-your-website"></a>שלב 3: הגדר סביבת עבודה והוסף קוד לאתר שלך
+##  <a name="step-3-set-up-a-workspace-and-create-reports"></a>שלב 3: הגדר סביבת עבודה וצור דוחות
 
 סביבת עבודה היא מקום שבו באפשרותך להציג פעילות משתמש בזמן אמת, ולאחסן ולנהל דוחות. הוסף קוד לאתר שלך כדי להתחיל לאסוף *אירועים*, נתוני הפעילות שמגיעים מהמשתמשים.
 
 1. [צור סביבת עבודה](create-workspace.md) והוסף חברים.
 
-1. [הוסף קוד לאתר שלך](instrument-website.md) או [אפליקציה למכשירים ניידים](developer-resources.md#capture-events-from-mobile-apps) כדי לראות את פעילות המשתמשים המגיעה לסביבת העבודה שלך.
+1. הוסף קוד ל[אתר האינטרנט](instrument-website.md) או ל[יישום למכשירים ניידים](developer-resources.md#capture-events-from-mobile-apps) כדי לראות את פעילות המשתמשים המגיעה לסביבת העבודה שלך.
 
 1. הצג [דוח בזמן אמת](view-reports.md) המציג משתמשים פעילים לפי דפדפן, מכשיר, מערכת הפעלה, מיקום ושפה. אתה יכול גם ליצור [דוחות מותאמים אישית](custom-reports.md) כדי ליצור תצוגות חזותיות משלך.
+
+1. צור [ממדים](dimensions.md) כדי למיין מבקרים לפי משתמשים חדשים וחוזרים, [מדדים](metrics.md) שיסייעו להבין טוב יותר את התנהגות המשתמשים וכן [פלחים](segments.md) לזיהוי קבוצות משנה של מבקרים בהתבסס על מאפיינים או על אינטראקציות באתר האינטרנט.
     
 ## <a name="step-4-export-data-to-other-channels"></a>שלב 4: ייצא נתונים לערוצים אחרים
 
-אתה יכול ליצור *אירועים ממוקדים* (תצוגה וירטואלית) של נתוני ניתוח האינטרנט שלך. לאחר מכן סנן וייצא את הנתונים אל Azure Data Lake Storage. תוכל להטמיע את הנתונים המיוצאים כמקור נתונים. למידע נוסף, ראה [צור קישור בין תובנות קהל לבין תובנות מעורבות](integrate-audience-insights-engagement-insights.md).
+אתה יכול ליצור *אירועים ממוקדים* (תצוגה וירטואלית) של נתוני ניתוח האינטרנט שלך. לאחר מכן סנן וייצא את הנתונים אל Azure Data Lake Storage. תוכל להטמיע את הנתונים המיוצאים כמקור נתונים.
 
 1. [צור אירועים ממוקדים](refined-events.md) לייצוא.
 
-1. [ייצא את הנתונים](export-events.md) אל Data Lake Storage.
+1. [יצא את הנתונים](export-events.md) אל Azure Data Lake Storage.
 
 1. [צור קישור בין תובנות לגבי קהלים ותובנות לגבי מעורבות](integrate-audience-insights-engagement-insights.md) כדי לשתף נתונים בין שתי היכולות.
 
+1. [זהה אירועי אינטרנט ממשתמשים שאומתו בעבר](unknown-to-known.md) בעזרת התכונה **לא ידוע לידוע**.
+
 1. למד כיצד [למחוק ולייצא אירועים המכילים פרטים אישיים](delete-export-personal-data.md).
+
+## <a name="step-5-create-and-manage-funnel-reports"></a>שלב 5: צור ונהל דוחות משפך
+
+דוח משפך אוסף מידע על הצעדים המתרחשים במהלך מסע הלקוח באמצעות האתר או האפליקציה למכשירים ניידים. בנוסף ליצירת דוחות פרופיל מוכנים לשימוש ודוחות מותאמים אישית, באפשרותך ליצור דוח משפך לזיהוי הנתיבים של הלקוחות לפני שהם מבצעים רכישה. 
+
+1. [צור דוח משפך](funnel-reports.md) כדי לקבל החלטות שקולות ולזהות אזורים לאופטימיזציה ולשיפור תהליכים.
+
+1. צור דוחות משפך חוצי ערוצים, לאחר שתצייד את היישום למכשירים ניידים בתובנות לגבי מעורבות [Android SDK](get-started-android.md) או [iOS SDK](get-started-ios.md).
+
+1. השתמש ב[תובנות משפך](funnel-reports.md#funnel-insights) כדי לקבל תובנה מעמיקה יותר לגבי אופן הפעולה של הלקוח הנוגע לשלבים בדוח המשפך שלך.
  
-## <a name="step-5-stay-connected"></a>שלב 5: הישאר מחובר
+## <a name="step-6-stay-connected"></a>שלב 6: הישאר מחובר
 
 אנו מעריכים את השתתפותך הפעילה, ומתחשבים בכל המשוב הרלוונטי לצורך פיתוח מהדורות עתידיות. שתף את המשוב שלך ודווח על בעיות באחד מהערוצים הבאים:
 - [קהילה](https://go.microsoft.com/fwlink/?linkid=2141648)

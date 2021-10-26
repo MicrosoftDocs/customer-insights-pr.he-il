@@ -4,17 +4,17 @@ description: השתמש בדוחות הזמינים כדי לראות פעילו
 author: darrinw-docs
 ms.reviewer: mhart
 ms.author: darrinw
-ms.date: 06/18/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: cb6d9ab75b95a5f677d2267f5412a55327930987b2fc3a1a21958633a8116bd2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 5ccdcb47db597154cf79b9f2e8fc238ab75dfde9
+ms.sourcegitcommit: d9965f4bfc09391698a34042f6b44367e53819e3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036649"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7582923"
 ---
 # <a name="view-reports"></a>הצג דוחות
 
@@ -92,12 +92,18 @@ ms.locfileid: "7036649"
 
 - **מיקומים** מציג מידע על משתמשי האפליקציה לפי מדינה, אזור ועיר.
 
-## <a name="filter-by-time-or-value"></a>סינון לפי זמן או ערך
+## <a name="filter-by-time-or-date-range"></a>סינון לפי טווח שעות או תאריכים
 
-באפשרותך לבחור את מסגרת הזמן או הערך בדוח האינטרנט או בדוח למכשירים ניידים כדי להתמקד בערך או במסגרת זמן. 
+באפשרותך לבחור את מסגרת הזמן או את טווח התאריכים בדוח אינטרנט או דוח למכשירים ניידים כדי להתמקד בערך או בפרק זמן. 
 
-- לבחירת מסגרת זמן, בחר **עוד [...]** מהרשימה הנפתחת של הדוח. בחירת טווח הזמן מושבתת עבור דוח שימוש בזמן אמת; טווח הזמן של דוח שימוש בזמן אמת הוא "עכשיו".
+- כדי לבחור מסגרת זמן, בפינה השמאלית העליונה של תצוגת הדוח, בחר ערך מהרשימה הנפתחת של הדוח. באפשרותך גם לבחור **טווח תאריכים קבוע**. 
 
-- ברוב הדוחות, יש לבחור ערך בתרשים או ברשימה כדי לסנן את הדוח לפי הערך שנבחר.
+  :::image type="content" source="media/filter-by-time.png" alt-text="סנן לפי טווח שעות או תאריכים.":::   
+
+- עבור רוב הדוחות, בחר ערך בתרשים או ברשימה כדי לסנן את הדוח.
+
+> [!NOTE]
+> בחירת טווח הזמן מושבתת עבור דוח שימוש בזמן אמת; טווח הזמן של דוח שימוש בזמן אמת הוא "עכשיו".
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

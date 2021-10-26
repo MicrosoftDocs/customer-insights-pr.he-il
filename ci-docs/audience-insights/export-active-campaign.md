@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights ל- ActiveCampaign
 description: למד כיצד להגדיר את החיבור ולייצא ל- ActiveCampaign.
-ms.date: 06/29/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 14d420205a5c60d471ef21a04ab6d02295a65ca8fd5205ba782a300703b06102
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 4fbdd5a51a3df35d31ad072eef64d20ee967d7ee
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032210"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618154"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>ייצוא פלחים ל- ActiveCampaign‏ (Preview)
 
@@ -28,9 +28,9 @@ ms.locfileid: "7032210"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- ניתן לייצוא עם מיליון פרופילים בכל ייצוא ל- ActiveCampaign והפעולה יכולה להימשך עד 90 דקות.
+- באפשרותך לייצא עד מיליון פרופילי לקוחות בכל ייצוא אל ActiveCampaign ופעולה זו עשויה להימשך עד 90 דקות.
 - הייצוא ל- ActiveCampaign מוגבל לפלחים.
-- מספר הפרופילים שתוכל לייצא ל- ActiveCampaign תלוי בחוזה שלך עם ActiveCampaign.
+- מספר פרופילי הלקוחות שתוכל לייצא אל ActiveCampaign תלוי בחוזה שלך עם ActiveCampaign.
 
 ## <a name="set-up-connection-to-activecampaign"></a>הגדר חיבור ל- ActiveCampaign
 
@@ -64,7 +64,7 @@ ms.locfileid: "7032210"
 
 1. הזן את [**מזהה רשימת ActiveCampaign**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign) שלך.    
 
-3. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. זה נדרש כדי לייצא פלחים ל- ActiveCampaign. לחלופין, אתה יכול לייצא שם פרטי, שם משפחה, וטלפון ליצירת הודעות דואר אלקטרוני מותאמות אישית יותר. בחר הוסף תכונה כדי למפות שדות אלה.
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. זה נדרש כדי לייצא פלחים ל- ActiveCampaign. לחלופין, אתה יכול לייצא שם פרטי, שם משפחה, וטלפון ליצירת הודעות דואר אלקטרוני מותאמות אישית יותר. בחר הוסף תכונה כדי למפות שדות אלה.
 
 1. בחר **שמור**.
 

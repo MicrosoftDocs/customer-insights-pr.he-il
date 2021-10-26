@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: fcc45c24e9d89516dba9964ee16f57caf439eff0
-ms.sourcegitcommit: 2abe9b661b8c3c01e9730c629e383402e3f6a655
+ms.openlocfilehash: 5262ad20019e90e73ab121a5ab90e602c1a32b7e
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465206"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7606077"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>מה חדש ביכולת Audience Insights של Dynamics 365 Customer Insights
 
@@ -26,6 +26,20 @@ ms.locfileid: "7465206"
 
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="september-2021-updates"></a>עדכוני ספטמבר 2021
+
+העדכונים במהדורת ספטמבר 2021 כוללים תכונות חדשות, שדרוגי ביצועים ותיקוני באגים.
+
+### <a name="activities"></a>פעילויות
+
+- **שיפורי ציר זמן של פעילות** הרחבנו את המסננים עבור ציר הזמן של הפעילות בפרופילים של לקוחות. בנוסף, באפשרותך להשתמש בחלונית המסנן החדשה כדי לסנן לפי סוג פעילות ולפי תאריך. ניתן לסנן תאריכים באמצעות תנאים שונים. לקבלת מידע נוסף, ראה [הצג צירי זמן של פעילות בפרופילים של לקוחות](activities.md#view-activity-timelines-on-customer-profiles).
+
+### <a name="relationships"></a>קשרים
+
+- **תמיכה בקשרים מרובי-דילוגים** השתמש בקשרים מרובי-דילוגים בעת הגדרת פעילויות וקשרים בין ישויות. קשרים מרובי דילוגים משתמשים בישות ביניים לחיבור שתי ישויות. בעת הגדרת פעילות, באפשרותך להשתמש בקשר מרובה-דילוגים כדי לחבר את ישות הפעילות שלך לישות ביניים ולאחר מכן לישות לקוח. באפשרותך לשלב קשרים מרובי דילוגים עם קשרים מרובי נתיבים. לקבלת מידע נוסף, ראה [קשר מרובה דילוגים](relationships.md#multi-hop-relationship).
+
+- **תמיכה בקשרים מרובי-נתיבים** השתמש בקשרים מרובי-נתיבים בעת הגדרת פעילויות וקשרים בין ישויות. קשרים מרובי-נתינים מקשרים ישות מקור ליותר מישות אחת. בעת הגדרת פעילות, באפשרותך להשתמש בקשר מרובה-נתיבים כדי לחבר את ישות הפעילות שלך ליותר מישות לקוח אחת. באפשרותך לשלב קשרים מרובי-נתיבים עם קשרים מרובי-דילוגים. לקבלת מידע נוסף, ראה [קשר מרובה-נתיבים](relationships.md#multi-path-relationship).
 
 ## <a name="august-2021-updates"></a>עדכוני אוגוסט 2021
 

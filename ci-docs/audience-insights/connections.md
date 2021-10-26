@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 37c5d152a4cc91a90df8db387d25923ed150e238bc6b54c54f7bba59fbd48c82
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3689c7016454ed44e22b4d4ff5a338836a8fe288
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033219"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605950"
 ---
 # <a name="connections-preview-overview"></a>מבט כולל על חיבורים (Preview)
 
@@ -47,6 +47,7 @@ ms.locfileid: "7033219"
 1. בחלונית **הגדרת חיבור**, ספק את הפרטים הדרושים. 
    1. **שם תצוגה** וסוג החיבור מתארים חיבור. מומלץ לבחור שם המסביר את המטרה והיעד של חיבור זה.
    1. השדות המדויקים תלויים בשירות שאליו אתה מתחבר. באפשרותך לקבל מידע על פרטי סוג חיבור ספציפי במאמר על שירות היעד.
+   1. אם אתה [משתמש ב- Key Vault שלך](use-azure-key-vault.md) לאחסון סודות, הפעל את האפשרות **השתמש ב- Key Vault** ובחר את הסוד מהרשימה.
 
 1. כדי ליצור את החיבור, בחר **שמור**.
 
@@ -93,3 +94,6 @@ ms.locfileid: "7033219"
 
 1. כדי לאשר את המחיקה, בחר **הסר**.
 
+## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>הגדרת חיבורים עם סודות שמנוהלים על-ידי Key Vault שלך
+
+חלק מהחיבורים זקוקים לסודות כמו מפתחות API או סיסמאות. חלק מהחיבורים תומכים בסודות שמאוחסנים ב- Key Vault משלך. למידע נוסף על חיבורים נתמכים וכיצד להגדיר [Key Vault משלך עבור תובנות לגבי קהלים](use-azure-key-vault.md).

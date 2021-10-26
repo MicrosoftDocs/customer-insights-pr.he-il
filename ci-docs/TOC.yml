@@ -2,8 +2,14 @@
   href: index.yml
 - name: סקירת מוצר
   href: overview.md
-- name: יצירת גירסת ניסיון
-  href: audience-insights/get-started-trial.md
+- name: גירסת ניסיון ללא תשלום
+  items:
+    - name: הירשם לקבלת גירסת ניסיון ללא תשלום
+      href: trial-signup.md
+    - name: שאלות נפוצות בנושא גירסת הניסיון
+      href: trial-FAQ.md
+- name: התחל עם רישיון בתשלום
+  href: paid-license.md
 - name: קבלת גישה לסביבה שלך
   href: 'https://home.ci.ai.dynamics.com/'
 - name: תובנות לגבי קהלים
@@ -19,9 +25,11 @@
         - name: מדריך התחלה מהירה
           href: audience-insights/get-started.md
         - name: יצירת סביבה חדשה
-          href: audience-insights/get-started-paid.md
+          href: audience-insights/create-environment.md
         - name: סיור בתובנות לגבי קהלים
           href: audience-insights/home.md
+    - name: עבודה עם חשבונות עסקיים
+      href: audience-insights/work-with-business-accounts.md
     - name: למד מודולים
       items:
         - name: קליטת נתונים
@@ -66,6 +74,8 @@
           href: audience-insights/relationships.md
         - name: רשימת הפעילויות של הלקוח
           href: audience-insights/activities.md
+        - name: הגדרת מיפויים סמנטיים
+          href: audience-insights/semantic-mappings.md
     - name: העשרת נתונים
       items:
         - name: העשרת פרופילי לקוחות
@@ -114,7 +124,7 @@
               href: audience-insights/predict-product-recommendation.md
             - name: חיזוי נטישת מנויים
               href: audience-insights/predict-subscription-churn.md
-            - name: חיזוי של נטישת מנויים
+            - name: חיזוי נטישה של עסקאות
               href: audience-insights/predict-transactional-churn.md
             - name: השתמש במודלים מותאמים אישית מלמידת מכונה של Azure
               href: audience-insights/custom-models.md
@@ -222,10 +232,14 @@
           href: audience-insights/connections.md
         - name: ניהול סביבות מרובות
           href: audience-insights/manage-environments.md
-        - name: התחברות לחשבון אחסון ADLS באמצעות מנהל שירות
-          href: audience-insights/connect-service-principal.md
         - name: שפות נתמכות
           href: audience-insights/supported-languages.md
+        - name: אבטחה
+          items:
+            - name: הבא Key Vault משלך
+              href: audience-insights/use-azure-key-vault.md
+            - name: התחברות לחשבון אחסון ADLS באמצעות מנהל שירות
+              href: audience-insights/connect-service-principal.md
     - name: יכולת הרחבה
       items:
         - name: שלב נתוני אינטרנט מתובנות לגבי מעורבות
@@ -248,6 +262,8 @@
       items:
         - name: מדריך התחלה מהירה
           href: engagement-insights/get-started.md
+        - name: יצירת סביבה
+          href: engagement-insights/create-new-environment.md
         - name: יצירת סביבת עבודה
           href: engagement-insights/create-workspace.md
         - name: לכוד אירועים מאתרים ומאפליקציות למכשירים ניידים

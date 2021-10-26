@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights אל AdRoll
 description: למד כיצד להגדיר את החיבור ולייצא אל AdRoll.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e48f67ec21bb9b883dd30544ccf4dcfbf487acb1abaf0a0557764bc3d955e41a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f9373ea18e77723c988392a5a2959baa66d8eae9
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032072"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617350"
 ---
 # <a name="export-segments-to-adroll-preview"></a>ייצוא פלחים אל AdRoll‏ (Preview)
 
@@ -28,11 +28,11 @@ ms.locfileid: "7032072"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- באפשרותך לייצא ל- AdRoll עד 250,000 פרופילים בכל פעם.
-- אין באפשרותך לייצא פלחים עם פחות מ- 100 פרופילים ל- AdRoll. 
+- באפשרותך לייצא עד 250,000 פרופילי לקוחות בכל פעם אל AdRoll.
+- לא ניתן לייצא פלחים עם פחות מ- 100 פרופילי לקוחות אל AdRoll. 
 - הייצוא ל- AdRoll מוגבל לפלחים.
-- ייצוא של עד 250,000 פרופילים ל- AdRoll יכול להימשך עד 10 דקות. 
-- מספר הפרופילים שתוכל לייצא ל- AdRoll תלוי בחוזה שלך עם AdRoll.
+- ייצוא של עד 250,000 פרופילי לקוחות אל AdRoll עשוי להימשך עד 10 דקות. 
+- מספר פרופילי הלקוחות שתוכל לייצא אל AdRoll תלוי בחוזה שלך עם AdRoll.
 
 ## <a name="set-up-connection-to-adroll"></a>הגדרת חיבור אל AdRoll
 
@@ -66,7 +66,7 @@ ms.locfileid: "7032072"
 
 1. הזן את **מזהה מפרסם AdRoll** שלך. למידע נוסף עיין ב[פרופילים של מפרסמי AdRoll](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 
-3. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. ייצוא פלחים אל AdRoll הוא הכרחי.
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. ייצוא פלחים אל AdRoll הוא הכרחי.
 
 1. בחר את הפלחים שברצונך לייצא. בחר פלח עם 100 חברים לפחות. אין באפשרותך לייצא פלחים קטנים יותר. בנוסף, הגודל המרבי של פלח לייצוא הוא 250,000 חברים לכל ייצוא. 
 

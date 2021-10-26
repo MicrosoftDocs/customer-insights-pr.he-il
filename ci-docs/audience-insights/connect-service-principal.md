@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b96c7f580b4067e059e00a9cdb4e872e9acd4a5c
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483526"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645173"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>התחבר לחשבון Azure Data Lake Storage באמצעות מנהל שירות של Azura
 
 כלים אוטומטיים המשתמשים בשירותי Azure צריכים תמיד להיות בעלי הרשאות מוגבלות. במקום כניסה ליישומים כמשתמש בעל הרשאות מלאות, Azure מספק מנהלי שירות. קרא כדי ללמוד כיצד לחבר Dynamics 365 Customer Insights עם חשבון Azure Data Lake Storage באמצעות מנהל שירות של Azure במקום מפתחות חשבון אחסון. 
 
-תוכל להשתמש במנהל השירות כדי [להוסיף או לערוך תיקיית Common Data Model כ-מקור נתונים](connect-common-data-model.md) באופן מאובטח, או [ליצור או לעדכן סביבה ](get-started-paid.md).
+תוכל להשתמש במנהל השירות כדי [להוסיף או לערוך תיקיית Common Data Model כ-מקור נתונים](connect-common-data-model.md) באופן מאובטח, או [ליצור או לעדכן סביבה ](create-environment.md).
 
 > [!IMPORTANT]
 > - חשבון Data Lake Storage שישתמש במנהל השירות חייב להיות [זמין עבור מרחב שמות הירארכי](/azure/storage/blobs/data-lake-storage-namespace).

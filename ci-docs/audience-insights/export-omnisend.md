@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתונים של Customer Insights אל Omnisend
 description: למד כיצד להגדיר את החיבור ולייצא אל Omnisend.
-ms.date: 05/21/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 58b54dc24f4656f9dd376415a701539c8796e83e6d4e3c6754f5627ce77c5685
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 5496efa075fa3474c579366d143ea55e86ec3995
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031767"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619029"
 ---
 # <a name="export-segments-to-omnisend-preview"></a>ייצוא פלחים ל- Omnisend ‏(Preview)
 
@@ -28,9 +28,9 @@ ms.locfileid: "7031767"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- ניתן לייצא עד מיליון פרופילים בכל פעולת ייצוא ל- Omnisend ופעולה זו יכולה להימשך עד 4 שעות.
+- באפשרותך לייצא עד מיליון פרופילי לקוחות בכל ייצוא אל Omnisend ופעולה זו עשויה להימשך עד 4 שעות.
 - הייצוא אל Omnisend מוגבל לפלחים.
-- מספר הפרופילים שתוכל לייצא אל Omnisend תלוי בחוזה שלך עם Omnisend.
+- מספר פרופילי הלקוחות שתוכל לייצא אל Omnisend תלוי בחוזה שלך עם Omnisend.
 
 ## <a name="set-up-connection-to-omnisend"></a>הגדרת חיבור אל Omnisend
 
@@ -62,7 +62,7 @@ ms.locfileid: "7031767"
 
 1. בשדה **חיבור לייצוא**, בחר חיבור מתוך המקטע Omnisend. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
 
-1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. יש לייצא פלחים אל Omnisend. לחלופין, באפשרותך לייצא שם פרטי, שם משפחה, כתובת, ארץ/אזור, מדינה, עיר ומיקוד כדי ליצור הודעות דואר מותאמות אישית יותר. בחר **הוסף תכונה** כדי למפות שדות אלה.
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. יש לייצא פלחים אל Omnisend. לחלופין, באפשרותך לייצא שם פרטי, שם משפחה, כתובת, ארץ/אזור, מדינה, עיר ומיקוד כדי ליצור הודעות דואר מותאמות אישית יותר. בחר **הוסף תכונה** כדי למפות שדות אלה.
 
 1. בחר **שמור**.
 

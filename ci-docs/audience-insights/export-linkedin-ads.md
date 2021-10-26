@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights אל LinkedIn Ads
 description: למד כיצד להגדיר את החיבור ולייצא אל LinkedIn Ads.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2cfaa37fd0ac697f29665792bab27a925d8ea1eede0519d424524a7e5accbfeb
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034224"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618292"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>ייצוא פלחים אל LinkedIn Ads ‏(Preview)
 
@@ -28,9 +28,9 @@ ms.locfileid: "7034224"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- באפשרותך לייצא עד 100,000 פרופילים לכל ייצוא אל LinkedIn Ads.
+- באפשרותך לייצא עד 100,000 פרופילי לקוחות לכל ייצוא אל LinkedIn Ads.
 - הייצוא אל LinkedIn Ads מוגבל לפלחים.
-- ייצוא של עד 100,000 פרופילים אל LinkedIn Ads יכול להימשך עד 10 דקות. 
+- ייצוא של עד 100,000 פרופילי לקוחות אל LinkedIn Ads עשוי להימשך עד 10 דקות. 
 
 ## <a name="set-up-the-connection-to-linkedin-ads"></a>הגדרת החיבור אל LinkedIn Ads
 
@@ -66,7 +66,7 @@ ms.locfileid: "7034224"
 
 1. בחר אם ברצונך לייצא נתונים לשימוש ב- [Contact Targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) או ב- [Company Targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) ב- LinkedIn. 
 
-1. במקטע **התאמת נתונים**, בחר את השדה בפרופיל הלקוח המאוחד שמייצג את כתובת הדואר האלקטרוני של הלקוח. יש לייצא פלחים אל LinkedIn Ads.
+1. למיקוד אנשי קשר, במקטע **התאמת נתונים**, בחר שדה אחד לפחות שמייצג כתובת דואר אלקטרוני של לקוח, Apple Ad ID,‏ Google Ad ID, מזהה משתמש של Google או שם פרטי ושם משפחה. אם תבחר מיקוד לחברה, בחר לפחות שדה אחד שמייצג שם חברה, תחום דואר אלקטרוני, כתובת URL של דף LinkedIn, סמל מניה או אתר אינטרנט. ניתן לבחור שדות נוספים להגדרת הייצוא. 
 
 1. בחר את הפלחים שברצונך לייצא. הקהלים התואמים ב- LinkedIn Campaign Manager ייווצרו באופן אוטומטי עם שם הפלחים שבחרת לייצא. לכל מקטע ייווצר קהל תואם נפרד. 
 

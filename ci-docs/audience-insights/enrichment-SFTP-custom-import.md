@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b67aa7477033222b0bc9512a962a1580edd973b4882ce925620ff5ec14f83fe3
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fa1d4ffd9f77e128b5d804e4562e964561f4684f
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032713"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618683"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>העשרת פרופילי לקוחות עם נתונים מותאמים אישית (Preview)
 
@@ -44,6 +44,8 @@ ms.locfileid: "7032713"
 1.  בחר **הבא** והיכנס אל **נתיב** ואל **שם הקובץ** של קובץ הנתונים שברצונך לייבא.
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="צילום מסך בעת הזנת מיקום הנתונים.":::
+
+1. בחר **הבא** ובחר את ערכת הנתונים של הלקוח. האפשרויות הן כל פרופילי הלקוח או פלח.
 
 1. בחר **הבא** וספק שם עבור ההעשרה ושם עבור ישות הפלט. 
 
@@ -123,6 +125,6 @@ ms.locfileid: "7032713"
 
 ## <a name="next-steps"></a>השלבים הבאים
 
-בנה על נתוני הלקוחות המועשרים שלך. צור [פלחים](segments.md) ו[מדידות](measures.md), ו[יצא את הנתונים](export-destinations.md) כדי להעניק ללקוחות שלך חוויות מותאמות אישית.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

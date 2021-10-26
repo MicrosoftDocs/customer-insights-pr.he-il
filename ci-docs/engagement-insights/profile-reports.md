@@ -1,39 +1,34 @@
 ---
-title: הפעלת דוחות פרופיל מוכנים לשימוש
-description: כיצד ליצור דוחות פרופיל מוכנים לשימוש, מקובצים לפי מין, גיל ומחוז או אזור המוצא.
+title: הפעלת דוחות פרופיל מוכנים לשימוש (OOB)
+description: כיצד ליצור דוחות פרופיל מוכנים לשימוש (OOB), מקובצים לפי מין, גיל ומחוז או אזור המוצא.
 author: darrinw-docs
 ms.reviewer: mhart
 ms.author: darrinw
-ms.date: 05/03/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: bf2ec67c9fb99918b87841d3c0b131934e31b58b
-ms.sourcegitcommit: 0ceb46c4f57ab49d3a2ebb1c8a816bbafe979e3d
+ms.openlocfilehash: cba2c112e9e475ceb047fe627fb41e6c8a27e1e7
+ms.sourcegitcommit: d9965f4bfc09391698a34042f6b44367e53819e3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7486121"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7582787"
 ---
-# <a name="out-of-box-profile-reports"></a>דוחות פרופיל מוכנים לשימוש
+# <a name="out-of-box-oob-unified-profile-reports"></a>דוחות פרופיל מאוחדים מוכנים לשימוש (OOB)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-דוח הוא אוסף של תצוגה חזותית של נתונים שעוזר לך להבין כיצד מתנהגים המשתמשים. על ידי התחברות לתובנות לגבי קהלים של Customer Insights, התובנות לגבי מעורבות יכולות להציג דוח עם מידע על פרופילי לקוחות מאוחדים. דוח זה כולל את מספר הפרופילים שיש לך, מקובצים לפי מין, גיל ומיקום גיאוגרפי.
+דוח פרופיל מאוחד הוא אוסף של תצוגה חזותית של נתונים שיעזור לך להבין כיצד משתמשים מתנהגים. על-ידי חיבור ליכולת תובנות קהל של Customer Insights, תובנות לגבי מעורבות יכולות להציג דוחות OOB עם מידע על פרופילי לקוחות מאוחדים. דוח זה כולל את מספר הפרופילים שיש לך, מקובצים לפי מין, גיל ומיקום גיאוגרפי. לקבלת מידע אודות פרופילי לקוחות, ראה [פרופילי לקוחות](../audience-insights/customer-profiles.md).
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
-סביבת התובנות לגבי קהלים חייבת לאחסן נתונים בחשבון Azure Data Lake Storage המנוהל על-ידי לקוח.
-
-אם אתה משתמש בגירסת ניסיון של יכולת התובנות לגבי קהלים או בסביבה באגם נתונים המנוהלת על-ידי Customer Insights, [צור קשר](https://go.microsoft.com/fwlink/?linkid=2145734) לקבלת עזרה.  
-
+מנהל סביבה מוכרח [ליצור קשר בין תובנות לגבי מעורבות לתובנות קהל](integrate-audience-insights-engagement-insights.md).
 
 ## <a name="enable-the-customer-profile-report"></a>הפעל את דוח פרופיל הלקוח
 
-מנהל סביבה מוכרח [לקשר תובנות לגבי מעורבות ותובנות לגבי קהלים](integrate-audience-insights-engagement-insights.md).
-
-לאחר ציון פרטי החיבור, מנהל המערכת יכול להעניק גישה לאנשים אחרים בארגון כדי לראות את הדוח. למנהל הסביבה שמגדיר את החיבור יש גישה אוטומטית לדוח. 
+לאחר ציון הקשר בין תובנות לגבי מעורבות לתובנות קהל, מנהל המערכת יכול לאחר מכן להעניק גישה לאנשים אחרים בארגון כדי לראות את הדוח. למנהל הסביבה שמגדיר את החיבור יש גישה אוטומטית לדוח. 
 
 לאחר השלמת החיבור, תכונת **פרופילים** תהיה זמינה בחלונית הניווט הימנית. 
 

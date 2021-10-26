@@ -1,7 +1,7 @@
 ---
 title: יצירה וניהול של סביבות
 description: למד כיצד להירשם לשירות וכיצד לנהל סביבות.
-ms.date: 07/22/2021
+ms.date: 10/14/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: e3f99f8f151aea5f120084382babd5e46e109545a4f63aafc51c3ecb1400cc33
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: ce2fdd435a81bb04148057554c5958e3ab59f125
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034178"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645127"
 ---
 # <a name="manage-environments"></a>ניהול סביבות
 
@@ -26,7 +26,7 @@ ms.locfileid: "7034178"
 
 :::image type="content" source="media/home-page-environment-switcher.png" alt-text="צילום מסך של הפקד להחלפת סביבות.":::
 
-מנהלי מערכת יכולים [ליצור](get-started-paid.md) ולנהל סביבות.
+מנהלי מערכת יכולים [ליצור](create-environment.md) ולנהל סביבות.
 
 ## <a name="edit-an-existing-environment"></a>עריכת סביבה קיימת
 
@@ -36,23 +36,9 @@ ms.locfileid: "7034178"
 
 2.  בחר את סמל **עריכה**.
 
-3. בתיבה **ערוך סביבה**, באפשרותך לעדכן את **שם התצוגה** של הסביבה, אבל אין באפשרותך לשנות את **אזור** או **סוג**.
+3. בתיבה **ערוך סביבה**, באפשרותך לעדכן את הגדרות הסביבה.
 
-4. אם מוגדרת סביבה לאחסן נתונים ב- Azure Data Lake Storage, תוכל לעדכן את **מפתח החשבון**. עם זאת, אינך יכול לשנות את **שם החשבון** או השם של **גורם מכיל**.
-
-5. לחלופין, באפשרותך לעדכן מחיבור מבוסס-מפתח חשבון לחיבור מבוסס-משאב או מבוסס-מנוי. לאחר השדרוג, לא תוכל לחזור למפתח החשבון לאחר העדכון. לקבלת מידע נוסף, ראה [חיבור audience insights לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure](connect-service-principal.md). אין באפשרותך לשנות מידע **גורם מכיל** בעת עדכון החיבור.
-
-6. לחלופין, באפשרותך לספק כתובת URL של סביבת Microsoft Dataverse תחת **קביעת תצורת שיתוף נתונים עם Microsoft Dataverse והפיכת יכולות נוספות לזמינות**. יכולות אלה כוללות שיתוף נתונים עם יישומים ופתרונות בהתבסס על Microsoft Dataverse, קליטת נתונים ממקורות נתונים מקומיים או השימוש ב[חיזויים](predictions.md). בחר **הפוך שיתוף נתונים לזמין** כדי לשתף נתוני פלט של Customer Insights עם Data Lake מנוהל של Microsoft Dataverse.
-
-   > [!NOTE]
-   > - שיתוף נתונים עם Data Lake מנוהל של Microsoft Dataverse אינו נתמך כעת כשאתה שומר את כל הנתונים ב- Azure Data Lake Storage שלך.
-   > - [חיזוי של ערכים חסרים בישות](predictions.md) ודוחות מוטבעים של PowerBI בתובנות לגבי קהלים (אם זמינים בסביבה שלך) אינם נתמכים כעת כאשר מפעילים שיתוף נתונים עם אגם נתונים מנוהל של  Microsoft Dataverse.
-
-   לאחר שתהפוך שיתוף נתונים עם Microsoft Dataverse לזמין, יופעל רענון מלא של מקורות הנתונים שלך ותהליכים אחרים. אם תהליכים פועלים כעת, לא תראה אפשרות להפוך שיתוף נתונים עם Microsoft Dataverse לזמין. המתן שתהליכים אלה יושלמו או בטל אותם כדי להפוך שיתוף נתונים לזמין. 
-   
-   :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="אפשרויות קביעת תצורה כדי להפוך שיתוף נתונים לזמין עם Microsoft Dataverse.":::
-   
-   כאשר אתה מפעיל תהליכים, כגון קליטת נתונים או יצירת פלחים, תיקיות מתאימות ייווצרו בחשבון האחסון שציינת לעיל. קבצי נתונים וקבצי model.json ייווצרו ויתווספו לתיקיות המשנה המתאימות, בהתאם לתהליך שאתה מפעיל.
+לקבלת מידע נוסף על הגדרות הסביבה, ראה [יצירת סביבה חדשה](create-environment.md).
 
 ## <a name="copy-the-environment-configuration"></a>העתקת תצורת הסביבה
 

@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights אל Mailchimp
 description: למד כיצד להגדיר את החיבור ולייצא אל Mailchimp.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a6bdf43bb40345b868bf2e7d2c91de169c8ba841ba77f732f455f4c4d496a7f5
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 94a9fead56ce8c40b35d4eb41ebdc0d672798dce
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033540"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618614"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>ייצוא פלחים אל Mailchimp‏ (Preview)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033540"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- עד מיליון פרופילים לייצוא ל- Mailchimp.
+- עד מיליון פרופילי לקוחות לייצוא אל Mailchimp.
 - הייצוא ל- Mailchimp מוגבל לפלחים.
-- ייצוא פלחים עם מיליון פרופילים יכול להימשך עד שלוש שעות. 
-- מספר הפרופילים שתוכל לייצא ל- Mailchimp תלוי ומוגבל בחוזה שלך עם Mailchimp.
+- ייצוא פלחים עם מיליון פרופילי לקוחות עשוי להימשך עד שלוש שעות. 
+- מספר פרופילי הלקוחות שתוכל לייצא אל Mailchimp תלוי בחוזה שלך עם Mailchimp ומוגבל בהתאם לתנאיו.
 
 ## <a name="set-up-connection-to-mailchimp"></a>הגדרת חיבור אל Mailchimp
 
@@ -66,7 +66,7 @@ ms.locfileid: "7033540"
 
 1. הזן את **[מזהה קהל Mailchimp](https://mailchimp.com/help/find-audience-id/)** שלך
 
-3. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. 
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. 
 
 1. לחלופין, באפשרותך לייצא **שם פרטי** ו **שם משפחה** כדי ליצור הודעות דואר מותאמות אישית יותר. בחר **הוסף תכונה** כדי למפות שדות אלה.
 

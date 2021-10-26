@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights אל Constant Contact
 description: למד כיצד להגדיר את החיבור ולייצא אל Constant Contact.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 30dfe4d6c2374ba9979827ea70a71c52a1334b45dd3e36ccb1de90fae0c61ad9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b25e4f11e21d059c2d867e925c0ae5635a87addc
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031842"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619120"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>ייצוא פלחים אל Constant Contact‏ (Preview)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7031842"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- באפשרותך לייצא עד מיליון פרופילים לכל ייצוא אל Constant Contact.
+- באפשרותך לייצא עד מיליון פרופילי לקוחות לכל ייצוא אל Constant Contact.
 - הייצוא אל Constant Contact מוגבל לפלחים.
-- ייצוא של עד מיליון פרופילים ל- Constant Contact יכול להימשך עד שעה אחת. 
-- מספר הפרופילים שבאפשרותך לייצא ל- Constant Contact תלוי ומוגבל בחוזה שלך עם Constant Contact.
+- ייצוא של עד מיליון פרופילי לקוחות אל Constant Contact עשוי להימשך עד שעה אחת. 
+- מספר פרופילי הלקוחות שתוכל לייצא אל Constant Contact תלוי בחוזה שלך עם Constant Contact ומוגבל בהתאם לתנאיו.
 
 ## <a name="set-up-connection-to-constant-contact"></a>הגדרת חיבור ל- Constant Contact
 
@@ -65,7 +65,7 @@ ms.locfileid: "7031842"
 
 1. הזן את [**מזהה הרשימה של Constant Contact שלך**](https://app.constantcontact.com/pages/contacts/ui#lists). פתח רשימה ב- Constant Contact כדי למצוא את מזהה הרשימה בכתובת ה- URL.
 
-1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. יש לייצא פלחים אל Constant Contact.
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. יש לייצא פלחים אל Constant Contact.
 
 1. אם תרצה בכך, תוכל לייצא את שם פרטי ושם משפחה כשדות נוספים כדי ליצור הודעות דוא"ל מותאמות אישית יותר. בחר **הוסף תכונה** כדי למפות שדות אלה.
 

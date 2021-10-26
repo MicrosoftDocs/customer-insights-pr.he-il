@@ -1,22 +1,22 @@
 ---
-title: יצירת סביבת עבודה
-description: מהי מטרת יצירת סביבת עבודה, ואיך ליצור אותה.
+title: יצירת סביבת עבודה חדשה
+description: המטרה של סביבת עבודה וכיצד ליצור סביבת עבודה חדשה.
 author: jusali
 ms.reviewer: mhart
 ms.author: jusali
-ms.date: 06/18/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 38c817c169ce7986c73fb46fa14a9a8352a218d359cdcb2fa822a34303ff5ecc
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 816f948331a06794c15000eb779f93cc7fdda202
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034133"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645311"
 ---
-# <a name="create-the-first-workspaces-and-add-members"></a>יצירה ראשונה של סביבות עבודה, והוספה של חברים
+# <a name="create-a-new-workspace-and-add-members"></a>יצירת סביבת עבודה חדשה והוספת חברים
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "7034133"
 
 בעת יצירת סביבת העבודה, אתה בוחר את סוג הנתונים שבהם תרצה להתמקד. תוכל להוסיף משתמשים אחרים או חברים לסביבת עבודה קיימת בכל עת. 
 
-## <a name="create-a-workspace"></a>יצירת סביבת עבודה
+## <a name="create-a-new-workspace"></a>יצירת סביבת עבודה חדשה
 
 תהליך יצירת סביבת העבודה כולל הגדרה של *סביבה* לצורך ארגון של סביבת העבודה. סביבה היא מרחב שיכול להכיל סביבת עבודה אחת או יותר. באפשרותך להשתמש בסביבה לניהול סביבות העבודה והקשרים ליכולת התובנות לגבי קהלים של Customer Insights.
 
@@ -32,13 +32,25 @@ ms.locfileid: "7034133"
 
    :::image type="content" source="media/new-workspace.png" alt-text="דף תובנות לגבי לקוחות עם הסבר בחלונית הניווט ותיאור.":::
 
-1. בחר את הסביבה מהרשימה או בחר **יצירת סביבה חדשה**.
-1. הזן **שם של סביבת העבודה**.
-1. בחר את הפלטפורמה שברצונך למדוד.
-1. אם סיימת, בחר **סיום**. 
-1. אתה יכול להוסיף חברים ולהקצות להם רמות הרשאה מתוך הרשימה **תפקיד**. למידע נוסף ראה [תפקידים והרשאות](user-roles.md). לאחר מכן בחר **סיום** כדי ליצור את מרחב העבודה, או **הבא** כדי להתקין קוד.
-1. התקן את מקטע הקוד כדי להתחיל לקבל נתונים ולאחר מכן בחר **בוצע**.
+1. בחלונית **סביבת עבודה**, הזן **שם סביבת עבודה**.
+
+   :::image type="content" source="media/workspace-name.png" alt-text="הזן שם סביבת עבודה.":::
+
+1. בחר את סוג הפלטפורמה (אינטרנט או נייד) שברצונך למדוד.
+
+1. בחר **הצג הגדרות מתקדמות** כדי להפעיל או להשבית את ההגדרות האופציונליות הבאות:
+
+   - שנה את האפשרות **לא ידוע לידוע** למצב 'מופעל' כדי לשייך אירועי אינטרנט למשתמשים שאומתו בעבר. למידע נוסף, ראה [זיהוי אירועי אינטרנט ממבקרים שאומתו בעבר](unknown-to-known.md)
+   - שנה את האפשרות **‏‫סינון תעבורה של תוכניות Bot‬** למצב 'מופעל' כדי להסיר תעבורת אינטרנט לפי תוכניות Bot עבור סביבת עבודה זו. 
+
+1. לסיום, בחר **הושלם**. 
+
+1. התקן את מקטע הקוד כדי להתחיל לקבל נתונים ולאחר מכן בחר **סיום** כדי ליצור את סביבת העבודה. לקבלת מידע נוסף, ראה [סקירה של משאבים למפתחים](developer-resources.md)‬‏‫.
+
+> [!NOTE]
+> כעת באפשרותך להוסיף חברים ולהקצות את רמת ההרשאה שלהם מהרשימה **תפקיד**. למידע נוסף ראה [תפקידים והרשאות](user-roles.md). 
 
 למידע נוסף ראה [ניהול סביבות וסביבות עבודה](manage-environments-workspaces.md).
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

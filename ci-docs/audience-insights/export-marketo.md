@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights אל Marketo
 description: למד כיצד להגדיר את החיבור ולייצא אל Marketo.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0d5eaa769973c861d89287bba0ed29509ab2efc653bdd8e177cc49b3560c698e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 71a16bd71a58b5cc0a6a2ed421561d91f782dd8e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033494"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619166"
 ---
 # <a name="export-segments-to-marketo-preview"></a>ייצוא פלחים ל- Marketo‏ (Preview)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7033494"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- עד מיליון פרופילים לייצוא ל- Marketo.
+- עד מיליון פרופילי לקוחות לייצוא אל Marketo.
 - הייצוא ל- Marketo מוגבל לפלחים.
-- ייצוא פלחים עם מיליון פרופילים בסך הכל עשוי להימשך עד 3 שעות. 
-- מספר הפרופילים שתוכל לייצא ל- Marketo תלוי ומוגבל בחוזה שלך עם Marketo.
+- ייצוא פלחים עם מספר כולל של מיליון פרופילי לקוחות עשוי להימשך עד 3 שעות. 
+- מספר פרופילי הלקוחות שתוכל לייצא אל Marketo תלוי בחוזה שלך עם Marketo ומוגבל בהתאם לתנאיו.
 
 ## <a name="set-up-connection-to-marketo"></a>הגדרת חיבור אל Marketo
 
@@ -64,7 +64,7 @@ ms.locfileid: "7033494"
 
 1. הזן את **[מזהה רשימת Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. מזהה הרשימה הוא ערך מספרי בלבד. לדוגמה, אם מזהה רשימת Marketo שלך הוא ST12345A7, הסר את התו שמופיע לפני ואחרי הספרות והזן `12345`. 
 
-1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. 
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. 
 
 1. לחלופין, באפשרותך לייצא **שם פרטי**, **שם משפחה**, **עיר**, **ארץ** ו **מדינה/אזור** כדי ליצור הודעות דואר מותאמות אישית יותר. בחר **הוסף תכונה** כדי למפות שדות אלה.
 

@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8d93a49a29c29103e189a6d4a42294c18dc28abd
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: db38778c0da862e119f9b374e07c82ead0d3a4f2
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7559019"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645583"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>צור קישור בין תובנות קהל לבין תובנות מעורבות
 
@@ -26,7 +26,7 @@ ms.locfileid: "7559019"
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
 - יש לאחסן פרופילי תובנות קהל בחשבון Azure Data Lake Storage שבבעלותך או בתוך [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;אגם נתונים מנוהל. 
-- סביבת התובנות לגבי קהלים שלך צריכה לכלול סביבת Dataverse משויכת. ואם גם סביבה זו משתמשת ב- Dataverse עבור אחסון נתונים, הקפד לסמן את האפשרות **הפוך שיתוף נתונים לזמין** בתובנות לגבי קהלים. למידע נוסף, ראה [צור וקבע תצורה של סביבה בתשלום בתובנות לגבי קהלים](../audience-insights/get-started-paid.md).
+- סביבת התובנות לגבי קהלים שלך צריכה לכלול סביבת Dataverse משויכת. ואם גם סביבה זו משתמשת ב- Dataverse עבור אחסון נתונים, הקפד לסמן את האפשרות **הפוך שיתוף נתונים לזמין** בתובנות לגבי קהלים. למידע נוסף, ראה [יצירה וקביעת תצורה של סביבה בתובנות לגבי קהלים](../audience-insights/create-environment.md).
 - אתה צריך הרשאות מנהל מערכת הן לתובנות מעורבות והן לסביבות תובנות קהל.
 - סביבות מקושרות חייבות להיות באותו אזור גיאוגרפי.
 
