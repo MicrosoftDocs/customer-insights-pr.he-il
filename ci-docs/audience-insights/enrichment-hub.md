@@ -1,7 +1,7 @@
 ---
 title: העשרת פרופילי לקוחות מאוחדים
 description: השתמש ביכולות כדי להעשיר את נתוני הלקוחות שלך.
-ms.date: 08/31/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469979"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617556"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>העשרה לפרופילי לקוחות (תצוגה מקדימה)
 
@@ -27,16 +27,26 @@ ms.locfileid: "7469979"
 
 עליך להיות בעל הרשאות משתתף או מנהל מערכת כדי ליצור או לערוך העשרה. לקבלת מידע נוסף, ראה [הרשאות](permissions.md).
 
-בכרטיסיה **גלה**, תוכל למצוא את ההעשרה הבאה:
+בכרטיסיה **גלה**, תמצא את כל אפשרויות ההעשרה הנתמכות.
 
-- [Azure Maps](enrichment-azure-maps.md) מסופק על-ידי Microsoft
+# <a name="individual-customers-b2c"></a>[לקוחות בודדים (B2C)](#tab/b2c)
+
 - [מותגים](enrichment-microsoft.md) שסופקו על-ידי Microsoft
 - [תחומי עניין](enrichment-microsoft.md) שסופקו על-ידי Microsoft
-- [כתובות משופרות](enrichment-enhanced-addresses.md) מסופקות על-ידי Microsoft
-- [נתוני החברה](enrichment-leadspace.md) מסופקים על-ידי Leadspace
+- [כתובות משופרות](enrichment-enhanced-addresses.md) מסופקות על-ידי Microsoft 
 - [נתונים דמוגרפיים](enrichment-experian.md) המסופקים על-ידי Experian
-- [נתוני מיקום](enrichment-here.md) מסופקים על-ידי HERE Technologies
-- [נתונים מותאמים אישית](enrichment-SFTP-custom-import.md) דרך Secure File Transfer Protocol‏ (SFTP)
+- [נתונים מותאמים אישית](enrichment-SFTP-custom-import.md) דרך Secure File Transfer Protocol‏ (SFTP) 
+- [Azure Maps](enrichment-azure-maps.md) מסופק על-ידי Microsoft
+
+# <a name="business-accounts-b2b"></a>[תיקי לקוחות עסקיים (B2B)](#tab/b2b)
+
+- [נתוני החברה](enrichment-leadspace.md) מסופקים על-ידי Leadspace
+- [כתובות משופרות](enrichment-enhanced-addresses.md) מסופקות על-ידי Microsoft 
+- [נתוני מיקום](enrichment-here.md) מסופקים על-ידי HERE Technologies 
+- [נתונים מותאמים אישית](enrichment-SFTP-custom-import.md) דרך Secure File Transfer Protocol‏ (SFTP) 
+- [Azure Maps](enrichment-azure-maps.md) מסופק על-ידי Microsoft
+
+---
 
 בכרטיסיה **ההעשרות שלי**, תוכל לראות את ההעשרות שהגדרת ולערוך את המאפיינים שלהן.
 
@@ -58,7 +68,7 @@ ms.locfileid: "7469979"
 
 ## <a name="enrichments-and-connections"></a>העשרות וחיבורים
 
-העשרות צד שלישי מוגדרות באמצעות [חיבורים](connections.md), אשר מנהל מערכת מגדיר עם אישורים ומספק הסכמה עבור העברות נתונים. החיבור יכול לשמש את מנהלי המערכת והמשתתפים לקביעת תצורה של העשרות.  
+העשרות צד שלישי מוגדרות באמצעות [חיבורים](connections.md), אשר מנהל מערכת מגדיר עם אישורים ומספק הסכמה עבור העברות נתונים. מנהלים ומשתתפים יכולים להשתמש בחיבורים כדי לקבוע תצורה של העשרות.  
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>העשרות מרובות מאותו סוג
 
