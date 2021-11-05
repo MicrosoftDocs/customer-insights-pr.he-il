@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 39acca78c022bc15ebc15dc80f21fe175da04d4d
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622971"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673461"
 ---
 # <a name="define-and-manage-measures"></a>הגדרה וניהול של מדדים
 
@@ -28,7 +28,7 @@ ms.locfileid: "7622971"
 
 מקטע זה מדריך אותך ביצירת מדד חדש מאפס. באפשרותך לבנות מדד עם תכונות נתונים מישויות נתונים שמוגדר עבורן קשר גומלין להתחברות לישות פרופיל לקוח מאוחד.
 
-# <a name="individual-customers-b2c"></a>[לקוחות בודדים (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[צרכנים בודדים (B-to-C)](#tab/b2c)
 
 1. ב- audience insights, עבור אל **מדידות**.
 
@@ -92,7 +92,7 @@ ms.locfileid: "7622971"
 
 1. עבור אל **מדדים** כדי לראות את המדד החדש שנוצר ברשימה.
 
-# <a name="business-accounts-b2b"></a>[תיקי לקוחות עסקיים (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[תיקי לקוחות עסקיים (B-to-B)](#tab/b2b)
 
 1. ב- audience insights, עבור אל **מדידות**.
 
@@ -164,7 +164,7 @@ ms.locfileid: "7622971"
 
 באפשרותך להשתמש בתבניות מוגדרות מראש של מדדים נפוצים כדי ליצור אותן. תיאורים מפורטים של התבניות וחוויה מודרכת עוזרים לך ביצירת מדדים יעילים. תבניות מבוססות על נתונים ממופים מהישות *פעילות מאוחדת*. לכן ודא שהגדרת את [פעילויות לקוח](activities.md) לפני שאתה יוצר מדד מתבנית.
 
-# <a name="individual-customers-b2c"></a>[לקוחות בודדים (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[צרכנים בודדים (B-to-C)](#tab/b2c)
 
 באפשרותך להשתמש בתבניות מוגדרות מראש של מדדים נפוצים כדי ליצור אותן. תיאורים מפורטים של התבניות וחוויה מודרכת עוזרים לך ביצירת מדדים יעילים. תבניות מבוססות על נתונים ממופים מהישות *פעילות מאוחדת*. לכן ודא שהגדרת את [פעילויות לקוח](activities.md) לפני שאתה יוצר מדד מתבנית.
 
@@ -212,7 +212,7 @@ ms.locfileid: "7622971"
 
 1. באפשרותך לבחור כעת **הפעל** כדי לחשב את תוצאות המדד. כדי למקד אותה בהמשך, בחר **שמור טיוטה**.
 
-# <a name="business-accounts-b2b"></a>[תיקי לקוחות עסקיים (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[תיקי לקוחות עסקיים (B-to-B)](#tab/b2b)
 
 תכונה זו זמינה עבור מדידות שנוצרו בסביבות עם לקוחות בודדים כקהל היעד הראשי בלבד.
 

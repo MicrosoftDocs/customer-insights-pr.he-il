@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 5262ad20019e90e73ab121a5ab90e602c1a32b7e
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: e501df8701493a1c5b83c4d06da3a73fd226165f
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7606077"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673841"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>מה חדש ביכולת Audience Insights של Dynamics 365 Customer Insights
 
@@ -166,7 +166,7 @@ ms.locfileid: "7606077"
 - **ייצוא פלחים אל Constant Contact** הרחבנו את יעדי הייצוא שלנו כך שיכללו את Constant Contact. כעת באפשרותך לייצא פלחים מ- Customer Insights אל רשימות Constant Contact ולהשתמש בהם כבסיס עבור הקמפיינים השיווקיים שלך.   
    לקבלת מידע נוסף, ראה [ייצוא אל Constant Contact](export-constant-contact.md).
 
-- **ייצוא פלחים אל RollWorks** הרחבנו את יעדי הייצוא שלנו כך שיכללו את RollWorks. כעת באפשרותך לייצא פלחים מ- Customer Insights אל קהלי RollWorks ולהשתמש בהם כבסיס עבור פרסום B2B שלך.    
+- **ייצוא פלחים אל RollWorks** הרחבנו את יעדי הייצוא שלנו כך שיכללו את RollWorks. באפשרותך כעת לייצא פלחים מ- Customer Insights לקהלי RollWorks ולהשתמש בהם כבסיס לפרסום מעסק לעסק.    
    לקבלת מידע נוסף, ראה [ייצוא אל RollWorks ](export-rollworks.md).
 
 - **ייצוא פלחים אל Snapchat** הרחבנו את יעדי הייצוא שלנו כך שיכללו את Snapchat. כעת באפשרותך לייצא פלחים מ- Customer Insights אל קהלי Snapchat ולהשתמש בהם כבסיס עבור הפרסום שלך.     

@@ -1,7 +1,7 @@
 ---
 title: קביעת תצורת המערכת ב- Audience Insights
 description: קבל מידע על הגדרות המערכת ביכולת Audience Insights של Dynamics 365 Customer Insights.
-ms.date: 02/12/2021
+ms.date: 10/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2af8728009b4f1d53ebc2557bab8c79537a0dc5dda54477493ab1ad16f3f9a8a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3ce767939b8fedf676dc569ede47104ecfe930dd
+ms.sourcegitcommit: cd9f9a9d3da71c5420ef5c4c6ead91bc820d17a9
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035906"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651841"
 ---
 # <a name="system-configuration"></a>קביעת תצורת המערכת‫
 
@@ -24,9 +24,9 @@ ms.locfileid: "7035906"
 - [שימוש ב- API](#api-usage-tab)
 - [אודות](#about-tab)
 - [כללי](#general-tab)
+- [אבטחה](#security-tab)
 
-> [!div class="mx-imgBorder"]
-> ![עמוד מערכת.](media/system-tabs.png "דף מערכת")
+:::image type="content" source="media/system-tabs.png" alt-text="כרטיסיות של הגדרות בדף המערכת.":::
 
 ## <a name="status-tab"></a>כרטיסיית מצב
 
@@ -84,9 +84,15 @@ ms.locfileid: "7035906"
 
 ## <a name="general-tab"></a>הכרטיסיה 'כללי'
 
-קיימות שתי אפשרויות בכרטיסיה **כללי**, **שפה** ו **תבנית מדינה/אזור**.
+באפשרותך לשנות את השפה ואת תבנית המדינה/אזור בכרטיסיה **כללי**.
 
-האפליקציה [תומכת במספר שפות](supported-languages.md). כדי לשנות את השפה המועדפת עליך, בחר **שפה** מהתפריט הנפתח.
+Customer Insights [תומך במספר שפות](/dynamics365/get-started/availability). האפליקציה משתמשת בהעדפת השפה שלך כדי להציג רכיבים כמו התפריט, טקסט תווית והודעות מערכת בשפה המועדפת עליך.
+
+נתונים ומידע מיובאים שהזנת באופן ידני אינם מתורגמים.
+
+### <a name="update-the-settings"></a>עדכן את ההגדרות
+
+כדי לשנות את השפה המועדפת עליך, בחר **שפה** מהתפריט הנפתח.
 
 כדי לשנות את העיצוב המועדף עליך עבור תאריכים, שעה ומספרים, השתמש ברשימה הנפתחת **תבנית מדינה/אזור**. תצוגה מקדימה של עיצוב מוצגת תחת שדה זה. המערכת תציע באופן אוטומטי אפשרות בחירה כשתבחר שפה חדשה.
 
@@ -105,6 +111,13 @@ ms.locfileid: "7035906"
 
    פעולות המשתמשות ב[קליטת נתונים בזמן אמת](real-time-data-ingestion.md) כוללות לחצן עם סמל משקפת להצגת שימוש ב- API בזמן אמת. בחר בלחצן כדי לפתוח חלונית צדדית המכילה פרטי שימוש לשימוש ב- API בזמן אמת בסביבה הנוכחית.   
    השתמש בתיבה **קבץ לפי** בחלונית **שימוש ב- API בזמן אמת** כדי לבחור כיצד להציג בצורה הטובה ביותר את האינטראקציות שלך בזמן אמת. ניתן לקבץ את הנתונים לפי שיטת API, שם מוסמך של ישות (ישות שנקלטה), נוצר על ידי (מקור האירוע), תוצאה (הצלחה או כישלון) או קודי שגיאה. הנתונים זמינים כתרשים היסטוריה וכטבלה.
+
+## <a name="security-tab"></a>הכרטיסיה 'אבטחה'
+
+הכרטיסיה **אבטחה** מאפשרת לך לקשר ולנהל [Azure Key Vault](/azure/key-vault/general/basic-concepts) משלך עבור הסביבה.
+ניתן להשתמש ב- key vault הייעודי כדי לאחסן סודות ולהשתמש בהם בגבול התאימות של ארגון. תובנות קהל יכולות להשתמש בסודות ב- Azure Key Vault כדי [להגדיר חיבורים](connections.md) למערכות צד שלישי.
+
+לקבלת מידע נוסף, ראה [הבאת Azure Key Vault משלך](use-azure-key-vault.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: ce2fdd435a81bb04148057554c5958e3ab59f125
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 2d977ef4eb585e26b36139681552db22d84759c9
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645127"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673734"
 ---
 # <a name="manage-environments"></a>ניהול סביבות
 
@@ -67,7 +67,8 @@ ms.locfileid: "7645127"
 
 - פרופילי לקוחות.
 - אישורים של מקור נתונים. יהיה עליך לספק את האישורים עבור כל מקור נתונים ולרענן את מקורות הנתונים באופן ידני.
-- מקורות נתונים מהתיקייה Common Data Model ו- Data Lake מנוהל על-ידי Dataverse. יהיה עליך ליצור מקורות נתונים אלה באופן ידני עם אותו שם כמו בסביבת המקור.
+
+- מקורות נתונים מתיקיית Common Data Model ומאגם הנתונים המנוהל של Dataverse. יהיה עליך ליצור מקורות נתונים אלה באופן ידני עם אותו שם כמו בסביבת המקור.
 
 כשאתה מעתיק סביבה תראה הודעת אישור שהסביבה החדשה נוצרה. בחר **עבור למקורות נתונים** כדי לראות את רשימת מקורות הנתונים.
 

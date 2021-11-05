@@ -10,12 +10,12 @@ author: zacookmsft
 ms.author: zacook
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: be452e4f1515f637f6edbc3ae3aaf6a3d3471489
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 63e22bf9a457ea43c65132643681cffb295ae7e5
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618844"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673963"
 ---
 # <a name="predictions-overview"></a>מבט כולל על חיזויים
 
@@ -25,14 +25,14 @@ Dynamics 365 Customer Insights מגיע עם מגוון אפשרויות שמנ�
 
 הדרך הקלה ביותר להתחיל עם חיזוי נתונים היא באמצעות מודלים מוגדרים מראש, שלעתים קרובות נקראים 'מודלים מוכנים לשימוש'. כדי ליצור תובנות במהירות, נדרשים רק נתונים ומבנים מסוימים. נכון לעכשיו, המודלים הבאים זמינים: 
 
-# <a name="individual-customers-b2c"></a>[לקוחות בודדים (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[צרכנים בודדים (B-to-C)](#tab/b2c)
 
 - [‏‫‏‫ערך אורך החיים של הלקוח‬](predict-customer-lifetime-value.md): חוזה את ההכנסות הפוטנציאליות של לקוח לאורך כל האינטראקציה עם עסק.
 - [המלצת מוצר](predict-product-recommendation.md): מציע קבוצה של המלצות תחזיתיות למוצרים בהתבסס על התנהגות רכישה ולקוחות עם דפוסי רכישה דומים.
 - [נטישת מנויים](predict-subscription-churn.md): חוזה אם קיימת סכנה שלקוח לא ישתמש עוד במוצרי המנוי או בשירותי המנוי של החברה שלך.
 - [נטישה של עסקאות‬‏‫](predict-transactional-churn.md): חוזה אם לקוח לא ירכוש עוד את המוצרים או השירותים שלך במסגרת זמן מסוימת.
 
-# <a name="business-accounts-b2b"></a>[תיקי לקוחות עסקיים (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[תיקי לקוחות עסקיים (B-to-B)](#tab/b2b)
 
 - [נטישה של עסקאות‬‏‫](predict-transactional-churn.md): חוזה אם לקוח לא ירכוש עוד את המוצרים או השירותים שלך במסגרת זמן מסוימת.
 

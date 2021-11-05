@@ -1,7 +1,7 @@
 ---
 title: תחילת העבודה עם חשבונות עסקיים כקהל יעד ראשי
 description: קבל מידע על חשבונות עסקיים כ- Dynamics 365 Customer Insights המהווה קהל יעד ראשי.
-ms.date: 09/30/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,16 +9,16 @@ author: m-hartmann
 ms.author: wimohabb
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ea036cf3a3623a314a6d0d7da85b2c30c030ccea
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: ac5ae950a44f7f32e3cb9fdc0ffad05b78fddef0
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7644989"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673688"
 ---
 # <a name="work-with-business-accounts-in-audience-insights"></a>עבודה עם חשבונות עסקיים בתובנות קהל
 
-יכולת תובנות הקהל ב- Dynamics 365 Customer Insights מאפשרת לך להגדיר את הסביבה שלך עבור קהלי יעד ראשיים שונים: לקוחות בודדים (B2C) וחשבונות עסקיים (B2B). בתרחישי B2C, הנתונים ממוקדים באנשים פרטיים. עבור B2B, קהלי היעד העיקריים הם חשבונות - ארגונים או חברות - ואנשי קשר. מאמר זה עוזר לך להתחיל בעבודה עם סביבה עבור חשבונות עסקיים. הוא מפרט את ההבדלים עבור אזורי התכונות בתובנות קהל, בהתאם למיקוד הסביבה שלך. לקבלת מידע נוסף על הבדלים, סקור את המסמכים באזורי התכונות. 
+יכולת התובנות לגבי קהלים ב- Dynamics 365 Customer Insights מאפשרת לך להגדיר את הסביבה שלך עבור קהלי יעד ראשיים שונים: צרכנים בודדים (עסק לצרכן – B-to-C) ותיקי לקוחות עסקיים (עסק לעסק – B-to-B). בתרחישי עסק לצרכן, הנתונים ממוקדים באנשים פרטיים. בתרחישי עסק לעסק, קהלי היעד העיקריים הם תיקי לקוחות - ארגונים או חברות - ואנשי קשר. מאמר זה עוזר לך להתחיל בעבודה עם סביבה עבור חשבונות עסקיים. הוא מפרט את ההבדלים עבור אזורי התכונות בתובנות קהל, בהתאם למיקוד הסביבה שלך. לקבלת מידע נוסף על הבדלים, סקור את המסמכים באזורי התכונות. 
 
 ## <a name="create-an-environment-for-business-accounts"></a>יצירת סביבה עבור חשבונות עסקיים
 
@@ -32,7 +32,7 @@ ms.locfileid: "7644989"
 
 אם הארגון שלך שומר על סביבות עבור לקוחות בודדים וחשבונות עסקיים, באפשרותך להשתמש במחליף בחלונית הימנית כדי לבחור את קהל היעד העיקרי.
 
-:::image type="content" source="media/switch-primary-target-audience.PNG" alt-text="מחליף לשינוי קהל היעד העיקרי בין לקוחות בודדים לחשבונות עסקיים.":::
+:::image type="content" source="media/switch-primary-target-audience.png" alt-text="מחליף לשינוי קהל היעד העיקרי בין לקוחות בודדים לחשבונות עסקיים.":::
 
 ## <a name="supported-feature-areas"></a>אזורי תכונה נתמכים
 

@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617376"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673834"
 ---
 # <a name="segments-overview"></a>מבט כולל על פלחים
 
@@ -26,7 +26,7 @@ ms.locfileid: "7617376"
 
 ישנן מספר דרכים ליצור פלח חדש: 
 
-# <a name="individual-customers-b2c"></a>[לקוחות בודדים (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[צרכנים בודדים (B-to-C)](#tab/b2c)
 
 - פלח מורכב עם בונה פלחים: [בנה פלח משלך](segment-builder.md#create-a-new-segment) 
 - פלחים פשוטים עם אופרטור אחד: [פלח מהיר](segment-builder.md#quick-segments) 
@@ -34,7 +34,7 @@ ms.locfileid: "7617376"
 - הצעות מופעלות AI המבוססות על מדדים או תכונות: [פלחים מוצעים לשיפור המדדים](suggested-segments.md) 
 - הצעות המבוססות על פעילויות: [פלחים מוצעים על סמך פעילות של לקוחות](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b2b"></a>[תיקי לקוחות עסקיים (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[תיקי לקוחות עסקיים (B-to-B)](#tab/b2b)
 
 - פלח מורכב עם בונה פלחים: [בנה פלח משלך](segment-builder.md#create-a-new-segment)
 
