@@ -1,7 +1,7 @@
 ---
 title: חפש וסנן פרופילי לקוחות
 description: חפש במהירות מידע על פרופילי לקוחות מאוחדים וסנן עבור תכונות שצוינו.
-ms.date: 01/19/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,19 +9,20 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 9eaeb0c93481283324f21122c9528ff5896b9866
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: e17d745974958b73683f1f9406c5ae95f2cbcb3c
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469980"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732035"
 ---
 # <a name="customer-profiles-search--filter-index"></a>פרופילי לקוחות: אינדקס חיפוש וסינון
 
 תוצאת האיחוד של נתוני לקוחות היא ישות פרופיל לקוח המספקת תצוגה אחידה לבסיס הלקוחות הכולל. כדי [למצוא במהירות מידע על לקוח מסוים או על קבוצת לקוחות מסוימת](customer-profiles.md), באפשרותך לקבוע את תצורת היכולות **חיפוש** ו **סינון** בדף **לקוחות**. המשך לקרוא כדי ללמוד כיצד מנהלים יכולים לערוך את התכונות בדף **אינדקס חיפוש וסינון**, הזמינות למשתמשים לצורך חיפוש וסינון.
 
-> [!div class="mx-imgBorder"]
-> ![חיפוש מסנן.](media/search-filter.png "מסנן חיפוש")
+   :::image type="content" source="media/search-filter.png" alt-text="חיפוש מסנן":::
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="add-fields-and-specify-attributes"></a>הוספת שדות וציון תכונות
 

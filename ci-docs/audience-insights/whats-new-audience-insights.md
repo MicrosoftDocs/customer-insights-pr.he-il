@@ -1,7 +1,7 @@
 ---
 title: תכונות חדשות ועתידיות
 description: מידע על תכונות חדשות, שיפורים ותיקוני באגים.
-ms.date: 08/31/2021
+ms.date: 11/04/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: e501df8701493a1c5b83c4d06da3a73fd226165f
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: f7e2645e1608ea83b5d3af1073a5d6f6e97eec8f
+ms.sourcegitcommit: 2a0947cffb52eaf885aa2e50c95b3693f7e4c589
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673841"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753118"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>מה חדש ביכולת Audience Insights של Dynamics 365 Customer Insights
 
@@ -26,6 +26,41 @@ ms.locfileid: "7673841"
 
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="october-2021-updates"></a>עדכוני אוקטובר 2021
+
+העדכונים במהדורת אוקטובר 2021 כוללים תכונות חדשות, שדרוגי ביצועים ותיקוני באגים.
+
+### <a name="b-to-b"></a>עסק לעסק
+
+החל מאוקטובר 2021, ניתן לעבוד עם תיקי לקוחות עסקיים ועם אנשי הקשר הקשורים אליהם ב- Customer Insights. בעבר, היישום הותאם בעיקר לצרכנים בודדים. מספר אזורי תכונה עודכנו כדי לתמוך בתרחישי עסק לעסק נוסף לסוג חדש של סביבה. כדי לקבל מבט כולל על תכונות עסק לעסק נתמכות, עיין במקטע [עבודה עם תיקי לקוחות עסקיים בתובנות לגבי קהלים‬](work-with-business-accounts.md).
+
+המקטעים הבאים מדגישים כמה מהתחומים המרכזיים שהותאמו לתמיכה תיקי לקוחות עסקיים וצרכנים בודדים.
+
+#### <a name="export-segments-based-on-business-accounts"></a>יצוא פלחים על סמך תיקי לקוחות עסקיים
+
+כל יצוא הפלחים בתובנות לגבי קהלים זמין בהקשר של תיקי לקוחות עסקיים. רוב פעולות הייצוא דורשות תצורה נוספת [ופרטי קשר החזויים](segment-builder.md#create-a-new-segment) בפלחים הבסיסיים כדי שיהיו תקפים עבור תיקי לקוחות עסקיים. לקבלת מידע נוסף, ראה [ייצוא פלחים](export-destinations.md#export-segments).
+
+#### <a name="use-the-linkedin-ads-export-with-business-accounts"></a>השתמש בייצוא LinkedIn Ads עם תיקי לקוחות עסקיים
+
+יצוא LinkedIn Ads זמין כעת למיקוד לאנשי קשר ולחברות בהקשר של תיקי לקוחות עסקיים. בעת בחירת מיקוד לחברה כדגש המרכזי שלך בייצוא LinkedIn, ניתן לייצא פלחים המבוססים על תיקי לקוחות עסקיים ללא הצורך בהקרנת פרטי אנשי קשר. למידע נוסף, עבור אל המסמכים בנושא [יצוא LinkedIn Ads](export-linkedin-ads.md) וההבדל בין [מיקוד לאנשי קשר](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) [ומיקוד לחברה](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting). 
+
+#### <a name="create-measures-based-on-business-accounts-and-their-hierarchy"></a>צור מדידות המבוססות על תיקי לקוחות עסקיים וההירארכיה שלהם.
+
+בונה המדידות מאפשר לך ליצור מדידות סביב תיקי לקוחות עסקיים ולהשתמש באופן אופציונלי בפרטי ההירארכיה. מידע ההירארכיה משמש לפריסת חישוב מדידה בתיק לקוח ובתיקי הלקוחות המשניים הקשורים אליו. לדוגמה, ניתן ליצור מדידות כגון סך ההכנסות עבור כל קבוצת תיקי לקוחות עסקיים המזוהים לפי ההירארכיה שלהם. לקבלת מידע נוסף, ראה [הגדרה וניהול של מדידות](measures.md).
+
+#### <a name="create-segments-based-on-business-accounts-and-their-hierarchy"></a>צור פלחים המבוססים על תיקי לקוחות עסקיים וההירארכיה שלהם.
+
+בונה הפלחים מאפשר לך ליצור פלחים של תיקי לקוחות עסקיים הכוללים באופן אופציונלי פרטי קשר עבור כל תיק לקוח בפלח. אם הגדרת הירארכיית תיק לקוח, באפשרותך להשתמש במידע ההירארכיה של תיק הלקוח ביצירת פלח. לקבלת מידע נוסף, ראה [יצירת פלח חדש](segment-builder.md#create-a-new-segment).
+
+#### <a name="retain-your-business-accounts-with-deep-insights-to-their-churn-tendency"></a>שמור על תיקי הלקוחות העסקיים שלך עם תובנות מעמיקות לגבי מגמת הנטישה שלהם
+
+מודל החיזוי של נטישת הלקוחות תומך כעת גם בתיקי לקוחות עסקיים. באפשרותך להעריך את הסיכון לנטישה לא רק עבור תיק לקוח אלא גם עבור שילוב של תיק לקוח ושל קטגוריית מוצר או שירות שרוכשים ממך. תוספת זו עוזרת לך להבין אם יש סיכוי גבוה שתיק לקוח יפסיק לקנות ממך באופן כללי או רק בקטגוריה מסוימת של מוצרים או שירותים. כעזרה נוספת עם מודל AI זה, היא גם מפרטת את הסיבות לנטישה הסבירה של תיק לקוח. לקבלת מידע נוסף, ראה [תחזית נטישת עסקאות (Preview)](predict-transactional-churn.md).
+
+#### <a name="see-contacts-of-a-business-account-in-customer-view"></a>צפה באנשי קשר של תיק לקוח בתצוגת לקוח
+
+אם חשבונות עסקיים ממופים לחשבונות קשורים, יישום Customer Insights מציג אנשי קשר קשורים אלה כחלק מתצוגת פרטי הלקוח. למידע נוסף, ראה [‏‫פרופילי לקוחות](customer-profiles.md).
+
 
 ## <a name="september-2021-updates"></a>עדכוני ספטמבר 2021
 

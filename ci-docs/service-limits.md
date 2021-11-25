@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: eb25e050b8aa768e6e1d8d4c5adce6095cccc346
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483671"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7791982"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>מגבלות שירות ביכולות Customer Insights
 
@@ -26,7 +26,7 @@ ms.locfileid: "7483671"
 
 | אזור  | מגבלות  | הערות |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| פלחים ומידות | 100 פלחים או מדדים. | המספר הכולל של [הפלחים](audience-insights/segments.md) ו[המדדים](audience-insights/measures.md) הפעילים יחד אינו יכול לעלות על 100.  |
+| פלחים, מדידות וחיזויים | 300  | המספר הכולל של [פלחים](audience-insights/segments.md), [מדידות](audience-insights/measures.md) ו[חיזויים](audience-insights/predictions.md) אינו יכול לעלות על 300 בסך הכל.  |
 | קשרים | 20 רמות עומק של קשרים בנתיבי ישות. | בעת יצירת [פלחים](audience-insights/segments.md) או [מדידות](audience-insights/measures.md) באמצעות ממשק הבנייה, נתיבי הישות יכולים לכלול עד 20 דילוגים של קשרים בין ישות ההתחלה לישות היעד.  |
 
 

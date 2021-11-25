@@ -1,7 +1,7 @@
 ---
 title: שימוש במקורות נתונים לקליטת נתונים
 description: למד כיצד לייבא נתונים ממקורות שונים.
-ms.date: 04/12/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: de31e1f25c08d0bcb5341c5f465b1999de48acf3
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645356"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732143"
 ---
 # <a name="data-sources-overview"></a>מבט כולל על מקורות נתונים
 
@@ -48,14 +48,7 @@ ms.locfileid: "7645356"
 > [!div class="mx-imgBorder"]
 > ![מקור נתונים נוסף.](media/configure-data-datasource-added.png "מקור נתונים נוסף")
 
-|סטאטוס  |תיאור  |
-|---------|---------|
-|הצליח   |מקור נתונים נקלט בהצלחה אם מוזכרת שעה בעמודה **בוצע רענון**.
-|לא התחילה   |למקור הנתונים אין נתונים שנקלטו עדיין או שהוא עדיין במצב טיוטה.         |
-|עובר רענון    |עיבוד נתונים מתבצע. באפשרותך לבטל פעולה זו על-ידי בחירה באפשרות **עצור רענון** בעמודה **פעולות**. עצירת הרענון של מקור נתונים תחזיר אותו למצב האחרון שלו.       |
-|השליחה נכשלה     |עיבוד הנתונים נתקל בשגיאות.         |
-
-בחר את הערך בעמודה **מצב** של מקור נתונים כלשהו כדי לסקור פרטים נוספים. בחלונית **פרטי התקדמות**, הרחב את **מקורות נתונים**. בחר **הצג פרטים** לקבלת מידע נוסף אודות מצב הרענון, לרבות פרטי שגיאה ועדכוני תהליך במורד הזרם.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 טעינת נתונים עשויה להימשך זמן מה. לאחר רענון מוצלח, ניתן לסקור את הנתונים שעובדו בדף **ישויות**. לקבלת מידע נוסף, ראה [ישויות](entities.md).
 

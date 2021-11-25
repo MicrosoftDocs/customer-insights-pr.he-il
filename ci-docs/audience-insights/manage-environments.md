@@ -1,7 +1,7 @@
 ---
 title: יצירה וניהול של סביבות
 description: למד כיצד להירשם לשירות וכיצד לנהל סביבות.
-ms.date: 10/14/2021
+ms.date: 11/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 2d977ef4eb585e26b36139681552db22d84759c9
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673734"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799637"
 ---
 # <a name="manage-environments"></a>ניהול סביבות
 
@@ -39,6 +39,19 @@ ms.locfileid: "7673734"
 3. בתיבה **ערוך סביבה**, באפשרותך לעדכן את הגדרות הסביבה.
 
 לקבלת מידע נוסף על הגדרות הסביבה, ראה [יצירת סביבה חדשה](create-environment.md).
+
+## <a name="connect-to-microsoft-dataverse"></a>חיבור אל Microsoft Dataverse
+   
+השלב של **Microsoft Dataverse** מאפשר לך לחבר את Customer Insights לסביבת Dataverse.
+
+כדי להשתמש ב[מודלים של חיזויים מוכנים לשימוש](predictions-overview.md#out-of-box-models), קבע את תצורת שיתוף הנתונים עם Dataverse. לחלופין, תוכל להפעיל עיבוד נתונים ממקורות נתונים מקומיים, על-ידי אספקת כתובת ה- URL של סביבת Microsoft Dataverse שהארגון שלך מנהל. בחר **הפוך שיתוף נתונים לזמין** כדי לשתף נתוני פלט של Customer Insights עם אגם נתונים מנוהל של Dataverse.
+
+:::image type="content" source="media/dataverse-data-sharing.png" alt-text="אפשרויות קביעת תצורה כדי להפוך שיתוף נתונים לזמין עם Microsoft Dataverse.":::
+
+> [!NOTE]
+> Customer Insights אינו תומך בתרחישי שיתוף הנתונים הבאים:
+> - אם אתה שומר את כל הנתונים ב- Azure Data Lake Storage משלך, לא תוכל לאפשר שיתוף נתונים עם אגם נתונים מנוהל של Dataverse.
+> - אם תאפשר שיתוף נתונים עם אגם נתונים מנוהל של Dataverse, לא תוכל [ליצור ערכים חזויים או חסרים בישות](predictions.md).
 
 ## <a name="copy-the-environment-configuration"></a>העתקת תצורת הסביבה
 

@@ -1,7 +1,7 @@
 ---
 title: יצירה וניהול של מדדים
 description: הגדר מדדים לניתוח ולשיקוף הביצועים של העסק שלך.
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: f6be11bd97be71bc0c3a58eaee4d8ed45f535877
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673461"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732727"
 ---
 # <a name="define-and-manage-measures"></a>הגדרה וניהול של מדדים
 
@@ -238,8 +238,7 @@ ms.locfileid: "7673461"
 - **מחק** את המדד.
 - **הפעל** או **בטל הפעלה**. מדדים לא פעילים לא יעברו רענון במהלך [רענון מתוזמן](system.md#schedule-tab).
 
-> [!TIP]
-> קיימים [שישה סוגים של מצבים](system.md#status-types) עבור משימות/תהליכים. בנוסף, רוב התהליכים [תלויים בתהליכים אחרים במורד הזרם](system.md#refresh-policies). באפשרותך לבחור את מצב התהליך כדי לראות פרטים על ההתקדמות של המשימה השלמה. לאחר הבחירה ב- **ראה פרטים** עבור אחת ממשימות התפקיד, תמצא מידע נוסף על: זמן העיבוד, תאריך העיבוד האחרון וכל השגיאות והאזהרות הקשורות למשימה.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="next-step"></a>השלב הבא
 

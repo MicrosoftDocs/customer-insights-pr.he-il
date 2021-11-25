@@ -84,6 +84,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: כתובות משופרות
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: שיפור נתוני חברה
+          href: audience-insights/enrichment-enhanced-company-data.md
         - name: העשר עם Azure Maps
           href: audience-insights/enrichment-azure-maps.md
         - name: העשרה בעזרת HERE Technologies
@@ -250,6 +252,40 @@
           href: audience-insights/apis.md
         - name: הפניות API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+- name: ניהול הסכמה (Preview)
+  items:
+    - name: מרכז העזרה
+      href: consent-management/index.yml
+    - name: מבט כולל על יכולת
+      href: consent-management/overview.md
+    - name: התחל בעבודה
+      items:
+        - name: התחל בעבודה
+          href: consent-management/get-started.md
+        - name: מושגים וטרמינולוגיה
+          href: consent-management/glossary.md
+    - name: ייבוא נתוני הסכמה
+      items:
+        - name: ייבוא נתוני הסכמה
+          href: consent-management/import-consent-data.md
+        - name: הגדרת נתוני הסכמה והחלת העדפות הסכמה
+          href: consent-management/set-consent-rules.md
+    - name: ניהול נתוני הסכמה
+      items:
+        - name: הפיכת כללי הסכמה לזמינים בתובנות לגבי קהלים
+          href: audience-insights/activate-consent.md
+        - name: נהל כללי הסכמה המהווים ברירת מחדל בפלחי תובנות לגבי קהלים
+          href: audience-insights/change-default-consent-rules.md
+    - name: ניהול הגדרות ומשתמשים
+      items:
+        - name: קביעת תצורה של הגדרות מערכת
+          href: consent-management/system-settings.md
+        - name: ניהול משתמשים והרשאות
+          href: consent-management/manage-users.md
+    - name: שימוש בנתוני הסכמה
+      items:
+        - name: יצירת חיזויים עם נתוני הסכמה
+          href: consent-management/predictions-consent-data.md
 - name: תובנות לגבי מעורבות (Preview)
   items:
     - name: מרכז העזרה

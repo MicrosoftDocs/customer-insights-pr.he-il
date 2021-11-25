@@ -1,7 +1,7 @@
 ---
 title: השלמת נתונים חלקיים באמצעות חיזויים
 description: השתמש בחיזויים כדי למלא נתוני לקוחות לא שלמים.
-ms.date: 05/05/2020
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,16 +9,17 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7ca42334420a27a8739d7c28bb72606c3ed91f3c
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 3100acf383d85c00a6ff0a8ebc54e038bd813427
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645035"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732405"
 ---
-# <a name="complete-your-partial-data-with-predictions"></a>השלמת הנתונים החלקיים שלך באמצעות חיזויים
+# <a name="complete-your-partial-data-with-predictions-deprecated"></a>השלמת הנתונים החלקיים באמצעות חיזוי (הוצא משימוש)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> תכונה זו **תצא משימוש** בתאריך **5 בנובמבר 2021**. היישומים הנוכחיים ימשיכו לעבוד עד הסרת התכונה, אך לא תוכל ליצור שילובים חדשים באמצעות ההוראות למטה.
 
 חיזויים מאפשרים לך ליצור בקלות ערכים חזויים שיכולים לשפר את ההבנה שלך את הלקוח. בדף **בינה** > **חיזויים**, באפשרותך לבחור **החיזויים שלי** כדי לראות חיזויים שהגדרת בחלקים אחרים של Audience Insights, ולהתאים אותם אישית עוד יותר.
 
@@ -60,6 +61,8 @@ ms.locfileid: "7645035"
    > ![דוגמה המציגה ערכי שדה ממופים לקטגוריות.](media/intelligence-categorymapping.png "דוגמה המציגה ערכי שדה ממופים לקטגוריות")
 
 8. בחר **בוצע** והחיזוי יעובד. העיבוד ייקח זמן מה, תלוי בגודל ובמורכבות הנתונים. התוצאות יהיו זמינות ביישות חדשה בהתבסס על **שם ישות פלט** של החיזוי שיצרת.
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="create-a-prediction-while-creating-a-segment"></a>צור חיזוי תוך כדי יצירת פלח
 

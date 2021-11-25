@@ -1,7 +1,7 @@
 ---
 title: מיזוג ישויות באיחוד נתונים
 description: מזג ישויות ליצירת פרופילי לקוח מאוחדים.
-ms.date: 10/10/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-merge
-ms.openlocfilehash: 6b3002b21ea043315e50724ec103aef8a3ced98e
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: c218f9c1a1b7711ee48419470bf6c352450ffc0c
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648255"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732773"
 ---
 # <a name="merge-entities"></a>מיזוג ישויות
 
@@ -187,10 +187,9 @@ ms.locfileid: "7648255"
 
 כדי לבצע שינויים נוספים ולהפעיל מחדש את השלב, תוכל לבטל מיזוג שמתבצע. בחר **מרענן...** ובחר **בטל משימה** בחלונית הצדדית שמופיעה.
 
-> [!TIP]
-> לאחר הפעלת תהליך המיזוג, בחר את מצב התהליך כדי לפתוח את חלונית **פרטי המשימה**. היא נותנת סקירה כללית על זמן העיבוד, תאריך העיבוד האחרון וכל השגיאון והאזהרות הקשורות למשימה. בחר **הצג פרטים** כדי לראות אילו ישויות השתתפו בתהליך ההתאמה, אם פתרון ההתנגשויות הצליח ואם העדכונים פורסמו בהצלחה.  
-> קיימים [שישה סוגים של מצבים](system.md#status-types) עבור משימות/תהליכים. בנוסף, רוב התהליכים [תלויים בתהליכים אחרים במורד הזרם](system.md#refresh-policies).  
-> :::image type="content" source="media/process-detail-path.png" alt-text="נתיב הסתעפות להגעה לפרטי תהליך מהקישור למצב המשימה.":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+:::image type="content" source="media/process-detail-path.png" alt-text="נתיב הסתעפות להגעה לפרטי תהליך מהקישור למצב המשימה.":::
 
 ## <a name="next-step"></a>השלב הבא
 

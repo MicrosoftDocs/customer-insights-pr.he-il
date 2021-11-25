@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 6faaeb6a1ee34c3e5c8e7d465b37cee589bc920c
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: c116f7ce208c0288851a4b2230e27784ba3a5337
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483670"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732681"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>בקשות של של זכויות נושא נתונים (DSR) במסגרת GDPR
 
@@ -79,7 +79,14 @@ Audience Insights מציע את חוויות המוצר הבאות למחיקת 
 2. יש לקבל את האישור לייצוא הנתונים עבור המשתמש המבוקש.
 3. קבל את הנתונים המיוצאים באמצעות כתובת הדואר של מנהל הדייר.
 
-## <a name="engagement-insights"></a>תובנות לגבי מעורבות
+## <a name="consent-management-preview"></a>ניהול הסכמה (Preview)
+
+יכולת ניהול ההסכמה אינה אוספת נתוני משתמשים ישירות. היא רק מייבאת ומעבדת נתוני הסכמה המתקבלים ממשתמשים ביישומים אחרים.
+
+כדי להסיר נתוני הסכמה לגבי משתמשים ספציפיים, יש להסיר אותם במקורות הנתונים שנקלטו ליכולת ניהול ההסכמה. לאחר רענון מקור הנתונים, הנתונים שהוסרו יימחקו גם ממרכז ההסכמה. יישומים שמשתמשים בישות ההסכמה ימחקו גם נתונים שהוסרו מהמקור לאחר [רענון](audience-insights/system.md#refresh-processes). אנחנו ממליצים לרענן את מקורות הנתונים במהירות לאחר מענה לבקשת נושא הנתונים להסיר את נתוני המשתמש מכל התהליכים והיישומים האחרים.
+
+
+## <a name="engagement-insights-preview"></a>תובנות לגבי מעורבות (Preview)
 
 ### <a name="deleting-and-exporting-event-data-containing-end-user-identifiable-information"></a>מחיקה וייצוא של נתוני אירועים המכילים מידע ניתן לזיהוי של משתמש הקצה
 

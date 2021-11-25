@@ -1,7 +1,7 @@
 ---
 title: מיפויים סמנטיים (Preview)
 description: מבט כולל על מיפויים סמנטיים ואופן השימוש בהם.
-ms.date: 09/28/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: b0884b8b6a2c5abe4b3967d1b57d11a3a6d65c5b
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: f23c622572ff9f967eca07de7898419d1ffc18b0
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622936"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731944"
 ---
 # <a name="semantic-mappings"></a>מיפויים סמנטיים
 
@@ -75,8 +75,7 @@ ms.locfileid: "7622936"
 
 1. כדי להפעיל מיפוי סמנטי בשלב מאוחר יותר, בחר את המיפוי הסמנטי ובחר **רענון**.
 
-> [!TIP]
-> קיימים [שישה סוגים של מצבים](system.md#status-types) עבור משימות/תהליכים. בנוסף, רוב התהליכים [תלויים בתהליכים אחרים במורד הזרם](system.md#refresh-policies). באפשרותך לבחור את מצב התהליך כדי לראות פרטים על ההתקדמות של המשימה השלמה. לאחר בחירה באפשרות **ראה פרטים** עבור אחת מהמשימות תמצא מידע נוסף: זמן העיבוד, תאריך העיבוד האחרון וכל השגיאות והאזהרות הקשורות למשימה.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-semantic-mappings"></a>ניהול מיפויים סמנטיים קיימים
 
@@ -91,5 +90,6 @@ ms.locfileid: "7622936"
 - **שנה שם**: פותח תיבת דו -שיח שבה באפשרותך להזין שם שונה עבור המיפוי הסמנטי שנבחר. בחר **שמור** כדי להחיל את השינויים.
 
 - **מחק**: פותח תיבת דו-שיח לאישור המחיקה של המיפוי הסמנטי שנבחר. באפשרותך גם למחוק יותר ממיפוי סמנטי אחד בבת אחת על-ידי בחירת המיפויים הסמנטיים וסמל המחיקה. בחר **מחק** כדי לאשר את המחיקה.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

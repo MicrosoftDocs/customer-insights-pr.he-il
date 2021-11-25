@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתונים מ- Customer Insights
 description: נהל פעולות ייצוא לשיתוף נתונים.
-ms.date: 10/08/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: pkieffer
 ms.author: philk
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 61e95e47489495e367498547687b0065169519e6
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: bff0486fdb3a02ecb0aa86e81abe1c506e234bc5
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673324"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732151"
 ---
 # <a name="exports-preview-overview"></a>מבט כולל על פעולות ייצוא (Preview)
 
@@ -97,7 +97,9 @@ ms.locfileid: "7673324"
 
 לכל ייצוא שתגדיר יש לוח זמנים לרענון. במהלך הרענון, המערכת מחפשת נתונים חדשים או מעודכנים שיש לכלול בייצוא. כברירת מחדל, פעולות ייצוא מופעלות כחלק מכל [רענון מתוזמן של המערכת](system.md#schedule-tab). באפשרותך להתאים אישית את לוח הזמנים של הרענון או לכבות אותו להפעלת פעולות ייצוא באופן ידני.
 
-לוחות הזמנים לייצוא תלויים במצב הסביבה. אם מתבצעים עדכונים לגבי [יחסי תלות](system.md#refresh-policies) כאשר ייצוא מתוזמן צריך להתחיל, המערכת תשלים תחילה את העדכונים ולאחר מכן תפעיל את הייצוא. באפשרותך לראות מתי בוצע הרענון האחרון של ייצוא בעמודה **בוצע רענון**.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+לוחות הזמנים לייצוא תלויים במצב הסביבה. אם מתבצעים עדכונים לגבי [יחסי תלות](system.md#refresh-processes) כאשר ייצוא מתוזמן צריך להתחיל, המערכת תשלים תחילה את העדכונים ולאחר מכן תפעיל את הייצוא. באפשרותך לראות מתי בוצע הרענון האחרון של ייצוא בעמודה **בוצע רענון**.
 
 ### <a name="schedule-exports"></a>תזמון פעולות ייצוא
 
