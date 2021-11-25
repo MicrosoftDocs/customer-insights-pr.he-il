@@ -1,7 +1,7 @@
 ---
 title: שיפור של נתוני חברה
 description: העשרה ונרמול של נתוני חברה עם מודלים של Microsoft.
-ms.date: 11/05/2021
+ms.date: 11/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 9bfb96d47de4ec98325e644c60752fc7cab2706c
-ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
+ms.openlocfilehash: d11700c87f31cedc40d32b201251d8a9e2e2c312
+ms.sourcegitcommit: dfc4843cc78857f1e3ca49d7b938e3ba77969169
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7770171"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813919"
 ---
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>העשרה של פרופילי חברה עם נתוני חברה משופרים
 
@@ -51,7 +51,8 @@ Microsft
 
 1.  אישור זהות החברה. אנחנו לא מאמתים אם הקלט הוא ארגון קיים או שחברה משתמשת בפלט כשמה הסטנדרטי.
 2.  כיסוי מקיף של חברות ברחבי העולם. לנתוני החברה המרוכזים של Microsoft יש כיסוי עולמי, אך רוב הכיסוי מוצע באוסטרליה, קנדה, בריטניה וארצות הברית.
-3.  הבטחת דיוק או טריות של הנתונים. מכיוון שמידע עסקי משתנה לעתים קרובות, לא נוכל להבטיח שנתוני החברה המשופרים המתקבלים יהיו תמיד מדויקים או עדכניים.
+3.  בצע סטנדרטיזציה של כתובות החברה ברחבי העולם. בשלב זה, אנו תומכים בסטנדרטיזציה של כתובות במדינות או אזורים אלה: אוסטרליה, קנדה, צרפת, גרמניה, איטליה, יפן, בריטניה וארצות הברית.
+4.  הבטחת דיוק או טריות של הנתונים. מכיוון שמידע עסקי משתנה לעתים קרובות, לא נוכל להבטיח שנתוני החברה המשופרים המתקבלים יהיו תמיד מדויקים או עדכניים.
 
 ## <a name="configure-the-enrichment"></a>קביעת תצורת ההעשרה
 
