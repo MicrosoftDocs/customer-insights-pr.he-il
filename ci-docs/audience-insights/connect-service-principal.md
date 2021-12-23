@@ -1,7 +1,7 @@
 ---
 title: התחבר לחשבון Azure Data Lake Storage באמצעות מנהל שירות
 description: השתמש במנהל שירות של Azure כדי להתחבר לאגם הנתונים שלך.
-ms.date: 09/08/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,26 +9,26 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645173"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900259"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>התחבר לחשבון Azure Data Lake Storage באמצעות מנהל שירות של Azura
 
-כלים אוטומטיים המשתמשים בשירותי Azure צריכים תמיד להיות בעלי הרשאות מוגבלות. במקום כניסה ליישומים כמשתמש בעל הרשאות מלאות, Azure מספק מנהלי שירות. קרא כדי ללמוד כיצד לחבר Dynamics 365 Customer Insights עם חשבון Azure Data Lake Storage באמצעות מנהל שירות של Azure במקום מפתחות חשבון אחסון. 
+מאמר זה בוחן כיצד לחבר את Dynamics 365 Customer Insights עם Azure Data Lake Storage חשבון על ידי שימוש במנהל שירות Azure במקום במפתחות של חשבון אחסון. 
 
-תוכל להשתמש במנהל השירות כדי [להוסיף או לערוך תיקיית Common Data Model כ-מקור נתונים](connect-common-data-model.md) באופן מאובטח, או [ליצור או לעדכן סביבה ](create-environment.md).
+כלים אוטומטיים המשתמשים בשירותי Azure צריכים תמיד להיות בעלי הרשאות מוגבלות. במקום כניסה ליישומים כמשתמש בעל הרשאות מלאות, Azure מספק מנהלי שירות. תוכל להשתמש במנהלי שירות כדי להוסיף או לערוך [תיקיה של Common Data Model באופן מאובטח כמקור נתונים](connect-common-data-model.md) או [ליצור או לעדכן סביבה](create-environment.md).
 
 > [!IMPORTANT]
 > - חשבון Data Lake Storage שישתמש במנהל השירות חייב להיות [זמין עבור מרחב שמות הירארכי](/azure/storage/blobs/data-lake-storage-namespace).
-> - אתה זקוק להרשאות מנהל עבור המנוי שלך ב- Azure כדי ליצור את מנהל השירות.
+> - תזדקק להרשאות של מנהל מערכת עבור המנוי ל- Azure שלך כדי ליצור מנהל שירות.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>צור מנהל שירות של Azure עבור Customer Insights
 
-לפני יצירת מנהל שירות חדש לתובנות קהל או תובנות מעורבות, בדוק אם הוא קיים כבר בארגון שלך.
+לפני יצירת מנהל שירות חדש עבור Customer Insights, בדוק אם הוא כבר קיים בארגון שלך.
 
 ### <a name="look-for-an-existing-service-principal"></a>חיפוש מנהל שירות קיים
 

@@ -1,7 +1,7 @@
 ---
 title: ניסויי Azure Machine Learning
 description: השתמש במודלים מבוססי Azure Machine Learning ב- Dynamics 365 Customer Insights.
-ms.date: 11/30/2020
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,16 +9,16 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4c04a1d08aba152ce91d452ae2300c1ce0fc79e5d6980ac506dc40d9914c9fca
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: e37eec503c9df83ef72497e22afa1266296e642c
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033173"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881739"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>שימוש במודלים מבוססי Azure Machine Learning
 
-הנתונים המאוחדים ב- Dynamics 365 Customer Insights הם מקור לבניית מודלי למידת מכונה שיכולים ליצור תובנות עסקיות נוספות. Customer Insights משתלב עם Machine Learning Studio (קלאסי) ו- Azure Maching Learning כדי להשתמש במודלים המותאמים אישית שלך. עיין ב[ניסויי Machine Learning Studio (קלאסי)](machine-learning-studio-experiments.md) לקבלת דוגמאות של ניסויים המוכללים ב- Machine Learning Studio (קלאסי). 
+הנתונים המאוחדים ב- Dynamics 365 Customer Insights הם מקור לבניית מודלי למידת מכונה שיכולים ליצור תובנות עסקיות נוספות. Customer Insights משתלב עם למידת מכונה של Azure כדי להשתמש במודלים המותאמים אישית שלך.
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
@@ -35,7 +35,7 @@ ms.locfileid: "7033173"
 
 ## <a name="work-with-azure-machine-learning-designer"></a>עבודה עם Azure Machine Learning designer
 
-Azure Machine Learning Designer מספק בד ציור חזותי שבו ניתן לגרור ולשחרר ערכות נתונים ומודולים, בדומה ל- Machine Learning Studio (קלאסי). ניתן לשלב קו צינור של אצווה שנוצר מה- Designer ב- Customer Insights, אם הוא מוגדר בהתאם. 
+מעצב Azure Machine Learning מספק בד ציור חזותי שבו תוכל לגרור ולשחרר ערכות נתונים ומודולים. ניתן לשלב קו צינור של אצווה שנוצר מה- Designer ב- Customer Insights, אם הוא מוגדר בהתאם. 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>עבודה עם SDK של Azure Machine Learning
 

@@ -1,7 +1,7 @@
 ---
 title: תכונות חדשות ועתידיות
 description: מידע על תכונות חדשות, שיפורים ותיקוני באגים.
-ms.date: 11/04/2021
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: f7e2645e1608ea83b5d3af1073a5d6f6e97eec8f
-ms.sourcegitcommit: 2a0947cffb52eaf885aa2e50c95b3693f7e4c589
+ms.openlocfilehash: 346ef93e8471580b782618550ca4eb71b3f3c921
+ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7753118"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7884263"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>מה חדש ביכולת Audience Insights של Dynamics 365 Customer Insights
 
@@ -26,6 +26,18 @@ ms.locfileid: "7753118"
 
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="november-2021-updates"></a>עדכוני נובמבר 2021
+
+העדכונים במהדורת נובמבר 2021 כוללים תכונות חדשות, שדרוגי ביצועים ותיקוני באגים.
+
+### <a name="segment-membership-now-available-in-dataverse"></a>החברות בפלח זמינה כעת ב- Dataverse
+
+פרטי החברות בפלח עבור פרופילי לקוחות זמינים כעת ב- Dataverse יחד עם הפרופילים והתובנות של הלקוחות. יישומי הפעולה של Dynamics 365 ויישומים מונחי מודלים יכולים להשתמש בנתונים אלה בחיפוש אחר פרטי חברים בפלח עבור לקוח נתון.
+
+### <a name="activities-support-contact-level-details-for-business-accounts"></a>הפעילויות תומכות בפרטים ברמת איש הקשר עבור חשבונות עסקיים
+
+כעת תוכל להגדיר, להציג ולסנן פעילויות עבור אנשי קשר בצירי הזמן של פעילות החשבון העסקי שלך כדי להבין טוב יותר אילו אנשי קשר של חשבון נתון השתתפו בפעילויות ספציפיות.
 
 ## <a name="october-2021-updates"></a>עדכוני אוקטובר 2021
 

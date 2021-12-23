@@ -1,7 +1,7 @@
 ---
 title: יצירה וניהול של סביבות
 description: למד כיצד להירשם לשירות וכיצד לנהל סביבות.
-ms.date: 11/12/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
-ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
+ms.openlocfilehash: 309b2a900e50727ffa655fc6b5fe728ea55ba5bf
+ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7799637"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892385"
 ---
 # <a name="manage-environments"></a>ניהול סביבות
 
@@ -45,6 +45,9 @@ ms.locfileid: "7799637"
 השלב של **Microsoft Dataverse** מאפשר לך לחבר את Customer Insights לסביבת Dataverse.
 
 כדי להשתמש ב[מודלים של חיזויים מוכנים לשימוש](predictions-overview.md#out-of-box-models), קבע את תצורת שיתוף הנתונים עם Dataverse. לחלופין, תוכל להפעיל עיבוד נתונים ממקורות נתונים מקומיים, על-ידי אספקת כתובת ה- URL של סביבת Microsoft Dataverse שהארגון שלך מנהל. בחר **הפוך שיתוף נתונים לזמין** כדי לשתף נתוני פלט של Customer Insights עם אגם נתונים מנוהל של Dataverse.
+
+> [!IMPORTANT]
+> Customer Insights ו- Dataverse צריכים להיות באותו אזור כדי לאפשר שיתוף נתונים.
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="אפשרויות קביעת תצורה כדי להפוך שיתוף נתונים לזמין עם Microsoft Dataverse.":::
 

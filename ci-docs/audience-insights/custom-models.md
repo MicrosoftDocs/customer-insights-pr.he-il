@@ -1,7 +1,7 @@
 ---
 title: מודלי למידת מכונה מותאמים אישית | Microsoft Docs
 description: עבוד עם מודלים מותאמים אישית מ- Azure Machine Learning ב- Dynamics 365 Customer Insights.
-ms.date: 03/22/2021
+ms.date: 12/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,20 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 187995cdf4d92a0609f8abb4c792e698ad4342cdb1f578744136add1bfcf3a53
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032943"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881785"
 ---
 # <a name="custom-machine-learning-models"></a>מודלי למידת מכונה מותאמים אישית
+
+> [!NOTE]
+> התמיכה ב- ‏‫Machine Learning Studio (קלאסי)‬ תסתיים ב-31 באוגוסט 2024. אנו ממליצים בפניך לעבור אל [למידת מכונה של Azure](/azure/machine-learning/overview-what-is-azure-machine-learning) לפני תאריך זה.
+>
+> החל מה-1 בדצמבר 2021, לא תוכל ליצור משאבים חדשים של ‏‫Machine Learning Studio (קלאסי)‬. עד 31 באוגוסט 2024, תוכל להמשיך להשתמש במשאבים הקיימים של למידת מכונה Studio (קלאסי). לקבלת מידע נוסף, ראה [מעבר ללמידת מכונה של Azure](/azure/machine-learning/migrate-overview).
+
 
 עם האפשרות **בינה** > **מודלים מותאמים אישית** תוכל לנהל זרימות עבודה על פי מודלים של למידת מכונה של Azure. תהליכי עבודה עוזרים לך לבחור את הנתונים שמהם תרצה לייצר תובנות ולמפות את התוצאות לנתוני הלקוחות המאוחדים שלך. לקבלת מידע נוסף אודות בניית מודלי ML מותאמים אישית, ראה [שימוש במודלים מבוססי-Azure Machine Learning](azure-machine-learning-experiments.md).
 
@@ -26,7 +32,7 @@ ms.locfileid: "7032943"
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
-- נכון לעכשיו, תכונה זו תומכת בשירותי אינטרנט המתפרסמים דרך [Machine Learning Studio (קלאסי)](https://studio.azureml.net) ו[קווי צינור אצווה של Azure Machine Learning](/azure/machine-learning/concept-ml-pipelines).
+- תכונה זו תומכת בשירותי אינטרנט שפורסמו באמצעות [אצוות של צינורות ללמידת מכונה של Azure](/azure/machine-learning/concept-ml-pipelines).
 
 - אתה זקוק לחשבון אחסון של Azure Data Lake Gen2 המשויך למופע שלך ב- Azure Studio כדי להשתמש בתכונה זו. לקבלת מידע נוסף, ראה [יצירת חשבון אחסון של Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
 
@@ -48,11 +54,10 @@ ms.locfileid: "7032943"
 
 1. אם המנוי שלך ל'למידת מכונה של Azure' נמצא בדייר שונה מ- Customer Insights, בחר **התחברות** עם האישורים שלך לארגון שנבחר.
 
-1. בחר את **סביבות עבודה** המשויכות לשירות האינטרנט שלך. מופיעים שני מקטעים, אחד עבור Azure Machine Learning v1‏ (Machine Learning Studio (קלאסי)) ו- Azure Machine Learning v2‏ (Azure Machine Learning). אם אינך בטוח איזו סביבת עבודה מתאימה לשירות האינטרנט Machine Learning Studio (קלאסי) שלך, בחר **כלשהי**.
+1. בחר את **סביבות עבודה** המשויכות לשירות האינטרנט שלך. 
 
-1. בחר את שירות האינטרנט Machine Learning Studio (קלאסי) או את קו הצינור Azure Machine Learning ברשימה הנפתחת **שירות אינטרנט המכיל את המודל שלך**. לאחר מכן בחר **הבא**.
-   - קבל מידע נוסף אודות [פרסום שירות אינטרנט ב- Machine Learning Studio (קלאסי)](/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - קבל מידע נוסף אודות [פרסום קו צינור ב- Azure Machine Learning באמצעות המעצב](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) או [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). עליך לפרסם את קו הצינור שלך תחת [נקודת קצה של קו צינור](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+1. בחר בצינור ללמידת מכונה של Azure ב **שירות אינטרנט שמכיל את הרשימה הנפתחת של המודל שלך**. לאחר מכן בחר **הבא**.    
+   קבל מידע נוסף אודות [פרסום קו צינור ב- Azure Machine Learning באמצעות המעצב](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) או [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). עליך לפרסם את קו הצינור שלך תחת [נקודת קצה של קו צינור](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. עבור כל **קלט של שירות אינטרנט**, בחר את **ישות** המתאימה מתוך Customer Insights ובחר **הבא**.
    > [!NOTE]
@@ -62,9 +67,6 @@ ms.locfileid: "7032943"
    > ![קביעת תצורה של זרימת עבודה.](media/intelligence-screen2-updated.png "קביעת תצורה של זרימת עבודה")
 
 1. בשלב **פרמטרים של פלט מודל**, הגדר את המאפיינים הבאים:
-   - Machine Learning Studio (קלאסי)
-      1. הזן את הפלט **שם הישות** שברצונך שתוצאות הפלט של שירות האינטרנט יזרמו אליו.
-   - למידת מכונה של Azure
       1. הזן את הפלט **שם הישות** שברצונך שתוצאות הפלט של קו הצינור יזרמו אליו.
       1. בחר את **שם הפרמטר של מאגר נתוני הפלט** של קו הצינור של האצווה שלך מהרשימה הנפתחת.
       1. בחר את **שם הפרמטר של נתיב הפלט** של קו הצינור של האצווה שלך מהרשימה הנפתחת.
@@ -93,9 +95,6 @@ ms.locfileid: "7032943"
 1. עבור כל **קלט של שירות אינטרנט**, באפשרותך לעדכן את ערך **ישות** המתאים מתוך Customer Insights. לאחר מכן בחר **הבא**.
 
 1. בשלב **פרמטרים של פלט מודל**, הגדר את המאפיינים הבאים:
-   - Machine Learning Studio (קלאסי)
-      1. הזן את הפלט **שם הישות** שברצונך שתוצאות הפלט של שירות האינטרנט יזרמו אליו.
-   - למידת מכונה של Azure
       1. הזן את הפלט **שם הישות** שברצונך שתוצאות הפלט של קו הצינור יזרמו אליו.
       1. בחר את **שם פרמטר של מאגר נתוני פלט** עבור קו הצינור של הבדיקה שלך.
       1. בחר את **שם פרמטר נתיב הפלט** עבור קו הצינור של הבדיקה שלך.

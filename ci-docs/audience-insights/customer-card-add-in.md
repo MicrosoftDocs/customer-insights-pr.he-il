@@ -1,20 +1,20 @@
 ---
-title: תוספת כרטיס לקוח עבור יישומי Dynamics 365
+title: תוספת כרטיס לקוח עבור יישומי Dynamics 365 (וידאו)
 description: הצג נתונים מתובנות לגבי קהלים ביישומי Dynamics 365 באמצעות תוספת זו.
-ms.date: 09/30/2021
+ms.date: 12/07/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: pkieffer
-ms.author: philk
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: dbcdcbea8ffd1755b58c322233c08c70a065db36
-ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.openlocfilehash: e15d73bfc7af2cd9c8b5d983f01922459ec4a2ee
+ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7792028"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7904014"
 ---
 # <a name="customer-card-add-in-preview"></a>תוספת כרטיס לקוח (תצוגה מקדימה)
 
@@ -34,7 +34,7 @@ ms.locfileid: "7792028"
   - **פקד מדידה**: נדרשות [מדידות מוגדרות](measures.md) מסוג תכונות לקוח.
   - **פקד בינה**: מחייב נתונים שנוצרו באמצעות [תחזיות](predictions.md) או [מודלים מותאמים אישית](custom-models.md).
   - **פקד פרטי לקוח** : כל השדות מהפרופיל זמינים בפרופיל הלקוח המאוחד.
-  - **פקד העשרה**: נדרשות [העשרות](enrichment-hub.md) פעילות שחלות על פרופילי לקוחות. תוספת הכרטיס תומכת בהעשרות הבאות: [מותגים](enrichment-microsoft.md) שסופקה על-ידי Microsoft, [תחומי עניין](enrichment-microsoft.md) שסופקה על-ידי Microsoft.
+  - **פקד העשרה**: נדרשות [העשרות](enrichment-hub.md) פעילות שחלות על פרופילי לקוחות. תוספת הכרטיס תומכת בהעשרות הבאות: [מותגים](enrichment-microsoft.md) מסופקת על ידי Microsoft, [תחומי עניין](enrichment-microsoft.md) מסופקת על ידי Microsoft, ו- [נתוני מעורבות ב- Office‬](enrichment-office.md) מסופקת על ידי Microsoft.
   - **פקד אנשי קשר**: נדרשת הגדרה של ישות סמנטית מסוג אנשי קשר.
   - **פקד ציר זמן**: דורש [פעילויות מוגדרות](activities.md).
 

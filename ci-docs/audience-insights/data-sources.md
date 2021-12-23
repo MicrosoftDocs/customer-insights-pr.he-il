@@ -1,7 +1,7 @@
 ---
 title: שימוש במקורות נתונים לקליטת נתונים
 description: למד כיצד לייבא נתונים ממקורות שונים.
-ms.date: 11/01/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 6846c73cb156aaa049e2656c8e327bcba1f73abc
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732143"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900360"
 ---
 # <a name="data-sources-overview"></a>מבט כולל על מקורות נתונים
 
@@ -25,19 +25,22 @@ ms.locfileid: "7732143"
 
 ## <a name="add-a-data-source"></a>הוספה של מקור נתונים
 
-עיין במאמרים המפורטים על איך להוסיף מקור נתונים, בהתאם לאפשרות שבה תבחר.
+עיין במאמרים המפורטים בנושא כיצד להוסיף מקור נתונים, בהתאם לאפשרות שתבחר.
 
-ניתן להוסיף מקור נתונים בשלוש דרכים עיקריות:
+תוכל להוסיף את מקורות הנתונים הבאים:
 
-- [דרך עשרות מחברי Power Query](connect-power-query.md)
-- [דרך תיקית Common Data Model](connect-common-data-model.md)
-- [דרך אגם ה-Microsoft Dataverse שלך](connect-dataverse-managed-lake.md)
+- [מחברי Power Query](connect-power-query.md)
+- [Common Data Model](connect-common-data-model.md)
+- [Microsoft Dataverse אגם](connect-dataverse-managed-lake.md)
+
+> [!NOTE]
+> אם אתה משתמש בגרסת הניסיון, מקטע שיטות הייבוא כולל אפשרות של **ספריית נתונים של Customer Insights**. בחר באפשרות זו כדי לבחור ערכת נתונים לדוגמה הזמינה עבור תעשיות שונות. לקבלת מידע נוסף, ראה [Dynamics 365 Customer Insights ניסיון](../trial-signup.md).
 
 ## <a name="add-data-from-on-premises-data-sources"></a>הוספת נתונים ממקורות נתונים מקומיים
 
-קליטת נתונים ממקורות נתונים מקומיים בתובנות לגבי קהלים נתמכת בהתבסס על זרימות הנתונים של Microsoft Power Platform. ניתן להפעיל זרימות נתונים ב- Customer Insights על-ידי [מתן כתובת ה- URL של סביבת Microsoft Dataverse](create-environment.md) בעת הגדרת הסביבה.
+קליטת נתונים ממקורות נתונים מקומיים בתובנות לגבי קהלים נתמכת בהתבסס על זרימות הנתונים של Microsoft Power Platform. תוכל להפוך תזרימי נתונים לזמינים ב- Customer Insights על ידי [מתן Microsoft Dataverse כתובת URL של הסביבה](create-environment.md) בעת הגדרת הסביבה.
 
-מקורות נתונים שנוצרו לאחר שיוך סביבת Dataverse ל- Customer Insights ישתמשו ב[זרימות נתונים של Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) כברירת מחדל. זרימות נתונים תומכות בקישוריות מקומית באמצעות שער הנתונים. הסר וצור מחדש מקורות נתונים שהתקיימו לפני שסביבת Dataverse שויכה ל[שימוש בשערי הנתונים המקומיים](/data-integration/gateway/service-gateway-app).
+מקורות נתונים שנוצרים לאחר שיוך Dataverse סביבה עם Customer Insights משתמשים [Power Platform בתזרימי נתונים](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) כברירת מחדל. זרימות נתונים תומכות בקישוריות מקומית באמצעות שער הנתונים. תוכל להסיר וליצור מחדש מקורות נתונים שהתקיימו לפני שיוך Dataverse סביבה [באמצעות שערי נתונים מקומיים](/data-integration/gateway/service-gateway-app).
 
 שערי נתונים מסביבת Power BI או Power Apps קיימת יהיו גלויים ותוכל להשתמש בהם מחדש ב- Customer Insights. דף מקורות הנתונים מציג קישורים למעבר אל סביבת Microsoft Power Platform שבה תוכל להציג ולהגדיר את שערי הנתונים המקומיים.
 

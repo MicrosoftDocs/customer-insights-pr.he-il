@@ -84,7 +84,7 @@
           href: audience-insights/enrichment-microsoft.md
         - name: כתובות משופרות
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: שיפור נתוני חברה
+        - name: נתוני חברה משופרים
           href: audience-insights/enrichment-enhanced-company-data.md
         - name: העשר עם Azure Maps
           href: audience-insights/enrichment-azure-maps.md
@@ -94,6 +94,8 @@
           href: audience-insights/enrichment-leadspace.md
         - name: העשרה עם Experian
           href: audience-insights/enrichment-experian.md
+        - name: העשרה עם נתוני Office 365
+          href: audience-insights/enrichment-office.md
         - name: העשרה עם ייבוא מותאם אישית של SPTF
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: פלחי שוק
@@ -144,8 +146,6 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: ניסויים עם למידת מכונה של Azure
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: ניסויים עם Azure Machine Learning Studio
-              href: audience-insights/machine-learning-studio-experiments.md
         - name: ניהול חיזויים
           href: audience-insights/manage-predictions.md
         - name: יצירת פלחי שוק על בסיס חיזויים
@@ -240,6 +240,8 @@
               href: audience-insights/use-azure-key-vault.md
             - name: התחברות לחשבון אחסון ADLS באמצעות מנהל שירות
               href: audience-insights/connect-service-principal.md
+            - name: ייצוא יומני אבחון
+              href: audience-insights/diagnostics.md
     - name: יכולת הרחבה
       items:
         - name: שלב נתוני אינטרנט מתובנות לגבי מעורבות

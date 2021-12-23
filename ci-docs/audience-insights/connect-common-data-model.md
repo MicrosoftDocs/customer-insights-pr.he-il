@@ -1,7 +1,7 @@
 ---
 title: חיבור נתונים של Common Data Model לחשבון Azure Data Lake
 description: עבוד עם נתונים של Common Data Model באמצעות Azure Data Lake Storage.
-ms.date: 05/29/2020
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 93871f8029053d4ed4a116d3af3550b7684ee11ea8633e937138245e193a44e6
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 5f9010f78ea4c24094e0df4f8e153fb832e05cc8
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033127"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900198"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>חיבור לתיקיה של Common Data Model באמצעות חשבון Azure Data Lake
 
@@ -30,7 +30,7 @@ ms.locfileid: "7033127"
 
 - Azure Data Lake שברצונך לחבר ולקלוט נתונים ממנו צריך להיות באותו אזור Azure כשל סביבת Dynamics 365 Customer Insights. אין תמיכה בחיבורים לתיקיית Common Data Model מ- Data Lake באזור Azure אחר. כדי להכיר את אזור Azure של הסביבה, עבור אל **ניהול** > **מערכת** > **אודות** ב- audience insights.
 
-- נתונים המאוחסנים בשירותים מקוונים עשויים להיות מאוחסנים במיקום אחר מאשר במיקום שבו נתונים מעובדים או מאוחסנים ב- Dynamics 365 Customer Insights. על-ידי ייבוא נתונים או חיבור לנתונים שמאוחסנים בשירותים מקוונים, אתה מסכים שנתונים יועברו אל Dynamics 365 Customer Insights ויאוחסנו בו.  [קבל מידע נוסף במרכז יחסי האמון של Microsoft.](https://www.microsoft.com/trust-center)
+- נתונים המאוחסנים בשירותים מקוונים עשויים להיות מאוחסנים במיקום אחר מאשר המיקום שבו הנתונים מעובדים או מאוחסנים ב- Dynamics 365 Customer Insights. על-ידי ייבוא או התחברות לנתונים המאוחסנים בשירותים מקוונים, אתה מסכים להעברה ולאחסון של נתונים אלה ב- Dynamics 365 Customer Insights. [קבל מידע נוסף במרכז יחסי האמון של Microsoft.](https://www.microsoft.com/trust-center).
 
 ## <a name="connect-to-a-common-data-model-folder"></a>התחבר לתיקיה של Common Data Model
 
@@ -38,12 +38,11 @@ ms.locfileid: "7033127"
 
 1. בחר **הוסף מקור נתונים**.
 
-1. בחר **התחבר לתיקיית Common Data Model**, הזן **שם** עבור מקור הנתונים ובחר **הבא**. קווים מנחים של שם: 
-   - התחל עם אות.
-   - השתמש באותיות ומספרים בלבד. אסור להזין תווים מיוחדים ורווחים.
-   - השתמש בין 3 ל- 64 תווים.
+1. בחר **Azure Data Lake Storage**, הזן **שם** עבור מקור נתונים, ולאחר מכן בחר **הבא**.
 
-1. באפשרותך לבחור בין שימוש באפשרות מבוססת-משאב לאפשרות מבוססת-מנוי עבור אימות. לקבלת מידע נוסף, ראה [חיבור audience insights לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure](connect-service-principal.md). הזן את פרטי **הגורם המכיל** ובחר **הבא**.
+   - אם תתבקש, בחר מבין ערכות הנתונים לדוגמה אחת שמתייחסת לתעשייה שלך, ולאחר מכן בחר **הבא**. 
+
+1. באפשרותך לבחור בין שימוש באפשרות מבוססת-משאב לאפשרות מבוססת-מנוי עבור אימות. לקבלת מידע נוסף, ראה [חיבור audience insights לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure](connect-service-principal.md). הזן את **כתובת השרת**, בחר **כניסה**, ולאחר מכן בחר **הבא**.
    > [!div class="mx-imgBorder"]
    > ![תיבת דו-שיח להזנת פרטי חיבור חדשים עבור Azure Data Lake.](media/enter-new-storage-details.png)
    > [!NOTE]
@@ -56,11 +55,11 @@ ms.locfileid: "7033127"
    > [!NOTE]
    > כל קובץ model.json או manifest.json המשויך למקור נתונים אחר בסביבה לא יופיע ברשימה.
 
-1. תקבל רשימה של ישויות זמינות בקובץ model.json או בקובץ manifest.json שנבחר. ניתן לסקור ולבחור מרשימת הישויות ולבחור **שמור**. כל הישויות שנבחרו ייקלטו ממקור הנתונים החדש.
+1. תראה רשימה של ישויות זמינות בקובץ model.json או manifest.json שנבחר. עבור על הרשימה ובחר מבין הישויות הזמינות, ולאחר מכן בחר **שמור**. כל הישויות שנבחרו ייקלטו ממקור הנתונים החדש.
    > [!div class="mx-imgBorder"]
    > ![תיבת דו-שיח המציגה רשימת ישויות מתוך קובץ model.json.](media/review-entities.png)
 
-8. ציין באילו ישויות נתונים ברצונך להפוך יצירת פרופיל נתונים לזמינה ובחר **שמור**. יצירת פרופילים של נתונים הופכת ניתוח ויכולות אחרות לזמינים. באפשרותך לבחור את הישות השלמה, שבוחרת את כל התכונות מהישות, או לבחור בתכונות מסוימות לבחירתך. כברירת מחדל, אף ישות לא תופעל עבור יצירת פרופיל נתונים.
+8. ציין באילו ישויות נתונים ברצונך לאפשר יצירת פרופיל נתונים, ולאחר מכן בחר **שמור**. יצירת פרופילים של נתונים הופכת ניתוח ויכולות אחרות לזמינים. באפשרותך לבחור את הישות השלמה, שבוחרת את כל התכונות מהישות, או לבחור בתכונות מסוימות לבחירתך. כברירת מחדל, אף ישות לא תופעל עבור יצירת פרופיל נתונים.
    > [!div class="mx-imgBorder"]
    > ![תיבת דו-שיח המציגה פרופיל נתונים.](media/dataprofiling-entities.png)
 
