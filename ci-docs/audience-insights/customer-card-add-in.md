@@ -1,7 +1,7 @@
 ---
-title: תוספת כרטיס לקוח עבור יישומי Dynamics 365 (וידאו)
+title: תוספת כרטיס לקוח עבור יישומי Dynamics 365 (מכיל סרטון)
 description: הצג נתונים מתובנות לגבי קהלים ביישומי Dynamics 365 באמצעות תוספת זו.
-ms.date: 12/07/2021
+ms.date: 12/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: e15d73bfc7af2cd9c8b5d983f01922459ec4a2ee
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: 3927b5a13a5f9b4d2b39c7f0b389bc51cafeb213
+ms.sourcegitcommit: 3811dede65946c37aa7ed3cc364251f20ffd4d17
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7904014"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "7945428"
 ---
 # <a name="customer-card-add-in-preview"></a>תוספת כרטיס לקוח (תצוגה מקדימה)
 
@@ -27,12 +27,12 @@ ms.locfileid: "7904014"
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
 - התוספת פועלת רק עם יישומים מונחי דגמים של Dynamics 365, כגון Sales או Customer Service, גירסה 9.0 ואילך.
-- כדי שיתבצע מיפוי של נתוני Dynamics 365 לפרופילי הלקוח של תובנות לגבי קהלים, יש [לעבד אותם מיישום Dynamics 365 באמצעות המחבר Microsoft Dataverse](connect-power-query.md).
+- כדי שיתבצע מיפוי של נתוני Dynamics 365 לפרופילי הלקוח של תובנות לגבי קהלים, אנחנו ממליצים [לקלוט אותם מיישום Dynamics 365 באמצעות המחבר Microsoft Dataverse](connect-power-query.md). אם אתה משתמש בשיטה אחרת לקליטת אנשי קשר (או חשבונות) של Dynamics 365, עליך לוודא שהשדה `contactid` (או `accountid`) מוגדר כ[מפתח ראשי עבור מקור נתונים בשלב המפה של תהליך איחוד הנתונים](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
 - כל משתמשי Dynamics 365 של התוספת 'כרטיס לקוח' צריכים [להתווסף כמשתמשים](permissions.md) בתובנות לגבי קהלים כדי לראות את הנתונים.
 - [יכולות חיפוש וסינון מוגדרות](search-filter-index.md) בתובנות לגבי קהלים נדרשות על מנת שבדיקת המידע של נתונים תפעל.
 - כל פקד תוספת מסתמך על נתונים ספציפיים בתובנות לגבי קהלים. נתונים ופקדים מסוימים זמינים בסביבות מסוגים ספציפיים בלבד. לפי תצורת התוסף תוכל לדעת אם פקד אינו זמין בשל סוג הסביבה שנבחרה. קבל מידע נוסף על [תרחישי שימוש של סביבה](work-with-business-accounts.md).
   - **פקד מדידה**: נדרשות [מדידות מוגדרות](measures.md) מסוג תכונות לקוח.
-  - **פקד בינה**: מחייב נתונים שנוצרו באמצעות [תחזיות](predictions.md) או [מודלים מותאמים אישית](custom-models.md).
+  - בקרת בינה: מחייבת נתונים שנוצרו באמצעות **תחזיות** או [מודלים מותאמים אישית](predictions-overview.md).
   - **פקד פרטי לקוח** : כל השדות מהפרופיל זמינים בפרופיל הלקוח המאוחד.
   - **פקד העשרה**: נדרשות [העשרות](enrichment-hub.md) פעילות שחלות על פרופילי לקוחות. תוספת הכרטיס תומכת בהעשרות הבאות: [מותגים](enrichment-microsoft.md) מסופקת על ידי Microsoft, [תחומי עניין](enrichment-microsoft.md) מסופקת על ידי Microsoft, ו- [נתוני מעורבות ב- Office‬](enrichment-office.md) מסופקת על ידי Microsoft.
   - **פקד אנשי קשר**: נדרשת הגדרה של ישות סמנטית מסוג אנשי קשר.

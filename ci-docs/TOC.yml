@@ -80,7 +80,7 @@
       items:
         - name: העשרת פרופילי לקוחות
           href: audience-insights/enrichment-hub.md
-        - name: קירבות למותג ולתחומי עניין
+        - name: מותגים ותחומי עניין
           href: audience-insights/enrichment-microsoft.md
         - name: כתובות משופרות
           href: audience-insights/enrichment-enhanced-addresses.md
@@ -130,6 +130,8 @@
               href: audience-insights/predict-subscription-churn.md
             - name: חיזוי נטישה של עסקאות
               href: audience-insights/predict-transactional-churn.md
+            - name: נתח סנטימנט במשוב לקוחות
+              href: audience-insights/sentiment-analysis.md
             - name: השתמש במודלים מותאמים אישית מלמידת מכונה של Azure
               href: audience-insights/custom-models.md
             - name: השלם נתונים חסרים חלקית

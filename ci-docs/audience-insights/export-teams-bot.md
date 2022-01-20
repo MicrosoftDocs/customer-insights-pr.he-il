@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: cff696834e3dad00ce5b0f1b5bcb13d86354a4e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 6a9575de922bc2ff9c9d2212b99b4c0c8b61ab0e
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617602"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967820"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>תוכנית Bot של Teams עבור Dynamics 365 Customer Insights‎‏ (preview)
 
@@ -33,6 +33,8 @@ ms.locfileid: "7617602"
 - Customer Insights ו- Teams נמצאים באותו ארגון.
 - הסביבה שלך כוללת את קהל היעד הראשי המוגדר ללקוחות בודדים. חשבונות עסקיים אינם נתמכים.
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## <a name="configure-the-bot"></a>קביעת התצורה של תוכנית ה- Bot
 
 1. ב- audience insights, עבור אל **ניהול** > **יעדי ייצוא**.

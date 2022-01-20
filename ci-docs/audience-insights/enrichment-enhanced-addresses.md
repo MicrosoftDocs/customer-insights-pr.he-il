@@ -1,7 +1,7 @@
 ---
-title: העשרה לשיפור כתובות (וידאו)
+title: העשרה לשיפור כתובות (מכיל סרטון)
 description: העשר ונרמל מידע על כתובות שמופיעות בפרופילי לקוחות באמצעות מודלים של Microsoft.
-ms.date: 07/25/2021
+ms.date: 12/16/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 2158d80aa088c5bf8589fb7d23586496e2d8b855
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
+ms.openlocfilehash: afb1a6b4805702697889bb91ca36a96a714cba3d
+ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7903951"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7934924"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>העשרה של פרופילי לקוחות עם כתובות משופרות
 
@@ -101,6 +101,16 @@ ms.locfileid: "7903951"
 לאחר סיום תהליך ההעשרה, תוכל לבדוק את לסקור פרופילי הלקוחות שעושרו זה עתה תחת **ההעשרות שלי**. בנוסף, תמצא את שעת העדכון האחרון ואת מספר הפרופילים המועשרים.
 
 אתה יכול לגשת לתצוגה מפורטת של כל פרופיל מועשר על ידי בחירה באפשרות **צפה בנתונים מועשרים**.
+
+### <a name="overview-card"></a>כרטיס סקירה כללית
+
+כרטיס הסקירה הכללית מציג פרטים על כיסוי ההעשרה. 
+
+* **לקוחות שעובדו ושונו**: מספר פרופילי הלקוחות שהועשרו בהצלחה.
+
+* **לקוחות שעובדו ולא השתנו**: מספר פרופילי הלקוחות שזוהו אך לא השתנו. זה קורה בדרך כלל כאשר נתוני הקלט תקפים ולא ניתן לשפר אותם על ידי ההעשרה.
+
+* **לקוחות שלא עובדו ולא שונו**: מספר פרופילי הלקוחות שלא זוהו. בדרך כלל עבור נתוני קלט שאינם חוקיים או שאינם נתמכים על ידי העשרה.
 
 ## <a name="next-steps"></a>השלבים הבאים
 
