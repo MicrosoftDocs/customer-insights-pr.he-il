@@ -9,16 +9,11 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 3927b5a13a5f9b4d2b39c7f0b389bc51cafeb213
-ms.sourcegitcommit: 3811dede65946c37aa7ed3cc364251f20ffd4d17
-ms.translationtype: HT
-ms.contentlocale: he-IL
-ms.lasthandoff: 12/22/2021
-ms.locfileid: "7945428"
 ---
+
 # <a name="customer-card-add-in-preview"></a>תוספת כרטיס לקוח (תצוגה מקדימה)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 קבל תצוגה של 360 מעלות של הלקוחות שלך ישירות ביישומי Dynamics 365. כשתוספת כרטיס הלקוח מותקנת ביישום Dynamics 365 נתמך, תוכל לבחור להציג שדות, תובנות וציר זמן של פעילות עבור פרופיל לקוח. התוספת תשלוף נתונים מ- Customer Insights מבלי להשפיע על הנתונים ביישום המחובר של Dynamics 365.
 

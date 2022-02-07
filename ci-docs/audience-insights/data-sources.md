@@ -9,16 +9,11 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 78379c827e132b3b172aa7381f4c5ef2c70b9771
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
-ms.translationtype: HT
-ms.contentlocale: he-IL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977830"
 ---
+
 # <a name="data-sources-overview"></a>מבט כולל על מקורות נתונים
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 יכולת תובנות הקהל ב- Dynamics 365 Customer Insights מתחברת לנתונים מערכת מקורות רחבה. לעיתים קרובות מתייחסים לחיבור למקור נתונים כאל תהליך של *עיבוד נתונים*. לאחר עיבוד הנתונים, ניתן [לאחד](data-unification.md) ולנקוט פעולה.
 
@@ -28,7 +23,7 @@ ms.locfileid: "7977830"
 
 תוכל להוסיף את מקורות הנתונים הבאים:
 
-- [מחברי Power Query](connect-power-query.md)
+- [Power Query מחברים](connect-power-query.md)
 - [Common Data Model](connect-common-data-model.md)
 - [Microsoft Dataverse אגם](connect-dataverse-managed-lake.md)
 

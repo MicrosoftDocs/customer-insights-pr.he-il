@@ -1,7 +1,7 @@
 ---
 title: תכונות חדשות ועתידיות
-description: מידע על תכונות חדשות, שיפורים ותיקוני באגים.
-ms.date: 12/02/2021
+description: 'מידע על תכונות חדשות, שיפורים ותיקוני באגים.'
+ms.date: 01/27/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,16 +9,11 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 346ef93e8471580b782618550ca4eb71b3f3c921
-ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
-ms.translationtype: HT
-ms.contentlocale: he-IL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7884263"
 ---
+
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>מה חדש ביכולת Audience Insights של Dynamics 365 Customer Insights
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 אנו גאים להכריז על העדכונים החדשים ביותר שלנו! מאמר זה מסכם תכונות של Public Preview, שיפורים בזמינות הכללית ועדכוני תכונות. כדי לראות את התוכניות ארוכות הטווח בנוגע לתכונות, ראה את [תוכניות ההפצה של ‎Dynamics 365 ושל Power Platform](/dynamics365/release-plans/).
 
@@ -26,6 +21,50 @@ ms.locfileid: "7884263"
 
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+
+## <a name="december-2021-updates"></a>עדכוני דצמבר 2021
+
+העדכונים במהדורת דצמבר 2021 כוללים תכונות חדשות, שדרוגי ביצועים ותיקוני באגים.
+
+### <a name="forward-customer-insights-logs-to-azure-monitor"></a>העבר יומני Customer Insights ל-Azure Monitor
+
+Customer Insights מספק אינטגרציה ישירה עם Azure Monitor. תכונה זו כוללת אירועי ביקורת ואירועים תפעוליים. יומני המשאבים של Azure Monitor מאפשרים לך לנטר ולשלוח יומנים אל Azure Storage, תכונת ניתוח יומן רישום של Azure, או להזרים אותם אל מרכזי אירועים של Azure‬.
+
+למידע נוסף, ראה [העברת יומנים ב- Dynamics 365 Customer Insights עם Azure Monitor (תצוגה מקדימה)](diagnostics.md).
+
+### <a name="enrich-customer-profiles-with-engagement-data"></a>העשרת פרופילי לקוחות עם נתוני מעורבות
+
+השתמש בנתונים מ- Microsoft Office 365 כדי להעשיר את פרופילי חשבון הלקוחות שלך עם תובנות לגבי מעורבות באמצעות יישומי Office 365. נתוני המעורבות מורכבים מפעילות של דואר אלקטרוני ופגישות, אשר מצטברת ברמת החשבון. לדוגמה, מספר הודעות הדואר האלקטרוני מחשבון עסקי או מספר הפגישות עם החשבון. נתונים על משתמשים בודדים אינם משותפים. העשרה זו זמינה רק באזורים הבאים: בריטניה, אירופה וצפון אמריקה.
+
+למידע נוסף, ראה [העשרת פרופילי לקוחות עם נתוני מעורבות (תצוגה מקדימה)](enrichment-office.md)
+
+### <a name="advanced-data-unification-features"></a>תכונות מתקדמות של איחוד נתונים
+
+#### <a name="enable-conflict-resolution-policies-at-the-individual-attribute-level"></a>אפשר מדיניות פתרון סכסוכים ברמת התכונה האישית
+
+בעת ביטול כפילות של רשומות לקוח בתוך ישות, ייתכן שלא תצטרך לבחור רשומה מלאה כמנצחת. כעת אנו מאפשרים לך למזג את השדות הטובים ביותר מרשומות שונות בהתבסס על כללים עבור כל תכונה. לדוגמה, אתה יכול לבחור לשמור את הדואר האלקטרוני העדכני ביותר ואת הכתובת המלאה ביותר מרשומות שונות. 
+
+כעת תוכל להגדיר כללי מיזוג נפרדים עבור תכונות בודדות תוך ביטול כפילות ומיזוג של רשומות בתוך ישות אחת. בעבר, אפשרנו לך לבחור כלל מיזוג בודד בלבד (שמירה על רשומות על סמך שלמות הנתונים העדכניים) והכלל הזה הוחל ברמת הרשומה על כל המאפיינים. זה לא אידיאלי כאשר חלק מהנתונים שאתה רוצה לשמור נמצא ברשומה A, ונתונים טובים אחרים נמצאים ברשומה B.
+
+למידע נוסף, ראה [‏‫הגדרת ביטול כפילויות בישות מתאימה‬](match-entities.md#define-deduplication-on-a-match-entity).
+
+#### <a name="custom-rules-for-matching"></a>כללים מותאמים אישית להתאמה
+
+יש מקרים שבהם אתה צריך לציין חריגה לכללים כלליים כדי לא להתאים רשומות. זה יכול לקרות כאשר מספר אנשים חולקים מספיק מידע כדי שהמערכת תתאים אותם כאדם בודד. לדוגמה, תאומים עם אותו שם משפחה, המתגוררים באותה עיר וחולקים את תאריך הלידה.
+
+חריגות מבטיחות שניתן לטפל באיחוד נתונים שגוי בכללי האיחוד. ניתן להוסיף חריגות מרובות לכלל.
+
+למידע נוסף, ראה: [הוספת חריגות לזרם עבודה](match-entities.md#add-exceptions-to-a-rule).
+
+#### <a name="provide-additional-conflict-resolution-policies-and-enable-grouping-of-attributes"></a>ספק מדיניות נוספת לפתרון סכסוכים ואפשר קיבוץ של תכונות
+
+תכונה זו מאפשרת לך להתייחס לקבוצת שדות כיחידה אחת. לדוגמה, כאשר הרשומות שלנו מכילות את השדות כתובת1, כתובת2, עיר, מדינה/אזור ומיקוד. סביר להניח שלא נרצה למזג בכתובת 2 של רשומה אחרת, מתוך מחשבה שזה יהפוך את הנתונים שלנו למלאים יותר.
+
+כעת תוכל לשלב קבוצה של שדות קשורים ולהחיל מדיניות מיזוג אחת על הקבוצה. 
+
+למידע נוסף, ראה [שילוב קבוצה של שדות](merge-entities.md#combine-a-group-of-fields).
+
 
 ## <a name="november-2021-updates"></a>עדכוני נובמבר 2021
 
