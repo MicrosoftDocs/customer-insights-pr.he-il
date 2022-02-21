@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 413746e1896928d2c648ba59d67d4247a173da57
+ms.sourcegitcommit: 21854bb66ffa53948f659886f2e131236539ae88
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732265"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8100141"
 ---
 # <a name="work-with-customer-insights-apis"></a>עבודה עם ממשקי API של Customer Insights
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
  
    הפעלת ממשקי ה- API יוצרת מפתח מנוי ראשי ומשני עבור המופע שלך המשמש בבקשות ה- API. באפשרותך ליצור מחדש את המפתחות על-ידי בחירת **צור מחדש מפתח ראשי** או **צור מחדש מפתח משני** דרך **ניהול** > **הרשאות** > **ממשקי API**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="הפוך ממשקי API של Customer Insights לזמינים.":::
+<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
 1. בחר **סקור את ממשקי ה- API שלנו** כדי [לנסות את ממשקי ה- API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -49,7 +49,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 תגובת ה- HTTP תופיע תוך זמן קצר למטה.
 
-   :::image type="content" source="media/try-apis.gif" alt-text="כיצד לבדוק את ממשקי ה- API.":::
+<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>יצירת רישום יישום חדש בפורטל Azure
 
@@ -65,7 +65,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 1. ברישום היישום החדש שלך, עבור אל **הרשאות API**.
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="כיצד להגדיר הרשאות API ברישום יישומים.":::
+<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
 
 1. בחר **הוסף הרשאה** ובחר **Customer Insights** בחלונית הצדדית.
 
@@ -77,7 +77,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 באפשרותך להשתמש במזהה היישום/לקוח עבור רישום יישום זה עם Microsoft Authentication Library‏ (MSAL) כדי להשיג אסימון נושא לשליחה עם הבקשה שלך ל- API.
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="כיצד להעניק הסכמת מנהל מערכת.":::
+<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 לקבלת מידע נוסף אודות MSAL, ראה [מבט כולל על Microsoft Authentication Library‏ (MSAL)](/azure/active-directory/develop/msal-overview).
 
@@ -103,7 +103,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 1. בחר **הענק הסכמת מנהל עבור...** כדי להשלים את רישום היישום.
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="כיצד להעניק הסכמת מנהל מערכת.":::
+ <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 1. לסיום, עלינו להוסיף את שם רישום היישום כמשתמש ב- Customer Insights.  
    
@@ -129,7 +129,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
  
    לחלופין, הפעל פקודה זו ב **קונסולת מנהל החבילות של NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="הוסף חבילת NuGet לפרוייקט Visual Studio.":::
+ <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### <a name="use-the-c-client-library"></a>השתמש בספריית הלקוחות C#‎
 
@@ -141,7 +141,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 1. העבר `HttpClient` זה אל המבנה של הלקוח `CustomerInsights`.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="דוגמה של httpclient.":::
+<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
 1. בצע שיחות עם הלקוח ל"שיטות ההרחבה", למשל `GetAllInstancesAsync`. אם עדיפה גישה ל- `Microsoft.Rest.HttpOperationResponse` הבסיסי, השתמש ב"שיטות הודעת http" - לדוגמה `GetAllInstancesWithHttpMessagesAsync`.
 

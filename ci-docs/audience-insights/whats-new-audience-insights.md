@@ -1,7 +1,7 @@
 ---
 title: תכונות חדשות ועתידיות
-description: 'מידע על תכונות חדשות, שיפורים ותיקוני באגים.'
-ms.date: 01/27/2022
+description: מידע על תכונות חדשות, שיפורים ותיקוני באגים.
+ms.date: 03/02/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,8 +9,13 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
+ms.openlocfilehash: 0e25ed4e4e25b130fda410d4ba1c78caded7f0f9
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.translationtype: HT
+ms.contentlocale: he-IL
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088286"
 ---
-
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>מה חדש ביכולת Audience Insights של Dynamics 365 Customer Insights
 
 
@@ -21,6 +26,17 @@ manager: shellyha
 
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+
+## <a name="january-2022-updates"></a>עדכוני ינואר 2022
+
+העדכונים בינואר 2022 כוללים תכונות חדשות, דירוגי ביצועים ותיקוני באגים.
+
+### <a name="sentiment-analysis-of-your-customers-feedback"></a>ניתוח הסנטימנט של משוב הלקוח
+
+האפליקציה Customer Insights מספקת תכונה מבוססת AI חדשה, כדי לשלב את הסנטימנט של הלקוח ולזהות היבטים עסקיים ספציפיים בתור הזדמנויות לשיפורים ממוקדים. על-ידי ניתוח המשוב בכתב של הלקוחות שלך, תוכל לקבל תובנות מדויקות בעלות נמוכה. ניתוח הסנטימנט מבוסס על מודלים של עיבוד שפה טבעית (NLP), שיוצרים שתי תובנות נגזרות לכל מזהה לקוח. ניקוד הסנטימנט (בין 5 ל- 5-) ורשימת היבטים עסקיים רלוונטיים. 
+
+לקבלת מידע נוסף, ראה [ניתוח סנטימנט במשוב הלקוח (תצוגה מקדימה)](sentiment-analysis.md).
 
 
 ## <a name="december-2021-updates"></a>עדכוני דצמבר 2021
@@ -37,7 +53,7 @@ Customer Insights מספק אינטגרציה ישירה עם Azure Monitor. ת�
 
 השתמש בנתונים מ- Microsoft Office 365 כדי להעשיר את פרופילי חשבון הלקוחות שלך עם תובנות לגבי מעורבות באמצעות יישומי Office 365. נתוני המעורבות מורכבים מפעילות של דואר אלקטרוני ופגישות, אשר מצטברת ברמת החשבון. לדוגמה, מספר הודעות הדואר האלקטרוני מחשבון עסקי או מספר הפגישות עם החשבון. נתונים על משתמשים בודדים אינם משותפים. העשרה זו זמינה רק באזורים הבאים: בריטניה, אירופה וצפון אמריקה.
 
-למידע נוסף, ראה [העשרת פרופילי לקוחות עם נתוני מעורבות (תצוגה מקדימה)](enrichment-office.md)
+לקבלת מידע נוסף, ראה [העשרת פרופילי הלקוחות באמצעות נתוני מעורבות (תצוגה מקדימה)](enrichment-office.md).
 
 ### <a name="advanced-data-unification-features"></a>תכונות מתקדמות של איחוד נתונים
 

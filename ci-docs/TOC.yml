@@ -2,6 +2,22 @@
   href: index.yml
 - name: סקירת מוצר
   href: overview.md
+- name: קטלוג למידה
+  items:
+    - name: התחל בעבודה
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: קליטת נתונים
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: מהו פרופיל לקוח מאוחד
+      href: /learn/modules/unified-customer-profile/
+    - name: עבוד עם תובנות לגבי קהלים
+      href: /learn/modules/working-with-customer-insights/
+    - name: העשרה של נתונים וחיזוי
+      href: /learn/modules/enrich-data/
+    - name: נהל קשרים חיצוניים
+      href: /learn/modules/configure-third-party-connections/
+    - name: ניהול Customer Insights
+      href: /learn/modules/administer-customer-data-platform/
 - name: גירסת ניסיון ללא תשלום
   items:
     - name: הירשם לקבלת גירסת ניסיון ללא תשלום
@@ -30,21 +46,11 @@
           href: audience-insights/home.md
     - name: עבודה עם חשבונות עסקיים
       href: audience-insights/work-with-business-accounts.md
-    - name: למד מודולים
-      items:
-        - name: קליטת נתונים
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: מהו פרופיל לקוח מאוחד
-          href: /learn/modules/unified-customer-profile/
-        - name: עבודה עם האפליקציה
-          href: /learn/modules/working-with-customer-insights/
-        - name: העשרת נתונים וחיזויים
-          href: /learn/modules/enrich-data/
     - name: מקורות נתונים
       items:
         - name: מבט כולל על מקורות נתונים
           href: audience-insights/data-sources.md
-        - name: הוסף מקורות נתונים דרך מחברי Power Query
+        - name: הוסף מקורות נתונים באמצעות מחברי Power Query
           href: audience-insights/connect-power-query.md
         - name: הוסף תיקיית Common Data Model כמקור נתונים
           href: audience-insights/connect-common-data-model.md
@@ -164,11 +170,11 @@
               href: audience-insights/export-adroll.md
             - name: Autopilot
               href: audience-insights/export-autopilot.md
-            - name: Azure Blob Storage
+            - name: אחסון Blob של Azure‬
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage Gen2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: Azure Synapse Analytics
+            - name: ‏‏Azure Synapse Analytics
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
@@ -372,3 +378,5 @@
   href: service-limits.md
 - name: זכויות ובקשות של DSR
   href: dsr-rights-requests.md
+- name: קבל תמיכה
+  href: /power-platform/admin/get-help-support

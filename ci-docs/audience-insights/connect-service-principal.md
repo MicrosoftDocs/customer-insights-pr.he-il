@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.openlocfilehash: 1af01e5579f85d7c8bc8976a003f53ef2dd280d1
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900259"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088148"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>התחבר לחשבון Azure Data Lake Storage באמצעות מנהל שירות של Azura
 
@@ -23,7 +23,7 @@ ms.locfileid: "7900259"
 כלים אוטומטיים המשתמשים בשירותי Azure צריכים תמיד להיות בעלי הרשאות מוגבלות. במקום כניסה ליישומים כמשתמש בעל הרשאות מלאות, Azure מספק מנהלי שירות. תוכל להשתמש במנהלי שירות כדי להוסיף או לערוך [תיקיה של Common Data Model באופן מאובטח כמקור נתונים](connect-common-data-model.md) או [ליצור או לעדכן סביבה](create-environment.md).
 
 > [!IMPORTANT]
-> - חשבון Data Lake Storage שישתמש במנהל השירות חייב להיות [זמין עבור מרחב שמות הירארכי](/azure/storage/blobs/data-lake-storage-namespace).
+> - חשבון Data Lake Storage שישתמש במנהל השירות חייב להיות Gen2 ועם [מרחב שמות היררכי מופעל](/azure/storage/blobs/data-lake-storage-namespace). חשבונות Azure Data Lake Gen1 storage לא נתמכים.
 > - תזדקק להרשאות של מנהל מערכת עבור המנוי ל- Azure שלך כדי ליצור מנהל שירות.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>צור מנהל שירות של Azure עבור Customer Insights

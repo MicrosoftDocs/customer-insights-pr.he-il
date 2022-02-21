@@ -1,7 +1,7 @@
 ---
 title: תוספת כרטיס לקוח עבור יישומי Dynamics 365 (מכיל סרטון)
 description: הצג נתונים מתובנות לגבי קהלים ביישומי Dynamics 365 באמצעות תוספת זו.
-ms.date: 12/22/2021
+ms.date: 02/02/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,8 +9,13 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
+ms.openlocfilehash: ce6c8fab84fd4c5dfc9f78b91dde3483a1d358c1
+ms.sourcegitcommit: 11308ed275b4b25a35576eccfcae9dda9e2c2784
+ms.translationtype: HT
+ms.contentlocale: he-IL
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8085218"
 ---
-
 # <a name="customer-card-add-in-preview"></a>תוספת כרטיס לקוח (תצוגה מקדימה)
 
 
@@ -113,5 +118,26 @@ manager: shellyha
 
 1. לאחר הפעלת תהליך השדרוג, תראה מחוון טעינה עד לסיום השדרוג. אם אין גרסה חדשה יותר, השדרוג יציג הודעת שגיאה.
 
+## <a name="troubleshooting"></a>פתרון בעיות
+
+### <a name="controls-from-customer-card-add-in-dont-find-data"></a>בקרים מתוספות בכרטיס לקוח לא מוצאים נתונים
+
+**בעיה:**
+
+אפילו בעזרת שדות מזהה מוגדרים כהלכה, הבקרים לא מצליחים למצוא נתונים לאף לקוח.  
+
+**פתרון:**
+
+1. ודא שהגדרת את תוספות הכרטיס בהתאם להוראות: [הגדר את התוספות בכרטיס הלקוח](#configure-the-customer-card-add-in) 
+
+1. בדוק את תצורת קליטת הנתונים. ערוך את מקור המידע למערכת Dynamics 365 שמכילה את ה- GUID של מזהה איש הקשר. אם ה-GUID של מזהה איש הקשר מופיע עם תווי אותיות רישיות בעורך Power Query, נסה לפעול בצורה הבאה: 
+    1. ערוך את מקור המידע כדי לפתוח את מקור המידע בעורך Power Query.
+    1. בחר את עמודת מזהה איש הקשר.
+    1. בחר **שינוי** בשורת הכותרות כדי לראות פעולות זמינות.
+    1. בחר **אותיות קטנות**. ודא שערכי ה- GUID בטבלה לא מכילים אותיות רישיות.
+    1. שמור את מקור הנתונים.
+    1. הפעל תהליכי קליטה ואיחוד של נתונים גם במורד הזרם, כדי להפיץ את השינויים ב- GUID. 
+
+לאחר השלמת הרענון המלא, בקרי התוספות בכרטיס הלקוח אמורים להראות את הנתונים הצפויים. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
