@@ -10,9 +10,14 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-  - ci-merge
+- ci-merge
+ms.openlocfilehash: eb08ab38d23bf22a17896b63c93e6821431b002a
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.translationtype: HT
+ms.contentlocale: he-IL
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046565"
 ---
-
 # <a name="merge-entities"></a>מיזוג ישויות
 
 שלב המיזוג הוא השלב האחרון בתהליך איחוד נתונים. מטרתו ליישב נתונים סותרים. דוגמאות לנתונים סותרים יכולות לכלול שם לקוח שנמצא בשני מערכי הנתונים שלך אך מופיע מעט אחרת בכל אחת מהן ("גרנט מארשל" לעומת "גרנט מרשל"), או מספר טלפון ששונה מבחינת הפורמט (617-803-091X לעומת 617803091X). מיזוג של נקודות הנתונים הסותרות מתבצע על בסיס תכונה-לתכונה.

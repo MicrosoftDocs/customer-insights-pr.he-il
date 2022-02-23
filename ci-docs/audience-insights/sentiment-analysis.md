@@ -9,8 +9,13 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
+ms.openlocfilehash: 8a4473c1c395bbcf8efa2bfa24cddb82e1784279
+ms.sourcegitcommit: 15ec8c5f54242feda9489e7665726ec5e0983dc9
+ms.translationtype: HT
+ms.contentlocale: he-IL
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8008766"
 ---
-
 # <a name="analyze-sentiment-in-customer-feedback-preview"></a>נתח סנטימנט במשוב לקוחות (Preview)
 
 בימים אלה, לקוחות מצפים למוצרים, שירותים וחוויות באיכות גבוהה. במיוחד לקוחות שנותנים משוב. מאוד מאתגר עבור ארגונים לנתח נפח הולך וגדל של נתונים בלי להפחית את הדיוק ועלות העבודה הגבוהה יותר. Dynamics 365 Customer Insights מציע מודל ניתוח סנטימנטים למשוב מלקוחות המאפשר לארגונים לנתח את הנתונים שלהם בצורה מדויקת יותר ובעלות נמוכה יותר.

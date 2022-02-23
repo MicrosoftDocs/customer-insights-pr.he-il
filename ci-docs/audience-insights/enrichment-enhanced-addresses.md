@@ -9,8 +9,13 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
+ms.openlocfilehash: ba43d24ac5ae8846da87f0d41234d8616c2f8070
+ms.sourcegitcommit: 4c9db6c124d7244e7e8bb2f8bfdc697523781c31
+ms.translationtype: HT
+ms.contentlocale: he-IL
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8010899"
 ---
-
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>העשרה של פרופילי לקוחות עם כתובות משופרות
 
 כתובות בנתונים שלך יכולות להיות לא מובנות, לא שלמות או שגויות. השתמש במודלים של Microsoft כדי לנרמל ולהעשיר את הכתובות שלך ב[תבנית Common Data Model](/common-data-model/schema/core/applicationcommon/address) ליתר דיוק ולהשגת תובנות טובות יותר.
