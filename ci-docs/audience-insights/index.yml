@@ -9,13 +9,13 @@ metadata:
   ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
-  ms.date: 03/02/2022
-  ms.openlocfilehash: d24ed34b794e77a52ceec1a4411440a88430a369
-  ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+  ms.date: 07/30/2021
+  ms.openlocfilehash: 3764ed7c7fc4bd0dfa89e8a574617a1eb6273c2e36f6e5daa5aeca2c919ba7b8
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
   ms.translationtype: HT
   ms.contentlocale: he-IL
-  ms.lasthandoff: 02/03/2022
-  ms.locfileid: "8088240"
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7031382"
 landingContent:
 - title: אודות audience insights
   linkLists:
@@ -27,10 +27,6 @@ landingContent:
       url: whats-new-audience-insights.md
     - text: גלה תובנות קהל
       url: https://dynamics.microsoft.com/ai/customer-insights/audience-insights-capability/
-  - linkListType: learn
-    links:
-    - text: נתיב למידת Customer Insights
-      url: /learn/paths/build-customer-insights/
 - title: איחוד נתונים
   linkLists:
   - linkListType: how-to-guide
@@ -41,11 +37,7 @@ landingContent:
       url: data-unification.md
     - text: הכרת ישויות
       url: entities.md
-  - linkListType: learn
-    links:
-    - text: צור פרופיל מאוחד
-      url: /learn/modules/unified-customer-profile/
-- title: קבל תובנות
+- title: העשרה ומיקוד של נתונים
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -53,13 +45,9 @@ landingContent:
       url: enrichment-hub.md
     - text: קביעת תצורה של קשרי גומלין
       url: relationships.md
-    - text: השלם נתונים בעזרת חיזויים
-      url: predictions.md
-  - linkListType: learn
-    links:
-    - text: העשרה וחיזוי של נתונים
-      url: /learn/modules/enrich-data/
-- title: התבסס על הנתונים שלך
+    - text: רשימת הפעילויות של הלקוח
+      url: activities.md
+- title: קבל תובנות
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -67,12 +55,8 @@ landingContent:
       url: segments.md
     - text: צור מדדים
       url: measures.md
-    - text: רשימת הפעילויות של הלקוח
-      url: activities.md
-  - linkListType: learn
-    links:
-    - text: עבודה עם האפליקציה
-      url: /learn/modules/working-with-customer-insights/
+    - text: השלם נתונים בעזרת חיזויים
+      url: predictions.md
 - title: ייצוא נתוני לקוחות
   linkLists:
   - linkListType: how-to-guide
@@ -83,10 +67,6 @@ landingContent:
       url: customer-card-add-in.md
     - text: מחבר Power BI
       url: export-power-bi.md
-  - linkListType: learn
-    links:
-    - text: נהל קשרים חיצוניים
-      url: /learn/modules/configure-third-party-connections/
 - title: ניהול היישום
   linkLists:
   - linkListType: how-to-guide
@@ -97,7 +77,3 @@ landingContent:
       url: permissions.md
     - text: ניהול סביבות מרובות
       url: manage-environments.md
-  - linkListType: learn
-    links:
-    - text: ניהול Customer Insights
-      url: /learn/modules/administer-customer-data-platform/

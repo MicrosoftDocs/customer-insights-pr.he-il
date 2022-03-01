@@ -3,18 +3,18 @@ title: שאלות נפוצות על גירסת ניסיון - Dynamics 365 Custo
 description: פתרונות לשאלות נפוצות הקשורות להגדרת גירסת הניסיון של Customer Insights ולניהולה. למד כיצד לפתור בעיות הייחודיות לפלטפורמה וליישום.
 author: m-hartmann
 ms.author: mhart
-ms.date: 02/10/2022
+ms.date: 09/30/2021
 ms.topic: get-started
 ms.service: customer-insights
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: f63ed39ba8c710d0c0149e0944efaafe27e7b9bb
-ms.sourcegitcommit: 5dd32dc2b18027cf2aa954356dded4bc6aab9801
+ms.openlocfilehash: 2837ae13b4150310193a2d09d59aed66b4a69c69
+ms.sourcegitcommit: e6020c178a61beb0ee31a031c11ded914d10d995
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8115969"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7642874"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>‏‫שאלות נפוצות בנושא גירסת הניסיון‬ של Dynamics 365 Customer Insights
 
@@ -24,7 +24,7 @@ ms.locfileid: "8115969"
 
 יישום זה הוא שירות המבוסס על הענן שאינו דורש תוכנה מיוחדת פרט לדפדפן אינטרנט מעודכן, אם כי יש כמה מגבלות. לקבלת חוויית גירסת הניסיון הטובה ביותר, הימנע מגישה לאתר גירסת הניסיון במצב גלישה בסתר ובחר את מיקום גירסת הניסיון הקרוב ביותר אליך. [מידע נוסף על דרישות יישום אינטרנט.](/power-platform/admin/web-application-requirements)
 
-### <a name="how-do-i-sign-up-for-the-trial-without-a-microsoft-365-tenant"></a>כיצד להירשם לניסיון ללא דייר של Microsoft 365?
+### <a name="how-do-i-sign-up-for-the-trial-without-a-microsoft-365-tenant"></a>כיצד ניתן להירשם לגירסת הניסיון ללא דייר של Microsoft 365?
 
 באפשרותך להזין כתובת דואר אלקטרוני שאינה של מקום העבודה, ואנו ניצור עבורך חשבון ודייר.
 
@@ -43,7 +43,7 @@ ms.locfileid: "8115969"
 
 ### <a name="how-do-i-add-more-users-to-a-trial"></a>כיצד ניתן להוסיף משתמשים נוספים לגירסת ניסיון?
 
-כדי להוסיף משתמשים, עבור אל מרכז הניהול של [Microsoft 365 ](https://admin.microsoft.com) באמצעות חשבון הניהול של הניסיון. פעל בהתאם ל[הנחיות מרכז הניהול](/microsoft-365/admin/add-users/add-users) כדי להוסיף משתמשים עד למגבלת הרשיון של גירסת הניסיון. אם למשתמש שאתה מוסיף כבר יש חשבון Microsoft 365, הקצה לו תפקיד אבטחה הולם בארגון הניסיון. לקבלת מידע נוסף, ראה [הקצאת תפקיד אבטחה למשתמש](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
+כדי להוסיף משתמשים, עבור אל [מרכז הניהול של Microsoft 365](https://admin.microsoft.com) באמצעות חשבון מנהל המערכת של גירסת הניסיון. פעל בהתאם ל[הנחיות מרכז הניהול](/microsoft-365/admin/add-users/add-users) כדי להוסיף משתמשים עד למגבלת הרשיון של גירסת הניסיון. אם למשתמש שאתה מוסיף יש כבר חשבון Microsoft 365, הקצה אותו לתפקיד אבטחה מתאים בארגון לניסיון. לקבלת מידע נוסף, ראה [הקצאת תפקיד אבטחה למשתמש](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
 
 ### <a name="how-many-users-can-i-add-to-my-trial-environment"></a>כמה משתמשים אוכל להוסיף לסביבת הניסיון שלי?
 
@@ -63,7 +63,7 @@ ms.locfileid: "8115969"
 
 באופן כללי, אנחנו ממליצים להתחיל מחדש עם הנתונים שלך בעת השדרוג לגירסה בתשלום של Customer Insights. 
 
-לחלופין, אם אתה משתמש רק בתובנות קהל, באפשרותך להעתיק את הנתונים שלך מסביבת ניסיון אם תרכוש את Customer Insights. עליך להיות מנהל המערכת של ניסיון Customer Insights ומנהל המערכת הגלובלי של דייר Microsoft 365, או מנהל המערכת של Dynamics 365 בארגון שלך, כדי להעביר את ההגדרות מסביבת ניסיון לסביבה בתשלום. 
+לחלופין, אם אתה משתמש רק בתובנות קהל, באפשרותך להעתיק את הנתונים שלך מסביבת ניסיון אם תרכוש את Customer Insights. עליך להיות מנהל המערכת של גירסת הניסיון של Customer Insights והמנהל הכללי של דייר Microsoft 365 שלך, או מנהל המערכת של Dynamics 365 בארגון שלך כדי להעביר את ההגדרות מסביבת ניסיון לסביבה בתשלום. 
 
 לאחר הכניסה הראשונה לגירסה בתשלום של Customer Insights, תתבקש ליצור סביבה חדשה. בתהליך זה, תוכל לבחור להעתיק את התצורה מסביבה קיימת ולהעביר את רוב ההגדרות. אם יש לך את ההרשאות שהוזכרו למעלה, סביבת הניסיון תופיע ברשימה זו. לקבלת מידע נוסף, ראה [העתקת תצורת הסביבה](audience-insights/manage-environments.md#copy-the-environment-configuration).
 
@@ -82,9 +82,8 @@ ms.locfileid: "8115969"
 
 רוב התכונות ביכולות Customer Insights זמינות בגירסת הניסיון.
 
-התכונות הבאות **לא זמינות**: 
+התכונה הבאה אינה זמינה: 
 - אין באפשרותך ליצור סביבות חדשות המשתמשות בחשבון Azure Data Lake storage שלך.
-- לא ניתן למחוק את סביבת הניסיון. 
 
 ### <a name="how-long-does-the-trial-last"></a>מהו משך גירסת הניסיון?
 

@@ -1,7 +1,7 @@
 ---
 title: סכימות ישות של Customer Insights ב- Common Data Model‏
 description: עבוד עם ישויות ב- Common Data Model.
-ms.date: 08/13/2021
+ms.date: 04/17/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 2cdbe11a1c0cc5d65434fb2ae3a3f38c18f31cf4
-ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8046504"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692306"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>סכימות ישויות ב- Common Data Model
 
-
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 [Common Data Model](/common-data-model/) הוא מפרט הצהרתי, והגדרה של ישויות סטנדרטיות המייצגות מושגים ופעילויות נפוצים ביישומים עסקיים ויישומי פרודוקטיביות. המודל מורחב גם לנתוני תצפית ונתונים אנליטיים. Common Data Model מספק ישויות עסקיות מוגדרות היטב, מודולריות וניתנות להרחבה - כגון 'תיק לקוח', 'יחידה עסקית', 'אירוע', 'איש קשר', 'הפניה', 'הזדמנות' ו'מוצר' - וכן אינטראקציות עם ספקים, עובדים ולקוחות - כגון פעילויות והסכמי רמת שירות. כל אחד יכול לבנות ולהרחיב את ההגדרות של Common Data Model כדי ללכוד רעיונות נוספים הספציפיים לעסק.
 
@@ -42,7 +42,7 @@ ms.locfileid: "8046504"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>הצגת ישויות באמצעות Common Data Model Entity Navigator
 
-באפשרותך להציג ישויות ב- [Common Data Model Entity Navigator](https://microsoft.github.io/CDM/). בחר ישות מהקטע Application Insights כדי לקבל את רשימת ישויות Customer Insights והגדרותיהם.
+באפשרותך להציג ישויות ב- [Common Data Model Entity Navigator](https://microsoft.github.io/CDM/). בחר את לחצן **טען מ- GitHub!** ונווט אל **foundationCommon** > **crmCommon** > **פתרונות** > **customerInsights** שם תמצא רשימה של ישויות Customer Insights ואת ההגדרות שלהן.
 > [!div class="mx-imgBorder"]
 > ![CDM Entity Navigator המציג את הישות CustomerActivity.](media/CDM-entity-navigator.png "CDM Entity Navigator המציג את הישות CustomerActivity")
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: fa1d4ffd9f77e128b5d804e4562e964561f4684f
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: f92b36ac5364ea8586f9cbba7ba03178641555c0
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618683"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304651"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>העשרת פרופילי לקוחות עם נתונים מותאמים אישית (Preview)
 
@@ -45,8 +45,6 @@ ms.locfileid: "7618683"
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="צילום מסך בעת הזנת מיקום הנתונים.":::
 
-1. בחר **הבא** ובחר את ערכת הנתונים של הלקוח. האפשרויות הן כל פרופילי הלקוח או פלח.
-
 1. בחר **הבא** וספק שם עבור ההעשרה ושם עבור ישות הפלט. 
 
 1. בחר **שמור העשרה** לאחר סקירת האפשרויות שלך.
@@ -66,7 +64,7 @@ ms.locfileid: "7618683"
 1. לאחר השלמת האימות, ניתן לשמור את החיבור על ידי בחירת **שמור**.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian דף תצורת החיבור.](media/enrichment-SFTP-connection.png "Experian דף תצורת חיבור")
+   > ![Experian דף תצורת החיבור](media/enrichment-SFTP-connection.png "Experian דף תצורת חיבור")
 
 
 ## <a name="defining-field-mappings"></a>הגדרת מיפויי שדות 
@@ -125,6 +123,6 @@ ms.locfileid: "7618683"
 
 ## <a name="next-steps"></a>השלבים הבאים
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+בנה על נתוני הלקוחות המועשרים שלך. צור [פלחים](segments.md) ו[מדידות](measures.md), ו[יצא את הנתונים](export-destinations.md) כדי להעניק ללקוחות שלך חוויות מותאמות אישית.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,19 +2,19 @@
 title: קליטת נתונים בזמן אמת ומגבלות
 description: מידע כללי על יכולות בזמן אמת ב- Audience Insights.
 ms.date: 10/27/2020
-ms.reviewer: mhart
+ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: Nils-2m
-ms.author: nikeller
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 897c876306a39cd9d5842487b96cb2f0a8df7e656de0fb7f10fe8c7f53e2db6b
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b00a72e6a67e33c8e70ccc6139c5e62020f9d3e1
+ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035278"
+ms.lasthandoff: 12/06/2020
+ms.locfileid: "4689176"
 ---
 # <a name="real-time-data-ingestion-preview"></a>קליטת נתונים בזמן אמת (תצוגה מקדימה)
 
@@ -54,7 +54,7 @@ ms.locfileid: "7035278"
 
 ישנן שתי דרכים להתחבר לממשק ה- API בזמן אמת:
 
-- [באופן עקיף](#connect-via-the-dynamics-365-customer-insights-connector), באמצעות מחבר [Dynamics 365 Customer Insights](/connectors/customerinsights/)
+- [באופן עקיף](#connect-via-the-dynamics-365-customer-insights-connector), באמצעות מחבר [Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/)
 - [באופן ישיר](#connect-directly-to-the-real-time-api), עם קוד
 
 שתי הדרכים חולקות את התנאים המוקדמים הבאים:
@@ -66,13 +66,13 @@ ms.locfileid: "7035278"
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>התחברות דרך מחבר Dynamics 365 Customer Insights
 
-ה- API בזמן אמת יכול לקלוט נתונים מחבר Power Platform ייעודי, מחבר [Dynamics 365 Customer Insights](/connectors/customerinsights/), מבלי לכתוב ולפרוס קוד כלשהו.    
-המחבר יכול לבצע את אותן פעולות בזמן אמת כמו ה- API. אתה זקוק לרישיון תקף עבור מחברים מתקדמים. לקבלת מידע נוסף, ראה [שאלות נפוצות בנוגע לרישוי Power Apps ו- Power Automate](/power-platform/admin/powerapps-flow-licensing-faq).
+ה- API בזמן אמת יכול לקלוט נתונים מחבר Power Platform ייעודי, מחבר [Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/), מבלי לכתוב ולפרוס קוד כלשהו.    
+המחבר יכול לבצע את אותן פעולות בזמן אמת כמו ה- API. אתה זקוק לרישיון תקף עבור מחברים מתקדמים. לקבלת מידע נוסף, ראה [שאלות נפוצות בנוגע לרישוי Power Apps ו- Power Automate](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps ו/או Power Automate](/connectors/)
-- [יישומים לוגיים של Azure](/azure/connectors/apis-list)
+- Power Platform [Power Apps ו/או Power Automate](https://docs.microsoft.com/connectors/)
+- [יישומים לוגיים של Azure](https://docs.microsoft.com/azure/connectors/apis-list)
 
-לקבלת פרטים אודות יצירת זרימות, עיין ב[תיעוד Power Automate](/power-automate/).
+לקבלת פרטים אודות יצירת זרימות, עיין ב[תיעוד Power Automate](https://docs.microsoft.com/power-automate/).
 
 ## <a name="connect-directly-to-the-real-time-api"></a>התחברות ישירות לממשק ה- API בזמן אמת
 
@@ -83,7 +83,6 @@ ms.locfileid: "7035278"
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>הבן את השימוש שלך בזמן אמת באמצעות טלמטריה
 
-קבל סקירה של היקף הבקשות לממשק ה- API בזמן אמת ומידע על בעיות שהמערכת עלולה להיתקל בהן. באפשרותך [לגשת למדידת השימוש בזמן אמת](system.md#api-usage-tab). 
+קבל סקירה של היקף הבקשות לממשק ה- API בזמן אמת ומידע על בעיות שהמערכת עלולה להיתקל בהן. אתה יכול [לגשת לטלמטריה בזמן אמת](system.md#api-usage-tab) על ידי מעבר אל **ניהול** > **מערכת** > **שימוש בממשק API**. בטבלה **פעולות**, שורות לפעולות API שמשתמשות בשיטות בזמן אמת מכילות לחצן להצגת שימוש ב- API בזמן אמת. הלחצן מוצג באופן חזותי כסמל משקפת. בחר בלחצן כדי לפתוח חלונית צדדית המכילה פרטי שימוש לשימוש ב- API בזמן אמת בסביבה הנוכחית.
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+השתמש בבורר **קבץ לפי** כדי לבחור כיצד להציג בצורה הטובה ביותר את האינטראקציות שלך בזמן אמת על ציר זמן שנע בין 24 השעות האחרונות ל- 30 הימים האחרונים. ניתן לקבץ את הנתונים לפי שיטת API, שם מוסמך של ישות (ישות שנקלטה), נוצר על ידי (מקור האירוע), תוצאה (הצלחה או כישלון) או קודי שגיאה. הנתונים זמינים כתרשים היסטוריה וכטבלה.

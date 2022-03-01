@@ -1,20 +1,20 @@
 ---
 title: פלחים בתובנות לגבי קהלים
 description: מבט כולל על פלחים וכיצד ליצור ולנהל אותם.
-ms.date: 11/01/2021
+ms.date: 09/30/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 740d293b21f43b50201f23fcba109318823ef3af
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7978060"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673834"
 ---
 # <a name="segments-overview"></a>מבט כולל על פלחים
 
@@ -65,7 +65,8 @@ ms.locfileid: "7978060"
 
 ניתן לרענן את כל הפלחים בבת אחת על ידי בחירה באפשרות **רענן הכל** בדף **פלחים** או לרענן פלח אחד או מספר פלחים על ידי בחירתם ובחירה באפשרות **רענן**. לחלופין, באפשרותך להגדיר רענון חוזר דרך **מנהל** > **מערכת** > **לוח זמנים**.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+> [!TIP]
+> קיימים [שישה סוגים של מצבים](system.md#status-types) עבור משימות/תהליכים. בנוסף, רוב התהליכים [תלויים בתהליכים אחרים במורד הזרם](system.md#refresh-policies). באפשרותך לבחור את מצב התהליך כדי לראות פרטים על ההתקדמות של המשימה השלמה. לאחר בחירה באפשרות **ראה פרטים** עבור אחת מהמשימות תמצא מידע נוסף: זמן העיבוד, תאריך העיבוד האחרון וכל השגיאות והאזהרות הקשורות למשימה.
 
 ## <a name="export-segments"></a>ייצוא פלחים
 
@@ -104,6 +105,5 @@ ms.locfileid: "7978060"
 > שדות המופיעים ברשימה זו מבוססים על התכונות של ישויות הפלח.
 >
 >הרשימה היא תצוגה מקדימה של חברי הפלח התואמים והיא מציגה את 100 הרשומות הראשונות של הפלח, כך שתוכל להעריך אותו במהירות ולעיין בהגדרות שלו במידת הצורך. כדי לראות את כל הרשומות התואמות, עליך [לייצא את הפלח](export-destinations.md).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)] 

@@ -1,7 +1,7 @@
 ---
 title: השלמת נתונים חלקיים באמצעות חיזויים
 description: השתמש בחיזויים כדי למלא נתוני לקוחות לא שלמים.
-ms.date: 11/01/2021
+ms.date: 05/05/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,17 +9,16 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3100acf383d85c00a6ff0a8ebc54e038bd813427
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 31b9b1b709540896c1dbc19f974df4ab056a7b8d
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732405"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692528"
 ---
-# <a name="complete-your-partial-data-with-predictions-deprecated"></a>השלמת הנתונים החלקיים באמצעות חיזוי (הוצא משימוש)
+# <a name="complete-your-partial-data-with-predictions"></a>השלמת הנתונים החלקיים שלך באמצעות חיזויים
 
-> [!IMPORTANT]
-> תכונה זו **תצא משימוש** בתאריך **5 בנובמבר 2021**. היישומים הנוכחיים ימשיכו לעבוד עד הסרת התכונה, אך לא תוכל ליצור שילובים חדשים באמצעות ההוראות למטה.
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 חיזויים מאפשרים לך ליצור בקלות ערכים חזויים שיכולים לשפר את ההבנה שלך את הלקוח. בדף **בינה** > **חיזויים**, באפשרותך לבחור **החיזויים שלי** כדי לראות חיזויים שהגדרת בחלקים אחרים של Audience Insights, ולהתאים אותם אישית עוד יותר.
 
@@ -36,7 +35,7 @@ ms.locfileid: "7732405"
 
 2. סביבת התובנות לגבי קהלים מחוברת למופע Dataverse.
 
-לקבלת מידע נוסף, ראה [יצירת סביבה חדשה](create-environment.md).
+אם אתה [יוצר סביבה חדשה](get-started-paid.md), הגדר אותה בתיבת הדו-שיח **צור סביבה** ובחר **מתקדם**. אם כבר יצרת סביבה, עבור להגדרות שלה ובחר **מתקדם**. כך או כך, במקטע **השתמש בחיזויים**, הזן את כתובת ה- URL של מופע Dataverse שאליו ברצונך לצרף את הסביבה שלך.
 
 ## <a name="create-a-prediction-in-the-customer-entity"></a>יצירת חיזוי בישות 'לקוח'
 
@@ -61,8 +60,6 @@ ms.locfileid: "7732405"
    > ![דוגמה המציגה ערכי שדה ממופים לקטגוריות.](media/intelligence-categorymapping.png "דוגמה המציגה ערכי שדה ממופים לקטגוריות")
 
 8. בחר **בוצע** והחיזוי יעובד. העיבוד ייקח זמן מה, תלוי בגודל ובמורכבות הנתונים. התוצאות יהיו זמינות ביישות חדשה בהתבסס על **שם ישות פלט** של החיזוי שיצרת.
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="create-a-prediction-while-creating-a-segment"></a>צור חיזוי תוך כדי יצירת פלח
 

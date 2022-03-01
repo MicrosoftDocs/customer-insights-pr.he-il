@@ -1,20 +1,20 @@
 ---
 title: מחבר Power Apps
 description: התחבר ל- Power Apps ו- Power Automate.
-ms.date: 10/01/2021
-ms.reviewer: mhart
+ms.date: 08/21/2020
+ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: Nils-2m
-ms.author: nikeller
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 985e6c85795fba8ca3063cdffc7f9012e798856a
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: b6ec103e29e218b2f27bfc1193300ea793a6b30b
+ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623224"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4405866"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>מחבר Microsoft Power Apps (תצוגה מקדימה)
 
@@ -22,55 +22,53 @@ ms.locfileid: "7623224"
 
 ## <a name="connect-power-apps-and-dynamics-365-customer-insights"></a>התחבר ל- Power Apps ו- Dynamics 365 Customer Insights
 
-Customer Insights הוא אחד מהמקורות הזמינים [הרבים עבור נתונים ב- Power Apps](/powerapps/maker/canvas-apps/working-with-data-sources).
+Customer Insights הוא אחד מהמקורות הזמינים [הרבים עבור נתונים ב- Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-data-sources).
 
-עיין בתיעוד Power Apps כדי לקבל מידע נוסף אודות [הוספת חיבור נתונים ליישום](/powerapps/maker/canvas-apps/add-data-connection). אנו ממליצים שתבדוק גם [איך Power Apps משתמש בהקצאה כדי לטפל בערכות נתונים גדולות ביישומי בד ציור](/powerapps/maker/canvas-apps/delegation-overview).
+עיין בתיעוד Power Apps כדי לקבל מידע נוסף אודות [הוספת חיבור נתונים ליישום](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-data-connection). אנו ממליצים שתבדוק גם [איך Power Apps משתמש בהקצאה כדי לטפל בערכות נתונים גדולות ביישומי בד ציור](https://docs.microsoft.com/powerapps/maker/canvas-apps/delegation-overview).
 
 ## <a name="available-entities"></a>ישויות זמינות
 
 לאחר הוספת Customer Insights כחיבור נתונים, באפשרותך לבחור את הישויות הבאות ב- Power Apps:
 
-- **לקוח**: כדי להשתמש בנתונים מ[פרופיל הלקוח המאוחד](customer-profiles.md).
-- **UnifiedActivity**: כדי להציג את [ציר הזמן של פעילות](activities.md) ביישום.
-- **ContactProfile**: כדי להציג את אנשי הקשר של לקוח. ישות זו זמינה רק בסביבות 'תובנות לגבי קהלים' עבור תיקי לקוחות עסקיים.
+- לקוח: כדי להשתמש בנתונים מ[פרופיל הלקוח המאוחד](customer-profiles.md).
+- פעילות לקוחות מאוחדים: כדי להציג את [ציר הזמן של הפעילות](activities.md) ביישום.
 
 ## <a name="limitations"></a>מגבלות
 
 ### <a name="retrievable-entities"></a>ישויות הניתנות להחזרה
 
-באפשרותך לאחזר את הישויות **לקוח**, **UnifiedActivity**, **פלחים** ו- **ContactProfile** באמצעות מחבר Power Apps בלבד. הישות ContactProfile זמינה רק במופע 'תובנות לגבי קהלים' עבור תיקי לקוחות עסקיים. ישויות אחרות מוצגות מכיוון שהמחבר הבסיסי תומך בהן באמצעות טריגרים ב-Power Automate.
+אתה יכול לאחזר רק את הישויות **צרכן**, **UnifiedActivity** ו **פלחים** דרך מחבר Power Apps. ישויות אחרות מוצגות מכיוון שהמחבר הבסיסי תומך בהן באמצעות טריגרים ב-Power Automate.  
 
 ### <a name="delegation"></a>הקצאה
 
-הקצאה פועלת עבור הישות **לקוח** והישות **UnifiedActivity**. 
+הקצאה עובדת עבור ישות הלקוח והישות UnifiedActivity. 
 
 - הקצאה עבור הישות **לקוח**: כדי להשתמש בהקצאה עבור ישות זו, יש לסדר את השדות באינדקס ב[אינדקס חיפוש וסינון](search-filter-index.md).  
-- הקצאה ל- **UnifiedActivity**: הקצאה לישות זו פועלת רק עבור השדות **ActivityId** ו- **מספר לקוח**.  
-- משלחת עבור **ContactProfile**: הקצאה עבור ישות זו פועלת עבור **ContactId** ו- **CustomerId** בלבד. הישות ContactProfile זמינה רק בסביבות 'תובנות לגבי קהלים' עבור תיקי לקוחות עסקיים.
 
-למידע נוסף אודות הקצאה, עבור אל [פונקציות ופעולות ניתנות להקצאה של Power Apps](/powerapps/maker/canvas-apps/delegation-overview). 
+- הקצאה ל- **UnifiedActivity**: הקצאה לישות זו פועלת רק עבור השדות **ActivityId** ו- **מספר לקוח**.  
+
+- לקבלת מידע נוסף על הקצאה, ראה [פונקציות ופעולות של Power Apps שניתנות להקצאה](https://docs.microsoft.com/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps). 
 
 ## <a name="example-gallery-control"></a>פקד גלריה לדוגמה
 
-תוכל להוסיף פרופילי לקוחות ל[פקד גלריה](/powerapps/maker/canvas-apps/add-gallery).
+לדוגמה, עליך להוסיף פרופילי לקוחות אל [פקד גלריה](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-gallery).
 
 1. הוסף פקד **גלריה** ליישום שאתה בונה.
 
+> [!div class="mx-imgBorder"]
+> ![הוסף רכיב גלריה](media/connector-powerapps9.png "הוסף רכיב גלריה")
+
+1. בחר **לקוח** בתור מקור הנתונים לפריטים.
+
     > [!div class="mx-imgBorder"]
-    > ![הוסף רכיב גלריה.](media/connector-powerapps9.png "הוסף רכיב גלריה.")
+    > ![בחר מקור נתונים](media/choose-datasource-powerapps.png "בחר מקור נתונים")
 
-2. בחר **לקוח** בתור מקור הנתונים לפריטים.
+1. אתה יכול לשנות את לוח הנתונים בצד ימין כדי לבחור איזה שדה להציג עבור יישות הלקוח בגלריה.
 
-    > [!div class="mx-imgBorder"]
-    > ![בחר מקור נתונים.](media/choose-datasource-powerapps.png "בחר מקור נתונים.")
+1. אם ברצונך להציג בגלריה שדה כלשהו מהלקוח שנבחר, הזן את מאפיין הטקסט של תווית: **{Name_of_the_gallery}.Selected.{property_name}**
 
-3. אתה יכול לשנות את לוח הנתונים בצד ימין כדי לבחור איזה שדה להציג עבור יישות הלקוח בגלריה.
+    דוגמה: Gallery1.Selected.address1_city
 
-4. אם ברצונך להציג בגלריה שדה כלשהו מהלקוח שנבחר, הזן את מאפיין ה **טקסט** של תווית באמצעות **{Name_of_the_gallery}.Selected.{property_name}**  
-    - לדוגמה: _Gallery1.Selected.address1_city_
+1. כדי להציג את ציר הזמן המאוחד עבור לקוח, הוסף רכיב גלריה והוסף את מאפיין הפריטים: **Filter('UnifiedActivity', CustomerId = {Customer_Id})**
 
-5. כדי להציג את ציר הזמן המאוחד עבור לקוח, הוסף רכיב גלריה והוסף את המאפיין **פריטים** באמצעות **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
-    - לדוגמה: _Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+    דוגמה: Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)

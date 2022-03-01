@@ -4,26 +4,26 @@ description: קבל מידע נוסף על האזורים והמיקומים ה�
 author: mkisel11
 ms.reviewer: mhart
 ms.author: mkisel
-ms.date: 09/28/2021
+ms.date: 09/01/2021
 ms.service: customer-insights
 ms.topic: article
 ms.manager: shellyha
-ms.openlocfilehash: 82591919b44eaac8a251d7fdb148253d5cac23c3
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: c89637cbbe6626f95bcadb1f69831a1647f448a4
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645402"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483298"
 ---
 # <a name="regional-availability-for-dynamics-365-customer-insights"></a>זמינות אזורית עבור Dynamics 365 Customer Insights
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-תובנות לגבי מעורבות, יכולת של Dynamics 365 Customer Insights, מוסיפה בהדרגה אזורים נוספים שבהם לקוחות יכולים לבחור לאחסן את הנתונים שלהם. מנהלי מערכת יכולים לבחור אזור בעת [יצירת סביבה חדשה](create-new-environment.md). 
+תובנות לגבי מעורבות, יכולת של Dynamics 365 Customer Insights, מוסיפה בהדרגה אזורים נוספים שבהם לקוחות יכולים לבחור לאחסן את הנתונים שלהם. מנהלי מערכת יכולים לבחור אזור בעת [יצירת סביבה חדשה](manage-environments-workspaces.md#create-an-environment). 
 
-כאשר אתה מגדיר תובנות לגבי מעורבות בפעם הראשונה, באפשרותך לבחור את האזור בעת [חוויית ההפעלה הראשונה המודרכת](quickstart.md). בהמשך, כל סביבה חדשה תאפשר לך לבחור את האזור שבו יאוחסנו הנתונים.
+כאשר אתה מגדיר תובנות לגבי מעורבות בפעם הראשונה, באפשרותך לבחור את האזור בעת [חוויית ההפעלה הראשונה המודרכת](quickstart.md). לאחר מכן, כל סביבה חדשה תאפשר לך לבחור את האזור שבו יאוחסנו הנתונים.
 
-לעת אתה אנחנו תומכים באזורים הגיאוגרפיים של ארה"ב ואירופה. משתמשים יכולים לבחור בין אזורים אלה: מערב ארה"ב, מזרח ארה"ב, צפון אירופה ומערב אירופה.
+נכון לעכשיו יש שני מיקומים גיאוגרפיים: ארה"ב ואירופה. משתמשים יכולים לבחור בין אזור מערב ארה"ב לאזור צפון אירופה.
 
 ארגון יכול לשמור על סביבות באזורים שונים. לדוגמה, סביבה א' מאחסנת נתונים במערב ארה"ב וסביבה ב' בצפון אירופה.
 

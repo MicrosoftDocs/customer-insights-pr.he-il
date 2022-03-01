@@ -2,30 +2,8 @@
   href: index.yml
 - name: סקירת מוצר
   href: overview.md
-- name: קטלוג למידה
-  items:
-    - name: התחל בעבודה
-      href: /learn/modules/get-started-customer-data-platform/
-    - name: קליטת נתונים
-      href: /learn/modules/ingest-data-customer-insights/
-    - name: מהו פרופיל לקוח מאוחד
-      href: /learn/modules/unified-customer-profile/
-    - name: עבוד עם תובנות לגבי קהלים
-      href: /learn/modules/working-with-customer-insights/
-    - name: העשרה של נתונים וחיזוי
-      href: /learn/modules/enrich-data/
-    - name: נהל קשרים חיצוניים
-      href: /learn/modules/configure-third-party-connections/
-    - name: ניהול Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
-- name: גירסת ניסיון ללא תשלום
-  items:
-    - name: הירשם לקבלת גירסת ניסיון ללא תשלום
-      href: trial-signup.md
-    - name: שאלות נפוצות בנושא גירסת הניסיון
-      href: trial-FAQ.md
-- name: התחל עם רישיון בתשלום
-  href: paid-license.md
+- name: יצירת גירסת ניסיון
+  href: audience-insights/get-started-trial.md
 - name: קבלת גישה לסביבה שלך
   href: 'https://home.ci.ai.dynamics.com/'
 - name: תובנות לגבי קהלים
@@ -41,16 +19,24 @@
         - name: מדריך התחלה מהירה
           href: audience-insights/get-started.md
         - name: יצירת סביבה חדשה
-          href: audience-insights/create-environment.md
+          href: audience-insights/get-started-paid.md
         - name: סיור בתובנות לגבי קהלים
           href: audience-insights/home.md
-    - name: עבודה עם חשבונות עסקיים
-      href: audience-insights/work-with-business-accounts.md
+    - name: למד מודולים
+      items:
+        - name: קליטת נתונים
+          href: /learn/modules/ingest-data-customer-insights/
+        - name: מהו פרופיל לקוח מאוחד
+          href: /learn/modules/unified-customer-profile/
+        - name: עבודה עם האפליקציה
+          href: /learn/modules/working-with-customer-insights/
+        - name: העשרת נתונים וחיזויים
+          href: /learn/modules/enrich-data/
     - name: מקורות נתונים
       items:
         - name: מבט כולל על מקורות נתונים
           href: audience-insights/data-sources.md
-        - name: הוסף מקורות נתונים באמצעות מחברי Power Query
+        - name: הוסף מקורות נתונים דרך מחברי Power Query
           href: audience-insights/connect-power-query.md
         - name: הוסף תיקיית Common Data Model כמקור נתונים
           href: audience-insights/connect-common-data-model.md
@@ -80,18 +66,14 @@
           href: audience-insights/relationships.md
         - name: רשימת הפעילויות של הלקוח
           href: audience-insights/activities.md
-        - name: הגדרת מיפויים סמנטיים
-          href: audience-insights/semantic-mappings.md
     - name: העשרת נתונים
       items:
         - name: העשרת פרופילי לקוחות
           href: audience-insights/enrichment-hub.md
-        - name: מותגים ותחומי עניין
+        - name: קירבות למותג ולתחומי עניין
           href: audience-insights/enrichment-microsoft.md
         - name: כתובות משופרות
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: נתוני חברה משופרים
-          href: audience-insights/enrichment-enhanced-company-data.md
         - name: העשר עם Azure Maps
           href: audience-insights/enrichment-azure-maps.md
         - name: העשרה בעזרת HERE Technologies
@@ -100,8 +82,6 @@
           href: audience-insights/enrichment-leadspace.md
         - name: העשרה עם Experian
           href: audience-insights/enrichment-experian.md
-        - name: העשרה עם נתוני Office 365
-          href: audience-insights/enrichment-office.md
         - name: העשרה עם ייבוא מותאם אישית של SPTF
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: פלחי שוק
@@ -134,10 +114,8 @@
               href: audience-insights/predict-product-recommendation.md
             - name: חיזוי נטישת מנויים
               href: audience-insights/predict-subscription-churn.md
-            - name: חיזוי נטישה של עסקאות
+            - name: חיזוי של נטישת מנויים
               href: audience-insights/predict-transactional-churn.md
-            - name: נתח סנטימנט במשוב לקוחות
-              href: audience-insights/sentiment-analysis.md
             - name: השתמש במודלים מותאמים אישית מלמידת מכונה של Azure
               href: audience-insights/custom-models.md
             - name: השלם נתונים חסרים חלקית
@@ -154,6 +132,8 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: ניסויים עם למידת מכונה של Azure
               href: audience-insights/azure-machine-learning-experiments.md
+            - name: ניסויים עם Azure Machine Learning Studio
+              href: audience-insights/machine-learning-studio-experiments.md
         - name: ניהול חיזויים
           href: audience-insights/manage-predictions.md
         - name: יצירת פלחי שוק על בסיס חיזויים
@@ -170,11 +150,11 @@
               href: audience-insights/export-adroll.md
             - name: Autopilot
               href: audience-insights/export-autopilot.md
-            - name: אחסון Blob של Azure‬
+            - name: Azure Blob Storage
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage Gen2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: ‏‏Azure Synapse Analytics
+            - name: Azure Synapse Analytics
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
@@ -242,14 +222,10 @@
           href: audience-insights/connections.md
         - name: ניהול סביבות מרובות
           href: audience-insights/manage-environments.md
-        - name: אבטחה
-          items:
-            - name: הבא Key Vault משלך
-              href: audience-insights/use-azure-key-vault.md
-            - name: התחברות לחשבון אחסון ADLS באמצעות מנהל שירות
-              href: audience-insights/connect-service-principal.md
-            - name: ייצוא יומני אבחון
-              href: audience-insights/diagnostics.md
+        - name: התחברות לחשבון אחסון ADLS באמצעות מנהל שירות
+          href: audience-insights/connect-service-principal.md
+        - name: שפות נתמכות
+          href: audience-insights/supported-languages.md
     - name: יכולת הרחבה
       items:
         - name: שלב נתוני אינטרנט מתובנות לגבי מעורבות
@@ -262,52 +238,16 @@
           href: audience-insights/apis.md
         - name: הפניות API
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-- name: ניהול הסכמה (Preview)
-  items:
-    - name: מרכז העזרה
-      href: consent-management/index.yml
-    - name: מבט כולל על יכולת
-      href: consent-management/overview.md
-    - name: התחל בעבודה
-      items:
-        - name: התחל בעבודה
-          href: consent-management/get-started.md
-        - name: מושגים וטרמינולוגיה
-          href: consent-management/glossary.md
-    - name: ייבוא נתוני הסכמה
-      items:
-        - name: ייבוא נתוני הסכמה
-          href: consent-management/import-consent-data.md
-        - name: הגדרת נתוני הסכמה והחלת העדפות הסכמה
-          href: consent-management/set-consent-rules.md
-    - name: ניהול נתוני הסכמה
-      items:
-        - name: הפיכת כללי הסכמה לזמינים בתובנות לגבי קהלים
-          href: audience-insights/activate-consent.md
-        - name: נהל כללי הסכמה המהווים ברירת מחדל בפלחי תובנות לגבי קהלים
-          href: audience-insights/change-default-consent-rules.md
-    - name: ניהול הגדרות ומשתמשים
-      items:
-        - name: קביעת תצורה של הגדרות מערכת
-          href: consent-management/system-settings.md
-        - name: ניהול משתמשים והרשאות
-          href: consent-management/manage-users.md
-    - name: שימוש בנתוני הסכמה
-      items:
-        - name: יצירת חיזויים עם נתוני הסכמה
-          href: consent-management/predictions-consent-data.md
 - name: תובנות לגבי מעורבות (Preview)
   items:
     - name: מרכז העזרה
       href: engagement-insights/index.yml
-    - name: אודות תובנות לגבי מעורבות
+    - name: מבט כולל על יכולת
       href: engagement-insights/overview.md
     - name: התחל בעבודה
       items:
         - name: מדריך התחלה מהירה
           href: engagement-insights/get-started.md
-        - name: יצירת סביבה
-          href: engagement-insights/create-new-environment.md
         - name: יצירת סביבת עבודה
           href: engagement-insights/create-workspace.md
         - name: לכוד אירועים מאתרים ומאפליקציות למכשירים ניידים
@@ -366,7 +306,7 @@
           href: engagement-insights/user-consent-storage.md
     - name: זמינות אזורית
       href: engagement-insights/regional-availability.md
-- name: שתף נתונים בין יכולות
+- name: שלב תובונת קהל ותובנות מעורבות
   items:
     - name: קישור תובנות קהל ותובנות מעורבות
       href: engagement-insights/integrate-audience-insights-engagement-insights.md
@@ -379,4 +319,4 @@
 - name: זכויות ובקשות של DSR
   href: dsr-rights-requests.md
 - name: קבל תמיכה
-  href: /power-platform/admin/get-help-support
+  href: 'https://dynamics.microsoft.com/support/'

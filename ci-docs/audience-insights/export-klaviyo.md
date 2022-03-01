@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights ל-Klaviyo
 description: למד כיצד להגדיר את החיבור ולייצא ל-Klaviyo.
-ms.date: 10/08/2021
+ms.date: 08/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5f7c91afed8eeb1f767f1efc58dceb7782c37bb4
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 7c1297fd5381c00c07d6501186c51fe4798773d1
+ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7619074"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7385789"
 ---
 # <a name="export-segment-lists-to-klaviyo-preview"></a>ייצוא רשימות פלחים ל- Klaviy (תצוגה מקדימה)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7619074"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- באפשרותך לייצא עד 100,000 פרופילי לקוחות לכל ייצוא אל Klaviyo.
+- תוכל לייצא עד 100'000 פרופילים לכל יצוא ל-Klaviyo.
 - הייצוא ל-Klaviyo מוגבל לפלחים.
-- ייצוא של עד מיליון פרופילי לקוחות אל Klaviyo עשוי להימשך עד 20 דקות. 
-- מספר פרופילי הלקוחות שתוכל לייצא אל Klaviyo תלוי בחוזה שלך עם Klaviyo ומוגבל בהתאם לתנאיו.
+- השלמת ייצוא של עד מיליון פרופילים ל-Klaviyo יכולה להימשך עד 20 דקות. 
+- מספר הפרופילים שתוכל לייצא ל-Klaviyo תלוי בחוזה שלך עם Klaviyo ומוגבל על ידו.
 
 ## <a name="set-up-connection-to-klaviyo"></a>הגדרת חיבור ל-Klaviyo
 
@@ -67,7 +67,7 @@ ms.locfileid: "7619074"
 
 1. הזן את [**מזהה רשימת Klaviyo**](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID) שלך.     
 
-3. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. זה נדרש כדי לייצא פלחים ל-Klaviyo.
+3. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. זה נדרש כדי לייצא פלחים ל-Klaviyo.
 
 1. בחר **שמור**.
 

@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights אל Constant Contact
 description: למד כיצד להגדיר את החיבור ולייצא אל Constant Contact.
-ms.date: 10/08/2021
+ms.date: 03/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b25e4f11e21d059c2d867e925c0ae5635a87addc
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 3a9372cc4ffa4fb112a96b1286aee9dc35059a50
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7619120"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760541"
 ---
-# <a name="export-segments-to-constant-contact-preview"></a>ייצוא פלחים אל Constant Contact‏ (Preview)
+# <a name="export-segment-lists-to-constant-contact-preview"></a>ייצוא רשימות פלחים אל Constant Contact‏ (Preview)
 
 יצא פלחים של פרופילי לקוחות מאוחדים אל Constant Contact והשתמש בהם עבור פעילויות שיווק. 
 
@@ -28,10 +28,10 @@ ms.locfileid: "7619120"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- באפשרותך לייצא עד מיליון פרופילי לקוחות לכל ייצוא אל Constant Contact.
+- באפשרותך לייצא עד מיליון פרופילים לכל ייצוא אל Constant Contact.
 - הייצוא אל Constant Contact מוגבל לפלחים.
-- ייצוא של עד מיליון פרופילי לקוחות אל Constant Contact עשוי להימשך עד שעה אחת. 
-- מספר פרופילי הלקוחות שתוכל לייצא אל Constant Contact תלוי בחוזה שלך עם Constant Contact ומוגבל בהתאם לתנאיו.
+- ייצוא של עד מיליון פרופילים ל- Constant Contact יכול להימשך עד שעה אחת. 
+- מספר הפרופילים שבאפשרותך לייצא ל- Constant Contact תלוי ומוגבל בחוזה שלך עם Constant Contact.
 
 ## <a name="set-up-connection-to-constant-contact"></a>הגדרת חיבור ל- Constant Contact
 
@@ -47,7 +47,7 @@ ms.locfileid: "7619120"
 
 1. בחר **התחבר** כדי לאתחל את החיבור ל- Constant Contact.
 
-1. בחר **אימות באמצעות Constant Contact** וספק את אישורי מנהל המערכת עבור Constant Contact. 
+1. בחר **אימות באמצעות AdRoll** וספק את אישורי מנהל המערכת שלך עבור Constant Contact. 
 
 1. בחר **הוסף את עצמך כמשתמש ייצוא** וספק את אישורי Customer Insights שלך.
 
@@ -65,7 +65,7 @@ ms.locfileid: "7619120"
 
 1. הזן את [**מזהה הרשימה של Constant Contact שלך**](https://app.constantcontact.com/pages/contacts/ui#lists). פתח רשימה ב- Constant Contact כדי למצוא את מזהה הרשימה בכתובת ה- URL.
 
-1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. יש לייצא פלחים אל Constant Contact.
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. יש לייצא פלחים אל Constant Contact.
 
 1. אם תרצה בכך, תוכל לייצא את שם פרטי ושם משפחה כשדות נוספים כדי ליצור הודעות דוא"ל מותאמות אישית יותר. בחר **הוסף תכונה** כדי למפות שדות אלה.
 

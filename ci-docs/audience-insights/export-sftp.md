@@ -1,5 +1,5 @@
 ---
-title: ייצוא נתוני Customer Insights אל מארחי SFTP (מכיר סרטון)
+title: ייצוא נתוני Customer Insights אל מארחי SPTF
 description: למד כיצד להגדיר את החיבור ולייצא אל מיקום SFTP.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -9,18 +9,16 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 542bd908010cf0a8ccc12f15d54e0a3d5b72f189
-ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
+ms.openlocfilehash: b19ca6b8085846785682046f83d0ed4758269e5b98303692c703d995407ca7dd
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7934888"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035462"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>ייצוא פלחים ונתונים אחרים אל SFTP‏ (Preview)
 
 השתמש בנתוני הלקוחות שלך ביישומי צד שלישי על-ידי ייצוא שלהם למיקום Secure File Transfer Protocol‏ (SFTP).
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
 
 ## <a name="prerequisites-for-connection"></a>דרישות מוקדמות לחיבור
 
@@ -28,7 +26,6 @@ ms.locfileid: "7934888"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- יעדי SFTP מאחורי חומות אש אינם נתמכים כרגע. 
 - זמן הריצה של ייצוא תלוי בביצועי המערכת שלך. מומלץ שתי ליבות CPU וזיכרון של 1‎ GB כתצורה מינימלית עבור השרת שלך. 
 - ייצוא ישויות עם עד 100 מיליון פרופילי לקוחות יכול להימשך 90 דקות בעת שימוש בתצורה המינימלית המומלצת של שתי ליבות CPU וזיכרון של 1‎ GB. 
 

@@ -1,20 +1,20 @@
 ---
 title: מחבר Power BI
 description: למד איך להשתמש במחבר Dynamics 365 Customer Insights ב- Power BI.
-ms.date: 07/23/2021
-ms.reviewer: mhart
+ms.date: 09/21/2020
+ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: a0ca431dbea839fe271cf3a512cd3a5dde6d920d396056e91b33bcf7ed84272a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: d497ca779a337c512a7254524f597cff226bcb45
+ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035508"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4405869"
 ---
 # <a name="connector-for-power-bi-preview"></a>Connector עבור Power BI (תצוגה מקדימה)
 
@@ -23,7 +23,7 @@ ms.locfileid: "7035508"
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
 - יש לך פרופילי לקוחות מאוחדים.
-- הגירסה האחרונה של [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) מותקנת במחשב שלך. [למד עוד על Power BI Desktop](/power-bi/desktop-what-is-desktop).
+- הגרסה האחרונה של [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) מותקנת במחשב שלך. [למד עוד על Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-what-is-desktop).
 
 ## <a name="configure-the-connector-for-power-bi"></a>קביעת תצורת המחבר עבור Power BI
 
@@ -31,7 +31,7 @@ ms.locfileid: "7035508"
 
 1. בחר **הצג יותר** וחפש את **Dynamics 365 Customer Insights**.
 
-1. בחר **התחבר**.
+1. בחר את התוצאה ובחר **התחבר**.
 
 1. **התחבר** עם אותו חשבון ארגוני שבו אתה משתמש עבור Customer Insights ובחר **התחבר**.
    > [!NOTE]
@@ -39,7 +39,7 @@ ms.locfileid: "7035508"
 
 1. בתיבת הדו-שיח **Navigator**. אתה רואה את רשימת הסביבות שיש לך גישה אליהן. הרחב סביבה ופתח כל אחת מהתיקיות (ישויות, מדידות, פלחים, העשרות). לדוגמה, פתח את התיקיה **ישויות** כדי לראות את כל הישויות שאתה יכול לייבא.
 
-   ![נווט במחבר Power BI.](media/power-bi-navigator.png "נווט במחבר Power BI")
+   ![נווט במחבר Power BI](media/power-bi-navigator.png "נווט במחבר Power BI")
 
 1. בחר את תיבות הסימון לצד הישויות שיש לכלול ו **טען**. באפשרותך לבחור ישויות מרובות מכמה סביבות.
 
@@ -47,32 +47,8 @@ ms.locfileid: "7035508"
 
 ## <a name="large-data-sets"></a>ערכות נתונים גדולות
 
-מחבר Customer Insights עבור Power BI נועד לעבוד עבור ערכות נתונים המכילות עד מיליון פרופילי לקוחות. ייבוא של ערכות נתונים גדולות יותר עשוי לעבוד, אך זה לוקח זמן רב. בנוסף, התהליך עלול להיקלע לפסק זמן בגלל מגבלות של Power BI. למידע נוסף ראה [Power BI: המלצות לערכות נתונים גדולות](/power-bi/admin/service-premium-what-is#large-datasets). 
+מחבר Customer Insights עבור Power BI נועד לעבוד עבור ערכות נתונים המכילות עד מיליון פרופילי לקוחות. ייבוא של ערכות נתונים גדולות יותר עשוי לעבוד, אך זה לוקח זמן רב. בנוסף, התהליך עלול להיקלע לפסק זמן בגלל מגבלות של Power BI. למידע נוסף ראה [Power BI: המלצות לערכות נתונים גדולות](https://docs.microsoft.com/power-bi/admin/service-premium-what-is#large-datasets). 
 
 ### <a name="work-with-a-subset-of-data"></a>עבוד עם קבוצת משנה של נתונים
 
 שקול לעבוד עם ערכת משנה של הנתונים שלך. לדוגמה, באפשרותך ליצור [פלחים](segments.md) במקום לייצא את כל רשומות הלקוחות אל Power BI.
-
-## <a name="troubleshooting"></a>פתרון בעיות
-
-### <a name="customer-insights-environment-doesnt-show-in-power-bi"></a>סביבת Customer Insights לא מוצגת ב- Power BI
-
-סביבות שיש להן יותר מ[קשר](relationships.md) אחד מוגדר בין שתי ישויות זהות ב- audience insights לא יהיו זמינות במחבר Power BI.
-
-באפשרותך לזהות ולהסיר את הקשרים הכפולים.
-
-1. ב- audience insights, עבור אל **נתונים** > **קשרים** בסביבה שחסרה לך ב- Power BI.
-2. זהה קשרים כפולים:
-   - בדוק אם יש יותר מקשר אחד המוגדר בין אותן שתי ישויות.
-   - בדוק אם נוצר קשר בין שתי ישויות שנכללות שתיהן בתהליך האיחוד. יש קשר משתמע המוגדר בין כל הישויות הנכללות בתהליך האיחוד.
-3. הסר כל קשר כפול שזוהה.
-
-לאחר הסרת הקשרים הכפולים, נסה לקבוע שוב את תצורת מחבר Power BI. הסביבה צריכה להיות זמינה כעת.
-
-### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>שגיאות בשדות תאריך בעת טעינת ישויות ב- Power BI Desktop
-
-בעת טעינת ישויות המכילות שדות עם תבנית תאריך כמו MM/DD/YYYY, אתה עשוי להיתקל בשגיאות עקב תבניות לא נכונות של אזור. חוסר התאמה זה קורה כאשר קובץ Power BI Desktop מוגדר לאזור שאינו אנגלית (ארצות הברית), מכיוון ששדות תאריכים בתובנות לגבי קהלים נשמרים בתבנית של ארה"ב.
-
-בקובץ Power BI Desktop יש הגדרת אזור אחת, המיושמת בעת אחזור נתונים. כדי לפרש שדות תאריכים אלה כראוי, הגדר את המיקום של קובץ ‎.BPI לאנגלית (ארצות הברית). [למד כיצד ניתן לשנות את האזור של קובץ Power BI Desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
