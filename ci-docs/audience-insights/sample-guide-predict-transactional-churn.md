@@ -2,27 +2,27 @@
 title: מדריך לדוגמה לחיזוי נטישה של עסקאות
 description: השתמש במדריך לדוגמה זה כדי לנסות את המודל לחיזוי נטישה של עסקאות המוכן לשימוש.
 ms.date: 11/19/2020
-ms.reviewer: mhart
+ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 19befa17524aba4543f0d8a5f5f7d6f5a88b2322f1264b88fa0b31641610592a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 81540ad2f490cf566f031233543b3cb6aa838033
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7029446"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269791"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>מדריך לדוגמה לחיזוי נטישה של עסקאות (מהדורת Preview)
 
-מדריך זה ינחה אותך וידגים דוגמה מקצה לקצה של חיזוי נטישה של עסקאות ב- Customer Insights באמצעות הנתונים המפורטים להלן. כל הנתונים הנמצאים בשימוש במדריך זה אינם נתוני לקוחות אמיתיים והם חלק מערכת הנתונים של Contoso שנמצא בסביבה *לדוגמה* במנוי Customer Insights שלך.
+מדריך זה ינחה אותך וידגים דוגמה מקצה לקצה של חיזוי נטישה של עסקאות ב- Customer Insights באמצעות הנתונים המפורטים להלן. כל הנתונים המופיעים במדריך זה אינם נתונים אמיתיים של לקוחות והם חלק מערכת נתונים של Contoso הנמצאת בסביבת *הדגמה* במנוי Customer Insights שלך.
 
 ## <a name="scenario"></a>תרחיש
 
-Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות גבוהה, ומוכרת אותם באמצעות אתר האינטרנט Contoso Coffee. מטרת החברה היא לדעת אילו לקוחות, שבדרך כלל רוכשים את המוצרים שלהם על בסיס קבוע, יפסיקו להיות לקוחות פעילים ב- 60 הימים הקרובים. הידיעה מי מהלקוחות **עשוי לנטוש**, יכולה לעזור לה לחסוך מאמצים שיווקיים על-ידי התמקדות בשימור הלקוחות.
+Contoso היא חברה המייצרת קפה איכותי ומכונות קפה, שאותם היא מוכרת דרך האתר שלה Contoso Coffee. מטרת החברה היא לדעת אילו לקוחות, שבדרך כלל רוכשים את המוצרים שלהם על בסיס קבוע, יפסיקו להיות לקוחות פעילים ב- 60 הימים הקרובים. הידיעה מי מהלקוחות **עשוי לנטוש**, יכולה לעזור לה לחסוך מאמצים שיווקיים על-ידי התמקדות בשימור הלקוחות.
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
@@ -46,7 +46,8 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
    - **DateOfBirth**: תאריך
    - **CreatedOn**: תאריך/שעה/אזור
 
-   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="המרת תאריך הלידה לתאריך.":::
+   [!div class="mx-imgBorder"]
+   ![המרת תאריך הלידה לתאריך](media/ecommerce-dob-date.PNG "המרת תאריך הלידה לתאריך")
 
 1. בשדה **שם** בחלונית הימנית, שנה את שם מקור נתונים שלך מ **שאילתה** ל- **eCommerceContacts**
 
@@ -108,9 +109,9 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
 
 1. עבור אל הכרטיסיה **התאמה** ובחר **הגדר סדר**.
 
-1. בתפריט הנפתח **ראשי**, בחר **eCommerceContacts : ‏eCommerceContacts** כמקור העיקרי וכלול את כל הרשומות.
+1. ברשימה הנפתחת **ראשי**, בחר **eCommerceContacts : eCommerce** כמקור הראשי וכלול את כל הרשומות.
 
-1. ברשימה הנפתחת **ישות 2**, בחר **LoyaltyScheme : ‏loyCustomers** וכלול את כל הרשומות.
+1. ברשימה הנפתחת **ישות 2**, בחר **loyCustomers : LoyaltyScheme** וכלול את כל הרשומות.
 
    :::image type="content" source="media/unify-match-order.PNG" alt-text="איחוד התאמה של eCommerce ו- Loyalty.":::
 
@@ -118,16 +119,16 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
 
 1. הוסף את התנאי הראשון שלך באמצעות FullName.
 
-   * עבור eCommerceContacts בחר **FullName** בתפריט הנפתח.
-   * עבור loyCustomers בחר **FullName** בתפריט הנפתח.
+   * עבור eCommerceContacts בחר **FullName** ברשימה הנפתחת.
+   * עבור loyCustomers בחר **FullName** ברשימה הנפתחת.
    * בחר את הרשימה הנפתחת **נרמל** ובחר **סוג (טלפון, שם, כתובת, ...)**.
    * הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
 
 1. הזן את השם **FullName, Email** עבור הכלל החדש.
 
    * הוסף תנאי שני לכתובת הדואר האלקטרוני על-ידי בחירה **הוסף תנאי**
-   * עבור הישות eCommerceContacts, בחר **דואר אלקטרוני** בתפריט הנפתח.
-   * עבור הישות loyCustomers, בחר **דואר אלקטרוני** בתפריט הנפתח. 
+   * לישות eCommerceContacts, בחר **דואר** ברשימה הנפתחת.
+   * לישות loyCustomers, בחר **דואר** ברשימה הנפתחת. 
    * השאר את השדה 'נרמל' ריק. 
    * הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
 

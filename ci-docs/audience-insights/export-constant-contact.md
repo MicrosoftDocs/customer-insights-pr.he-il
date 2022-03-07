@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3a9372cc4ffa4fb112a96b1286aee9dc35059a50
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 30dfe4d6c2374ba9979827ea70a71c52a1334b45dd3e36ccb1de90fae0c61ad9
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760541"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7031842"
 ---
-# <a name="export-segment-lists-to-constant-contact-preview"></a>ייצוא רשימות פלחים אל Constant Contact‏ (Preview)
+# <a name="export-segments-to-constant-contact-preview"></a>ייצוא פלחים אל Constant Contact‏ (Preview)
 
 יצא פלחים של פרופילי לקוחות מאוחדים אל Constant Contact והשתמש בהם עבור פעילויות שיווק. 
 
@@ -47,7 +47,7 @@ ms.locfileid: "5760541"
 
 1. בחר **התחבר** כדי לאתחל את החיבור ל- Constant Contact.
 
-1. בחר **אימות באמצעות AdRoll** וספק את אישורי מנהל המערכת שלך עבור Constant Contact. 
+1. בחר **אימות באמצעות Constant Contact** וספק את אישורי מנהל המערכת עבור Constant Contact. 
 
 1. בחר **הוסף את עצמך כמשתמש ייצוא** וספק את אישורי Customer Insights שלך.
 

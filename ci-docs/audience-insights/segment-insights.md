@@ -5,16 +5,16 @@ ms.date: 06/10/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: JimsonChalissery
-ms.author: jimsonc
-ms.reviewer: mhart
+author: m-hartmann
+ms.author: mhart
+ms.reviewer: jimsonc
 manager: shellyha
-ms.openlocfilehash: 1f90b0d18331584fce306da38bd31faea93ef97e
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: d731d21462b5a31aba0653f87e299d98373bbf49
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732313"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270021"
 ---
 # <a name="segment-insights-preview"></a>תובנות על פלחים (Preview)
 
@@ -44,13 +44,13 @@ ms.locfileid: "7732313"
 לאחר השלמת הניתוח, מצא פרטים על תובנה זו בחלק **פלחים** > **תובנות (Preview)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-overlap.png" alt-text="פרטי תובנות על חפיפה בין פלחים.":::
+> :::image type="content" source="media/segment-overlap.png" alt-text="פרטי תובנות על חפיפה בין פלחים":::
 
 בחר תובנה כדי לראות את תוצאות הניתוח:
 
 - מספר החברים החופפים בפלחים שנבחרו לניתוח.
 - מספר החברים הכלולים באחד הפלחים אך לא בשאר הפלחים.
-- אם בחרת שדות בעת קביעת התצורה של ניתוח החפיפה, תמצא אותם בכרטיסיות המתאימות. אתה יכול להשתמש ב‏‫רשימה נפתחת של מסנן כדי לבחור כל רמת עניין של תכונה והטבלה בתחתית תציג את הנתונים המתאימים.
+- אם בחרת שדות בעת קביעת התצורה של ניתוח החפיפה, תמצא אותם בכרטיסיות המתאימות. אתה יכול להשתמש בתפריט הנפתח כדי לסנן ולבחור כל תכונה של תחום עניין והטבלה בתחתית תציג את הנתונים המתאימים.
 
 ## <a name="segment-differentiators"></a>גורמים מבדילים של פלחי שוק
 
@@ -77,7 +77,7 @@ ms.locfileid: "7732313"
 לאחר השלמת הניתוח, מצא פרטים על תובנה זו בחלק **פלחים** > **תובנות (Preview)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-differentiators.png" alt-text="פרטי תובנות על הבדלים בין פלחים.":::
+> :::image type="content" source="media/segment-differentiators.png" alt-text="פרטי תובנות על הבדלים בין פלחים":::
 
 בחר תובנה כדי לראות את תוצאות הניתוח. ניתוח הבדלים כולל שתי כרטיסיות. הכרטיסיה **תכונות** מציגה תכונות פרופיל שנחשבות כמבדלות. הכרטיסיה **מדדים** מציגה גורמים מבדילים. כל כרטיסיה כוללת את הפרטים הבאים:
 

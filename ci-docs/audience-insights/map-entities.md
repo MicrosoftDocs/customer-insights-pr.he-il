@@ -4,17 +4,17 @@ description: מפה נתונים כדי ליצור פרופילי לקוחות �
 ms.date: 09/25/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: adkuppa
+ms.topic: tutorial
+author: adkuppa
+ms.author: adkuppa
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: e98c7717f7707d43a9fd1fc6f6b0e9c49e4e7ee0
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 36b7f7b2fac9497245cf6759506c53753972f173
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405901"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595994"
 ---
 # <a name="map-entities-and-attributes"></a>מיפוי ישויות ותכונות
 
@@ -102,3 +102,6 @@ ms.locfileid: "4405901"
 
 > [!TIP]
 > בדוק את הווידאו הבא [: תחילת העבודה: יצירת פרופיל לקוח מאוחד](https://youtu.be/oBfGEhucAxs).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

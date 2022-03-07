@@ -9,21 +9,21 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692114"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267723"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>התחברות לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure עבור audience insights
 
 כלים אוטומטיים המשתמשים בשירותי Azure צריכים תמיד להיות בעלי הרשאות מוגבלות. במקום כניסה ליישומים כמשתמש בעל הרשאות מלאות, Azure מספק מנהלי שירות. המשך לקרוא כדי ללמוד כיצד לחבר את audience insights לחשבון Azure Data Lake Storage Gen2 באמצעות מנהל שירות של Azure במקום מפתחות של חשבון אחסון. 
 
-באפשרותך להשתמש במנהל השירות כדי [להוסיף או לערוך תיקיית Common Data Model כמקור נתונים](connect-common-data-model.md) או [ליצור סביבה חדשה או לעדכן סביבה קיימת](get-started-paid.md) באופן מאובטח.
+באפשרותך להשתמש במנהל השירות כדי [להוסיף או לערוך תיקיית Common Data Model כמקור נתונים](connect-common-data-model.md) או [ליצור סביבה חדשה או לעדכן סביבה קיימת](manage-environments.md#create-an-environment-in-an-existing-organization) באופן מאובטח.
 
 > [!IMPORTANT]
-> - חשבון האחסון של Azure Data Lake Gen2 שמתכוון להשתמש במנהל השירות חייב להיות בעל [מרחב שמות הירארכי (HNS) מופעל](/azure/storage/blobs/data-lake-storage-namespace).
+> - חשבון האחסון של Azure Data Lake Gen2 שמתכוון להשתמש במנהל השירות חייב להיות בעל [מרחב שמות הירארכי (HNS) מופעל](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
 > - אתה זקוק להרשאות מנהל עבור המנוי שלך ב- Azure כדי ליצור את מנהל השירות.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>יצירת מנהל שירות של Azure עבור audience insights
@@ -48,7 +48,7 @@ ms.locfileid: "6692114"
 
 ### <a name="create-a-new-service-principal"></a>יצירת מנהל שירות חדש
 
-1. התקן את הגירסה האחרונה של **Azure Active Directory PowerShell for Graph**. לקבלת מידע נוסף, ראה [התקנת Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
+1. התקן את הגירסה האחרונה של **Azure Active Directory PowerShell for Graph**. לקבלת מידע נוסף, ראה [התקנת Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
    - במחשב שלך, בחר את מקש Windows במקלדת שלך וחפש את **Windows PowerShell** ואת **הפעל כמנהל מערכת**.
    
    - בחלון PowerShell שנפתח, הזן `Install-Module AzureAD`.
@@ -81,7 +81,7 @@ ms.locfileid: "6692114"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>הזן את מזהה משאב Azure או את פרטי מנוי Azure בקובץ המצורף לחשבון האחסון ב- Audience Insights.
 
-צרף חשבון אחסון ב- Azure Data Lake ל- Audience Insights כדי [לאחסן נתוני פלט](manage-environments.md) או [השתמש בו כמקור נתונים](connect-dataverse-managed-lake.md). הבחירה באפשרות Azure Data Lake מאפשרת לבחור בין גישה מבוססת-משאב או גישה מבוססת-מנוי.
+צרף חשבון אחסון ב- Azure Data Lake ל- Audience Insights כדי [לאחסן נתוני פלט](manage-environments.md) או [השתמש בו כמקור נתונים](connect-common-data-service-lake.md). הבחירה באפשרות Azure Data Lake מאפשרת לבחור בין גישה מבוססת-משאב או גישה מבוססת-מנוי.
 
 בצע את השלבים הבאים כדי לספק את המידע הנדרש על הגישה שנבחרה.
 

@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights אל Microsoft Advertising
 description: למד כיצד להגדיר את החיבור ולייצא אל Microsoft Advertising.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c2ac92de2718cf7f0622b407bf198a7a7e50a37b
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 12fd221acb7c0eed443c9b860aca42dcb2b3788c
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124495"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618062"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>ייצוא פלחים אל Microsoft Advertising‏ (Preview)
 
@@ -29,9 +29,9 @@ ms.locfileid: "6124495"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- באפשרותך לייצא עד 500,000 פרופילים כדי לייצא אל Microsoft Advertising.
+- באפשרותך לייצא עד 500,000 פרופילי לקוחות לכל ייצוא אל Microsoft Advertising.
 - הייצוא אל Microsoft Advertising מוגבל לפלחים.
-- ייצוא של עד 500,000 פרופילים ל- Microsoft Advertising יכול להימשך עד 10 דקות. 
+- ייצוא של עד 500,000 פרופילי לקוחות אל Microsoft Advertising עשוי להימשך עד 10 דקות. 
 
 
 ## <a name="set-up-the-connection-to-microsoft-advertising"></a>הגדרת החיבור אל Microsoft Advertising
@@ -68,7 +68,7 @@ ms.locfileid: "6124495"
 
 1. הזן את **מזהה הלקוח ומזהה החשבון של Microsoft Advertising**. באפשרותך לאתר את מזהה הלקוח (`cid`) ומזהה החשבון (`aid`) בפרמטרים של כתובת ה- URL כשאתה מחובר ל- Microsoft Advertising.
 
-1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח עם כתובת הדואר האלקטרוני של הלקוח. יש לייצא פלחים אל Microsoft Advertising.
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה עם כתובת דואר אלקטרוני של לקוח. יש לייצא פלחים אל Microsoft Advertising.
 
 1. בחר **שמור**.
 

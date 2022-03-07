@@ -1,7 +1,7 @@
 ---
 title: ייצוא נתוני Customer Insights ל- Sendinblue
 description: למד כיצד להגדיר את החיבור ולייצא ל- Sendinblue.
-ms.date: 10/08/2021
+ms.date: 06/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b5924b2d4e7f0b11ce6478a31015fcbaaf44ff93
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: be52554763b57e1c1ef2f960d52bbae79ac9827913c97ac73b429f66bbf4db37
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617786"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036056"
 ---
 # <a name="export-segments-to-sendinblue-preview"></a>ייצוא פלחים ל- Sendinblue‏ (Preview)
 
@@ -29,10 +29,10 @@ ms.locfileid: "7617786"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- עד מיליון פרופילי לקוחות לייצוא אל Sendinblue.
+- עד מיליון פרופילים לכל ייצוא ל- Sendinblue.
 - הייצוא ל- Sendinblue מוגבל לפלחים.
-- ייצוא פלחים עם מספר כולל של מיליון פרופילי לקוחות עשוי להימשך עד 90 דקות. 
-- מספר פרופילי הלקוחות שתוכל לייצא אל Sendinblue תלוי בחוזה שלך עם Sendinblue ומוגבל בהתאם לתנאיו.
+- ייצוא פלחים עם סך של מיליון פרופילים יכול להימשך עד 90 דקות. 
+- מספר הפרופילים שתוכל לייצא ל- Sendinblue תלוי בחוזה שלך עם Sendinblue ומגבל על ידו.
 
 ## <a name="set-up-connection-to-sendinblue"></a>הגדרת חיבור ל- Sendinblue
 
@@ -64,7 +64,7 @@ ms.locfileid: "7617786"
 
 1. הזן את **מזהה רשימת Sendinblue** שלך 
 
-1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. 
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. 
 
 1. לחלופין, אתה יכול לייצא **שם פרטי**, **שם משפחה** ו **טלפון** ליצירת הודעות דואר אלקטרוני מותאמות אישית יותר. בחר **הוסף תכונה** כדי למפות שדות אלה.
 

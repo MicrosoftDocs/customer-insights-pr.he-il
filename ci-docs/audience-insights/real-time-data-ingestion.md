@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: b00a72e6a67e33c8e70ccc6139c5e62020f9d3e1
-ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
+ms.openlocfilehash: 7421ed9d2cb399d546815b2d1b0ea5ec51ca6b6d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "4689176"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270281"
 ---
 # <a name="real-time-data-ingestion-preview"></a>קליטת נתונים בזמן אמת (תצוגה מקדימה)
 
@@ -83,6 +83,7 @@ ms.locfileid: "4689176"
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>הבן את השימוש שלך בזמן אמת באמצעות טלמטריה
 
-קבל סקירה של היקף הבקשות לממשק ה- API בזמן אמת ומידע על בעיות שהמערכת עלולה להיתקל בהן. אתה יכול [לגשת לטלמטריה בזמן אמת](system.md#api-usage-tab) על ידי מעבר אל **ניהול** > **מערכת** > **שימוש בממשק API**. בטבלה **פעולות**, שורות לפעולות API שמשתמשות בשיטות בזמן אמת מכילות לחצן להצגת שימוש ב- API בזמן אמת. הלחצן מוצג באופן חזותי כסמל משקפת. בחר בלחצן כדי לפתוח חלונית צדדית המכילה פרטי שימוש לשימוש ב- API בזמן אמת בסביבה הנוכחית.
+קבל סקירה של היקף הבקשות לממשק ה- API בזמן אמת ומידע על בעיות שהמערכת עלולה להיתקל בהן. באפשרותך [לגשת למדידת השימוש בזמן אמת](system.md#api-usage-tab). 
 
-השתמש בבורר **קבץ לפי** כדי לבחור כיצד להציג בצורה הטובה ביותר את האינטראקציות שלך בזמן אמת על ציר זמן שנע בין 24 השעות האחרונות ל- 30 הימים האחרונים. ניתן לקבץ את הנתונים לפי שיטת API, שם מוסמך של ישות (ישות שנקלטה), נוצר על ידי (מקור האירוע), תוצאה (הצלחה או כישלון) או קודי שגיאה. הנתונים זמינים כתרשים היסטוריה וכטבלה.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

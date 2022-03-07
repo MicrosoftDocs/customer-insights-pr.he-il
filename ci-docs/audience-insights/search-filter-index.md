@@ -1,28 +1,27 @@
 ---
 title: חפש וסנן פרופילי לקוחות
 description: חפש במהירות מידע על פרופילי לקוחות מאוחדים וסנן עבור תכונות שצוינו.
-ms.date: 11/01/2021
-ms.reviewer: mhart
+ms.date: 01/19/2021
+ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: NimrodMagen
-ms.author: nimagen
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: e17d745974958b73683f1f9406c5ae95f2cbcb3c
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: d675738c43cbdb5f9b478d53d6124db38ba3004d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732035"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270067"
 ---
 # <a name="customer-profiles-search--filter-index"></a>פרופילי לקוחות: אינדקס חיפוש וסינון
 
 תוצאת האיחוד של נתוני לקוחות היא ישות פרופיל לקוח המספקת תצוגה אחידה לבסיס הלקוחות הכולל. כדי [למצוא במהירות מידע על לקוח מסוים או על קבוצת לקוחות מסוימת](customer-profiles.md), באפשרותך לקבוע את תצורת היכולות **חיפוש** ו **סינון** בדף **לקוחות**. המשך לקרוא כדי ללמוד כיצד מנהלים יכולים לערוך את התכונות בדף **אינדקס חיפוש וסינון**, הזמינות למשתמשים לצורך חיפוש וסינון.
 
-   :::image type="content" source="media/search-filter.png" alt-text="חיפוש מסנן":::
-
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+> [!div class="mx-imgBorder"]
+> ![חיפוש מסנן](media/search-filter.png "מסנן חיפוש")
 
 ## <a name="add-fields-and-specify-attributes"></a>הוספת שדות וציון תכונות
 
@@ -57,11 +56,11 @@ ms.locfileid: "7732035"
 
 2. בחר **שמור** כדי להחיל את השינויים.
 
-3. בחר באפשרות **הפעלה** לאחר שתהיה מוכן להחיל את ההגדרות שלך. לאחר עיבוד השינויים, תמצא אותם ב[כרטיסי לקוחות בדף 'לקוח'](customer-profiles.md). 
+3. בחר באפשרות **הפעלה** לאחר שתהיה מוכן להחיל את ההגדרות שלך.
 
 ## <a name="next-steps"></a>השלבים הבאים
 
-סקור את [דף פרופילים מאוחדים](customer-profiles.md) כדי לחפש פרופילים או להשתמש בשדות באינדקס כדי לראות קבוצת משנה של כל הפרופילים המאוחדים.
+עבור אל הדף **לקוחות** כדי לחפש פרופילי לקוחות או השתמש בשדות המסודרים באינדקס כדי לראות ערכת משנה של כל פרופילי הלקוחות.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

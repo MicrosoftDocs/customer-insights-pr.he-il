@@ -1,6 +1,6 @@
 ---
 title: התאמת ישויות לאיחוד נתונים
-description: התאם ישויות כדי לשלב ערכות נתונים וליצור פרופילי לקוחות מאוחדים.
+description: התאם ישויות ליצירת פרופילי לקוח מאוחדים.
 ms.date: 02/23/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-searchScope:
-- ci-match
-ms.openlocfilehash: 67e17495fa6da1cfac7ee4ee165e798364f6cb27
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: 7ad08b8b782654939c6bfc2ca330a3d31e71054a2f2c97a921971d1056b7cd38
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648209"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7033678"
 ---
 # <a name="match-entities"></a>התאמת ישויות
 

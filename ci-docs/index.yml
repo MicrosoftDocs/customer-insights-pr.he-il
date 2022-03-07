@@ -7,12 +7,12 @@ metadata:
   ms.date: 10/29/2020
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: e9c4aa3347d6f477751804790bd3dc9b20eb5dbe
-  ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
   ms.translationtype: HT
   ms.contentlocale: he-IL
-  ms.lasthandoff: 03/15/2021
-  ms.locfileid: "5598461"
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4405917"
 title: תיעוד Dynamics 365 Customer Insights
 summary: מצא משאבים מועילים כדי להתחיל בעבודה וללמוד על תכונות ויכולות של Customer Insights.
 landingContent:
@@ -23,7 +23,7 @@ landingContent:
     - text: מבט כולל על Customer Insights
       url: overview.md
     - text: תוכניות הפצה
-      url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
     - text: קבלת גישה לסביבה שלך
       url: https://home.ci.ai.dynamics.com/
 - title: תחילת העבודה עם audience insights
@@ -53,9 +53,9 @@ landingContent:
     - text: צור סביבה חדשה
       url: audience-insights/home.md
     - text: מהו פרופיל לקוח מאוחד
-      url: /learn/modules/unified-customer-profile/
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
     - text: עבודה עם האפליקציה
-      url: /learn/modules/working-with-customer-insights/
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
 - title: ייצוא תובנות audience insights
   linkLists:
   - linkListType: how-to-guide

@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
-ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
+ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8088114"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892339"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>יצירת סביבה ב'תובנות לגבי קהלים'
 
@@ -28,7 +28,7 @@ ms.locfileid: "8088114"
 
 ## <a name="create-a-new-environment"></a>יצירת סביבה חדשה
 
-לאחר רכישת רישיון למינוי על Customer Insights, מנהל המערכת הגלובלי של דייר Microsoft 365 יקבל הודעת דואר אלקטרוני שתזמין אותו ליצור את הסביבה. עבור אל [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) כדי להתחיל. 
+לאחר רכישת רישיון מינוי ל- Customer Insights, המנהל הכללי של דייר Microsoft 365 יקבל דואר שמזמין אותו ליצור את הסביבה. עבור אל [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) כדי להתחיל. 
 
 חוויה מודרכת מסייעת לבצע את השלבים לאיסוף כל המידע הנדרש עבור סביבה חדשה. נדרשות [הרשאות מנהל מערכת](permissions.md) ב'תובנות לגבי קהלים' כדי ליצור לנהל סביבות.
 
@@ -64,7 +64,7 @@ ms.locfileid: "8088114"
 > Customer Insights תומך כעת בפריטים הבאים:
 > - ישויות מעובדות מזרימות נתונים של Power BI המאוחסנות ב- Data Lake מנוהל של Microsoft Dataverse.  
 > - חשבונות Azure Data Lake Storage מאותו אזור של Azure שבחרת בעת יצירת הסביבה.
-> - חשבונות Azure Data Lake Storage שהם Gen2 ואשר *מרחב השמות ההיררכי*  שלהם מופעל. חשבונות Azure Data Lake Gen1 storage לא נתמכים.
+> - חשבונות Azure Data Lake Storage שעבורם מופעל *מרחב שמות הירארכי*.
 
 בשביל אפשרות ה- Azure Data Lake Storage, תוכל לבחור בין אפשרות מבוססת משאבים לבין אפשרות מבוססת מנוי לאימות. לקבלת מידע נוסף, ראה [התחברות לחשבון Azure Data Lake Storage באמצעות מנהל שירות של Azure](connect-service-principal.md). שם **הגורם המכיל** יהיה `customerinsights` ולא ניתן לשנותו.
 

@@ -5,16 +5,16 @@ ms.date: 11/12/2020
 ms.reviewer: zacook
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f3cbbf99a6cecba2aab2cf85428d53e5df8346e4
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: af461d290c69687fb47bacfcff446a0c62978383
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644404"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268319"
 ---
 # <a name="transactional-churn-prediction-preview"></a>חיזוי נטישה של עסקאות (Preview)
 
@@ -96,6 +96,8 @@ ms.locfileid: "4644404"
 1. לחלופין, בחר **הוסף נתונים** עבור **פעילויות לקוח**. בחר את הישות המספקת את פרטי פעילות הלקוח כמתואר בדרישות המוקדמות.
 
 1. מפה את השדות הסמנטיים לתכונות בישות פעילות הלקוח שלך ובחר **הבא**. לתיאורים של השדות, בדוק את [ה‏‫דרישות המוקדמות](#prerequisites).
+
+   :::image type="content" source="media/map-transaction-data-fields.png" alt-text="מפה שדות לקוחות לנתוני עסקאות.":::
 
 1. בחר סוג פעילות שתואם את סוג הפעילות של הלקוח שאתה מגדיר. בחר **צור חדש** ובחר סוג פעילות זמין או צור סוג חדש.
 
@@ -185,3 +187,6 @@ ms.locfileid: "4644404"
 1. בחר בשלוש הנקודות האנכיות לצד החיזוי שברצונך למחוק.
 
 1. בחר **מחק**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

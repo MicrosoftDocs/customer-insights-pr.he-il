@@ -1,20 +1,20 @@
 ---
 title: ניהול הרשאות משתמש
 description: קבל מידע אודות הרשאות ותפקידי משתמשים.
-ms.date: 03/25/2021
-ms.reviewer: mhart
+ms.date: 10/27/2020
+ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: NimrodMagen
-ms.author: nimagen
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8638489dba908d4504278916d2c28454e3ea9e18
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 7de78c0ef71ec5b83870d396de36a7dcabbd14e5
+ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760374"
+ms.lasthandoff: 12/06/2020
+ms.locfileid: "4689221"
 ---
 # <a name="user-permissions"></a>הרשאות משתמשים
 
@@ -31,7 +31,7 @@ ms.locfileid: "5760374"
 - הצג וחקור חקור את דף **העשרה**.
 - חקור וייצא ישויות בדף **ישויות**.
 - הצגת המצב של תהליכי מערכת בדף **מערכת**.
-- הצג פעולות ייצוא בדף **פעולות ייצוא**.
+- יצא פלחים מהדף **פלחים**.
 - התקן והשתמש בלוח המחוונים **Power BI Customer Insights**.
 
 ## <a name="contributor"></a>משתתף
@@ -43,7 +43,6 @@ ms.locfileid: "5760374"
 - צור פלחים באמצעות הדף **פלחים**.
 - צור מדידות בדף **מדידות**.
 - ניהול תצורה והעשרת פרופילי לקוחות מהדף **העשרה** (להעשרה ראשונה בלבד).
-- נהל וצור פעולות ייצוא בהתבסס על חיבורים ששותפו עם משתתפים. [קבל מידע נוסף אודות האופן שבו מנהלי מערכת מאפשרים למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 ## <a name="administrator"></a>מנהל מערכת
 
@@ -51,9 +50,8 @@ ms.locfileid: "5760374"
 - שנה הגדרות בדף **מערכת**, כולל שפת העבודה ולוחות הזמנים לרענון עבור תהליכי המערכת.
 - הצג והוסף הרשאות בדף **הרשאות**.
 - קבע הגדרות חיפוש וסינון עבור הדף 'לקוחות' בדף **אינדקס חיפוש וסינון** (נגיש דרך דף **לקוחות**).
-- נהל חיבורים ואפשר אותם עבור תפקידי משתמש אחרים בדף **חיבורים**.
+- הגדר את יעדי הפלחים של Dynamics 365 Sales בדף **יעדי ייצוא**.
 - ניהול תצורה והעשרת פרופילי לקוחות מהדף **העשרה** (לכל ההעשרות).
-- נהל וצור פעולות ייצוא בדף **פעולות ייצוא**.
 - התקן את **תוספת כרטיס לקוחות** והשתמש בה.
 - הוסף והשתמש ב **מחבר Power Apps**.
 - אפשר שימוש ב[ממשקי API של Customer Insights](apis.md).
@@ -76,6 +74,3 @@ ms.locfileid: "5760374"
 - התפקידים מוגדרים בעמודה **תפקיד**.
 - בחר כותרת עמודה כלשהי כדי למיין את התוצאות לפי ערך העמודה.
 - השתמש בשדה **חיפוש** שבראש הדף כדי לאתר משתמשים ספציפיים.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

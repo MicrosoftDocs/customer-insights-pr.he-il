@@ -9,12 +9,13 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.custom: intro-internal
+ms.openlocfilehash: 0a017a37777adaaf7de079cf481ec10c70c7adba
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887895"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692436"
 ---
 # <a name="data-sources-overview"></a>מבט כולל על מקורות נתונים
 
@@ -30,24 +31,22 @@ ms.locfileid: "5887895"
 
 - [דרך עשרות מחברי Power Query](connect-power-query.md)
 - [דרך תיקית Common Data Model](connect-common-data-model.md)
-- [דרך אגם ה-Common Data Service שלך](connect-common-data-service-lake.md)
+- [דרך אגם ה-Microsoft Dataverse שלך](connect-dataverse-managed-lake.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>הוספת נתונים ממקורות נתונים מקומיים
 
-קליטת נתונים ממקורות נתונים מקומיים בתובנות קהלים נתמכת בהתבסס על זרימות הנתונים של Power Platform. ניתן להפעיל זרימות נתונים ב- Customer Insights על-ידי [מתן כתובת ה- URL של סביבת Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) בעת הגדרת הסביבה.
+קליטת נתונים ממקורות נתונים מקומיים בתובנות לגבי קהלים נתמכת בהתבסס על זרימות הנתונים של Microsoft Power Platform. ניתן להפעיל זרימות נתונים ב- Customer Insights על-ידי [מתן כתובת ה- URL של סביבת Microsoft Dataverse](get-started-paid.md) בעת הגדרת הסביבה.
 
-מקורות נתונים שנוצרו לאחר שיוך סביבת Dataverse ל- Customer Insights ישתמשו ב[זרימות נתונים של Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) כברירת מחדל. זרימות נתונים תומכות בקישוריות מקומית באמצעות שערי הנתונים. הסר וצור מחדש מקורות נתונים שהתקיימות לפני שסביבת Dataverse שויכה לשימוש בשערי הנתונים המקומיים.
+מקורות נתונים שנוצרו לאחר שיוך סביבת Dataverse ל- Customer Insights ישתמשו ב[זרימות נתונים של Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) כברירת מחדל. זרימות נתונים תומכות בקישוריות מקומית באמצעות שער הנתונים. הסר וצור מחדש מקורות נתונים שהתקיימו לפני שסביבת Dataverse שויכה ל[שימוש בשערי הנתונים המקומיים](/data-integration/gateway/service-gateway-app).
 
-שערי נתונים מסביבת Power BI או Power Apps קיימת יהיו גלויים ותוכל להשתמש בהם מחדש ב- Customer Insights. דף מקורות הנתונים מציג קישורים למעבר אל סביבת Power Platform שבה באפשרותך להציג ולקבוע תצורה של שערי נתונים מקומיים.
-
-:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="צילום מסך של דף מקורות הנתונים המציג קישורים המצביעים אל סביבת Power Platform.":::
+שערי נתונים מסביבת Power BI או Power Apps קיימת יהיו גלויים ותוכל להשתמש בהם מחדש ב- Customer Insights. דף מקורות הנתונים מציג קישורים למעבר אל סביבת Microsoft Power Platform שבה תוכל להציג ולהגדיר את שערי הנתונים המקומיים.
 
 ## <a name="review-ingested-data"></a>סקירה של נתונים מעובדים
 
 תראה את השם של כל מקור נתונים שעובד, את המצב שלו ואת הפעם האחרונה שבו הנתונים מאותו מקור רועננו. ניתן למיין את רשימת מקורות הנתונים לפי כל עמודה.
 
 > [!div class="mx-imgBorder"]
-> ![מקור נתונים נוסף](media/configure-data-datasource-added.png "מקור נתונים נוסף")
+> ![מקור נתונים נוסף.](media/configure-data-datasource-added.png "מקור נתונים נוסף")
 
 |סטאטוס  |תיאור  |
 |---------|---------|
@@ -58,7 +57,7 @@ ms.locfileid: "5887895"
 
 בחר את הערך בעמודה **מצב** של מקור נתונים כלשהו כדי לסקור פרטים נוספים. בחלונית **פרטי התקדמות**, הרחב את **מקורות נתונים**. בחר **הצג פרטים** לקבלת מידע נוסף אודות מצב הרענון, לרבות פרטי שגיאה ועדכוני תהליך במורד הזרם.
 
-טעינת הנתונים עשויה להימשך זמן מה. לאחר רענון מוצלח, ניתן לסקור את הנתונים שעובדו בדף **ישויות**. לקבלת מידע נוסף, ראה [ישויות](entities.md).
+טעינת נתונים עשויה להימשך זמן מה. לאחר רענון מוצלח, ניתן לסקור את הנתונים שעובדו בדף **ישויות**. לקבלת מידע נוסף, ראה [ישויות](entities.md).
 
 ## <a name="refresh-a-data-source"></a>רענון מקור נתונים
 
@@ -68,9 +67,9 @@ ms.locfileid: "5887895"
 
 כדי לרענן מקור נתונים לפי דרישה, בצע את השלבים הבאים:
 
-1. ב- audience insights, עבור אל **נתונים** > **מקורות נתונים**
+1. ב- audience insights, עבור אל **נתונים** > **מקורות נתונים**.
 
-2. בחר את שלוש הנקודות האנכיות לצד מקור הנתונים שברצונך לרענן ובחר **רענון** מהרשימה הנפתחת.
+2. בחר את שלוש הנקודות האנכיות לצד מקור נתונים שברצונך לרענן ובחר **רענון** מהרשימה הנפתחת.
 
 3. מקור הנתונים מופעל כעת עבור רענון ידני. רענון מקור נתונים יעדכן הן את סכימת הישות והן את הנתונים עבור כל הישויות שצוינו במקור הנתונים.
 
@@ -80,7 +79,7 @@ ms.locfileid: "5887895"
 
 1. ב- audience insights, עבור אל **נתונים** > **מקורות נתונים**.
 
-2. בחר את שלוש הנקודות האנכיות לצד מקור הנתונים שברצונך להסיר ובחר **מחק** מהתפריט הנפתח.
+2. בחר את שלוש הנקודות האנכיות לצד מקור נתונים שברצונך להסיר ובחר **מחיקה** מהתפריט הנפתח.
 
 3. אשר את המחיקה.
 

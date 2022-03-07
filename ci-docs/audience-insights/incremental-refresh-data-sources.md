@@ -1,7 +1,7 @@
 ---
 title: רענון מצטבר עבור מקורות נתונים מבוססי-Power Query
 description: רענן נתונים חדשים ומעודכנים עבור מקורות נתונים גדולים המבוססים על Power Query.
-ms.date: 12/06/2021
+ms.date: 09/28/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,14 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.openlocfilehash: 1af2e4c42dc5890556c90bb3e5ef1aeb0621fda0
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900269"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554160"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>רענון מצטבר עבור מקורות נתונים מבוססי Power Query
-
-מאמר זה בוחן כיצד להגדיר רענון מצטבר עבור מקורות נתונים המבוססים על Power Query.
 
 רענון מצטבר של מקורות נתונים מספק את היתרונות הבאים:
 
@@ -32,9 +30,9 @@ Audience insights מאפשר רענון מצטבר עבור מקורות נתו�
 
 1. [יצרת מקור נתונים חדש המבוסס על Power Query](connect-power-query.md).
 
-1. הזן **שם** למקור הנתונים.
+1. הזן שם למקור הנתונים.
 
-1. בחר מקור נתונים התומך ברענון מצטבר, כגון [מסד נתונים של Azure SQL](/power-query/connectors/azuresqldatabase).
+1. בחר מקור נתונים שתומך ברענון מצטבר, כגון מסד נתונים של Azure SQL.
 
 1. בחר את הישויות או הטבלאות שיש לעבד.
 
@@ -46,7 +44,8 @@ Audience insights מאפשר רענון מצטבר עבור מקורות נתו�
 
 1. באפשרות **הגדרות רענון מצטבר**, הגדר את הרענון המצטבר עבור כל הישויות שבחרת בעת יצירת מקור הנתונים.
 
-   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="הגדר ישויות במקור הנתונים לצורך רענון מצטבר.":::
+   > [!div class="mx-imgBorder"]
+   > ![הגדר ישויות במקור הנתונים לצורך רענון מצטבר.](media/incremental-refresh-settings.png "הגדר ישויות במקור הנתונים לצורך רענון מצטבר")
 
 1. בחר ישות וספק את הפרטים הבאים:
 

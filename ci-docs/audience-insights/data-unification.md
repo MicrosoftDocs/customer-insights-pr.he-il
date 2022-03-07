@@ -1,25 +1,22 @@
 ---
-title: יצירת תצוגה מאוחדת של הלקוחות
-description: בצע את תהליך איחוד הנתונים עם הנתונים שלך כדי ליצור ערכת נתונים ראשית אחת של פרופילי לקוחות.
-ms.date: 10/18/2021
-ms.reviewer: mhart
+title: איחוד נתונים
+description: למד כיצד לאחד נתונים שנקלטו.
+ms.date: 04/16/2020
+ms.reviewer: adkuppa
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: adkuppa
-ms.author: adkuppa
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.custom: intro-internal
-searchScope:
-- ci-unify
-ms.openlocfilehash: 694bfd0e407975af64ca0971a73fe4c3f5ba5a23
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: 24321e9e11f9fd4e800526673726e5146ed33674
+ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648072"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4405872"
 ---
-# <a name="data-unification-overview"></a>מבט כולל על איחוד נתונים
+# <a name="data-unification"></a>איחוד נתונים
 
 לאחר [הגדרת מקורות הנתונים](data-sources.md), באפשרותך לאחד את הנתונים. איחוד נתונים כולל שלושה שלבים: **מיפוי**, **התאמה**, **ומיזוג**.
 
@@ -34,6 +31,3 @@ ms.locfileid: "7648072"
 - [להגדיר קשרים בין ישויות](relationships.md) כדי ליצור מקטעים מתוחכמים
 - [להעשיר את הנתונים](enrichment-hub.md) שלך כדי לקבל מגוון רחב יותר של תובנות על הלקוחות שלך
 - [להגדיר פעילויות](activities.md) מחלק מהתכונות שעובדו
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

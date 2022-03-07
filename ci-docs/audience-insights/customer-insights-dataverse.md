@@ -1,7 +1,7 @@
 ---
 title: נתונים של Customer Insights ב- Microsoft Dataverse
 description: השתמש בישויות של Customer Insights כטבלאות ב- Microsoft Dataverse.
-ms.date: 10/14/2021
+ms.date: 06/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9855ff6908001dd18bc19a286fc56620d0a127e5
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 7157ad930f3cea17c12bd4f95028d291483329d3
+ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645219"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6259192"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>עבודה עם נתונים של Customer Insights ב- Microsoft Dataverse
 
@@ -24,7 +24,11 @@ Customer Insights מציע את האפשרות להפוך ישויות פלט ל
 
 **ארגונים עם סביבות Dataverse קיימות**
 
-ארגונים שכבר משתמשים ב- Dataverse יכולים [להשתמש באחת מסביבות Dataverse הקיימות שלהם](create-environment.md) כאשר מנהל מערכת מגדיר תובנות לגבי קהלים. אספקת כתובת URL לסביבת Dataverse מצרפת אותה לסביבה החדשה של תובנות לגבי קהלים. כדי להבטיח את הביצועים הטובים ביותר שאפשר, יש לארח סביבות של Customer Insights ושל Dataverse באותו אזור.
+ארגונים שכבר משתמשים ב- Dataverse יכולים [להשתמש באחת מסביבות Dataverse הקיימות שלהם](manage-environments.md#create-an-environment-in-an-existing-organization) כאשר מנהל מערכת מגדיר תובנות לגבי קהלים. אספקת כתובת URL לסביבת Dataverse מצרפת אותה לסביבה החדשה של תובנות לגבי קהלים. כדי להבטיח את הביצועים הטובים ביותר שאפשר, יש לארח סביבות של Customer Insights ושל Dataverse באותו אזור.
+
+כדי לצרף סביבה של Dataverse, הרחב את **הגדרות מתקדמות** בעת יצירת סביבת התובנות לגבי קהלים. ספק את **כתובת ה- URL של סביבת Microsoft Dataverse** ובחר בתיבת הסימון **הפוך שיתוף נתונים לזמין‬‏‫**.
+
+:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt":::
 
 **ארגון חדש**
 

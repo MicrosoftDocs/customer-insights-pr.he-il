@@ -1,24 +1,24 @@
 ---
 title: ניסויי Azure Machine Learning
 description: השתמש במודלים מבוססי Azure Machine Learning ב- Dynamics 365 Customer Insights.
-ms.date: 12/02/2021
+ms.date: 11/30/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
-ms.author: naravill
-ms.reviewer: mhart
+ms.author: mhart
+ms.reviewer: m-hartmann
 manager: shellyha
-ms.openlocfilehash: e37eec503c9df83ef72497e22afa1266296e642c
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+ms.openlocfilehash: c166015b92596da0c6097e3d25e89579a5186ce0
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881739"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267907"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>שימוש במודלים מבוססי Azure Machine Learning
 
-הנתונים המאוחדים ב- Dynamics 365 Customer Insights הם מקור לבניית מודלי למידת מכונה שיכולים ליצור תובנות עסקיות נוספות. Customer Insights משתלב עם למידת מכונה של Azure כדי להשתמש במודלים המותאמים אישית שלך.
+הנתונים המאוחדים ב- Dynamics 365 Customer Insights הם מקור לבניית מודלי למידת מכונה שיכולים ליצור תובנות עסקיות נוספות. Customer Insights משתלב עם Machine Learning Studio (קלאסי) ו- Azure Maching Learning כדי להשתמש במודלים המותאמים אישית שלך. עיין ב[ניסויי Machine Learning Studio (קלאסי)](machine-learning-studio-experiments.md) לקבלת דוגמאות של ניסויים המוכללים ב- Machine Learning Studio (קלאסי). 
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
@@ -29,30 +29,30 @@ ms.locfileid: "7881739"
 
 ## <a name="set-up-azure-machine-learning-workspace"></a>הגדרת סביבת עבודה של Azure Machine Learning
 
-1. ראה [יצירת סביבת עבודה של Azure Machine Learning](/azure/machine-learning/concept-workspace#-create-a-workspace) עבור אפשרויות שונות ליצירת סביבת העבודה. לקבלת הביצועים הטובים ביותר, צור את סביבת העבודה באזור Azure הקרוב ביותר מבחינה גיאוגרפית לסביבת Customer Insights שלך.
+1. ראה [יצירת סביבת עבודה של Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/concept-workspace#-create-a-workspace) עבור אפשרויות שונות ליצירת סביבת העבודה. לקבלת הביצועים הטובים ביותר, צור את סביבת העבודה באזור Azure הקרוב ביותר מבחינה גיאוגרפית לסביבת Customer Insights שלך.
 
-1. קבל גישה לסביבת העבודה שלך דרך [Azure Machine Learning Studio](https://ml.azure.com/). קיימות מספר [דרכים לקיום אינטראקציה](/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) עם סביבת העבודה שלך.
+1. קבל גישה לסביבת העבודה שלך דרך [Azure Machine Learning Studio](https://ml.azure.com/). קיימות מספר [דרכים לקיום אינטראקציה](https://docs.microsoft.com/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) עם סביבת העבודה שלך.
 
 ## <a name="work-with-azure-machine-learning-designer"></a>עבודה עם Azure Machine Learning designer
 
-מעצב Azure Machine Learning מספק בד ציור חזותי שבו תוכל לגרור ולשחרר ערכות נתונים ומודולים. ניתן לשלב קו צינור של אצווה שנוצר מה- Designer ב- Customer Insights, אם הוא מוגדר בהתאם. 
+Azure Machine Learning Designer מספק בד ציור חזותי שבו ניתן לגרור ולשחרר ערכות נתונים ומודולים, בדומה ל- Machine Learning Studio (קלאסי). ניתן לשלב קו צינור של אצווה שנוצר מה- Designer ב- Customer Insights, אם הוא מוגדר בהתאם. 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>עבודה עם SDK של Azure Machine Learning
 
-מדעני נתונים ומפתחי AI משתמשים ב- [SDK של Azure Machine Learning](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) כדי לבנות זרימות עבודה של למידת מכונה. נכון לעכשיו, לא ניתן לשלב מודלים שהוכשרו באמצעות ה- SDK ישירות עם Customer Insights. קו צינור של היסק אצווה המשתמש במודל זה נדרש עבור שילוב עם Customer Insights.
+מדעני נתונים ומפתחי AI משתמשים ב- [SDK של Azure Machine Learning](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true) כדי לבנות זרימות עבודה של למידת מכונה. נכון לעכשיו, לא ניתן לשלב מודלים שהוכשרו באמצעות ה- SDK ישירות עם Customer Insights. קו צינור של היסק אצווה המשתמש במודל זה נדרש עבור שילוב עם Customer Insights.
 
 ## <a name="batch-pipeline-requirements-to-integrate-with-customer-insights"></a>דרישות קו צינור של אצווה לשילוב עם Customer Insights
 
 ### <a name="dataset-configuration"></a>תצורת ערכת נתונים
 
-עליך ליצור ערכות נתונים כדי להשתמש בנתוני הישות מ- Customer Insights בקו הצינור של היסק האצווה שלך. יש לרשום ערכות נתונים אלה בסביבת העבודה. לעת עתה, אנחנו תומכים רק ב[ערכות נתונים טבלאיות](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) בתבנית ‎.csv יש לבטא בפרמטרים כפרמטר קו צינור את ערכות הנתונים המתאימות לנתוני הישות.
+עליך ליצור ערכות נתונים כדי להשתמש בנתוני הישות מ- Customer Insights בקו הצינור של היסק האצווה שלך. יש לרשום ערכות נתונים אלה בסביבת העבודה. לעת עתה, אנחנו תומכים רק ב[ערכות נתונים טבלאיות](https://docs.microsoft.com/azure/machine-learning/how-to-create-register-datasets#tabulardataset) בתבנית ‎.csv יש לבטא בפרמטרים כפרמטר קו צינור את ערכות הנתונים המתאימות לנתוני הישות.
    
 * פרמטרים של ערכת נתונים ב- Designer
    
      ב- Designer, פתח את **בחר עמודות בערכת נתונים** ובחר **הגדר כפרמטר של קו צינור** שבו אתה מספק שם עבור הפרמטר.
 
      > [!div class="mx-imgBorder"]
-     > ![ביטוי בפרמטרים של ערכת נתונים ב- Designer.](media/intelligence-designer-dataset-parameters.png "ביטוי בפרמטרים של ערכת נתונים ב- Designer")
+     > ![ביטוי בפרמטרים של ערכת נתונים ב- Designer](media/intelligence-designer-dataset-parameters.png "ביטוי בפרמטרים של ערכת נתונים ב- Designer")
    
 * פרמטר ערכת נתונים ב- SDK‏ (Python)
    
@@ -76,9 +76,9 @@ ms.locfileid: "7881739"
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>ייבוא נתוני קו צינור אל Customer Insights
 
-* Designer מספק את [המודול 'ייצוא נתונים'](/azure/machine-learning/algorithm-module-reference/export-data) המאפשר ייצוא של פלט קו צינור אל אחסון Azure. נכון לעכשיו, המודול מוכרח להשתמש בסוג מאגר הנתונים **אחסון Blob של Azure** ולבטא בפרמטרים את **מאגר הנתונים** ו **נתיב** יחסי. Customer Insights עוקף את שני הפרמטרים במהלך ביצוע קו הצינור עם מאגר נתונים ונתיב הנגישים למוצר.
+* Designer מספק את [המודול 'ייצוא נתונים'](https://docs.microsoft.com/azure/machine-learning/algorithm-module-reference/export-data) המאפשר ייצוא של פלט קו צינור אל אחסון Azure. נכון לעכשיו, המודול מוכרח להשתמש בסוג מאגר הנתונים **אחסון Blob של Azure** ולבטא בפרמטרים את **מאגר הנתונים** ו **נתיב** יחסי. Customer Insights עוקף את שני הפרמטרים במהלך ביצוע קו הצינור עם מאגר נתונים ונתיב הנגישים למוצר.
    > [!div class="mx-imgBorder"]
-   > ![תצורת מודול 'ייצוא נתונים'.](media/intelligence-designer-importdata.png "תצורת מודול 'ייצוא נתונים'")
+   > ![תצורת מודול 'ייצוא נתונים'](media/intelligence-designer-importdata.png "תצורת מודול 'ייצוא נתונים'")
    
 * בעת כתיבת פלט ההיסק באמצעות קוד, באפשרותך להעלות את הפלט לנתיב בתוך *מאגר נתונים רשום* בסביבת העבודה. אם הנתיב ומאגר הנתונים מבוטאים בפרמטרים בקו הצינור, Customer Insights יוכל לקרוא ולייבא את פלט ההיסק. לעת עתה קיימת תמיכה בפלט טבלאי יחיד בתבנית csv. הנתיב מוכרח לכלול את שם הספריה ואת שם הקובץ.
 
