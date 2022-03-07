@@ -3,26 +3,29 @@ title: מדריך לדוגמה של חיזוי המלצות על מוצרים
 description: השתמש במדריך לדוגמה זה כדי לנסות את המודל לחיזוי המלצות על מוצרים המוכן לשימוש.
 ms.date: 02/10/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: b136084316da5ae17a8428236381f69e5c21f9ea
-ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
+searchScope:
+- ci-predictions
+- ci-create-prediction
+- customerInsights
+ms.openlocfilehash: 8ba54cfd466049c8df99c15f34626ab1914234f1
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129900"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354648"
 ---
-# <a name="product-recommendation-prediction-preview-sample-guide"></a>מדריך לדוגמה של חיזוי המלצות על מוצרים (Preview)
+# <a name="product-recommendation-prediction-sample-guide"></a>מדריך לדוגמה של חיזוי המלצות על מוצרים
 
 אנו ננחה אותך ונדגים דוגמה מקצה לקצה של חיזוי המלצות על מוצרים באמצעות הנתונים לדוגמה המפורטים להלן.
 
 ## <a name="scenario"></a>תרחיש
 
-Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות גבוהה, ומוכרת אותם באמצעות אתר האינטרנט Contoso Coffee. המטרה שלה היא להבין על אילו מוצרים עליה להמליץ ללקוחות החוזרים שלה. הידיעה מה לקוחות **עשויים לרכוש בסבירות גבוהה יותר** יכולה לעזור לה לחסוך במאמצי השיווק על-ידי התמקדות בפריטים ספציפיים.
+Contoso היא חברה המייצרת קפה איכותי ומכונות קפה, שאותם היא מוכרת דרך האתר שלה Contoso Coffee. המטרה שלה היא להבין על אילו מוצרים עליה להמליץ ללקוחות החוזרים שלה. הידיעה מה לקוחות **עשויים לרכוש בסבירות גבוהה יותר** יכולה לעזור לה לחסוך במאמצי השיווק על-ידי התמקדות בפריטים ספציפיים.
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
@@ -31,7 +34,7 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
 
 ## <a name="task-1---ingest-data"></a>משימה 1 - קליטת נתונים
 
-עיין בעיקר במאמרים [אודות קליטת נתונים](data-sources.md) ו[ייבוא מקורות נתונים באמצעות מחברים של Power Query](connect-power-query.md). המידע הבא מניח שאתה מכיר את תהליך קליטת הנתונים באופן כללי.
+עיין במאמרים [לגבי קליטת נתונים](data-sources.md) ו- [ייבוא מקורות נתונים באמצעות מחברי Power Query ](connect-power-query.md) באופן ספציפי. המידע הבא מניח שאתה מכיר את תהליך קליטת הנתונים באופן כללי.
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>קליטת נתוני לקוחות מפלטפורמת eCommerce
 
@@ -105,9 +108,9 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
 
 1. עבור אל הכרטיסיה **התאמה** ובחר **הגדר סדר**.
 
-2. ברשימה הנפתחת **ראשי**, בחר **eCommerceContacts : eCommerce** כמקור הראשי וכלול את כל הרשומות.
+2. בתפריט הנפתח **ראשי**, בחר **eCommerceContacts : ‏eCommerceContacts** כמקור העיקרי וכלול את כל הרשומות.
 
-3. ברשימה הנפתחת **ישות 2**, בחר **loyCustomers : LoyaltyScheme** וכלול את כל הרשומות.
+3. ברשימה הנפתחת **ישות 2**, בחר **LoyaltyScheme : ‏loyCustomers** וכלול את כל הרשומות.
 
    ![איחוד התאמה של eCommerce ו- Loyalty.](media/unify-match-order.png)
 
@@ -115,16 +118,16 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
 
 5. הוסף את התנאי הראשון שלך באמצעות FullName.
 
-   - עבור eCommerceContacts בחר **FullName** ברשימה הנפתחת.
-   - עבור loyCustomers בחר **FullName** ברשימה הנפתחת.
+   - עבור eCommerceContacts בחר **FullName** בתפריט הנפתח.
+   - עבור loyCustomers בחר **FullName** בתפריט הנפתח.
    - בחר את הרשימה הנפתחת **נרמל** ובחר **סוג (טלפון, שם, כתובת, ...)**.
    - הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
 
 6. הזן את השם **FullName, Email** עבור הכלל החדש.
 
    - הוסף תנאי שני לכתובת הדואר האלקטרוני על-ידי בחירה **הוסף תנאי**
-   - לישות eCommerceContacts, בחר **דואר** ברשימה הנפתחת.
-   - לישות loyCustomers, בחר **דואר** ברשימה הנפתחת.
+   - עבור הישות eCommerceContacts, בחר **דואר אלקטרוני** בתפריט הנפתח.
+   - עבור הישות loyCustomers, בחר **דואר אלקטרוני** בתפריט הנפתח.
    - השאר את השדה 'נרמל' ריק.
    - הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
 

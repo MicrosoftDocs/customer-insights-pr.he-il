@@ -1,20 +1,25 @@
 ---
-title: העשרת שיפור כתובות
+title: העשרה לשיפור כתובות (מכיל סרטון)
 description: העשר ונרמל מידע על כתובות שמופיעות בפרופילי לקוחות באמצעות מודלים של Microsoft.
-ms.date: 07/25/2021
+ms.date: 01/19/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: fb3fee72b3420c636d549b600c468c574ee33a662bfafd096247dfddf40150bd
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+searchScope:
+- ci-data-sources-enrichment
+- ci-data-sources-enrichment-details
+- ci-enrichments
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: 067757019078d3a46b224ba259d2d097dfbbe381
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032667"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353637"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>העשרה של פרופילי לקוחות עם כתובות משופרות
 
@@ -23,6 +28,8 @@ ms.locfileid: "7032667"
 ## <a name="how-we-enhance-addresses"></a>כיצד אנו משפרים כתובות
 
 המודל שלנו מבצע תהליך דו-שלבי לשיפור כתובת. תחילה, הוא מנתח את הכתובת לזיהוי הרכיבים שלה ומציב אותם בתבנית מובנית. לאחר מכן אנו משתמשים ב- AI כדי לתקן, להשלים ולתקנן את הערכים בכתובת.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWNewo]
 
 ### <a name="example"></a>דוגמה
 
@@ -98,10 +105,20 @@ ms.locfileid: "7032667"
 
 לאחר סיום תהליך ההעשרה, תוכל לבדוק את לסקור פרופילי הלקוחות שעושרו זה עתה תחת **ההעשרות שלי**. בנוסף, תמצא את שעת העדכון האחרון ואת מספר הפרופילים המועשרים.
 
-אתה יכול לגשת לתצוגה מפורטת של כל פרופיל מועשר על ידי בחירה באפשרות **צפה בנתונים מועשרים**.
+ניתן לראות מדגם של הנתונים המועשרים באריח **תצוגה מקדימה של לקוחות מועשרים**. בחר **ראה עוד** ובחר בכרטיסיה **נתונים** כדי לגשת לתצוגה מפורטת של כל פרופיל מועשר.
+
+### <a name="overview-card"></a>כרטיס סקירה כללית
+
+כרטיס הסקירה הכללית מציג פרטים על כיסוי ההעשרה. 
+
+* **כתובות שעובדו ושונו**: מספר פרופילי הלקוחות עם כתובות שהועשרו בהצלחה.
+
+* **כתובות שעובדו ולא השתנו**: מספר פרופילי הלקוחות עם כתובות שזוהו אך לא השתנו. זה קורה בדרך כלל כאשר נתוני הקלט תקפים ולא ניתן לשפר אותם על ידי ההעשרה.
+
+* **כתובות שלא עובדו ולא השתנו**: מספר הפרופילים עם כתובות שלא זוהו. בדרך כלל עבור נתוני קלט שאינם חוקיים או שאינם נתמכים על ידי העשרה.
 
 ## <a name="next-steps"></a>השלבים הבאים
 
-בנה על נתוני הלקוחות המועשרים שלך. צור [פלחים](segments.md) ו[מדידות](measures.md), ואפילו [יצא את הנתונים](export-destinations.md) כדי להעניק ללקוחות שלך חוויות מותאמות אישית.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

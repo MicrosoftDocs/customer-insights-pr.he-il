@@ -3,18 +3,20 @@ title: עבודה עם ממשקי API
 description: השתמש בממשקי API והכר מגבלות.
 ms.date: 05/10/2021
 ms.reviewer: wimohabb
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 8404515a20529c00708d84813f3a022ad98c45362a2f1e68d7aa890d085071a9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+searchScope:
+- ci-system-api-usage
+- customerInsights
+ms.openlocfilehash: b1e022f8afb8b7dbb707636009b6a25ee242a4e0
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033586"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354786"
 ---
 # <a name="work-with-customer-insights-apis"></a>עבודה עם ממשקי API של Customer Insights
 
@@ -35,7 +37,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
  
    הפעלת ממשקי ה- API יוצרת מפתח מנוי ראשי ומשני עבור המופע שלך המשמש בבקשות ה- API. באפשרותך ליצור מחדש את המפתחות על-ידי בחירת **צור מחדש מפתח ראשי** או **צור מחדש מפתח משני** דרך **ניהול** > **הרשאות** > **ממשקי API**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="הפוך ממשקי API של Customer Insights לזמינים.":::
+<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
 1. בחר **סקור את ממשקי ה- API שלנו** כדי [לנסות את ממשקי ה- API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -49,7 +51,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 תגובת ה- HTTP תופיע תוך זמן קצר למטה.
 
-   :::image type="content" source="media/try-apis.gif" alt-text="כיצד לבדוק את ממשקי ה- API.":::
+<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>יצירת רישום יישום חדש בפורטל Azure
 
@@ -65,7 +67,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 1. ברישום היישום החדש שלך, עבור אל **הרשאות API**.
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="כיצד להגדיר הרשאות API ברישום יישומים.":::
+<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
 
 1. בחר **הוסף הרשאה** ובחר **Customer Insights** בחלונית הצדדית.
 
@@ -77,7 +79,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 באפשרותך להשתמש במזהה היישום/לקוח עבור רישום יישום זה עם Microsoft Authentication Library‏ (MSAL) כדי להשיג אסימון נושא לשליחה עם הבקשה שלך ל- API.
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="כיצד להעניק הסכמת מנהל מערכת.":::
+<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 לקבלת מידע נוסף אודות MSAL, ראה [מבט כולל על Microsoft Authentication Library‏ (MSAL)](/azure/active-directory/develop/msal-overview).
 
@@ -103,7 +105,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 1. בחר **הענק הסכמת מנהל עבור...** כדי להשלים את רישום היישום.
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="כיצד להעניק הסכמת מנהל מערכת.":::
+ <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 1. לסיום, עלינו להוסיף את שם רישום היישום כמשתמש ב- Customer Insights.  
    
@@ -129,19 +131,19 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
  
    לחלופין, הפעל פקודה זו ב **קונסולת מנהל החבילות של NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="הוסף חבילת NuGet לפרוייקט Visual Studio.":::
+ <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### <a name="use-the-c-client-library"></a>השתמש בספריית הלקוחות C#‎
 
 1. השתמש ב- [Microsoft Authentication Library‏ (MSAL)](/azure/active-directory/develop/msal-overview) כדי לקבל `AccessToken` באמצעות [רישום יישום Azure](#create-a-new-app-registration-in-the-azure-portal) הקיים שלך.
 
-1. לאחר אימות והשגת אסימון בהצלחה, בנה `HttpClient` חדש או השתמש בקיים עם **DefaultRequestHeaders "Authorization"** מוגדר ל- **Bearer <access token>** ו- **Ocp-Apim-Subscription-Key** מוגדר ל [**מפתח מנוי** דרך סביבת Customer Insights שלך](#get-started-trying-the-customer-insights-apis).   
+1. לאחר רכישה ואימות מוצלחים של אסימון, בנה `HttpClient` חדש או השתמש בקיים, בתוספת של **DefaultRequestHeaders "אימות"** שמוגדר ל- **"אסימון גישה" של נושא** ו- **Ocp-Apim-Subscription-Key** שמוגדרת ל [**מפתח מנוי** מסביבת Customer Insights שלך](#get-started-trying-the-customer-insights-apis).   
  
    אפס את הכותרת **הרשאה** במועד המתאים. לדוגמה, כאשר פג תוקף האסימון.
 
 1. העבר `HttpClient` זה אל המבנה של הלקוח `CustomerInsights`.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="דוגמה של httpclient.":::
+<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
 1. בצע שיחות עם הלקוח ל"שיטות ההרחבה", למשל `GetAllInstancesAsync`. אם עדיפה גישה ל- `Microsoft.Rest.HttpOperationResponse` הבסיסי, השתמש ב"שיטות הודעת http" - לדוגמה `GetAllInstancesWithHttpMessagesAsync`.
 

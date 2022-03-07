@@ -3,20 +3,22 @@ title: מדריך לדוגמה לחיזוי של נטישת מנויים
 description: השתמש במדריך לדוגמה זה כדי לנסות את מודל החיזוי של נטישת מנויים המוכן לשימוש.
 ms.date: 11/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 324e5c19778230dd978b2f4e9156a2dd82b3d2bd
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+searchScope:
+- ci-create-prediction
+- customerInsights
+ms.openlocfilehash: 5de57155b47b74efa4c5ef2fe63a3c87505644be
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595519"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355614"
 ---
-# <a name="subscription-churn-prediction-preview-sample-guide"></a>מדריך לדוגמה לחיזוי של נטישת מנויים (מהדורת Preview)
+# <a name="subscription-churn-prediction-sample-guide"></a>מדריך לדוגמה לחיזוי של נטישת מנויים
 
 אנו ננחה אותך ונדגים דוגמה מקצה לקצה של חיזוי של נטישת מנויים באמצעות הנתונים לדוגמה המפורטים להלן. 
 
@@ -31,7 +33,7 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 
 ## <a name="task-1---ingest-data"></a>משימה 1 - קליטת נתונים
 
-עיין בעיקר במאמרים [אודות קליטת נתונים](data-sources.md) ו[ייבוא מקורות נתונים באמצעות מחברים של Power Query](connect-power-query.md). המידע הבא מניח שאתה מכיר את תהליך קליטת הנתונים באופן כללי. 
+עיין במאמרים [לגבי קליטת נתונים](data-sources.md) ו- [ייבוא מקורות נתונים באמצעות מחברי Power Query ](connect-power-query.md) באופן ספציפי. המידע הבא מניח שאתה מכיר את תהליך קליטת הנתונים באופן כללי. 
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>קליטת נתוני לקוחות מפלטפורמת eCommerce
 
@@ -128,9 +130,9 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 
 1. עבור אל הכרטיסיה **התאמה** ובחר **הגדר סדר**.
 
-1. ברשימה הנפתחת **ראשי**, בחר **eCommerceContacts : eCommerce** כמקור הראשי וכלול את כל הרשומות.
+1. בתפריט הנפתח **ראשי**, בחר **eCommerceContacts : ‏eCommerceContacts** כמקור העיקרי וכלול את כל הרשומות.
 
-1. ברשימה הנפתחת **ישות 2**, בחר **loyCustomers : LoyaltyScheme** וכלול את כל הרשומות.
+1. ברשימה הנפתחת **ישות 2**, בחר **LoyaltyScheme : ‏loyCustomers** וכלול את כל הרשומות.
 
    :::image type="content" source="media/unify-match-order.PNG" alt-text="איחוד התאמה של eCommerce ו- Loyalty.":::
 
@@ -138,16 +140,16 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 
 1. הוסף את התנאי הראשון שלך באמצעות FullName.
 
-   * עבור eCommerceContacts בחר **FullName** ברשימה הנפתחת.
-   * עבור loyCustomers בחר **FullName** ברשימה הנפתחת.
+   * עבור eCommerceContacts בחר **FullName** בתפריט הנפתח.
+   * עבור loyCustomers בחר **FullName** בתפריט הנפתח.
    * בחר את הרשימה הנפתחת **נרמל** ובחר **סוג (טלפון, שם, כתובת, ...)**.
    * הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
 
 1. הזן את השם **FullName, Email** עבור הכלל החדש.
 
    * הוסף תנאי שני לכתובת הדואר האלקטרוני על-ידי בחירה **הוסף תנאי**
-   * לישות eCommerceContacts, בחר **דואר** ברשימה הנפתחת.
-   * לישות loyCustomers, בחר **דואר** ברשימה הנפתחת. 
+   * עבור הישות eCommerceContacts, בחר **דואר אלקטרוני** בתפריט הנפתח.
+   * עבור הישות loyCustomers, בחר **דואר אלקטרוני** בתפריט הנפתח. 
    * השאר את השדה 'נרמל' ריק. 
    * הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
 
@@ -168,7 +170,7 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>משימה 3 - הגדר את חיזוי נטישת המנויים
 
-מכיוון שפרופילי הלקוחות המאוחדים קיימים, אנו יכולים כעת להפעיל את חיזוי נטישת המנויים. לקבלת השלבים המפורטים, עיין במאמר [חיזוי נטישה של מנויים (מהדורת Preview)](predict-subscription-churn.md). 
+מכיוון שפרופילי הלקוחות המאוחדים קיימים, אנו יכולים כעת להפעיל את חיזוי נטישת המנויים. לשלבים מפורטים, ראה את המאמר [חיזוי נטישת מנויים](predict-subscription-churn.md). 
 
 1. עבור אל **בינה** > **גילוי** ובחר להשתמש ב **מודל נטישת לקוחות**.
 

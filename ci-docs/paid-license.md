@@ -4,22 +4,21 @@ author: m-hartmann
 description: הכר את חוויית ההפעלה הראשונה ב- Dynamics 365 Customer Insights וגלה את היכולות שלו.
 ms.author: mhart
 ms.date: 10/05/2021
-ms.service: customer-insights
-ms.topic: overview
+ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: b4228a36069f4adb8098ea96cefec0eef81a6560
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: c9517ed2b50ff37e361a27538dfb9f9ccbf3df8f
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645691"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350132"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>תחילת העבודה לאחר רכישת Customer Insights
 
 מאמר זה מסביר כיצד לבצע את הצעדים הראשונים ב- Dynamics 365 Customer Insights לאחר שהארגון רכש מנוי. אם ברצונך לרכוש Customer Insights, אפשרויות יצירת הקשר שלנו מופיעות באתר [Dynamics 365 Customer Insights ](https://dynamics.microsoft.com/ai/customer-insights/). 
 
-לאחר רכישת רישיון מינוי ל- Customer Insights, המנהל הכללי של דייר Microsoft 365 יקבל דואר שמזמין אותו ליצור את הסביבה. 
+לאחר רכישת רישיון למינוי על Customer Insights, מנהל המערכת הגלובלי של דייר Microsoft 365 יקבל הודעת דואר אלקטרוני שתזמין אותו ליצור את הסביבה. 
 
 רשיון Customer Insights מוקצה לפי דייר וכולל מספר יכולות. ניתן לרכוש קיבולת ורישיונות נוספים כדי להגדיל את מכסת ברירת המחדל. 
 - [מבט כולל על תמחור](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
@@ -40,10 +39,7 @@ ms.locfileid: "7645691"
 
 ## <a name="create-your-own-environment"></a>יצירת סביבה משלך
 
-לאחר הכניסה הראשונה, תראה סביבה עם נתונים לדוגמה. באפשרותך להשתמש בנתונים אלה כדי לגלות תכונות ולהכיר את היישום. כדי להשתמש בנתונים משלך, עליך ליצור סביבה ביכולת שבה ברצונך לעבוד.
-
-- [צור סביבה ב'תובנות לגבי קהלים'.](audience-insights/get-started-paid.md)
-- [צור סביבה ב'תובנות לגבי מעורבות'.](engagement-insights/create-new-environment.md) 
+לאחר הכניסה הראשונה, תראה סביבה עם נתונים לדוגמה. באפשרותך להשתמש בנתונים אלה כדי לגלות תכונות ולהכיר את היישום. כדי להשתמש בנתונים משלך, תצטרך [ליצור סביבה](audience-insights/get-started-paid.md).
 
 
 

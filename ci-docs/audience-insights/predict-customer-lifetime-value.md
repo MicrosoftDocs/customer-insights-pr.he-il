@@ -3,20 +3,24 @@ title: חיזוי ערך אורך חיים של לקוח (CLV)
 description: בצע חיזוי של פוטנציאל הכנסות עבור לקוחות פעילים בעתיד.
 ms.date: 02/05/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: m-hartmann
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: e2f92a64d01a443bcf3c1605621abe045b93ee5e
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+searchScope:
+- ci-predictions
+- ci-create-prediction
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 07790604b06f21095a9220a6f57727cac80789c5
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095511"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355790"
 ---
-# <a name="customer-lifetime-value-clv-prediction-preview"></a>חיזוי של ‏‫ערך אורך החיים של הלקוח (CLV)‏ (Preview)
+# <a name="customer-lifetime-value-clv-prediction"></a>חיזוי ערך אורך חיים של לקוח (CLV)
 
 בצע חיזוי של ערך פוטנציאלי (הכנסות) שלקוחות פעילים בודדים יביאו לעסק שלך במהלך פרק זמן עתידי מוגדר. תכונה זו יכולה לעזור לך להשיג יעדים שונים: 
 - זהה לקוחות בעלי ערך רב ועבד תובנה זו
@@ -65,7 +69,7 @@ ms.locfileid: "6095511"
     - שלמות הנתונים: פחות מ- 20% ערכים חסרים בשדות הנדרשים בנתוני הקלט   
 
 > [!NOTE]
-> - המודל דורש את היסטוריית העסקאות של לקוחותיך. ניתן להגדיר כרגע רק ישות אחת של היסטוריית עסקאות. אם קיימות ישויות רכישה/עסקה מרובות, ניתן לאחד אותן ב- Power Query לפני עיבוד הנתונים.
+> - המודל דורש את היסטוריית העסקאות של לקוחותיך. ניתן להגדיר כרגע רק ישות אחת של היסטוריית עסקאות. אם יש ישויות רכש/עסקה מרובות, תוכל לאחד אותן ב- Power Query לפני קליטת הנתונים.
 > - עם זאת, לקבלת נתוני פעילות של לקוחות נוספים (אופציונלי), תוכל להוסיף ישויות של פעילויות לקוח רבות ככל שתרצה שהמודל ייקח זאת בחשבון.
 
 ## <a name="create-a-customer-lifetime-value-prediction"></a>יצירת חיזוי של ערך אורך חיים של לקוח
@@ -74,7 +78,7 @@ ms.locfileid: "6095511"
 
 1. בחר את האריח **ערך אורך חיים של לקוח** ובחר **מודל שימוש**. 
 
-1. בחלונית **ערך אורך חיים של לקוח (preview)**, בחר **תחילת העבודה**.
+1. בחלונית **ערך אורך החיים של הלקוח**, בחר **תחילת העבודה**.
 
 1. **תן שם למודל זה** ו **שם ישות פלט** כדי להבדיל בינם לבין מודלים או ישויות אחרים.
 

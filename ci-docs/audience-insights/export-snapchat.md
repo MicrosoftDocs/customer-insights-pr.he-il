@@ -1,22 +1,21 @@
 ---
 title: ייצוא נתוני Customer Insights אל Snapchat
 description: למד כיצד להגדיר את החיבור ולייצא אל Snapchat.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d3dae7f0fef1fc3792c90c8ac0d3b037f5c0923d
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 7eac3307b3f82b6c5ebc3d66d6563ae50696ed65
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760540"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227249"
 ---
-# <a name="export-segment-lists-to-snapchat-preview"></a>ייצוא רשימות פלחים אל Snapchat‏ (Preview)
+# <a name="export-segments-to-snapchat-preview"></a>ייצוא פלחים אל Snapchat‏ (Preview)
 
 יצא פלחים של פרופילי לקוחות מאוחדים אל Snapchat והשתמש בהם עבור פרסום. 
 
@@ -29,7 +28,7 @@ ms.locfileid: "5760540"
 ## <a name="known-limitations"></a>מגבלות ידועות
 
 - הייצוא אל Snapchat מוגבל לפלחים.
-- ייצוא של עד מיליון פרופילים ל- Snapchat יכול להימשך עד 15 דקות. 
+- ייצוא של עד מיליון פרופילי לקוחות אל Snapchat עשוי להימשך עד 15 דקות. 
 
 ## <a name="set-up-connection-to-snapchat"></a>הגדרת חיבור אל Snapchat
 
@@ -63,7 +62,7 @@ ms.locfileid: "5760540"
 
 1. הזן את [**מזהה הקהל של Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences).
 
-1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. יש לייצא פלחים אל Snapchat.
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. יש לייצא פלחים אל Snapchat.
 
 1. בחר את הפלחים שברצונך לייצא. 
 

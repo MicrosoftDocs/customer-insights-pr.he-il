@@ -3,18 +3,17 @@ title: פלחים המבוססים על פלט חיזוי
 description: צור פלחים המבוססים על ישות הפלט של מודל חיזוי.
 ms.date: 03/24/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 488db1af865ce600ec012716327d053bee33aff8
-ms.sourcegitcommit: a95c82f46c23f625cb34fceba021ccc70d4b1df6
+ms.openlocfilehash: b0b3357cdf3c049bd92f6c3f690f27433df9117b
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "5741430"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226664"
 ---
 # <a name="create-a-segment-based-on-a-prediction-model-preview"></a>יצירת פלח המבוסס על מודל חיזוי (Preview)
 

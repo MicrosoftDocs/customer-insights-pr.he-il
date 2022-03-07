@@ -3,18 +3,20 @@ title: חיבורים לשירותים אחרים מתוך Customer Insights.
 description: שתף נתונים עם שירותים אחרים.
 ms.date: 04/09/2021
 ms.reviewer: nikeller
-ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 106dbc26f95b309821d738e1484b1eaa79dd225b
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+searchScope:
+- ci-connections
+- customerInsights
+ms.openlocfilehash: ccad090d3bf6eab96eff37f7a96289ca2882d369
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896098"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354385"
 ---
 # <a name="connections-preview-overview"></a>מבט כולל על חיבורים (Preview)
 
@@ -47,6 +49,7 @@ ms.locfileid: "5896098"
 1. בחלונית **הגדרת חיבור**, ספק את הפרטים הדרושים. 
    1. **שם תצוגה** וסוג החיבור מתארים חיבור. מומלץ לבחור שם המסביר את המטרה והיעד של חיבור זה.
    1. השדות המדויקים תלויים בשירות שאליו אתה מתחבר. באפשרותך לקבל מידע על פרטי סוג חיבור ספציפי במאמר על שירות היעד.
+   1. אם אתה [משתמש ב- Key Vault שלך](use-azure-key-vault.md) לאחסון סודות, הפעל את האפשרות **השתמש ב- Key Vault** ובחר את הסוד מהרשימה.
 
 1. כדי ליצור את החיבור, בחר **שמור**.
 
@@ -74,7 +77,9 @@ ms.locfileid: "5896098"
 
 ## <a name="remove-a-connection"></a>הסרת חיבור
 
-אם החיבור שאתה מסיר משמש העשרות או פעולות ייצוא, עליך תחילה לנתק או להסיר אותן. תיבת הדו-שיח להסרה תנחה אותך אל ההעשרות או פעולות הייצוא הרלוונטיות. העשרות ופעולות ייצוא מנותקות הופכות ללא פעילות. הפעל אותן מחדש על-ידי הוספת חיבור נוסף בדף [העשרות](enrichment-hub.md) או [פעולות ייצוא](export-destinations.md).
+אם החיבור שאתה מסיר משמש העשרות או פעולות ייצוא, עליך תחילה לנתק או להסיר אותן. תיבת הדו-שיח להסרה תנחה אותך אל ההעשרות או פעולות הייצוא הרלוונטיות. 
+
+העשרות ופעולות ייצוא מנותקות הופכות ללא פעילות. הפעל אותן מחדש על-ידי הוספת חיבור נוסף בדף [העשרות](enrichment-hub.md) או [פעולות ייצוא](export-destinations.md).
 
 1. עבור אל **ניהול** > **חיבורים (preview)**.
 
@@ -91,3 +96,6 @@ ms.locfileid: "5896098"
 
 1. כדי לאשר את המחיקה, בחר **הסר**.
 
+## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>הגדרת חיבורים עם סודות שמנוהלים על-ידי Key Vault שלך
+
+חלק מהחיבורים זקוקים לסודות כמו מפתחות API או סיסמאות. חלק מהחיבורים תומכים בסודות שמאוחסנים ב- Key Vault משלך. למידע נוסף על חיבורים נתמכים וכיצד להגדיר [Key Vault משלך עבור תובנות לגבי קהלים](use-azure-key-vault.md).

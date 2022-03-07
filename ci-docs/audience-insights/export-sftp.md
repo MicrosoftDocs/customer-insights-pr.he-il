@@ -1,20 +1,19 @@
 ---
-title: ייצוא נתוני Customer Insights אל מארחי SPTF
+title: ייצוא נתוני Customer Insights אל מארחי SFTP (מכיר סרטון)
 description: למד כיצד להגדיר את החיבור ולייצא אל מיקום SFTP.
 ms.date: 03/03/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a54025588945e4db6ab800dca034520b5f08d49b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 7b09da093d6332c5081da1beadc1df59f63c31d2
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673917"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231155"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>ייצוא פלחים ונתונים אחרים אל SFTP‏ (Preview)
 
@@ -28,6 +27,7 @@ ms.locfileid: "7673917"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
+- יעדי SFTP מאחורי חומות אש אינם נתמכים כרגע. 
 - זמן הריצה של ייצוא תלוי בביצועי המערכת שלך. מומלץ שתי ליבות CPU וזיכרון של 1‎ GB כתצורה מינימלית עבור השרת שלך. 
 - ייצוא ישויות עם עד 100 מיליון פרופילי לקוחות יכול להימשך 90 דקות בעת שימוש בתצורה המינימלית המומלצת של שתי ליבות CPU וזיכרון של 1‎ GB. 
 

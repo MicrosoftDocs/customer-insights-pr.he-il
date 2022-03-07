@@ -1,20 +1,19 @@
 ---
 title: ‏‎מחבר ‎LiveRamp‏‏‏‏
 description: למד כיצד להגדיר את החיבור ואת הייצוא אל LiveRamp.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: b377a3500c5d91962e59d46fbc259db5cc8fa7d0
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 4c0f58083e8486d2042d8efcc8b3690020efb1c3
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6555446"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226353"
 ---
 # <a name="export-segments-to-liverampreg-preview"></a>ייצוא פלחים אל LiveRamp&reg;‏ (Preview)
 
@@ -58,7 +57,7 @@ ms.locfileid: "6555446"
    > [!div class="mx-imgBorder"]
    > ![מחבר LiveRamp עם מיפוי תכונות.](media/export-liveramp-segments.png "מחבר LiveRamp עם מיפוי תכונות")
 
-1. מפה את התכונות המתאימות מישות הלקוח המאוחד שלך עבור מזהה המפתח שנבחר.
+1. מפה את התכונות המתאימות מישות *לקוח* עבור מזהה המפתח שנבחר.
 
 1. בחר **הוסף תכונה** כדי למפות תכונות נוספות לשליחה אל LiveRamp.
 

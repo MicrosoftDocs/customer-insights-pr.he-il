@@ -1,20 +1,22 @@
 ---
 title: נתונים של Customer Insights ב- Microsoft Dataverse
 description: השתמש בישויות של Customer Insights כטבלאות ב- Microsoft Dataverse.
-ms.date: 06/15/2021
+ms.date: 11/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7157ad930f3cea17c12bd4f95028d291483329d3
-ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
+searchScope:
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 9f730f5856221592cddf34b714beeaca24c52130
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6259192"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355430"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>עבודה עם נתונים של Customer Insights ב- Microsoft Dataverse
 
@@ -24,11 +26,7 @@ Customer Insights מציע את האפשרות להפוך ישויות פלט ל
 
 **ארגונים עם סביבות Dataverse קיימות**
 
-ארגונים שכבר משתמשים ב- Dataverse יכולים [להשתמש באחת מסביבות Dataverse הקיימות שלהם](manage-environments.md#create-an-environment-in-an-existing-organization) כאשר מנהל מערכת מגדיר תובנות לגבי קהלים. אספקת כתובת URL לסביבת Dataverse מצרפת אותה לסביבה החדשה של תובנות לגבי קהלים. כדי להבטיח את הביצועים הטובים ביותר שאפשר, יש לארח סביבות של Customer Insights ושל Dataverse באותו אזור.
-
-כדי לצרף סביבה של Dataverse, הרחב את **הגדרות מתקדמות** בעת יצירת סביבת התובנות לגבי קהלים. ספק את **כתובת ה- URL של סביבת Microsoft Dataverse** ובחר בתיבת הסימון **הפוך שיתוף נתונים לזמין‬‏‫**.
-
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt":::
+ארגונים שכבר משתמשים ב- Dataverse יכולים [להשתמש באחת מסביבות Dataverse הקיימות שלהם](create-environment.md) כאשר מנהל מערכת מגדיר תובנות לגבי קהלים. אספקת כתובת URL לסביבת Dataverse מצרפת אותה לסביבה החדשה של תובנות לגבי קהלים. כדי להבטיח את הביצועים הטובים ביותר שאפשר, יש לארח סביבות של Customer Insights ושל Dataverse באותו אזור.
 
 **ארגון חדש**
 
@@ -49,6 +47,7 @@ Customer Insights מציע את האפשרות להפוך ישויות פלט ל
 - [CustomerMeasure](#customermeasure)
 - [העשרה](#enrichment)
 - [חיזוי](#prediction)
+- [חברות בפלח](#segment-membership)
 
 
 ### <a name="customerprofile"></a>CustomerProfile
@@ -125,3 +124,16 @@ Customer Insights מציע את האפשרות להפוך ישויות פלט ל
 | ערכים               | מחרוזת JSON | רשימת התכונות שנוצרו על-ידי המודל |
 | msdynci_predictionid | GUID        | GUID דטרמיניסטי שנוצר מ- msdynci_identifier | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+
+### <a name="segment-membership"></a>חברות בפלח
+
+טבלה זו מכילה מידע על חברות בפלח של פרופילי הלקוחות.
+
+| Column        | Type | Description                        |
+|--------------------|--------------|-----------------------------|
+| מזהה לקוח        | String       | מזהה פרופיל לקוח        |
+| SegmentProvider      | String       | יישום שמפרסם את הפלחים. ברירת מחדל: תובנות לגבי קהלים         |
+| SegmentMembershipType | String       | סוג הלקוח ברשומת חברות זו בפלח. תומך בסוגים מרובים, כגון לקוח, איש קשר או תיק לקוח. ברירת מחדל: לקוח  |
+| פלחי שוק       | מחרוזת JSON  | רשימת פלחים ייחודיים שפרופיל הלקוח חבר בהם      |
+| msdynci_identifier  | String   | המזהה הייחודי של רשומת החברות בפלח. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| msdynci_segmentmembershipid | Guid      | GUID דטרמיניסטי שנוצר מתוך `msdynci_identifier`          |

@@ -3,18 +3,17 @@ title: העשרה עם ייבוא מותאם אישית של SPTF
 description: מידע כללי אודות העשרת ייבוא מותאם אישית של SPTF.
 ms.date: 04/09/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b67aa7477033222b0bc9512a962a1580edd973b4882ce925620ff5ec14f83fe3
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032713"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229639"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>העשרת פרופילי לקוחות עם נתונים מותאמים אישית (Preview)
 
@@ -44,6 +43,8 @@ ms.locfileid: "7032713"
 1.  בחר **הבא** והיכנס אל **נתיב** ואל **שם הקובץ** של קובץ הנתונים שברצונך לייבא.
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="צילום מסך בעת הזנת מיקום הנתונים.":::
+
+1. בחר **הבא** ובחר את ערכת הנתונים של הלקוח. האפשרויות הן כל פרופילי הלקוח או פלח.
 
 1. בחר **הבא** וספק שם עבור ההעשרה ושם עבור ישות הפלט. 
 
@@ -123,6 +124,6 @@ ms.locfileid: "7032713"
 
 ## <a name="next-steps"></a>השלבים הבאים
 
-בנה על נתוני הלקוחות המועשרים שלך. צור [פלחים](segments.md) ו[מדידות](measures.md), ו[יצא את הנתונים](export-destinations.md) כדי להעניק ללקוחות שלך חוויות מותאמות אישית.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

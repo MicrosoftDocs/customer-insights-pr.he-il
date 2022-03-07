@@ -1,20 +1,24 @@
 ---
 title: חיבור נתונים של Common Data Model לחשבון Azure Data Lake
 description: עבוד עם נתונים של Common Data Model באמצעות Azure Data Lake Storage.
-ms.date: 12/06/2021
-ms.service: customer-insights
+ms.date: 01/25/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5f9010f78ea4c24094e0df4f8e153fb832e05cc8
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+searchScope:
+- ci-data-sources
+- ci-create-data-source
+- ci-attach-cdm
+- customerInsights
+ms.openlocfilehash: 1e3b28316c06d6a15dd5690837c365b0677a882e
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900198"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354928"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>חיבור לתיקיה של Common Data Model באמצעות חשבון Azure Data Lake
 
@@ -25,6 +29,8 @@ ms.locfileid: "7900198"
 - נתונים ב- Azure Data Lake שלך צריכים לציית לתקן Common Data Model. אין תמיכה בתבניות אחרות כרגע.
 
 - קליטת נתונים תומכת בחשבונות אחסון של Azure Data Lake *Gen2* באופן בלעדי. אין באפשרותך להשתמש בחשבונות אחסון של Azure Data Lake Gen1 לקליטת נתונים.
+
+- על החשבון Azure Data Lake Storage להיות עם התכונה ['מרחב שמות הירארכי' זמינה](/azure/storage/blobs/data-lake-storage-namespace).
 
 - כדי לאמת עם מנהל שירות של Azure, ודא שהוא מוגדר בדייר שלך. לקבלת מידע נוסף, ראה [חיבור audience insights לחשבון Azure Data Lake Storage Gen2 עם מנהל שירות של Azure](connect-service-principal.md).
 

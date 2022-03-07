@@ -1,92 +1,29 @@
 ### YamlMime:Landing
-title: יכולת תובנות לגבי מעורבות ב- Dynamics 365 Customer Insights (Preview)
-summary: אסוף נתונים עבור אתרי האינטרנט שלך. תחקור באופן אינטראקטיבי את האינטראקציות ואת השימוש של הלקוחות באתרים שלך. השתמש בשילוב המעמיק של תובנות לגבי מעורבות ותובנות לגבי קהלים, כדי להעשיר את ניתוח ההתנהגות בזמן אמת עם דוחות על פרופילי לקוחות. העשר את פרופילי הלקוחות בפעילויות באינטרנט כדי לקבל נתוני התנהגות בזמן אמת לצד נתונים רלוונטיים לגבי לקוחות. התאם את העסק שלך להפיק ערך מיידי מנתוני הלקוחות.
+title: סיום תצוגה מקדימה של תובנות לגבי מעורבות
+summary: התצוגה המקדימה של יכולת תובנות לגבי מעורבות של Dynamics 365 Customer Insights הסתיימה ב- 15 בפברואר 2022. המשמעות של שינוי זה היא שחוויית הניסיון של Customer Insights אינה כוללת עוד את היכולת ליצור משפכים או פונקציונליות דיווח אחרת. אנו מזמינים אותך לחקור ולהעריך את התכונות הרבות האחרות של Customer Insights, פלטפורמת נתוני הלקוחות (CDP) של Microsoft‏. צור קשר ישירות עם צוות חשבון Microsoft שלך אם יש לך שאלות לגבי סיום התצוגה המקדימה של היכולת. צוות החשבון שלך ישאיר אותך מעודכן בהשקות העתידיות. אנו מודים לך!
 metadata:
   title: תיעוד של תובנות לגבי מעורבות (Preview)
   description: מרכז עזרה עם קישורי מפתח לתובנות לגבי מעורבות.
-  ms.service: customer-insights
   ms.subservice: engagement-insights
   ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
   ms.date: 09/15/2021
-  ms.openlocfilehash: 0ec5a31a968fc97deeeef3ef444bb558a4ff2b65
-  ms.sourcegitcommit: a371fc1e75b2321e45d3f972a3ac84c725f8cc38
+  ms.openlocfilehash: 99933c69c791da12815ebee3edb6413276b19b09
+  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
   ms.translationtype: HT
   ms.contentlocale: he-IL
-  ms.lasthandoff: 02/10/2022
-  ms.locfileid: "8107248"
+  ms.lasthandoff: 02/25/2022
+  ms.locfileid: "8350500"
 landingContent:
-- title: אודות
+- title: שמור על קשר
   linkLists:
   - linkListType: overview
     links:
-    - text: יתרונות יכולת
-      url: overview.md
-    - text: מילון מונחים
-      url: glossary.md
-    - text: תוכניות הפצה
-      url: /dynamics365/release-plans/
-- title: קליטה
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: התחל בעבודה
-      url: get-started.md
-    - text: יצירת סביבת עבודה
-      url: create-workspace.md
-    - text: ציד את האתר בכלים
-      url: instrument-website.md
-- title: הצגה וסינון דוחות
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: הצג דוחות
-      url: view-reports.md
-    - text: הצגת דוח פרופילים מאוחדים
-      url: profile-reports.md
-    - text: השתמש בפלחי קהל לסינון דוחות
-      url: integrate-audience-insights-segments.md
-- title: נתח
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: יצירת דוחות משפך
-      url: funnel-reports.md
-    - text: נתח נתונים התנהגותיים
-      url: curate-dimensions.md
-    - text: יצירת דוחות מותאמים אישית
-      url: custom-reports.md
-    - text: צור אירועים ממוקדים
-      url: refined-events.md
-    - text: ייצוא אירועים
-      url: export-events.md
-- title: משאבים למפתחים
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: משאבים למפתחים
-      url: developer-resources.md
-    - text: מדגם WebSDK
-      url: websdk-sample.md
-    - text: תרחישים מתקדמים עבור SDK לאינטרנט
-      url: advanced-SDK-implementation.md
-    - text: מדגם SDK Android
-      url: get-started-android.md
-    - text: מדגם iOS SDK
-      url: get-started-ios.md
-- title: ניהול
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: נהל סביבות וסביבות עבודה
-      url: manage-environments-workspaces.md
-    - text: התחבר לתובנות לגבי קהלים
-      url: integrate-audience-insights-engagement-insights.md
-    - text: נהל קובצי Cookie והסכמת משתמש
-      url: user-consent-storage.md
-    - text: מחיקה וייצוא של נתונים אישיים
-      url: delete-export-personal-data.md
-    - text: מגבלות שירות
-      url: ../service-limits.md
+    - text: הצטרף לקהילת Dynamics 365
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: שתף את הרעיונות שלך
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: דווח על בעיה
+      url: https://go.microsoft.com/fwlink/?linkid=2079641

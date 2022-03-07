@@ -1,24 +1,28 @@
 ---
 title: השלמת נתונים חלקיים באמצעות חיזויים
 description: השתמש בחיזויים כדי למלא נתוני לקוחות לא שלמים.
-ms.date: 05/05/2020
-ms.service: customer-insights
+ms.date: 11/01/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6ce72486faa97e6f630a991044ca5e6d4714d0b8b8395a60fad12f3e3a49fa29
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+searchScope:
+- ci-predictions
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 9634523f61e27a0ed183186a788ab0cef3c0491b
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032436"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354004"
 ---
-# <a name="complete-your-partial-data-with-predictions"></a>השלמת הנתונים החלקיים שלך באמצעות חיזויים
+# <a name="complete-your-partial-data-with-predictions-deprecated"></a>השלמת הנתונים החלקיים באמצעות חיזוי (הוצא משימוש)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> תכונה זו **תצא משימוש** בתאריך **5 בנובמבר 2021**. היישומים הנוכחיים ימשיכו לעבוד עד הסרת התכונה, אך לא תוכל ליצור שילובים חדשים באמצעות ההוראות למטה.
 
 חיזויים מאפשרים לך ליצור בקלות ערכים חזויים שיכולים לשפר את ההבנה שלך את הלקוח. בדף **בינה** > **חיזויים**, באפשרותך לבחור **החיזויים שלי** כדי לראות חיזויים שהגדרת בחלקים אחרים של Audience Insights, ולהתאים אותם אישית עוד יותר.
 
@@ -35,7 +39,7 @@ ms.locfileid: "7032436"
 
 2. סביבת התובנות לגבי קהלים מחוברת למופע Dataverse.
 
-אם אתה [יוצר סביבה חדשה](get-started-paid.md), הגדר אותה בתיבת הדו-שיח **צור סביבה** ובחר **מתקדם**. אם כבר יצרת סביבה, עבור להגדרות שלה ובחר **מתקדם**. כך או כך, במקטע **השתמש בחיזויים**, הזן את כתובת ה- URL של מופע Dataverse שאליו ברצונך לצרף את הסביבה שלך.
+לקבלת מידע נוסף, ראה [יצירת סביבה חדשה](create-environment.md).
 
 ## <a name="create-a-prediction-in-the-customer-entity"></a>יצירת חיזוי בישות 'לקוח'
 
@@ -60,6 +64,8 @@ ms.locfileid: "7032436"
    > ![דוגמה המציגה ערכי שדה ממופים לקטגוריות.](media/intelligence-categorymapping.png "דוגמה המציגה ערכי שדה ממופים לקטגוריות")
 
 8. בחר **בוצע** והחיזוי יעובד. העיבוד ייקח זמן מה, תלוי בגודל ובמורכבות הנתונים. התוצאות יהיו זמינות ביישות חדשה בהתבסס על **שם ישות פלט** של החיזוי שיצרת.
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="create-a-prediction-while-creating-a-segment"></a>צור חיזוי תוך כדי יצירת פלח
 
@@ -110,7 +116,7 @@ ms.locfileid: "7032436"
 
 ## <a name="edit-a-prediction"></a>ערוך חיזוי
 
-לאחר שיצרת חיזוי, תוכל להתאים אישית את הדגם ב- AI Builder כדי להגדיל את האפקטיביות של הדגם.  
+לאחר שיצרת חיזוי, תוכל להתאים אישית את המודל ב- AI Builder כדי להגביר את יעילות המודל שלך.  
 
 1. ב- audience insights, עבור אל **בינה** > **חיזויים** > **החיזויים שלי**.
 
@@ -118,14 +124,14 @@ ms.locfileid: "7032436"
 
 3. בחר בשלוש הנקודות בעמודה **פעולות** ובחר **הצג**.
 
-4. בחר **התאם אישית ב- AI Builder**.
+4. בחר **התאמה אישית ב- AI Builder**.
 
-5. עדכן את הדגם שלך ב- AI Builder. [למידע נוסף על ניהול דגמים ב-AI Builder](/ai-builder/manage-model#retrain-and-republish-existing-models).
+5. עדכן את המודל שלך ב- AI Builder. [למידע נוסף על ניהול דגמים ב-AI Builder](/ai-builder/manage-model#retrain-and-republish-existing-models).
 
 הריצה הבאה של החיזוי תשתמש בדגם המעודכן שיצרת.
 
 > [!NOTE]
-> מודלים חדשים שנוצרו ב- AI Builder לא יוצגו ב- Audience Insights, אלא אם כן המודל נוצר מהחוויות המפורטות לעיל.
+> דגמים חדשים שנוצרו ב- AI Builder לא יוצגו בתובנות לגבי קהל אלא אם המודל נוצר מהחוויות המפורטות למעלה.
 
 ## <a name="remove-a-prediction"></a>הסר חיזוי
 

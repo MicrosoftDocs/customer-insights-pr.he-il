@@ -3,18 +3,17 @@ title: חיזוי ערכי אורך החיים של הלקוח‬ - מדריך �
 description: השתמש במדריך לדוגמה זה כדי לנסות את מודל החיזוי של ערך אורך החיים של לקוח.
 ms.date: 05/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 19c1fbadb79ba22c0dc11aa7c3b5b2415add70a7
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: c130e5f699f7eb921b69a20bc6d4ba9eab5b2779
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306350"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354832"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>חיזוי ערכי אורך החיים של הלקוח‬ (CLV) - מדריך לדוגמה
 
@@ -22,7 +21,7 @@ ms.locfileid: "6306350"
 
 ## <a name="scenario"></a>תרחיש
 
-Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות גבוהה. היא מוכרת את המוצרים באמצעות אתר האינטרנט Contoso Coffee. החברה רוצה להבין את הערך (ההכנסות) שהלקוחות שלה יכול לייצר ב- 12 החודשים הבאים. ידיעת הערך הצפוי של הלקוחות ב- 12 החודשים הבאים תסייע להם להפנות את מאמצי השיווק ללקוחות בעלי ערך גבוה.
+Contoso היא חברה המייצרת קפה באיכות גבוהה ומכונות קפה. הם מוכרים את המוצרים דרך אתר האינטרנט שלהם Contoso Coffee. החברה רוצה להבין את הערך (ההכנסות) שהלקוחות שלה יכול לייצר ב- 12 החודשים הבאים. ידיעת הערך הצפוי של הלקוחות ב- 12 החודשים הבאים תסייע להם להפנות את מאמצי השיווק ללקוחות בעלי ערך גבוה.
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
@@ -31,7 +30,7 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
 
 ## <a name="task-1---ingest-data"></a>משימה 1 - קליטת נתונים
 
-עיין במאמרים [בנושא קליטת נתונים](data-sources.md) ו[ייבוא מקורות נתונים באמצעות מחברי Power Query](connect-power-query.md). המידע הבא מניח שאתה מכיר את תהליך קליטת הנתונים באופן כללי.
+עיין במאמרים [לגבי קליטת נתונים](data-sources.md) ו- [ייבוא מקורות נתונים באמצעות מחברי Power Query ](connect-power-query.md). המידע הבא מניח שאתה מכיר את תהליך קליטת הנתונים באופן כללי.
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>קליטת נתוני לקוחות מפלטפורמת eCommerce
 
@@ -164,7 +163,7 @@ Contoso היא חברה שמייצרת קפה ומכונות קפה באיכות
 
 ## <a name="task-3---configure-customer-lifetime-value-prediction"></a>משימה 3 - קביעת תצורה של חיזוי ערך אורך החיים של לקוח
 
-בעזרת פרופילי הלקוח המאוחד, כעת נוכל להפעיל חיזוי של ערך אורך החיים של לקוח. לקבלת שלבים מפורטים, ראה [‏‫חיזויי ערך אורך החיים של הלקוח (Preview)](predict-customer-lifetime-value.md).
+בעזרת פרופילי הלקוח המאוחד, כעת נוכל להפעיל חיזוי של ערך אורך החיים של לקוח. לשלבים מפורטים, ראה [חיזוי ערך אורך החיים של הלקוח](predict-customer-lifetime-value.md).
 
 1. עבור אל **בינה**  > **חיזויים** ובחר את **מודל ערך אורך החיים של הלקוח**.
 

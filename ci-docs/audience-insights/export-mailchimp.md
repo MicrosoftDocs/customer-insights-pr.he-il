@@ -1,22 +1,21 @@
 ---
 title: ייצוא נתוני Customer Insights אל Mailchimp
 description: למד כיצד להגדיר את החיבור ולייצא אל Mailchimp.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b94a8e8b6bb867ca04a64007d592b22fbd700618
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: f7a33f2eddb6b625ddb8663b97103de75beab44c
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759879"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226847"
 ---
-# <a name="export-segment-lists-to-mailchimp-preview"></a>ייצוא רשימות פלחים אל Mailchimp‏ (Preview)
+# <a name="export-segments-to-mailchimp-preview"></a>ייצוא פלחים אל Mailchimp‏ (Preview)
 
 יצא מקטעים של פרופיל לקוח מאוחדים אל Mailchimp כדי ליצור ידיעונים וקמפיינים בדוא"ל.
 
@@ -29,16 +28,16 @@ ms.locfileid: "5759879"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- עד מיליון פרופילים לייצוא ל- Mailchimp.
+- עד מיליון פרופילי לקוחות לייצוא אל Mailchimp.
 - הייצוא ל- Mailchimp מוגבל לפלחים.
-- ייצוא פלחים עם מיליון פרופילים יכול להימשך עד שלוש שעות. 
-- מספר הפרופילים שתוכל לייצא ל- Mailchimp תלוי ומוגבל בחוזה שלך עם Mailchimp.
+- ייצוא פלחים עם מיליון פרופילי לקוחות עשוי להימשך עד שלוש שעות. 
+- מספר פרופילי הלקוחות שתוכל לייצא אל Mailchimp תלוי בחוזה שלך עם Mailchimp ומוגבל בהתאם לתנאיו.
 
 ## <a name="set-up-connection-to-mailchimp"></a>הגדרת חיבור אל Mailchimp
 
 1. עבור אל **ניהול** > **חיבורים**.
 
-1. בחר **הוסף חיבור** ובחר **Autopilot** כדי לקבוע את תצורת החיבור.
+1. בחר **הוסף חיבור** ולאחר מכן בחר **Mailchimp** כדי להגדיר את החיבור.
 
 1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**. השם וסוג החיבור מתארים חיבור זה. מומלץ לבחור שם המסביר את המטרה והיעד של החיבור.
 
@@ -66,7 +65,7 @@ ms.locfileid: "5759879"
 
 1. הזן את **[מזהה קהל Mailchimp](https://mailchimp.com/help/find-audience-id/)** שלך
 
-3. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר את השדה בפרופיל הלקוח המאוחד שלך המייצג את כתובת הדוא"ל של לקוח. 
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. 
 
 1. לחלופין, באפשרותך לייצא **שם פרטי** ו **שם משפחה** כדי ליצור הודעות דואר מותאמות אישית יותר. בחר **הוסף תכונה** כדי למפות שדות אלה.
 

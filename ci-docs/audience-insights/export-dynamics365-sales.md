@@ -3,24 +3,31 @@ title: ייצוא נתוני Customer Insights אל Dynamics 365 Sales
 description: למד כיצד להגדיר את החיבור ולייצא אל Dynamics 365 Sales.
 ms.date: 03/03/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 78abb6699c6af5258fe7de1bf6aa4cb943796af1
-ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+searchScope:
+- ci-export
+- customerInsights
+ms.openlocfilehash: cf680c21c55c71d99728be79fe68111dc89a79ec
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "8046380"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355018"
 ---
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>שימוש בפלחים ב- Dynamics 365 Sales‏ (Preview)
 
 
 
 השתמש בנתוני הלקוחות שלך כדי ליצור רשימות שיווק, להמשיך לטפל בזרימות עבודה ולשלוח מבצעים באמצעות Dynamics 365 Sales.
+
+## <a name="known-limitations"></a>מגבלות ידועות
+
+- ייצוא אל Dynamics 365 Sales מוגבל ל- 000'100 חברים לפלח.
+- ייצוא פלחים אל Dynamics 365 Sales יכול להימשך עד 3 שעות. 
 
 ## <a name="prerequisite-for-connection"></a>דרישה מוקדמת לחיבור
 

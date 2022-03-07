@@ -2,18 +2,17 @@
 title: ניהול כללי הסכמה המהווים ברירת מחדל בפלחים
 description: עם יכולת ניהול ההסכמה, ניתן להפוך את כללי ההסכמה המוגדרים כברירת מחדל ללא זמינים או לשנות אותם אם עקיפות הפכו לזמינות.
 ms.date: 12/01/2021
-ms.service: customer-insights
 mms.topic: how-to
 author: smithy7
 ms.author: smithc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 28c9ea49b1f3aebd3abd7d4de58fe61e6474158b
-ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
+ms.openlocfilehash: 4eae4da67fd4c6e70800f495ba30366d4fc9a0dd
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7884171"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8228940"
 ---
 # <a name="disable-or-change-default-consent-rules"></a>השבתה או שינוי של כללי הסכמה המהווים ברירת מחדל
 

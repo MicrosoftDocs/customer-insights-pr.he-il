@@ -5,17 +5,19 @@ ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
 ms.date: 08/31/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5e8545bc9bf0d953150248fa859c6ca71a12f9cf
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: 2776b2292560f9ea61a06d2b1b7bc7811d35c860
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645265"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353714"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-audience-insights-capability"></a>תחילת העבודה עם יכולת תובנות לגבי קהלים של Dynamics 365 Customer Insights
 
@@ -37,7 +39,7 @@ ms.locfileid: "7645265"
 
 פרופילים מאוחדים הם הבסיס לקבלת תובנות ולנקיטת פעולה בנתונים. הבא נתונים ממקורות שונים והפעל את תהליך איחוד הנתונים כדי לשלב פרופילים מאוחדים. ציין את קשרים בין הישויות שנקלטו המשתמשות בתכונות העשרה כדי להוסיף מידע לפרופילים. 
 
-1. קלוט נתונים על-ידי יצירת מקורות נתונים מאפשרויות מרובות. בחר בין [מחברי Power Query](connect-power-query.md), [תיקיית Common Data Model](connect-common-data-model.md) או [Microsoft Dataverse](connect-common-data-service-lake.md). 
+1. קלוט נתונים על-ידי יצירת מקורות נתונים מאפשרויות מרובות. בחר בין [Power Query מחברים](connect-power-query.md), [תיקיית Common Data Model](connect-common-data-model.md), או [Microsoft Dataverse](/dynamics365/customer-insights/audience-insights/connect-dataverse-managed-lake). 
 
 1. הפעל את [תהליך איחוד הנתונים](data-unification.md) על-ידי מעבר דרך שלבי [מיפוי](map-entities.md), [התאמה](match-entities.md) ו[מיזוג](merge-entities.md).
 

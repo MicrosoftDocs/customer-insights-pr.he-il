@@ -2,6 +2,22 @@
   href: index.yml
 - name: סקירת מוצר
   href: overview.md
+- name: קטלוג למידה
+  items:
+    - name: התחל בעבודה
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: קליטת נתונים
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: מהו פרופיל לקוח מאוחד
+      href: /learn/modules/unified-customer-profile/
+    - name: עבוד עם תובנות לגבי קהלים
+      href: /learn/modules/working-with-customer-insights/
+    - name: העשרה של נתונים וחיזוי
+      href: /learn/modules/enrich-data/
+    - name: נהל קשרים חיצוניים
+      href: /learn/modules/configure-third-party-connections/
+    - name: ניהול Customer Insights
+      href: /learn/modules/administer-customer-data-platform/
 - name: גירסת ניסיון ללא תשלום
   items:
     - name: הירשם לקבלת גירסת ניסיון ללא תשלום
@@ -30,26 +46,18 @@
           href: audience-insights/home.md
     - name: עבודה עם חשבונות עסקיים
       href: audience-insights/work-with-business-accounts.md
-    - name: למד מודולים
-      items:
-        - name: קליטת נתונים
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: מהו פרופיל לקוח מאוחד
-          href: /learn/modules/unified-customer-profile/
-        - name: עבודה עם האפליקציה
-          href: /learn/modules/working-with-customer-insights/
-        - name: העשרת נתונים וחיזויים
-          href: /learn/modules/enrich-data/
     - name: מקורות נתונים
       items:
         - name: מבט כולל על מקורות נתונים
           href: audience-insights/data-sources.md
-        - name: הוסף מקורות נתונים דרך מחברי Power Query
+        - name: הוסף מקורות נתונים באמצעות מחברי Power Query
           href: audience-insights/connect-power-query.md
         - name: הוסף תיקיית Common Data Model כמקור נתונים
           href: audience-insights/connect-common-data-model.md
         - name: הוספת אגם נתונים מנוהל של Dataverse
           href: audience-insights/connect-dataverse-managed-lake.md
+        - name: הוספת Azure Synapse Analytics
+          href: audience-insights/connect-synapse.md
         - name: רענון מדרגי של מקורות נתונים
           href: audience-insights/incremental-refresh-data-sources.md
         - name: קליטת נתונים בזמן אמת
@@ -80,11 +88,11 @@
       items:
         - name: העשרת פרופילי לקוחות
           href: audience-insights/enrichment-hub.md
-        - name: קירבות למותג ולתחומי עניין
+        - name: מותגים ותחומי עניין
           href: audience-insights/enrichment-microsoft.md
         - name: כתובות משופרות
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: שיפור נתוני חברה
+        - name: נתוני חברה משופרים
           href: audience-insights/enrichment-enhanced-company-data.md
         - name: העשר עם Azure Maps
           href: audience-insights/enrichment-azure-maps.md
@@ -94,6 +102,8 @@
           href: audience-insights/enrichment-leadspace.md
         - name: העשרה עם Experian
           href: audience-insights/enrichment-experian.md
+        - name: העשרה עם נתוני Office 365
+          href: audience-insights/enrichment-office.md
         - name: העשרה עם ייבוא מותאם אישית של SPTF
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: פלחי שוק
@@ -110,10 +120,14 @@
           href: audience-insights/segment-insights.md
         - name: מצא לקוחות דומים
           href: audience-insights/find-similar-customer-segments.md
-    - name: מדידים
+    - name: מדידות
       items:
-        - name: הגדרת מדדים ומחווני KPI
+        - name: מבט כולל על מדדים
           href: audience-insights/measures.md
+        - name: יצירת מדד חדש
+          href: audience-insights/measure-builder.md
+        - name: שימוש בתבנית מדד
+          href: audience-insights/measure-templates.md
     - name: חיזויים
       items:
         - name: חיזוי נתונים בעזרת AI
@@ -128,6 +142,8 @@
               href: audience-insights/predict-subscription-churn.md
             - name: חיזוי נטישה של עסקאות
               href: audience-insights/predict-transactional-churn.md
+            - name: נתח סנטימנט במשוב לקוחות
+              href: audience-insights/sentiment-analysis.md
             - name: השתמש במודלים מותאמים אישית מלמידת מכונה של Azure
               href: audience-insights/custom-models.md
             - name: השלם נתונים חסרים חלקית
@@ -144,8 +160,6 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: ניסויים עם למידת מכונה של Azure
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: ניסויים עם Azure Machine Learning Studio
-              href: audience-insights/machine-learning-studio-experiments.md
         - name: ניהול חיזויים
           href: audience-insights/manage-predictions.md
         - name: יצירת פלחי שוק על בסיס חיזויים
@@ -162,11 +176,11 @@
               href: audience-insights/export-adroll.md
             - name: Autopilot
               href: audience-insights/export-autopilot.md
-            - name: Azure Blob Storage
+            - name: אחסון Blob של Azure‬
               href: audience-insights/export-azure-blob-storage.md
             - name: Azure Data Lake Storage Gen2
               href: audience-insights/export-azure-data-lake-storage-gen2.md
-            - name: Azure Synapse Analytics
+            - name: ‏‏Azure Synapse Analytics
               href: audience-insights/export-azure-synapse-analytics.md
             - name: Adobe Campaign Standard
               href: audience-insights/export-adobe-campaign-standard.md
@@ -240,10 +254,10 @@
               href: audience-insights/use-azure-key-vault.md
             - name: התחברות לחשבון אחסון ADLS באמצעות מנהל שירות
               href: audience-insights/connect-service-principal.md
+            - name: ייצוא יומני אבחון
+              href: audience-insights/diagnostics.md
     - name: יכולת הרחבה
       items:
-        - name: שלב נתוני אינטרנט מתובנות לגבי מעורבות
-          href: audience-insights/integrate-engagement-insights.md
         - name: סקור את סכימות הישויות ב- Common Data Model
           href: audience-insights/entity-schemas.md
         - name: נתונים של Customer Insights ב- Dataverse
@@ -287,84 +301,10 @@
         - name: יצירת חיזויים עם נתוני הסכמה
           href: consent-management/predictions-consent-data.md
 - name: תובנות לגבי מעורבות (Preview)
-  items:
-    - name: מרכז העזרה
-      href: engagement-insights/index.yml
-    - name: אודות תובנות לגבי מעורבות
-      href: engagement-insights/overview.md
-    - name: התחל בעבודה
-      items:
-        - name: מדריך התחלה מהירה
-          href: engagement-insights/get-started.md
-        - name: יצירת סביבה
-          href: engagement-insights/create-new-environment.md
-        - name: יצירת סביבת עבודה
-          href: engagement-insights/create-workspace.md
-        - name: לכוד אירועים מאתרים ומאפליקציות למכשירים ניידים
-          href: engagement-insights/developer-resources.md
-        - name: מושגים וטרמינולוגיה
-          href: engagement-insights/glossary.md
-    - name: אירועים
-      items:
-        - name: צור אירועים ושנה אותם
-          href: engagement-insights/refined-events.md
-        - name: זיהוי אירועי אינטרנט ממבקרים שאומתו בעבר
-          href: engagement-insights/unknown-to-known.md
-        - name: ייצוא אירועים
-          href: engagement-insights/export-events.md
-    - name: דוחות
-      items:
-        - name: הצג דוחות
-          href: engagement-insights/view-reports.md
-        - name: יצירת דוחות מותאמים אישית
-          href: engagement-insights/custom-reports.md
-        - name: צור דוחות פרופיל מאוחדים
-          href: engagement-insights/profile-reports.md
-        - name: הצג וצור ממדים
-          href: engagement-insights/dimensions.md
-        - name: הצג וצור מדדים
-          href: engagement-insights/metrics.md
-        - name: הצג וצור פלחים
-          href: engagement-insights/segments.md
-    - name: ניתוח מסע הלקוח
-      items:
-        - name: יצירה וניהול של דוחות משפך
-          href: engagement-insights/funnel-reports.md
-    - name: משאבים למפתחים
-      items:
-        - name: סקירה של משאבים למפתחים
-          href: engagement-insights/developer-resources.md
-        - name: ערכת לימוד בנושא SDK לאינטרנט
-          href: engagement-insights/advanced-SDK-implementation.md
-        - name: דוגמה לערכת Web SDK
-          href: engagement-insights/websdk-sample.md
-        - name: ערכת לימוד SDK Android
-          href: engagement-insights/get-started-android.md
-        - name: מדגם SDK Android
-          href: engagement-insights/androidsdk-sample.md
-        - name: ערכת לימוד iOS SDK
-          href: engagement-insights/get-started-ios.md
-        - name: מדגם iOS SDK
-          href: engagement-insights/iossdk-sample.md
-    - name: ניהול
-      items:
-        - name: תפקידים והרשאות
-          href: engagement-insights/user-roles.md
-        - name: נהל סביבות וסביבות עבודה
-          href: engagement-insights/manage-environments-workspaces.md
-        - name: נהל קובצי Cookie והסכמת משתמש
-          href: engagement-insights/user-consent-storage.md
-    - name: זמינות אזורית
-      href: engagement-insights/regional-availability.md
-- name: שתף נתונים בין יכולות
-  items:
-    - name: קישור תובנות קהל ותובנות מעורבות
-      href: engagement-insights/integrate-audience-insights-engagement-insights.md
-    - name: השתמש בקטעי תובנות קהל בדוחות תובנות מעורבות
-      href: engagement-insights/integrate-audience-insights-segments.md
-    - name: השתמש בממדים דמוגרפיים לפיצול נתונים התנהגותיים
-      href: engagement-insights/curate-dimensions.md
+  href: engagement-insights/overview.md
 - name: מגבלות שירות
   href: service-limits.md
 - name: זכויות ובקשות של DSR
   href: dsr-rights-requests.md
+- name: קבל תמיכה
+  href: /power-platform/admin/get-help-support

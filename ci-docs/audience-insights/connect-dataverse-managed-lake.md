@@ -1,30 +1,35 @@
 ---
 title: התחבר לטבלאות ב- Microsoft Dataverse
 description: ייבא נתונים מאגם נתונים מנוהל של Microsoft Dataverse.
-ms.date: 07/23/2021
-ms.service: customer-insights
+ms.date: 12/06/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: f92d64723e6a4d2fcebdbb3758519d4bfd4aeaf4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+searchScope:
+- ci-dataverse
+- customerInsights
+ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692575"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354142"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>התחבר לנתונים בתוך אגם נתונים מנוהל של Microsoft Dataverse
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-מאמר זה מלמד כיצד משתמשי Dataverse יכולים להתחבר במהירות לישויות האנליטיות שלהם באגם בניהול Dataverse. אתה חייב להיות מנהל מערכת בארגון Dataverse כדי להמשיך ולראות את רשימת הישויות הזמינות באגם המנוהל.
+
+מאמר זה מספק מידע כיצד יכולים משתמשי Dataverse להתחבר במהירות לישויות אנליטיות באגם מנוהל של Microsoft Dataverse. 
+
+> [!NOTE]
+> עליך להיות מנהל מערכת בארגון Dataverse כדי להמשיך ולהציג את רשימת הישויות הזמינות באגם המנוהל.
 
 ## <a name="important-considerations"></a>שיקולים חשובים:
 
-נתונים המאוחסנים בשירותים מקוונים כגון Azure Data Lake Storage עשויים להיות מאוחסנים במקום אחר שאינו מקום העיבוד או האחסון של הנתונים ב- Dynamics 365 Customer Insights. על-ידי ייבוא נתונים או חיבור לנתונים שמאוחסנים בשירותים מקוונים, אתה מסכים שנתונים יועברו אל Dynamics 365 Customer Insights ויאוחסנו בו.  [קבל מידע נוסף במרכז יחסי האמון של Microsoft.](https://www.microsoft.com/trust-center)
+נתונים המאוחסנים בשירותים מקוונים כגון Azure Data Lake Storage עשויים להיות מאוחסנים במקום אחר שאינו מקום העיבוד או האחסון של הנתונים ב- Dynamics 365 Customer Insights. על-ידי ייבוא או התחברות לנתונים המאוחסנים בשירותים מקוונים, אתה מסכים להעברה ולאחסון של נתונים אלה ב- Dynamics 365 Customer Insights. [קבל מידע נוסף במרכז יחסי האמון של Microsoft.](https://www.microsoft.com/trust-center).
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>התחבר אל אגם נתונים מנוהל של Dataverse
 
@@ -32,12 +37,9 @@ ms.locfileid: "6692575"
 
 2. בחר **הוסף מקור נתונים**.
 
-3. בחר **התחבר אל אגם בניהול Microsoft Dataverse** ובחר **הבא**.
+3. בחר **Microsoft Dataverse** ובחר **הבא**.
 
-4. הזן **שם** עבור מקור הנתונים ובחר **הבא**. קווים מנחים של שם: 
-   - התחל עם אות.
-   - השתמש באותיות ומספרים בלבד. אסור להזין תווים מיוחדים ורווחים.
-   - השתמש בין 3 ל- 64 תווים.
+4. הזן **שם** עבור מקור הנתונים ובחר **הבא**. 
 
 5. ספק את **כתובתה שרת** עבור ארגון Dataverse, ובחר **התחברות**.
 

@@ -1,54 +1,78 @@
 ---
 title: העשרת פרופילי החברה באמצעות Leadspace העשרה של צד שלישי
 description: מידע כללי אודות העשרה של צד שלישי באמצעות Leadspace.
-ms.date: 11/24/2020
-ms.reviewer: kishorem
-ms.service: customer-insights
+ms.date: 09/30/2021
+ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 12eed91a7ca4ef7fde0d53cca4a1dfd398b4634f
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: f89ef6842c21cf6b78154586f818beffbcdcffb9
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269423"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230635"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>העשרה של פרופילי חברות באמצעות Leadspace (תצוגה מקדימה)
 
-Leadspace היא חברה למדעי נתונים המספקת פלטפורמת נתוני לקוחות B2B. היא מאפשרת ללקוחות עם פרופילי לקוחות אחידים לחברות להעשיר את הנתונים שלהם. העשרות כוללות תכונות נוספות כגון גודל חברה, מיקום, ענף ועוד.
+Leadspace היא חברת מדע נתונים שמספקת פלטפורמת נתוני לקוח מעסק לעסק. הוא מאפשר לסביבות עם פרופילי לקוחות מאוחדים המבוססים על חשבונות להעשיר את הנתונים שלהן. העשר *פרופילי לקוחות* עם תכונות כמו גודל חברה, מיקום או תעשייה. העשר *פרופילי אנשי קשר* עם תכונות כמו כותרת, אישיות או אימות דואר אלקטרוני.
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
 כדי להגדיר את Leadspace, הדרישות המוקדמות הבאות צריכות להתקיים:
 
-- יש לך רישיון Leadspace פעיל ו"מפתח קבוע" (מכונה **אסימון Leadspace**). צור קשר ישירות עם [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) לקבלת פרטים על המוצר שלהם.
-- יש לך הרשאות [מנהל מערכת](permissions.md#administrator).
-- יש לך [פרופילי לקוחות מאוחדים](customer-profiles.md) עבור חברות.
+- יש לך רישיון Leadspace פעיל.
+- יש לך [פרופילי לקוחות מאוחדים](customer-profiles.md) המבוססים על חשבונות.
+- חיבור Leadspace כבר הוגדר על-ידי מנהל מערכת או שיש לך הרשאות [מנהל מערכת](permissions.md#administrator) ואת ה"מפתח התמידי" (מכונה **אסימון Leadspace**). צור קשר ישירות עם [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) לקבלת פרטים על המוצר שלהם.
 
-## <a name="configuration"></a>תצורה
+## <a name="configure-the-enrichment"></a>קביעת תצורת ההעשרה
 
 1. ב- audience insights, עבור אל **נתונים** > **העשרה**.
 
-1. בחר **העשר את הנתונים שלי** באריח Leadspace.
+1. בחר **העשר את הנתונים שלי** באריח Leadspace ובחר **תחילת העבודה**.
 
    :::image type="content" source="media/leadspace-tile.png" alt-text="צילום מסך של אריח Leadspace.":::
 
-1. בחר **תחילת העבודה** והזן **אסימון Leadspace** פעיל (מפתח קבוע). סקור וספק את הסכמתך עבור **פרטיות נתונים ותאימות** על-ידי בחירת תיבת הסימון **אני מסכים**. אשר את שני ערכי הקלט על-ידי בחירת **התחבר ל- Leadspace**.
+1. בחר [חיבור](connections.md) מהרשימה הנפתחת. צור קשר עם מנהל מערכת אם אין חיבור זמין. אם אתה מנהל מערכת, באפשרותך ליצור חיבור על-ידי בחירת **הוסף חיבור** ובחירת **Leadspace**. 
 
-1. בחר **מפה נתונים** ובחר את ערכת הנתונים שברצונך להעשיר בנתוני החברה מתוך Leadspace. באפשרותך לבחור את הישות *לקוח* כדי להעשיר את כל פרופילי הלקוחות שלך או לבחור ישות פלח כדי להעשיר רק פרופילי לקוחות הנכללים בפלח זה.
+1. בחר **התחבר ל- Leadspace** כדי לאשר את החיבור.
 
-   :::image type="content" source="media/enrichment-leadspace-select-segment.png" alt-text="בחר בין פרופיל לקוח להעשרת פלח.":::
+1. בחר **הבא** ובחר את **ערכת הנתונים של הלקוח** שברצונך להעשיר בנתוני חברה מתוך Leadspace. באפשרותך לבחור את הישות **לקוח** כדי להעשיר את כל פרופילי הלקוחות שלך או לבחור ישות פלח כדי להעשיר רק פרופילי לקוחות הנכללים בפלח זה.
 
-1. לחץ על **הבא** והגדר באילו שדות מהפרופילים המאוחדים שלך יש להשתמש כדי לחפש נתוני חברה תואמים מ- Leadspace. השדה **שם חברה** הוא נדרש. לקבלת דיוק התאמות גבוה יותר, ניתן להוסיף עד שני שדות אחרים, **אתר אינטרנט של חברה** ו **מיקום חברה**.
+    :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="צילום מסך בעת בחירה של ערכת נתוני הלקוח.":::
 
-   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="חלונית מיפוי שדה Leadspace.":::
+1. בחר **הבא** והגדר אילו שדות מתוך הפרופילים המאוחדים של משמשים כדי לחפש נתוני חברה מתאימים מ- Leadspace. השדה **שם חברה** הוא נדרש. לקבלת דיוק התאמות גבוה יותר, ניתן להוסיף עד שני שדות אחרים, **אתר אינטרנט של חברה** ו **מיקום חברה**.
+
+   :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="חלונית מיפוי שדה של Leadspace.":::
+
+1. בחר **הבא** כדי להשלים את מיפוי השדה.
+
+1. בחר בתיבת הסימון אם יש לך *פרופילי אנשי קשר* שברצונך להעשיר. תובנות לגבי קהלים ימפו באופן אוטומטי את השדות הנדרשים.
+
+   :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="העשרת רשומות אנשי קשר של Leadspace.":::
+ 
+1. ספק שם עבור ההעשרה ובחר **שמור העשרה** לאחר סקירת האפשרויות שלך.
+
+
+## <a name="configure-the-connection-for-leadspace"></a>קביעת תצורת החיבור עבור Leadspace 
+
+עליך להיות מנהל מערכת כדי לקבוע תצורת חיבורים. בחר **הוסף חיבור** בעת קביעת תצורת העשרה *או* עבור אל **ניהול** > **חיבורים** ובחר **הגדר** באריח Leadspace.
+
+1. בחר **תחילת העבודה**. 
+
+1. הזן שם עבור החיבור בתיבה **שם תצוגה**.
+
+1. ספק אסימון Leadspace חוקי.
+
+1. סקור את **פרטיות ותאימות נתונים** ותן את הסכמתך על-ידי בחירת **אני מסכים**.
+
+1. בחר **אימות** כדי לאמת את התצורה.
+
+1. לאחר השלמת האימות, בחר **שמור**.
    
-1. בחר **החל** להשלמת מיפוי השדה.
-
-1. בחר **הפעל** כדי להעשיר את פרופילי החברה. משך הזמן הדרוש להעשרה תלוי במספר פרופילי הלקוחות המאוחדים.
+   :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="דף תצורת החיבור של Leadspace.":::
 
 ## <a name="enrichment-results"></a>תוצאות העשרה
 
@@ -60,7 +84,8 @@ Leadspace היא חברה למדעי נתונים המספקת פלטפורמת 
 
 ## <a name="next-steps"></a>השלבים הבאים
 
-בנה על נתוני הלקוחות המועשרים שלך. צור [פלחים](segments.md), [מדדים](measures.md), ואפילו [ייצא את הנתונים](export-destinations.md) כדי לספק חוויות מותאמות אישית ללקוחות שלך.
+
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 

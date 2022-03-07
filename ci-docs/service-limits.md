@@ -2,19 +2,18 @@
 title: מגבלות שירות ב- Dynamics 365 Customer Insights
 description: הכר את המגבלות וההגבלות.
 ms.date: 09/03/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: 9bf8f03b785fb3035e3fc979a3304d4e98fd8d28
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483671"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350408"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>מגבלות שירות ביכולות Customer Insights
 
@@ -22,27 +21,25 @@ ms.locfileid: "7483671"
 
 ## <a name="audience-insights"></a>תובנות לגבי קהלים
 
-### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>מגבלות שירות ביכולת Audience Insights של Dynamics 365 Customer Insights
-
 | אזור  | מגבלות  | הערות |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| פלחים ומידות | 100 פלחים או מדדים. | המספר הכולל של [הפלחים](audience-insights/segments.md) ו[המדדים](audience-insights/measures.md) הפעילים יחד אינו יכול לעלות על 100.  |
+| פלחים, מדידות וחיזויים | 300  | המספר הכולל של [פלחים](audience-insights/segments.md), [מדידות](audience-insights/measures.md) ו[חיזויים](audience-insights/predictions.md) אינו יכול לעלות על 300 בסך הכל.  |
 | קשרים | 20 רמות עומק של קשרים בנתיבי ישות. | בעת יצירת [פלחים](audience-insights/segments.md) או [מדידות](audience-insights/measures.md) באמצעות ממשק הבנייה, נתיבי הישות יכולים לכלול עד 20 דילוגים של קשרים בין ישות ההתחלה לישות היעד.  |
 
+<!--
+## Engagement insights
 
-## <a name="engagement-insights"></a>תובנות לגבי מעורבות
+### Workspace and event quotas
 
-### <a name="workspace-and-event-quotas"></a>סביבת עבודה ומיכסות אירועים
+Engagement insights is a highly scalable application that can support millions of events per second. During public preview, events have a volume threshold. There's also a limit to the number of workspaces in an organization.
 
-תובנות לגבי מעורבות הוא יישום בעל מדרגיות גבוהה שיכול לתמוך במיליוני אירועים בשנייה. במהלך תצוגה מקדימה ציבורית, לאירועים יש סף נפח. יש גם מגבלה למספר סביבות העבודה בארגון.
+### Engagement insights limits
 
-### <a name="engagement-insights-limits"></a>מגבלות של תובנות לגבי מעורבות
+- Maximum event volume per workspace  = 100 events per second
 
-- הנפח המרבי של אירועים לכל סביבת עבודה = 100 אירועים לשנייה
+- Maximum number of workspaces per organization = 100
 
-- מספר מרבי של סביבות עבודה בארגון = 100
-
-כאשר אירועים חורגים מהסף, הדבר יכול להוביל לאובדן של נתונים בדוחות המבוססים על אירועים אלה. באפשרותך [לפנות לתמיכה](https://go.microsoft.com/fwlink/?linkid=2145734) כדי לבקש הגדלת נפח לפני שתחרוג מהמגבלות. נעבוד יחד איתך כדי לקבוע מהו הצורך שלך בהגדלת נפח ונתמוך בבקשתך.
-
+When events exceed the threshold, it can lead to loss of data in reports based on those events. You can [contact support](https://go.microsoft.com/fwlink/?linkid=2145734) to request a volume increase before you exceed limits. We'll work with you to determine your need for a volume increase and support your request.
+-->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

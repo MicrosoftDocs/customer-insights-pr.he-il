@@ -1,20 +1,19 @@
 ---
 title: שיפור של נתוני חברה
 description: העשרה ונרמול של נתוני חברה עם מודלים של Microsoft.
-ms.date: 11/15/2021
+ms.date: 01/19/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: d11700c87f31cedc40d32b201251d8a9e2e2c312
-ms.sourcegitcommit: dfc4843cc78857f1e3ca49d7b938e3ba77969169
+ms.openlocfilehash: 7a576621c71b925bd1563827aca10cad4ef9b4eb
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813919"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229404"
 ---
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>העשרה של פרופילי חברה עם נתוני חברה משופרים
 
@@ -82,7 +81,17 @@ Microsft
 
 לאחר סיום תהליך ההעשרה, תוכל לבדוק את לסקור פרופילי הלקוחות שעושרו זה עתה תחת **ההעשרות שלי**. בנוסף, תמצא את שעת העדכון האחרון ואת מספר הפרופילים המועשרים.
 
-אתה יכול לגשת לתצוגה מפורטת של כל פרופיל מועשר על ידי בחירה באפשרות **צפה בנתונים מועשרים**.
+ניתן לראות מדגם של הנתונים המועשרים באריח **תצוגה מקדימה של לקוחות מועשרים**. בחר **ראה עוד** ובחר בכרטיסיה **נתונים** כדי לגשת לתצוגה מפורטת של כל פרופיל מועשר.
+
+### <a name="overview-card"></a>כרטיס סקירה כללית
+
+כרטיס הסקירה הכללית מציג פרטים על כיסוי ההעשרה. 
+
+* **חברות שעובדו ושונו**: מספר פרופילי החברות שהועשרו בהצלחה.
+
+* **חברות שעובדו ולא השתנו**: מספר פרופילי החברות שזוהו אך לא השתנו. זה קורה בדרך כלל כאשר נתוני הקלט תקפים ולא ניתן לשפר אותם על ידי ההעשרה.
+
+* **חברות שלא עובדו ולא השתנו**: מספר פרופילי החברות שלא זוהו. בדרך כלל עבור נתוני קלט שאינם חוקיים או שאינם נתמכים על ידי העשרה.
 
 ## <a name="next-steps"></a>השלבים הבאים
 

@@ -2,19 +2,21 @@
 title: מיפויים סמנטיים (Preview)
 description: מבט כולל על מיפויים סמנטיים ואופן השימוש בהם.
 ms.date: 12/01/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: 08b257b97704b219bb3277042516e00deb886a49
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+searchScope:
+- ci-semantic-mapping
+- customerInsights
+ms.openlocfilehash: 37696f3e82eb9b75fbf9f78363adc890891efcc3
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881831"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353958"
 ---
 # <a name="semantic-mappings-preview"></a>מיפויים סמנטיים (Preview)
 
