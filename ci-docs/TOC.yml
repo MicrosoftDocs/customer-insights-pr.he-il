@@ -58,6 +58,8 @@
           href: audience-insights/connect-dataverse-managed-lake.md
         - name: הוספת Azure Synapse Analytics
           href: audience-insights/connect-synapse.md
+        - name: העשרה למקורות נתונים
+          href: audience-insights/data-sources-enrichment.md
         - name: רענון מדרגי של מקורות נתונים
           href: audience-insights/incremental-refresh-data-sources.md
         - name: קליטת נתונים בזמן אמת
@@ -100,6 +102,8 @@
           href: audience-insights/enrichment-here.md
         - name: העשר עם Leadspace
           href: audience-insights/enrichment-leadspace.md
+        - name: העשרה עם LiveRamp
+          href: audience-insights/enrichment-liveramp.md
         - name: העשרה עם Experian
           href: audience-insights/enrichment-experian.md
         - name: העשרה עם נתוני Office 365

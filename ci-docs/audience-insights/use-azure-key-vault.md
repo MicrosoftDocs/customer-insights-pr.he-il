@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 5b22c1464b3f089551f485f98d6d93840ff77136
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 418575f724090628da8bd01e2569a4cb9e646337
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355892"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376509"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>הבאת Azure Key Vault משלך (Preview)
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355892"
 
 - יש לך מנוי Azure פעיל.
 
-- אתה בעל תפקיד [מנהל מערכת](permissions.md#administrator) בתובנות לגבי קהלים‬. קבל מידע נוסף אודות [הרשאות משתמש בתובנות קהל](permissions.md#assign-roles-and-permissions).
+- אתה בעל תפקיד [מנהל מערכת](permissions.md#admin) בתובנות לגבי קהלים‬. קבל מידע נוסף אודות [הרשאות משתמש בתובנות קהל](permissions.md#assign-roles-and-permissions).
 
 - אתה בעל התפקידים [משתתף](/azure/role-based-access-control/built-in-roles#contributor) ו[מנהל גישת משתמשים](/azure/role-based-access-control/built-in-roles#user-access-administrator) ב- key vault או בקבוצת המשאבים שאליה משתייך ה- key vault. לקבלת מידע נוסף, עבור אל [הוספה או הסרה של הקצאות תפקיד Azure באמצעות פורטל Azure](/azure/role-based-access-control/role-assignments-portal). אם אין לך את התפקיד 'מנהל גישת משתמשים' ב- key vault, עליך להגדיר את הרשאות בקרת הגישה המבוססות על תפקידים עבור מנהל שירות Azure עבור Dynamics 365 Customer Insights בנפרד. בצע את השלבים כדי [להשתמש במנהל שירות Azure](connect-service-principal.md) עבור ה- key vault שצריך לקשר.
 

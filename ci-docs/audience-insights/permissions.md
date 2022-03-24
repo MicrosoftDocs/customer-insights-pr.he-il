@@ -1,7 +1,7 @@
 ---
 title: ניהול הרשאות משתמש
 description: קבל מידע אודות הרשאות ותפקידי משתמשים.
-ms.date: 03/25/2021
+ms.date: 02/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: a3d21d55d86950953611967bb66712312eb42b4b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 85e1f4f93ac0e99ce6634dfc8fceab0c9a14885e
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355938"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376739"
 ---
 # <a name="user-permissions"></a>הרשאות משתמשים
 
@@ -48,7 +48,7 @@ ms.locfileid: "8355938"
 - ניהול תצורה והעשרת פרופילי לקוחות מהדף **העשרה** (להעשרה ראשונה בלבד).
 - נהל וצור פעולות ייצוא בהתבסס על חיבורים ששותפו עם משתתפים. [קבל מידע נוסף אודות האופן שבו מנהלי מערכת מאפשרים למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-## <a name="administrator"></a>מנהל מערכת
+## <a name="admin"></a>מינהל
 
 - כל ההרשאות זמינות למשתתף.
 - שנה הגדרות בדף **מערכת**, כולל שפת העבודה ולוחות הזמנים לרענון עבור תהליכי המערכת.
@@ -60,6 +60,12 @@ ms.locfileid: "8355938"
 - התקן את **תוספת כרטיס לקוחות** והשתמש בה.
 - הוסף והשתמש ב **מחבר Power Apps**.
 - אפשר שימוש ב[ממשקי API של Customer Insights](apis.md).
+- [הקצאת בעלות על הסביבה](manage-environments.md#change-the-owner-of-an-environment) למנהל מערכת אחר.
+
+## <a name="admin-owner"></a>מנהל מערכת (בעלים)
+
+- כל ההרשאות זמינות למנהל המערכת.
+- [איפוס ומחיקת](manage-environments.md#reset-an-existing-environment) הסביבה.
 
 ## <a name="assign-roles-and-permissions"></a>הקצה תפקידים והרשאות
 

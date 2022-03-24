@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: cf680c21c55c71d99728be79fe68111dc89a79ec
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 4c1b5eaa3568b5c73013024d2da7e65276142f72
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355018"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455853"
 ---
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>שימוש בפלחים ב- Dynamics 365 Sales‏ (Preview)
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355018"
 
 ## <a name="prerequisite-for-connection"></a>דרישה מוקדמת לחיבור
 
-1. רשומות אנשי קשר מוכרחות להיות קיימות ב- Dynamics 365 Sales לפני שתוכל לייצא פלח מ- Customer Insights אל Sales. המשך לקרוא על אופן הקליטה של אנשי קשר ב- [Dynamics 365 Sales באמצעות Microsoft Dataverse](connect-power-query.md).
+1. רשומות אנשי קשר מוכרחות להיות קיימות ב- Dynamics 365 Sales לפני שתוכל לייצא פלח מ- Customer Insights אל Sales. קרא עוד על אופן הטמעת אנשי קשר מ- [Dynamics 365 Sales באמצעות Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
    > [!NOTE]
    > ייצוא פלחים מ- audience insights אל Sales לא ייצור רשומות אנשי קשר חדשות במופעי Sales. יש לקלוט את רשומות אנשי הקשר מ- Sales ב- audience insights ולהשתמש בהן כמקור נתונים. יש גם לכלול אותן בישות 'לקוח' המאוחדת כדי למפות מזהי לקוחות למזהי אנשי קשר לפני ייצוא הפלחים.

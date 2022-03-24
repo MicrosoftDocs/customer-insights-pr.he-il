@@ -8,16 +8,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 667a984f1a2287456f4e6324eafe628fba957bf5
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 9195770255bd798636b9532d6e1ca928345b3708
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8232659"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376463"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>מה חדש ביכולת Audience Insights של Dynamics 365 Customer Insights
-
-
 
 אנו גאים להכריז על העדכונים החדשים ביותר שלנו! מאמר זה מסכם תכונות של Public Preview, שיפורים בזמינות הכללית ועדכוני תכונות. כדי לראות את התוכניות ארוכות הטווח בנוגע לתכונות, ראה את [תוכניות ההפצה של ‎Dynamics 365 ושל Power Platform](/dynamics365/release-plans/).
 
@@ -26,6 +24,62 @@ ms.locfileid: "8232659"
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+
+## <a name="february-2022-updates"></a>עדכוני פברואר 2022
+
+העדכונים במהדורת פברואר 2022 כוללים תכונות חדשות, שדרוגי ביצועים ותיקוני באגים.
+
+### <a name="general-availability-for-prediction-models"></a>זמינות כוללת לדגמי חיזוי
+
+לדגמי חיזוי שמגיעים מוכנים לשימוש, כולל **נטישת מנויים**, **נטישת עסקאות**, ו **ערך חיי לקוח (CLV)** תהיה זמינות כוללת כחלק מ- Customer Insights. 
+
+לקבלת מידע נוסף, ראה [מבט כולל על חיזוים](predictions-overview.md).
+
+### <a name="new-data-source-integration-with-azure-synapse-analytics-preview"></a>מקור נתונים חדש: שילוב עם Azure Synapse Analytics ‏(Preview‎‏)
+
+Azure Synapse Analytics הוא שירות ניתוח ארגוני המאיץ את הזמן לתובנות בין מחסני נתונים ומערכות Big Data.
+
+אם הארגון שלך כבר משתמש ביכולות ניתוח מתקדמות של Azure Synapse Analytics ומאחסן את הפלט במסדי הנתונים של Data Lake, תוכל בקלות להטמיע את הנתונים האלה ב- Customer Insights. למידע נוסף, ראה [חיבור מקורות נתונים של Azure Synapse ‎‏(Preview)](connect-synapse.md).
+
+### <a name="liveramp-enrichment-preview"></a>העשרת LiveRamp‎‏ (Preview)
+
+LiveRamp מספק פתרון זהות לא מקוון דטרמיניסטי ואיחוד נתוני לקוחות. ניתן למפות מזהים אישיים בנתוני הלקוחות שלך לגרף הזהות של AbiliTec ולקבל מזהים של AbiliTec. לאחר מכן תוכל להשתמש במזהים אלה לאיחוד טוב יותר של נתוני הלקוחות שלך.
+
+למידע נוסף, ראה [העשרת פרופילי לקוחות עם נתוני זהות מ- LiveRamp ‏(Preview)](enrichment-liveramp.md).
+
+### <a name="enrichment-for-data-sources-preview"></a>העשרה למקורות נתונים (Preview)
+
+השתמש בנתונים ממקורות כמו Microsoft ושותפים אחרים כדי להעשיר את נתוני הלקוחות שלך לפני איחוד הנתונים. העשרות מקור הנתונים עוזרות לייצר שלמות ואיכות טובה יותר של נתונים, שיכולות לעזור להשיג תוצאות טובות לאחר איחוד הנתונים.
+
+למידע נוסף, ראה [העשרה עבור מקורות נתונים (Preview)](data-sources-enrichment.md).
+
+### <a name="change-owner-of-environment"></a>שנה את הבעלים של הסביבה
+
+בעוד של מספר משתמשים יכולים להיות הרשאות ניהול ב- Customer Insights, רק אחד המשתמשים הוא הבעלים של סביבה. חוויה משופרת מאפשרת לך להחליף את הבעלים של סביבה ולתבוע בעלות אם הבעלים הקודמים עזב את הארגון. 
+
+למידע נוסף, ראה [החלף את הבעלים של סביבה](manage-environments.md#change-the-owner-of-an-environment).
+
+### <a name="data-preparation-process-lists-corruption-reason-for-corrupted-records"></a>תהליך הכנת הנתונים מפרט את הסיבה לרשומות פגומות
+
+תהליך הכנת הנתונים מציג כעת את הסיבה להשחתה עבור כל השדות עם נתונים פגומים ברמת הרשומה הבודדת לצורך זיהוי קל. 
+
+למידע נוסף, ראה [מקורות נתונים פגומים](entities.md#corrupted-data-sources).
+
+### <a name="end-of-preview-for-reporting-features-in-the-engagement-insights-capability"></a>סוף ה-Preivew של תכונות דיווח ביכולת התובנות של מעורבות
+
+התצוגה המקדימה של יכולת תובנות לגבי מעורבות של Dynamics 365 Customer Insights הסתיימה ב- 15 בפברואר 2022.  
+המשמעות של שינוי זה היא שחוויית הניסיון של Customer Insights אינה כוללת עוד את היכולת ליצור משפכים או פונקציונליות דיווח אחרת.
+
+אנו מזמינים אותך לחקור ולהעריך את התכונות הרבות האחרות של [Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/), פלטפורמת נתוני הלקוחות של Microsoft‏ (CDP).    
+ 
+למשך תקופת מעבר, למשתתפי תצוגה מקדימה קיימים עדיין יש גישה לכמה יכולות ופונקציונליות של תצוגה מקדימה:
+
+- קבל קוד למכשיר אתר או אפליקציה למכשירים ניידים 
+- ראה אירועים ומאפייני אירועים 
+- שפר פרופילים מאוחדים עם אירועים שנקלטו וממוקדים כדי ליהנות מהערך המלא של נתוני הלקוחות שלהם
+  
+הערה: במהלך תקופת המעבר, אירועים שנלכדו עוד מוזרמים ל- Data Lake המחובר. לאחר כיבוי הפונקציונליות הזו, שיתוף הנתונים בין תובנות לגבי מעורבות ותובנות לגבי קהל ייפסק ולא יישלחו אירועים חדשים לאחסון המחובר.
+צור קשר ישירות עם צוות חשבון Microsoft שלך אם יש לך שאלות לגבי סיום התצוגה המקדימה של היכולת. צוות החשבון שלך ישאיר אותך מעודכן בהשקות הקרובות. 
 
 ## <a name="january-2022-updates"></a>עדכוני ינואר 2022
 

@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 2e0801c2b6af591e48a7df485a8523903c07617c
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354409"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376417"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>העברת יומנים ב- Dynamics 365 Customer Insights עם Azure Monitor (תצוגה מקדימה)
 
@@ -37,7 +37,7 @@ Customer Insights שולח את יומני האירועים הבאים:
 כדי להגדיר את האבחון ב- Customer Insights, יש לעמוד בתנאים המוקדמים הבאים:
 
 - יש לך [מנוי Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) פעיל.
-- יש לך הרשאות [מנהל מערכת](permissions.md#administrator) ב- Customer Insights.
+- יש לך הרשאות [מנהל מערכת](permissions.md#admin) ב- Customer Insights.
 - יש לך תפקידי **משתתף** ו **מנהל גישת משתמשים** במשאב היעד ב-Azure. המשאב יכול להיות סביבת עבודה של חשבון של Azure Storage, מרכז אירועים של Azure או תכונת ניתוח יומן רישום של Azure. לקבלת מידע נוסף, ראה [הוספה או הסרה של הקצאות תפקיד Azure באמצעות פורטל Azure](/azure/role-based-access-control/role-assignments-portal).
 - עמידה ב[דרישות היעד](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) עבור Azure Storage, מרכזי האירועים של Azure או תכונת ניתוח יומן הרישום של Azure.
 - יש לך לפחות תפקיד של **קורא** בקבוצת המשאבים שאליה שייך המשאב.
@@ -132,7 +132,7 @@ Customer Insights מספק שתי קטגוריות:
 | `resultSignature` | String    | אופציונלי          | מצב התוצאות של האירוע. אם הפעולה מתאימה לקריאת REST API, זהו קוד המצב של HTTP.        | `200`             |
 | `durationMs`      | Long      | אופציונלי          | משך הפעולה באלפיות שנייה.     | `133`     |
 | `callerIpAddress` | String    | אופציונלי          | כתובת ה-IP של הקורא, אם הפעולה מתאימה לקריאת API שמגיעה מכתובת IP זמינה לציבור.                                                 | `144.318.99.233`         |
-| `identity`        | String    | אופציונלי          | אובייקט JSON המתאר את זהות המשתמש או היישום שעשו את הפעולה.       | ראה המקטע [זהות](#identity-schema).     |  |
+| `identity`        | String    | אופציונלי          | אובייקט JSON המתאר את זהות המשתמש או היישום שעשו את הפעולה.       | ראה המקטע [זהות](#identity-schema).     |  
 | `properties`      | String    | אופציונלי          | אובייקט JSON עם מאפיינים נוספים עבור הקטגוריה המסוימת של האירועים.      | ראה המקטע [מאפיינים](#api-properties-schema).    |
 | `level`           | String    | חובה          | רמת החומרה של האירוע.    | `Informational`, `Warning`, `Error`, או `Critical`.           |
 | `uri`             | String    | אופציונלי          | כתובת URI מוחלטת של הבקשה.    |               |
@@ -231,7 +231,7 @@ Customer Insights מספק שתי קטגוריות:
 | `properties.eventType`                       | כן      | כן  | תמיד `WorkflowEvent`, לסימון אירוע היומן כאירוע זרימת עבודה.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | כן      | כן  | מזהה הפעלת זרימת העבודה. לכל אירועי של זרימת עבודה ומשימה במסגרת ביצוע זרימת העבודה יש אותו `workflowJobId`.                                                                                                                                   |
 | `properties.operationType`                   | כן      | כן  | מזהה הפעולה, ראה [Operation types].(#operation-types)                                                                                                                                                                                       |
-| `properties.tasksCount`                      | כן      | Yes   | זרימת עבודה בלבד. מספר המשימות שזרימת העבודה מפעילה.                                                                                                                                                                                                       |
+| `properties.tasksCount`                      | כן      | כן   | זרימת עבודה בלבד. מספר המשימות שזרימת העבודה מפעילה.                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | כן      | Yes   | אופציונלי. אירועי זרימת עבודה בלבד. Azure Active Directory[ObjectId של המשתמש](/azure/marketplace/find-tenant-object-id#find-user-object-id) שהפעיל את זרימת העבודה, ראה גם `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | כן      | Yes   | רענון של `full` או `incremental`.                                                                                                                                                                                                                            |
 | `properties.workflowSubmissionKind`          | כן      | Yes   | `OnDemand` או `Scheduled`.                                                                                                                                                                                                                                  |
@@ -239,7 +239,7 @@ Customer Insights מספק שתי קטגוריות:
 | `properties.startTimestamp`                  | כן      | כן  | חותמת זמן UTC: `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.endTimestamp`                    | כן      | כן  | חותמת זמן UTC: `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.submittedTimestamp`              | כן      | כן  | חותמת זמן UTC: `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.instanceId`                      | כן      | כן  | Customer Insights `instanceId`                                                                                                                                                                                                                              |  |
+| `properties.instanceId`                      | כן      | כן  | Customer Insights `instanceId`                                                                                                                                                                                                                              |  
 | `properties.identifier`                      | Yes       | כן  | - עבור OperationType = `Export`, המזהה הוא GUID של תצורת הייצוא. <br> - עבור OperationType = `Enrichment`, זהו ה- GUID של ההעשרה <br> - עבור OperationType `Measures` ו- `Segmentation`, המזהה הוא שם הישות. |
 | `properties.friendlyName`                    | Yes       | כן  | שם ידידותי למשתמש של הייצוא או של הישות המעובדת.                                                                                                                                                                                           |
 | `properties.error`                           | Yes       | כן  | אופציונלי. הודעת שגיאה עם יותר פרטים.                                                                                                                                                                                                                  |

@@ -8,16 +8,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: dc9bbe22b7f10cf92f06cae18fbece9808b87dce
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: dd90ef4576246b49d4a9c74005196ee9813a6744
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8226715"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455908"
 ---
 # <a name="power-automate-connector-preview"></a>מחבר Power Automate (תצוגה מקדימה)
 
 הפעל אירועים ספציפיים כך שיתרחשו באופן אוטומטי כאשר הנתונים שלך ישתנו ונהל זרימות מורכבות יותר ישירות ב- [Power Automate](https://flow.microsoft.com/).
+
+## <a name="known-limitations"></a>מגבלות ידועות
+
+- אתה יכול לבצע מקסימום 100 שיחות ל-60 שניות. אתה יכול לקרוא לנקודת הקצה של ה- API מספר פעמים על ידי שימוש בפרמטר ‏‏‎skip$. [קבל מידע נוסף על הפרמטר skip‎‏$](/connectors/customerinsights/#get-items-from-an-entity).
 
 ## <a name="power-automate-triggers"></a>גורמים מפעילים של Power Automate
 

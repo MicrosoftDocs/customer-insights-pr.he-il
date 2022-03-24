@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f89ef6842c21cf6b78154586f818beffbcdcffb9
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 0db0c984f6bf9f7ded0704b6fa0caf39c7dace3a
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230635"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376785"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>העשרה של פרופילי חברות באמצעות Leadspace (תצוגה מקדימה)
 
@@ -25,7 +25,7 @@ Leadspace היא חברת מדע נתונים שמספקת פלטפורמת נת
 
 - יש לך רישיון Leadspace פעיל.
 - יש לך [פרופילי לקוחות מאוחדים](customer-profiles.md) המבוססים על חשבונות.
-- חיבור Leadspace כבר הוגדר על-ידי מנהל מערכת או שיש לך הרשאות [מנהל מערכת](permissions.md#administrator) ואת ה"מפתח התמידי" (מכונה **אסימון Leadspace**). צור קשר ישירות עם [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) לקבלת פרטים על המוצר שלהם.
+- חיבור Leadspace כבר הוגדר על-ידי מנהל מערכת או שיש לך הרשאות [מנהל מערכת](permissions.md#admin) ואת ה"מפתח התמידי" (מכונה **אסימון Leadspace**). צור קשר ישירות עם [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) לקבלת פרטים על המוצר שלהם.
 
 ## <a name="configure-the-enrichment"></a>קביעת תצורת ההעשרה
 

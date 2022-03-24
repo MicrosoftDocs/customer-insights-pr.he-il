@@ -1,7 +1,7 @@
 ---
 title: העשרת פרופילי לקוחות מאוחדים
 description: השתמש ביכולות כדי להעשיר את נתוני הלקוחות שלך.
-ms.date: 02/07/2022
+ms.date: 02/18/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: e8cac35ccf7012524dc22cb4a499dc605dd66346
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
+ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355384"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8372716"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>העשרה לפרופילי לקוחות (תצוגה מקדימה)
 
@@ -42,6 +42,7 @@ ms.locfileid: "8355384"
 - [נתונים מותאמים אישית](enrichment-SFTP-custom-import.md) דרך Secure File Transfer Protocol‏ (SFTP) 
 - [Azure Maps](enrichment-azure-maps.md) מסופק על-ידי Microsoft
 - [נתוני מיקום](enrichment-here.md) מסופקים על-ידי HERE Technologies 
+- [זהות](enrichment-liveramp.md) מסופק על ידי LiveRamp AbiliTec
 
 # <a name="business-accounts-b-to-b"></a>[תיקי לקוחות עסקיים (B-to-B)](#tab/b2b)
 
@@ -80,6 +81,10 @@ ms.locfileid: "8355384"
 ## <a name="multiple-enrichments-of-the-same-type"></a>העשרות מרובות מאותו סוג
 
 הישות שיש להעשיר מצוינת במהלך קביעת תצורת ההעשרה, אשר מאפשרת לך להעשיר רק ערכת משנה של הפרופילים שלך. לדוגמה, העשרת נתונים רק עבור פלח ספציפי. באפשרותך לקבוע תצורה של מספר העשרות מאותו סוג ולהשתמש מחדש באותו חיבור. לחלק מההעשרות יהיו מגבלות על מספר ההעשרות מאותו הסוג שניתן ליצור. ניתן לראות את המגבלות והשימוש הנוכחי בדף **העשרה**.
+
+## <a name="enrich-data-sources-before-unification"></a>העשר את מקורות הנתונים לפני האיחוד
+
+אתה יכול להעשיר את נתוני הלקוחות שלך לפני איחוד הנתונים כדי לעזור להגביר את האיכות של התאמת נתונים. למידע נוסף, ראה [העשרת מקורות נתונים](data-sources-enrichment.md).
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>ראה את התקדמות תהליך ההעשרה
 

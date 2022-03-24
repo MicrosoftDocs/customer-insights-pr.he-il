@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: ad1023135516ca9c49818d19aa84df68d16b2e3c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: efa26fa82a950063e074a4ab930ed95383c55334
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229965"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376693"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>העשר פרופילי לקוחות באמצעות נתונים דמוגרפיים מ- Experian ‏(Preview)
 
@@ -25,7 +25,7 @@ Experian הינה מובילה עולמית בתחום שירותי דיווח �
 
 - צריך להיות לך מינוי Experian פעיל. כדי לקבל מינוי, [פנה ישירות ל- Experian](https://www.experian.com/marketing-services/contact). [קבל מידע נוסף על Experian העשרת נתונים](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 
-- חיבור Experian כבר הוגדר על-ידי מנהל מערכת *או* שיש לך הרשאות [מנהל מערכת](permissions.md#administrator). אתה צריך גם מזהה משתמש, מזהה צד ומספר מודל עבור חשבון Secure Transport‏ (ST) התומך ב- SSH ש- Experian יצרה עבורך.
+- חיבור Experian כבר הוגדר על-ידי מנהל מערכת *או* שיש לך הרשאות [מנהל מערכת](permissions.md#admin). אתה צריך גם מזהה משתמש, מזהה צד ומספר מודל עבור חשבון Secure Transport‏ (ST) התומך ב- SSH ש- Experian יצרה עבורך.
 
 ## <a name="supported-countriesregions"></a>מדינות/אזורים נתמכים
 
