@@ -9,23 +9,20 @@ author: Nils-2m
 ms.author: nikeller
 manager: shellyha
 searchScope:
-- ci-customers-page
-- ci-customer-card
-- ci-activities
-- ci-activities-wizard
-- customerInsights
-ms.openlocfilehash: 3a17716508a14020c56640c7d68f300a9d721af4
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: he-IL
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354882"
+  - ci-customers-page
+  - ci-customer-card
+  - ci-activities
+  - ci-activities-wizard
+  - customerInsights
 ---
+
 # <a name="customer-profiles"></a>פרופילי לקוחות
 
 הדף **לקוחות** מציג תצוגה משולבת של פרופילי לקוח מאוחדים. פרופילי הלקוח יהיו זמינים ברגע ש[תיצור את ישות הלקוח המאוחדת](data-unification.md). הדף מאפשר לחפש לקוחות ולהגדיר את האינדקס של אותו חיפוש.
 
-לקוחות יכולים להיות אנשים או ארגונים. כל פרופיל לקוח מיוצג על ידי אריח. השתמש בפקדי החלוקה לעמודים כדי לקבל רשומות נוספות. הכרטיס מציג שדות מהישות *לקוח* כמוגדר ב **אינדקס חיפוש וסינון**. בחר אריח כדי לראות נתונים עבור הלקוח הנבחר בדף ייעודי שנקרא [דף פרטי הלקוח](customer-profiles.md#customer-details-page).
+לקוחות יכולים להיות אנשים או ארגונים. כל פרופיל לקוח מיוצג על ידי אריח. השתמש בפקדי החלוקה לעמודים כדי לקבל רשומות נוספות. הכרטיס מציג שדות מהישות *לקוח* כמוגדר ב **אינדקס חיפוש וסינון**. סדר השדות בתוך כל כרטיס נבחר על ידי המערכת.
+
+בחר אריח כדי לראות נתונים עבור הלקוח הנבחר בדף ייעודי שנקרא [דף פרטי הלקוח](customer-profiles.md#customer-details-page).
 
 > [!div class="mx-imgBorder"] 
 > ![דף הלקוחות מציג אריחי תוצאות](media/customers-page-result-tiles-B2C.png "דף הלקוחות מציג אריחי תוצאות")

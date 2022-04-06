@@ -1,42 +1,32 @@
 ---
 title: ייצוא נתוני Customer Insights אל Google Ads
 description: למד כיצד להגדיר את החיבור ולייצא אל Google Ads.
-ms.date: 09/27/2021
+ms.date: 03/31/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 28e2b35c5a47a025b8cdcccdb3f61c79878bf056
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
-ms.contentlocale: he-IL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8227011"
 ---
+
 # <a name="export-segments-to-google-ads-preview"></a>ייצוא פלחים אל Google Ads‏ (Preview)
 
 יצא פלחים של פרופילי לקוחות מאוחדים לרשימת קהלים של Google Ads והשתמש בהם לפרסום בחיפוש Google‏, Gmail, YouTube, ו- Google Display Network. 
 
-> [!IMPORTANT]
-> לעת עתה, באפשרותך ליצור חיבור חדש ולייצא נתונים אל Google Ads רק אם כבר יש לך אסימון מפתח מאושר של Google Ads. עקב שינויים במדיניות, נעדכן את הייצוא של Google Ads בקרוב ונספק אפשרות ייצוא שלא תדרוש אסימון מפתח כדי להבטיח את המשכיות החוויה שלך ולפשט את הייצוא אל Google Ads. מומלץ לא להגדיר חיבורים נוספים ל- Google Ads כדי להקל על מעבר פשוט יותר לאפשרות הייצוא החדשה.
 
 ## <a name="prerequisites-for-connection"></a>דרישות מוקדמות לחיבור
 
 -   יש לך [חשבון Google Ads](https://ads.google.com/) ואישורי מנהל מערכת מתאימים.
--   יש לך [אסימון מפתח Google Ads מאושר](https://developers.google.com/google-ads/api/docs/first-call/dev-token). 
 -   אתה מקיים את הדרישות של [מדיניות התאמת הלקוח](https://support.google.com/adspolicy/answer/6299717).
 -   אתה מקיים את הדרישות של [גדלי רשימת שיווק מחדש](https://support.google.com/google-ads/answer/7558048).
--   קיימים קהלים ב- Google Ads ומזהים מתאימים. למידע נוסף, ראה [קהלי Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
 -   יש לך [פלחים מוגדרים](segments.md).
--   פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדות המייצגים כתובת דוא"ל, שם פרטי ושם משפחה.
+-   פרטי Unified customer profiles בפלחים המיוצאים מכילים שדות המייצגים כתובת דוא"ל, טלפון, מזהה מפרסם במכשירים ניידים, מזהה משתמש של צד שלישי או כתובת.
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-- עד מיליון פרופילי לקוחות לייצוא אל Google Ads.
 - הייצוא ל- Google Ads מוגבל לפלחים.
-- ייצוא פלחים עם מספר כולל של מיליון פרופילי לקוחות עשוי להימשך עד 5 דקות בשל מגבלות בצד הספק. 
+- ייצוא פלחים עם מספר כולל של מיליון פרופילי לקוחות עשוי להימשך עד 30 דקות בשל מגבלות בצד הספק. 
 - ההתאמה ב- Google Ads יכולה להימשך עד 48 שעות.
 
 ## <a name="set-up-connection-to-google-ads"></a>הגדרת חיבור אל Google Ads
@@ -50,8 +40,6 @@ ms.locfileid: "8227011"
 1. בחר מי יכול להשתמש בחיבור זה. אם לא תנקוט שום פעולה, ברירת המחדל תהיה מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. הזן את **[מזהה הלקוח של Google Ads](https://support.google.com/google-ads/answer/1704344)**.
-
-1. הזן את **[אסימון המפתח המאושר של Google Ads](https://developers.google.com/google-ads/api/docs/first-call/dev-token)**.
 
 1. בחר **אני מסכים** כדי לאשר **פרטיות ותאימות נתונים**.
 
@@ -71,11 +59,11 @@ ms.locfileid: "8227011"
 
 1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע Google Ads. אם אינך רואה את שם הפלח הזה, אין קשרים זמינים עבורך מסוג זה.
 
-1. הזן את **[מזהה קהל Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** ובחר **התחבר** כדי לאתחל את החיבור אל Google Ads.
+1. אם ברצונך ליצור קהל חדש, השאר ריק את השדה של מזהה קהל Google. אנו ניצור אוטומטית קהל חדש בחשבון Google Ads שלך ונשתמש בשם הפלח המיוצא. אם אתה רוצה לעדכן קהל קיים של Google Ads, הזן את [מזהה קהל Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.) שלך
 
-1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח.
+1. במקטע **התאמת נתונים**, בחר שדה נתונים אחד או יותר לייצוא, ובחר את השדה המייצג את שדות הנתונים התואמים ב- Customer Insights.
 
-1. בחר את הפלחים שברצונך לייצא. באפשרותך לייצא עד מיליון פרופילי לקוחות בסך הכל ל- Google Ads.
+1. בחר את הפלחים שברצונך לייצא. 
 
 שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
 

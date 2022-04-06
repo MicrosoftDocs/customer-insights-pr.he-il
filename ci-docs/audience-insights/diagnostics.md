@@ -9,15 +9,10 @@ author: brndkfr
 ms.author: bkief
 manager: shellyha
 searchScope:
-- ci-system-diagnostic
-- customerInsights
-ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
-ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
-ms.translationtype: HT
-ms.contentlocale: he-IL
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8376417"
+  - ci-system-diagnostic
+  - customerInsights
 ---
+
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>העברת יומנים ב- Dynamics 365 Customer Insights עם Azure Monitor (תצוגה מקדימה)
 
 Dynamics 365 Customer Insights מספק אינטגרציה ישירה עם Azure Monitor. יומני המשאבים של Azure Monitor מאפשרים לך לנטר ולשלוח יומנים אל [Azure Storage](https://azure.microsoft.com/services/storage/), [תכונת ניתוח יומן רישום של Azure](/azure/azure-monitor/logs/log-analytics-overview), או להזרים אותם אל [מרכזי אירועים של Azure‬](https://azure.microsoft.com/services/event-hubs/).
@@ -230,7 +225,7 @@ Customer Insights מספק שתי קטגוריות:
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | כן      | כן  | תמיד `WorkflowEvent`, לסימון אירוע היומן כאירוע זרימת עבודה.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | כן      | כן  | מזהה הפעלת זרימת העבודה. לכל אירועי של זרימת עבודה ומשימה במסגרת ביצוע זרימת העבודה יש אותו `workflowJobId`.                                                                                                                                   |
-| `properties.operationType`                   | כן      | כן  | מזהה הפעולה, ראה [Operation types].(#operation-types)                                                                                                                                                                                       |
+| `properties.operationType`                   | כן      | כן  | מזהה הפעולה, ראה [סוגי פעולה](#operation-types).                                                                                                                                                                               |
 | `properties.tasksCount`                      | כן      | כן   | זרימת עבודה בלבד. מספר המשימות שזרימת העבודה מפעילה.                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | כן      | Yes   | אופציונלי. אירועי זרימת עבודה בלבד. Azure Active Directory[ObjectId של המשתמש](/azure/marketplace/find-tenant-object-id#find-user-object-id) שהפעיל את זרימת העבודה, ראה גם `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | כן      | Yes   | רענון של `full` או `incremental`.                                                                                                                                                                                                                            |

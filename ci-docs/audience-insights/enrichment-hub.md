@@ -1,7 +1,7 @@
 ---
 title: העשרת פרופילי לקוחות מאוחדים
 description: השתמש ביכולות כדי להעשיר את נתוני הלקוחות שלך.
-ms.date: 02/18/2022
+ms.date: 03/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,17 +10,12 @@ ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
-- ci-enrichments
-- ci-enrichment-details
-- ci-enrichment-wizard
-- customerInsights
-ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
-ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
-ms.translationtype: HT
-ms.contentlocale: he-IL
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8372716"
+  - ci-enrichments
+  - ci-enrichment-details
+  - ci-enrichment-wizard
+  - customerInsights
 ---
+
 # <a name="enrichment-for-customer-profiles-preview"></a>העשרה לפרופילי לקוחות (תצוגה מקדימה)
 
 השתמש בנתונים ממקורות כמו Microsoft ושותפים אחרים כדי להעשיר את נתוני הלקוחות שלך.
@@ -97,5 +92,19 @@ ms.locfileid: "8372716"
 1. בחלונית **פרטי התקדמות**, הרחב את המקטע **העשרות**. 
 1. תחת ההעשרה שברצונך לראות את ההתקדמות שלה, בחר **הצג פרטים**. 
 1. בחלונית **פרטי משימה**, בחר **הצג פרטים** כדי לראות את התהליכים המעורבים בעדכון ההעשרה והמצב שלהם. 
+
+## <a name="enrichment-results"></a>תוצאות העשרה
+
+לאחר הפעלת העשרה שהושלמה, תוכל לעיין בתוצאות ההעשרה.
+
+1. עבור אל **נתונים** > **העשרה**. 
+1. בחר את ההעשרה שברצונך לקבל מידע אודותיה.
+
+כל ההעשרות מציגות מידע בסיסי כגון מספר הפרופילים המועשרים, תצוגה מקדימה של ישות ההעשרה שנוצרה ומספר הפרופילים המועשרים לאורך זמן. אם זמין, הנתון **מספר לקוחות מועשרים לפי תחום** מספק הסבר מפורט על הכיסוי של כל שדה מועשר.
+
+:::image type="content" source="media/enrichments-results.png" alt-text="דף תוצאות של פעולות העשרה.":::
+
+חלק מפעולות ההעשרה מציגים גם מידע ספציפי לסוג ההעשרה. עיין בתיעוד להעשרה הרלוונטית למידע נוסף.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

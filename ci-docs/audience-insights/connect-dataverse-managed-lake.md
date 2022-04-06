@@ -1,7 +1,7 @@
 ---
 title: התחבר לטבלאות ב- Microsoft Dataverse
 description: ייבא נתונים מאגם נתונים מנוהל של Microsoft Dataverse.
-ms.date: 12/06/2021
+ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -9,18 +9,11 @@ ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
 searchScope:
-- ci-dataverse
-- customerInsights
-ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: he-IL
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354142"
+  - ci-dataverse
+  - customerInsights
 ---
+
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>התחבר לנתונים בתוך אגם נתונים מנוהל של Microsoft Dataverse
-
-
 
 מאמר זה מספק מידע כיצד יכולים משתמשי Dataverse להתחבר במהירות לישויות אנליטיות באגם מנוהל של Microsoft Dataverse. 
 
@@ -29,7 +22,8 @@ ms.locfileid: "8354142"
 
 ## <a name="important-considerations"></a>שיקולים חשובים:
 
-נתונים המאוחסנים בשירותים מקוונים כגון Azure Data Lake Storage עשויים להיות מאוחסנים במקום אחר שאינו מקום העיבוד או האחסון של הנתונים ב- Dynamics 365 Customer Insights. על-ידי ייבוא או התחברות לנתונים המאוחסנים בשירותים מקוונים, אתה מסכים להעברה ולאחסון של נתונים אלה ב- Dynamics 365 Customer Insights. [קבל מידע נוסף במרכז יחסי האמון של Microsoft.](https://www.microsoft.com/trust-center).
+1. נתונים המאוחסנים בשירותים מקוונים כגון Azure Data Lake Storage עשויים להיות מאוחסנים במקום אחר שאינו מקום העיבוד או האחסון של הנתונים ב- Dynamics 365 Customer Insights. על-ידי ייבוא או התחברות לנתונים המאוחסנים בשירותים מקוונים, אתה מסכים להעברה ולאחסון של נתונים אלה ב- Dynamics 365 Customer Insights. [קבל מידע נוסף במרכז יחסי האמון של Microsoft.](https://www.microsoft.com/trust-center).
+2. רק ישויות של Dataverse [שבהן התכונה 'מעקב אחר שינויים' זמינה](/power-platform/admin/enable-change-tracking-control-data-synchronization) יהיו גלויים. ניתן לייצא ישויות אלה אל Data Lake שמנוהל על-ידי Dataverse ולעשות בהן שימוש ב- Customer Insights. בטבלאות Dataverse שמגיעות מוכנות לשימוש, התכונה 'מעקב אחר שינויים' זמינה כברירת מחדל. עליך להפעיל את מעקב אחר שינויים עבור טבלאות מותאמות אישית. כדי לבדוק אם מעקב אחר שינויים זמין בטבלת Dataverse, עבור אל [Power Apps](https://make.powerapps.com)  > **נתונים** > **טבלאות**. מצא את הטבלה שמעניינת אותך ובחר בה. עבור אל **הגדרות** > **אפשרויות מתקדמות** ובדוק את ההגדרה **מעקב אחר שינויים**.
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>התחבר אל אגם נתונים מנוהל של Dataverse
 

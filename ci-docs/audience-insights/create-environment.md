@@ -1,24 +1,19 @@
 ---
 title: יצירת סביבות ב- Customer Insights
 description: שלבים ליצירת סביבות עם מנוי מורשה עבור Dynamics 365 Customer Insights.
-ms.date: 02/24/2022
+ms.date: 03/28/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: MichelleDevaney
-ms.author: midevane
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
-- ci-home
-- customerInsights
-ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: he-IL
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354096"
+  - ci-home
+  - customerInsights
 ---
+
 # <a name="create-an-environment-in-audience-insights"></a>יצירת סביבה ב'תובנות לגבי קהלים'
 
 מאמר זה מסביר כיצד ליצור סביבה חדשה לאחר שהארגון שלך רכש מינוי Dynamics 365 Customer Insights. 
@@ -83,14 +78,16 @@ ms.locfileid: "8354096"
 חיבור אל סביבת Dataverse משלך גם מאפשר לך [לקלוט נתונים ממקורות נתונים מקומיים באמצעות זרימות נתונים ושערים של Power Platform](data-sources.md#add-data-from-on-premises-data-sources). אפשר גם להשתמש ב- [דגמי חיזוי מוכנים לשימוש](predictions-overview.md?tabs=b2c#out-of-box-models) על ידי חיבור לסביבת Dataverse.
 
 > [!IMPORTANT]
-> Customer Insights ו- Dataverse צריכים להיות באותו אזור כדי לאפשר שיתוף נתונים.
+> 1. Customer Insights ו- Dataverse צריכים להיות באותו אזור כדי לאפשר שיתוף נתונים.
+> 1. נדרש לך תפקיד מנהל מערכת גלובלי בסביבת Dataverse. ודא אם [סביבת Dataverse זו משוייכת](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) לקבוצות אבטחה מסוימות וודא שאתה מתווסף לקבוצות אבטחה אלה.
+> 1. אף סביבה קיימת של Customer Insights לא משויכת לסביבת Dataverse זו. למד כיצד [להסיר חיבור קיים לסביבת Dataverse](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="שיתוף נתונים עם Microsoft Dataverse מופעל אוטומטית עבור מופעים חדשים ברשת.":::
 
-> [!NOTE]
-> Customer Insights אינו תומך בתרחישי שיתוף הנתונים הבאים:
-> - אם אתה שומר את כל הנתונים ב- Azure Data Lake Storage משלך, לא תוכל לאפשר שיתוף נתונים עם אגם נתונים מנוהל של Dataverse.
-> - אם תאפשר שיתוף נתונים עם אגם נתונים מנוהל של Dataverse, לא תוכל [ליצור ערכים חזויים או חסרים בישות](predictions.md).
+למידע נוסף על הפיכת שיתוף נתונים מ- Azure Data Lake Storage משלך באמצעות Microsoft Dataverse לזמין, ראה [ התחברות ל- Microsoft Dataverse](manage-environments.md#connect-to-microsoft-dataverse).
+
+Customer Insights אינו תומך בתרחישי שיתוף הנתונים הבאים:
+- אם תאפשר שיתוף נתונים עם אגם נתונים מנוהל של Dataverse, לא תוכל [ליצור ערכים חזויים או חסרים בישות](predictions.md).
 
 ### <a name="step-4-finalize-the-settings"></a>שלב 4: סיים את ההגדרות
 
