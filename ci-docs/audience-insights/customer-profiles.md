@@ -9,13 +9,18 @@ author: Nils-2m
 ms.author: nikeller
 manager: shellyha
 searchScope:
-  - ci-customers-page
-  - ci-customer-card
-  - ci-activities
-  - ci-activities-wizard
-  - customerInsights
+- ci-customers-page
+- ci-customer-card
+- ci-activities
+- ci-activities-wizard
+- customerInsights
+ms.openlocfilehash: 074d84eff65d52b083fff6c161282d4fafa1af85
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
+ms.translationtype: HT
+ms.contentlocale: he-IL
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523727"
 ---
-
 # <a name="customer-profiles"></a>פרופילי לקוחות
 
 הדף **לקוחות** מציג תצוגה משולבת של פרופילי לקוח מאוחדים. פרופילי הלקוח יהיו זמינים ברגע ש[תיצור את ישות הלקוח המאוחדת](data-unification.md). הדף מאפשר לחפש לקוחות ולהגדיר את האינדקס של אותו חיפוש.

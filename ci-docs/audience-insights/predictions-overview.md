@@ -8,8 +8,13 @@ ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
+ms.openlocfilehash: 11b0efeecf8bea893272e67d29b1c6622771110c
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
+ms.translationtype: HT
+ms.contentlocale: he-IL
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487500"
 ---
-
 # <a name="predictions-overview"></a>מבט כולל על חיזויים
 
 Dynamics 365 Customer Insights מגיע עם מגוון אפשרויות שמנצלות את AI ולמידת מכונה לחיזוי נתונים. 

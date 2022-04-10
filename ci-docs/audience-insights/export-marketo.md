@@ -8,8 +8,13 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
+ms.openlocfilehash: d56ed779c342bb0855ee84d949f8d3ca604b92c1
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
+ms.translationtype: HT
+ms.contentlocale: he-IL
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487516"
 ---
-
 # <a name="export-segments-to-marketo-preview"></a>ייצוא פלחים ל- Marketo‏ (Preview)
 
 יצא פלחים של פרופילי לקוחות מאוחדים כדי ליצור קמפיינים, לספק שיווק בדואר אלקטרוני ולהשתמש בקבוצות ספציפיות של לקוחות באמצעות Marketo​.

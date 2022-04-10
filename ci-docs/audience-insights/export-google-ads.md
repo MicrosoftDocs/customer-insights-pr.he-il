@@ -8,8 +8,13 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
+ms.openlocfilehash: 7a85237f7aff564d6b540b2c11553a52f875fac4
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
+ms.translationtype: HT
+ms.contentlocale: he-IL
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523801"
 ---
-
 # <a name="export-segments-to-google-ads-preview"></a>ייצוא פלחים אל Google Ads‏ (Preview)
 
 יצא פלחים של פרופילי לקוחות מאוחדים לרשימת קהלים של Google Ads והשתמש בהם לפרסום בחיפוש Google‏, Gmail, YouTube, ו- Google Display Network. 

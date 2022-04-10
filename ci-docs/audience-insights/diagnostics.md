@@ -9,10 +9,15 @@ author: brndkfr
 ms.author: bkief
 manager: shellyha
 searchScope:
-  - ci-system-diagnostic
-  - customerInsights
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
+ms.translationtype: HT
+ms.contentlocale: he-IL
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523670"
 ---
-
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>העברת יומנים ב- Dynamics 365 Customer Insights עם Azure Monitor (תצוגה מקדימה)
 
 Dynamics 365 Customer Insights מספק אינטגרציה ישירה עם Azure Monitor. יומני המשאבים של Azure Monitor מאפשרים לך לנטר ולשלוח יומנים אל [Azure Storage](https://azure.microsoft.com/services/storage/), [תכונת ניתוח יומן רישום של Azure](/azure/azure-monitor/logs/log-analytics-overview), או להזרים אותם אל [מרכזי אירועים של Azure‬](https://azure.microsoft.com/services/event-hubs/).
