@@ -1,7 +1,7 @@
 ---
 title: נתונים של Customer Insights ב- Microsoft Dataverse
 description: השתמש בישויות של Customer Insights כטבלאות ב- Microsoft Dataverse.
-ms.date: 11/25/2021
+ms.date: 04/05/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,31 +11,33 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 9f730f5856221592cddf34b714beeaca24c52130
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: bbbbf2a7f5edb81ee75f6e33988cd4721134b6e7
+ms.sourcegitcommit: 0363559a1af7ae16da2a96b09d6a4a8a53a8cbb8
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355430"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547627"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>עבודה עם נתונים של Customer Insights ב- Microsoft Dataverse
 
-Customer Insights מציע את האפשרות להפוך ישויות פלט לזמינות ב- [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md). שילוב זה מאפשר שיתוף נתונים קל ופיתוח מותאם אישית באמצעות גישה לקוד בסיסי/ללא קוד. ישויות הפלט יהיו זמינות כטבלאות ב- Dataverse. טבלאות אלה מאפשרות תרחישים כמו [זרימות עבודה אוטומטיות באמצעות Power Automate](/power-automate/getting-started), [יישומים מונחי-דגמים](/powerapps/maker/model-driven-apps/) ו[יישומי בד ציור](/powerapps/maker/canvas-apps/) באמצעות Power Apps. באפשרותך להשתמש בנתונים עבור כל יישום אחר שמבוסס על טבלאות Dataverse. היישום הנוכחי תומך בעיקר בבדיקות מידע שבהן ניתן להביא ישויות זמינות של תובנות לגבי קהלים עבור מזהה לקוח נתון.
+Customer Insights מציע את האפשרות להפוך ישויות פלט לזמינות ב- [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). שילוב זה מאפשר שיתוף נתונים קל ופיתוח מותאם אישית באמצעות גישה לקוד בסיסי/ללא קוד. [ישויות הפלט](#output-entities) זמינות כטבלאות בסביבת Dataverse. אתה יכול להשתמש בנתונים עבור כל יישום אחר המבוסס על טבלאות Dataverse. טבלאות אלה הופכות תרחישים כמו זרימות עבודה אוטומטיות דרך Power Automate או בניית אפליקציות באמצעות Power Apps לזמינים. היישום הנוכחי תומך בעיקר בחיפושי מידע שבהם ניתן לאחזר את הישויות הזמינות של Customer Insights עבור מזהה לקוח נתון.
 
 ## <a name="attach-a-dataverse-environment-to-customer-insights"></a>צירוף סביבת Dataverse ל- Customer Insights
 
-**ארגונים עם סביבות Dataverse קיימות**
+**ארגון קיים**
 
-ארגונים שכבר משתמשים ב- Dataverse יכולים [להשתמש באחת מסביבות Dataverse הקיימות שלהם](create-environment.md) כאשר מנהל מערכת מגדיר תובנות לגבי קהלים. אספקת כתובת URL לסביבת Dataverse מצרפת אותה לסביבה החדשה של תובנות לגבי קהלים. כדי להבטיח את הביצועים הטובים ביותר שאפשר, יש לארח סביבות של Customer Insights ושל Dataverse באותו אזור.
+מנהלי מערכת יכולים להגדיר את Customer Insights ל[שימוש בסביבת Dataverse קיימת](create-environment.md) כאשר הם יוצרים סביבת Customer Insights. אספקת כתובת URL לסביבת Dataverse מצרפת אותה לסביבה החדשה של תובנות לגבי קהלים. סביבות Customer Insights ו- Dataverse חייבות להתארח באותו אזור. 
+
+אם אתה לא רוצה להשתמש בסביבת Dataverse קיימת, המערכת יוצרת סביבה חדשה עבור נתוני Customer Insights בדייר שלך. 
+
+> [!NOTE]
+> אם הארגונים כבר משתמשים ב- Dataverse בדייר שלהם, חשוב לזכור כי [יצירת סביבה של Dataverse מתבצעת בפיקוחו של מנהל מערכת](/power-platform/admin/control-environment-creation). לדוגמה, אם אתה מגדיר סביבה חדשה של תובנות לגבי קהלים עם החשבון הארגוני שלך, והמנהל השבית את היצירה של סביבות ניסיון של Dataverse לכולם פרט למנהלי מערכת, לאתוכל ליצור סביבת ניסיון חדשה.
+> 
+> סביבות הניסיון של Dataverse שנוצרו ב- Customer Insights כוללות אחסון בנפח ‎3 GB שלא יחשבו כחלק מהקיבולת הכוללת שהדייר זכאי לה. מנויים בתשלום מקבלים זכאות של ‎‎15 GB עבור מסדי נתונים ו- ‎20 GB לאחסון קבצים ב- Dataverse.
 
 **ארגון חדש**
 
-אם אתה יוצר ארגון חדש בעת הגדרת Customer Insights, תקבל באופן אוטומטי סביבת Dataverse חדשה.
-
-> [!NOTE]
-> אם הארגונים כבר משתמשים ב- Dataverse בדייר שלהם, חשוב לזכור כי [יצירת סביבה של Dataverse מתבצעת בפיקוחו של מנהל מערכת](/power-platform/admin/control-environment-creation.md). לדוגמה, אם אתה מגדיר סביבה חדשה של תובנות לגבי קהלים עם החשבון הארגוני שלך, והמנהל השבית את היצירה של סביבות ניסיון של Dataverse לכולם פרט למנהלי מערכת, לאתוכל ליצור סביבת ניסיון חדשה.
-> 
-> סביבות הניסיון של Dataverse שנוצרו ב- Customer Insights כוללות אחסון בנפח ‎3 GB שלא יחשבו כחלק מהקיבולת הכוללת שהדייר זכאי לה. מנויים בתשלום מקבלים זכאות של ‎‎15 GB עבור מסדי נתונים ו- ‎20 GB לאחסון קבצים ב- Dataverse.
+אם אתה יוצר ארגון חדש בעת הגדרת Customer Insights, המערכת יוצרת אוטומטית סביבת Dataverse חדשה בארגון שלך.
 
 ## <a name="output-entities"></a>ישויות פלט
 
@@ -129,11 +131,11 @@ Customer Insights מציע את האפשרות להפוך ישויות פלט ל
 
 טבלה זו מכילה מידע על חברות בפלח של פרופילי הלקוחות.
 
-| Column        | Type | Description                        |
+| Column        | Type | Description                        |
 |--------------------|--------------|-----------------------------|
-| מזהה לקוח        | String       | מזהה פרופיל לקוח        |
-| SegmentProvider      | String       | יישום שמפרסם את הפלחים. ברירת מחדל: תובנות לגבי קהלים         |
-| SegmentMembershipType | String       | סוג הלקוח ברשומת חברות זו בפלח. תומך בסוגים מרובים, כגון לקוח, איש קשר או תיק לקוח. ברירת מחדל: לקוח  |
-| פלחי שוק       | מחרוזת JSON  | רשימת פלחים ייחודיים שפרופיל הלקוח חבר בהם      |
-| msdynci_identifier  | String   | המזהה הייחודי של רשומת החברות בפלח. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| מזהה לקוח        | String       | מזהה פרופיל לקוח        |
+| SegmentProvider      | String       | יישום שמפרסם את הפלחים. ברירת מחדל: תובנות לגבי קהלים         |
+| SegmentMembershipType | String       | סוג הלקוח ברשומת חברות זו בפלח. תומך בסוגים מרובים, כגון לקוח, איש קשר או תיק לקוח. ברירת מחדל: לקוח  |
+| פלחי שוק       | מחרוזת JSON  | רשימת פלחים ייחודיים שפרופיל הלקוח חבר בהם      |
+| msdynci_identifier  | String   | המזהה הייחודי של רשומת החברות בפלח. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
 | msdynci_segmentmembershipid | Guid      | GUID דטרמיניסטי שנוצר מתוך `msdynci_identifier`          |

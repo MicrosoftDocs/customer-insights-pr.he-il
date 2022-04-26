@@ -1,19 +1,19 @@
 ---
 title: ייצוא נתוני Customer Insights ל-Sendinblue Azure Synapse Analytics
 description: למד כיצד להגדיר את תצורת החיבור אל Azure Synapse Analytics.
-ms.date: 01/05/2022
+ms.date: 04/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 289c8d545f057b3f70679b485cf4350545c0587b
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 8ace9fbee4fbd8822629a39d5902e176f8511cb5
+ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231313"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8560388"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>ייצוא נתונים אל Azure Synapse Analytics ‏(תצוגה מקדימה)
 
@@ -28,21 +28,21 @@ Azure Synapse הוא שירות ניתוח שמזרז את הזמן להשגת �
 
 ## <a name="prerequisites-in-customer-insights"></a>דרישות מוקבמות ב- Customer Insights
 
-* אתה בעל תפקיד **מנהל מערכת** בתובנות לגבי קהלים‬. למידע נוסף על [הגדרת הרשאות משתמש בתובנות לגבי קהלים‬](permissions.md#assign-roles-and-permissions)
+* לחשבון המשתמש שלך ב- Azure Active Directory ‏(AD) יש תפקיד של **מנהל מערכת** א ב- Customer Insights. למידע נוסף על [הגדרת הרשאות משתמש בתובנות לגבי קהלים‬](permissions.md#assign-roles-and-permissions)
 
 ב- Azure: 
 
 - מנוי פעיל של Azure.
 
-- אם אתה משתמש בחשבון חדש של Azure Data Lake Storage Gen2, *מנהל שירות של תובנות לגבי קהלים‬* זקוק להרשאות מסוג **תורם נתונים של Blob אחסון**. למידע נוסף על [התחברות לחשבון Azure Data Lake Storage ‏Gen2 עם מנהל שירות Azure עבור תובנות לגבי קהלים](connect-service-principal.md). Data Lake Storage Gen2 **חייב להפעיל** [מרחב שמות הירארכי](/azure/storage/blobs/data-lake-storage-namespace).
+- אם משתמשים בחשבון Gen2 חדש של Azure Data Lake Storage, *מנהל השירות עבור Customer Insights* צריך הרשאות **תורם נתונים של Blob אחסון**. למידע נוסף על [התחברות לחשבון Azure Data Lake Storage ‏Gen2 עם מנהל שירות Azure עבור תובנות לגבי קהלים](connect-service-principal.md). Data Lake Storage Gen2 **חייב להפעיל** [מרחב שמות הירארכי](/azure/storage/blobs/data-lake-storage-namespace).
 
-- בקבוצת המשאבים שבו ממוקמת סביבת העבודה של Azure Synapse, יש להקצות לתפקידים *מנהל שירות* ו *משתמש עבור תובנות לגבי קהלים* הרשאות מסוג **קורא** לפחות. למידע נוסף, ראה [הקצאת תפקידי Azure באמצעות פורטל Azure](/azure/role-based-access-control/role-assignments-portal).
+- בקבוצת המשאבים שבה נמצא Azure Synapse Workspace, יש להקצות ל *מנהל השירות* ולמשתמש *Azure AD*, שיש להם הרשאות מנהל מערכת ב- Customer Insights, לפחות הרשאות **קורא**. למידע נוסף, ראה [הקצאת תפקידי Azure באמצעות פורטל Azure](/azure/role-based-access-control/role-assignments-portal).
 
-- ה *משתמש* זקוק להרשאות מסוג **תורם נתונים של Blob אחסון** בחשבון Azure Data Lake Storage Gen2 שבו הנתונים ממוקמים ומקושרים אל סביבת העבודה Azure Synapse. למידע נוסף על [השימוש בפורטל Azure כדי להקצות תפקיד Azure לצורך גישה לנתוני Blob ולנתוני תור](/azure/storage/common/storage-auth-aad-rbac-portal) ועל [הרשאות תורם נתונים של Blob אחסון](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- משתמש *Azure AD עם הרשאות מנהל מערכת ב- Customer Insights* צריך הרשאות **תורם נתונים של Blob אחסון** בחשבון Gen2 של Azure Data Lake Storage שבו הנתונים ממוקמים ומקושרים ל- Azure Synapse Workspace. למידע נוסף על [השימוש בפורטל Azure כדי להקצות תפקיד Azure לצורך גישה לנתוני Blob ולנתוני תור](/azure/storage/common/storage-auth-aad-rbac-portal) ועל [הרשאות תורם נתונים של Blob אחסון](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - ה *זהות המנוהלת של סביבת העבודה של [Azure Synapse](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* זקוקה להרשאות מסוג **תורם נתונים של Blob אחסון** בחשבון Azure Data Lake Storage  Gen2 שבו הנתונים ממוקמים ומקושרים אל סביבת העבודה Azure Synapse. למידע נוסף על [השימוש בפורטל Azure כדי להקצות תפקיד Azure לצורך גישה לנתוני Blob ולנתוני תור](/azure/storage/common/storage-auth-aad-rbac-portal) ועל [הרשאות תורם נתונים של Blob אחסון](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- בסביבת העבודה של Azure Synapse, *מנהל השירות של תובנות לגבי קהלים* זקוק להקצאת תפקיד של **מנהל Synapse**. למידע נוסף, ראה [כיצד להגדיר בקרת גישה עבור סביבת העבודה שלך ב- Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
+- בסביבת העבודה של Azure Synapse, צריך להקצות ל *מנהל השירות עבור Customer Insights* את התפקיד **מנהל מערכת של Synapse**. למידע נוסף, ראה [כיצד להגדיר בקרת גישה עבור סביבת העבודה שלך ב- Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
 ## <a name="set-up-the-connection-and-export-to-azure-synapse"></a>הגדרת החיבור וייצוא אל Azure Synapse
 

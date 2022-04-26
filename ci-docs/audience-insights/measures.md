@@ -1,12 +1,12 @@
 ---
 title: הבנה וניהול של מדדים
 description: למד כיצד מדדים עוזרים לנתח ולשקף את הביצועים של העסק שלך.
-ms.date: 02/28/2022
+ms.date: 03/24/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.author: wameng
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-measures
@@ -14,12 +14,12 @@ searchScope:
 - ci-measure-template
 - ci-enrichment-details
 - customerInsights
-ms.openlocfilehash: c46fcc3baba1d6c92c2c0fe459a62277343cc0e4
-ms.sourcegitcommit: cf6a0ed44915908a44c70889a2dd199a9d0d4798
+ms.openlocfilehash: ef10f480086ccac4fa5c6c58818e35ecae67532c
+ms.sourcegitcommit: 9ef2cf99b847e7bd8f890f83d84b3a4045aaf8cc
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/28/2022
-ms.locfileid: "8359779"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8529678"
 ---
 # <a name="measures-overview"></a>מבט כולל על מדדים
 
@@ -27,7 +27,7 @@ ms.locfileid: "8359779"
 
 מדדים נוצרים [באמצעות בונה המדדים](measure-builder.md), פלטפורמת שאילתת נתונים עם אופרטורים שונים ואפשרויות מיפוי פשוטות. זה מאפשר לך לסנן את הנתונים, לקבץ תוצאות, לזהות [נתיבי קשר ישות](relationships.md) ולהציג את הפלט בתצוגה מקדימה. באפשרותך [להשתמש בתבניות מוגדרות מראש](measure-templates.md) כדי להגדיר מדדים נפוצים ביעילות.
 
-השתמש בבונה המדדים כדי לתכנן פעילויות עסקיות על-ידי ביצוע שאילתות על נתוני הלקוח וחילוץ תובנות. לדוגמה, יצירת מדד של *הוצאות כוללות ללקוח* ו *החזרה כוללת ללקוח* עוזרת לזהות קבוצת לקוחות בעלי הוצאות גבוהות אבל החזרה גבוהה. ניתן [ליצור מקטע](segments.md) בהתבסס על מדדים אלה כדי להניע את הפעולות הבאות הטובות ביותר. 
+השתמש בבונה המדדים כדי לתכנן פעילויות עסקיות על-ידי ביצוע שאילתות על נתוני הלקוח וחילוץ תובנות. לדוגמה, יצירת מדד של *הוצאות כוללות ללקוח* ו *החזרה כוללת ללקוח* עוזרת לזהות קבוצת לקוחות בעלי הוצאות גבוהות אבל החזרה גבוהה. ניתן [ליצור מקטע](segments.md) בהתבסס על מדדים אלה כדי להניע את הפעולות הבאות הטובות ביותר.
 
 ## <a name="manage-your-measures"></a>נהל את המדדים שלך
 
@@ -35,18 +35,17 @@ ms.locfileid: "8359779"
 
 תמצא מידע אודות סוג המדד, היוצר, תאריך היצירה, המצב והמדינה. כשתבחר מדידה מהרשימה, תוכל להציג תצוגה מקדימה של הפלט ולהוריד קובץ CSV.
 
-כדי לרענן את כל המדדים שלך בו-זמנית, בחר **רענן הכל** מבלי לבחור מדד ספציפי.
+:::image type="content" source="media/measures-actions.png" alt-text="פעולות לניהול מדידות יחידות."lightbox="media/measures-actions.png":::
 
-:::image type="content" source="media/measure-actions.png" alt-text="פעולות לניהול מדידות יחידות.":::
+הפעולות הבאות זמינות בעת בחירת מדד:
 
-בחר מדד מהרשימה עבור האפשרויות הבאות:
-
-- בחר את שם המדד כדי לראות את הפרטים שלו.
 - **ערוך** את קביעת התצורה של המדד.
-- **רענן** את המדד בהתבסס על הנתונים העדכניים ביותר.
+- **שכפול** מדד. באפשרותך לבחור לערוך את המאפיינים שלו באופן מיידי או פשוט לשמור את הרשומה הכפולה.
+- **רענן** את המדד בהתבסס על הנתונים העדכניים ביותר. כדי לרענן את כל המדדים בו-זמנית, בחר את כל המדדים ולאחר מכן בחר **ריענון**.
 - **שנה שם** של המדד.
-- **מחק** את המדד.
 - **הפעל** או **בטל הפעלה**. מדדים לא פעילים לא יעברו רענון במהלך [רענון מתוזמן](system.md#schedule-tab).
+- **תג** ל[ניהול תגים](work-with-tags-columns.md#manage-tags) עבור הפלח.
+- **מחק** את המדד.
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 

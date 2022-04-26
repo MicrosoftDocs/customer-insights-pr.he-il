@@ -6,7 +6,7 @@ ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-customers-page
@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 340a7b7326f5b4a8cbde8683b8d41cb53dc557b0
-ms.sourcegitcommit: 0bd5f53e4e7e37359afd087ee16b779a6b3a9183
+ms.openlocfilehash: 68e71df3853470af47228c7365f25db3a71d15b0
+ms.sourcegitcommit: 9ef2cf99b847e7bd8f890f83d84b3a4045aaf8cc
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 03/30/2022
-ms.locfileid: "8508567"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8529540"
 ---
 # <a name="segments-overview"></a>מבט כולל על פלחים
 
@@ -51,20 +51,26 @@ ms.locfileid: "8508567"
 
 כל פלח מיוצג על ידי שורה הכוללת מידע נוסף על הפלח.
 
-:::image type="content" source="media/segments-selected-segment.png" alt-text="פלח נבחר עם רשימה נפתחת של אפשרויות ואפשרויות זמינות.":::
+:::image type="content" source="media/segments-selected-segment.png" alt-text="פלח נבחר עם רשימה נפתחת של אפשרויות ואפשרויות זמינות." lightbox="media/segments-selected-segment.png":::
 
-הפעולה הבאה זמינה כשבוחרים פלח:
+הפעולות הבאות זמינות בעת בחירת פלח:
 
 - **הצג** את פרטי הפלח, לרבות מגמת ספירת חברים כדי להציג את החברים בפלח בתצוגה מקדימה.
+- **הורד** את רשימת החברים כקובץ ‎.CSV
 - **ערוך** את הפלח כדי לשנות את המאפיינים שלו.
 - **צור רשומה כפולה** של פלח. באפשרותך לבחור לערוך את המאפיינים שלו באופן מיידי או פשוט לשמור את הרשומה הכפולה.
 - **רענן** את הפלח כדי לכלול את הנתונים העדכניים ביותר.
-- **הפעל** או **השבת** את הפלח. לפלחים יש שני מצבים אפשריים - פעיל או לא פעיל. מצבים אלה שימושיים בעת עריכת פלח. עבור פלחים לא פעילים, הגדרת הפלח קיימת, אך היא עדיין לא מכילה לקוחות. כשאתה מפעיל פלח, המצב שלו משתנה מ'לא פעיל' ל'פעיל' והוא מתחיל לחפש לקוחות שתואמים להגדרת הפלח. אם מוגדר [רענון מתוזמן](system.md#schedule-tab), ה **מצב** של פלחים לא פעילים רשום כ **המערכת דילגה** מה שמצביע על כך שלא היה אפילו ניסיון לבצע רענון. כאשר פלח לא פעיל מופעל, הוא יתרענן וייכלל בריענונים מתוזמנים.
+- **הפעל** או **השבת** את הפלח. עבור פלחים לא פעילים, הגדרת הפלח קיימת, אך היא עדיין לא מכילה לקוחות. פלח פעיל מחפש לקוחות התואמים את הגדרת הפלח. אם מוגדר [רענון מתוזמן](system.md#schedule-tab), ה **מצב** של פלחים לא פעילים רשום כ **המערכת דילגה** מה שמצביע על כך שלא היה אפילו ניסיון לבצע רענון. כאשר פלח לא פעיל מופעל, הוא יתרענן וייכלל בריענונים מתוזמנים.
   לחלופין, אתה יכול להשתמש בפונקציונליות **תזמן אחר כך** בתפריט הנפתח **הפעל/השבת** כדי לציין תאריך ושעה עתידיים להפעלה ולביטול של פלח מסוים.
+- **[מצא לקוחות דומים](find-similar-customer-segments.md)** מהפלח.
 - **שנה את שם** הפלח.
+- **תג** ל[ניהול תגים](work-with-tags-columns.md#manage-tags) עבור הפלח.
 - **הורד** את רשימת החברים כקובץ ‎.CSV
 - **נהל פעולות ייצוא** כדי לראות פלחים הקשורים לפעולות ייצוא ולנהל אותם. [קבל מידע נוסף על פעולות ייצוא.](export-destinations.md)
 - **מחק** את הפלח.
+- **עמודות** ל[התאמה אישית של העמודות](work-with-tags-columns.md#customize-columns) בתצוגה הזו.
+- **מסנן** ל[סינון לפי תגים](work-with-tags-columns.md#filter-on-tags).
+- **חיפוש שם** כדי לחפש לפי שם הפלח.
 
 ## <a name="refresh-segments"></a>רענון פלחים
 
