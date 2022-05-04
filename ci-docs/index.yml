@@ -6,12 +6,12 @@ metadata:
   ms.author: mhart
   ms.date: 03/02/2022
   ms.topic: landing-page
-  ms.openlocfilehash: 5efa266dfe8d70812f4c668b04cee2f93f206f7b
-  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+  ms.openlocfilehash: e3a9f6d5f4d23ca3e85fa3f69272a0162ca7bd2d
+  ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
   ms.translationtype: HT
   ms.contentlocale: he-IL
-  ms.lasthandoff: 02/25/2022
-  ms.locfileid: "8350470"
+  ms.lasthandoff: 04/27/2022
+  ms.locfileid: "8641657"
 title: תיעוד Dynamics 365 Customer Insights
 summary: מצא משאבים מועילים כדי להתחיל וללמוד על המאפיינים והיכולות של Customer Insights.
 landingContent:
@@ -23,8 +23,8 @@ landingContent:
       url: overview.md
     - text: תוכניות הפצה
       url: /dynamics365/release-plans/
-    - text: גלה את ה-CDP
-      url: https://dynamics.microsoft.com/ai/customer-insights/
+    - text: תכונות חדשות ומעודכנות
+      url: whats-new-customer-insights.md
   - linkListType: learn
     links:
     - text: נתיב למידת Customer Insights
@@ -35,24 +35,94 @@ landingContent:
     links:
     - text: הירשם לגרסת ניסיון
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: מה חדש בתובנות לגבי קהלים
-      url: audience-insights/whats-new-audience-insights.md
-    - text: מדריך התחלה מהירה
-      url: audience-insights/get-started.md
+    - text: התחל עם הניסיון
+      url: trial-signup.md
+    - text: תחילת העבודה עם Customer Insights
+      url: get-started.md
   - linkListType: learn
     links:
     - text: התחל בעבודה
       url: /learn/modules/get-started-customer-data-platform/
+- title: איחוד נתונים
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: מבט כולל על מקורות נתונים
+      url: data-sources.md
+    - text: מבט כולל על איחוד
+      url: data-unification.md
+    - text: הכרת ישויות
+      url: entities.md
+  - linkListType: learn
+    links:
+    - text: צור פרופיל מאוחד
+      url: /learn/modules/unified-customer-profile/
+- title: קבל תובנות
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: העשרת פרופילי לקוחות
+      url: enrichment-hub.md
+    - text: קביעת תצורה של קשרי גומלין
+      url: relationships.md
+    - text: השלם נתונים בעזרת חיזויים
+      url: predictions.md
+  - linkListType: learn
+    links:
+    - text: העשרה וחיזוי של נתונים
+      url: /learn/modules/enrich-data/
+- title: התבסס על הנתונים שלך
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: צור פלחים
+      url: segments.md
+    - text: צור מדדים
+      url: measures.md
+    - text: הגדרת פעילויות של לקוחות
+      url: activities.md
+  - linkListType: learn
+    links:
+    - text: עבודה עם האפליקציה
+      url: /learn/modules/working-with-customer-insights/
+- title: יצא נתונים
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: הגדרת יעדי ייצוא
+      url: export-destinations.md
+    - text: כרטיסי לקוחות ביישומי Dynamics 365
+      url: customer-card-add-in.md
+    - text: מחבר Power BI
+      url: export-power-bi.md
+  - linkListType: learn
+    links:
+    - text: נהל קשרים חיצוניים
+      url: /learn/modules/configure-third-party-connections/
+- title: ניהול היישום
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: קביעת תצורת המערכת
+      url: system.md
+    - text: הגדרת הרשאות משתמש
+      url: permissions.md
+    - text: ניהול סביבות מרובות
+      url: manage-environments.md
+  - linkListType: learn
+    links:
+    - text: ניהול Customer Insights
+      url: /learn/modules/administer-customer-data-platform/
 - title: ניהול Customer Insights
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: קביעת תצורת המערכת
-      url: audience-insights/system.md
+      url: system.md
     - text: הגדרת הרשאות משתמש
-      url: audience-insights/permissions.md
+      url: permissions.md
     - text: ניהול סביבות מרובות
-      url: audience-insights/manage-environments.md
+      url: manage-environments.md
   - linkListType: learn
     links:
     - text: ניהול Customer Insights

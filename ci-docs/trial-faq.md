@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 9badd8370358b9f5745ba6347e8db42e89c5f3d3
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 4a269a223efa08f71db09eef2ec9a8f8a077f7a7
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229496"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641809"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>‏‫שאלות נפוצות בנושא גירסת הניסיון‬ של Dynamics 365 Customer Insights
 
@@ -62,13 +62,13 @@ ms.locfileid: "8229496"
 
 באופן כללי, אנחנו ממליצים להתחיל מחדש עם הנתונים שלך בעת השדרוג לגירסה בתשלום של Customer Insights. 
 
-לחלופין, אם אתה משתמש רק בתובנות קהל, באפשרותך להעתיק את הנתונים שלך מסביבת ניסיון אם תרכוש את Customer Insights. עליך להיות מנהל המערכת של ניסיון Customer Insights ומנהל המערכת הגלובלי של דייר Microsoft 365, או מנהל המערכת של Dynamics 365 בארגון שלך, כדי להעביר את ההגדרות מסביבת ניסיון לסביבה בתשלום. 
+לחלופין, אם אתה משתמש רק ב- Customer Insights, באפשרותך להעתיק את הנתונים שלך מסביבת ניסיון אם תרכוש את Customer Insights. עליך להיות מנהל המערכת של ניסיון Customer Insights ומנהל המערכת הגלובלי של דייר Microsoft 365, או מנהל המערכת של Dynamics 365 בארגון שלך, כדי להעביר את ההגדרות מסביבת ניסיון לסביבה בתשלום. 
 
-לאחר הכניסה הראשונה לגירסה בתשלום של Customer Insights, תתבקש ליצור סביבה חדשה. בתהליך זה, תוכל לבחור להעתיק את התצורה מסביבה קיימת ולהעביר את רוב ההגדרות. אם יש לך את ההרשאות שהוזכרו למעלה, סביבת הניסיון תופיע ברשימה זו. לקבלת מידע נוסף, ראה [העתקת תצורת הסביבה](audience-insights/manage-environments.md#copy-the-environment-configuration).
+לאחר הכניסה הראשונה לגירסה בתשלום של Customer Insights, תתבקש ליצור סביבה חדשה. בתהליך זה, תוכל לבחור להעתיק את התצורה מסביבה קיימת ולהעביר את רוב ההגדרות. אם יש לך את ההרשאות שהוזכרו למעלה, סביבת הניסיון תופיע ברשימה זו. לקבלת מידע נוסף, ראה [העתקת תצורת הסביבה](manage-environments.md#copy-the-environment-configuration).
 
 ### <a name="what-are-the-trial-limits-and-quotas"></a>מהן המגבלות והמכסות של גירסת הניסיון?
 
-- אין באפשרותך להשתמש בחשבון Azure Data Lake Storage שלך כדי לאחסן נתוני פלט במהלך תקופת ניסיון של תובנות קהל. עם זאת, תוכל לקלוט נתונים מחשבון Data Lake Storage.
+- אין באפשרותך להשתמש בחשבון Azure Data Lake storage שלך כדי לאחסן נתוני פלט במהלך תקופת ניסיון של Customer Insights. עם זאת, תוכל לקלוט נתונים מחשבון Data Lake Storage.
 - באפשרותך לאחסן עד ‎3 GB של נתונים בסביבת Dataverse המוקצית אוטומטית כשאתה מפעיל את גירסת הניסיון של Customer Insights.
 
 ## <a name="customer-insights-specific-questions"></a>שאלות ספציפיות על Customer Insights
