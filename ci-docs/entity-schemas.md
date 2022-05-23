@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e155f75ffbc2c1bb228bece1b3e34846df794543
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646888"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757433"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>סכימות ישויות ב- Common Data Model
 
@@ -23,7 +23,7 @@ ms.locfileid: "8646888"
 
 זהו מודל נתונים משותף שמאפשר ליישומים ולמשלבי נתונים לשתף פעולה בקלות רבה יותר על-ידי מתן הגדרת נתונים אחידה. Common Data Model כולל מערכת מטה-נתונים עשירים עם ישויות סטנדרטיות, קשרים, הירארכיות, תכונות ועוד. מקורו ביישומי Dynamics 365 והוא בעל קוד פתוח ב- GitHub עם יותר מ- 260 ישויות סטנדרטיות. מערכת גדולה של שותפים פנימיים וחיצוניים תורמת מושגים ספציפיים לתעשייה ל- Common Data Model.
 
-מערכות ופלטפורמות מרובות מיישמות את Common Data Model כיום, כולל זרימות נתונים של Power BI ו- Azure Data Services. הוא כבר נתמך ב- Microsoft Dataverse, Dynamics 365, Power Apps, Power BI ובשירותי הנתונים העתידיים של Azure, וצובר ערך ישירות לקראת ה- [Open Data Initiative](https://www.microsoft.com/open-data-initiative).
+מערכות ופלטפורמות מרובות מיישמות את Common Data Model כיום, כולל זרימות נתונים של Power BI ו- Azure Data Services. הוא כבר נתמך ב- Microsoft Dataverse, Dynamics 365, Power Apps, Power BI ובשירותי הנתונים העתידיים של Azure, וצובר ערך ישירות לקראת ה- [Open Data Initiative](https://dynamics.microsoft.com/en-us/open-data-initiative/).
 
 ## <a name="customer-insights-entity-schemas"></a>סכימות ישות של Customer Insights
 

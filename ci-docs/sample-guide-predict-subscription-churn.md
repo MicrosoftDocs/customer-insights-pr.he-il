@@ -1,8 +1,8 @@
 ---
 title: מדריך לדוגמה לחיזוי של נטישת מנויים
 description: השתמש במדריך לדוגמה זה כדי לנסות את מודל החיזוי של נטישת מנויים המוכן לשימוש.
-ms.date: 11/19/2020
-ms.reviewer: mhart
+ms.date: 03/31/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-create-prediction
 - customerInsights
-ms.openlocfilehash: 2aea6c62421b308705899e4f8af64f64bfcb2d3d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5a8eeafecacef3d0bb4a798b698cf490423ca98d
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647093"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741412"
 ---
 # <a name="subscription-churn-prediction-sample-guide"></a>מדריך לדוגמה לחיזוי של נטישת מנויים
 
@@ -112,61 +112,7 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 
 ## <a name="task-2---data-unification"></a>משימה 2 - איחוד נתונים
 
-לאחר קליטת הנתונים אנו מתחילים כעת בתהליך **מיפוי, התאמה, מיזוג** כדי ליצור פרופיל לקוח מאוחד. לקבלת מידע נוסף, ראה [איחוד נתונים](data-unification.md).
-
-### <a name="map"></a>מיפוי
-
-1. לאחר קליטת הנתונים, מפה את אנשי הקשר מנתוני eCommerce ו- Loyalty לסוגי נתונים נפוצים. עבור אל **נתונים** > **איחוד** > **מיפוי**.
-
-1. בחר את הישויות המייצגות את פרופיל הלקוח – **eCommerceContacts** ו- **loyCustomers**. 
-
-   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="איחוד מקורות הנתונים ecommerce ו- loyalty.":::
-
-1. בחר **ContactId** כמפתח העיקרי עבור **eCommerceContacts** ו- **LoyaltyID** כמפתח העיקרי עבור **loyCustomers**.
-
-   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="איחוד LoyaltyId כמפתח ראשי.":::
-
-### <a name="match"></a>התאמה
-
-1. עבור אל הכרטיסיה **התאמה** ובחר **הגדר סדר**.
-
-1. בתפריט הנפתח **ראשי**, בחר **eCommerceContacts : ‏eCommerceContacts** כמקור העיקרי וכלול את כל הרשומות.
-
-1. ברשימה הנפתחת **ישות 2**, בחר **LoyaltyScheme : ‏loyCustomers** וכלול את כל הרשומות.
-
-   :::image type="content" source="media/unify-match-order.PNG" alt-text="איחוד התאמה של eCommerce ו- Loyalty.":::
-
-1. בחר **צור כלל חדש**
-
-1. הוסף את התנאי הראשון שלך באמצעות FullName.
-
-   * עבור eCommerceContacts בחר **FullName** בתפריט הנפתח.
-   * עבור loyCustomers בחר **FullName** בתפריט הנפתח.
-   * בחר את הרשימה הנפתחת **נרמל** ובחר **סוג (טלפון, שם, כתובת, ...)**.
-   * הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
-
-1. הזן את השם **FullName, Email** עבור הכלל החדש.
-
-   * הוסף תנאי שני לכתובת הדואר האלקטרוני על-ידי בחירה **הוסף תנאי**
-   * עבור הישות eCommerceContacts, בחר **דואר אלקטרוני** בתפריט הנפתח.
-   * עבור הישות loyCustomers, בחר **דואר אלקטרוני** בתפריט הנפתח. 
-   * השאר את השדה 'נרמל' ריק. 
-   * הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
-
-   :::image type="content" source="media/unify-match-rule.PNG" alt-text="איחוד כלל התאמה עבור שם ודואר אלקטרוני.":::
-
-7. בחר **שמור** ו **הפעל**.
-
-### <a name="merge"></a>מזג
-
-1. עבור לכרטיסיה **מיזוג**.
-
-1. ב- **ContactId** עבור הישות **loyCustomers**, שנה את שם התצוגה ל- **ContactIdLOYALTY** כדי להבחין בינה לבין מספרי זהות אחרים שנקלטו.
-
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="שינוי שם ל- contactid מ- loyalty id.":::
-
-1. בחר **שמור** ו **הפעל** כדי להתחיל בתהליך המיזוג.
-
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>משימה 3 - הגדר את חיזוי נטישת המנויים
 

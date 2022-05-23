@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 42095f369c47553e5ddf5fada54e559202c943a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646957"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757387"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>ייצוא רשימת פלחים ונתונים אחרים לאחסון Blob של Azure‏ (Preview)
 
@@ -44,7 +44,7 @@ ms.locfileid: "8646957"
 באפשרותך לקבוע תצורת ייצוא זה אם יש לך גישה לחיבור מסוג זה. לקבלת מידע נוסף, ראה [הרשאות הדרושות לקביעת תצורה של ייצוא](export-destinations.md#set-up-a-new-export).
 
 > [!IMPORTANT]
-> אם הפעלת את הגדרת המחיקה הרכה עבור חשבון Azure Blob Storage, הייצוא ייכשל. כבה את המחיקה הרכה כדי לייצא נתונים לרכיבי Blob. למידע נוסף, ראה [הפעלת מחיקה רכה של Blob](/azure/storage/blobs/soft-delete-blob-enable.md)
+> אם הפעלת את הגדרת המחיקה הרכה עבור חשבון Azure Blob Storage, הייצוא ייכשל. כבה את המחיקה הרכה כדי לייצא נתונים לרכיבי Blob. למידע נוסף, ראה [הפעלת מחיקה רכה של Blob](/azure/storage/blobs/soft-delete-blob-enable)
 
 1. עבור אל **נתונים** > **פעולות ייצוא**.
 

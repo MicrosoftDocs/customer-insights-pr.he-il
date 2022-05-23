@@ -13,16 +13,14 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 2dfa6c643cbe9a8531a085d8ce01b0f64776476f
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 8508880bb3274bb491a314a043a5222d4d381073
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646615"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755637"
 ---
 # <a name="customer-card-add-in-preview"></a>תוספת כרטיס לקוח (תצוגה מקדימה)
-
-
 
 קבל תצוגה של 360 מעלות של הלקוחות שלך ישירות ביישומי Dynamics 365. כשתוספת כרטיס הלקוח מותקנת ביישום Dynamics 365 נתמך, תוכל לבחור להציג שדות, תובנות וציר זמן של פעילות עבור פרופיל לקוח. התוספת תשלוף נתונים מ- Customer Insights מבלי להשפיע על הנתונים ביישום המחובר של Dynamics 365.
 
@@ -31,7 +29,7 @@ ms.locfileid: "8646615"
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
 - התוספת פועלת רק עם יישומים מונחי דגמים של Dynamics 365, כגון Sales או Customer Service, גירסה 9.0 ואילך.
-- כדי שנתוני Dynamics 365 ימפו את לפרופילי הלקוח של Customer Insights, אנחנו ממליצים [לקלוט אותם מיישום Dynamics 365 באמצעות המחבר Microsoft Dataverse](connect-power-query.md). אם אתה משתמש בשיטה אחרת לקליטת אנשי קשר (או חשבונות) של Dynamics 365, עליך לוודא שהשדה `contactid` (או `accountid`) מוגדר כ[מפתח ראשי עבור מקור נתונים בשלב המפה של תהליך איחוד הנתונים](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
+- כדי שנתוני Dynamics 365 ימפו את לפרופילי הלקוח של Customer Insights, אנחנו ממליצים [לקלוט אותם מיישום Dynamics 365 באמצעות המחבר Microsoft Dataverse](connect-power-query.md). אם אתה משתמש בשיטה אחרת לקליטת אנשי קשר (או חשבונות) של Dynamics 365, עליך לוודא שהשדה `contactid` (או `accountid`) מוגדר כ[מפתח ראשי עבור מקור נתונים בשלב המפה של תהליך איחוד הנתונים](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 - כל משתמשי Dynamics 365 של התוספת 'כרטיס הלקוח' חייבים [להתווסף כמשתמשים](permissions.md) ב- Customer Insights כדי לראות את הנתונים.
 - [יכולות חיפוש וסינון מוגדרות](search-filter-index.md) ב- Customer Insights נדרשות כדי שחיפוש הנתונים יפעל.
 - כל פקד תוספת מסתמך על נתונים ספציפיים ב- Customer Insights. נתונים ופקדים מסוימים זמינים בסביבות מסוגים ספציפיים בלבד. לפי תצורת התוסף תוכל לדעת אם פקד אינו זמין בשל סוג הסביבה שנבחרה. קבל מידע נוסף על [תרחישי שימוש של סביבה](work-with-business-accounts.md).
@@ -132,16 +130,16 @@ ms.locfileid: "8646615"
 
 **פתרון:**
 
-1. ודא שהגדרת את תוספות הכרטיס בהתאם להוראות: [הגדר את התוספות בכרטיס הלקוח](#configure-the-customer-card-add-in) 
+1. ודא שהגדרת את תוספות הכרטיס בהתאם להוראות: [הגדר את התוספות בכרטיס הלקוח](#configure-the-customer-card-add-in)
 
-1. בדוק את תצורת קליטת הנתונים. ערוך את מקור המידע למערכת Dynamics 365 שמכילה את ה- GUID של מזהה איש הקשר. אם ה-GUID של מזהה איש הקשר מופיע עם תווי אותיות רישיות בעורך Power Query, נסה לפעול בצורה הבאה: 
+1. בדוק את תצורת קליטת הנתונים. ערוך את מקור נתונים עבור מערכת Dynamics 365 המכילה את ה- GUID של מזהה איש הקשר. אם ה- GUID של מזהה איש הקשר מוצג עם תווים רישיות בעורך Power Query, נסה את השלבים הבאים:
     1. ערוך את מקור המידע כדי לפתוח את מקור המידע בעורך Power Query.
     1. בחר את עמודת מזהה איש הקשר.
     1. בחר **שינוי** בשורת הכותרות כדי לראות פעולות זמינות.
     1. בחר **אותיות קטנות**. ודא שערכי ה- GUID בטבלה לא מכילים אותיות רישיות.
     1. שמור את מקור הנתונים.
-    1. הפעל תהליכי קליטה ואיחוד של נתונים גם במורד הזרם, כדי להפיץ את השינויים ב- GUID. 
+    1. הפעל תהליכי קליטה ואיחוד של נתונים גם במורד הזרם, כדי להפיץ את השינויים ב- GUID.
 
-לאחר השלמת הרענון המלא, בקרי התוספות בכרטיס הלקוח אמורים להראות את הנתונים הצפויים. 
+לאחר שהמערכת השלימה את הרענון המלא, הפקדים של תוסף כרטיס הלקוח אמורים להציג את הנתונים הצפויים.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,19 +1,19 @@
 ---
 title: מדריך לדוגמה לחיזוי נטישה של עסקאות
 description: השתמש במדריך לדוגמה זה כדי לנסות את המודל לחיזוי נטישה של עסקאות המוכן לשימוש.
-ms.date: 11/19/2020
+ms.date: 05/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 05c221c634b8e0f582a6c6d3f4d90e971aa9707e
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 3edbf2a471313379c28db874d7f19c3265a23299
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647270"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741320"
 ---
 # <a name="transactional-churn-prediction-sample-guide"></a>מדריך לדוגמה לחיזוי נטישה של עסקאות
 
@@ -86,69 +86,13 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 
 1. שמור את מקור הנתונים.
 
-
 ## <a name="task-2---data-unification"></a>משימה 2 - איחוד נתונים
 
-לאחר קליטת הנתונים אנו מתחילים כעת בתהליך **מיפוי, התאמה, מיזוג** כדי ליצור פרופיל לקוח מאוחד. לקבלת מידע נוסף, ראה [איחוד נתונים](data-unification.md).
-
-### <a name="map"></a>מיפוי
-
-1. לאחר קליטת הנתונים, מפה את אנשי הקשר מנתוני eCommerce ו- Loyalty לסוגי נתונים נפוצים. עבור אל **נתונים** > **איחוד** > **מיפוי**.
-
-1. בחר את הישויות המייצגות את פרופיל הלקוח – **eCommerceContacts** ו- **loyCustomers**. 
-
-   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="איחוד מקורות הנתונים ecommerce ו- loyalty.":::
-
-1. בחר **ContactId** כמפתח העיקרי עבור **eCommerceContacts** ו- **LoyaltyID** כמפתח העיקרי עבור **loyCustomers**.
-
-   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="איחוד LoyaltyId כמפתח ראשי.":::
-
-### <a name="match"></a>התאמה
-
-1. עבור אל הכרטיסיה **התאמה** ובחר **הגדר סדר**.
-
-1. בתפריט הנפתח **ראשי**, בחר **eCommerceContacts : ‏eCommerceContacts** כמקור העיקרי וכלול את כל הרשומות.
-
-1. ברשימה הנפתחת **ישות 2**, בחר **LoyaltyScheme : ‏loyCustomers** וכלול את כל הרשומות.
-
-   :::image type="content" source="media/unify-match-order.PNG" alt-text="איחוד התאמה של eCommerce ו- Loyalty.":::
-
-1. בחר **צור כלל חדש**
-
-1. הוסף את התנאי הראשון שלך באמצעות FullName.
-
-   * עבור eCommerceContacts בחר **FullName** בתפריט הנפתח.
-   * עבור loyCustomers בחר **FullName** בתפריט הנפתח.
-   * בחר את הרשימה הנפתחת **נרמל** ובחר **סוג (טלפון, שם, כתובת, ...)**.
-   * הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
-
-1. הזן את השם **FullName, Email** עבור הכלל החדש.
-
-   * הוסף תנאי שני לכתובת הדואר האלקטרוני על-ידי בחירה **הוסף תנאי**
-   * עבור הישות eCommerceContacts, בחר **דואר אלקטרוני** בתפריט הנפתח.
-   * עבור הישות loyCustomers, בחר **דואר אלקטרוני** בתפריט הנפתח. 
-   * השאר את השדה 'נרמל' ריק. 
-   * הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
-
-   :::image type="content" source="media/unify-match-rule.PNG" alt-text="איחוד כלל התאמה עבור שם ודואר אלקטרוני.":::
-
-7. בחר **שמור** ו **הפעל**.
-
-### <a name="merge"></a>מזג
-
-1. עבור לכרטיסיה **מיזוג**.
-
-1. ב- **ContactId** עבור הישות **loyCustomers**, שנה את שם התצוגה ל- **ContactIdLOYALTY** כדי להבחין בינה לבין מספרי זהות אחרים שנקלטו.
-
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="שינוי שם ל- contactid מ- loyalty id.":::
-
-1. בחר **שמור** ו **הפעל** כדי להתחיל בתהליך המיזוג.
-
-
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-transaction-churn-prediction"></a>משימה 3 - הגדר את חיזוי נטישת העסקאות
 
-מכיוון שפרופילי הלקוחות המאוחדים קיימים, אנו יכולים כעת להפעיל את חיזוי נטישת המנויים. לשלבים מפורטים, ראה את המאמר [חיזוי נטישת מנויים](predict-subscription-churn.md). 
+באמצעות פרופיל לקוח מאוחד אנו יכולים כעת להפעיל את החיזוי של נטישת עסקאות. לשלבים מפורטים, ראה את המאמר [חיזוי נטישת עסקאות](predict-transactional-churn.md). 
 
 1. עבור אל **בינה** > **גילוי** ובחר להשתמש ב **מודל נטישת לקוחות**.
 
@@ -180,7 +124,7 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 
 ## <a name="task-4---review-model-results-and-explanations"></a>משימה 4 - סקירת תוצאות המודל והסברים
 
-הנח למודל להשלים את ההדרכה ואת ניקוד הנתונים. כעת תוכל לעיין בהסברים אודות מודל נטישת המנויים. למידע נוסף, ראה [סקירת מצב החיזוי ותוצאותיו](predict-subscription-churn.md#review-a-prediction-status-and-results).
+הנח למודל להשלים את ההדרכה ואת ניקוד הנתונים. כעת תוכל לעיין בהסברים על מודל הנטישה. למידע נוסף, ראה [סקירת מצב החיזוי ותוצאותיו](predict-transactional-churn.md#review-a-prediction-status-and-results).
 
 ## <a name="task-5---create-a-segment-of-high-churn-risk-customers"></a>משימה 5 - יצירת פלח של לקוחות בסיכון גבוה לנטישה
 
@@ -192,14 +136,12 @@ Contoso היא חברה המייצרת קפה איכותי ומכונות קפה
 
    :::image type="content" source="media/segment-intelligence.PNG" alt-text="יצירת פלח עם פלט המודל.":::
 
-1. בחר את נקודת הקצה **OOBSubscriptionChurnPrediction** והגדר את הפלח: 
+1. בחר את נקודת הקצה **OOBeCommerceChurnPrediction** והגדר את הפלח: 
    - שדה: ChurnScore
    - אופרטור: גדול מ
    - ערך: 0.6
-   
-   :::image type="content" source="media/segment-setup-subs.PNG" alt-text="הגדרת פלח של נטישת מנויים‬.":::
 
-כעת יש לך פלח שמתעדכן באופן דינאמי, המזהה לקוחות בסיכון גבוה לנטישה עבור עסק זה של מנויים.
+כעת יש לך פלח שמתעדכן באופן דינמי ומזהה לקוחות בעלי סיכון נטישה גבוה.
 
 למידע נוסף: [יצירה וניהול של פלחים](segments.md).
 

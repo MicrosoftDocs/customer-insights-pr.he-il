@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646556"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755263"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>העברת יומנים ב- Dynamics 365 Customer Insights עם Azure Monitor (תצוגה מקדימה)
 
@@ -27,8 +27,8 @@ Customer Insights שולח את יומני האירועים הבאים:
 - **אירועי ביקורת**
   - **APIEvent** - מאפשר מעקב אחר שינויים שנעשה באמצעות ממשק המשתמש Dynamics 365 Customer Insights.
 - **אירועי תפעול**
-  - **WorkflowEvent** - זרימת העבודה מאפשרת להגדיר [מקורות מידע](data-sources.md), [וכן לאחד](data-unification.md), [להעשיר](enrichment-hub.md) ולבסוף [לייצא](export-destinations.md) נתונים למערכות אחרות. כל השלבים הללו יכולים להיעשות בנפרד (למשל, הפעלת ייצוא בודד) או במתואם (למשל ,רענון נתונים ממקורות נתונים אשר מפעילים את תהליך האיחוד אשר ימשוך אליו העשרות נוספות ולאחר הסיום ייצא את הנתונים למערכת אחרת). לקבלת פרטים נוספים, ראה [סכימה של WorkflowEvent](#workflow-event-schema).
-  - **APIEvent** - כל קריאות ה- API למופע הלקוחות אל Dynamics 365 Customer Insights. לקבלת פרטים נוספים, ראה [סכימה של APIEvent](#api-event-schema)
+  - **WorkflowEvent** - זרימת העבודה מאפשרת להגדיר [מקורות מידע](data-sources.md), [וכן לאחד](data-unification.md), [להעשיר](enrichment-hub.md) ולבסוף [לייצא](export-destinations.md) נתונים למערכות אחרות. ניתן לבצע את כל השלבים הללו בנפרד (לדוגמה, להפעיל ייצוא בודד). ואפשר גם להפעיל אותם בתיאום (לדוגמה, רענון נתונים ממקורות נתונים שמפעיל את תהליך האיחוד, שימשוך העשרות ולאחר שיסיים יבצע ייצוא של הנתונים למערכת אחרת). לפרטים נוספים, ראה [סכימה של WorkflowEvent](#workflow-event-schema).
+  - **APIEvent** - כל קריאות ה- API למופע הלקוחות אל Dynamics 365 Customer Insights. לפרטים נוספים, ראה [סכימה של APIEvent](#api-event-schema)
 
 ## <a name="set-up-the-diagnostic-settings"></a>קביעת הגדרות האבחון
 
@@ -182,7 +182,7 @@ Customer Insights מספק שתי קטגוריות:
 
 ### <a name="workflow-event-schema"></a>סכימת אירוע זרימת עבודה
 
-זרימת העבודה מכילה מספר שלבים. [קליטת מקורות הנתונים](data-sources.md), [איחוד](data-unification.md), [העשרה](enrichment-hub.md) ו[ייצוא](export-destinations.md) של הנתונים. כל השלבים הללו יכולים לפעול בנפרד או במתואם עם התהליכים הבאים. 
+זרימת העבודה מכילה מספר שלבים. [קליטת מקורות הנתונים](data-sources.md), [איחוד](data-unification.md), [העשרה](enrichment-hub.md) ו[ייצוא](export-destinations.md) של הנתונים. כל השלבים הללו יכולים לפעול בנפרד או במתואם עם התהליכים הבאים.
 
 #### <a name="operation-types"></a>סוגי פעולה
 
@@ -215,7 +215,7 @@ Customer Insights מספק שתי קטגוריות:
 | `time`          | חותמת זמן | חובה          | חותמת הזמן של האירוע (UTC).                                                                                                                                 | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resourceId`    | String    | חובה          | מזהה משאב של המופע שפלט את האירוע.                                                                                                            | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
 | `operationName` | String    | חובה          | שם הפעולה המיוצגת על ידי אירוע זה. `{OperationType}.[WorkFlow|Task][Started|Completed]`. ראה [סוגי פעולות](#operation-types) להשוואה. | `Segmentation.WorkflowStarted`,<br> `Segmentation.TaskStarted`, <br> `Segmentation.TaskCompleted`, <br> `Segmentation.WorkflowCompleted`                                 |
-| `category`      | String    | חובה          | קטגוריית יומן של האירוע. תמיד `Operational` עבור אירועי זרימת עבודה                                                                                           | `Operational`                                                                                                                                                            | 
+| `category`      | String    | חובה          | קטגוריית יומן של האירוע. תמיד `Operational` עבור אירועי זרימת עבודה                                                                                           | `Operational`                                                                                                                                                            |
 | `resultType`    | String    | חובה          | מצב האירוע. `Running`, `Skipped`, `Successful`, `Failure`                                                                                            |                                                                                                                                                                          |
 | `durationMs`    | Long      | אופציונלי          | משך הפעולה באלפיות שנייה.                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | String    | אופציונלי          | אובייקט JSON עם מאפיינים נוספים עבור הקטגוריה המסוימת של האירועים.                                                                                        | ראה מקטע משנה [מאפייני זרימת עבודה](#workflow-properties-schema)                                                                                                       |

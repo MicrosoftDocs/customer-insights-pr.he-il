@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 0efda9d2997bcfd069b6d2445b69d159d7d3e59b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c64ac94a7e0e743d3c13e32e394cc5d409420622
+ms.sourcegitcommit: c00441bc60b978e25f930b06c9d97b46fe462538
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646618"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712903"
 ---
 # <a name="create-an-environment-in-customer-insights"></a>יצירת סביבה ב- Customer Insights
 
@@ -63,8 +63,7 @@ ms.locfileid: "8646618"
 בכך שאתה שומר נתונים ב- Azure Data Lake Storage, אתה מסכים לכך שהנתונים יועברו ויישמרו במיקום הגיאוגרפי המתאים עבור אותו חשבון אחסון של Azure. מיקום זה עשוי להיות שונה מהמיקום שבו הנתונים מאוחסנים ב- Dynamics 365 Customer Insights. קבל מידע נוסף ב[מרכז יחסי האמון של Microsoft](https://www.microsoft.com/trust-center).
 
 > [!NOTE]
-> Customer Insights תומך כעת בפריטים הבאים:
-> - ישויות מעובדות מזרימות נתונים של Power BI המאוחסנות ב- Data Lake מנוהל של Microsoft Dataverse.  
+> Customer Insights תומך כעת בפריטים הבאים:  
 > - חשבונות Azure Data Lake Storage מאותו אזור של Azure שבחרת בעת יצירת הסביבה.
 > - חשבונות Azure Data Lake Storage שהם Gen2 ואשר *מרחב השמות ההיררכי*  שלהם מופעל. חשבונות Azure Data Lake Gen1 storage לא נתמכים.
 
@@ -80,7 +79,7 @@ ms.locfileid: "8646618"
 
 ספק סביבת Microsoft Dataverse משלך לשיתוף נתונים (פרופילים ותובנות) עם אפליקציות עסקיות המבוססות על Dataverse, כמו Dynamics 365 Marketing או אפליקציות מונחות דגמים ב- Power Apps. השאר שדה זה ריק אם אין לך סביבת Dataverse משלך ואנחנו נספק לך אחת.
 
-חיבור אל סביבת Dataverse משלך גם מאפשר לך [לקלוט נתונים ממקורות נתונים מקומיים באמצעות זרימות נתונים ושערים של Power Platform](data-sources.md#add-data-from-on-premises-data-sources). אפשר גם להשתמש ב- [דגמי חיזוי מוכנים לשימוש](predictions-overview.md?tabs=b2c#out-of-box-models) על ידי חיבור לסביבת Dataverse.
+חיבור אל סביבת Dataverse משלך גם מאפשר לך [לקלוט נתונים ממקורות נתונים מקומיים באמצעות זרימות נתונים ושערים של Power Platform](data-sources.md#add-data-from-on-premises-data-sources).
 
 > [!IMPORTANT]
 > 1. Customer Insights ו- Dataverse צריכים להיות באותו אזור כדי לאפשר שיתוף נתונים.

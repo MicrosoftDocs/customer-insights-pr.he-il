@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 6a1c3791076a7dda4531664ca88632f7f1b914e3
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 6d43dc2ca82c034fbd396d92637e7aea8179df77
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646536"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755355"
 ---
 # <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>העשרת פרופילי לקוחות באמצעות Azure Maps‏ (Preview)
 
@@ -51,7 +51,7 @@ Azure Maps מספק נתונים ושירותים הממוקדים במיקום 
 
 1. בחר **הבא** כדי להשלים את מיפוי השדה.
 
-1. הערך אם ברצונך לשנות את **הגדרות מתקדמות**. הן ניתנות כדי לספק גמישות מרבית לטיפול במקרי שימוש מתקדמים, אך ערכי ברירת המחדל יהיו מספקים ברוב המקרים:
+1. הערך אם ברצונך לשנות את **הגדרות מתקדמות**. הגדרות אלו ניתנות כדי להעניק גמישות מרבית לטיפול מתקדם במקרי שימוש, אך ערכי ברירת המחדל יכולים להתאים ברוב המקרים:
    - **סוג כתובות**: אופן הפעולה של ברירת המחדל הוא כזה שההעשרה תחזיר את התאמת הכתובת הטובה ביותר גם אם אינה מלאה. כדי לקבל כתובות שלמות בלבד&mdash;לדוגמה, כתובות הכוללות את מספר הבית&mdash;נקה את כל תיבות הסימון למעט **כתובות נקודה**. 
    - **שפה**: כברירת מחדל, כתובות מוחזרות בשפה עבור האזור שאליו נקבע שהכתובת שייכת. כדי להחיל שפת כתובת מתוקננת, בחר את השפה מהתפריט הנפתח. לדוגמה, בחירת **אנגלית** תחזיר **Copenhagen, Denmark** במקום **København, Danmark**.
 
@@ -89,7 +89,7 @@ Azure Maps מספק נתונים ושירותים הממוקדים במיקום 
 
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים ל- Azure Maps, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעלולים להיות רגישים, כגון נתונים אישיים. Microsoft תעביר נתונים כאלה בהוראתך, אבל אתה אחראי להבטיח ש- Azure Maps עומד בכל התחייבויות הפרטיות והאבטחה שלך. לקבלת מידע נוסף, עבור אל [הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
+כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים ל- Azure Maps, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעלולים להיות רגישים, כגון נתונים אישיים. Microsoft תעביר נתונים אלה בהוראתך, אך אתה אחראי להבטיח ש- Azure Maps עומד בכל מחויבויות הפרטיות או האבטחה שלקחת על עצמך. לקבלת מידע נוסף, עבור אל [הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר העשרה זו בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

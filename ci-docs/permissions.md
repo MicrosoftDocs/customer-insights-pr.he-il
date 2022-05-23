@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: b80f07dfa734f4dd762bd711151a7045f24bed7d
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 74c7ff7cda8431c04dd34713becefa7e346331b4
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653569"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740904"
 ---
 # <a name="user-permissions"></a>הרשאות משתמשים
 
@@ -41,7 +41,7 @@ ms.locfileid: "8653569"
 
 - כל ההרשאות זמינות לצופה.
 - טען ושנה נתונים בדף **מקורות נתונים**.
-- השלם את מקטעי *איחוד נתונים*(**מפה**, **התאמה**, **מיזוג**), מה שיוצר את ישות פרופיל הלקוחות המאוחד.
+- השלם ***איחוד נתונים** שמביא לישות פרופיל לקוח מאוחד.
 - הגדר **קשרים** ו **פעילויות**.
 - צור פלחים באמצעות הדף **פלחים**.
 - צור מדידות בדף **מדידות**.

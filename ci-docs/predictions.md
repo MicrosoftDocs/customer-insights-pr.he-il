@@ -12,12 +12,12 @@ searchScope:
 - ci-predictions
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: cca91f2bbe2fc64554199082a79c1b388a01ab52
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e2cace3547a0b584dbf26ae5eecf86f3b256649f
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647130"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740720"
 ---
 # <a name="complete-your-partial-data-with-predictions-deprecated"></a>השלמת הנתונים החלקיים באמצעות חיזוי (הוצא משימוש)
 
@@ -37,7 +37,7 @@ ms.locfileid: "8647130"
 
 1. לארגון שלך יש מופע [שמוגדר ב- Microsoft Dataverse](/ai-builder/build-model#prerequisites) והוא נמצא באותו ארגון כמו Customer Insights.
 
-2. סביבת התובנות לגבי קהלים מחוברת למופע Dataverse.
+2. סביבת Customer Insights שלך מחוברת למופע Dataverse שלך.
 
 לקבלת מידע נוסף, ראה [יצירת סביבה חדשה](create-environment.md).
 

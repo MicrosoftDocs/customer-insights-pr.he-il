@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: ecc8bb3dbec1d4583c4bf2a58058145343945299
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a460ec87ec85f0614f944d352588d4ca899f8120
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646795"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755451"
 ---
 # <a name="work-with-customer-insights-apis"></a>עבודה עם ממשקי API של Customer Insights
 
@@ -25,7 +25,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 > [!IMPORTANT]
 > פרטים על ממשקי API אלה מפורטים ב[הפניית ממשקי API של Customer Insights](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). הם כוללים מידע נוסף על פעולות, פרמטרים ותגובות.
 
-מאמר זה מתאר כיצד לגשת לממשקי API של Customer Insights, ליצור רישום של יישום Azure ולהתחיל בספריות הלקוחות הזמינות.
+מאמר זה מתאר כיצד לגשת לממשקי ה-API של Customer Insights, ליצור רישום אפליקציות של Azure ולהתחיל בעבודה עם ספריות לקוחות.
 
 ## <a name="get-started-trying-the-customer-insights-apis"></a>התחל לנסות את ממשקי ה- API של Customer Insights
 
@@ -83,13 +83,13 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 לקבלת מידע נוסף אודות MSAL, ראה [מבט כולל על Microsoft Authentication Library‏ (MSAL)](/azure/active-directory/develop/msal-overview).
 
-לקבלת מידע נוסף על רישום יישומים ב- Azure, ראה [רישום בקשה](/azure/active-directory/develop/quickstart-register-app.md#register-an-application).
+לקבלת מידע נוסף על רישום יישומים ב- Azure, ראה [רישום בקשה](/graph/auth-register-app-v2).
 
 למידע על השימוש בממשקי ה- API בספריות הלקוחות שלנו, ראה [ספריות לקוחות של Customer Insights](#customer-insights-client-libraries).
 
 ### <a name="server-to-server-application-permissions"></a>הרשאות יישום של שרת לשרת
 
-[מקטע רישום יישום](#create-a-new-app-registration-in-the-azure-portal) מפרט כיצד יש לרשום יישום שדורש כניסת משתמש עבור אימות. למד כיצד ליצור רישום יישום שאינו זקוק לאינטראקציית משתמש ויכול לפעול בשרת.
+[מקטע רישום יישום](#create-a-new-app-registration-in-the-azure-portal) מפרט כיצד יש לרשום יישום שדורש כניסת משתמש עבור אימות. למד כיצד ליצור רישום אפליקציה שאינה זקוקה לאינטראקציה של המשתמש וניתן להפעיל אותה על שרת.
 
 1. ברישום היישום שלך בפורטל Azure, עבור אל **הרשאות API**.
 
@@ -112,6 +112,10 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
    פתח את Customer Insights, עבור אל **ניהול** > **הרשאות** ובחר **הוסף משתמש**.
 
 1. חפש את שם רישום היישום שלך, בחר בו מתוך תוצאות החיפוש ובחר **שמור**.
+
+## <a name="sample-queries"></a>שאילתות לדוגמה
+
+ריכזנו רשימה קצרה של שאילתות לדוגמה של OData לעבודה עם ממשקי ה-API: [דוגמאות לשאילתות OData](odata-examples.md).
 
 ## <a name="customer-insights-client-libraries"></a>ספריות לקוחות של Customer Insights
 
@@ -137,7 +141,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 1. השתמש ב- [Microsoft Authentication Library‏ (MSAL)](/azure/active-directory/develop/msal-overview) כדי לקבל `AccessToken` באמצעות [רישום יישום Azure](#create-a-new-app-registration-in-the-azure-portal) הקיים שלך.
 
-1. לאחר רכישה ואימות מוצלחים של אסימון, בנה `HttpClient` חדש או השתמש בקיים, בתוספת של **DefaultRequestHeaders "אימות"** שמוגדר ל- **"אסימון גישה" של נושא** ו- **Ocp-Apim-Subscription-Key** שמוגדרת ל [**מפתח מנוי** מסביבת Customer Insights שלך](#get-started-trying-the-customer-insights-apis).   
+1. לאחר רכישה ואימות מוצלחים של אסימון, בנה `HttpClient` חדש או השתמש בקיים, עם **DefaultRequestHeaders "אימות"** שמוגדר ל- **"אסימון גישה" של נושא** ו- **Ocp-Apim-Subscription-Key** שמוגדרת ל [**מפתח מנוי** מסביבת Customer Insights שלך](#get-started-trying-the-customer-insights-apis).   
  
    אפס את הכותרת **הרשאה** במועד המתאים. לדוגמה, כאשר פג תוקף האסימון.
 
@@ -147,7 +151,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 1. בצע שיחות עם הלקוח ל"שיטות ההרחבה", למשל `GetAllInstancesAsync`. אם עדיפה גישה ל- `Microsoft.Rest.HttpOperationResponse` הבסיסי, השתמש ב"שיטות הודעת http" - לדוגמה `GetAllInstancesWithHttpMessagesAsync`.
 
-1. התגובה תהיה ככל הנראה מהסוג `object` משום שפעולת השירות יכולה להחזיר סוגים מרובים (לדוגמה, `IList<InstanceInfo>` ו-`ApiErrorResult`). כדי לבדוק את סוג ההחזרה, באפשרותך להמיר בבטחה את האובייקטים לסוגי התגובה המצוינים ב[דף פרטי API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) עבור פעולה זו.    
+1. התגובה תהיה ככל הנראה מהסוג `object` משום שפעולת השירות יכולה להחזיר סוגים מרובים (לדוגמה, `IList<InstanceInfo>` ו-`ApiErrorResult`). כדי לבדוק את סוג ההחזרה, אתה משתמש באובייקטים בסוגי התגובה שצוינו [בדף פרטי API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) לאותה פעולה.    
    
    אם יש צורך במידע נוסף על הבקשה, השתמש ב **פעולות שירות של הודעת https** כדי לגשת לאובייקט התגובה הגולמי.
 

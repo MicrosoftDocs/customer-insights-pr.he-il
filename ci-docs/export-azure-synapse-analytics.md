@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e77227e1e353c02cfb13e26a8ecbe0768ba6c0fa
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646687"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741504"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>ייצוא נתונים אל Azure Synapse Analytics ‏(תצוגה מקדימה)
 
@@ -34,7 +34,7 @@ Azure Synapse הוא שירות ניתוח שמזרז את הזמן להשגת �
 
 - מנוי פעיל של Azure.
 
-- אם משתמשים בחשבון Gen2 חדש של Azure Data Lake Storage, *מנהל השירות עבור Customer Insights* צריך הרשאות **תורם נתונים של Blob אחסון**. למידע נוסף על [התחברות לחשבון Azure Data Lake Storage ‏Gen2 עם מנהל שירות Azure עבור תובנות לגבי קהלים](connect-service-principal.md). Data Lake Storage Gen2 **חייב להפעיל** [מרחב שמות הירארכי](/azure/storage/blobs/data-lake-storage-namespace).
+- אם משתמשים בחשבון Gen2 חדש של Azure Data Lake Storage, *מנהל השירות עבור Customer Insights* צריך הרשאות **תורם נתונים של Blob אחסון**. מידע נוסף בנושא [חיבור לחשבון Azure Data Lake Storage Gen2 באמצעות מנהל שירות עבור Customer Insights](connect-service-principal.md). Data Lake Storage Gen2 **חייב להפעיל** [מרחב שמות הירארכי](/azure/storage/blobs/data-lake-storage-namespace).
 
 - בקבוצת המשאבים שבה נמצא Azure Synapse Workspace, יש להקצות ל *מנהל השירות* ולמשתמש *Azure AD*, שיש להם הרשאות מנהל מערכת ב- Customer Insights, לפחות הרשאות **קורא**. למידע נוסף, ראה [הקצאת תפקידי Azure באמצעות פורטל Azure](/azure/role-based-access-control/role-assignments-portal).
 

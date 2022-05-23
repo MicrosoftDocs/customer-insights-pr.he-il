@@ -66,12 +66,18 @@
   items:
     - name: מבט כולל על איחוד נתונים
       href: data-unification.md
-    - name: מיפוי ישויות ותכונות
+    - name: בחר שדות מקור
       href: map-entities.md
-    - name: התאמת ישויות
+    - name: הסר רשומות כפולות
+      href: remove-duplicates.md
+    - name: התאם תנאים
       href: match-entities.md
-    - name: מיזוג ישויות
+    - name: אחד שדות לקוח
       href: merge-entities.md
+    - name: בדוק את איחוד הנתונים
+      href: review-unification.md
+    - name: עדכן את הגדרות האיחוד
+      href: data-unification-update.md
 - name: העשרת נתונים
   items:
     - name: העשרת פרופילי לקוחות
@@ -282,6 +288,8 @@
       href: apis.md
     - name: הפניות API
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+    - name: שאילתות לדוגמה של OData
+      href: odata-examples.md
 - name: ניהול הסכמות (Preview)
   items:
     - name: מרכז העזרה

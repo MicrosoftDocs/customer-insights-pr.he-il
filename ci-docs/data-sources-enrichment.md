@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 56f6a8ad20224922f9968f0ad3b6a0e0a400214b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646576"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755687"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>העשרה למקורות נתונים (Preview)
 
@@ -26,7 +26,7 @@ ms.locfileid: "8646576"
 1. עבור אל **נתונים** > **איחוד**. בחר את הישות שברצונך להעשיר ובחר בתכונה אחת כמפתח ראשי עבור הישות. למידע נוסף, ראה [בחירת מפתח ראשי](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 
 1. עבור אל **נתונים** > **מקורות נתונים**.
- 
+
 1. בחר את שלושת הנקודות האנכיות לצד מקור נתונים שברצונך להעשיר ובחר **העשרה**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="דף העשרת מקורות נתונים.":::

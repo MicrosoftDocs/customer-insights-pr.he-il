@@ -1,19 +1,19 @@
 ---
 title: חיזוי ערכי אורך החיים של הלקוח‬ - מדריך לדוגמה
 description: השתמש במדריך לדוגמה זה כדי לנסות את מודל החיזוי של ערך אורך החיים של לקוח.
-ms.date: 05/25/2021
-ms.reviewer: mhart
+ms.date: 03/31/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 9f8d1d0f0757d8003ad3859fab75362f3988cd00
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 351946c734f5a1054eb3769b2d9cced3bed48e15
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647113"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740812"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>חיזוי ערכי אורך החיים של הלקוח‬ (CLV) - מדריך לדוגמה
 
@@ -102,64 +102,7 @@ Contoso היא חברה המייצרת קפה באיכות גבוהה ומכונ
 
 ## <a name="task-2---data-unification"></a>משימה 2 - איחוד נתונים
 
-לאחר קליטת הנתונים, כעת נתחיל בתהליך איחוד הנתונים ליצירת פרופיל לקוח מאוחד. לקבלת מידע נוסף, ראה [איחוד נתונים](data-unification.md).
-
-### <a name="map"></a>מיפוי
-
-1. לאחר קליטת הנתונים, מפה את אנשי הקשר מנתוני eCommerce ו- Loyalty לסוגי נתונים נפוצים. עבור אל **נתונים** > **איחוד** > **מיפוי**.
-
-1. בחר את הישויות המייצגות את פרופיל הלקוח – **eCommerceContacts** ו- **loyCustomers**. לאחר מכן, בחר **החל**.
-
-   ![איחוד מקורות הנתונים ecommerce ו- loyalty.](media/unify-ecommerce-loyalty.png)
-
-1. בחר **ContactId** כמפתח העיקרי עבור **eCommerceContacts** ו- **LoyaltyID** כמפתח העיקרי עבור **loyCustomers**.
-
-   ![איחוד LoyaltyId כמפתח ראשי.](media/unify-loyaltyid.png)
-
-1. בחר **שמור**.
-
-### <a name="match"></a>התאמה
-
-1. עבור אל הכרטיסיה **התאמה** ובחר **הגדר סדר**.
-
-1. בתפריט הנפתח **ראשי**, בחר **eCommerceContacts : ‏eCommerceContacts** כמקור העיקרי וכלול את כל הרשומות.
-
-1. ברשימה הנפתחת **ישות 2**, בחר **LoyaltyScheme : ‏loyCustomers** וכלול את כל הרשומות.
-
-   ![איחוד התאמה של eCommerce ו- Loyalty.](media/unify-match-order.png)
-
-1. בחר **הוסף כלל**
-
-1. הוסף את התנאי הראשון שלך באמצעות FullName.
-
-   - עבור eCommerceContacts בחר **FullName** בתפריט הנפתח.
-   - עבור loyCustomers בחר **FullName** בתפריט הנפתח.
-   - בחר את התפריט הנפתח **נרמל** ובחר **סוג (טלפון, שם, כתובת, ...)**.
-   - הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
-
-1. הזן את השם **FullName, Email** עבור הכלל החדש.
-
-   - הוסף תנאי שני לכתובת הדואר האלקטרוני על-ידי בחירה **הוסף תנאי**
-   - עבור הישות eCommerceContacts, בחר **דואר אלקטרוני** בתפריט הנפתח.
-   - עבור הישות loyCustomers, בחר **דואר אלקטרוני** בתפריט הנפתח.
-   - השאר את השדה 'נרמל' ריק.
-   - הגדר **רמת דיוק**: **בסיסית** ו **ערך**: **גבוה**.
-
-   ![איחוד כלל התאמה עבור שם ודואר אלקטרוני.](media/unify-match-rule.png)
-
-1. בחר **סיום**.
-
-1. בחר **שמור** ו **הפעל**.
-
-### <a name="merge"></a>מזג
-
-1. עבור לכרטיסיה **מיזוג**.
-
-1. ב- **ContactId** עבור הישות **loyCustomers**, שנה את שם התצוגה ל- **ContactIdLOYALTY** כדי להבחין בינה לבין מספרי זהות אחרים שנקלטו.
-
-   ![שינוי שם ל- contactid מ- loyalty id.](media/unify-merge-contactid.png)
-
-1. בחר **שמור** ו **הפעל תהליכי מיזוג ומורד הזרם**.
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-customer-lifetime-value-prediction"></a>משימה 3 - קביעת תצורה של חיזוי ערך אורך החיים של לקוח
 

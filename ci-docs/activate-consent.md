@@ -1,23 +1,22 @@
 ---
 title: הפעלת כללי הסכמה עבור פלחים
 description: בצע את השלבים הבאים לקישור נתוני הסכמה ולהפעלת בדיקות הסכמה ב- Dynamics 365 Customer Insights. מנהל מערכת יכול גם להפוך את בדיקות ההסכמה ללא זמינות.
-ms.date: 11/12/2021
-ms.subservice: audience-insights
+ms.date: 04/27/2022
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: bfa03f4b7b56b300a74ebd04721cd64b893879f1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f82e3a4031fee8bcaa88575cbd68b37385a7fffb
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646636"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755171"
 ---
 # <a name="activate-consent-rules"></a>הפעל כללי הסכמה
 
-[מרכז ההסכמה (Preview)](consent-management/overview.md) עוזר לך לשלב נתוני הסכמה ממקורות שונים. השתמש בישות *הסכמה* המאוחדת כדי להחיל בדיקות הסכמה כברירת מחדל. לאחר ייבוא נתוני הסכמה אל מרכז ההסכמה וקביעת התצורה של הכללים עבור הנתונים, הישות *הסכמה* מסתנכרנת באופן אוטומטי עם Dynamics 365 Customer Insights.
+[מרכז ההסכמה (Preview)](consent-management/overview.md) עוזר לך לשלב נתוני הסכמה ממקורות שונים. השתמש בישות *הסכמה* המאוחדת כדי להחיל בדיקות הסכמה כברירת מחדל. לאחר ייבוא נתוני הסכמה וקביעת התצורה של הכללים עבור המיפוי, הישות *הסכמה* מסתנכרנת באופן אוטומטי עם Dynamics 365 Customer Insights.
 
 ## <a name="enable-consent-checks"></a>הפיכת בדיקות הסכמה לזמינות
 
