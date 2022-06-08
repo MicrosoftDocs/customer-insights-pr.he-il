@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 4a269a223efa08f71db09eef2ec9a8f8a077f7a7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641809"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833769"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>‏‫שאלות נפוצות בנושא גירסת הניסיון‬ של Dynamics 365 Customer Insights
 
@@ -62,9 +62,9 @@ ms.locfileid: "8641809"
 
 באופן כללי, אנחנו ממליצים להתחיל מחדש עם הנתונים שלך בעת השדרוג לגירסה בתשלום של Customer Insights. 
 
-לחלופין, אם אתה משתמש רק ב- Customer Insights, באפשרותך להעתיק את הנתונים שלך מסביבת ניסיון אם תרכוש את Customer Insights. עליך להיות מנהל המערכת של ניסיון Customer Insights ומנהל המערכת הגלובלי של דייר Microsoft 365, או מנהל המערכת של Dynamics 365 בארגון שלך, כדי להעביר את ההגדרות מסביבת ניסיון לסביבה בתשלום. 
+לחלופין, אם אתה משתמש רק ב- Customer Insights, באפשרותך להעתיק את הנתונים שלך מסביבת ניסיון אם תרכוש את Customer Insights. עליך להיות מנהל המערכת של ניסיון Customer Insights ומנהל המערכת הגלובלי של דייר Microsoft 365, או מנהל המערכת של Dynamics 365 בארגון שלך, כדי להעביר את ההגדרות מסביבת ניסיון לסביבה בתשלום.
 
-לאחר הכניסה הראשונה לגירסה בתשלום של Customer Insights, תתבקש ליצור סביבה חדשה. בתהליך זה, תוכל לבחור להעתיק את התצורה מסביבה קיימת ולהעביר את רוב ההגדרות. אם יש לך את ההרשאות שהוזכרו למעלה, סביבת הניסיון תופיע ברשימה זו. לקבלת מידע נוסף, ראה [העתקת תצורת הסביבה](manage-environments.md#copy-the-environment-configuration).
+לאחר הכניסה הראשונה לגירסה בתשלום של Customer Insights, תתבקש ליצור סביבה חדשה. בתהליך זה, תוכל לבחור להעתיק את התצורה מסביבה קיימת ולהעביר את רוב ההגדרות. אם יש לך את ההרשאות שהוזכרו למעלה, סביבת הניסיון תופיע ברשימה זו. לקבלת מידע נוסף, ראה [העתקת תצורת הסביבה](create-environment.md#copy-the-environment-configuration).
 
 ### <a name="what-are-the-trial-limits-and-quotas"></a>מהן המגבלות והמכסות של גירסת הניסיון?
 
@@ -81,9 +81,10 @@ ms.locfileid: "8641809"
 
 רוב התכונות ביכולות Customer Insights זמינות בגירסת הניסיון.
 
-התכונות הבאות **לא זמינות**: 
+התכונות הבאות **לא זמינות**:
+
 - אין באפשרותך ליצור סביבות חדשות המשתמשות בחשבון Azure Data Lake storage שלך.
-- לא ניתן למחוק את סביבת הניסיון. 
+- לא ניתן למחוק את סביבת הניסיון.
 
 ### <a name="how-long-does-the-trial-last"></a>מהו משך גירסת הניסיון?
 

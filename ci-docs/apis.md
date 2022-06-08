@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: a460ec87ec85f0614f944d352588d4ca899f8120
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 9a04276f7326533cd389cba6554f468123463bac
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755451"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808507"
 ---
 # <a name="work-with-customer-insights-apis"></a>עבודה עם ממשקי API של Customer Insights
 
@@ -31,11 +31,11 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 1. [היכנס](https://home.ci.ai.dynamics.com) אל Customer Insights. אם עדיין אין לך מנוי, [הירשם לגירסת ניסיון של Customer Insights](https://aka.ms/tryci).
 
-1. כדי להפעיל ממשקי API בסביבת Customer Insights שלך, עבור אל **ניהול** > **הרשאות**. תזדקק להרשאות מנהל מערכת כדי לעשות זאת.
+1. כדי להפוך ממשקי API לזמינים בסביבת Customer Insights שלך, עבור אל **מנהל מערכת** > **אבטחה**. תזדקק להרשאות מנהל מערכת כדי לעשות זאת.
 
 1. עבור אל הכרטיסיה **ממשקי API** ובחר בלחצן **הפוך לזמין**.    
  
-   הפעלת ממשקי ה- API יוצרת מפתח מנוי ראשי ומשני עבור המופע שלך המשמש בבקשות ה- API. באפשרותך ליצור מחדש את המפתחות על-ידי בחירת **צור מחדש מפתח ראשי** או **צור מחדש מפתח משני** דרך **ניהול** > **הרשאות** > **ממשקי API**.
+   הפעלת ממשקי ה- API יוצרת מפתח מנוי ראשי ומשני עבור המופע שלך המשמש בבקשות ה- API. אתה יכול ליצור מחדש את המפתחות על ידי בחירה ב **יצירה מחדש של המפתח הראשי** או **יצירה מחדש של המפתח המשני** ב **מנהל מערכת** > **אבטחה** > **ממשקי API**.
 
 <!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
@@ -62,14 +62,12 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 1. משמאל, בחר **רישומי יישום**.
 
 1. בחר **רישום חדש**, ספק שם יישום ובחר את סוג החשבון.
- 
+
    לבחירתך, הוסף כתובת URL של ניתוב מחדש. http://localhost מספיק לפיתוח יישום במחשב המקומי שלך.
 
 1. ברישום היישום החדש שלך, עבור אל **הרשאות API**.
 
-<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
-
-1. בחר **הוסף הרשאה** ובחר **Customer Insights** בחלונית הצדדית.
+1. בחר **הוסף הרשאה** ובחר **Dynamics 365 AI for Customer Insights** בחלונית הצד.
 
 1. עבור **סוג הרשאה**, בחר **הרשאות שהוקצו** ואז בחר את הרשאת **התחזות למשתמש**.
 
@@ -109,7 +107,7 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 1. לסיום, עלינו להוסיף את שם רישום היישום כמשתמש ב- Customer Insights.  
    
-   פתח את Customer Insights, עבור אל **ניהול** > **הרשאות** ובחר **הוסף משתמש**.
+   פתח את Customer Insights, עבור אל **מנהל מערכת** > **אבטחה** ובחר **הוסף משתמש**.
 
 1. חפש את שם רישום היישום שלך, בחר בו מתוך תוצאות החיפוש ובחר **שמור**.
 

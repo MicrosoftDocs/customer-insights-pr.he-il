@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 386198c838929a20e136288fffb1015707654d8d
-ms.sourcegitcommit: 9f256af5c4f7e99305bf09087f7ec05eebeae6a0
+ms.openlocfilehash: af79c8369dd608e8ce1c14c50bb9aef3a79b9029
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8700938"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833631"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>מה חדש ב- Dynamics 365 Customer Insights
 
@@ -58,6 +58,7 @@ LiveRamp מספק פתרון זהות ואיחוד של נתוני לקוחות.
 למידע נוסף, ראה [העשרת פרופילי לקוחות עם נתוני זהות מ- LiveRamp ‏(Preview)](enrichment-liveramp.md).
 
 ### <a name="organize-segments-and-measures-with-tags-and-filters"></a>ארגן פלחים ומדדים עם תגים ומסננים
+
 אם בארגון שלך קיימים הרבה פלחים או מדדים, מציאת הפריט המתאים יכול להיות מאתגר. תכונה חדשה זו מאפשרת לך לארגן רשימות באמצעות תגים ועמודות. תכונה זו עוזרת למצוא נתונים במהירות ובקלות ולהתאים אישית את התצוגות.
 
 למידע נוסף, ראה [עבודה עם תגים ועמודות](work-with-tags-columns.md).
@@ -65,9 +66,9 @@ LiveRamp מספק פתרון זהות ואיחוד של נתוני לקוחות.
 ### <a name="enable-data-sharing-with-dataverse-when-using-your-own-storage-account"></a>אפשר שיתוף נתונים עם Dataverse בעת שימוש בחשבון אחסון משלך
 
 אם הסביבה שלך משתמשת ב- Azure Data Lake Storage לאחסון נתוני Customer Insights, נדרשת הגדרת תצורה נוספת לשיתוף נתונים באמצעות Microsoft Dataverse.
-קודם לכן, אפשר היה לאפשר שיתוף נתונים עם Dataverse רק כאשר הנתונים שלך אוחסנו באגם הנתונים המנוהל שלנו. 
+קודם לכן, אפשר היה לאפשר שיתוף נתונים עם Dataverse רק כאשר הנתונים שלך אוחסנו באגם הנתונים המנוהל שלנו.
 
-למידע נוסף ראה [הפיכת שיתוף נתונים באמצעות Dataverse מ- (Preview) Azure Data Lake Storage משלך לזמין](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
+למידע נוסף ראה [הפיכת שיתוף נתונים באמצעות Dataverse מ- (Preview) Azure Data Lake Storage משלך לזמין](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ### <a name="new-export-destinations-iterable-and-braze"></a>יעדי ייצוא חדשים: Iterable ו- Braze
 
@@ -81,7 +82,6 @@ LiveRamp מספק פתרון זהות ואיחוד של נתוני לקוחות.
 
 - Google Ads: הגרסה החדשה של מחבר הייצוא של Google Ads מפשטת את חוויית האימות ומאפשרת לך כעת ליצור קהלים חדשים של Google Ads באופן אוטומטי. 
 - Marketo: הגרסה החדשה של מחבר הייצוא של Marketo מספקת תמיכה עבור מזהה Marketo, ומאפשרת לך להימנע משכפול נתונים, לעדכן רשומות קיימות וליצור רשומות חדשות ב-Marketo. 
-
 
 ## <a name="february-2022-updates"></a>עדכוני פברואר 2022
 

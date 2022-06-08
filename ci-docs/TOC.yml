@@ -6,7 +6,9 @@
   href: whats-new-customer-insights.md
 - name: קטלוג למידה
   items:
-    - name: התחל בעבודה
+    - name: הסמכה כמומחה לפלטפורמת נתונים ללקוחות של Microsoft
+      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+    - name: תחילת העבודה עם Customer Insights
       href: /learn/modules/get-started-customer-data-platform/
     - name: קליטת נתונים
       href: /learn/modules/ingest-data-customer-insights/
@@ -34,8 +36,6 @@
       href: get-started.md
     - name: התחל עם רישיון בתשלום
       href: paid-license.md
-    - name: יצירת סביבה חדשה
-      href: create-environment.md
     - name: גלה את Customer Insights
       href: home.md
     - name: עבודה עם תגים ועמודות
@@ -198,6 +198,8 @@
           href: export-campaign-monitor.md
         - name: Constant Contact
           href: export-constant-contact.md
+        - name: Criteo
+          href: export-criteo.md
         - name: DotDigital
           href: export-dotdigital.md
         - name: Dynamics 365 Marketing
@@ -254,12 +256,22 @@
       href: entities.md
     - name: סקור את סכימות הישויות ב- Common Data Model
       href: entity-schemas.md
-    - name: נתונים של Customer Insights ב- Dataverse
-      href: customer-insights-dataverse.md
     - name: בניית קשרים וישויות מחוברות
       href: relationships.md
     - name: הגדרת מיפויים סמנטיים
       href: semantic-mappings.md
+- name: סביבות
+  items:
+    - name: יצירת סביבה חדשה
+      href: create-environment.md
+    - name: חיבור אל Microsoft Dataverse
+      href: customer-insights-dataverse.md
+    - name: שימוש Azure Data Lake Storage משלך
+      href: own-data-lake-storage.md
+    - name: ניהול הגדרות סביבה
+      href: manage-environments.md
+    - name: התחבר לחשבון אחסון באמצעות מנהל שירות
+      href: connect-service-principal.md
 - name: ניהול
   items:
     - name: הגדרת תצורת המערכת
@@ -268,20 +280,12 @@
       href: security-overview.md
     - name: הקצאת הרשאות משתמשים
       href: permissions.md
-    - name: מבט כולל על חיבורים
-      href: connections.md
-    - name: ניהול סביבות מרובות
-      href: manage-environments.md
     - name: הבא Key Vault משלך
       href: use-azure-key-vault.md
-    - name: התחבר לחשבון אחסון באמצעות מנהל שירות
-      href: connect-service-principal.md
     - name: ייצוא יומני אבחון
       href: diagnostics.md
-    - name: מגבלות שירות
-      href: service-limits.md
-    - name: זכויות ובקשות של DSR
-      href: dsr-rights-requests.md
+    - name: מבט כולל על חיבורים
+      href: connections.md
 - name: ממשקי API
   items:
     - name: עבודה עם ממשקי API
@@ -324,5 +328,9 @@
       items:
         - name: יצירת חיזויים עם נתוני הסכמה
           href: consent-management/predictions-consent-data.md
+- name: מגבלות שירות
+  href: service-limits.md
+- name: זכויות ובקשות של DSR
+  href: dsr-rights-requests.md
 - name: קבל תמיכה
   href: /power-platform/admin/get-help-support

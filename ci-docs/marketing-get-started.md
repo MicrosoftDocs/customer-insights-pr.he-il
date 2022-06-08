@@ -6,12 +6,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 45c59465771e4ad25ed36d5da1568e67b94cf994
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 4cc3cbde97d0f9da198652e86c0843476393b646
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653744"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833309"
 ---
 # <a name="work-with-unified-customer-profiles-in-dynamics-365-marketing"></a>עבוד עם פרטי Unified Customer Profile ב- Dynamics 365 Marketing
 
@@ -23,7 +23,6 @@ ms.locfileid: "8653744"
 - לבסס תוכן דינמי (כגון אסימונים מותאמים אישית) בהודעות דואר אלקטרוני, SMS והודעות דחיפה על מדידות כגון מצב מועדון לקוחות, תאריך חידוש מנוי, תיק לקוח אב או כל מדידה אחרת שלקדת בפרופיל Customer Insights.
 - לטעון נתונים מ- Marketing אל Customer Insights ולשלב אותם עם נתוני לקוח ממקורות אחרים.
 - להחיל כלים של Customer Insights לניקוי, להעשרה ולהתאמה לא מדויקת של נתונים.
-
 
 ## <a name="use-rich-customer-profiles-in-real-time-marketing"></a>שימוש בפרופילי לקוח עשירים בשיווק בזמן אמת
 
@@ -41,4 +40,4 @@ ms.locfileid: "8653744"
 
 אתה לא מוגבל לאחסון בענן אם אתה רוצה להשתמש בנתוני Customer Insights עם Marketing. אם כבר הגדרת Azure Data Lake Storage משלך, באפשרותך להתחבר ל- Customer Insights ולאחר מכן לשתף את הנתונים עם האפליקציה Marketing בדיוק כפי שהיית עושה עם הגדרה מבוססת ענן.
 
-מידע נוסף: [הפוך שיתוף נתונים באמצעות Dataverse לזמין מ- Azure Data Lake Storage משלך](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)
+מידע נוסף: [הפוך שיתוף נתונים באמצעות Dataverse לזמין מ- Azure Data Lake Storage משלך](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)

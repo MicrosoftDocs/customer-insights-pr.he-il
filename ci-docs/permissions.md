@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 74c7ff7cda8431c04dd34713becefa7e346331b4
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 8022563f8994400b88389c20d7d661d9ea82bab1
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740904"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833723"
 ---
 # <a name="user-permissions"></a>הרשאות משתמשים
 
@@ -41,7 +41,7 @@ ms.locfileid: "8740904"
 
 - כל ההרשאות זמינות לצופה.
 - טען ושנה נתונים בדף **מקורות נתונים**.
-- השלם ***איחוד נתונים** שמביא לישות פרופיל לקוח מאוחד.
+- השלם **איחוד נתונים** שמביא לישות פרופיל לקוח מאוחד.
 - הגדר **קשרים** ו **פעילויות**.
 - צור פלחים באמצעות הדף **פלחים**.
 - צור מדידות בדף **מדידות**.
@@ -65,7 +65,7 @@ ms.locfileid: "8740904"
 ## <a name="admin-owner"></a>מנהל מערכת (בעלים)
 
 - כל ההרשאות זמינות למנהל המערכת.
-- [איפוס ומחיקת](manage-environments.md#reset-an-existing-environment) הסביבה.
+- [איפוס ומחיקת](manage-environments.md#reset-an-existing-environment-preview) הסביבה.
 
 ## <a name="assign-roles-and-permissions"></a>הקצה תפקידים והרשאות
 

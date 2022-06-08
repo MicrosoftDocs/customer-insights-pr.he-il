@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 5b39452d7a4612242739e8000e57217954c71289
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: af2583295627f98e980adbca4f216b9c34c3cad8
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641517"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808562"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>בקשות של של זכויות נושא נתונים (DSR) במסגרת GDPR
 
@@ -41,7 +41,7 @@ Customer Insights מציע את חוויות המוצר הבאות למחיקת 
 1. היכנס אל Dynamics 365 Customer Insights.
 2. עבור אל **נתונים** > **מקורות נתונים**
 3. עבור כל מקור נתונים ברשימה המכילה נתוני לקוחות שנמחקו:
-   1. בחר (...) ולאחר מכן בחר **רענן**.
+   1. בחר בשלוש הנקודות האנכיות (&vellip;) ולאחר מכן בחר **ריענון**.
    2. בדוק את המצב של מקור הנתונים תחת **מצב**. סימן וי פירושו שהרענון בוצע בהצלחה. משולש אזהרה פירושו שמשהו השתבש. אם מוצג משולש אזהרה, צור קשר עם D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
@@ -52,7 +52,7 @@ Customer Insights מציע את חוויות המוצר הבאות למחיקת 
 מנהל מערכת של Customer Insights יכול לבצע את הצעדים הבאים למחיקת נתוני לקוחות ב- Customer Insights:
 
 1. היכנס אל Dynamics 365 Customer Insights.
-2. עבור אל **מנהל מערכת** > **הרשאות**.
+2. עבור אל **מנהל מערכת** > **אבטחה** > **הרשאות**.
 3. בחר את תיבת הסימון עבור המשתמשים שברצונך למחוק.
 4. בחר **הסר**.
 

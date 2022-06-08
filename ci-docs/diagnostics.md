@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 15ae772617efa4c64cf79d0bac10a0c3cb28ca30
+ms.sourcegitcommit: a92bf5985263240fd07bad98d8e119b88cf2c9d9
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755263"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8807582"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>העברת יומנים ב- Dynamics 365 Customer Insights עם Azure Monitor (תצוגה מקדימה)
 
@@ -38,7 +38,7 @@ Customer Insights שולח את יומני האירועים הבאים:
 
 - יש לך [מנוי Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) פעיל.
 - יש לך הרשאות [מנהל מערכת](permissions.md#admin) ב- Customer Insights.
-- יש לך תפקידי **משתתף** ו **מנהל גישת משתמשים** במשאב היעד ב-Azure. המשאב יכול להיות סביבת עבודה של חשבון של Azure Storage, מרכז אירועים של Azure או תכונת ניתוח יומן רישום של Azure. לקבלת מידע נוסף, ראה [הוספה או הסרה של הקצאות תפקיד Azure באמצעות פורטל Azure](/azure/role-based-access-control/role-assignments-portal).
+- יש לך תפקידי **משתתף** ו **מנהל גישת משתמשים** במשאב היעד ב-Azure. המשאב יכול להיות חשבון של Azure Data Lake Storage, מרכז אירועים של Azure או סביבת עבודה ניתוח יומן רישום של Azure. לקבלת מידע נוסף, ראה [הוספה או הסרה של הקצאות תפקיד Azure באמצעות פורטל Azure](/azure/role-based-access-control/role-assignments-portal). הרשאה זו נחוצה בזמן קביעת הגדרות האבחון ב- Customer Insights, ניתן לשנות אותה לאחר הגדרה מוצלחת.
 - עמידה ב[דרישות היעד](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) עבור Azure Storage, מרכזי האירועים של Azure או תכונת ניתוח יומן הרישום של Azure.
 - יש לך לפחות תפקיד של **קורא** בקבוצת המשאבים שאליה שייך המשאב.
 

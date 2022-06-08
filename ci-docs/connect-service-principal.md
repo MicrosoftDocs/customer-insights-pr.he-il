@@ -1,7 +1,7 @@
 ---
 title: התחבר לחשבון Azure Data Lake Storage באמצעות מנהל שירות
 description: השתמש במנהל שירות של Azure כדי להתחבר לאגם הנתונים שלך.
-ms.date: 04/26/2022
+ms.date: 05/31/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,22 +11,23 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 776eee79c25edbd40ed119510a314f5126933c3e
-ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
+ms.openlocfilehash: b18d1f42b9510ebf23f0666322819865d132173b
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8739163"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833386"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>התחבר לחשבון Azure Data Lake Storage באמצעות מנהל שירות של Azura
 
-מאמר זה בוחן כיצד לחבר את Dynamics 365 Customer Insights עם Azure Data Lake Storage חשבון על ידי שימוש במנהל שירות Azure במקום במפתחות של חשבון אחסון. 
+מאמר זה בוחן כיצד לחבר את Dynamics 365 Customer Insights עם Azure Data Lake Storage חשבון על ידי שימוש במנהל שירות Azure במקום במפתחות של חשבון אחסון.
 
 כלים אוטומטיים המשתמשים בשירותי Azure צריכים תמיד להיות בעלי הרשאות מוגבלות. במקום כניסה ליישומים כמשתמש בעל הרשאות מלאות, Azure מספק מנהלי שירות. תוכל להשתמש במנהלי שירות כדי להוסיף או לערוך [תיקיה של Common Data Model באופן מאובטח כמקור נתונים](connect-common-data-model.md) או [ליצור או לעדכן סביבה](create-environment.md).
 
 > [!IMPORTANT]
+>
 > - חשבון Data Lake Storage שישתמש במנהל השירות חייב להיות Gen2 ועם [מרחב שמות היררכי מופעל](/azure/storage/blobs/data-lake-storage-namespace). חשבונות Azure Data Lake Gen1 storage לא נתמכים.
-> - תזדקק להרשאות של מנהל מערכת עבור המנוי ל- Azure שלך כדי ליצור מנהל שירות.
+> - תזדקק להרשאות של מנהל מערכת עבור דייר Azure שלך כדי ליצור מנהל שירות.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>צור מנהל שירות של Azure עבור Customer Insights
 
@@ -38,29 +39,15 @@ ms.locfileid: "8739163"
 
 2. מתוך **שירותי Azure**, בחר **Azure Active Directory**.
 
-3. תחת **ניהול**, בחר **יישומים ארגוניים**.
+3. תחת **ניהול**, בחר **אפליקציית Microsoft**.
 
 4. הוסף מסנן עבור **מזהה יישום שמתחיל עם** `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` או חפש את השם `Dynamics 365 AI for Customer Insights`.
 
-5. אם אתה מוצא רשומה תואמת, פירוש הדבר שמנהל השירות כבר קיים. 
-   
+5. אם אתה מוצא רשומה תואמת, פירוש הדבר שמנהל השירות כבר קיים.
+
    :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="צילום מסך המציג מנהל שירות קיים.":::
-   
-6. אם לא מוחזרות תוצאות, צור מנהל שירות חדש.
 
-### <a name="create-a-new-service-principal"></a>יצירת מנהל שירות חדש
-
-1. התקן את הגירסה העדכנית ביותר של Azure Active Directory PowerShell לגרף. למידע נוסף, עבור אל [התקן Azure Active Directory PowerShell לגרף](/powershell/azure/active-directory/install-adv2).
-
-   1. במחשב שלך, בחר את מקש Windows במקלדת וחפש **Windows PowerShell‎** ובחר **הפעל בתור מנהל מערכת**.
-   
-   1. בחלון PowerShell שנפתח, הזן `Install-Module AzureAD`.
-
-2. צור את מנהל השירות עבור Customer Insights באמצעות מודול Azure AD PowerShell.
-
-   1. בחלון PowerShell, הזן `Connect-AzureAD -TenantId "[your Directory ID]" -AzureEnvironmentName Azure`. החלף את *[מזהה הספרייה שלך]* עם מזהה הספריה בפועל של מנוי ה-Azure שלך שבו ברצונך ליצור את מנהל השירות. פרמטר שם הסביבה, `AzureEnvironmentName` הוא אופציונלי.
-  
-   1. הזן `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. פקודה זו יוצרת את מנהל שירות עבור Customer Insights במנוי Azure שנבחר. 
+6. אם לא מוחזרות תוצאות, אתה יכול [ליצור מנהל שירות חדש](#create-a-new-service-principal). ברוב המקרים, הוא כבר קיים ואתה צריך רק להעניק הרשאות גישה למנהל השירות עבור חשבון האחסון.
 
 ## <a name="grant-permissions-to-the-service-principal-to-access-the-storage-account"></a>הענק הרשאות למנהל השירות כדי לגשת לחשבון האחסון
 
@@ -77,9 +64,9 @@ ms.locfileid: "8739163"
 1. בחלונית **הוסף הקצאת תפקיד**, הגדר את המאפיינים הבאים:
    - תפקיד: **תורם נתונים של Blob אחסון**
    - הקצה גישה ל: **משתמש, קבוצה או מנהל שירות**
-   - בחר חברים: **Dynamics 365 AI for Customer Insights** ([מנהל השירות](#create-a-new-service-principal) שיצרת מוקדם יותר בתהליך זה)
+   - בחר חברים: **Dynamics 365 AI for Customer Insights** ([מנהל השירות](#create-a-new-service-principal) שחיפשת מוקדם יותר בתהליך זה)
 
-1.  בחר **סקירה והקצאה**.
+1. בחר **סקירה והקצאה**.
 
 הפצת השינויים עשויה להימשך עד 15 דקות.
 
@@ -91,7 +78,7 @@ ms.locfileid: "8739163"
 
 1. עבור אל [פורטל הניהול של Azure](https://portal.azure.com), היכנס למנוי שלך ופתח את חשבון האחסון.
 
-1. בחלונית השמאלית, עבור אל **הגדרות** > **נכסים**.
+1. עבור אל **הגדרות** > **נקודות קצה** בחלונית הימנית.
 
 1. העתק את ערך המזהה של משאב חשבון האחסון.
 
@@ -115,5 +102,18 @@ ms.locfileid: "8739163"
 
 1. המשך לבצעת את השלבים שנותרו ב- Customer Insights כדי לצרף את חשבון האחסון.
 
+### <a name="create-a-new-service-principal"></a>יצירת מנהל שירות חדש
+
+1. התקן את הגירסה העדכנית ביותר של Azure Active Directory PowerShell לגרף. למידע נוסף, עבור אל [התקן Azure Active Directory PowerShell לגרף](/powershell/azure/active-directory/install-adv2).
+
+   1. במחשב, הקש על מקש Windows במקלדת וחפש **Windows PowerShell** ובחר **הפעל בתור מנהל מערכת**.
+
+   1. בחלון PowerShell שנפתח, הזן `Install-Module AzureAD`.
+
+2. צור את מנהל השירות עבור Customer Insights באמצעות מודול Azure AD PowerShell.
+
+   1. בחלון PowerShell, הזן `Connect-AzureAD -TenantId "[your Directory ID]" -AzureEnvironmentName Azure`. החלף את *[מזהה הספרייה שלך]* עם מזהה הספריה בפועל של מנוי ה-Azure שלך שבו ברצונך ליצור את מנהל השירות. פרמטר שם הסביבה, `AzureEnvironmentName` הוא אופציונלי.
+  
+   1. הזן `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. פקודה זו יוצרת את מנהל שירות עבור Customer Insights במנוי Azure שנבחר.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

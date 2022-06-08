@@ -1,19 +1,19 @@
 ---
 title: העשרת מקור נתונים
 description: העשר את מקורות הנתונים לפני ביצוע תהליך איחוד הנתונים.
-ms.date: 03/02/2022
+ms.date: 05/20/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755687"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800282"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>העשרה למקורות נתונים (Preview)
 
@@ -27,7 +27,7 @@ ms.locfileid: "8755687"
 
 1. עבור אל **נתונים** > **מקורות נתונים**.
 
-1. בחר את שלושת הנקודות האנכיות לצד מקור נתונים שברצונך להעשיר ובחר **העשרה**.
+1. בחר את שלוש הנקודות האנכיות (&vellip;) לצד מקור נתונים שברצונך להעשיר ובחר **העשרה**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="דף העשרת מקורות נתונים.":::
 
@@ -41,11 +41,12 @@ ms.locfileid: "8755687"
 
 - [כתובות משופרות](enrichment-enhanced-addresses.md)
 - [נתוני חברה משופרים](enrichment-enhanced-company-data.md)
+- [נתוני זהות מ- LiveRamp](enrichment-liveramp.md)
 
 ## <a name="manage-existing-data-source-enrichments"></a>ניהול העשרות קיימות של מקורות נתונים
 
 עבור אל הכרטיסיה **ההעשרות שלי** כדי לראות את כל ההעשרות שהוגדרו.
 
-בחר את ההעשרה כדי לראות את האפשרויות הזמינות. באפשרותך גם לבחור את שלוש הנקודות (...) בפריט רשימה כדי לראות את האפשרויות. אם הגדרת מספר העשרות, תוכל להשתמש בתיבת החיפוש כדי למצוא אותה במהירות.
+בחר את ההעשרה כדי לראות את האפשרויות הזמינות. אתה יכול גם לבחור את שלוש הנקודות האנכיות (&vellip;) על פריט רשימה כדי לראות את האפשרויות. אם הגדרת מספר העשרות, תוכל להשתמש בתיבת החיפוש כדי למצוא אותה במהירות.
 
 אתה יכול להציג, לערוך, להפעיל או למחוק העשרה של מקור נתונים. למידע נוסף, ראה [ניהול העשרות קיימות](enrichment-hub.md).
