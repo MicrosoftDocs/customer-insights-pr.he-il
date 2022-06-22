@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 8b14992f8312d333d8a12501e8a28496c8434779
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646777"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947231"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>ייצוא רשימת פלחים ונתונים אחרים אל Azure Data Lake Storage Gen2 ‏(Preview)
 
@@ -21,11 +21,9 @@ ms.locfileid: "8646777"
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 
-1. עבור Azure Data Lake Storage Gen2, באפשרותך יכול לבחור בין [‬‏‫רמת ביצועים סטנדרטית לרמת ביצועים Premium](/azure/storage/blobs/create-data-lake-storage-account) בעת יצירת חשבון אחסון לאגם הנתונים שלך. אם תבחר ברמת הביצועים Premium, בחר blobs של בלוקי Premium כסוג החשבון. 
+1. עבור Azure Data Lake Storage Gen2, באפשרותך יכול לבחור בין [‬‏‫רמת ביצועים סטנדרטית לרמת ביצועים Premium](/azure/storage/blobs/create-data-lake-storage-account) בעת יצירת חשבון אחסון לאגם הנתונים שלך. אם תבחר ברמת הביצועים Premium, בחר blobs של בלוקי Premium כסוג החשבון.
 
-
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>הגדרת החיבור ל- Azure Data Lake Storage Gen2 
-
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>הגדרת החיבור ל- Azure Data Lake Storage Gen2
 
 1. עבור אל **ניהול** > **חיבורים**.
 
@@ -39,7 +37,7 @@ ms.locfileid: "8646777"
     - כדי ללמוד כיצד ליצור חשבון אחסון לשימוש עם Azure Data Lake Storage Gen2, ראה [יצירת חשבון אחסון](/azure/storage/blobs/create-data-lake-storage-account). 
     - לקבלת מידע נוסף אודות האופן שבו ניתן למצוא שם חשבון ומפתח חשבון של Azure Data Lake Gen 2, ראה [ניהול הגדרות של חשבון אחסון בפורטל Azure](/azure/storage/common/storage-account-manage).
 
-1. בחר **שמור** כדי להשלים את החיבור. 
+1. בחר **שמור** כדי להשלים את החיבור.
 
 ## <a name="configure-an-export"></a>קביעת תצורה של ייצוא
 
@@ -57,8 +55,12 @@ ms.locfileid: "8646777"
 
 שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
 
-הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
+הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab).
+באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand).
 
-נתונים מיוצאים מאוחסנים בגורם המכיל של אחסון Azure Data Lake Gen 2 שהגדרת. 
+נתונים מיוצאים מאוחסנים בגורם המכיל של אחסון Azure Data Lake Gen 2 שהגדרת.
+
+> [!TIP]
+> ייצוא של ישויות המכילות כמות גדולה של נתונים יכול להוביל למספר קובצי CSV באותה תיקייה עבור כל פעולת ייצוא. פיצול פעולות הייצוא קורה מטעמי ביצועים כדי למזער את הזמן שלוקח לייצוא להסתיים.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

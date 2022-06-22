@@ -1,19 +1,19 @@
 ---
-title: תכונות חדשות ועתידיות
+title: תכונות חדשות ומעודכנות
 description: מידע על תכונות חדשות, שיפורים ותיקוני באגים.
-ms.date: 05/03/2022
+ms.date: 06/02/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: af79c8369dd608e8ce1c14c50bb9aef3a79b9029
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: d06f8be114f558d7adadf2913107c5fd69686875
+ms.sourcegitcommit: 9dd767051014e06d8d9f2f616e248573f24df4cb
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833631"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8843348"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>מה חדש ב- Dynamics 365 Customer Insights
 
@@ -24,6 +24,37 @@ ms.locfileid: "8833631"
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## <a name="may-2022-updates"></a>עדכוני מאי 2022
+
+העדכונים במהדורת מאי 2022 כוללים תכונות חדשות, שדרוגי ביצועים ותיקוני באגים.
+
+### <a name="updated-data-unification-experience"></a>חוויית איחוד נתונים מעודכנת
+
+ איחוד נתונים מאפשר לך לאחד מקורות נתונים שהיו נבדלים פעם אחת לתוך ערכת נתונים ראשית המספקת תצוגה אחידה של הנתונים הללו. ניתן לאחד נתונים בישות אחת או במספר ישויות. קודם [בוחרים ישויות ושדות מקור](map-entities.md), [מסירים רשומות כפולות](remove-duplicates.md), מציינים כללים עבור [תנאים תואמים](match-entities.md), ומגדירים איזה [שדות לכלול בפרופילי הלקוחות המאוחדים](merge-entities.md).
+
+לקבלת מידע נוסף, עיין ב[מבט כולל על איחוד נתונים](data-unification.md).
+
+### <a name="refreshed-home-page-in-customer-insights"></a>דף הבית מרעונן ב- Customer Insights
+
+הדף **בית** מדריך אותך בתהליך ההגדרה של תכונות עיקריות ומספק סקירה כללית על פלחים, מדדים ונתוני העשרה. ריעננו את החוויה כדי לספק מידע רלוונטי יותר במבט חטוף.
+
+למידע נוסף, ראה [‏‫גילוי Customer Insights](home.md).
+
+### <a name="track-usage-of-a-segment"></a>מעקב אחר השימוש בפלח
+
+עכשיו אפשר [לעקוב אחר השימוש בפלח](segments.md#track-usage-of-a-segment) באפליקציות שמבוססות על ארגון ה- Dataverse שמחובר ל- Customer Insights. עבור [פלחי Customer Insights המשמשים במסעות לקוחות של Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile), המערכת מודיעה לך על השימוש בפלח זה.
+
+### <a name="export-to-criteo"></a>ייצוא ל- Criteo
+
+Criteo היא פלטפורמה מקוונת המסייעת למשתמשים לנהל פרסום דיגיטלי. עכשיו אפשר לייצא פלחים של פריטי unified customer profile כדי ליצור קמפיינים, לספק שיווק בדואר אלקטרוני ולהשתמש בקבוצות ספציפיות של לקוחות באמצעות Criteo.
+
+לקבלת מידע נוסף, ראה [ייצוא נתונים ל- Criteo (preview)‎](export-criteo.md).
+
+### <a name="refined-documentation-structure-for-environment-creation"></a>מבנה תיעוד ממוקד ליצירת סביבה
+
+בדקנו מחדש את מסמכי העזרה הקשורים ליצירה וניהול של סביבות ב- Customer Insights. המאמרים מקובצים כעת תחת הצומת 'סביבות' בתוכן העניינים. המאמרים המחודשים מספקים הדרכה רבה יותר לגבי הדרכים השונות להקמת סביבות ובעלות מבנה ברור יותר. אם יש לך משוב לשתף, הודע לנו באמצעות הפקדים לקראת סוף מאמרי העזרה.
+
+לקבלת מידע נוסף, ראה [כיצד: ליצור סביבה חדשה](create-environment.md).
 
 ## <a name="april-2022-updates"></a>עדכוני אפריל 2022
 

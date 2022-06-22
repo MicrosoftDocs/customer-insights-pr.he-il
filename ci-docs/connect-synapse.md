@@ -1,7 +1,7 @@
 ---
 title: קלוט נתונים מתוך Azure Synapse Analytics
 description: השתמש במסד נתונים ב- Azure Synapse בתור מקור נתונים ב- Dynamics 365 Customer Insights.
-ms.date: 02/24/2022
+ms.date: 03/25/2022
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,14 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 7c758dccf7ea34dd7b8f80d05eff1ed12030526f
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 6f94cdbcc203fc4518544f7a945bd80e871b36c1
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646867"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011428"
 ---
-# <a name="connect-an-azure-synapse-data-source-preview"></a>התחבר למקור הנתונים Azure Synapse (תצוגה מקדימה)
+# <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>התחבר למקור הנתונים Azure Synapse Analytics (תצוגה מקדימה)
 
 Azure Synapse Analytics הוא שירות ניתוח ארגוני המאיץ את הזמן לתובנות בין מחסני נתונים ומערכות Big Data. Azure Synapse Analytics מפגיש את מיטב טכנולוגיות SQL המשמשות במחסני נתונים ארגוניים, טכנולוגיות Spark המשמשות ל-Big Data,‏ Data Explorer לניתוח יומנים וסדרות זמן, Pipelines לשילוב נתונים ו-ETL/ELT, ואינטגרציה עמוקה עם שירותי Azure אחרים כגון Power BI, Cosmos DB, ו- AzureML.
 
@@ -24,16 +24,14 @@ Azure Synapse Analytics הוא שירות ניתוח ארגוני המאיץ א�
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
-הדרושות המוקדמות הבאות חייבות להתקיים כדי להגדיר את החיבור מ- Dynamics 365 Customer Insights אל Azure Synapse.
-
 > [!IMPORTANT]
 > הקפד להגדיר את כל **הקצאות התפקידים** כפי שתואר.  
 
-## <a name="prerequisites-in-customer-insights"></a>דרישות מוקבמות ב- Customer Insights
+**ב- Customer Insights**:
 
 * יש לך תפקיד **מנהל מערכת** ב- Customer Insights. מידע נוסף בנושא [הרשאות משתמש ב- Customer Insights](permissions.md#assign-roles-and-permissions).
 
-ב- Azure: 
+**ב- Azure**:
 
 - מנוי פעיל של Azure.
 
@@ -47,7 +45,7 @@ Azure Synapse Analytics הוא שירות ניתוח ארגוני המאיץ א�
 
 - בסביבת העבודה של Azure Synapse, צריך להקצות ל *מנהל השירות עבור Customer Insights* את התפקיד **מנהל מערכת של Synapse**. למידע נוסף, ראה [כיצד להגדיר בקרת גישה עבור סביבת העבודה שלך ב- Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
-## <a name="connect-to-data-lake-databases-in-azure-synapse-analytics"></a>התחבר אל מסדי נתונים של Data Lake ב- Azure Synapse Analytics
+## <a name="connect-to-the-data-lake-database-in-azure-synapse-analytics"></a>התחבר אל מסד הנתונים של Data Lake ב- Azure Synapse Analytics
 
 1. עבור אל **נתונים** > **מקורות נתונים**.
 
@@ -55,14 +53,16 @@ Azure Synapse Analytics הוא שירות ניתוח ארגוני המאיץ א�
 
 1. בחר את שיטת **Azure Synapse Analytics (תצוגה מקדימה)**.
 
-1. הזן **שם** עבור מקור נתונים ובחר **הבא** כדי ליצור את מקור הנתונים. 
+   :::image type="content" source="media/data_sources_synapse.png" alt-text="תיבת דו-שיח לחיבור לנתוני Synapse Analytics":::
+  
+1. הזן **שם** עבור מקור הנתונים ו **תיאור** אופציונלי.
 
 1. בחר [חיבור זמין](connections.md) אל Azure Synapse Analytics או צור חדש.
 
-1. בחר **מסד הנתונים של Lake** מסביבת העבודה המחוברת בחיבור Azure Synapse Analytics שנבחר ובחר **הבא**.
+1. בחר **מסד הנתונים** מסביבת העבודה המחוברת בחיבור Azure Synapse Analytics שנבחר ובחר **הבא**.
 
-1. בחר את הישויות לקליטה ממסד הנתונים המחובר. 
+1. בחר את הישויות לעיבוד ממסד הנתונים המחובר ובחר **הבא**.
 
-1. לחלופין, בחר את ישויות הנתונים כדי לאפשר יצירת פרופיל נתונים. 
+1. לחלופין, בחר את ישויות הנתונים כדי לאפשר יצירת פרופיל נתונים.
 
-1. בחר **שמור** כדי להחיל את הבחירה שלך ולהתחיל את קליטת הנתונים ממקור הנתונים החדש שלך המקושר לטבלאות מסד הנתונים של Lake ב- Azure Synapse Analytics.
+1. בחר **שמור** כדי להחיל את הבחירה שלך ולהתחיל את קליטת הנתונים ממקור הנתונים החדש שלך המקושר לטבלאות מסד הנתונים של Lake ב- Azure Synapse Analytics. הדף **מקורות נתונים** נפתח ומציג את מקור נתונים החדש במצב **ריענון**.

@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 68c26eb0ad0da787a9f594b4aebe679588b0d6bf
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 1c925110f40319df77940d1c32f24a99504d6ec6
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833540"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011980"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights"></a>תחילת העבודה עם Dynamics 365 Customer Insights
 
@@ -39,7 +39,7 @@ Customer Insights יכול לעזור לך לבנות הבנה מעמיקה יו
 
 פרופילים מאוחדים הם הבסיס לקבלת תובנות ולנקיטת פעולה בנתונים. הבא נתונים ממקורות שונים והפעל את תהליך איחוד הנתונים כדי לשלב פרופילים מאוחדים. ציין קשרים בין הישויות שעובדו והשתמש בתכונות העשרה כדי להוסיף מידע לפרופילים.
 
-1. קלוט נתונים על-ידי יצירת מקורות נתונים מאפשרויות מרובות. בחר בין [Power Query מחברים](connect-power-query.md), [תיקיית Common Data Model](connect-common-data-model.md), או [Microsoft Dataverse](connect-dataverse-managed-lake.md).
+1. קלוט נתונים על-ידי יצירת מקורות נתונים מאפשרויות מרובות. בחר בין מחברי [Azure Data Lake Storage כולל Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md) או [Power Query](connect-power-query.md).
 
 1. הפעל את [תהליך איחוד הנתונים](data-unification.md) על ידי זיהוי של [שדות מקור](map-entities.md), הסרת [כפילויות](remove-duplicates.md), [התאמת תנאים](match-entities.md), וגם [שדות איחוד](merge-entities.md).
 

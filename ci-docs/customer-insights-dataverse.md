@@ -11,18 +11,18 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 3848e143bc7cb2f345bc698a274b92148ef00669
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833677"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011521"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>עבודה עם נתונים של Customer Insights ב- Microsoft Dataverse
 
 Customer Insights מספקת אפשרות להפוך ישויות פלט לזמינות בתור [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). שילוב זה מאפשר שיתוף נתונים קל ופיתוח מותאם אישית באמצעות גישה לקוד בסיסי/ללא קוד. [ישויות הפלט](#output-entities) זמינות כטבלאות בסביבת Dataverse. אתה יכול להשתמש בנתונים עבור כל יישום אחר המבוסס על טבלאות Dataverse. טבלאות אלה הופכות תרחישים כמו זרימות עבודה אוטומטיות דרך Power Automate או בניית אפליקציות באמצעות Power Apps לזמינים.
 
-חיבור אל סביבת Dataverse משלך גם מאפשר לך [לקלוט נתונים ממקורות נתונים מקומיים באמצעות זרימות נתונים ושערים של Power Platform](data-sources.md#add-data-from-on-premises-data-sources).
+חיבור אל סביבת Dataverse משלך גם מאפשר לך [לקלוט נתונים ממקורות נתונים מקומיים באמצעות זרימות נתונים ושערים של Power Platform](connect-power-query.md#add-data-from-on-premises-data-sources).
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
@@ -57,7 +57,7 @@ Customer Insights מספקת אפשרות להפוך ישויות פלט לזמ�
 ישנן שתי מגבלות בעת השימוש ב- Dataverse בחשבון Azure Data Lake Storage משלך:
 
 - יש מיפוי אחד לאחד בין ארגון Dataverse וחשבון Azure Data Lake Storage. לאחר חיבור ארגון Dataverse לחשבון אחסון, הוא לא יכול להתחבר לחשבון אחסון אחר. מגבלה זו מונעת אכלוס מספר חשבונות אחסון על-ידי Dataverse.
-- שיתוף נתונים לא יעבוד אם יש צורך בהגדרה של Azure Private Link כדי לגשת לחשבון Azure Data Lake storage מכיוון שהוא נמצא מאחורי חומת אש. נכון לעכשיו Dataverse אינו תומך בחיבור לנקודות קצה פרטיות דרך קישור פרטי.
+- שיתוף נתונים לא יעבוד אם יש צורך בהגדרה של Azure Private Link כדי לגשת לחשבון Azure Data Lake Storage מכיוון שהוא נמצא מאחורי חומת אש. נכון לעכשיו Dataverse אינו תומך בחיבור לנקודות קצה פרטיות דרך קישור פרטי.
 
 ### <a name="set-up-powershell"></a>הגדרת PowerShell
 

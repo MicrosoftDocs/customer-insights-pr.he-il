@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833769"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011888"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>‏‫שאלות נפוצות בנושא גירסת הניסיון‬ של Dynamics 365 Customer Insights
 
@@ -68,7 +68,7 @@ ms.locfileid: "8833769"
 
 ### <a name="what-are-the-trial-limits-and-quotas"></a>מהן המגבלות והמכסות של גירסת הניסיון?
 
-- אין באפשרותך להשתמש בחשבון Azure Data Lake storage שלך כדי לאחסן נתוני פלט במהלך תקופת ניסיון של Customer Insights. עם זאת, תוכל לקלוט נתונים מחשבון Data Lake Storage.
+- לא ניתן להשתמש בחשבון Azure Data Lake Storage משלך כדי לאחסן נתוני פלט במהלך תקופת ניסיון של Customer Insights. עם זאת, תוכל לעבד נתונים מחשבון Data Lake Storage.
 - באפשרותך לאחסן עד ‎3 GB של נתונים בסביבת Dataverse המוקצית אוטומטית כשאתה מפעיל את גירסת הניסיון של Customer Insights.
 
 ## <a name="customer-insights-specific-questions"></a>שאלות ספציפיות על Customer Insights
@@ -83,7 +83,7 @@ ms.locfileid: "8833769"
 
 התכונות הבאות **לא זמינות**:
 
-- אין באפשרותך ליצור סביבות חדשות המשתמשות בחשבון Azure Data Lake storage שלך.
+- לא ניתן ליצור סביבות חדשות המשתמשות בחשבון Azure Data Lake Storage משלך.
 - לא ניתן למחוק את סביבת הניסיון.
 
 ### <a name="how-long-does-the-trial-last"></a>מהו משך גירסת הניסיון?

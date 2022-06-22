@@ -48,14 +48,14 @@
   items:
     - name: מבט כולל על מקורות נתונים
       href: data-sources.md
+    - name: התחבר לנתונים ב- Azure Data Lake Storage
+      href: connect-common-data-model.md
+    - name: התחברות ל- Azure Synapse Analytics
+      href: connect-synapse.md
+    - name: התחבר לנתונים בתוך אגם נתונים מנוהל של Microsoft Dataverse
+      href: connect-dataverse-managed-lake.md
     - name: הוסף מקורות נתונים באמצעות מחברי Power Query
       href: connect-power-query.md
-    - name: הוסף תיקיית Common Data Model כמקור נתונים
-      href: connect-common-data-model.md
-    - name: הוספת אגם נתונים מנוהל של Dataverse
-      href: connect-dataverse-managed-lake.md
-    - name: הוספת Azure Synapse Analytics
-      href: connect-synapse.md
     - name: העשרה למקורות נתונים
       href: data-sources-enrichment.md
     - name: רענון מדרגי של מקורות נתונים
@@ -82,27 +82,27 @@
   items:
     - name: העשרת פרופילי לקוחות
       href: enrichment-hub.md
+    - name: חשבונות מנתוני Office 365
+      href: enrichment-office.md
     - name: מותגים ותחומי עניין
       href: enrichment-microsoft.md
+    - name: נתוני חברה מ- Dun & Bradstreet
+      href: enrichment-dnb.md
+    - name: נתוני חברה מ- Leadspace
+      href: enrichment-leadspace.md
+    - name: נתונים דמוגרפיים באמצעות Experian
+      href: enrichment-experian.md
     - name: כתובות משופרות
       href: enrichment-enhanced-addresses.md
     - name: נתוני חברה משופרים
       href: enrichment-enhanced-company-data.md
-    - name: העשר עם Azure Maps
-      href: enrichment-azure-maps.md
-    - name: העשרת באמצעות Dun & Bradstreet
-      href: enrichment-dnb.md
-    - name: העשרה בעזרת HERE Technologies
-      href: enrichment-here.md
-    - name: העשר עם Leadspace
-      href: enrichment-leadspace.md
-    - name: העשרה עם LiveRamp
+    - name: זהות עם LiveRamp
       href: enrichment-liveramp.md
-    - name: העשרה עם Experian
-      href: enrichment-experian.md
-    - name: העשרה עם נתוני Office 365
-      href: enrichment-office.md
-    - name: העשרה עם ייבוא מותאם אישית של SPTF
+    - name: מיקום מ- Azure Maps
+      href: enrichment-azure-maps.md
+    - name: מיקום מ- HERE Technologies
+      href: enrichment-here.md
+    - name: ייבוא מותאם אישית של SFTP
       href: enrichment-SFTP-custom-import.md
 - name: פרופילים מאוחדים
   items:
@@ -112,6 +112,8 @@
       href: search-filter-index.md
     - name: הגדרת פעילויות של לקוחות
       href: activities.md
+    - name: ניהול הסכמה עבור Customer Insights
+      href: consent-management.md
 - name: פלחי שוק
   items:
     - name: מבט כולל על פלחים
@@ -186,11 +188,11 @@
           href: export-azure-blob-storage.md
         - name: Azure Data Lake Storage Gen2
           href: export-azure-data-lake-storage-gen2.md
-        - name: ‏‏Azure Synapse Analytics
+        - name: Azure Synapse Analytics
           href: export-azure-synapse-analytics.md
         - name: Adobe Campaign Standard
           href: export-adobe-campaign-standard.md
-        - name: ‏‏Adobe Experience Platform
+        - name: Adobe Experience Platform
           href: export-adobe-experience-platform.md
         - name: Braze
           href: export-braze.md
@@ -294,40 +296,6 @@
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
     - name: שאילתות לדוגמה של OData
       href: odata-examples.md
-- name: ניהול הסכמות (Preview)
-  items:
-    - name: מרכז העזרה
-      href: consent-management/index.yml
-    - name: מבט כולל על יכולת
-      href: consent-management/overview.md
-    - name: התחל בעבודה
-      items:
-        - name: התחל בעבודה
-          href: consent-management/get-started.md
-        - name: מושגים וטרמינולוגיה
-          href: consent-management/glossary.md
-    - name: ייבוא נתוני הסכמה
-      items:
-        - name: ייבוא נתוני הסכמה
-          href: consent-management/import-consent-data.md
-        - name: הגדרת נתוני הסכמה והחלת העדפות הסכמה
-          href: consent-management/set-consent-rules.md
-    - name: ניהול נתוני הסכמה
-      items:
-        - name: הפוך כללי הסכמה לזמינים ב- Customer Insights
-          href: activate-consent.md
-        - name: נהל כללי הסכמה המהווים ברירת מחדל בפלחי Customer Insights
-          href: change-default-consent-rules.md
-    - name: ניהול הגדרות ומשתמשים
-      items:
-        - name: קביעת תצורה של הגדרות מערכת
-          href: consent-management/system-settings.md
-        - name: ניהול משתמשים והרשאות
-          href: consent-management/manage-users.md
-    - name: שימוש בנתוני הסכמה
-      items:
-        - name: יצירת חיזויים עם נתוני הסכמה
-          href: consent-management/predictions-consent-data.md
 - name: מגבלות שירות
   href: service-limits.md
 - name: זכויות ובקשות של DSR

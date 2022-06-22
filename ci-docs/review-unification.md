@@ -1,7 +1,7 @@
 ---
 title: בדוק את איחוד הנתונים
 description: סקור את שלבי איחוד הנתונים, צור פרופילי לקוחות מאוחדים וסקור את התוצאות
-ms.date: 05/04/2022
+ms.date: 06/02/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 4c709dfb55bf079dd2fe99e41adb4c77c2bece4b
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 0f7b2e9af65796c4d304dbd9893a21617e847620
+ms.sourcegitcommit: 760fbac397c738407c7dea59297d54cae19b6f57
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741724"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844087"
 ---
 # <a name="review-data-unification"></a>בדוק את איחוד הנתונים
 
@@ -32,11 +32,13 @@ ms.locfileid: "8741724"
 
 1. בחר **ערוך** בכל אחד משלבי איחוד הנתונים כדי לבדוק ולבצע שינויים כלשהם.
 
-1. אם אתה מרוצה מהבחירות שלך, בחר **צור פרופילי לקוחות**. הדף **איחוד** מוצג בזמן יצירת פרופיל לקוח מאוחד. לאלגוריתם האיחוד לוקח קצת זמן להשלים ולא ניתן לשנות את התצורה עד שהיא תושלם.
+1. אם אתה מרוצה מהבחירות שלך, בחר **צור פרופילי לקוחות**. הדף **איחוד** מוצג בזמן יצירת פרופיל לקוח מאוחד. כל האריחים מלבד **שדות מקור** מציגים **בתור** או מצב **מרענן**.
 
-   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
+   :::image type="content" source="media/m3_unify_refreshing.png" alt-text="צילום מסך של דף Unify עם אריחים המציגים 'בתור' או 'מרענן'.":::
 
-כאשר תהליך האיחוד מסתיים, ישות פרופיל לקוח מאוחד, שנקראת *לקוח*, מופיעה בדף **ישויות** במקטע **פרופילים**. הפעלת האיחוד המוצלחת הראשונה יוצרת את הישות המאוחדת *לקוח*. כל ההפעלות הבאות מרחיבות את הישות הזו.
+   [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
+
+לאלגוריתם האיחוד לוקח קצת זמן להשלים ולא ניתן לשנות את התצורה עד שהיא תושלם. כאשר תהליך האיחוד מסתיים, ישות פרופיל לקוח מאוחד, שנקראת *לקוח*, מופיעה בדף **ישויות** במקטע **פרופילים**. הפעלת האיחוד המוצלחת הראשונה יוצרת את הישות המאוחדת *לקוח*. כל ההפעלות הבאות מרחיבות את הישות הזו.
 
 ## <a name="review-the-results-of-data-unification"></a>סקור את תוצאות איחוד הנתונים
 

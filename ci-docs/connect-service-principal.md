@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: b18d1f42b9510ebf23f0666322819865d132173b
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 36ad957f59b23df6ee83d9d90898ef03ddfd320a
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833386"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011842"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>התחבר לחשבון Azure Data Lake Storage באמצעות מנהל שירות של Azura
 
@@ -51,7 +51,13 @@ ms.locfileid: "8833386"
 
 ## <a name="grant-permissions-to-the-service-principal-to-access-the-storage-account"></a>הענק הרשאות למנהל השירות כדי לגשת לחשבון האחסון
 
-עבור לפורטל Azure כדי להעניק הרשאות למנהל השירות עבור חשבון האחסון שבו ברצונך להשתמש ב- Customer Insights.
+עבור לפורטל Azure כדי להעניק הרשאות למנהל השירות עבור חשבון האחסון שבו ברצונך להשתמש ב- Customer Insights. יש להקצות אחד מהתפקידים הבאים לחשבון האחסון או לגורם המכיל:
+
+|אישור|דרישות|
+|----------|------------|
+|משתמש מחובר כרגע|**תפקיד**: קורא Blob אחסון, משתתף Blog אחסון, או הבעלים של Blob אחסון.<br>**רמה**: ניתן להעניק הרשאות בחשבון האחסון או בגורם המכיל.</br>|
+|מנהל שירות של Customer Insights -<br>שימוש ב- Azure Data Lake Storage כמקור נתונים</br>|אפשרות 1<ul><li>**תפקיד**: קורא Blob אחסון, משתתף Blog אחסון, או הבעלים של נתוני Blob אחסון.</li><li>**רמה**: יש להעניק הרשאות בחשבון האחסון.</li></ul>אפשרות 2 *(ללא שיתוף גישת מנהל השירות לחשבון האחסון)*<ul><li>**תפקיד 1**: קורא Blob אחסון, משתתף Blog אחסון, או הבעלים של נתוני Blob אחסון.</li><li>**רמה**: יש להעניק הרשאות בגורם המכיל.</li><li>**תפקיד 2** גורם מקצה של נתוני Blob אחסון.</li><li>**רמה**: יש להעניק הרשאות בחשבון האחסון.</li></ul>|
+|מנהל שירות של Customer Insights - <br>באמצעות Azure Data Lake Storage כפלט או יעד</br>|אפשרות 1<ul><li>**תפקיד**: משתתף Blog אחסון, או הבעלים של Blob אחסון.</li><li>**רמה**: יש להעניק הרשאות בחשבון האחסון.</li></ul>אפשרות 2 *(ללא שיתוף גישת מנהל השירות לחשבון האחסון)*<ul><li>**תפקיד**: משתתף Blog אחסון, או הבעלים של Blob אחסון.</li><li>**רמה**: יש להעניק הרשאות בגורם המכיל.</li><li>**תפקיד 2** גורם מקצה של Blob אחסון.</li><li>**רמה**: יש להעניק הרשאות בחשבון האחסון.</li></ul>|
 
 1. עבור אל [פורטל הניהול של Azure](https://portal.azure.com) והיכנס לארגון שלך.
 
@@ -62,7 +68,7 @@ ms.locfileid: "8833386"
    :::image type="content" source="media/ADLS-SP-AddRoleAssignment.png" alt-text="צילום מסך המציג את פורטל Azure תוך הוספת הקצאת תפקידים.":::
 
 1. בחלונית **הוסף הקצאת תפקיד**, הגדר את המאפיינים הבאים:
-   - תפקיד: **תורם נתונים של Blob אחסון**
+   - תפקיד: קורא Blob אחסון, משתתף Blog אחסון, או הבעלים של Blob אחסון אל סמך האישורים הרשומים לעיל.
    - הקצה גישה ל: **משתמש, קבוצה או מנהל שירות**
    - בחר חברים: **Dynamics 365 AI for Customer Insights** ([מנהל השירות](#create-a-new-service-principal) שחיפשת מוקדם יותר בתהליך זה)
 

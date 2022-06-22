@@ -1,26 +1,26 @@
 ---
-title: רענון מצטבר עבור מקורות נתונים מבוססי Power Query
-description: רענן נתונים חדשים ומעודכנים עבור מקורות נתונים גדולים מבוססי Power Query.
-ms.date: 12/06/2021
-ms.reviewer: mhart
+title: רענון מצטבר עבור מקורות נתונים של Power Query ו- Azure Data Lake
+description: רענן נתונים חדשים ומעודכנים עבור מקורות נתונים גדולים שמבוססים על מקורות נתונים של Power Query או של Azure data lake.
+ms.date: 05/30/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
-ms.author: adkuppa
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: 3d21baf9804f300802b066df0183fc8f01abba9a
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: bff27bf7fec2bcb741846ae76bb1f616f459136c
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647190"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9012026"
 ---
-# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>רענון מצטבר עבור מקורות נתונים מבוססי Power Query
+# <a name="incremental-refresh-for-power-query-and-azure-data-lake-data-sources"></a>רענון מצטבר עבור מקורות נתונים של Power Query ו- Azure Data Lake
 
-מאמר זה מסביר כיצד להגדיר רענון מצטבר עבור מקורות נתונים מבוססי Power Query.
+מאמר זה מסביר כיצד להגדיר רענון מצטבר עבור מקורות נתונים מבוססי Power Query או Azure Data Lake.
 
 רענון מצטבר של מקורות נתונים מספק את היתרונות הבאים:
 
@@ -28,13 +28,11 @@ ms.locfileid: "8647190"
 - **אמינות מוגברת** - ברענון קטן יותר, אינך צריך לשמור על חיבורים למערכות מקור רגישות למשך זמן רב, מה שמקטין את הסיכון לבעיות בחיבור.
 - **צריכת משאבים מופחתת** - רענון של קבוצת משנה בלבד מכלל הנתונים מביא לשימוש יעיל יותר במשאבי המחשוב ומוריד את טביעת הרגל הסביבתית.
 
-## <a name="configure-incremental-refresh"></a>הגדרות רענון מצטבר
+## <a name="configure-incremental-refresh-for-data-sources-based-on-power-query"></a>הגדרת רענון מצטבר עבור מקורות נתונים מבוססי Power Query
 
 Customer Insights מאפשרות רענון מצטבר עבור מקורות נתונים המיובאים דרך Power Query התומכים בקליטה מצטברת. לדוגמה, מסדי נתונים של Azure SQL עם שדות תאריך ושעה, המציינים מתי עודכנו רשומות הנתונים לאחרונה.
 
 1. [צור מקור נתונים חדש מבוסס על Power Query](connect-power-query.md).
-
-1. הזן **שם** למקור הנתונים.
 
 1. בחר מקור נתונים התומך ברענון מצטבר, כגון [מסד נתונים של Azure SQL](/power-query/connectors/azuresqldatabase).
 
@@ -48,7 +46,7 @@ Customer Insights מאפשרות רענון מצטבר עבור מקורות נ�
 
 1. באפשרות **הגדרות רענון מצטבר**, הגדר את הרענון המצטבר עבור כל הישויות שבחרת בעת יצירת מקור הנתונים.
 
-   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="הגדר ישויות במקור הנתונים לצורך רענון מצטבר.":::
+   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="קביעת התצורה של הגדרות רענון מצטבר.":::
 
 1. בחר ישות וספק את הפרטים הבאים:
 
@@ -58,5 +56,31 @@ Customer Insights מאפשרות רענון מצטבר עבור מקורות נ�
 
 1. בחר **שמור** כדי להשלים את יצירת מקור הנתונים. רענון הנתונים הראשוני יהיה רענון מלא. לאחר מכן, רענון הנתונים המצטבר מתרחש כפי שהוגדר בשלב הקודם.
 
+## <a name="configure-incremental-refresh-for-azure-data-lake-data-sources"></a>הגדרת רענון מצטבר עבור מקורות נתונים של Azure Data Lake
+
+Customer Insights מאפשר רענון מצטבר עבור מקורות נתונים המחוברים אל Azure Data Lake Storage. כדי להשתמש בעיבוד ורענון מצטבר עבור ישות, הגדר ישות זו בעת הוספת מקורה נתונים של Azure Data Lake או מאוחר יותר בעת עריכת מקור הנתונים. תיקיית נתוני הישות חייבת להכיל את התיקיות הבאות:
+
+- התיקיה **FullData**: צריכה לכלול קבצי נתונים המכילים רשומות ראשוניות
+- **IncrementalData**: תיקיה עם תיקיות בהיררכיה של תאריך/שעה בפורמט **ששש/חח/יי/שש** המכילה את העדכונים המצטברים. **שש** מייצג את שעת ה-UTC של העדכונים ומכיל את התיקיות **מצבי Upsert** ו **מחיקה**. **מצבי Upserts** מכיל קבצי נתונים עם עדכונים לרשומות קיימות או לרשומות חדשות. **מחיקות** מכיל קבצי נתונים עם רשומות להסרה.
+
+1. בעת הוספה או עריכה של מקור נתונים, נווט אל החלונית **תכונות** של הישות.
+
+1. סקור את התכונות. ודא שתכונה נצורה או תאריך עדכון אחרון מוגדר ב **פורמט נתונים** *תאריך ושעה* וכן **סוג סמנטי** של *תאירך.לוח שנה*. ערוך את התכונה במידת הצורך ובחר **סיום**.
+
+1. בחלונית **בחירת ישויות**, ערוך את הישות. תיבת הסימון **עיבוד מצטבר** נבחרת.
+
+   :::image type="content" source="media/ADLS_inc_refresh.png" alt-text="הגדר ישויות במקור הנתונים לצורך רענון מצטבר.":::
+
+   1. דפדף אל תיקיית הבסיס המכילה את קבצי ה- csv‏.‎‏ או ‏parquet‏. לקבלת נתונים מלאים, מצבי Upserts מצטברים של נתונים ומחיקות נתונים מצטברות.
+   1. הזן את הסיומת עבור הנתונים המלאים ושני הקבצים המצטברים (\. csv או \. פַּרקֶט).
+   1. בחר **Save**.
+
+1. עבור **עדכון אחרון**, בחר את התכונת חותמת הזמן של התאריך.
+
+1. אם ה **מפתח ראשי** לא נבחר, בחר את המפתח הראשי. המפתח הראשי הוא תכונה ייחודית לישות. כדי שתכונה תהיה מפתח ראשי חוקי, היא לא יכולה לכלול ערכים כפולים, ערכים חסרים או ערכי null. התכונות של סוגי הנתונים 'מחרוזות', 'מספר שלם' ו-'GUID' נתמכות כמפתחות ראשיים.
+
+1. בחר **סגור** כדי לשמור ולסגור את החלונית.
+
+1. המשך בהוספה או עריכה של מקור נתונים.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

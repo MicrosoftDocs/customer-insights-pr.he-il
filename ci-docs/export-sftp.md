@@ -1,19 +1,19 @@
 ---
 title: ייצוא נתוני Customer Insights אל מארחי SFTP (מכיר סרטון)
 description: למד כיצד להגדיר את החיבור ולייצא אל מיקום SFTP.
-ms.date: 03/03/2021
+ms.date: 06/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5170ec4ca35ad2a94f02e9d696c44a32da888120
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b56d628c8286ba6697cccc9b002f609aa929951b
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646759"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947185"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>ייצוא פלחים ונתונים אחרים אל SFTP‏ (Preview)
 
@@ -28,8 +28,8 @@ ms.locfileid: "8646759"
 ## <a name="known-limitations"></a>מגבלות ידועות
 
 - יעדי SFTP מאחורי חומות אש אינם נתמכים כרגע. 
-- זמן הריצה של ייצוא תלוי בביצועי המערכת שלך. מומלץ שתי ליבות CPU וזיכרון של 1‎ GB כתצורה מינימלית עבור השרת שלך. 
-- ייצוא ישויות עם עד 100 מיליון פרופילי לקוחות יכול להימשך 90 דקות בעת שימוש בתצורה המינימלית המומלצת של שתי ליבות CPU וזיכרון של 1‎ GB. 
+- זמן הריצה של ייצוא תלוי בביצועי המערכת שלך. מומלץ שתי ליבות CPU וזיכרון של 1‎ GB כתצורה מינימלית עבור השרת שלך.
+- ייצוא ישויות עם עד 100 מיליון פרופילי לקוחות יכול להימשך 90 דקות בעת שימוש בתצורה המינימלית המומלצת של שתי ליבות CPU וזיכרון של 1‎ GB.
 
 ## <a name="set-up-connection-to-sftp"></a>הגדרת חיבור ל- SFTP
 
@@ -64,13 +64,17 @@ ms.locfileid: "8646759"
 1. בחר את הישויות, לדוגמה פלחים, שברצונך לייצא.
 
    > [!NOTE]
-   > כל ישות שנבחרה תחולק לעד חמישה קבצי פלט בעת הייצוא. 
+   > כל ישות שנבחרה תחולק לעד חמישה קבצי פלט בעת הייצוא.
 
 1. בחר **שמור**.
 
 שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
 
-הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
+הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab).
+באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand).
+
+> [!TIP]
+> ייצוא של ישויות המכילות כמות גדולה של נתונים יכול להוביל למספר קובצי CSV באותה תיקייה עבור כל פעולת ייצוא. פיצול פעולות הייצוא קורה מטעמי ביצועים כדי למזער את הזמן שלוקח לייצוא להסתיים.
 
 ## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
 

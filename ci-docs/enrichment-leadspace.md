@@ -1,19 +1,19 @@
 ---
 title: העשרת פרופילי החברה באמצעות Leadspace העשרה של צד שלישי
 description: מידע כללי אודות העשרה של צד שלישי באמצעות Leadspace.
-ms.date: 09/30/2021
+ms.date: 06/10/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 08a4c56eb1c387015fd9e985a0c9484a13236fcf
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: ca53f15bd7c71b3b4acb396c4daf52d7c7aff9eb
+ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646993"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8954180"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>העשרה של פרופילי חברות באמצעות Leadspace (תצוגה מקדימה)
 
@@ -21,29 +21,50 @@ Leadspace היא חברת מדע נתונים שמספקת פלטפורמת נת
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
-כדי להגדיר את Leadspace, הדרישות המוקדמות הבאות צריכות להתקיים:
+- רשיון Leadspace פעיל.
+- יש לך [פרופילי Unified customer profiles](customer-profiles.md) המבוססים על תיקי לקוח.
+- תצורת [החיבור](connections.md) של Leadspace [מוגדרת](#configure-the-connection-for-leadspace) על ידי מנהל מערכת. צור קשר ישירות עם [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) לקבלת פרטים על המוצר שלהם.
 
-- יש לך רישיון Leadspace פעיל.
-- יש לך [פרופילי לקוחות מאוחדים](customer-profiles.md) המבוססים על חשבונות.
-- חיבור Leadspace כבר הוגדר על-ידי מנהל מערכת או שיש לך הרשאות [מנהל מערכת](permissions.md#admin) ואת ה"מפתח התמידי" (מכונה **אסימון Leadspace**). צור קשר ישירות עם [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) לקבלת פרטים על המוצר שלהם.
+## <a name="configure-the-connection-for-leadspace"></a>קביעת תצורת החיבור עבור Leadspace
+
+אתה חייב להיות [מנהל מערכת](permissions.md#admin) ב- Customer Insights ובעל "המפתח התמידי" (המכונה **אסימון Leadspace**).
+
+1. בחר **הוסף חיבור** בעת קביעת תצורת העשרה או עבור אל **מנהל מערכת** > **חיבורים** ובחר **הגדר** באריח Leadspace.
+
+   :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="דף תצורת החיבור של Leadspace.":::
+
+1. הזן שם לחיבור ואסימון Leadspace תקף.
+
+1. סקור את [פרטיות ותאימות נתונים](#data-privacy-and-compliance) ותן את הסכמתך על-ידי בחירת **אני מסכים**.
+
+1. בחר **אמת** כדי לאמת את התצורה ולאחר מכן בחר **שמור**.
+
+### <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
+
+כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל Leadspace, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אבל אתה אחראי לוודא ש- Leadspace עומדת בכל התחייבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
+מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר העשרה זו בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
 
 ## <a name="configure-the-enrichment"></a>קביעת תצורת ההעשרה
 
-1. עבור אל **נתונים** > **העשרה**.
+1. עבור אל **נתונים** > **העשרה** ובחר בכרטיסיה **גלה**.
 
-1. בחר **העשר את הנתונים שלי** באריח Leadspace ובחר **תחילת העבודה**.
+1. בחר **העשר את הנתונים שלי** ב **נתוני חברה** מהאריח של Leadspace.
 
    :::image type="content" source="media/leadspace-tile.png" alt-text="צילום מסך של אריח Leadspace.":::
 
-1. בחר [חיבור](connections.md) מהרשימה הנפתחת. צור קשר עם מנהל מערכת אם אין חיבור זמין. אם אתה מנהל מערכת, באפשרותך ליצור חיבור על-ידי בחירת **הוסף חיבור** ובחירת **Leadspace**. 
+1. בדוק את הסקירה הכללית ולאחר מכן בחר **הבא**.
 
-1. בחר **התחבר ל- Leadspace** כדי לאשר את החיבור.
+1. בחר את החיבור. פנה אל מנהל מערכת אם אחד לא זמין.
 
-1. בחר **הבא** ובחר את **ערכת הנתונים של הלקוח** שברצונך להעשיר בנתוני חברה מתוך Leadspace. באפשרותך לבחור את הישות **לקוח** כדי להעשיר את כל פרופילי הלקוחות שלך או לבחור ישות פלח כדי להעשיר רק פרופילי לקוחות הנכללים בפלח זה.
+1. בחר **הבא**.
+
+1. בחר את **ערכת הנתונים של הלקוח** ובחר בפרופיל או בפלח שברצונך להעשיר בנתוני חברה מ- Leadspace. הישות *לקוח* מעשיר את כל פרופילי הלקוחות שלך בעוד שפלח מעשיר רק פרופילי לקוחות הנכללים באותו פלח.
 
     :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="צילום מסך בעת בחירה של ערכת נתוני הלקוח.":::
 
-1. בחר **הבא** והגדר אילו שדות מתוך הפרופילים המאוחדים של משמשים כדי לחפש נתוני חברה מתאימים מ- Leadspace. השדה **שם חברה** הוא נדרש. לקבלת דיוק התאמות גבוה יותר, ניתן להוסיף עד שני שדות אחרים, **אתר אינטרנט של חברה** ו **מיקום חברה**.
+1. הגדר באילו סוגי שדות מהפרופילים המאוחדים שלך יש להשתמש לצורך התאמה: הכתובת הראשית ו/או המשנית. באפשרותך לציין מיפוי שדה עבור שתי הכתובות ולהעשיר את הפרופילים עבור שתי הכתובות בנפרד. למשל, עבור כתובת בית וכתובת עסק. בחר **הבא**.
+
+1. מפה את השדות שלך אל נתוני החברה מ- Leadspace. השדה **שם חברה** הוא נדרש. לקבלת דיוק התאמות גבוה יותר, ניתן להוסיף עד שני שדות אחרים, **אתר אינטרנט של חברה** ו **מיקום חברה**.
 
    :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="חלונית מיפוי שדה של Leadspace.":::
 
@@ -52,45 +73,23 @@ Leadspace היא חברת מדע נתונים שמספקת פלטפורמת נת
 1. בחר בתיבת הסימון אם יש לך *פרופילי אנשי קשר* שברצונך להעשיר. Customer Insights ימפו באופן אוטומטי את השדות הנדרשים.
 
    :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="העשרת רשומות אנשי קשר של Leadspace.":::
- 
-1. ספק שם עבור ההעשרה ובחר **שמור העשרה** לאחר סקירת האפשרויות שלך.
 
+1. בחר **הבא**.
 
-## <a name="configure-the-connection-for-leadspace"></a>קביעת תצורת החיבור עבור Leadspace 
+1. ספק **שם** עבור ההעשרה ועבור **שם ישות הפלט**.
 
-עליך להיות מנהל מערכת כדי לקבוע תצורת חיבורים. בחר **הוסף חיבור** בעת קביעת תצורת העשרה *או* עבור אל **ניהול** > **חיבורים** ובחר **הגדר** באריח Leadspace.
+1. בחר **שמור העשרה** לאחר סקירת האפשרויות שלך.
 
-1. בחר **תחילת העבודה**. 
-
-1. הזן שם עבור החיבור בתיבה **שם תצוגה**.
-
-1. ספק אסימון Leadspace חוקי.
-
-1. סקור את **פרטיות ותאימות נתונים** ותן את הסכמתך על-ידי בחירת **אני מסכים**.
-
-1. בחר **אימות** כדי לאמת את התצורה.
-
-1. לאחר השלמת האימות, בחר **שמור**.
-   
-   :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="דף תצורת החיבור של Leadspace.":::
+1. בחר **הפעל** כדי להתחיל את תהליך ההעשרה או לסגור כדי לחזור אל דף **העשרה**.
 
 ## <a name="enrichment-results"></a>תוצאות העשרה
 
-לאחר רענון ההעשרה תוכל לסקור את נתוני החברה שהועשרו לאחרונה מתחת ל[העשרות שלי](enrichment-hub.md). תוכל למצוא את זמן העדכון האחרון ואת מספר הפרופילים המועשרים.
-
-אתה יכול לגשת לתצוגה מפורטת של כל פרופיל מועשר על ידי בחירה באפשרות **צפה בנתונים מועשרים**.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
 לקבלת מידע נוסף, ראה [Leadspace API](https://support.leadspace.com/hc/en-us/sections/201997649-API).
 
-## <a name="next-steps"></a>השלבים הבאים
-
+## <a name="next-steps"></a>‏‫השלבים הבאים‬
 
 [!INCLUDE [next-steps-enrichment](includes/next-steps-enrichment.md)]
-
-## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
-
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל Leadspace, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אבל אתה אחראי לוודא ש- Leadspace עומדת בכל התחייבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר העשרה זו בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

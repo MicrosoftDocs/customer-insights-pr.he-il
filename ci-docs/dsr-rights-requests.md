@@ -1,19 +1,19 @@
 ---
 title: בקשות של של זכויות נושא נתונים (DSR) במסגרת GDPR | Microsoft Docs
 description: השב לבקשות בנושא נתונים עבור Dynamics 365 Customer Insights.
-ms.date: 08/11/2021
+ms.date: 05/23/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: af2583295627f98e980adbca4f216b9c34c3cad8
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: c71305ab835b0f4f75adcce716e795959f898e47
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808562"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947369"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>בקשות של של זכויות נושא נתונים (DSR) במסגרת GDPR
 
@@ -77,11 +77,5 @@ Customer Insights מציע את חוויות המוצר הבאות למחיקת 
 1. שלח דואר אלקטרוני אל D365CI@microsoft.com עם ציון כתובת הדואר האלקטרוני של המשתמש בבקשה. צוות Customer Insights ישלח דואר לכתובת הדואר הרשומה של מנהל הדייר, עם בקשה לאשר ייצוא נתונים.
 2. יש לקבל את האישור לייצוא הנתונים עבור המשתמש המבוקש.
 3. קבל את הנתונים המיוצאים באמצעות כתובת הדואר של מנהל הדייר.
-
-## <a name="consent-management-preview"></a>ניהול הסכמה (Preview)
-
-יכולת ניהול ההסכמה אינה אוספת נתוני משתמשים ישירות. היא רק מייבאת ומעבדת נתוני הסכמה המתקבלים ממשתמשים ביישומים אחרים.
-
-כדי להסיר נתוני הסכמה לגבי משתמשים ספציפיים, יש להסיר אותם במקורות הנתונים שנקלטו ליכולת ניהול ההסכמה. לאחר רענון מקור הנתונים, הנתונים שהוסרו יימחקו גם ממרכז ההסכמה. יישומים שמשתמשים בישות ההסכמה ימחקו גם נתונים שהוסרו מהמקור לאחר [רענון](system.md#refresh-processes). אנחנו ממליצים לרענן את מקורות הנתונים במהירות לאחר מענה לבקשת נושא הנתונים להסיר את נתוני המשתמש מכל התהליכים והיישומים האחרים.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,19 +1,19 @@
 ---
 title: ייצוא נתוני Customer Insights אל Snapchat
 description: למד כיצד להגדיר את החיבור ולייצא אל Snapchat.
-ms.date: 10/08/2021
+ms.date: 06/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 171b8bf0f4a034c78e872b671602ae7653271da7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d64b482c322af8632e29ec41d6e34c390c5e646c
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647150"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947277"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>ייצוא פלחים אל Snapchat‏ (Preview)
 
@@ -21,7 +21,8 @@ ms.locfileid: "8647150"
 
 ## <a name="prerequisites-for-a-connection"></a>דרישות מוקדמות לחיבור
 
--   יש לך [חשבון עסקי של Snapchat](https://business.snapchat.com/), [חשבון Snapchat Ads](https://ads.snapchat.com/) ואישורי מנהל מערכת מתאימים.
+-   יש לך [חשבון עסקי של Snapchat](https://business.snapchat.com/), [חשבון Snapchat Ads](https://ads.snapchat.com/) ואישורי מנהל מערכת מתאימים. עליך להיות לפחות חבר בחשבון ארגון ומנהל נתונים של חשבון מודעות ספציפי. 
+-   יש לך לפחות קהל אחד במנהל קהל Snapchat מסוג SAM ‏(התאמת קהל מסוג Snap). 
 -   יש לך הרשאות [פלחים מוגדרים](segments.md) ב- Customer Insights.
 -   פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדה המייצג כתובת דוא"ל.
 
@@ -60,7 +61,7 @@ ms.locfileid: "8647150"
 
 1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע Snapchat. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
 
-1. הזן את [**מזהה הקהל של Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences).
+1. הזן את [**פלח Snapchat/מזהה קהל**](https://businesshelp.snapchat.com/s/article/custom-audiences). ניתן למצוא את המזהה של קהל בכתובת האתר לאחר בחירת הקהל במנהל הקהל של Snapchat. 
 
 1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. יש לייצא פלחים אל Snapchat.
 

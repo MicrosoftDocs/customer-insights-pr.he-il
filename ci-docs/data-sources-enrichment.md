@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: b34b83d7a73dbdf21984f626174524188f0f1dc1
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800282"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011474"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>העשרה למקורות נתונים (Preview)
 
@@ -29,9 +29,11 @@ ms.locfileid: "8800282"
 
 1. בחר את שלוש הנקודות האנכיות (&vellip;) לצד מקור נתונים שברצונך להעשיר ובחר **העשרה**.
 
-   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="דף העשרת מקורות נתונים.":::
+   :::image type="content" source="media/data_sources_enrich.png" alt-text="דף מקורות נתונים שבו 'להעשיר' מודגש":::
 
    הכרטיסיה **גילוי** מציגה את [האפשרויות הנתמכות של העשרת מקור נתונים](#supported-data-source-enrichments).
+
+   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="דף העשרת מקורות נתונים.":::
 
 1. בחר **העשר את הנתונים שלי** כדי להגדיר העשרה של מקור נתונים. שם יישות הפלט מאוכלס באופן אוטומטי.
 

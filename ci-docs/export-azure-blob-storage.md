@@ -1,19 +1,19 @@
 ---
 title: ייצוא נתוני Customer Insights אל אחסון Blob של Azure
 description: למד כיצד להגדיר את החיבור ולייצא אל אחסון Blob.
-ms.date: 10/06/2021
+ms.date: 06/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
-ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
+ms.openlocfilehash: 623926bf520b19ee4156b7a05e953241cd819e9e
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/15/2022
-ms.locfileid: "8757387"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947139"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>ייצוא רשימת פלחים ונתונים אחרים לאחסון Blob של Azure‏ (Preview)
 
@@ -58,16 +58,19 @@ ms.locfileid: "8757387"
 
 שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
 
-הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab).     
+הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab).
 
-באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
+באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand).
 
 נתונים מיוצאים מאוחסנים בגורם המכיל של Blob Storage שהגדרת. נתיבי התיקיות הבאים נוצרים באופן אוטומטי בגורם המכיל שלך:
 
 - עבור ישויות מקור וישויות שנוצרו על-ידי המערכת:   
   `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`  
   - דוגמה: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
- 
+  
+  > [!TIP]
+  > ייצוא של ישויות המכילות כמות גדולה של נתונים יכול להוביל למספר קובצי CSV באותה תיקייה עבור כל פעולת ייצוא. פיצול פעולות הייצוא קורה מטעמי ביצועים כדי למזער את הזמן שלוקח לייצוא להסתיים.
+
 - ה- model.json עבור הישויות המיוצאות יהיה ברמת %ExportDestinationName%.  
   - דוגמה: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 

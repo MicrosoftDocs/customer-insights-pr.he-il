@@ -7,20 +7,20 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: 7140e9254108bc6f0d518b3ccf4b10fc33cde115
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: c470956b0453ac2558ed85acdeebba120a0ca55d
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800174"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011704"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>התחבר לנתונים בתוך אגם נתונים מנוהל של Microsoft Dataverse
 
-מאמר זה מספק מידע כיצד יכולים משתמשי Dataverse להתחבר במהירות לישויות אנליטיות באגם מנוהל של Microsoft Dataverse. 
+משתמשי Microsoft Dataverse יכולים להתחבר במהירות לישויות אנליטיות באגם מנוהל על ידי Microsoft Dataverse.
 
 > [!NOTE]
 > עליך להיות מנהל מערכת בארגון Dataverse כדי להמשיך ולהציג את רשימת הישויות הזמינות באגם המנוהל.
@@ -32,40 +32,34 @@ ms.locfileid: "8800174"
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>התחבר אל אגם נתונים מנוהל של Dataverse
 
-1. ב- Customer Insights, עבור אל **נתונים** > **מקורות נתונים**.
+1. עבור אל **נתונים** > **מקורות נתונים**.
 
-2. בחר **הוסף מקור נתונים**.
+1. בחר **הוסף מקור נתונים**.
 
-3. בחר **Microsoft Dataverse** ובחר **הבא**.
+1. בחר **Microsoft Dataverse**.
 
-4. הזן **שם** עבור מקור הנתונים ובחר **הבא**. 
+1. הזן **שם** עבור מקור הנתונים ו **תיאור** אופציונלי.
 
-5. ספק את **כתובתה שרת** עבור ארגון Dataverse, ובחר **התחברות**.
+1. ספק את **כתובתה שרת** עבור ארגון Dataverse, ובחר **התחברות**.
 
-   :::image type="content" source="media/ingest-dataverse-server-address.png" alt-text="מסך בשלב קליטת נתונים שבו משתמש יכול להזין את כתובת ה- URL של סביבת Dataverse.":::
-
-6. בחר את הטבלאות שברצונך להטמיע כישויות לתוך Customer Insights מהרשימה הזמינה.    
+1. בחר את הטבלאות שברצונך להטמיע כישויות לתוך Customer Insights מהרשימה הזמינה.
 
    > [!NOTE]
    > אם טבלאות מסוימות כבר נבחרו, הן יכולות לשמש ביישומי Dynamics 365 אחרים (כגון Dynamics 365 Sales Insights או Customer Service Insights). אין באפשרותך לשנות את הבחירה. טבלאות אלה יהיו זמינות כישויות לאחר יצירת מקור הנתונים.
 
-   :::image type="content" source="media/select-dataverse-entities.png" alt-text="תיבת דו-שיח המציגה רשימה של ישויות בסביבת Dataverse.":::
+    :::image type="content" source="media/select-dataverse-entities.png" alt-text="תיבת דו-שיח המציגה רשימה של ישויות בסביבת Dataverse.":::
 
-7. שמור את הבחירה שלך כדי להתחיל לסנכרן את הטבלאות שנבחרו מ- Dataverse. תמצא את החיבור החדש שנוסף בדף **מקורות מידע**. הוא יעמוד בתור לרענון ויציג את ספירת הישות כ- 0 עד שכל הטבלאות שנבחרו יסונכרנו.
+1. שמור את הבחירה שלך כדי להתחיל לסנכרן את הטבלאות שנבחרו מ- Dataverse. תמצא את החיבור החדש שנוסף בדף **מקורות מידע**. הוא יעמוד בתור לרענון ויציג את ספירת הישות כ- 0 עד שכל הטבלאות שנבחרו יסונכרנו.
 
 רק מקור נתונים אחד של סביבה יכול להשתמש בו-זמנית באותו אגם מנוהל של Dataverse.
 
 ## <a name="edit-a-dataverse-managed-lake-data-source"></a>ערוך מקור נתונים של אגם מנוהל של Dataverse
 
-אתה עורך רק את בחירת הישויות לאחר יצירת מקור נתונים. לדוגמא, אם נוספו ישויות נוספות ל- Dataverse ואתה רוצה לייבא גם אותם.    
+אתה עורך רק את בחירת הישויות לאחר יצירת מקור נתונים. לדוגמא, אם נוספו ישויות נוספות ל- Dataverse ואתה רוצה לייבא גם אותם.
 כדי להתחבר לאגם Dataverse אחר, [צור מקור נתונים חדש](#connect-to-a-dataverse-managed-lake).
 
 1. עבור אל **נתונים** > **מקורות נתונים**.
 
-2. לצד מקור הנתונים שברצונך לעדכן, בחר את שלוש הנקודות האנכיות (&vellip;).
+1. לצד מקור הנתונים שברצונך לעדכן, בחר את **עריכה**.
 
-3. בחר באפשרות **ערוך** מתוך הרשימה.
-
-4. בחר ישויות נוספות מרשימת הישויות הזמינה ובחר **שמור**.
-
-[!INCLUDE [footer-include](includes/footer-banner.md)]
+1. בחר ישויות נוספות מרשימת הישויות הזמינה ובחר **שמור**.

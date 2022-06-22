@@ -1,30 +1,33 @@
 ---
-title: הגדרות אבטחה ב- Dynamics 365 Customer Insights
+title: הגדרות אבטחה ב- Customer Insights
 description: למד על הגדרות אבטחה ב- Dynamics 365 Customer Insights.
-ms.date: 04/28/2022
+ms.date: 06/08/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5d73bacccadc9193d76d8dfafd0365dabc911e00
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 163deb9bed4f82d742c46cace27dd128f0aca18b
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653741"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947416"
 ---
-# <a name="security-overview-page"></a>דף מבט כולל על אבטחה
+# <a name="security-settings-in-customer-insights"></a>הגדרות אבטחה ב- Customer Insights
 
-הדף **אבטחה** מפרט אפשרויות לקביעת הרשאות משתמש ותכונות שעוזרות להפוך את Dynamics 365 Customer Insights למאובטחת יותר. רק מנהלי מערכת יכולים לגשת לדף זה. 
+הדף **אבטחה** מפרט אפשרויות לקביעת הרשאות משתמש ותכונות שעוזרות להפוך את Dynamics 365 Customer Insights למאובטחת יותר. רק מנהלי מערכת יכולים לגשת לדף זה.
 
 עבור אל **מנהל מערכת** > **אבטחה** כדי לקבוע את ההגדרות.
 
 הדף **אבטחה** כולל את הכרטיסיות הבאות:
+
 - [משתמשים](#users-tab)
 - [ממשקי API](#apis-tab)
+- [קישורים פרטיים](#private-links-tab)
 - [Key Vault](#key-vault-tab)
+- [גישה מאובטחת לנתוני לקוח באמצעות כספת לקוח (‏Preview)](#securely-access-customer-data-with-customer-lockbox-preview)
 
 ## <a name="users-tab"></a>כרטיסיית משתמשים
 
@@ -38,6 +41,22 @@ ms.locfileid: "8653741"
 
 כדי לחסום גישת API לסביבה, בחר **השבת**. אם ממשקי API מושבתים, אפשר לבחור באפשרות **הפוך לזמין** כדי להעניק גישה שוב.
 
+## <a name="private-links-tab"></a>כרטיסיית קישורים פרטיים
+
+[קישור פרטי של Azure](/azure/private-link/private-link-overview) מאפשר ל- Customer Insights להתחבר אל חשבון Azure Data Lake Storage שלך באמצעות נקודת קצה פרטית ברשת הוירטואלית שלך. עבור נתונים בחשבון אחסון שאינו חשוף לאינטרנט הציבורי, קישור פרטי מאפשר את החיבור לרשת מוגבלת זו.
+
+> [!IMPORTANT]
+> דרישת תפקיד מינימלית להגדרת חיבור קישור פרטי:
+>
+> - Customer Insights: מנהל מערכת
+> - תפקיד מובנה של Azure: [חשבון אחסון משתתף](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
+> - הרשאות עבור תפקיד Azure מותאם אישית: [ Microsoft.Storage/storageAccounts/read ו-Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
+>
+
+הגדרת קישור פרטי ב- Customer Insights היא תהליך בן שני שלבים. ראשית, אתה יוזם יצירת קישור פרטי דרך **מנהל מערכת** > **אבטחה** > **קישורים פרטיים** ב- Customer Insights. החלונית **הוסף קישור פרטי** מציגה חשבונות אחסון מהדייר שלך שיש לך הרשאות לראות. בחר את חשבון האחסון וספק הסכמה ליצירת הקישור הפרטי.
+
+לאחר מכן, עליך לאשר את הקישור הפרטי בצד חשבון Data Lake Storage. פתח את הקישור המוצג על המסך כדי לאשר את הקישור הפרטי החדש.
+
 ## <a name="key-vault-tab"></a>הכרטיסיה Key Vault
 
 הכרטיסיה **Key Vault** מאפשרת לך לקשר ולנהל [Azure Key Vault](/azure/key-vault/general/basic-concepts) משלך עבור הסביבה.
@@ -45,5 +64,13 @@ ms.locfileid: "8653741"
 
 לקבלת מידע נוסף, ראה [הבאת Azure Key Vault משלך](use-azure-key-vault.md).
 
+## <a name="securely-access-customer-data-with-customer-lockbox-preview"></a>גישה מאובטחת לנתוני לקוח באמצעות כספת לקוח (‏Preview)
+
+Customer Insights משתמש ביכולת כספת לקוח של Power Platform. כספת לקוח מספק ממשק לבדיקה ואישור (או דחיית) של בקשות גישה לנתונים. בקשות אלו מתרחשות כאשר יש צורך בגישה לנתונים של לקוחות כדי לפתור מקרה תמיכה. כדי להשתמש בתכונה זו, ל- Customer Insights נדרש חיבור קיים לסביבת Microsoft Dataverse בדייר שלך.
+
+למידע נוסף על כספת לקוח, עיין ב[סיכום](/power-platform/admin/about-lockbox#summary) כספת לקוח של Power Platform. המאמר מתאר גם את [זרימת העבודה](/power-platform/admin/about-lockbox#workflow) ואת [ההגדרה](/power-platform/admin/about-lockbox#enable-the-lockbox-policy) הנדרשת להפיכת כספת לקוח לזמין.
+
+> [!IMPORTANT]
+> מנהלים כלליים של Power Platform או מנהלי מערכת של Power Platform יכולים לאשר בקשות של כספת לקוח שהונפקו עבור Customer Insights.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
