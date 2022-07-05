@@ -1,5 +1,5 @@
 ---
-title: העשרת פרופילי הלקוחות באמצעות נתוני מיקום מ- Azure Maps
+title: העשרת פרופילי הלקוחות בנתוני מיקום מ- Azure Maps‏ (Preview)
 description: מידע כללי על העשרת צד ראשון של Azure Maps.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: a806b2d0c791972c967c90694527608b4def9f3f
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953629"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052608"
 ---
-# <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>העשרת פרופילי לקוחות באמצעות Azure Maps‏ (Preview)
+# <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>העשרת פרופילי הלקוחות בנתוני מיקום מ- Azure Maps‏ (Preview)
 
 Azure Maps מספקת נתונים ושירותים ממוקדי מיקום כדי לספק חוויות המבוססות על נתונים גיאו-מרחביים עם בינת מיקום מובנית. שירותי העשרת הנתונים של Azure Maps מספקים את הדיוק של מידע המיקום על הלקוחות שלך. הם מספקים יכולות כגון נרמול כתובות וחילוץ קו אורך וקו רוחב אל Dynamics 365 Customer Insights.
 
@@ -82,7 +82,7 @@ Azure Maps מספקת נתונים ושירותים ממוקדי מיקום כד
 
 1. בחר **הפעל** כדי להתחיל את תהליך ההעשרה או לסגור כדי לחזור אל דף **העשרה**.
 
-## <a name="enrichment-results"></a>תוצאות העשרה
+## <a name="view-enrichment-results"></a>הצג תוצאות העשרה
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

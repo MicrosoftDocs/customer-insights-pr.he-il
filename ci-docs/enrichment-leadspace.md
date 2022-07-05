@@ -1,5 +1,5 @@
 ---
-title: העשרת פרופילי החברה באמצעות Leadspace העשרה של צד שלישי
+title: העשרת פרופילי החברה באמצעות Leadspace ‏(Preview)‏
 description: מידע כללי אודות העשרה של צד שלישי באמצעות Leadspace.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: ca53f15bd7c71b3b4acb396c4daf52d7c7aff9eb
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: b58532a541ee22a5e34d0af1a3334ccbd53627b2
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954180"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081350"
 ---
-# <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>העשרה של פרופילי חברות באמצעות Leadspace (תצוגה מקדימה)
+# <a name="enrich-company-profiles-with-leadspace-preview"></a>העשרת פרופילי החברה באמצעות Leadspace ‏(Preview)‏
 
 Leadspace היא חברת מדע נתונים שמספקת פלטפורמת נתוני לקוח מעסק לעסק. הוא מאפשר לסביבות עם פרופילי לקוחות מאוחדים המבוססים על חשבונות להעשיר את הנתונים שלהן. העשר *פרופילי לקוחות* עם תכונות כמו גודל חברה, מיקום או תעשייה. העשר *פרופילי אנשי קשר* עם תכונות כמו כותרת, אישיות או אימות דואר אלקטרוני.
 
@@ -82,7 +82,7 @@ Leadspace היא חברת מדע נתונים שמספקת פלטפורמת נת
 
 1. בחר **הפעל** כדי להתחיל את תהליך ההעשרה או לסגור כדי לחזור אל דף **העשרה**.
 
-## <a name="enrichment-results"></a>תוצאות העשרה
+## <a name="view-enrichment-results"></a>הצג תוצאות העשרה
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

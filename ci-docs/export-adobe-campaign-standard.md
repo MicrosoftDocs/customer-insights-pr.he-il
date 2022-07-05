@@ -1,5 +1,5 @@
 ---
-title: ייצוא נתוני Customer Insights ל- Adobe Campaign Standard
+title: יצוא פלחי Customer Insights אל Adobe Campaign Standard‏(Preview‏)
 description: למד כיצד להשתמש ב- Customer Insights בפלחים ב- Adobe Campaign Standard.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 2a62d2f889f199222eeb8cc969fce62fa89fa6f0
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9915591cd969bf825f5d1669de43ed4f9953f898
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646975"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081347"
 ---
-# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>השתמש בקטעי Customer Insights ב- Adobe Campaign Standard (תצוגה מקדימה)
+# <a name="export-customer-insights-segments-to-adobe-campaign-standard-preview"></a>יצוא פלחי Customer Insights אל Adobe Campaign Standard‏(Preview‏)
 
 בתור משתמש Dynamics 365 Customer Insights, ייתכן שיצרת פלחים כדי להפוך את הקמפיינים השיווקיים שלך ליעילים יותר על ידי כיוון לקהלים רלוונטיים. כדי להשתמש בפלח מתוך Customer Insights ב- Adobe Experience Platform באפליקציות כמו Adobe Campaign Standard, עליך לבצע מספר שלבים המתוארים במאמר זה.
 
@@ -23,9 +23,9 @@ ms.locfileid: "8646975"
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
--   רשיון Dynamics 365 Customer Insights
--   רישיון Adobe Campaign Standard
--   חשבון אחסון Blob של Azure
+- רשיון Dynamics 365 Customer Insights
+- רישיון Adobe Campaign Standard
+- חשבון אחסון Blob של Azure
 
 ## <a name="campaign-overview"></a>מבט כולל על קמפיין
 

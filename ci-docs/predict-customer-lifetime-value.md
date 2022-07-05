@@ -13,16 +13,16 @@ searchScope:
 - ci-create-prediction
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: 3e1b1ce00eeda1cead9ba05beae65b6903d0b9cf
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: ea7acd1ddbb0eb8d66fb82018637a85b6ffb369b
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647350"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055215"
 ---
 # <a name="customer-lifetime-value-clv-prediction"></a>חיזוי ערך אורך חיים של לקוח (CLV)
 
-בצע חיזוי של ערך פוטנציאלי (הכנסות) שלקוחות פעילים בודדים יביאו לעסק שלך במהלך פרק זמן עתידי מוגדר. תכונה זו יכולה לעזור לך להשיג יעדים שונים: 
+בצע חיזוי של ערך פוטנציאלי (הכנסות) שלקוחות פעילים בודדים יביאו לעסק שלך במהלך פרק זמן עתידי מוגדר. תכונה זו יכולה לעזור לך להשיג יעדים שונים:
 - זהה לקוחות בעלי ערך רב ועבד תובנה זו
 - צור פלחי לקוחות אסטרטגיים על בסיס הערך הפוטנציאלי שלהם להפעלת קמפיינים מותאמים אישית עם מאמצי מכירות, שיווק ותמיכה ממוקדים
 - הדרך פיתוח מוצרים על-ידי התמקדות בתכונות המגדילות את ערך הלקוח

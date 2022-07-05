@@ -1,5 +1,5 @@
 ---
-title: קלוט נתונים מתוך Azure Synapse Analytics
+title: התחבר למקור הנתונים Azure Synapse (תצוגה מקדימה)
 description: השתמש במסד נתונים ב- Azure Synapse בתור מקור נתונים ב- Dynamics 365 Customer Insights.
 ms.date: 03/25/2022
 ms.reviewer: v-wendysmith
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6f94cdbcc203fc4518544f7a945bd80e871b36c1
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: c4ae65613a02df38a30f907dae72d413bf1a702f
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011428"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052700"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>התחבר למקור הנתונים Azure Synapse Analytics (תצוגה מקדימה)
 
@@ -59,7 +59,7 @@ Azure Synapse Analytics הוא שירות ניתוח ארגוני המאיץ א�
 
 1. בחר [חיבור זמין](connections.md) אל Azure Synapse Analytics או צור חדש.
 
-1. בחר **מסד הנתונים** מסביבת העבודה המחוברת בחיבור Azure Synapse Analytics שנבחר ובחר **הבא**.
+1. בחר **מסד הנתונים** מסביבת העבודה המחוברת בחיבור Azure Synapse Analytics שנבחר ובחר **הבא**. נכון לעכשיו, אנו תומכים רק בסוג מסד הנתונים *מסד נתונים מסוג אגם*.
 
 1. בחר את הישויות לעיבוד ממסד הנתונים המחובר ובחר **הבא**.
 

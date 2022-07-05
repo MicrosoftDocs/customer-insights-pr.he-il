@@ -1,5 +1,5 @@
 ---
-title: העשרת פרופילי לקוחות עם נתונים מ- Microsoft Office 365
+title: העשרת פרופילי לקוחות עם נתונים מ- Microsoft Office 365‏ (Preview)
 description: השתמש בנתונים קנייניים מ- Microsoft Office כדי להעשיר את פרופילי הלקוחות שלך בנתוני מעורבות.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 7192b7680e73a581dd603de174c57b20bec996dd
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 75762afb70814c8a81c1574ee7ea1553a2048737
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954134"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055675"
 ---
-# <a name="enrich-customer-profiles-with-engagement-data-preview"></a>העשרת פרופילי לקוחות עם נתוני מעורבות (תצוגה מקדימה)
+# <a name="enrich-customer-profiles-with-data-from-microsoft-office-365-preview"></a>העשרת פרופילי לקוחות עם נתונים מ- Microsoft Office 365‏ (Preview)
 
 השתמש בנתונים מ- Microsoft Office 365 כדי להעשיר את פרופילי חשבון הלקוחות שלך עם תובנות לגבי מעורבות באמצעות יישומי Office 365. נתוני המעורבות מורכבים מפעילות של דואר אלקטרוני ופגישות, אשר מצטברת ברמת החשבון. לדוגמה, מספר הודעות הדואר האלקטרוני מחשבון עסקי או מספר הפגישות עם החשבון. נתונים על משתמשים נפרדים אינם זמינים.
 
@@ -75,7 +75,7 @@ ms.locfileid: "8954134"
 
 [!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
-## <a name="enrichment-results"></a>תוצאות העשרה
+## <a name="view-enrichment-results"></a>הצג תוצאות העשרה
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)] זהו הישות *משרד*. הישות *Office_UserEntity* המכילה את מזהי Active Directory עבור כתובות הדואר האלקטרוני שנבחרו במהלך הגדרת ההעשרה.
 

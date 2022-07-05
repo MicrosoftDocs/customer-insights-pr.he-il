@@ -1,5 +1,5 @@
 ---
-title: ייצוא נתוני Customer Insights ל-Sendinblue Adobe Experience Platform
+title: ייצוא פלחים ל- Adobe Experience Platform‏ (Preview)
 description: למד כיצד להשתמש בפלחי Customer Insights ב- Adobe Experience Platform.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 42a4e0c6bce67a63b449a541299620ef2f4a3259
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c29b8264019669ffd954a298ce3a633c852477fa
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647253"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052512"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>שימוש בפלחים של Customer Insights ב-Adobe Experience Platform (תצוגה מקדימה).
+# <a name="export-segments-to-adobe-experience-platform-preview"></a>ייצוא פלחים ל- Adobe Experience Platform‏ (Preview)
 
 בתור משתמש Dynamics 365 Customer Insights, ייתכן שיצרת פלחים כדי להפוך את הקמפיינים השיווקיים שלך ליעילים יותר על ידי כיוון לקהלים רלוונטיים. כדי להשתמש בפלח מתוך Customer Insights ב- Adobe Experience Platform באפליקציות כמו Adobe Campaign Standard, עליך לבצע מספר שלבים המתוארים במאמר זה.
 

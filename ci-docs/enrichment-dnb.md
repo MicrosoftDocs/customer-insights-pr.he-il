@@ -1,5 +1,5 @@
 ---
-title: העשרת פרופילי החברה באמצעות Dun & Bradstreet
+title: העשרת פרופילי החברה באמצעות Dun & Bradstreet ‏(Preview)‏
 description: מידע כללי על העשרת צד שלישי של Dun & Bradstreet.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -9,14 +9,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b1038970b6aee3bbdd7f79cc457f79aaf1c38222
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 51f2e4e46aa25d10502d0feb5ea42eb7d2d637b9
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953892"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081437"
 ---
-# <a name="enrichment-of-company-profiles-with-dun--bradstreet-preview"></a>העשרת פרופילי החברה באמצעות Dun & Bradstreet ‏(Preview)‏
+# <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>העשרת פרופילי החברה באמצעות Dun & Bradstreet ‏(Preview)‏
 
 חברת Dun & Bradstreet מספקת נתונים מסחריים, ניתוחים ותובנות לעסקים. היא מאפשרת ללקוחות עם פרופילי לקוחות אחידים לחברות להעשיר את הנתונים שלהם. ההעשרה כוללת תכונות כגון מספר DUNS, גודל החברה, המיקום, הענף ועוד.
 
@@ -102,7 +102,7 @@ ms.locfileid: "8953892"
 
 1. בחר **הפעל** כדי להתחיל את תהליך ההעשרה או לסגור כדי לחזור אל דף **העשרה**.
 
-## <a name="enrichment-results"></a>תוצאות העשרה
+## <a name="view-enrichment-results"></a>הצג תוצאות העשרה
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

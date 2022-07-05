@@ -1,5 +1,5 @@
 ---
-title: העשרה עם ייבוא מותאם אישית של SPTF
+title: העשרת פרופילי לקוחות באמצעות יבוא מותאם אישית של SFTP ‏(Preview)
 description: מידע כללי אודות העשרת ייבוא מותאם אישית של SPTF.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 657afb6fcb68429680eb677734b4115e69769008
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953720"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081332"
 ---
-# <a name="enrich-customer-profiles-with-custom-data-preview"></a>העשרת פרופילי לקוחות עם נתונים מותאמים אישית (Preview)
+# <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>העשרת פרופילי לקוחות באמצעות יבוא מותאם אישית של SFTP ‏(Preview)
 
 ייבוא מותאם אישית באמצעות Secure File Transfer Protocol‏ (SFTP) מאפשר לך לייבא נתונים שלא צריכים לעבור את תהליך איחוד הנתונים. זו דרך גמישה, מאובטחת וקלה להכנסת הנתונים שלך. ניתן להשתמש בייבוא מותאם אישית של SFTP בשילוב עם [ייצוא SFTP](export-sftp.md) המאפשר לך לייצא את נתוני פרופיל הלקוח הדרושים להעשרה. לאחר מכן ניתן לעבד ולהעשיר את הנתונים, וניתן להשתמש בייבוא SFTP מותאם אישית כדי להחזיר את הנתונים המועשרים אל Dynamics 365 Customer Insights.
 
@@ -120,7 +120,7 @@ ms.locfileid: "8953720"
 
 1. בחר **הפעל** כדי להתחיל את תהליך ההעשרה או לסגור כדי לחזור אל דף **העשרה**.
 
-## <a name="enrichment-results"></a>תוצאות העשרה
+## <a name="view-enrichment-results"></a>הצג תוצאות העשרה
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

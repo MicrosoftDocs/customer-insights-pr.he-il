@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-measure-builder
 - customerInsights
-ms.openlocfilehash: d003d054145343cc2feeefeeee413810df43185a
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: f3ec86806074a12c1107648303ed2d65e97ebc69
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800327"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081657"
 ---
-# <a name="use-measure-builder-to-create-measures-from-scratch"></a>השתמש בבונה המדדים כדי ליצור מדדים מאפס
+# <a name="create-new-measures-with-the-measure-builder"></a>צור מדדים חדשים עם בונה המדדים
 
 מאמר זה מסביר כיצד ליצור [מדד](measures.md) חדש מאפס. בונה המדדים מאפשר לך להגדיר חישובים באמצעות אופרטורים מתמטיים, פונקציות צבירה ומסננים. ניתן לבנות מדד עם תכונות של ישויות הקשורות לישות המאוחדת של *לקוח* .
 

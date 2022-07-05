@@ -1,5 +1,5 @@
 ---
-title: ייצוא נתוני Customer Insights אל AdRoll
+title: ייצוא פלחים אל AdRoll‏ (Preview)
 description: למד כיצד להגדיר את החיבור ולייצא אל AdRoll.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec7d2d4d137f2f0e3e1ff2ec0d09bff8ac4f28ea
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 13c7dd3b8556ad807fba6c537525b463480e860b
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646705"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081560"
 ---
 # <a name="export-segments-to-adroll-preview"></a>ייצוא פלחים אל AdRoll‏ (Preview)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8646705"
 
 ## <a name="prerequisites-for-a-connection"></a>דרישות מוקדמות לחיבור
 
--   יש לך [חשבון AdRoll](https://www.adroll.com/) ואישורי מנהל מערכת מתאימים.
--   יש לך הרשאות [פלחים מוגדרים](segments.md) ב- Customer Insights.
--   פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדה המייצג כתובת דוא"ל.
+- יש לך [חשבון AdRoll](https://www.adroll.com/) ואישורי מנהל מערכת מתאימים.
+- יש לך הרשאות [פלחים מוגדרים](segments.md) ב- Customer Insights.
+- פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדה המייצג כתובת דוא"ל.
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 

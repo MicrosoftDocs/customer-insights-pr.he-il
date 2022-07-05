@@ -1,5 +1,5 @@
 ---
-title: העשרה באמצעות העשרת צד שלישי של HERE Technologies
+title: העשרת פרופילי לקוחות באמצעות HERE Technologies ‏(Preview)
 description: מידע כללי אודות העשרה של צד שלישי באמצעות HERE Technologies.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 171ead92427924083a13e2a3d52e7a7da417c801
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: d88085b6be156dd1c895e9e5b38cc9d77acbdb95
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953674"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052052"
 ---
-# <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>העשרת פרופילי לקוחות באמצעות HERE Technologies‏ (Preview)
+# <a name="enrich-customer-profiles-with-here-technologies-preview"></a>העשרת פרופילי לקוחות באמצעות HERE Technologies ‏(Preview)
 
 HERE Technologies היא חברת פלטפורמת מיקום המספקת נתונים ושירותים הממוקדים במיקום. שירותי העשרת הנתונים של HERE Technologies משפרים את הדיוק של פרטי המיקום של הלקוחות שלך. הוא מספק נורמליזציה של כתובת, חילוץ קווי רוחב ואורך ועוד.
 
@@ -72,7 +72,7 @@ HERE Technologies היא חברת פלטפורמת מיקום המספקת נת�
 
 1. בחר **הפעל** כדי להתחיל את תהליך ההעשרה או לסגור כדי לחזור אל דף **העשרה**.
 
-## <a name="enrichment-results"></a>תוצאות העשרה
+## <a name="view-enrichment-results"></a>הצג תוצאות העשרה
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

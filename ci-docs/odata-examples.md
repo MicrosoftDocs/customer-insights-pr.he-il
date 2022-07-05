@@ -1,5 +1,5 @@
 ---
-title: דוגמאות OData עבור ממשקי API של Dynamics 365 Customer Insights
+title: דוגמאות לשאילתות OData עבור ממשקי API של Customer Insights
 description: דוגמאות נפוצות של פרוטוקול הנתונים הפתוח (OData) לשאילתה של ממשקי ה-API של Customer Insights כדי לסקור נתונים.
 ms.date: 05/25/2022
 ms.subservice: audience-insights
@@ -8,14 +8,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cdadd72bfe4272d8d83d923baaa6fd40d008473b
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808462"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081718"
 ---
-# <a name="odata-query-examples"></a>דוגמאות לשאילתות OData
+# <a name="odata-query-examples-for-customer-insights-apis"></a>דוגמאות לשאילתות OData עבור ממשקי API של Customer Insights
 
 פרוטוקול הנתונים הפתוח (OData) הוא פרוטוקול גישה לנתונים הבנוי על פרוטוקולי ליבה כמו HTTP. הוא משתמש במתודולוגיות מקובלות כמו REST עבור האינטרנט. ישנם סוגים שונים של ספריות וכלים שניתן להשתמש בהם כדי לצרוך שירותי OData.
 

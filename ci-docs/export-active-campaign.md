@@ -1,5 +1,5 @@
 ---
-title: ייצוא נתוני Customer Insights ל- ActiveCampaign
+title: ייצא פלחים אל ActiveCampaign
 description: למד כיצד להגדיר את החיבור ולייצא ל- ActiveCampaign.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5d15b9bf7383d06070ac92d7a729fc6e6e00c9d7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: eb6f2bb69bb30c319e17390562b3f33512f33ff1
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646939"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054709"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>ייצוא פלחים ל- ActiveCampaign‏ (Preview)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8646939"
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
--   יש לך [חשבון ActiveCampaign](https://www.activecampaign.com/) ואישורי מנהל מערכת תואמים.
--   יש לך הרשאות [פלחים מוגדרים](segments.md) ב- Customer Insights.
--   פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדה עם כתובת דואר אלקטרוני.
+- יש לך [חשבון ActiveCampaign](https://www.activecampaign.com/) ואישורי מנהל מערכת תואמים.
+- יש לך הרשאות [פלחים מוגדרים](segments.md) ב- Customer Insights.
+- פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדה עם כתובת דואר אלקטרוני.
 
 ## <a name="known-limitations"></a>מגבלות ידועות
 

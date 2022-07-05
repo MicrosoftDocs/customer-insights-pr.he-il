@@ -1,21 +1,21 @@
 ---
-title: ייצוא נתוני Customer Insights ל-Sendinblue Azure Synapse Analytics
+title: ייצוא נתונים אל Azure Synapse Analytics ‏(Preview)
 description: למד כיצד להגדיר את תצורת החיבור אל Azure Synapse Analytics.
-ms.date: 04/11/2022
+ms.date: 06/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 60bacb313e0426564310f3c1339bf3b732e17489
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741504"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081580"
 ---
-# <a name="export-data-to-azure-synapse-analytics-preview"></a>ייצוא נתונים אל Azure Synapse Analytics ‏(תצוגה מקדימה)
+# <a name="export-data-to-azure-synapse-analytics-preview"></a>ייצוא נתונים אל Azure Synapse Analytics ‏(Preview)
 
 Azure Synapse הוא שירות ניתוח שמזרז את הזמן להשגת תובנה בין מחסני נתונים ומערכות Big Data. אתה יכול לעבד את נתוני Customer Insights ולהשתמש בהם ב- [Azure Synapse](/azure/synapse-analytics/overview-what-is).
 
@@ -48,7 +48,7 @@ Azure Synapse הוא שירות ניתוח שמזרז את הזמן להשגת �
 
 ### <a name="configure-a-connection"></a>קביעת תצורה של חיבור
 
-כדי ליצור חיבור, מנהל השירות וחשבון המשתמש ב- Customer Insights צריכים הרשאות **קורא** ב *קבוצת המשאבים* שבה ממוקמת סביבת העבודה של Synapse Analytics. בנוסף, מנהל השירות והמשתמש בסביבת העבודה של Synapse Analytics צריכים השראות **מנהל מערכת של Synapse**. 
+כדי ליצור חיבור, מנהל השירות וחשבון המשתמש ב- Customer Insights צריכים הרשאות **קורא** ב *קבוצת המשאבים* שבה ממוקמת סביבת העבודה של Synapse Analytics. בנוסף, מנהל השירות והמשתמש בסביבת העבודה של Synapse Analytics צריכים הרשאות **מנהל מערכת של Synapse**. 
 
 1. עבור אל **ניהול** > **חיבורים**.
 
@@ -72,13 +72,13 @@ Azure Synapse הוא שירות ניתוח שמזרז את הזמן להשגת �
 
 1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע **Azure Synapse Analytics**. אם אינך רואה שם מקטע זה, אין [חיבורים](connections.md) מסוג זה הזמינים עבורך.
 
-1. ספק **שם תצוגה** ניתן לזיהוי עבור הייצוא שלך ו **שם מסד נתונים**.
+1. ספק **שם תצוגה** ניתן לזיהוי עבור הייצוא שלך ו **שם מסד נתונים**. הייצוא ייצור אגם מסד נתונים חדש של [Azure Synapse](/azure/synapse-analytics/database-designer/concepts-lake-database) במרחב העבודה המוגדר בחיבור.
 
 1. בחר אלו ישויות ברצונך לייצא אל Azure Synapse Analytics.
    > [!NOTE]
    > אין תמיכה במקורות נתונים המבוססים על  [תיקיית Common Data Model](connect-common-data-model.md).
 
-2. בחר **שמור**.
+1. בחר **שמור**.
 
 שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
 

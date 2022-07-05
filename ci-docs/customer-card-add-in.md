@@ -1,5 +1,5 @@
 ---
-title: תוספת כרטיס לקוח עבור יישומי Dynamics 365 (מכיל סרטון)
+title: תוספת כרטיס לקוח עבור יישומי Dynamics 365 ‏(Preview‏) (מכיל סרטון)
 description: הצג נתוני פרופיל לקוח מ- Customer Insights באפליקציות Dynamics 365 באמצעות התוספת הזו.
 ms.date: 02/02/2022
 ms.reviewer: mhart
@@ -13,14 +13,14 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 8508880bb3274bb491a314a043a5222d4d381073
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: ead18963959f94fd07912384cf61802f83523e2f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755637"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081257"
 ---
-# <a name="customer-card-add-in-preview"></a>תוספת כרטיס לקוח (תצוגה מקדימה)
+# <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>תוספת כרטיס לקוח עבור יישומי Dynamics 365 ‏(Preview)
 
 קבל תצוגה של 360 מעלות של הלקוחות שלך ישירות ביישומי Dynamics 365. כשתוספת כרטיס הלקוח מותקנת ביישום Dynamics 365 נתמך, תוכל לבחור להציג שדות, תובנות וציר זמן של פעילות עבור פרופיל לקוח. התוספת תשלוף נתונים מ- Customer Insights מבלי להשפיע על הנתונים ביישום המחובר של Dynamics 365.
 

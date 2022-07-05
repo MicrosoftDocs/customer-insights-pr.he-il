@@ -1,5 +1,5 @@
 ---
-title: שיפור של נתוני חברה
+title: העשרה של פרופילי חברה עם נתוני חברה משופרים
 description: העשרה ונרמול של נתוני חברה עם מודלים של Microsoft.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 4247d59806468907d93fc7848231ec5a2985580e
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 131ef3d1e123628779609ddec368cfef8f4d607e
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953950"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054249"
 ---
-# <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>העשרה של פרופילי חברה עם נתוני חברה משופרים
+# <a name="enrich-company-profiles-with-enhanced-company-data"></a>העשרה של פרופילי חברה עם נתוני חברה משופרים
 
 השתמש במודלים של Microsoft ובנתוני חברה מרוכזים כדי לתקן, להשלים ולתקנן את פרופילי החברה. נשתמש [בתבנית Common Data Model](/common-data-model/schema/core/applicationcommon/account) עבור תובנות ודיוק טובים יותר.
 
@@ -84,7 +84,7 @@ Microsft
 
 1. בחר **הפעל** כדי להתחיל את תהליך ההעשרה או לסגור כדי לחזור אל דף **העשרה**.
 
-## <a name="enrichment-results"></a>תוצאות העשרה
+## <a name="view-enrichment-results"></a>הצג תוצאות העשרה
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

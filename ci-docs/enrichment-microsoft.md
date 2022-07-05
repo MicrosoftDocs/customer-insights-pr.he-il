@@ -1,5 +1,5 @@
 ---
-title: העשר פרופילי לקוחות בנתוני מותגים ותחומי עניין מ- Microsoft
+title: העשר פרופילי לקוחות בנתוני מותגים ותחומי עניין מ- Microsoft ‏(Preview)
 description: השתמש בנתונים של Microsoft כדי להעשיר את נתוני הלקוחות שלך עם זיקה ונתח קול.
 ms.date: 03/02/2022
 ms.reviewer: mhart
@@ -12,14 +12,14 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 61262980cafdcd130430e200e466ce7da6cc4d07
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: e1827adca10a3b193c02a20c4abccacf73194a77
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953766"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081500"
 ---
-# <a name="enrich-customer-profiles-with-affinities-and-share-of-voice-preview"></a>העשרת פרופילי הלקוחות עם זיקה ונתח קול (Preview)
+# <a name="enrich-customer-profiles-with-brands-and-interests-data-from-microsoft-preview"></a>העשר פרופילי לקוחות בנתוני מותגים ותחומי עניין מ- Microsoft ‏(Preview)
 
 השתמש בנתונים של Microsoft כדי להעשיר את נתוני הלקוחות שלך עם זיקה למותגים, זיקה לתחומי עניין ונתח קול (SoV). הזיקה ונתח הקול הללו מבוססים על נתונים מאנשים בעלי נתונים דמוגרפיים שדומים לנתוני הלקוחות שלך. מידע זה עוזר לך להבין ולפלח את הלקוחות שלך בצורה טובה יותר על סמך נתח הקול או הזיקה שלהם למותגים ולתחומי עניין ספציפיים.
 
@@ -104,7 +104,7 @@ ms.locfileid: "8953766"
 
    בעת העשרת פרופילים, אנחנו נעשיר את כל פרופילי הלקוחות שעבורם אנחנו מקבלים נתונים עבור המותגים ותחומי העניין שנבחרו, כולל פרופילים שאינם בדינה או באזור שנבחר. לדוגמה, אם בחרת בגרמניה, אנחנו נעשיר פרופילים הממוקמים בארצות הברית אם יש לנו נתונים זמינים עבור המותגים ותחומי עניין הנבחרים בארצות הברית.
 
-## <a name="enrichment-results"></a>תוצאות העשרה
+## <a name="view-enrichment-results"></a>הצג תוצאות העשרה
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
