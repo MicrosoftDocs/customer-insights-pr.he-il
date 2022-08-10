@@ -1,52 +1,53 @@
 ---
 title: ייצוא פלחים אל LinkedIn Ads ‏(Preview)
 description: למד כיצד להגדיר את החיבור ולייצא אל LinkedIn Ads.
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e6ad3901f7b8dc1ae8edc54c0b09a99b01be34cd
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: d1a9ae985043398f4bc38163be26ecf0c3c8e2ba
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9050857"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196809"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>ייצוא פלחים אל LinkedIn Ads ‏(Preview)
 
 ייצא פלחים של פרופילי לקוחות מאוחדים אל LinkedIn Ads כדי ליצור קהלים תואמים. השתמש בקהלים תואמים ל- Company Targeting ול- Contact Targeting.
 
-## <a name="prerequisites"></a>דרישות מוקדמות
+## <a name="prerequisites"></a>‏‫דרישות מוקדמות‬
 
--   יש לך [חשבון LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) ואישורי מנהל מערכת מתאימים.
--   יש לך הרשאות [פלחים מוגדרים](segments.md) ב- Customer Insights.
--   פרופילי לקוח בפלחים המיוצאים מכילים שדה עם כתובת דואר אלקטרוני.
+- [חשבון LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) ואישורי מנהל מערכת תואמים.
+- [מזהה תיק לקוח של LinkedIn Campaign Manager](https://www.linkedin.com/help/lms/answer/a424270).
+- [פלחים מוגדרים](segments.md) ב- Customer Insights.
+- פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדה המייצג כתובת דוא"ל.
 
-## <a name="known-limitations"></a>מגבלות ידועות
+## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
-- הפלח שלך ב- Customer Insights צריך להכיל לפחות 300 פרופילים ייחודיים. 
-- באפשרותך לייצא עד 100,000 פרופילי לקוחות לכל ייצוא אל LinkedIn Ads.
-- הייצוא אל LinkedIn Ads מוגבל לפלחים.
-- ייצוא של עד 100,000 פרופילי לקוחות אל LinkedIn Ads עשוי להימשך עד 10 דקות. 
+- עד 100,000 פרופילי לקוחות לכל ייצוא אל LinkedIn Ads. השלמת הפעולה עשויה להימשך עד 10 דקות.
+- פלחים בלבד. פלח חייב להכיל לפחות 300 פרופילים ייחודיים.
 
-## <a name="set-up-the-connection-to-linkedin-ads"></a>הגדרת החיבור אל LinkedIn Ads
+## <a name="set-up-connection-to-linkedin-ads"></a>הגדרת חיבור אל LinkedIn Ads
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. עבור אל **ניהול** > **חיבורים**.
 
-1. בחר **הוסף חיבור** ובחר **LinkedIn Ads** כדי לקבוע את תצורת החיבור.
+1. בחר **הוסף חיבור** ובחר **LinkedIn Ads**.
 
 1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**. השם וסוג החיבור מתארים חיבור זה. מומלץ לבחור שם המסביר את המטרה והיעד של החיבור.
 
-1. בחר מי יכול להשתמש בחיבור זה. אם לא תנקוט שום פעולה, ברירת המחדל היא מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. בחר מי יכול להשתמש בחיבור זה. כברירת מחדל, רק מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. ספק את [מזהה החשבון של LinkedIn Campaign Manager](https://www.linkedin.com/help/lms/answer/a424270).
+1. ספק את מזהה החשבון של LinkedIn Campaign Manager.
 
-1. בחר **אני מסכים** כדי לאשר **פרטיות ותאימות נתונים**.
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
 
-1. בחר **התחבר** כדי לאתחל את החיבור ל- Campaign Monitor.
+1. בחר **התחבר** כדי לאתחל את החיבור.
 
 1. בחר **בצע אימות באמצעות LinkedIn** וספק את אישורי מנהל המערכת שלך עבור LinkedIn Campaign Manager.
 
@@ -56,29 +57,26 @@ ms.locfileid: "9050857"
 
 ## <a name="configure-an-export"></a>קביעת תצורה של ייצוא
 
-באפשרותך לקבוע תצורה של ייצוא אם יש לך גישה לחיבור מסוג זה. לקבלת מידע נוסף, ראה [הרשאות הדרושות לקביעת תצורה של ייצוא](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. עבור אל **נתונים** > **פעולות ייצוא**.
 
-1. כדי ליצור ייצוא חדש, בחר **הוסף יעד**.
+1. בחר **הוסף ייצוא**.
 
-1. בשדה **חיבור לייצוא**, בחר חיבור מתוך המקטע LinkedIn Ads. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
+1. בשדה **חיבור לייצוא**, בחר חיבור מתוך המקטע LinkedIn Ads. צור קשר עם מנהל מערכת אם אין חיבור זמין.
 
-1. בחר אם ברצונך לייצא נתונים לשימוש ב- [Contact Targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) או ב- [Company Targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) ב- LinkedIn. 
+1. הזן שם עבור הייצוא.
 
-1. למיקוד אנשי קשר, במקטע **התאמת נתונים**, בחר שדה אחד לפחות שמייצג כתובת דואר אלקטרוני של לקוח, Apple Ad ID,‏ Google Ad ID, מזהה משתמש של Google או שם פרטי ושם משפחה. אם תבחר מיקוד לחברה, בחר לפחות שדה אחד שמייצג שם חברה, תחום דואר אלקטרוני, כתובת URL של דף LinkedIn, סמל מניה או אתר אינטרנט. ניתן לבחור שדות נוספים להגדרת הייצוא. 
+1. בחר אם ברצונך לייצא נתונים לשימוש ב- [Contact Targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) או ב- [Company Targeting](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) ב- LinkedIn.
 
-1. בחר את הפלחים שברצונך לייצא. הקהלים התואמים ב- LinkedIn Campaign Manager ייווצרו באופן אוטומטי עם שם הפלחים שבחרת לייצא. לכל מקטע ייווצר קהל תואם נפרד. 
+1. למיקוד אנשי קשר, במקטע **התאמת נתונים**, בחר שדה אחד לפחות שמייצג כתובת דואר אלקטרוני של לקוח, Apple Ad ID,‏ Google Ad ID, מזהה משתמש של Google או שם פרטי ושם משפחה. אם תבחר מיקוד לחברה, בחר לפחות שדה אחד שמייצג שם חברה, תחום דואר אלקטרוני, כתובת URL של דף LinkedIn, סמל מניה או אתר אינטרנט.
 
-1. בחר **שמור**.
+1. לחלופין, הוסף שדות נוספים להגדרת הייצוא. בחר **הוסף תכונה** כדי למפות שדות אלה.
 
-שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
+1. בחר את הפלחים שברצונך לייצא. הקהלים התואמים ב- LinkedIn Campaign Manager ייווצרו באופן אוטומטי עם שם הפלחים שבחרת לייצא. לכל מקטע ייווצר קהל תואם נפרד.
 
-הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
+1. בחר **Save**.
 
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
-
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל LinkedIn Ads, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, לרבות נתונים שעשויים להיות רגישים, כגון נתונים אישיים. Microsoft תעביר נתונים כאלה בהנחייתך, אך אתה אחראי להבטיח ש- LinkedIn Ads עומד בכל מחויבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-
-מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר יעד ייצוא זה בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
+[!INCLUDE [footer-include](includes/footer-banner.md)]

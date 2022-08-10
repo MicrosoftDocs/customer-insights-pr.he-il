@@ -13,16 +13,14 @@ searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: 27dff3551ab411a12c273536d7431d651c48573e
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: a838fbdabdb3bfffc6d3835a3f0e97306a43964a
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741661"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139430"
 ---
 # <a name="remove-duplicates-before-unifying-data"></a>הסר כפילויות לפני איחוד נתונים
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 שלב זה באיחוד מאפשר לך להגדיר כללים לטיפול ברשומות כפולות בתוך ישות. *ביטול כפילות* מזהה רשומות כפולות וממזג אותן לרשומה אחת. רשומות המקור נקשרות לרשומה הממוזגת עם מזהים חלופיים. אם כללים אינם מוגדרים, כללים שמוגדרים על ידי המערכת יחולו.
 

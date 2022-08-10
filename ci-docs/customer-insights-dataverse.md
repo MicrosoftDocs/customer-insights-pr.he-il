@@ -1,7 +1,7 @@
 ---
 title: עבודה עם נתונים של Customer Insights ב- Microsoft Dataverse
 description: למד כיצד לחבר בין Customer Insights לבין Microsoft Dataverse ולהבין את ישויות הפלט שמיוצאות אל Dataverse.
-ms.date: 05/30/2022
+ms.date: 07/15/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 89ff629033230de3c6252b6a3a16816d9b3c1287
+ms.sourcegitcommit: 85b198de71ff2916fee5500ed7c37c823c889bbb
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011521"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9153405"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>עבודה עם נתונים של Customer Insights ב- Microsoft Dataverse
 
@@ -31,13 +31,25 @@ Customer Insights מספקת אפשרות להפוך ישויות פלט לזמ�
 - אף סביבה אחרת של Customer Insights לא משויכת לסביבת Dataverse שברצונך לחבר. למד כיצד [להסיר חיבור קיים לסביבת Dataverse](#remove-an-existing-connection-to-a-dataverse-environment).
 - Microsoft Dataverse סביבה יכולה להתחבר רק לחשבון אחסון יחיד. דבר זה חל רק אם אתה מגדיר את הסביבה [לשימוש ב- Azure Data Lake Storage שלך](own-data-lake-storage.md).
 
+## <a name="dataverse-storage-capacity-entitlement"></a>סביבת קיבולת אחסון של Dataverse
+
+מינוי של Customer Insights מאפשר לך לקבל קיבולת נוספת עבור [קיבולת אחסון קיימת של Dataverse](/power-platform/admin/capacity-storage) של הארגון. הקיבולת הנוספת תלויה במספר הפרופילים שבהם משתמש המינוי שלך.
+
+**דוגמה:**
+
+בהנחה שאתה מקבל אחסון בנפח ‎15 ‎GB‎ למסד נתונים ואחסון קבצים בנפח ‎20 GB‎ לכל 100,000 פרופילי לקוחות. אם המינוי שלך כולל 300,000 פרופילי לקוחות, קיבולת האחסון הכוללת תהיה ‎45 GB ‏(3 x ‏‎15 GB) לאחסון מסד נתונים ו-‎60 GB לאחסון קבצים (3 x‏ ‎20 GB). באופן דומה, אם יש לך מינוי B2B עם 30,000 חשבונות, קיבולת האחסון הכוללת תהיה ‎45 GB ‏(3 ‏x‏ ‎15 GB) אחסון מסד נתונים ו-‎60 GB לאחסון קבצים (3 x‏ ‎20 GB).
+
+קיבולת היומן אינה מצטברת וקבועה עבור הארגון שלך.
+
+לקבלת מידע נוסף על זכאויות הקיבולת המפורטות, עיין ב[מדריך הרישוי ל- Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 ## <a name="connect-a-dataverse-environment-to-customer-insights"></a>חבר סביבת Dataverse אל Customer Insights
 
 השלב של **Microsoft Dataverse** מאפשר לך לחבר את Customer Insights אל סביבת ה- Dataverse שלך תוך כדי [יצירת סביבת Customer Insights](create-environment.md).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="שיתוף נתונים עם Microsoft Dataverse מופעל אוטומטית עבור סביבות חדשות ברשת.":::
 
-מנהלי מערכת יכולים להגדיר את Customer Insights להתחבר אל סביבת Dataverse קיימת. על ידי מתן כתובת האתר לסביבת Dataverse, היא מתחברת לסביבת Customer Insights החדשה שלהם.
+מנהלי מערכת יכולים להגדיר את Customer Insights להתחבר אל סביבת Dataverse קיימת. על ידי מתן כתובת האתר לסביבת Dataverse, היא מתחברת לסביבת Customer Insights החדשה שלהם. לאחר יצירת החיבור בין Customer Insights ל- Dataverse, אל תשנה את שם הארגון עבור סביבת Dataverse. שם הארגון נמצא בשימוש בכתובת ה- URL של Dataverse ושם שונה מנתק את החיבור עם Customer Insights.
 
 אם אתה לא רוצה להשתמש בסביבת Dataverse קיימת, המערכת יוצרת סביבה חדשה עבור נתוני Customer Insights בדייר שלך. [מנהלי Power Platform יכולים לקבוע מי יכול ליצור ולנהל סביבות](/power-platform/admin/control-environment-creation). כאשר אתה מגדיר סביבת Customer Insights חדשה והמנהל המערכת השבית את היצירה של סביבות Dataverse לכולם מלבד למנהלי מערכת, ייתכן שלא תוכל ליצור סביבה חדשה.
 
@@ -84,7 +96,7 @@ Customer Insights מספקת אפשרות להפוך ישויות פלט לזמ�
 
     2. `ByolSetup.ps1`
         - דרושות לך הרשאות *בעל נתונים של Blob האחסון* ברמת גורם מכיל/חשבון האחסון על מנת להפעיל את הסקריפט הזה או שהסקריפט הזה יצור אחד עבורך. ניתן להסיר את הקצאת התפקיד שלך באופן ידני לאחר הפעלה מוצלחת של הסקריפט.
-        - סקריפט PowerShell זה מוסיף את בקרת הגישה מבוססת התפקיד הנדרשת (RBAC) עבור שירות Microsoft Dataverse  וכל אפליקציה עסקית מבוססת Dataverse. הסקריפט גם מעדכן את רשימת בקרת הגישה (ACL) בגורם המכיל של CustomerInsights עבור קבוצות האבטחה שנוצרו באמצעות הסקריפט `CreateSecurityGroups.ps1`. לקבוצה 'משתתף' תהיה הרשאת *rwx* ולקבוצת 'קוראים' תהיה הרשאת *r-x* בלבד.
+        - סקריפט PowerShell זה מוסיף את בקרת הגישה מבוססת התפקיד הנדרשת עבור שירות Microsoft Dataverse  וכל אפליקציה עסקית מבוססת Dataverse. הסקריפט גם מעדכן את רשימת בקרת הגישה (ACL) בגורם המכיל של CustomerInsights עבור קבוצות האבטחה שנוצרו באמצעות הסקריפט `CreateSecurityGroups.ps1`. לקבוצה 'משתתף' תהיה הרשאת *rwx* ולקבוצת 'קוראים' תהיה הרשאת *r-x* בלבד.
         - בצע סקריפט זה של PowerShell ב- Windows PowerShell על ידי מתן מזהה המנוי של Azure המכיל את Azure Data Lake Storage, שם חשבון האחסון, שם קבוצת משאבים וערכי מזהי קבוצות האבטחה 'קורא' ו'משתתף'. פתח את סקריפט ה- PowerShell בעורך כדי לסקור מידע נוסף ואת הלוגיקה שיושמה.
         - העתק את מחרוזת הפלט לאחר הפעלה מוצלחת של הסקריפט. מחרוזת הפלט נראית כך: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
 

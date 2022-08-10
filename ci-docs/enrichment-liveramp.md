@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 334440493c50448005ec90d0cfac11358d677b73
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 49bf558209ca91ab9d8db945862a57adccee1f6b
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081278"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196349"
 ---
 # <a name="enrich-customer-profiles-with-identity-data-from-liveramp-preview"></a>העשרת פרופילי הלקוחות בנתוני זהות מ- LiveRamp‏ (Preview)
 
@@ -59,7 +59,7 @@ LiveRamp מספק פתרון זהות לא מקוון דטרמיניסטי וא�
 
 1. בדוק את הסקירה הכללית ולאחר מכן בחר **הבא**.
 
-1. בחר את החיבור. פנה אל מנהל מערכת אם אחד לא זמין.
+1. בחר את החיבור. צור קשר עם מנהל מערכת אם אין חיבור זמין.
 
 1. בחר **הבא**.
 

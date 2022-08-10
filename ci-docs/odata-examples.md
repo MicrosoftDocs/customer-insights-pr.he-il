@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
+ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081718"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9121563"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>דוגמאות לשאילתות OData עבור ממשקי API של Customer Insights
 
@@ -23,7 +23,7 @@ ms.locfileid: "9081718"
 
 עליך לשנות את דוגמאות השאילתה כדי לגרום להם לעבוד על סביבות היעד: 
 
-- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}` כאשר {instanceId} הוא ה- GUID של סביבת Customer Insights שברצונך לבצע שאילתה. האפשרות [פעולת ListAllInstances](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) מאפשרת לך למצוא {InstanceId} שיש לך גישה אליו.
+- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` כאשר {instanceId} הוא ה- GUID של סביבת Customer Insights שברצונך לבצע שאילתה. האפשרות [פעולת ListAllInstances](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) מאפשרת לך למצוא {InstanceId} שיש לך גישה אליו.
 - {CID}: ‏GUID של רשומת לקוח מאוחדת. דוגמה:`ce759201f786d590bf2134bff576c369`.
 - {AlternateKey}: מזהה של המפתח הראשי של רשומת לקוח במקור נתונים. דוגמה: `CNTID_1002`
 - {DSname}: מחרוזת עם שם הישות של מקור נתונים שנכנסת ל-Customer Insights. דוגמה:`Website_contacts`.
@@ -39,9 +39,10 @@ ms.locfileid: "9081718"
 |מפתח חלופי    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  מפתחות חלופיים נשארים בישות הלקוח המאוחדת       |
 |בחר   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |בעוד    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
-|מפתח חלופי + In   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
+|מפתח חלופי + In   | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |חיפוש  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   מחזירה את 10 התוצאות המובילות עבור מחרוזת חיפוש      |
 |חברות בפלח  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | מחזירה מספר שורות מוגדר מראש מיישות הפילוח.      |
+|חברות בפלח עבור לקוח | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | מחזירה את פרופיל הלקוח אם הוא חבר בפלח הנתון     |
 
 ## <a name="unified-activity"></a>פעילות מאוחדת
 

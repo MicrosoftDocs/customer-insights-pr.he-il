@@ -1,50 +1,52 @@
 ---
 title: ייצוא פלחים ל- Criteo (תצוגה מקדימה)
 description: למד כיצד להגדיר את תצורת החיבור ולייצא ל- Criteo.
-ms.date: 05/27/2022
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ace9056d200a3179e442132004324a01f0d247b6
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: d7c8d6f0121fe18a6c886ba3776109a1a592ef33
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081540"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195337"
 ---
 # <a name="export-segments-to-criteo-preview"></a>ייצוא פלחים ל- Criteo (תצוגה מקדימה)
 
 יצא פלחים של פריטי unified customer profile כדי ליצור קמפיינים, לספק שיווק בדואר אלקטרוני ולהשתמש בקבוצות ספציפיות של לקוחות באמצעות Criteo.
 
-## <a name="prerequisites-for-connection"></a>דרישות מוקדמות לחיבור
+## <a name="prerequisites"></a>‏‫דרישות מוקדמות‬
 
--   יש לך [חשבון Criteo Dynamics Retargeting](https://www.criteo.com/login/) ואישורי מנהל מערכת התואמים.
--   יש לך [פלחים מוגדרים](segments.md).
--   פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדה המייצג כתובת דוא"ל.
+- [חשבון Criteo Dynamics Retargeting](https://www.criteo.com/login/) ואישורי מנהל מערכת תואמים.
+- [פלחים מוגדרים](segments.md).
+- פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדה המייצג כתובת דוא"ל.
 
-## <a name="known-limitations"></a>מגבלות ידועות
+## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
-- עד מיליון פרופילי לקוחות בכל ייצוא אל Criteo.
-- הייצוא ל- Criteo מוגבל לפלחים.
-- ייצוא פלחים עם מספר כולל של מיליון פרופילי לקוחות עשוי להימשך עד 30 דקות. 
-- מספר פרופילי הלקוחות שתוכל לייצא אל Criteo תלוי בחוזה שלך עם Criteo ומוגבל בהתאם לתנאיו.
+- עד מיליון פרופילי לקוחות לכל ייצוא אל Campaign Monitor. השלמת פעולה זו עשויה להימשך עד 30 דקות. מספר פרופילי הלקוחות שתוכל לייצא אל Criteo תלוי בחוזה שלך עם Criteo.
+- פלחים בלבד.
 
 ## <a name="set-up-connection-to-criteo"></a>הגדרת חיבור ל- Criteo
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. עבור אל **ניהול** > **חיבורים**.
 
-1. בחר **הוסף חיבור** ובחר **Criteo** כדי להגדיר את החיבור.
+1. בחר **הוסף חיבור** ובחר **Criteo**.
 
 1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**. השם וסוג החיבור מתארים חיבור זה. מומלץ לבחור שם המסביר את המטרה והיעד של החיבור.
 
-1. בחר מי יכול להשתמש בחיבור זה. אם לא תנקוט שום פעולה, ברירת המחדל תהיה מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. בחר מי יכול להשתמש בחיבור זה. כברירת מחדל, רק מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. בחר **אני מסכים** כדי לאשר את **פרטיות נתונים ותאימות** ובחר **חיבור** כדי לאתחל את החיבור ל- Criteo.
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
 
-1. בחר **אימות באמצעות Criteo** וספק את שם המשתמש והאישורים שלך כמנהל המערכת עבור Criteo. 
+1. בחר **התחבר** כדי לאתחל את החיבור.
+
+1. בחר **אימות באמצעות Criteo** וספק את שם המשתמש והאישורים שלך כמנהל המערכת עבור Criteo.
 
 1. בחר **הוסף את עצמך כמשתמש ייצוא** וספק את אישורי Customer Insights שלך.
 
@@ -52,30 +54,24 @@ ms.locfileid: "9081540"
 
 ## <a name="configure-an-export"></a>קביעת תצורה של ייצוא
 
-באפשרותך לקבוע תצורת ייצוא זה אם יש לך גישה לחיבור מסוג זה. לקבלת מידע נוסף, ראה [הרשאות הדרושות לקביעת תצורה של ייצוא](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. עבור אל **נתונים** > **פעולות ייצוא**.
 
-1. כדי ליצור ייצוא חדש, בחר **הוסף יעד**.
+1. בחר **הוסף ייצוא**.
 
-1. בשדה **חיבור עבור ייצוא**, בחר חיבור מתוך מקטע Criteo. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך. 
+1. בשדה **חיבור עבור ייצוא**, בחר חיבור מתוך מקטע Criteo. צור קשר עם מנהל מערכת אם אין חיבור זמין.
 
-1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. 
+1. הזן שם עבור הייצוא.
 
-1. לחלופין, אתה יכול לייצא **מזהה מפרסם** ו **שם**
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח.
 
-1. בחר את הפלחים שברצונך לייצא. 
+1. לחלופין, יצא **מזהה מפרסם** ו **שם**
+
+1. בחר את הפלחים שברצונך לייצא.
 
 1. בחר **Save**.
 
-שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
-
-## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
-
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל Criteo, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אך אתה אחראי להבטיח ש- Criteo עומד בכל מחויבויות הפרטיות או האבטחה שלקחת על עצמך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-מנהל המערכת של Dynamics 365 Customer Insights שלך יכול להסיר יעד ייצוא זה בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]

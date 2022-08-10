@@ -11,16 +11,14 @@ manager: shellyha
 searchScope:
 - ci-map
 - customerInsights
-ms.openlocfilehash: 0dbc3b2c75365e94758a1b6330e8cb557e6bd768
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 766e688cb80c50a0d620943f87b76eb84a2fb89a
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081293"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139492"
 ---
 # <a name="data-unification-overview"></a>מבט כולל על איחוד נתונים
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 לאחר [הגדרת מקורות הנתונים](data-sources.md), באפשרותך לאחד את הנתונים. איחוד נתונים מאפשר לך לאחד מקורות נתונים שהיו נבדלים פעם אחת לתוך ערכת נתונים ראשית המספקת תצוגה אחידה של הנתונים הללו. עבור צרכנים בודדים (B-to-C) שבהם הנתונים מרוכזים סביב יחידים, איחוד מספק תצוגה אחידה של הלקוחות שלך. עבור תיקי לקוחות עסקיים (B-to-B) שבהם הנתונים מרוכזים סביב תיקי לקוחות, איחוד מספק תצוגה אחידה של תיקי הלקוחות שלך.
 

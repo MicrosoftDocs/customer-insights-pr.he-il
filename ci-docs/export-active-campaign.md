@@ -1,51 +1,54 @@
 ---
 title: ייצא פלחים אל ActiveCampaign
 description: למד כיצד להגדיר את החיבור ולייצא ל- ActiveCampaign.
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: eb6f2bb69bb30c319e17390562b3f33512f33ff1
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 178d2df8edf1abcec72664e19d73a88f2b97f12d
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054709"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195567"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>ייצוא פלחים ל- ActiveCampaign‏ (Preview)
 
 ייצא פלחים של פרופילי לקוחות מאוחדים ל- ActiveCampaign והשתמש בהם לצורך פעילויות שיווק.
 
-## <a name="prerequisites"></a>דרישות מוקדמות
+## <a name="prerequisites"></a>‏‫דרישות מוקדמות‬
 
-- יש לך [חשבון ActiveCampaign](https://www.activecampaign.com/) ואישורי מנהל מערכת תואמים.
-- יש לך הרשאות [פלחים מוגדרים](segments.md) ב- Customer Insights.
-- פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדה עם כתובת דואר אלקטרוני.
+- [חשבון ActiveCampaign](https://www.activecampaign.com/) ואישורי מנהל מערכת תואמים.
+- [מזהה רשימה של ActiveCampaign](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).
+- [מפתח API של ActiveCampaign](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key) ושם מארח של נקודת קצה של REST.
+- [פלחים מוגדרים](segments.md) ב- Customer Insights.
+- פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדה המייצג כתובת דוא"ל.
 
-## <a name="known-limitations"></a>מגבלות ידועות
+## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
-- באפשרותך לייצא עד מיליון פרופילי לקוחות בכל ייצוא אל ActiveCampaign ופעולה זו עשויה להימשך עד 90 דקות.
-- הייצוא ל- ActiveCampaign מוגבל לפלחים.
-- מספר פרופילי הלקוחות שתוכל לייצא אל ActiveCampaign תלוי בחוזה שלך עם ActiveCampaign.
+- עד מיליון פרופילי לקוחות לכל ייצוא אל ActiveCampaign. השלמת פעולה זו עשויה להימשך עד 90 דקות. מספר פרופילי הלקוחות שתוכל לייצא אל ActiveCampaign תלוי בחוזה שלך עם ActiveCampaign.
+- פלחים בלבד.
 
 ## <a name="set-up-connection-to-activecampaign"></a>הגדר חיבור ל- ActiveCampaign
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. עבור אל **ניהול** > **חיבורים**.
 
-1. בחר **הוסף חיבור** ולאחר מכן בחר **ActiveCampaign** כדי להגדיר את החיבור.
+1. בחר **הוסף חיבור** ובחר **ActiveCampaign**.
 
 1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**. השם וסוג החיבור מתארים חיבור זה. מומלץ לבחור שם המסביר את המטרה והיעד של החיבור.
 
 1. בחר מי יכול להשתמש בחיבור זה. כברירת מחדל, רק מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. הזן את [מפתח API של ActiveCampaign ואת שם המחשב המארח של נקודת הקצה של REST](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key). שם המארח של נקודת הקצה REST הוא שם המארח בלבד, ללא https://. 
+1. הזן את מפתח API של ActiveCampaign ואת שם המחשב המארח של נקודת הקצה של REST. שם המארח של נקודת הקצה REST הוא שם המארח בלבד, ללא https://.
 
-1. בחר **אני מסכים** כדי לאשר **פרטיות ותאימות נתונים**.
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
 
-1. בחר **התחבר** כדי לאתחל את החיבור ל- ActiveCampaign.
+1. בחר **התחבר** כדי לאתחל את החיבור.
 
 1. בחר **הוסף את עצמך כמשתמש ייצוא** וספק את אישורי Customer Insights שלך.
 
@@ -53,27 +56,26 @@ ms.locfileid: "9054709"
 
 ## <a name="configure-an-export"></a>קביעת תצורה של ייצוא
 
-באפשרותך לקבוע תצורה של ייצוא אם יש לך גישה לחיבור מסוג זה. לקבלת מידע נוסף, ראה [הרשאות הדרושות לקביעת תצורה של ייצוא](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. עבור אל **נתונים** > **פעולות ייצוא**.
 
-1. כדי ליצור ייצוא חדש, בחר **הוסף יעד**.
+1. בחר **הוסף ייצוא**.
 
-1. בשדה **חיבור לייצוא**, בחר חיבור מהמקטע ActiveCampaign. אם אינך רואה שם מקטע זה, אין חיבורים מסוג זה הזמינים עבורך.
+1. בשדה **חיבור לייצוא**, בחר חיבור מהמקטע ActiveCampaign. צור קשר עם מנהל מערכת אם אין חיבור זמין.
 
-1. הזן את [**מזהה רשימת ActiveCampaign**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign) שלך.    
+1. הזן שם עבור הייצוא.
 
-1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח. זה נדרש כדי לייצא פלחים ל- ActiveCampaign. לחלופין, אתה יכול לייצא שם פרטי, שם משפחה, וטלפון ליצירת הודעות דואר אלקטרוני מותאמות אישית יותר. בחר הוסף תכונה כדי למפות שדות אלה.
+1. הזן את **מזהה רשימת ActiveCampaign** שלך.
 
-1. בחר **שמור**.
+1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח.
 
-שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
+1. לחלופין, יצא **שם פרטי**, **שם משפחה** ו **טלפון** ליצירת הודעות דואר אלקטרוני מותאמות אישית יותר. בחר **הוסף תכונה** כדי למפות שדות אלה.
 
-הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
+1. בחר את הפלחים שברצונך לייצא.
 
+1. בחר **Save**.
 
-## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים ל- ActiveCampaign, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעלולים להיות רגישים, כגון נתונים אישיים. Microsoft תעביר נתונים כאלה בהוראתך, אבל אתה אחראי להבטיח ש- ActiveCampaign עומדת בכל התחייבויות הפרטיות והאבטחה שלך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-
-מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר יעד ייצוא זה בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
+[!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 81ef6c62240e26cb5c9475e6306e08edc7e5eb31
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081332"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195797"
 ---
 # <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>העשרת פרופילי לקוחות באמצעות יבוא מותאם אישית של SFTP ‏(Preview)
 
@@ -104,7 +104,7 @@ ms.locfileid: "9081332"
 
 1. בדוק את הסקירה הכללית ולאחר מכן בחר **הבא**.
 
-1. בחר את החיבור. פנה אל מנהל מערכת אם אחד לא זמין.
+1. בחר את החיבור. צור קשר עם מנהל מערכת אם אין חיבור זמין.
 
 1. בחר את **ערכת הנתונים של הלקוח** ולאחר בחר בפרופיל או בפלח שברצונך להעשיר. הישות *לקוח* מעשיר את כל פרופילי הלקוחות שלך בעוד שפלח מעשיר רק פרופילי לקוחות הנכללים באותו פלח.
 

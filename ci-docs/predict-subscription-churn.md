@@ -8,12 +8,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 415cd5d675512b4f434998afaa8265c8e45c562b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 72aa38242df21181f142833db03c825574455986
+ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647333"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171050"
 ---
 # <a name="subscription-churn-prediction"></a>חיזור נטישת מנוי
 
@@ -121,7 +121,7 @@ ms.locfileid: "8647333"
    - **שם חיזוי:** שם החיזוי שניתן בעת היצירה.
    - **סוג חיזוי:** סוג המודל המשמש לחיזוי
    - **ישות פלט:** שם הישות לאחסון פלט החיזוי. אתה יכול למצוא ישות עם שם זה ב- **נתונים** > **ישויות**.    
-     בישות הפלט, *ChurnScore* הוא ההסתברות החזויה לנטישה ו- *IsChurn* הוא תווית בינארית המבוססת על *ChurnScore* עם ערך סף של 0.5. ייתכן שערך הסף של ברירת המחדל לא יפעל עבור התרחיש שלך. [צור פלח חדש](segments.md#create-a-new-segment) עם ערך הסף המועדף עליך.
+     בישות הפלט, *ChurnScore* הוא ההסתברות החזויה לנטישה ו- *IsChurn* הוא תווית בינארית המבוססת על *ChurnScore* עם ערך סף של 0.5. ייתכן שערך הסף של ברירת המחדל לא יפעל עבור התרחיש שלך. [צור פלח חדש](segments.md#create-a-segment) עם ערך הסף המועדף עליך.
    - **שדה חזוי:** שדה זה מאוכלס רק בסוגים מסוימים של חיזויים, ואינו משמש בחיזוי נטישת מנויים.
    - **מצב:** המצב הנוכחי של הפעלת החיזוי.
         - **בתור:** החיזוי ממתין כרגע לתהליכים אחרים שיפעלו.

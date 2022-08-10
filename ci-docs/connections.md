@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: a8b4b8a9bdcf7cf43c47a67d547405dd20dad60d
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 4a0bc5dd4100b462a26660a0c51fda1fe92b6bb9
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081239"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195175"
 ---
 # <a name="connections-preview-overview"></a>מבט כולל על חיבורים (Preview)
 
@@ -27,6 +27,12 @@ ms.locfileid: "9081239"
 הכרטיסיה **חיבורים** מציגה לך את כל החיבורים הפעילים. הרשימה מציגה שורה לכל חיבור.
 
 קבל סקירה מהירה, תיאור, וגלה מה באפשרותך לעשות עם כל אפשרות הרחבה בכרטיסיה **גילוי**.
+
+## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
+
+כאשר אתה מאפשר ל- Dynamics 365 Customer Insights לשדר נתונים אל גורמי צד שלישי או למוצרי Microsoft אחרים, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, לרבות נתונים שעשויים להיות רגישים, כגון נתונים אישיים. Microsoft תעביר נתונים אלה בהוראתך, אבל אתה אחראי לוודא שהצד השלישי עומד בכל התחייבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
+
+מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר את החיבור בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
 
 ## <a name="exports"></a>פעולות ייצוא
 
@@ -41,8 +47,6 @@ ms.locfileid: "9081239"
 כדי להוסיף חיבורים, אתה זקוק ל[הרשאות מנהל מערכת](permissions.md). אם אתה מתחבר לשירותים אחרים של Microsoft, אנחנו מניחים ששני השירותים הם באותו ארגון.
 
 1. עבור אל **ניהול** > **חיבורים (preview)**.
-
-1. עבור לכרטיסיה **חיבורים**.
 
 1. בחר **הוסף חיבור** כדי ליצור חיבור חדש. בחר מהתפריט הנפתח את סוג החיבור שברצונך ליצור.
 
@@ -99,3 +103,5 @@ ms.locfileid: "9081239"
 ## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>הגדרת חיבורים עם סודות שמנוהלים על-ידי Key Vault שלך
 
 חלק מהחיבורים זקוקים לסודות כמו מפתחות API או סיסמאות. חלק מהחיבורים תומכים בסודות שמאוחסנים ב- Key Vault משלך. למידע נוסף על חיבורים נתמכים וכיצד להגדיר [Key Vault משלך עבור Customer Insights](use-azure-key-vault.md).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

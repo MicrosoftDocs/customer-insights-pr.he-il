@@ -1,7 +1,7 @@
 ---
 title: חיבור לתיקיה של Common Data Model באמצעות חשבון Azure Data Lake
 description: עבוד עם נתונים של Common Data Model באמצעות Azure Data Lake Storage.
-ms.date: 05/30/2022
+ms.date: 07/27/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: b1cdcb46df17d722ad49d361ae4c7ab34c83eeb1
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: e071bf9364b44a92d81c9ff2269ff4e8654010aa
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081311"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207000"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>התחבר לנתונים ב- Azure Data Lake Storage
 
@@ -82,7 +82,7 @@ ms.locfileid: "9081311"
    :::image type="content" source="media/ADLS_required.png" alt-text="תיבת דו-שיח המציגה דרוש עבור מפתח ראשי":::
 
    > [!TIP]
-   > כדי לערוך את הישויות בממשק עריכת JSON, בחר **הצג עוד** > **ערוך קובץ סכימה**. ערוך שינויים ובחר **שמור**.
+   > כדי לערוך ישות בממשק עריכת JSON, בחר את הישות ולאחר מכן **ערוך קובץ סכימה**. ערוך שינויים ובחר **שמור**.
 
 1. עבור ישויות נבחרות הדורשות עיבוד מצטבר, המילה **נדרש** מוצגת מתחת ל **רענון מצטבר**. עבור כל אחת מהישויות הללו, ראה [הגדר רענון מצטבר עבור מקורות נתונים של Azure Data Lake](incremental-refresh-data-sources.md).
 
@@ -101,6 +101,10 @@ ms.locfileid: "9081311"
    1. בחר **סיום**.
 
 1. בחר **Save**. הדף **מקורות נתונים** נפתח ומציג את מקור נתונים החדש במצב **ריענון**.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+טעינת נתונים עשויה להימשך זמן מה. לאחר רענון מוצלח, ניתן לסקור את הנתונים שעובדו בדף [**ישויות**](entities.md).
 
 ### <a name="create-a-new-schema-file"></a>צור קובץ סכימה חדש
 
@@ -148,6 +152,9 @@ ms.locfileid: "9081311"
 
 1. בחר **Save**. הדף **מקורות נתונים** נפתח ומציג את מקור נתונים החדש במצב **ריענון**.
 
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+טעינת נתונים עשויה להימשך זמן מה. לאחר רענון מוצלח, ניתן לסקור את הנתונים שעובדו בדף [**ישויות**](entities.md).
 
 ## <a name="edit-an-azure-data-lake-storage-data-source"></a>ערוך מקור נתונים של Azure Data Lake Storage
 
@@ -179,8 +186,16 @@ ms.locfileid: "9081311"
       > [!IMPORTANT]
       > אם קיימים יחסי תלות בקובץ model.json או manifest.json הקיים ובערכת הישויות, תראה הודעת שגיאה ולא תוכל לבחור קובץ model.json או manifest.json אחר. הסר יחסי תלות אלה לפני שינוי הקובץ model.json או manifest.json או צור מקור נתונים חדש עם קובץ model.json או manifest.json שבו ברצונך להשתמש כדי להימנע מהסרת יחסי התלות.
    - כדי לשנות את מיקום קובץ הנתונים או את המפתח הראשי, בחר **עריכה**.
-   - כדי לשנות את נתוני המצטברים לעיבוד, ראה [הגדר רענון מצטבר עבור מקורות נתונים של Azure Data Lake](incremental-refresh-data-sources.md)
+   - כדי לשנות את נתוני המצטברים לעיבוד, ראה [הגדר רענון מצטבר עבור מקורות נתונים של Azure Data Lake](incremental-refresh-data-sources.md).
+   - שנה רק את שם הישות כך שיתאים לשם הישות בקובץ ה-json.
+
+     > [!NOTE]
+     > הקפד להשאיר את שם הישות ב- Customer Insights כמו שם הישות בתוך הקובץ model.json או manifest.json לאחר הקליטה. Customer Insights מאמת את כל שמות הישויות באמצעות model.json או manifest.json במהלך כל רענון מערכת. אם שם ישות משתנה בתוך Customer Insights או מחוצה לו, מתרחשת שגיאה מכיוון ש- Customer Insights לא יכול למצוא את שם הישות החדשה בקובץ ה-json. אם שם ישות שנקלט שונה בטעות, ערוך את שם הישות ב- Customer Insights כך שיתאים לשם בקובץ ה-json.
 
 1. בחר **תכונות** כדי להוסיף או לשנות תכונות, או לאפשר יצירת פרופיל נתונים. לאחר מכן, בחר **בוצע**.
 
 1. יש ללחוץ על **שמור** כדי להחיל את השינויים ולחזור לדף **מקורות נתונים**.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

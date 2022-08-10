@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b58532a541ee22a5e34d0af1a3334ccbd53627b2
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 3f23fe7177f931db3e3179970915d0cd3c736f87
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081350"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196211"
 ---
 # <a name="enrich-company-profiles-with-leadspace-preview"></a>העשרת פרופילי החברה באמצעות Leadspace ‏(Preview)‏
 
@@ -54,7 +54,7 @@ Leadspace היא חברת מדע נתונים שמספקת פלטפורמת נת
 
 1. בדוק את הסקירה הכללית ולאחר מכן בחר **הבא**.
 
-1. בחר את החיבור. פנה אל מנהל מערכת אם אחד לא זמין.
+1. בחר את החיבור. צור קשר עם מנהל מערכת אם אין חיבור זמין.
 
 1. בחר **הבא**.
 

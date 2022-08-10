@@ -1,31 +1,31 @@
 ---
 title: יצוא פלחי Customer Insights אל Adobe Campaign Standard‏(Preview‏)
 description: למד כיצד להשתמש ב- Customer Insights בפלחים ב- Adobe Campaign Standard.
-ms.date: 03/29/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 9915591cd969bf825f5d1669de43ed4f9953f898
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 834880cac9c5023157983081ff2513d9b051491f
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081347"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195521"
 ---
 # <a name="export-customer-insights-segments-to-adobe-campaign-standard-preview"></a>יצוא פלחי Customer Insights אל Adobe Campaign Standard‏(Preview‏)
 
-בתור משתמש Dynamics 365 Customer Insights, ייתכן שיצרת פלחים כדי להפוך את הקמפיינים השיווקיים שלך ליעילים יותר על ידי כיוון לקהלים רלוונטיים. כדי להשתמש בפלח מתוך Customer Insights ב- Adobe Experience Platform באפליקציות כמו Adobe Campaign Standard, עליך לבצע מספר שלבים המתוארים במאמר זה.
+יצא פלחים המתמקדים בקהלים רלוונטיים אל Adobe Campaign Standard.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="תרשים התהליך של השלבים המתוארים במאמר זה.":::
 
-## <a name="prerequisites"></a>דרישות מוקדמות
+## <a name="prerequisites"></a>‏‫דרישות מוקדמות‬
 
-- רשיון Dynamics 365 Customer Insights
-- רישיון Adobe Campaign Standard
-- חשבון אחסון Blob של Azure
+- רישיון ל- Adobe Campaign Standard.
+- שם [חשבון Azure Blob Storage](/azure/storage/blobs/create-data-lake-storage-account) ומפתח חשבון. כדי לחפש את השם ואת המפתח, ראה [ניהול הגדרות של חשבון אחסון בפורטל Azure](/azure/storage/common/storage-account-manage).
+- [גורם מכיל של Azure Blob Storage](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container)
 
 ## <a name="campaign-overview"></a>מבט כולל על קמפיין
 
@@ -37,7 +37,7 @@ ms.locfileid: "9081347"
 
 ## <a name="identify-your-target-audience"></a>זיהוי קהל היעד שלך
 
-בתרחיש שלנו, אנו מניחים שכתובות האימייל של הלקוחות זמינות והעדפות הקידום שלהם נותחו כדי לזהות חברים בפלח.
+בתרחיש שלנו, אנו מניחים שכתובות האימייל של הלקוחות זמינות ב-Customer Insights והעדפות הקידום שלהם נותחו כדי לזהות חברים בפלח.
 
 [הפלח שהגדרת ב- Customer Insights](segments.md) נקרא **ChurnProneCustomers** ואתה מתכנן לשלוח ללקוחות אלה את קידום המכירות בדואר אלקטרוני.
 
@@ -47,39 +47,37 @@ ms.locfileid: "9081347"
 
 ## <a name="export-your-target-audience"></a>ייצוא קהל היעד שלך
 
-### <a name="configure-a-connection"></a>קביעת תצורה של חיבור
+### <a name="set-up-connection-to-adobe-campaign"></a>הגדרת חיבור ל- Adobe Campaign
 
-עם זיהוי היעד קהל שלנו, אנו יכולים להגדיר את הייצוא לחשבון Azure Blob Storage.
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
-1. ב- Customer Insights, עבור אל **מנהל מערכת** > **חיבורים**.
+1. עבור אל **ניהול** > **חיבורים**.
 
-1. בחר **הוסף חיבור** ובחר **Adobe Campaign** כדי לקבוע את תצורת החיבור או בחר **הגדר** באריח **Adobe Campaign**.
-
-   :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="אריח תצורה עבור Adobe Campaign Standard.":::
+1. בחר **הוסף חיבור** ובחר **Adobe Campaign**.
 
 1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**. השם וסוג החיבור מתארים חיבור זה. מומלץ לבחור שם המסביר את המטרה והיעד של החיבור.
 
-1. בחר מי יכול להשתמש בחיבור זה. אם לא תנקוט שום פעולה, ברירת המחדל תהיה מנהלי מערכת. לקבלת מידע נוסף, ראה [הרשאות הדרושות לקביעת תצורה של ייצוא](export-destinations.md#set-up-a-new-export).
+1. בחר מי יכול להשתמש בחיבור זה. כברירת מחדל, רק מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. הזן את **שם חשבון**, **מפתח חשבון** ו **גורם מכיל** של חשבון אחסון Blob של Azure שלך שאליו ברצונך לייצא את הפלח.  
-      
-   :::image type="content" source="media/azure-blob-configuration.png" alt-text="צילום מסך של תצורת חשבון האחסון. "::: 
+1. הזן **שם חשבון**, **מפתח חשבון**, ו **גורם מכיל** עבור חשבון Blob Storage שלך.  
 
-   - כדי לקבל מידע נוסף אודות אופן מציאת שם החשבון ומפתח החשבון של Azure Blob Storage, ראה [ניהול הגדרות חשבון אחסון בפורטל Azure](/azure/storage/common/storage-account-manage).
+   :::image type="content" source="media/azure-blob-configuration.png" alt-text="צילום מסך של תצורת חשבון האחסון. ":::
 
-   - כדי ללמוד כיצד ליצור גורם מכיל, ראה [יצירת גורם מכיל](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
 
 1. בחר **שמור** כדי להשלים את החיבור.
 
 ### <a name="configure-an-export"></a>קביעת תצורה של ייצוא
 
-באפשרותך לקבוע תצורת ייצוא זה אם יש לך גישה לחיבור מסוג זה. לקבלת מידע נוסף, ראה [הרשאות הדרושות לקביעת תצורה של ייצוא](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. עבור אל **נתונים** > **פעולות ייצוא**.
 
-1. כדי ליצור ייצוא חדש, בחר **הוסף ייצוא**.
+1. בחר **הוסף ייצוא**.
 
-1. בשדה **חיבור לייצוא**, בחר חיבור מהמקטע Adobe Campaign section. אם אינך רואה את שם הפלח הזה, אין קשרים זמינים עבורך מסוג זה.
+1. בשדה **חיבור לייצוא**, בחר חיבור מהמקטע Adobe Campaign section. צור קשר עם מנהל מערכת אם אין חיבור זמין.
+
+1. הזן שם עבור הייצוא.
 
 1. בחר את הפלח שברצונך לייצא. בדוגמה זו, זהו **ChurnProneCustomers**.
 
@@ -87,7 +85,7 @@ ms.locfileid: "9081347"
 
 1. בחר **הבא**.
 
-1. כעת אנו ממפים את השדות **מקור** מהמקטע Customer Insights שמות של שדות ה **יעד** סכמת הפרופיל של  Adobe Campaign Standard.
+1. מפה את השדות **מקור** מהמקטע Customer Insights שמות של שדות ה **יעד** סכמת הפרופיל של  Adobe Campaign Standard.
 
    :::image type="content" source="media/ACS-field-mapping.png" alt-text="מיפוי שדות עבור מחבר Adobe Campaign Standard.":::
 
@@ -98,34 +96,28 @@ ms.locfileid: "9081347"
 
 1. בחר **Save**.
 
-לאחר שמירת יעד הייצוא, תמצא אותו תחת **נתונים** > **פעולות ייצוא**.
-
-כעת באפשרותך [לייצא את הפלח לפי דרישה](export-destinations.md#run-exports-on-demand). הייצוא יפעל גם בכל [רענון מתוזמן](system.md).
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 > [!NOTE]
 > ודא שמספר הרשומות בפלח המיוצא נמצאים במגבלת הרישיון שלך ל- Adobe Campaign Standard license.
 
-הנתונים המיוצאים מאוחסנים בגורם המכיל של Azure Blob Storage שהגדרת לעיל. נתיב התיקיה הבא נוצר אוטומטית בגורם המכיל שלך:
-
-*%ContainerName%/CustomerInsights_%instanceID%/% exportdestination-name%_%segmentname%_%timestamp%.csv*
+הנתונים המיוצאים מאוחסנים בגורם המכיל של Azure Blob Storage שהגדרת לעיל. נתיב התיקיה הבא נוצר אוטומטית בגורם המכיל שלך: *%ContainerName%/CustomerInsights_%instanceID%/% exportdestination-name%_%segmentname%_%timestamp%.csv*
 
 דוגמה: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo_ChurnProneCustomers_1613059542.csv
 
 ## <a name="configure-adobe-campaign-standard"></a>הגדר Adobe Campaign Standard
 
-פלחים מיוצאים מכילים את העמודות שבחרת בעת הגדרת יעד הייצוא בשלב הקודם. ניתן להשתמש בנתונים אלה בכדי [ליצור פרופילים ב-Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/about-profiles.html#managing-profiles).
+פלחים מיוצאים מכילים את העמודות שבחרת בעת הגדרת התצורה של הייצוא. ניתן להשתמש בנתונים אלה בכדי [ליצור פרופילים ב-Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/about-profiles.html#managing-profiles).
 
-כדי להשתמש בפל ב-Adobe Campaign Standard, עלינו להרחיב את סכמת הפרופיל ב-Adobe Campaign Standardשתכלול שני שדות נוספים. למד איך[להרחיב את משאב הפרופיל](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) עם שדות חדשים ב-Adobe Campaign Standard.
+כדי להשתמש בפלח ב- Adobe Campaign Standard, [הרחב את סכימת הפרופיל](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) ב- Adobe Campaign Standard כדי לכלול שני שדות נוספים.
 
-בדוגמה שלנו, שדות אלה הם *שם פלח ותאריך פלח (אופציונלי)*.
+בדוגמה שלנו, שדות אלה הם 'שם פלח' ו'תאריך פלח'. נשתמש בשדות אלה כדי לזהות את הפרופילים ב- Adobe Campaign Standard שאותם אנו רוצים למקד לקמפיין זה.
 
-נשתמש בשדות אלה כדי לזהות את הפרופילים ב- Adobe Campaign Standard שאותם אנו רוצים למקד לקמפיין זה.
-
-אם אין רשומות אחרות ב-Adobe Campaign Standard, מלבד מה שאתה עומד לייבא, תוכל לדלג על צעד זה.
+אם אין רשומות אחרות ב-Adobe Campaign Standard, מלבד מה שאתה עומד לייבא, דלג על שלב זה.
 
 ## <a name="import-data-into-adobe-campaign-standard"></a>ייבא נתונים אל Adobe Campaign Standard
 
-כעת כשהכל במקום, עלינו לייבא את נתוני קהל המוכנים מ- Customer Insights לתוך Adobe Campaign Standard ליצירת פרופילים. תלמד [כיצד לייבא פרופילים ב- Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) באמצעות תזרים עבודה.
+יבר את נתוני הקהל המוכנים מ-Customer Insights אל Adobe Campaign Standard כדי [ליצור פרופילים באמצעות זרימת עבודה](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences).
 
 זרימת העבודה של הייבוא בתמונה למטה הוגדרה לפעול כל שמונה שעות ולחפש מקטעי Customer Insights מיוצאים (קובץ ‏csv. ב- Azure Blob Storage). זרימת העבודה מחלצת את תוכן קובץ ה- ‎.csv בסדר עמודות שצוין. תזרים עבודה זה נבנה בכדי לבצע טיפול בסיסי בשגיאות ולוודא שלכל רשומה יש כתובת דוא"ל לפני ייבוש הנתונים ב-Adobe Campaign Standard. תזרים העבודה גם מחלץ את שם הפלח משם הקובץ לפני ביצוע Upsert לנתוני פרופיל Adobe Campaign Standard.
 
@@ -133,10 +125,12 @@ ms.locfileid: "9081347"
 
 ## <a name="retrieve-the-audience-in-adobe-campaign-standard"></a>אחזר את הקהל ב-Adobe Campaign Standard
 
-לאחר ייבוא הנתונים ל-Adobe Campaign Standard, אתה [יכול ליצור תזרים עבודה](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-general-operation/building-a-workflow.html#managing-processes-and-data) וגם [לשאול](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/targeting-activities/query.html#managing-processes-and-data) את הלקוחות על בסיס *שם הפלח* ו-*תאריך פילוח* כדי לבחור פרופילים שזוהו הקמפיין לדוגמה שלנו.
+לאחר ייבוא הנתונים אל Adobe Campaign Standard, [צור זרימת עבודה](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-general-operation/building-a-workflow.html#managing-processes-and-data) ושלח [שאילתה](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/targeting-activities/query.html#managing-processes-and-data) על הלקוחות בהתאם ל'שם פלח' ול'תאריך פלח' כדי לבחור פרופילים שזוהו עבור הקמפיין לדוגמה שלנו.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>צור ושלח את הדוא"ל באמצעות Adobe Campaign Standard
 
 צור את תוכן הדואר ולאחר מכן [בדוק ושלח](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) את הדואר שלך.
 
 :::image type="content" source="media/contoso-sample-email.jpg" alt-text="דוגמא לדואר אלקטרוני עם הצעת חידוש מאת Adobe Campaign Standard.":::
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

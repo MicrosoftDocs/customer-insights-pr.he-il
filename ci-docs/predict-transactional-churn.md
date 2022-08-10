@@ -8,12 +8,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: e55ca8c6926fa0bda05aaf52fd799ca25f7f585f
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b8216b5a739964fdfff8cad7e6d6d7ce3f5308b5
+ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647493"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171096"
 ---
 # <a name="transaction-churn-prediction"></a>חיזוי נטישה של עסקאות
 
@@ -240,7 +240,7 @@ ms.locfileid: "8647493"
    - **שם חיזוי**: שם החיזוי שסופק בעת יצירתו.
    - **סוג חיזוי**: סוג המודל המשמש עבור החיזוי
    - **ישות פלט**: שם הישות לאחסון פלט החיזוי. אתה יכול למצוא ישות עם שם זה ב- **נתונים** > **ישויות**.
-     בישות הפלט, *ChurnScore* הוא ההסתברות החזויה לנטישה ו- *IsChurn* הוא תווית בינארית המבוססת על *ChurnScore* עם ערך סף של 0.5. ייתכן שערך הסף של ברירת המחדל לא יפעל עבור התרחיש שלך. [צור פלח חדש](segments.md#create-a-new-segment) עם ערך הסף המועדף עליך.
+     בישות הפלט, *ChurnScore* הוא ההסתברות החזויה לנטישה ו- *IsChurn* הוא תווית בינארית המבוססת על *ChurnScore* עם ערך סף של 0.5. ייתכן שערך הסף של ברירת המחדל לא יפעל עבור התרחיש שלך. [צור פלח חדש](segments.md#create-a-segment) עם ערך הסף המועדף עליך.
      לא כל הלקוחות הם בהכרח לקוחות פעילים. ייתכן שלחלקם לא הייתה פעילות במשך זמן רב והם נחשבים כבר ללקוחות שנטשו, בהתבסס על הגדרת הנטישה שלך. חיזוי סיכון הנטישה עבור לקוחות שכבר נטשו אינו שימושי משום שהם לא קהל העניין.
    - **שדה חזוי**: שדה זה מאוכלס רק עבור סוגים מסוימים של תחזיות, ואינו משמש בחיזוי נטישות.
    - **מצב**: מצב הפעלת החיזוי.

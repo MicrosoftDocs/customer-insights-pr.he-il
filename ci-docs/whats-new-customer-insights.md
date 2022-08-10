@@ -1,28 +1,56 @@
 ---
 title: מה חדש ב- Dynamics 365 Customer Insights
 description: מידע על תכונות חדשות, שיפורים ותיקוני באגים.
-ms.date: 06/02/2022
+ms.date: 06/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 4b5b95d1774d22827b3c08c2b6ccbb7858f1b04b
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f3ae0fe6631ee7c8d79664528be383ec53e93fe8
+ms.sourcegitcommit: 92e5a798ca75c7f10aa5025a9bbd2ffb4d4ae7d2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054019"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114247"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>מה חדש ב- Dynamics 365 Customer Insights
 
 אנו גאים להכריז על העדכונים החדשים ביותר שלנו! מאמר זה מסכם תכונות של Public Preview, שיפורים בזמינות הכללית ועדכוני תכונות. כדי לראות את התוכניות ארוכות הטווח בנוגע לתכונות, ראה את [תוכניות ההפצה של ‎Dynamics 365 ושל Power Platform](/dynamics365/release-plans/).
 
-אנו מפיצים עדכונים על בסיס אזורי. כך שאזורים מסוימים עשויים לראות תכונות לפני אזורים אחרים. אלא אם כן נקבע אחרת, אינך צריך לנקוט פעולה כלשהי, ואנו נעדכן את האפליקציה אוטומטית וללא השבתה.
+אנו מפיצים עדכונים על בסיס אזורי. כך שאזורים מסוימים עשויים לראות תכונות לפני אזורים אחרים. אלא אם כן נקבע אחרת, אינך צריך לנקוט פעולה כלשהי, אנו נעדכן את האפליקציה אוטומטית וללא השבתה.
 
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="june-2022-updates"></a>עדכוני יוני 2022
+
+העדכונים ביוני 2022 כוללים תכונות חדשות, דירוגי ביצועים ותיקוני באגים.
+
+### <a name="updated-user-experience-for-data-sources-and-data-ingestion"></a>חוויית משתמש מעודכנת עבור מקורות נתונים וקליטת נתונים
+
+ייבוא נתונים ממגוון רחב של מקורות נתונים הוא הבסיס לאיחוד נתוני הלקוחות שלך ב- Dynamics 365 Customer Insights. בדקנו מחדש את חוויית המשתמש עבור ייבוא וחיבור של מקורות נתונים. עדכון זה נועד להקל עליך לקלוט נתונים ל- Customer Insights.
+
+לקבלת מידע נוסף, עיין ב[מבט כולל על מקורות נתונים](data-sources.md).
+
+### <a name="export-to-inmobi"></a>ייצוא ל- InMobi
+
+InMobi עוזר למותגים להבין, לזהות, לעסוק ולהשיג צרכנים. תוכל לייצא פלחים ונתונים אחרים לשירות InMobi דרך חשבונות Azure Blob Storage.
+
+לקבלת מידע נוסף, ראה [ייצוא נתונים ל- InMobi ‏(Preview‏)‎](export-inmobi.md)
+
+### <a name="lockbox-support-in-customer-insights"></a>תמיכה בכספת ב- Customer Insights
+
+כספת לקוח מספק ממשק לבדיקה ואישור (או דחיית) של בקשות גישה לנתונים. בקשות אלו מתרחשות כאשר יש צורך בגישה לנתונים של לקוחות כדי לפתור מקרה תמיכה.
+
+לקבלת מידע נוסף, ראה [גישה מאובטחת לנתוני לקוח באמצעות כספת לקוח (‏Preview)](security-overview.md#securely-access-customer-data-with-customer-lockbox-preview).
+
+### <a name="connect-to-your-data-using-azure-private-link"></a>התחבר לנתונים שלך באמצעות קישור פרטי של Azure
+
+קישור פרטי של Azure מאפשר ל- Customer Insights להתחבר אל חשבון Azure Data Lake Storage שלך באמצעות נקודת קצה פרטית ברשת הוירטואלית שלך. עבור נתונים בחשבון אחסון שאינו חשוף לאינטרנט הציבורי, קישור פרטי מאפשר את החיבור לרשת מוגבלת זו.
+
+למידע נוסף, ראה [שימוש בקישור פרטים ב- Customer Insights](security-overview.md#private-links-tab).
 
 ## <a name="may-2022-updates"></a>עדכוני מאי 2022
 

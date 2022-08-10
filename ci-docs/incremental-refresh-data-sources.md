@@ -11,18 +11,16 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: bff27bf7fec2bcb741846ae76bb1f616f459136c
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: de39743eb8728fac34e417724c5f73bf44309c89
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9012026"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207138"
 ---
 # <a name="incremental-refresh-for-power-query-and-azure-data-lake-data-sources"></a>רענון מצטבר עבור מקורות נתונים של Power Query ו- Azure Data Lake
 
-מאמר זה מסביר כיצד להגדיר רענון מצטבר עבור מקורות נתונים מבוססי Power Query או Azure Data Lake.
-
-רענון מצטבר של מקורות נתונים מספק את היתרונות הבאים:
+רענון מצטבר למקורות נתונים בהתבסס על Power Query או Azure Data Lake מספק את היתרונות הבאים:
 
 - **רענון מהר יותר** - רק הנתונים שהשתנו מתרעננים. לדוגמה, תוכל לרענן רק את חמשת הימים האחרונים של ערכת נתונים היסטוריים.
 - **אמינות מוגברת** - ברענון קטן יותר, אינך צריך לשמור על חיבורים למערכות מקור רגישות למשך זמן רב, מה שמקטין את הסיכון לבעיות בחיבור.
@@ -73,6 +71,7 @@ Customer Insights מאפשר רענון מצטבר עבור מקורות נתו�
 
    1. דפדף אל תיקיית הבסיס המכילה את קבצי ה- csv‏.‎‏ או ‏parquet‏. לקבלת נתונים מלאים, מצבי Upserts מצטברים של נתונים ומחיקות נתונים מצטברות.
    1. הזן את הסיומת עבור הנתונים המלאים ושני הקבצים המצטברים (\. csv או \. פַּרקֶט).
+   1. עבור קבצי ‎.csv, בחר את מפריד העמודות ואם אתה רוצה שהשורה הראשונה של הקובץ תהיה כותרת עמודה.
    1. בחר **Save**.
 
 1. עבור **עדכון אחרון**, בחר את התכונת חותמת הזמן של התאריך.

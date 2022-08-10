@@ -1,7 +1,7 @@
 ---
 title: התחבר לנתונים בתוך אגם נתונים מנוהל של Microsoft Dataverse
 description: ייבא נתונים מאגם נתונים מנוהל של Microsoft Dataverse.
-ms.date: 05/18/2022
+ms.date: 07/26/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,24 +11,25 @@ ms.reviewer: v-wendysmith
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: 9ae0b964d8d39835715b7ddadc712e2338b855af
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: b21150a1c51bdad35250cae7fde7f38a014ec876
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081260"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206954"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>התחבר לנתונים בתוך אגם נתונים מנוהל של Microsoft Dataverse
 
-משתמשי Microsoft Dataverse יכולים להתחבר במהירות לישויות אנליטיות באגם מנוהל על ידי Microsoft Dataverse.
+משתמשי Microsoft Dataverse יכולים להתחבר במהירות לישויות אנליטיות באגם מנוהל על ידי Microsoft Dataverse. רק מקור נתונים אחד של סביבה יכול להשתמש בו-זמנית באותו אגם מנוהל של Dataverse.
 
 > [!NOTE]
 > עליך להיות מנהל מערכת בארגון Dataverse כדי להמשיך ולהציג את רשימת הישויות הזמינות באגם המנוהל.
 
-## <a name="important-considerations"></a>שיקולים חשובים:
+## <a name="prerequisites"></a>‏‫דרישות מוקדמות‬
 
-1. נתונים המאוחסנים בשירותים מקוונים כגון Azure Data Lake Storage עשויים להיות מאוחסנים במקום אחר שאינו מקום העיבוד או האחסון של הנתונים ב- Dynamics 365 Customer Insights. על-ידי ייבוא או התחברות לנתונים המאוחסנים בשירותים מקוונים, אתה מסכים להעברה ולאחסון של נתונים אלה ב- Dynamics 365 Customer Insights. [קבל מידע נוסף במרכז יחסי האמון של Microsoft.](https://www.microsoft.com/trust-center).
-2. רק ישויות של Dataverse [שבהן התכונה 'מעקב אחר שינויים' זמינה](/power-platform/admin/enable-change-tracking-control-data-synchronization) יהיו גלויים. ניתן לייצא ישויות אלה אל Data Lake שמנוהל על-ידי Dataverse ולעשות בהן שימוש ב- Customer Insights. בטבלאות Dataverse שמגיעות מוכנות לשימוש, התכונה 'מעקב אחר שינויים' זמינה כברירת מחדל. עליך להפעיל את מעקב אחר שינויים עבור טבלאות מותאמות אישית. כדי לבדוק אם מעקב אחר שינויים זמין בטבלת Dataverse, עבור אל [Power Apps](https://make.powerapps.com)  > **נתונים** > **טבלאות**. מצא את הטבלה שמעניינת אותך ובחר בה. עבור אל **הגדרות** > **אפשרויות מתקדמות** ובדוק את ההגדרה **מעקב אחר שינויים**.
+- נתונים המאוחסנים בשירותים מקוונים כגון Azure Data Lake Storage עשויים להיות מאוחסנים במקום אחר שאינו מקום העיבוד או האחסון של הנתונים ב- Dynamics 365 Customer Insights. על-ידי ייבוא או התחברות לנתונים המאוחסנים בשירותים מקוונים, אתה מסכים להעברה ולאחסון של נתונים אלה ב- Dynamics 365 Customer Insights. [קבל מידע נוסף במרכז יחסי האמון של Microsoft.](https://www.microsoft.com/trust-center).
+
+- רק ישויות של Dataverse [שבהן התכונה 'מעקב אחר שינויים' זמינה](/power-platform/admin/enable-change-tracking-control-data-synchronization) יהיו גלויים. ניתן לייצא ישויות אלה אל Data Lake שמנוהל על-ידי Dataverse ולעשות בהן שימוש ב- Customer Insights. בטבלאות Dataverse שמגיעות מוכנות לשימוש, התכונה 'מעקב אחר שינויים' זמינה כברירת מחדל. עליך להפעיל את מעקב אחר שינויים עבור טבלאות מותאמות אישית. כדי לבדוק אם מעקב אחר שינויים זמין בטבלת Dataverse, עבור אל [Power Apps](https://make.powerapps.com)  > **נתונים** > **טבלאות**. מצא את הטבלה שמעניינת אותך ובחר בה. עבור אל **הגדרות** > **אפשרויות מתקדמות** ובדוק את ההגדרה **מעקב אחר שינויים**.
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>התחבר אל אגם נתונים מנוהל של Dataverse
 
@@ -51,7 +52,9 @@ ms.locfileid: "9081260"
 
 1. שמור את הבחירה שלך כדי להתחיל לסנכרן את הטבלאות שנבחרו מ- Dataverse. תמצא את החיבור החדש שנוסף בדף **מקורות מידע**. הוא יעמוד בתור לרענון ויציג את ספירת הישות כ- 0 עד שכל הטבלאות שנבחרו יסונכרנו.
 
-רק מקור נתונים אחד של סביבה יכול להשתמש בו-זמנית באותו אגם מנוהל של Dataverse.
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+טעינת נתונים עשויה להימשך זמן מה. לאחר רענון מוצלח, ניתן לסקור את הנתונים שעובדו בדף [**ישויות**](entities.md).
 
 ## <a name="edit-a-dataverse-managed-lake-data-source"></a>ערוך מקור נתונים של אגם מנוהל של Dataverse
 
@@ -62,4 +65,10 @@ ms.locfileid: "9081260"
 
 1. לצד מקור הנתונים שברצונך לעדכן, בחר את **עריכה**.
 
-1. בחר ישויות נוספות מרשימת הישויות הזמינה ובחר **שמור**.
+1. בחר ישויות נוספות מרשימת הישויות הזמינה.
+
+1. יש ללחוץ על **שמור** כדי להחיל את השינויים ולחזור לדף **מקורות נתונים**.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

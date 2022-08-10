@@ -1,85 +1,83 @@
 ---
 title: ייצוא פלחים אל Google Ads‏ (Preview)
 description: למד כיצד להגדיר את החיבור ולייצא אל Google Ads.
-ms.date: 03/31/2022
+ms.date: 07/25/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b7f08936d7d90322cb4e62396a2961fe06273b76
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: fd7498ecf17ef8a3a8f22dcc49ae204bef88b47f
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081640"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196579"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>ייצוא פלחים אל Google Ads‏ (Preview)
 
-יצא פלחים של פרופילי לקוחות מאוחדים לרשימת קהלים של Google Ads והשתמש בהם לפרסום בחיפוש Google‏, Gmail, YouTube, ו- Google Display Network. 
+יצא פלחים של פרופילי לקוחות מאוחדים לרשימת קהלים של Google Ads והשתמש בהם לפרסום בחיפוש Google‏, Gmail, YouTube, ו- Google Display Network.
 
+## <a name="prerequisites"></a>‏‫דרישות מוקדמות‬
 
-## <a name="prerequisites-for-connection"></a>דרישות מוקדמות לחיבור
+- [חשבון Google Ads](https://ads.google.com/) ואישורי מנהל מערכת תואמים.
+- [מזהה לקוח של Google Ads](https://support.google.com/google-ads/answer/1704344).
+- הדרישות של [מדיניות Customer Match](https://support.google.com/adspolicy/answer/6299717) מתקיימות.
+- הדרישות של [גדלי רשימת שיווק מחדש](https://support.google.com/google-ads/answer/7558048) מתקיימות.
+- [פלחים מוגדרים](segments.md).
+- פרטי Unified customer profiles בפלחים המיוצאים מכילים שדות המייצגים כתובת דוא"ל, טלפון, מזהה מפרסם במכשירים ניידים, מזהה משתמש של צד שלישי או כתובת.
 
--   יש לך [חשבון Google Ads](https://ads.google.com/) ואישורי מנהל מערכת מתאימים.
--   אתה מקיים את הדרישות של [מדיניות התאמת הלקוח](https://support.google.com/adspolicy/answer/6299717).
--   אתה מקיים את הדרישות של [גדלי רשימת שיווק מחדש](https://support.google.com/google-ads/answer/7558048).
--   יש לך [פלחים מוגדרים](segments.md).
--   פרטי Unified customer profiles בפלחים המיוצאים מכילים שדות המייצגים כתובת דוא"ל, טלפון, מזהה מפרסם במכשירים ניידים, מזהה משתמש של צד שלישי או כתובת.
+## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
-## <a name="known-limitations"></a>מגבלות ידועות
-
-- הייצוא ל- Google Ads מוגבל לפלחים.
-- ייצוא פלחים עם מספר כולל של מיליון פרופילי לקוחות עשוי להימשך עד 30 דקות בשל מגבלות בצד הספק. 
-- ההתאמה ב- Google Ads יכולה להימשך עד 48 שעות.
+- יצא עד מיליון פרופילי לקוחות לכל ייצוא אל Google Ads. השלמת הפעולה עשויה להימשך עד 30 דקות עקב מגבלות בצד הספק.
+- פלחים בלבד.
+- התאמה ב- Google Ads יכולה להימשך עד 48 שעות.
 
 ## <a name="set-up-connection-to-google-ads"></a>הגדרת חיבור אל Google Ads
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. עבור אל **ניהול** > **חיבורים**.
 
-1. בחר **הוסף חיבור** ובחר **Google Ads** כדי לקבוע את תצורת החיבור.
+1. בחר **הוסף חיבור** ובחר **Google Ads**.
 
 1. תן לחיבור שלך שם הניתן לזיהוי בשדה **שם תצוגה**. השם וסוג החיבור מתארים חיבור זה. מומלץ לבחור שם המסביר את המטרה והיעד של החיבור.
 
-1. בחר מי יכול להשתמש בחיבור זה. אם לא תנקוט שום פעולה, ברירת המחדל תהיה מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. בחר מי יכול להשתמש בחיבור זה. כברירת מחדל, רק מנהלי מערכת. לקבלת מידע נוסף, ראה [אפשר למשתתפים להשתמש בחיבור עבור פעולות ייצוא](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. הזן את **[מזהה הלקוח של Google Ads](https://support.google.com/google-ads/answer/1704344)**.
+1. הזן את מזהה הלקוח של Google Ads.
 
-1. בחר **אני מסכים** כדי לאשר **פרטיות ותאימות נתונים**.
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
 
 1. בחר **בצע אימות באמצעות Google Ads** וספק את אישורי Google Ads שלך.
 
 1. בחר **הוסף את עצמך כמשתמש ייצוא** וספק את אישורי Customer Insights שלך.
 
-1. בחר **שמור** כדי להשלים את החיבור. 
+1. בחר **שמור** כדי להשלים את החיבור.
 
 ## <a name="configure-an-export"></a>קביעת תצורה של ייצוא
 
-באפשרותך לקבוע תצורת ייצוא זה אם יש לך גישה לחיבור מסוג זה. לקבלת מידע נוסף, ראה [הרשאות הדרושות לקביעת תצורה של ייצוא](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. עבור אל **נתונים** > **פעולות ייצוא**.
 
-1. כדי ליצור ייצוא חדש, בחר **הוסף יעד**.
+1. בחר **הוסף ייצוא**.
 
-1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע Google Ads. אם אינך רואה את שם הפלח הזה, אין קשרים זמינים עבורך מסוג זה.
+1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע Google Ads. צור קשר עם מנהל מערכת אם אין חיבור זמין.
 
-1. אם ברצונך ליצור קהל חדש, השאר ריק את השדה של מזהה קהל Google. אנו ניצור אוטומטית קהל חדש בחשבון Google Ads שלך ונשתמש בשם הפלח המיוצא. אם אתה רוצה לעדכן קהל קיים של Google Ads, הזן את [מזהה קהל Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.) שלך
+1. הזן שם עבור הייצוא.
+
+1. בחר םא להשתמש בקהל קיים או אם ליצור קהל חדש:
+   - כדי לעדכן קהל קיים של Google Ads, הזן [מזהה קהל Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns) שלך.
+   - כדי ליצור קהל חדש, השאר ריק את השדה של מזהה קהל Google. Customer Insights ייצור אוטומטית קהל חדש בחשבון Google Ads שלך ונשתמש בשם הפלח המיוצא.
 
 1. במקטע **התאמת נתונים**, בחר שדה נתונים אחד או יותר לייצוא, ובחר את השדה המייצג את שדות הנתונים התואמים ב- Customer Insights.
 
-1. בחר את הפלחים שברצונך לייצא. 
+1. בחר את הפלחים שברצונך לייצא.
 
-שמירת ייצוא אינה מפעילה את הייצוא באופן מיידי.
+1. בחר **Save**.
 
-הייצוא פועל עם כל [רענון מתוזמן](system.md#schedule-tab). 
-
-באפשרותך גם [לייצא נתונים לפי דרישה](export-destinations.md#run-exports-on-demand). 
-
-## <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
-
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל Google Ads, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אבל אתה אחראי לוודא ש- Google Ads עומדת בכל התחייבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר יעד ייצוא זה בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
-
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

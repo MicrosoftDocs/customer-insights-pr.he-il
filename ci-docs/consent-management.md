@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 77b09b6eb0a916e724542d503d96d19c5581aca1
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 99fe24cb47a8c20f629182d9a1c6adfd36a1eaf7
+ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "8947500"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9188048"
 ---
 # <a name="use-customer-consent"></a>שימוש בהסכמת הלקוח
 
@@ -46,17 +46,17 @@ Dynamics 365 Customer Insights עוזר לך לכבד את בקשות הלקוח
 |1    |  holly@contoso.com       |  ידיעון       |  שקר       |
 |2    |  holly@contoso.com       |  עדכונים למוצר       |  אמת       |
 |3    |  frank@contoso.com       |  ידיעון       | אמת        |
-|4    |  frank@contoso.com       |  עדכונים למוצר       |  שקר       |
+|4    |  frank@contoso.com       |  עדכונים למוצר       |  False‬       |
 
 ## <a name="import-and-unify-consent-data"></a>ייבוא ואיחוד נתוני הסכמה
 
-ניתן לייבא נתוני הסכמה באותו אופן שבו מעבדים מקורות נתונים אחרים ב- Customer Insights. למידע נוסף על מקורות נתונים נתמכים וכיצד לייבא אותם, ראה [סקירה כללית של מקורות נתונים](data-sources.md).
+יבא נתוני הסכמה באותו אופן שבו מעבדים מקורות נתונים אחרים ב- Customer Insights. למידע נוסף על מקורות נתונים נתמכים וכיצד לייבא אותם, ראה [סקירה כללית של מקורות נתונים](data-sources.md).
 
 למידע נוסף על איחוד מקורות הנתונים, ראה [סקירה כללית של איחוד נתונים](data-unification.md).
 
 ## <a name="use-consent-data"></a>שימוש בנתוני הסכמה
 
-ברגע שנתוני ההסכמה שלך יהיו חלק מפרופילי Unified Customer Profile, תוכל להשתמש בהם ב- Customer Insights. לדוגמה, צור פלח עם כלל כדי להבטיח שאתה מכבד את העדפות הפרטיות וההגנה על נתונים של הלקוחות שלך. כללים התומכים בהעדפות הסכמה משמשים כדי להחריג משתמשים מפלח על סמך תכונות הפרופיל. הוספת כלל לפלח שלא לכלול פרופילי לקוחות שלא סיפקו הסכמה ליצירת קשר.
+ברגע שנתוני ההסכמה שלך יהיו חלק מפרופילי Unified Customer Profile, תוכל להשתמש בהם ב- Customer Insights. לדוגמה, צור פלח עם כלל כדי להבטיח שאתה מכבד את העדפות הפרטיות וההגנה על נתונים של הלקוחות שלך. כללים התומכים בהעדפות הסכמה משמשים כדי להחריג משתמשים מפלח על סמך תכונות הפרופיל. הוסף כלל לפלח שלא לכלול פרופילי לקוחות שלא סיפקו הסכמה ליצירת קשר.
 
 בהתייחס לטבלה לדוגמה למעלה, פלח יכול להכיל את הכלל הזה: `Consent option=Newsletter & Consent value=True`. תצורה זו יוצרת פלח שמכבד את העדפות יצירת קשר לשליחת ניוזלטר.
 
@@ -71,3 +71,5 @@ Dynamics 365 Customer Insights עוזר לך לכבד את בקשות הלקוח
 במילים אחרות, ודא שלנתוני המקור המיובאים ל- Customer Insights יש תמיד את המידע העדכני ביותר.
 
 למידע נוסף, ראה [רענון פלחים באופן ידני](segments.md#refresh-segments) או [הגדרת רענון מתוזמן](system.md#schedule-tab).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

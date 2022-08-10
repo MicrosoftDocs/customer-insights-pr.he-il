@@ -1,38 +1,38 @@
 ---
 title: מחבר Power Automate‏‏ (Preview) |‏ Microsoft Docs
 description: צור זרימות ב- Microsoft Power Automate מתוך Dynamics 365 Customer Insights.
-ms.date: 06/24/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 29a861dad926072f6f849d738d868f0f3b9306be
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: f87bd6db7143294a264813f6c5c7d7963f303628
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081386"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196119"
 ---
 # <a name="power-automate-connector-preview"></a>מחבר Power Automate (תצוגה מקדימה)
 
 הפעל אירועים ספציפיים כך שיתרחשו באופן אוטומטי כאשר הנתונים שלך ישתנו ונהל זרימות מורכבות יותר ישירות ב- [Microsoft Power Automate](https://flow.microsoft.com/).
 
-## <a name="known-limitations"></a>מגבלות ידועות
+## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
-- אתה יכול לבצע מקסימום 100 שיחות ל-60 שניות. אתה יכול לקרוא לנקודת הקצה של ה- API מספר פעמים על ידי שימוש בפרמטר ‏‏‎skip$. [קבל מידע נוסף על הפרמטר skip‎‏$](/connectors/customerinsights/#get-items-from-an-entity).
+- מקסימום 100 שיחות לכל 60 שניות. השתמש ב[פרמטר ‏‏‎skip$](/connectors/customerinsights/#get-items-from-an-entity) כדי לקרוא לנקודת הקצה של ה- API מספר פעמים.
 
 ## <a name="power-automate-triggers"></a>גורמים מפעילים של Power Automate
 
-השתמש בגורמים מפעילים כדי ליצור זרמי ענן ולהפוך משימות חוזרות לאוטומטיות, כגון הודעות או פעולות מתקדמות יותר.
+השתמש בגורמים מפעילים כדי ליצור זרמי ענן ולהפוך משימות חוזרות לאוטומטיות, כגון הודעות או פעולות מתקדמות יותר. השתמש בגורמים מפעילים כאשר:
 
-- הפעל כאשר רענון מקור נתונים נכשל.
-- הפעל כאשר רענון מקור נתונים מצליח.
-- הפעל כאשר סף כלשהו נחצה במקטע. הגורם המפעיל מוגבל לחצייה של סף כלפי מעלה.
-- הפעל כאשר סף כלשהו נחצה במדד עסקי. רק מדידות עסקיות ללא ממד נתמכות. הגורם המפעיל מוגבל לחצייה של סף כלפי מעלה.
-- הפעל כאשר רענון מלא של (מקורות נתונים, פלחים, מדידות, ...) הושלם.
-- מופעל כאשר רענון תהליך האיחוד הושלם.
+- רענון מקור נתונים נכשל.
+- רענון מקור נתונים בוצע בהצלחה.
+- סף נחצה בפלח. הגורם המפעיל מוגבל לחצייה של סף כלפי מעלה.
+- סף נחצה במדד עסקי. רק מדידות עסקיות ללא ממד נתמכות. הגורם המפעיל מוגבל לחצייה של סף כלפי מעלה.
+- הושלם רענון מתוזמן מלא. גורם מפעיל זה לא עובד עבור פעולות רענון שהופעלו באופן ידני.
+- רענון של תהליך האיחוד הושלם.
 
 [הגדר את הגורמים המפעילים ב- Power Automate.](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 
@@ -42,7 +42,7 @@ ms.locfileid: "9081386"
 
 ## <a name="create-a-power-automate-flow"></a>צור זרימת Power Automate
 
-1. עבור אל **מנהל** > **יעדי ייצוא**.
+1. עבור אל **ניהול** > **חיבורים**.
 
 1. באריח **Power Automate**, בחר **הגדר**.
 
@@ -53,7 +53,5 @@ ms.locfileid: "9081386"
 דוגמאות לשימוש בזרימות: 
 - פרסם הודעה בערוץ Microsoft Teams אם רענון מקור נתונים נכשל. 
 - שלח דואר לבעלי הנתונים בעת חציית ערך סף בפלח.
-
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

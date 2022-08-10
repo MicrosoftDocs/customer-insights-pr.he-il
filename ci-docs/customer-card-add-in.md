@@ -13,12 +13,12 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: ead18963959f94fd07912384cf61802f83523e2f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8b3b6a0d54b80d7df454e9dc925f14cc3c39684c
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081257"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9194924"
 ---
 # <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>תוספת כרטיס לקוח עבור יישומי Dynamics 365 ‏(Preview)
 
@@ -26,23 +26,27 @@ ms.locfileid: "9081257"
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN1qv]
 
-## <a name="prerequisites"></a>דרישות מוקדמות
+## <a name="prerequisites"></a>‏‫דרישות מוקדמות‬
 
-- התוספת פועלת רק עם יישומים מונחי דגמים של Dynamics 365, כגון Sales או Customer Service, גירסה 9.0 ואילך.
-- כדי שנתוני Dynamics 365 ימפו את לפרופילי הלקוח של Customer Insights, אנחנו ממליצים [לקלוט אותם מיישום Dynamics 365 באמצעות המחבר Microsoft Dataverse](connect-power-query.md). אם אתה משתמש בשיטה אחרת לקליטת אנשי קשר (או חשבונות) של Dynamics 365, עליך לוודא שהשדה `contactid` (או `accountid`) מוגדר כ[מפתח ראשי עבור מקור נתונים בשלב המפה של תהליך איחוד הנתונים](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
+- יישומים מונחי דגמים של Dynamics 365, כגון Sales או Customer Service, גירסה 9.0 ואילך.
+- כדי שנתוני Dynamics 365 ימפו את לפרופילי הלקוח של Customer Insights, אנחנו ממליצים [לקלוט אותם מיישום Dynamics 365 באמצעות המחבר Microsoft Dataverse](connect-power-query.md). אם אתה משתמש בשיטה אחרת לקליטת אנשי קשר (או חשבונות) של Dynamics 365, ודא שהשדה `contactid` (או `accountid`) מוגדר כ[מפתח ראשי עבור מקור נתונים במהלך תהליך איחוד הנתונים](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 - כל משתמשי Dynamics 365 של התוספת 'כרטיס הלקוח' חייבים [להתווסף כמשתמשים](permissions.md) ב- Customer Insights כדי לראות את הנתונים.
-- [יכולות חיפוש וסינון מוגדרות](search-filter-index.md) ב- Customer Insights נדרשות כדי שחיפוש הנתונים יפעל.
+- [יכולות חיפוש וסינון מוגדר](search-filter-index.md) ב- Customer Insights.
 - כל פקד תוספת מסתמך על נתונים ספציפיים ב- Customer Insights. נתונים ופקדים מסוימים זמינים בסביבות מסוגים ספציפיים בלבד. לפי תצורת התוסף תוכל לדעת אם פקד אינו זמין בשל סוג הסביבה שנבחרה. קבל מידע נוסף על [תרחישי שימוש של סביבה](work-with-business-accounts.md).
-  - **פקד מדידה**: נדרשות [מדידות מוגדרות](measures.md) מסוג תכונות לקוח.
-  - בקרת בינה: מחייבת נתונים שנוצרו באמצעות **תחזיות** או [מודלים מותאמים אישית](predictions-overview.md).
-  - **פקד פרטי לקוח** : כל השדות מהפרופיל זמינים בפרופיל הלקוח המאוחד.
-  - **פקד העשרה**: נדרשות [העשרות](enrichment-hub.md) פעילות שחלות על פרופילי לקוחות. תוספת הכרטיס תומכת בהעשרות הבאות: [מותגים](enrichment-microsoft.md) מסופקת על ידי Microsoft, [תחומי עניין](enrichment-microsoft.md) מסופקת על ידי Microsoft, ו- [נתוני מעורבות ב- Office‬](enrichment-office.md) מסופקת על ידי Microsoft.
-  - **פקד אנשי קשר**: נדרשת הגדרה של ישות סמנטית מסוג אנשי קשר.
-  - **פקד ציר זמן**: דורש [פעילויות מוגדרות](activities.md).
+  - **פקד מדד**: דורש [מדדי תכונת לקוח מוגדים](measures.md).
+  - **בקרת בינה** דורשת נתונים שנוצרו באמצעות [חיזויים או מודלים מותאמים אישית](predictions-overview.md).
+  - **פקד פרטי לקוח** מציג את כל השדות מהפרופיל שזמינים בפרופיל הלקוח המאוחד.
+  - **פקד העשרה** דורש [העשרות](enrichment-hub.md) פעילות שחלות על פרופילי לקוחות. תוספת הכרטיס תומכת בהעשרות הבאות: [מותגים](enrichment-microsoft.md) מסופקת על ידי Microsoft, [תחומי עניין](enrichment-microsoft.md) מסופקת על ידי Microsoft, ו- [נתוני מעורבות ב- Office‬](enrichment-office.md) מסופקת על ידי Microsoft.
+  - **פקד אנשי קשר** דורש סוג ישות סמנטית של איש קשר.
+  - **פקד ציר זמן** דורש [פעילויות מוגדרות](activities.md).
 
 ## <a name="install-the-customer-card-add-in"></a>התקן את תוספת כרטיס הלקוח
 
-התוספת של כרטיס הלקוחות היא פתרון ליישומי Customer Engagement ב- Dynamics 365. להתקנת הפתרון, עבור אל AppSource וחפש את **כרטיס לקוח של Dynamics**. בחר את [תוספת כרטיס הלקוח ב- AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) ובחר **השג אותה כעת**.
+התוספת של כרטיס הלקוחות היא פתרון ליישומי Customer Engagement ב- Dynamics 365. כדי להתקין את הפתרון:
+
+1. עבור אל AppSource וחפש **כרטיס לקוח של Dynamics**.
+
+1. בחר את [תוספת כרטיס הלקוח ב- AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) ובחר **השג אותה כעת**.
 
 יתכן שתצטרך להתחבר עם אישורי הניהול שלך ליישום Dynamics 365 כדי להתקין את הפתרון. ייתכן שייקח זמן להתקין את הפתרון בסביבה שלך.
 

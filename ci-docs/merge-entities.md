@@ -14,16 +14,14 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: ceb2724ad490c1ba44fd9b7ff2be04721892fca4
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081620"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139658"
 ---
 # <a name="unify-customer-fields-for-data-unification"></a>איחוד שדות לקוחות לאיחוד נתונים
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 בשלב זה של תהליך האיחוד, בחר והשמט מאפיינים למיזוג בתוך ישות הפרופיל המאוחדת. לדוגמה, אם לשלוש ישויות היו נתוני דואר, ייתכן שתרצה לשמור את כל שלושת שדות הדואר הנפרדים או למזג אותם לשדה דואר יחיד עבור הפרופיל המאוחד. חלק מהתכונות משולבות אוטומטית על ידי המערכת. אתה יכול ליצור מזהי לקוחות יציבים וייחודיים ולקבץ פרופילים קשורים לאשכול.
 
