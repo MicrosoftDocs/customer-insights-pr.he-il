@@ -14,12 +14,12 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: a6f29c4985ee274207d122fb1bd76d97b98613b6
+ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139658"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "9213583"
 ---
 # <a name="unify-customer-fields-for-data-unification"></a>איחוד שדות לקוחות לאיחוד נתונים
 
@@ -58,6 +58,9 @@ ms.locfileid: "9139658"
 
 1. ציין כיצד לשלב או למזג את השדות מתוך אחת משלוש האפשרויות:
     - **חשיבות**: מזהה את ערך הזוכה בהתבסס על דירוג החשיבות שצוין עבור השדות המשתתפים. זוהי אפשרות המיזוג של ברירת המחדל. בחר **הזז למעלה/למטה** כדי להגדיר את דירוג החשיבות.
+
+      > [!NOTE]
+      > Customer Insights משתמש בערך הראשון שאינו ריק. לדוגמה, בהינתן ישויות A‏, B ו-C המדורגות בסדר זה, אם הערכים A.Name ו-B.Name הם ריקים, אזי נעשה שימוש בערך מ-C.Name.
 
       :::image type="content" source="media/importance-merge-option.png" alt-text="אפשרות חשיבות בתיבת הדו -שיח 'מיזוג שדות'.":::
 

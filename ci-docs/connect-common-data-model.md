@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: e071bf9364b44a92d81c9ff2269ff4e8654010aa
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: b237c291bb4dd22ca22ab2cdd8b6293490aa83e1
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207000"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245834"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>התחבר לנתונים ב- Azure Data Lake Storage
 
@@ -56,8 +56,8 @@ ms.locfileid: "9207000"
 
 1. בחר אחת מהאפשרויות הבאות עבור **חבר את האחסון שלך באמצעות**. לקבלת מידע נוסף, ראה [חיבור Customer Insights לחשבון Azure Data Lake Storage Gen2 באמצעות מנהל שירות של Azure](connect-service-principal.md).
 
-   - **משאב Azure**: הזן את **מזהה המשאב**. לחלופין, אם ברצונך לעבד נתונים מחשבון אחסון דרך קישור פרטי של Azure, בחר **אפשר קישור פרטי**. למידע נוסף, ראה [קישורים פרטיים](security-overview.md#private-links-tab).
-   - **מנוי Azure**: בחר **מינוי** ולאחר מכן את **קבוצת משאבים** ו **חשבון אחסון**. לחלופין, אם ברצונך לעבד נתונים מחשבון אחסון דרך קישור פרטי של Azure, בחר **אפשר קישור פרטי**. למידע נוסף, ראה [קישורים פרטיים](security-overview.md#private-links-tab).
+   - **משאב Azure**: הזן את **מזהה המשאב**. לחלופין, אם ברצונך לעבד נתונים מחשבון אחסון דרך קישור פרטי של Azure, בחר **אפשר קישור פרטי**. למידע נוסף, ראה [קישורים פרטיים](security-overview.md#set-up-an-azure-private-link).
+   - **מנוי Azure**: בחר **מינוי** ולאחר מכן את **קבוצת משאבים** ו **חשבון אחסון**. לחלופין, אם ברצונך לעבד נתונים מחשבון אחסון דרך קישור פרטי של Azure, בחר **אפשר קישור פרטי**. למידע נוסף, ראה [קישורים פרטיים](security-overview.md#set-up-an-azure-private-link).
   
    > [!NOTE]
    > אתה זקוק לאחד מהתפקידים הבאים או בגורם המכיל או בחשבון האחסון כדי ליצור מקור נתונים:
@@ -176,7 +176,7 @@ ms.locfileid: "9207000"
         > - בעלי נתונים של Blob אחסון
         > - תורם נתונים של Blob אחסון
 
-   - **אפשר קישור פרטי** אם ברצונך לעבד נתונים מחשבון אחסון דרך קישור פרטי של Azure. למידע נוסף, ראה [קישורים פרטיים](security-overview.md#private-links-tab).
+   - **אפשר קישור פרטי** אם ברצונך לעבד נתונים מחשבון אחסון דרך קישור פרטי של Azure. למידע נוסף, ראה [קישורים פרטיים](security-overview.md#set-up-an-azure-private-link).
 
 1. בחר **הבא**.
 1. שנה כל אחד מהבאים:

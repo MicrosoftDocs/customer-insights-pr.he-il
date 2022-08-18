@@ -1,19 +1,19 @@
 ---
 title: העשרת פרופילי לקוחות באמצעות יבוא מותאם אישית של SFTP ‏(Preview)
 description: מידע כללי אודות העשרת ייבוא מותאם אישית של SPTF.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 81ef6c62240e26cb5c9475e6306e08edc7e5eb31
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 831d1d3d3045379bbc5bcdcd4b05b8a147221f31
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195797"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237767"
 ---
 # <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>העשרת פרופילי לקוחות באמצעות יבוא מותאם אישית של SFTP ‏(Preview)
 
@@ -85,14 +85,9 @@ ms.locfileid: "9195797"
 
 1. הזן שם משתמש, סיסמה וכתובת אתר תקפים עבור שרת ה- SFTP שבו נמצאים הנתונים שיש לייבא.
 
-1. סקור את [פרטיות ותאימות נתונים](#data-privacy-and-compliance) ותן את הסכמתך על-ידי בחירת **אני מסכים**.
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
 
 1. בחר **אמת** כדי לאמת את התצורה ולאחר מכן בחר **שמור**.
-
-### <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
-
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים באמצעות 'ייבוא מותאם אישית', אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אך אתה אחראי להבטיח שהנתונים האלה עומדים בכל מחויבויות הפרטיות או האבטחה שלקחת על עצמך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר העשרה זו בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
 
 ## <a name="configure-the-import"></a>קביעת תצורת הייבוא
 

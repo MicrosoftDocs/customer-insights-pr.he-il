@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 6b6daab480db5e37830ff58b71dcdd3bbdbe46da
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 0c2a900190b4ab6e93098d05a2fd66bcd2b847fd
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9053873"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245880"
 ---
 # <a name="data-enrichment-preview-overview"></a>סקירה כללית של העשרת נתונים (Preview)
 
@@ -76,7 +76,7 @@ ms.locfileid: "9053873"
 - **הצג** פרטי העשרה עם המספר של פרופילי לקוחות המועשרים.
 - **ערוך** את תצורת ההעשרה.
 - [**הפעל**](#run-or-refresh-enrichments) את העשרה לעדכון את פרופילי הלקוחות בנתונים העדכניים ביותר. הפעל מספר העשרות בבת אחת על ידי בחירתם ברשימה.
-- **הפעלה** או **ביטול הפעלה** של העשרה. העשרות לא פעילות לא יתרעננו במהלך [רענון מתוזמן](system.md#schedule-tab).
+- **הפעלה** או **ביטול הפעלה** של העשרה. העשרות לא פעילות לא יתרעננו במהלך [רענון מתוזמן](schedule-refresh.md).
 - **מחק** את ההעשרה.
 
 אתה יכול גם ליצור [פלחים](segments.md) או [מדדים](measures.md) מהעשרה.
@@ -85,7 +85,7 @@ ms.locfileid: "9053873"
 
 לאחר ההפעלה, ניתן לרענן את ההעשרה לפי לוח זמנים אוטומטי או לרענן באופן ידני לפי דרישה.
 
-1. כדי לרענן באופן ידני העשרה אחת או יותר, בחר אותם ובחר **הפעל**. כדי [לתזמן רענון אוטומטי](system.md#schedule-tab), עבור אל **מנהל מערכת** > **מערכת** > **לוח זמנים**. זמן העיבוד תלוי בגודל נתוני הלקוח שלך.
+1. כדי לרענן באופן ידני העשרה אחת או יותר, בחר אותם ובחר **הפעל**. כדי [לתזמן רענון אוטומטי](schedule-refresh.md), עבור אל **מנהל מערכת** > **מערכת** > **לוח זמנים**. זמן העיבוד תלוי בגודל נתוני הלקוח שלך.
 
 1. באופן אופציונלי, [ניתן לראות את התקדמות תהליך ההעשרה](#see-the-progress-of-the-enrichment-process).
 
@@ -102,6 +102,8 @@ ms.locfileid: "9053873"
 1. בחלונית **פרטי התקדמות**, הרחב את המקטע **העשרות**.
 1. תחת ההעשרה שברצונך לראות את ההתקדמות שלה, בחר **הצג פרטים**.
 1. בחלונית **פרטי משימה**, בחר **הצג פרטים** כדי לראות את התהליכים המעורבים בעדכון ההעשרה והמצב שלהם.
+
+[!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
 ## <a name="view-enrichment-results"></a>הצג תוצאות העשרה
 

@@ -284,18 +284,20 @@
       href: connect-service-principal.md
 - name: ניהול
   items:
-    - name: הגדרת תצורת המערכת
-      href: system.md
-    - name: קבע את הגדרות האבטחה
-      href: security-overview.md
     - name: הקצאת הרשאות משתמשים
       href: permissions.md
     - name: הבא Key Vault משלך
       href: use-azure-key-vault.md
+    - name: קבע את הגדרות האבטחה
+      href: security-overview.md
     - name: ייצוא יומני אבחון
       href: diagnostics.md
-    - name: מבט כולל על חיבורים
+    - name: נהל חיבורים
       href: connections.md
+    - name: תזמון רענון מערכת
+      href: schedule-refresh.md
+    - name: הצגת תצורת מערכת
+      href: system.md
 - name: ממשקי API
   items:
     - name: עבודה עם ממשקי API

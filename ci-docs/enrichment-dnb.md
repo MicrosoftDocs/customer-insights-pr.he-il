@@ -1,7 +1,7 @@
 ---
 title: העשרת פרופילי החברה באמצעות Dun & Bradstreet ‏(Preview)‏
 description: מידע כללי על העשרת צד שלישי של Dun & Bradstreet.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 71b35e4295e19c13edadc6548ac79715555e8183
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: e89b64774dcb519a071dd3d403473807a50e7f33
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196027"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237905"
 ---
 # <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>העשרת פרופילי החברה באמצעות Dun & Bradstreet ‏(Preview)‏
 
@@ -55,16 +55,11 @@ ms.locfileid: "9196027"
 
 1. ספק אישורים תקפים של Dun & Bradstreet ופרטי פרויקט Dun & Bradstreet *אזור, נתיב תקיית ההצבה ושם תיקיית ההצבה*. ניתן [לקבל את המידע הזה](#set-up-your-dun--bradstreet-project) מפרויקט Dun & Bradstreet.
 
-1. סקור את [פרטיות ותאימות נתונים](#data-privacy-and-compliance) ותן את הסכמתך על-ידי בחירת **אני מסכים**.
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
 
 1. בחר **אמת** כדי לאמת את התצורה ולאחר מכן בחר **שמור**.
 
    :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="דף הגדרת חיבור עבור Dun & Bradstreet.":::
-
-### <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
-
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל Dun & Bradstreet, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אך אתה אחראי להבטיח ש- Dun & Bradstreet עומד בכל מחויבויות הפרטיות או האבטחה שלקחת על עצמך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר העשרה זו בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
 
 ## <a name="supported-countries-or-regions"></a>מדינות או אזורים נתמכים
 

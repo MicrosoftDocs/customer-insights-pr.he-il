@@ -1,19 +1,19 @@
 ---
 title: העשרת פרופילי הלקוחות בנתוני זהות מ- LiveRamp‏ (Preview)
 description: העשרת פרופילי לקוחות עם נתוני LiveRamp
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 49bf558209ca91ab9d8db945862a57adccee1f6b
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0aa6dc144602741b87843a5373779855ee3e334c
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196349"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237813"
 ---
 # <a name="enrich-customer-profiles-with-identity-data-from-liveramp-preview"></a>העשרת פרופילי הלקוחות בנתוני זהות מ- LiveRamp‏ (Preview)
 
@@ -41,13 +41,9 @@ LiveRamp מספק פתרון זהות לא מקוון דטרמיניסטי וא�
 
 1. הזן שם לחיבור ומזהה לקוח LiveRamp וסוד תקינים.
 
-1. סקור את [פרטיות ותאימות נתונים](#data-privacy-and-compliance) ותן את הסכמתך על-ידי בחירת **אני מסכים**.
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
 
 1. בחר **אמת** כדי לאמת את התצורה ולאחר מכן בחר **שמור**.
-
-### <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
-
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל Liveramp, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אך אתה אחראי להבטיח ש- LiveRamp עומד בכל מחויבויות הפרטיות או האבטחה שלקחת על עצמך. למידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732). מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר העשרה זו בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
 
 ## <a name="configure-the-enrichment"></a>קביעת תצורת ההעשרה
 

@@ -1,7 +1,7 @@
 ---
-title: העברת יומנים ב- Dynamics 365 Customer Insights באמצעות Azure Monitor ‏(Preview)
+title: ייצוא יומני אבחון (Preview)
 description: למד כיצד לשלוח יומנים אל Microsoft Azure ‫Monitor.
-ms.date: 12/14/2021
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: article
@@ -11,71 +11,92 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 8c72df7054a682244215bbee54968d6aef4bbf59
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052654"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245926"
 ---
-# <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>העברת יומנים ב- Dynamics 365 Customer Insights באמצעות Azure Monitor ‏(Preview)
+# <a name="export-diagnostic-logs-preview"></a>ייצוא יומני אבחון (Preview)
 
-Dynamics 365 Customer Insights מספק אינטגרציה ישירה עם Azure Monitor. יומני המשאבים של Azure Monitor מאפשרים לך לנטר ולשלוח יומנים אל [Azure Storage](https://azure.microsoft.com/services/storage/), [תכונת ניתוח יומן רישום של Azure](/azure/azure-monitor/logs/log-analytics-overview), או להזרים אותם אל [מרכזי אירועים של Azure‬](https://azure.microsoft.com/services/event-hubs/).
+העברת יומני Customer Insights באמצעות Azure Monitor. יומני המשאבים של Azure Monitor מאפשרים לך לנטר ולשלוח יומנים אל [Azure Storage](https://azure.microsoft.com/services/storage/), [תכונת ניתוח יומן רישום של Azure](/azure/azure-monitor/logs/log-analytics-overview), או להזרים אותם אל [מרכזי אירועים של Azure‬](https://azure.microsoft.com/services/event-hubs/).
 
 Customer Insights שולח את יומני האירועים הבאים:
 
 - **אירועי ביקורת**
-  - **APIEvent** - מאפשר מעקב אחר שינויים שנעשה באמצעות ממשק המשתמש Dynamics 365 Customer Insights.
+  - **APIEvent** - מאפשר מעקב אחר שינויים באמצעות ממשק המשתמש Dynamics 365 Customer Insights.
 - **אירועי תפעול**
-  - **WorkflowEvent** - זרימת העבודה מאפשרת להגדיר [מקורות מידע](data-sources.md), [וכן לאחד](data-unification.md), [להעשיר](enrichment-hub.md) ולבסוף [לייצא](export-destinations.md) נתונים למערכות אחרות. ניתן לבצע את כל השלבים הללו בנפרד (לדוגמה, להפעיל ייצוא בודד). ואפשר גם להפעיל אותם בתיאום (לדוגמה, רענון נתונים ממקורות נתונים שמפעיל את תהליך האיחוד, שימשוך העשרות ולאחר שיסיים יבצע ייצוא של הנתונים למערכת אחרת). לפרטים נוספים, ראה [סכימה של WorkflowEvent](#workflow-event-schema).
-  - **APIEvent** - כל קריאות ה- API למופע הלקוחות אל Dynamics 365 Customer Insights. לפרטים נוספים, ראה [סכימה של APIEvent](#api-event-schema)
+  - **WorkflowEvent** - מאפשרת להגדיר [מקורות מידע](data-sources.md), [לאחד](data-unification.md), [להעשיר](enrichment-hub.md) ולבסוף [לייצא](export-destinations.md) נתונים למערכות אחרות. ניתן לבצע את השלבים הללו בנפרד (לדוגמה, להפעיל ייצוא בודד). הם יכולים גם לפעול בתיאום (לדוגמה, רענון נתונים ממקורות נתונים שמפעיל את תהליך האיחוד, שימשוך העשרות וייצא את הנתונים למערכת אחרת). לפרטים נוספים, ראה [סכימה של WorkflowEvent](#workflow-event-schema).
+  - **APIEvent** - שולח את כל קריאות ה- API של מופע הלקוחות אל Dynamics 365 Customer Insights. לפרטים נוספים, ראה [סכימה של APIEvent](#api-event-schema)
 
 ## <a name="set-up-the-diagnostic-settings"></a>קביעת הגדרות האבחון
 
-### <a name="prerequisites"></a>דרישות מוקדמות
+### <a name="prerequisites"></a>‏‫דרישות מוקדמות‬
 
-כדי להגדיר את האבחון ב- Customer Insights, יש לעמוד בתנאים המוקדמים הבאים:
-
-- יש לך [מנוי Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) פעיל.
-- יש לך הרשאות [מנהל מערכת](permissions.md#admin) ב- Customer Insights.
-- יש לך תפקידי **משתתף** ו **מנהל גישת משתמשים** במשאב היעד ב-Azure. המשאב יכול להיות חשבון של Azure Data Lake Storage, מרכז אירועים של Azure או סביבת עבודה ניתוח יומן רישום של Azure. לקבלת מידע נוסף, ראה [הוספה או הסרה של הקצאות תפקיד Azure באמצעות פורטל Azure](/azure/role-based-access-control/role-assignments-portal). הרשאה זו נחוצה בזמן קביעת הגדרות האבחון ב- Customer Insights, ניתן לשנות אותה לאחר הגדרה מוצלחת.
-- עמידה ב[דרישות היעד](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) עבור Azure Storage, מרכזי האירועים של Azure או תכונת ניתוח יומן הרישום של Azure.
-- יש לך לפחות תפקיד של **קורא** בקבוצת המשאבים שאליה שייך המשאב.
+- מנוי [Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) פעיל.
+- הרשאות [מנהל מערכת](permissions.md#admin) ב- Customer Insights.
+- [תפקיד משתתף ומנהל גישת משתמשים](/azure/role-based-access-control/role-assignments-portal) במשאב היעד ב-Azure. המשאב יכול להיות חשבון של Azure Data Lake Storage, מרכז אירועים של Azure או סביבת עבודה ניתוח יומן רישום של Azure. הרשאה זו נחוצה בזמן קביעת הגדרות האבחון ב- Customer Insights, אך ניתן לשנות אותה לאחר הגדרה מוצלחת.
+- עמידה ב[דרישות היעד](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) עבור Azure Storage, מרכז האירועים של Azure או ניתוח יומן הרישום של Azure.
+- לפחות תפקיד של **קורא** בקבוצת המשאבים שאליה שייך המשאב.
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>הגדרת אבחון עם Azure Monitor
 
-1. ב- Customer Insights, בחר **מערכת** > **אבחון** כדי לראות את יעדי האבחון שהוגדרו למופע זה.
+1. ב- Customer Insights, עבור אל **ניהול** > **מערכת** ובחר את הכרטיסיה **אבחון**.
 
 1. בחר **הוסף יעד**.
 
-   > [!div class="mx-imgBorder"]
-   > ![חיבור אבחון](media/diagnostics-pane.png "חיבור אבחון")
+   :::image type="content" source="media/diagnostics-pane.png" alt-text="חיבור אבחון.":::
 
 1. ציין שם בשדה **'שם' עבור יעד האבחון**.
 
-1. בחר את ה **דייר** של מנוי Azure עם משאב היעד ובחר **כניסה**.
+1. בחר את **סוג המשאב** (חשבון אחסון, מרכז אירועים או Log Analytics).
 
-1. בחר את **סוג המשאב** (חשבון אחסון, מרכז אירועים או ניתוח יומן).
+1. בחר את ה **מינוי**, **קבוצת המשאבים**, ו **המשׁאב** עבור משאב היעד. מידע נוסף: [תצורה במשאב היעד](#configuration-on-the-destination-resource) לקבלת הרשאות ופרטי יומן רישום.
 
-1. בחר את ה **מנוי** עבור משאב היעד.
-
-1. בחר את **קבוצת המשאבים** עבור משאב היעד.
-
-1. בחר את **משאב**.
-
-1. אשר את הצהרת **פרטיות נתונים ותאימות**.
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
 
 1. בחר **התחבר למערכת** כדי להתחבר למשאב היעד. היומנים מתחילים להופיע ביעד כעבור 15 דקות, אם ה- API נמצא בשימוש ומייצר אירועים.
 
-### <a name="remove-a-destination"></a>הסרת יעד
+## <a name="configuration-on-the-destination-resource"></a>תצורה במשאב היעד
 
-1. עבור אל **אבחון** > **מערכת**
+בהתבסס על סוג המשאב שבחרת, השינויים הבאים יתרחשו באופן אוטומטי:
+
+### <a name="storage-account"></a>חשבון אחסון
+
+מנהל שירות של Customer Insights מקבל את הרשאת **משתתף בחשבון אחסון** עבור המשאב הנבחר ויוצר שני מיכלים תחת מרחב השמות שנבחר:
+
+- `insight-logs-audit` כולל **אירועי ביקורת**
+- `insight-logs-operational` כולל **אירועי תפעול**
+
+### <a name="event-hub"></a>מרכז האירועים
+
+מנהל השירות של Customer Insights מקבל את ההרשאה **בעל הנתונים של מרכזי אירועים של Azure** במשאב, והוא יוצר שני מרכזי אירועים תחת מרחב השמות שנבחר:
+
+- `insight-logs-audit` כולל **אירועי ביקורת**
+- `insight-logs-operational` כולל **אירועי תפעול**
+
+### <a name="log-analytics"></a>יומני ניתוח
+
+מנהל שירות של Customer Insights מקבל את הרשאת **משתתף בניתוח יומני רישום** עבור המשאב. היומנים זמינים תחת **יומנים** > **טבלאות** > **ניהול יומנים** בסביבת העבודה הנבחרת של ניתוח היומנים. הרחב את פתרון **ניהול יומנים** ואתר את הטבלאות `CIEventsAudit` ו- `CIEventsOperational`.
+
+- `CIEventsAudit` כולל **אירועי ביקורת**
+- `CIEventsOperational` כולל **אירועי תפעול**
+
+תחת החלון **שאילתות**, הרחב את הפתרון **ביקורת** ואתר את השאילתות לדוגמה שהתקבלו בחיפוש אחר `CIEvents`.
+
+## <a name="remove-a-diagnostics-destination"></a>הסרת יעד אבחון
+
+1. עבור אל **מנהל מערכת** > **מערכת**, ובחר בכרטיסיה **אבחון**.
 
 1. בחר את יעד האבחון ברשימה.
 
+   > [!TIP]
+   > הסרת היעד עוצרת את העברת היומן, אך אינה מוחקת את המשאב במנוי Azure. כדי למחוק את המשאב ב- Azure, בחר את הקישור בעמודה **פעולות** כדי לפתוח את פורטל Azure עבור המשאב הנבחר ולמחוק אותו שם. אחר כך מחק יעד האבחון.
+
 1. בעמודה **פעולות**, בחר את הסמל **מחיקה**.
 
-1. אשר את המחיקה כדי לעצור את העברת היומנים. המשאב במנוי Azure לא יימחק. תוכל לבחור את הקישור בעמודה **פעולות** כדי לפתוח את פורטל Azure עבור המשאב הנבחר ולמחוק אותו שם.
+1. אשר את המחיקה כדי להסיר את היעד ולעצור את העברת היומנים.
 
 ## <a name="log-categories-and-event-schemas"></a>קטגוריות יומנים וסכימות אירועים
 
@@ -89,36 +110,9 @@ Customer Insights מספק שתי קטגוריות:
 - **אירועי ביקורת**: [אירועי API](#api-event-schema) כדי לעקוב אחר שינויי תצורה בשירות. `POST|PUT|DELETE|PATCH` התפעול נכלל בקטגוריה זו.
 - **אירועי תפעול**: [אירועי API](#api-event-schema) אוֹ [אירועי זרימת עבודה](#workflow-event-schema) שנוצרו במהלך השימוש בשירות.  לדוגמה, בקשות `GET` או אירועי ביצוע של זרימת עבודה.
 
-## <a name="configuration-on-the-destination-resource"></a>תצורה במשאב היעד
-
-בהתבסס על בחירתך בסוג המשאב, הצעדים הבאים יחולו באופן אוטומטי:
-
-### <a name="storage-account"></a>חשבון אחסון
-
-מנהל שירות של Customer Insights מקבל את הרשאת **משתתף בחשבון אחסון** עבור המשאב הנבחר ויוצר שני מיכלים תחת מרחב השמות שנבחר:
-
-- `insight-logs-audit` כולל **אירועי ביקורת**
-- `insight-logs-operational` כולל **אירועי תפעול**
-
-### <a name="event-hub"></a>מרכז האירועים
-
-מנהל השירות של Customer Insights מקבל את ההרשאה **בעל הנתונים של מרכזי אירועים של Azure** במשאב, והוא ייצור שני מרכזי אירועים תחת מרחב השמות שנבחר:
-
-- `insight-logs-audit` כולל **אירועי ביקורת**
-- `insight-logs-operational` כולל **אירועי תפעול**
-
-### <a name="log-analytics"></a>יומני ניתוח
-
-מנהל שירות של Customer Insights מקבל את הרשאת **משתתף בניתוח יומני רישום** עבור המשאב. היומנים יהיו זמינים תחת **יומנים** > **טבלאות** > **ניהול יומנים** בסביבת העבודה הנבחרת של ניתוח היומנים. הרחב את פתרון **ניהול יומנים** ואתר את הטבלאות `CIEventsAudit` ו- `CIEventsOperational`.
-
-- `CIEventsAudit` כולל **אירועי ביקורת**
-- `CIEventsOperational` כולל **אירועי תפעול**
-
-תחת החלון **שאילתות**, הרחב את הפתרון **ביקורת** ואתר את השאילתות לדוגמה שהתקבלו בחיפוש אחר `CIEvents`.
-
 ## <a name="event-schemas"></a>סכימות אירועים
 
-לאירועי API ולאירועי זרימת עבודה יש מבנה ופרטים משותפים שבהם הם שונים, ראה [סכימת אירוע API](#api-event-schema) או [סכימת אירוע זרימת עבודה](#workflow-event-schema).
+לאירועי API ואירועי זרימת עבודה יש מבנה משותף, אך עם כמה הבדלים. לפרטים נוספים, ראה [סכימה ה-API של האירוע](#api-event-schema) או [סכמה של זרימת העבודה של אירוע](#workflow-event-schema).
 
 ### <a name="api-event-schema"></a>סכימת אירוע API
 
@@ -220,7 +214,6 @@ Customer Insights מספק שתי קטגוריות:
 | `durationMs`    | Long      | אופציונלי          | משך הפעולה באלפיות שנייה.                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | String    | אופציונלי          | אובייקט JSON עם מאפיינים נוספים עבור הקטגוריה המסוימת של האירועים.                                                                                        | ראה מקטע משנה [מאפייני זרימת עבודה](#workflow-properties-schema)                                                                                                       |
 | `level`         | String    | חובה          | רמת החומרה של האירוע.                                                                                                                                  | `Informational`, ‏`Warning` או `Error`                                                                                                                                   |
-|                 |
 
 #### <a name="workflow-properties-schema"></a>סכימת זרימת עבודה
 
@@ -247,3 +240,5 @@ Customer Insights מספק שתי קטגוריות:
 | `properties.additionalInfo.AffectedEntities` | Yes       | כן  | אופציונלי. עבור OperationType `Export` בלבד. כולל רשימה של ישויות מוגדרות בייצוא.                                                                                                                                                            |
 | `properties.additionalInfo.MessageCode`      | Yes       | כן  | אופציונלי. עבור OperationType `Export` בלבד. הודעה מפורטת עבור הייצוא.                                                                                                                                                                                 |
 | `properties.additionalInfo.entityCount`      | Yes       | כן  | אופציונלי. עבור OperationType `Segmentation` בלבד. מציין את סך הכל מספרי החברים שיש לפלח.                                                                                                                                                    |
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,19 +1,19 @@
 ---
 title: העשר פרופילי לקוחות באמצעות נתונים דמוגרפיים מ- Experian ‏(Preview)
 description: מידע כללי על העשרת צד שלישי של Experian.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 876853ab42e8c08ad1abacb8d8a205c0aadabcf7
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fccb37cde3f05a70009c18b6c52db01a5ede094d
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195937"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237997"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>העשר פרופילי לקוחות באמצעות נתונים דמוגרפיים מ- Experian ‏(Preview)
 
@@ -41,13 +41,9 @@ Experian הינה מובילה עולמית בתחום שירותי דיווח �
 
 1. הזן שם לחיבור ומזהה משתמש תקין, מזהה צד ומספר מודל עבור חשבון תחבורה מאובטח שלך ב- Experian.
 
-1. סקור את [פרטיות ותאימות נתונים](#data-privacy-and-compliance) ותן את הסכמתך על-ידי בחירת **אני מסכים**.
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
 
 1. בחר **אמת** כדי לאמת את התצורה ולאחר מכן בחר **שמור**.
-
-### <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
-
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים ל- Experian, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעלולים להיות רגישים, כגון נתונים אישיים. Microsoft תעביר נתונים כאלה בהוראתך, אבל אתה אחראי להבטיח ש- Experian עומדת בכל התחייבויות הפרטיות והאבטחה שלך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732). מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר העשרה זו בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
 
 ## <a name="configure-the-enrichment"></a>קביעת תצורת ההעשרה
 

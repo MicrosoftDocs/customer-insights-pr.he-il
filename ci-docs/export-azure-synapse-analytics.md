@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: f9c9ee55f2874ae1dcaf82f2ff17ed0fbbb7804d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0e953cfff12df433d033717d58b28c2834468916
+ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196395"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9259845"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>ייצוא נתונים אל Azure Synapse Analytics ‏(Preview)
 
@@ -24,7 +24,7 @@ Azure Synapse הוא שירות ניתוח שמזרז את הזמן להשגת �
 > [!NOTE]
 > הקפד להגדיר את כל **הקצאות התפקידים** כפי שתואר.
 
-- ב- Customer Insights, חשבון המשתמש שלך ב- Azure Active Directory ‏(AD) חייב לכלול [תפקיד מנהל מערכת](permissions.md#assign-roles-and-permissions).
+- ב- Customer Insights, חשבון המשתמש שלך ב- Azure Active Directory ‏(AD) חייב לכלול [תפקיד מנהל מערכת](permissions.md#add-users).
 
 ב- Azure:
 
@@ -39,6 +39,8 @@ Azure Synapse הוא שירות ניתוח שמזרז את הזמן להשגת �
 - ה *זהות המנוהלת של  [ workspaceAzure Synapse](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* כולל הרשאות מסוג **תורם נתונים של Blob אחסון** בחשבון Azure Data Lake Storage  Gen2 שבו הנתונים ממוקמים ומקושרים אל workspace Azure Synapse. למידע נוסף על [השימוש בפורטל Azure כדי להקצות תפקיד Azure לצורך גישה לנתוני Blob ולנתוני תור](/azure/storage/common/storage-auth-aad-rbac-portal) ועל [הרשאות תורם נתונים של Blob אחסון](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - ב- Azure Synapse Workspace, ל *מנהל השירות עבור Customer Insights* [מוקצה התפקיד](/azure/synapse-analytics/security/how-to-set-up-access-control) **מנהל מערכת של Synapse**.
+
+- אם סביבת Customer Insights שלך מאחסנת נתונים [ב- Azure Data Lake Storage משלך](own-data-lake-storage.md), המשתמש שהגדיר את החיבור ל- Azure Synapse Analytics צריך לפחות את התפקיד המובנה **קורא** בחשבון Data Lake Storage. למידע נוסף, ראה [הקצאת תפקידי Azure באמצעות פורטל Azure](/azure/role-based-access-control/role-assignments-portal).
 
 ## <a name="set-up-connection-to-azure-synapse"></a>הגדרת חיבור ל- Azure Synapse
 

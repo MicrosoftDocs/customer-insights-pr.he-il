@@ -1,68 +1,39 @@
 ---
-title: הגדרות אבטחה ב- Customer Insights
+title: קבע את הגדרות האבטחה
 description: למד על הגדרות אבטחה ב- Dynamics 365 Customer Insights.
-ms.date: 06/08/2022
+ms.date: 08/02/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 163deb9bed4f82d742c46cace27dd128f0aca18b
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: ea21163d7dd05370de28ca8340ae9583846adb26
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947416"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246063"
 ---
-# <a name="security-settings-in-customer-insights"></a>הגדרות אבטחה ב- Customer Insights
+# <a name="configure-security-settings"></a>קבע את הגדרות האבטחה
 
-הדף **אבטחה** מפרט אפשרויות לקביעת הרשאות משתמש ותכונות שעוזרות להפוך את Dynamics 365 Customer Insights למאובטחת יותר. רק מנהלי מערכת יכולים לגשת לדף זה.
+נהל מפתחות API, גש לנתוני לקוחות והגדר קישור פרטי של Azure.
 
-עבור אל **מנהל מערכת** > **אבטחה** כדי לקבוע את ההגדרות.
+## <a name="manage-api-keys"></a>נהל מפתח API
 
-הדף **אבטחה** כולל את הכרטיסיות הבאות:
+הצג ונהל את המפתחות לשימוש [בממשקי ה- API של Customer Insights](apis.md) עם הנתונים בסביבה שלך.
 
-- [משתמשים](#users-tab)
-- [ממשקי API](#apis-tab)
-- [קישורים פרטיים](#private-links-tab)
-- [Key Vault](#key-vault-tab)
-- [גישה מאובטחת לנתוני לקוח באמצעות כספת לקוח (‏Preview)](#securely-access-customer-data-with-customer-lockbox-preview)
+1. עבור אל **מערכת** > **אבטחה**, ולאחר מכן בחר בכרטיסיה **ממשקי API**.
 
-## <a name="users-tab"></a>כרטיסיית משתמשים
+1. אם לא הוגדרה גישת API לסביבה, בחר **הפוך לזמין**. לחלופין, כדי לחסום גישת API לסביבה, בחר **השבת** ואשר.
 
-הגישה ל- Customer Insights מוגבלת למשתמשים בארגון שלך שנוספו לאפליקציה על ידי מנהל מערכת. הכרטיסיה **משתמשים** מאפשרת לך לנהל את גישת המשתמשים ואת ההרשאות שלהם. לקבלת מידע נוסף, ראה [הרשאות משתמש](permissions.md).
+1. נהל את מפתחות ה- API הראשיים והמשניים:
 
-## <a name="apis-tab"></a>כרטיסיית ממשקשי API
+   1. כדי להציג את מפתח ה-API הראשי או המשני, בחר בסמל **הצג**.
 
-הצג ונהל את המפתחות לשימוש [בממשקי ה- API של Customer Insights](apis.md) עם הנתונים מסביבה שלך.
+   1. כדי להעתיק את מפתח ה-API הראשי או המשני, בחר בסמל **העתק**.
 
-ניתן ליצור מפתחות ראשיים ומשניים חדשים על ידי בחירה באפשרות **צור מחדש את הראשי** או **צור מחדש את המשני**. 
-
-כדי לחסום גישת API לסביבה, בחר **השבת**. אם ממשקי API מושבתים, אפשר לבחור באפשרות **הפוך לזמין** כדי להעניק גישה שוב.
-
-## <a name="private-links-tab"></a>כרטיסיית קישורים פרטיים
-
-[קישור פרטי של Azure](/azure/private-link/private-link-overview) מאפשר ל- Customer Insights להתחבר אל חשבון Azure Data Lake Storage שלך באמצעות נקודת קצה פרטית ברשת הוירטואלית שלך. עבור נתונים בחשבון אחסון שאינו חשוף לאינטרנט הציבורי, קישור פרטי מאפשר את החיבור לרשת מוגבלת זו.
-
-> [!IMPORTANT]
-> דרישת תפקיד מינימלית להגדרת חיבור קישור פרטי:
->
-> - Customer Insights: מנהל מערכת
-> - תפקיד מובנה של Azure: [חשבון אחסון משתתף](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
-> - הרשאות עבור תפקיד Azure מותאם אישית: [ Microsoft.Storage/storageAccounts/read ו-Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
->
-
-הגדרת קישור פרטי ב- Customer Insights היא תהליך בן שני שלבים. ראשית, אתה יוזם יצירת קישור פרטי דרך **מנהל מערכת** > **אבטחה** > **קישורים פרטיים** ב- Customer Insights. החלונית **הוסף קישור פרטי** מציגה חשבונות אחסון מהדייר שלך שיש לך הרשאות לראות. בחר את חשבון האחסון וספק הסכמה ליצירת הקישור הפרטי.
-
-לאחר מכן, עליך לאשר את הקישור הפרטי בצד חשבון Data Lake Storage. פתח את הקישור המוצג על המסך כדי לאשר את הקישור הפרטי החדש.
-
-## <a name="key-vault-tab"></a>הכרטיסיה Key Vault
-
-הכרטיסיה **Key Vault** מאפשרת לך לקשר ולנהל [Azure Key Vault](/azure/key-vault/general/basic-concepts) משלך עבור הסביבה.
-ניתן להשתמש ב- key vault הייעודי כדי לאחסן סודות ולהשתמש בהם בגבול התאימות של ארגון. Customer Insights יכולות להשתמש בסודות ב- Azure Key Vault כדי [להגדיר חיבורים](connections.md) למערכות צד שלישי.
-
-לקבלת מידע נוסף, ראה [הבאת Azure Key Vault משלך](use-azure-key-vault.md).
+   1. כדי ליצור מפתחות ראשיים ומשניים חדשים של ה- API, בחר באפשרות **צור מחדש את הראשי** או **צור מחדש את המשני**.
 
 ## <a name="securely-access-customer-data-with-customer-lockbox-preview"></a>גישה מאובטחת לנתוני לקוח באמצעות כספת לקוח (‏Preview)
 
@@ -72,5 +43,33 @@ Customer Insights משתמש ביכולת כספת לקוח של Power Platform.
 
 > [!IMPORTANT]
 > מנהלים כלליים של Power Platform או מנהלי מערכת של Power Platform יכולים לאשר בקשות של כספת לקוח שהונפקו עבור Customer Insights.
+
+## <a name="set-up-an-azure-private-link"></a>הגדר קישור פרטי של Azure
+
+[קישור פרטי של Azure](/azure/private-link/private-link-overview) מאפשר ל- Customer Insights להתחבר אל חשבון Azure Data Lake Storage שלך באמצעות נקודת קצה פרטית ברשת הוירטואלית שלך. עבור נתונים בחשבון אחסון שאינו חשוף לאינטרנט הציבורי, קישור פרטי מאפשר את החיבור לרשת מוגבלת זו.
+
+> [!IMPORTANT]
+> דרישת תפקיד מינימלית להגדרת חיבור קישור פרטי:
+>
+> - Customer Insights: מנהל מערכת
+> - תפקיד מובנה של Azure: [חשבון אחסון משתתף](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
+> - הרשאות עבור תפקיד Azure מותאם אישית: [ Microsoft.Storage/storageAccounts/read ו-Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
+
+1. ב- Customer Insights, עבור אל **מנהל מערכת** > **אבטחה** ובחר סכרטיסיה **קישורים פרטיים**.
+
+1. בחר **הוסף קישור פרטי**.
+
+   החלונית **הוסף קישור פרטי** מציגה חשבונות אחסון מהדייר שלך שיש לך הרשאות לראות.
+
+1. בחר את מינוי, קבוצת משאבים וחשבון אחסון.
+
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
+
+1. בחר **Save**.
+
+1. עבור לחשבון Data Lake Storage שלך ופתח את הקישור המוצג על המסך.
+
+1. אשר את הקישור הפרטי.
+
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

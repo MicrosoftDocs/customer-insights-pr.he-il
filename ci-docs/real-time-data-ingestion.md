@@ -11,18 +11,18 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 403cc9dbd3bddcf67f59b5cb0be936af4d268fc2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 2652e0868f5cc514ab6df9c150a9183cf95ae589
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195659"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246109"
 ---
 # <a name="real-time-data-ingestion-preview"></a>קליטת נתונים בזמן אמת (תצוגה מקדימה)
 
 הפונקציונליות של כמעט בזמן אמת מאפשרת לך לראות, תוך שניות, את האינטראקציות האחרונות שביצעו הלקוחות שלך עם המוצרים או השירותים שלך.
 
-הכרטיסיה [רענונים מתוזמנים](system.md#schedule-tab) כוללת מספר רב של רשומות וכמה פעולות מורכבות. ראשית, הנתונים נמשכים ממקור הנתונים. בשלב הבא, הנתונים מאוחדים ולאחר מכן מועשרים בעזרת מידע נוסף. כל הפעלה של תהליך זה עשויה לארוך דקות עד שעות.
+הכרטיסיה [רענונים מתוזמנים](schedule-refresh.md) כוללת מספר רב של רשומות וכמה פעולות מורכבות. ראשית, הנתונים נמשכים ממקור הנתונים. בשלב הבא, הנתונים מאוחדים ולאחר מכן מועשרים בעזרת מידע נוסף. כל הפעלה של תהליך זה עשויה לארוך דקות עד שעות.
 
 הפונקציונליות בזמן אמת מספקת מיד נתונים לצריכה, עד שהרענון המתוזמן הבא ימשוך נתונים אלה ממקור הנתונים.
 
@@ -85,7 +85,7 @@ ms.locfileid: "9195659"
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>הבן את השימוש שלך בזמן אמת באמצעות טלמטריה
 
-קבל סקירה של היקף הבקשות לממשק ה- API בזמן אמת ומידע על בעיות שהמערכת עלולה להיתקל בהן. באפשרותך [לגשת למדידת השימוש בזמן אמת](system.md#api-usage-tab). 
+קבל סקירה של היקף הבקשות לממשק ה- API בזמן אמת ומידע על בעיות שהמערכת עלולה להיתקל בהן. באפשרותך [לגשת למדידת השימוש בזמן אמת](system.md#view-api-usage). 
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

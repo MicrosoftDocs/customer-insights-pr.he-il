@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
 ms.reviewer: mhart
-ms.openlocfilehash: 5acb58906c1a9db54337f3b4dc2ab7891db7954e
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: d2ff49c324c5c5c28213f362ff330d441fcb6052
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011934"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246202"
 ---
 # <a name="use-your-own-azure-data-lake-storage-gen2-account"></a>תשתמש בחשבון Azure Data Lake Storage‏ Gen2 משלך
 
@@ -37,7 +37,7 @@ Dynamics 365 Customer Insights מאפשר לך לאחסן את כל הנתוני
 1. בחר כיצד **לחבר את האחסון שלך**. אתה יכול לבחור בין אפשרות מבוססת משאבים לאפשרות המבוססת על מנוי לאימות. לקבלת מידע נוסף, ראה [התחברות לחשבון Azure Data Lake Storage באמצעות מנהל שירות של Azure](connect-service-principal.md).
    - עבור **מינוי Azure**, בחר ב **מינוי**, ב **קבוצת המשאבים**, וב **חשבון האחסון** שמכילים את הגורם המכיל `customerinsights`.
    - ל **מפתח חשבון**, ספק את **שם החשבון** ואת **מפתח החשבון** עבור חשבון Data Lake Storage. שימוש בשיטת אימות לגרום לכך שתקבל הודעה אם הארגון שלך עושה סבב עם המפתחות. אתה חייב [עדכן את תצורת הסביבה](manage-environments.md#edit-an-existing-environment) עם המפתח החדש כאשר מתבסס סבב.
-1. בחר אם ברצונך להשתמש בקישור פרטי של Azure  כדי להתחבר לחשבון האחסון ו[צור את החיבור לקישור פרטי](security-overview.md#private-links-tab) באמצעות תהליך דו-שלבי.
+1. בחר אם ברצונך להשתמש בקישור פרטי של Azure  כדי להתחבר לחשבון האחסון ו[צור את החיבור לקישור פרטי](security-overview.md#set-up-an-azure-private-link) באמצעות תהליך דו-שלבי.
 
 כאשר תהליכי מערכת, כמו עיבוד נתונים מסתיימים, המערכת יוצרת תיקיות מתאימות בחשבון האחסון שציינת. קבצי נתונים וקבצי *model.json* נוצרים ונוספים לתיקיות בהתאם לשם התהליך.
 

@@ -1,19 +1,19 @@
 ---
 title: העשרת פרופילי לקוחות באמצעות HERE Technologies ‏(Preview)
 description: מידע כללי אודות העשרה של צד שלישי באמצעות HERE Technologies.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 26de9fce863c9832b70adf3ce39cb2ae0ce43d0e
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 86a070342193dd7afda38823d90f4bd28c8b862e
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196257"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237859"
 ---
 # <a name="enrich-customer-profiles-with-here-technologies-preview"></a>העשרת פרופילי לקוחות באמצעות HERE Technologies ‏(Preview)
 
@@ -33,16 +33,11 @@ HERE Technologies היא חברת פלטפורמת מיקום המספקת נת�
 
 1. הזן שם לחיבור ומפתח תקף של HERE Technologies API.
 
-1. סקור את [פרטיות ותאימות נתונים](#data-privacy-and-compliance) ותן את הסכמתך על-ידי בחירת **אני מסכים**.
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
 
 1. בחר **אמת** כדי לאמת את התצורה ולאחר מכן בחר **שמור**.
 
    :::image type="content" source="media/enrichment-HERE-connection.png" alt-text="דף תצורת החיבור של HERE Technologies.":::
-
-### <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
-
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים אל HERE Technologies, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעשויים להיות רגישים כגון 'נתונים אישיים'. Microsoft תעביר נתונים אלה בהוראתך, אבל אתה אחראי לוודא ש- HERE Technologies עומדת בכל התחייבויות הפרטיות או האבטחה שעשויות להיות לך. לקבלת מידע נוסף, עיין ב[הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר העשרה זו בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
 
 ## <a name="configure-the-enrichment"></a>קביעת תצורת ההעשרה
 

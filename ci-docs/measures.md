@@ -14,12 +14,12 @@ searchScope:
 - ci-measure-template
 - ci-enrichment-details
 - customerInsights
-ms.openlocfilehash: ead57ccbdcaf9f86ee54d1f15de71a63f2e1081b
-ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
+ms.openlocfilehash: 99368a7ab2e8d7b3e53c04fbf25bb23bd2e550a9
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9170821"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245374"
 ---
 # <a name="measures-overview"></a>מבט כולל על מדדים
 
@@ -53,7 +53,7 @@ ms.locfileid: "9170821"
 - **ערוך** את המדד כדי לשנות את המאפיינים שלו.
 - **רענן** את המדד כדי לכלול את הנתונים העדכניים ביותר.
 - **שנה שם** של המדד.
-- **הפעל** או **השבת** את המדד. לא יתבצע רענון למדדים לא פעילים במהלך [רענון מתוזמן](system.md#schedule-tab) וה **מצב** שלהם הוא **המערכת דילגה** מה שמצביע על כך שלא היה אפילו ניסיון לבצע רענון.
+- **הפעל** או **השבת** את המדד. לא יתבצע רענון למדדים לא פעילים במהלך [רענון מתוזמן](schedule-refresh.md) וה **מצב** שלהם הוא **המערכת דילגה** מה שמצביע על כך שלא היה אפילו ניסיון לבצע רענון.
 - **תג** ל[ניהול תגים](work-with-tags-columns.md#manage-tags) עבור המדד.
 - **מחק** את המדד.
 - **עמודות** ל[התאמה אישית של העמודות](work-with-tags-columns.md#customize-columns) בתצוגה הזו.
@@ -62,7 +62,7 @@ ms.locfileid: "9170821"
 
 ## <a name="refresh-measures"></a>רענן מדדים
 
-ניתן לרענן את המדדים בלוח זמנים אוטומטי או לרענן אותם באופן ידני לפי דרישה. כדי לרענן באופן ידני מדד אחד או יותר, בחר אותם ובחר **רענן**. כדי [לתזמן רענון אוטומטי](system.md#schedule-tab), עבור אל **מנהל מערכת** > **מערכת** > **לוח זמנים**.
+ניתן לרענן את המדדים בלוח זמנים אוטומטי או לרענן אותם באופן ידני לפי דרישה. כדי לרענן באופן ידני מדד אחד או יותר, בחר אותם ובחר **רענן**. כדי [לתזמן רענון אוטומטי](schedule-refresh.md), עבור אל **מנהל מערכת** > **מערכת** > **לוח זמנים**.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

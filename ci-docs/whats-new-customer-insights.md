@@ -1,19 +1,19 @@
 ---
 title: מה חדש ב- Dynamics 365 Customer Insights
 description: מידע על תכונות חדשות, שיפורים ותיקוני באגים.
-ms.date: 06/30/2022
+ms.date: 08/03/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: f3ae0fe6631ee7c8d79664528be383ec53e93fe8
-ms.sourcegitcommit: 92e5a798ca75c7f10aa5025a9bbd2ffb4d4ae7d2
+ms.openlocfilehash: a9bb254736ae70589afb267bf0a60206a18a3385
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "9114247"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246012"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>מה חדש ב- Dynamics 365 Customer Insights
 
@@ -23,6 +23,28 @@ ms.locfileid: "9114247"
 
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="july-2022-updates"></a>עדכוני יולי 2022
+
+העדכונים ביולי 2022 כוללים תכונות חדשות, דירוגי ביצועים ותיקוני באגים.
+
+### <a name="export-to-moengage"></a>ייצוא ל- MoEngage
+
+יצא פלחים של פרופילי לקוחות מאוחדים ל- MoEngage והשתמש בהם עבור שיווק בדואר אלקטרוני ב- MoEngage.
+
+לקבלת מידע נוסף, ראה [‏‫ייצוא פלחים אל MoEngage](export-moengage.md).
+
+### <a name="ssh-support-for-sftp-based-exports"></a>תמיכת SSH לייצוא מבוסס SFTP
+
+בחר אם ברצונך לבצע אימות באמצעות SSH או שם משתמש/סיסמה עבור חיבורים ליעדי ייצוא מסוג SFTP.
+
+לקבלת מידע נוסף, ראה [ייצוא נתונים למארחי SFTP](export-sftp.md).
+
+### <a name="personalize-experiences-with-data-about-known-and-unknown-users"></a>התאם אישית חוויות עם נתונים על משתמשים ידועים ולא ידועים
+
+ניהול נתוני לקוחות אינו אתגר חדש, אך הוא הופך לקשה יותר ויותר בזמן שמשתמשים מנווטים בין הערוצים הדיגיטליים השונים שמוצעים על ידי מותגים. משתמש ידוע (מאומת) בערוץ אחד הופך ללא ידוע (לא מאומת) בערוץ אחר אם הוא לא מחובר. לעתים קרובות הבעיה היא שלמשתמשים לא מאומתים (לא ידועים) אין מזהה משותף. ניתן להשתמש בו כדי לשייך תכונות משמעותיות של פרופילים וליצור פרופילי לקוחות מאוחדים. Customer Insights עוזר לפתור בעיה זו על ידי קליטת נתונים משיטות מעקב במערכות המקור שלך.
+
+למידע נוסף, ראה [התאם אישית את החוויות שלך עם נתונים על משתמשים ידועים ולא ידועים](unknown-to-known.md).
 
 ## <a name="june-2022-updates"></a>עדכוני יוני 2022
 
@@ -50,7 +72,7 @@ InMobi עוזר למותגים להבין, לזהות, לעסוק ולהשיג �
 
 קישור פרטי של Azure מאפשר ל- Customer Insights להתחבר אל חשבון Azure Data Lake Storage שלך באמצעות נקודת קצה פרטית ברשת הוירטואלית שלך. עבור נתונים בחשבון אחסון שאינו חשוף לאינטרנט הציבורי, קישור פרטי מאפשר את החיבור לרשת מוגבלת זו.
 
-למידע נוסף, ראה [שימוש בקישור פרטים ב- Customer Insights](security-overview.md#private-links-tab).
+למידע נוסף, ראה [שימוש בקישור פרטים ב- Customer Insights](security-overview.md#set-up-an-azure-private-link).
 
 ## <a name="may-2022-updates"></a>עדכוני מאי 2022
 

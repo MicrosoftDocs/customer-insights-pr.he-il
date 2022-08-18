@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 1af7f018abd412c833ff22b3880f0e4508ff4953
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: a7cf06c07e4b95b848a55dfe5fe0b09397fe744e
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139583"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245595"
 ---
 # <a name="update-the-unification-settings"></a>עדכן את הגדרות האיחוד
 
@@ -42,7 +42,7 @@ ms.locfileid: "9139583"
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="צילום מסך של דף Data איחוד עם אפשרויות איחוד מודגשות.":::
 
    - [הפעל תנאים תואמים](#run-matching-conditions) כדי להעריך את איכות תנאי ההתאמה (תנאי ביטול כפילויות והתאמה) בלי לעדכן את הפרופיל המאוחד. האפשרות **הפעל תנאים תואמים בלבד** לא מוצגת עבור ישות בודדת.
-   - [איחוד פרופילי לקוחות](#run-updates-to-the-unified-customer-profile): להפעלת תנאי ההתאמה ולעדכן את ישות Unified customer profile מבלי להשפיע על יחסי תלות (כגון העשרות, פלחים או מדדים). תהליכים תלויים אינם מופעלים, אך יתרעננו בתור [מוגדר בלוח הזמנים של הרענון](system.md#schedule-tab).
+   - [איחוד פרופילי לקוחות](#run-updates-to-the-unified-customer-profile): להפעלת תנאי ההתאמה ולעדכן את ישות Unified customer profile מבלי להשפיע על יחסי תלות (כגון העשרות, פלחים או מדדים). תהליכים תלויים אינם מופעלים, אך יתרעננו בתור [מוגדר בלוח הזמנים של הרענון](schedule-refresh.md).
    - [איחוד פרופילי לקוחות ויחסי תלות](#run-updates-to-the-unified-customer-profile): להפעלת תנאי ההתאמה ולעדכון הישות Unified customer profile ואת כל יחסי התלות (כגון העשרות, פלחים או מדדים). כל התהליכים מופעלים מחדש באופן אוטומטי.
 
 ## <a name="edit-source-fields"></a>ערוך שדות מקור
@@ -154,7 +154,7 @@ ms.locfileid: "9139583"
 
 1. בדף **נתונים** > **איחוד**, בחר:
 
-   - **איחוד פרופילי לקוחות**: מפעיל תנאי ההתאמה ומעדכן את הישות Unified customer profile בלי להשפיע על יחסי תלות (כגון העשרות, פלחים או מדדים). תהליכים תלויים אינם מופעלים, אך יתרעננו בתור [מוגדר בלוח הזמנים של הרענון](system.md#schedule-tab).
+   - **איחוד פרופילי לקוחות**: מפעיל תנאי ההתאמה ומעדכן את הישות Unified customer profile בלי להשפיע על יחסי תלות (כגון העשרות, פלחים או מדדים). תהליכים תלויים אינם מופעלים, אך יתרעננו בתור [מוגדר בלוח הזמנים של הרענון](schedule-refresh.md).
 
    - **איחוד פרופילי לקוחות ויחסי תלות**: מפעל את תנאי ההתאמה ומעדכן את הפרופיל המאוחד ואת כל יחסי התלות. כל התהליכים מופעלים מחדש באופן אוטומטי. לאחר השלמת כל התהליכים במורד הזרם, פרופיל הלקוח משקף את הנתונים המעודכנים.
 

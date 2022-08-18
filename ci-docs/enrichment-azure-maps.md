@@ -1,19 +1,19 @@
 ---
 title: העשרת פרופילי הלקוחות בנתוני מיקום מ- Azure Maps‏ (Preview)
 description: מידע כללי על העשרת צד ראשון של Azure Maps.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f14b4fc20a9a1d8842f42f9e0e656b3d8dcddcf4
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052608"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9238043"
 ---
 # <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>העשרת פרופילי הלקוחות בנתוני מיקום מ- Azure Maps‏ (Preview)
 
@@ -35,14 +35,9 @@ Azure Maps מספקת נתונים ושירותים ממוקדי מיקום כד
 
 1. הזן שם לחיבור ומפתח תקף של ה- ‏API של Azure Maps.
 
-1. סקור את [פרטיות ותאימות נתונים](#data-privacy-and-compliance) ותן את הסכמתך על-ידי בחירת **אני מסכים**.
+1. סקור את [פרטיות ותאימות הנתונים](connections.md#data-privacy-and-compliance) ובחר **אני מסכים**.
 
 1. בחר **אמת** כדי לאמת את התצורה ולאחר מכן בחר **שמור**.
-
-### <a name="data-privacy-and-compliance"></a>פרטיות ותאימות של נתונים
-
-כאשר אתה מאפשר ל- Dynamics 365 Customer Insights להפיץ נתונים ל- Azure Maps, אתה מאפשר העברת נתונים מחוץ לגבול התאימות עבור Dynamics 365 Customer Insights, כולל נתונים שעלולים להיות רגישים, כגון נתונים אישיים. Microsoft תעביר נתונים אלה בהוראתך, אך אתה אחראי להבטיח ש- Azure Maps עומד בכל מחויבויות הפרטיות או האבטחה שלקחת על עצמך. לקבלת מידע נוסף, עבור אל [הצהרת הפרטיות של Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-מנהל המערכת של Dynamics 365 Customer Insights יכול להסיר העשרה זו בכל עת כדי להפסיק את השימוש בפונקציונליות זו.
 
 ## <a name="configure-the-enrichment"></a>קביעת תצורת ההעשרה
 
