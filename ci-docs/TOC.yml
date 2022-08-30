@@ -76,7 +76,9 @@
       href: merge-entities.md
     - name: בדוק את איחוד הנתונים
       href: review-unification.md
-    - name: עדכן את הגדרות האיחוד
+    - name: מהו פרופיל איש קשר מאוחד
+      href: data-unification-contacts.md
+    - name: עדכון הגדרות האיחוד
       href: data-unification-update.md
 - name: העשרת נתונים
   items:

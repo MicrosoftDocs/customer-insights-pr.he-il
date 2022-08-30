@@ -1,19 +1,19 @@
 ---
 title: ייצוא פלחים אל LinkedIn Ads ‏(Preview)
 description: למד כיצד להגדיר את החיבור ולייצא אל LinkedIn Ads.
-ms.date: 07/25/2022
+ms.date: 08/12/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d1a9ae985043398f4bc38163be26ecf0c3c8e2ba
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 4c3928e05db0ebda262b4ad3e928ce85f70035b9
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196809"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304704"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>ייצוא פלחים אל LinkedIn Ads ‏(Preview)
 
@@ -24,7 +24,7 @@ ms.locfileid: "9196809"
 - [חשבון LinkedIn Campaign Manager](https://business.linkedin.com/marketing-solutions/ads) ואישורי מנהל מערכת תואמים.
 - [מזהה תיק לקוח של LinkedIn Campaign Manager](https://www.linkedin.com/help/lms/answer/a424270).
 - [פלחים מוגדרים](segments.md) ב- Customer Insights.
-- פרופילי לקוחות מאוחדים בפלחים המיוצאים מכילים שדה המייצג כתובת דוא"ל.
+- הפלחים המיוצאים צריכים לפחות שדה ספציפי אחד בהתאם לבחירתך ב[פילוח לפי אנשי קשר](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) או [פילוח לפי חברה](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) ב- LinkedIn. השדות האפשריים מפורטים בשלב **התאמת נתונים**  בעת [הגדרת הייצוא](#configure-an-export).
 
 ## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 

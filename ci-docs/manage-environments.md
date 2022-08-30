@@ -1,7 +1,7 @@
 ---
-title: 'כיצד: לנהל סביבות'
+title: ניהול סביבות
 description: למד כיצד לנהל סביבות קיימות של Customer Insights כמנהל מערכת.
-ms.date: 05/31/2022
+ms.date: 08/15/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
@@ -11,20 +11,20 @@ manager: shellyha
 searchScope:
 - ci-system-about
 - customerInsights
-ms.openlocfilehash: fc3b3f404cf0ac84c782778414494289c803babe
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8b4a88bdb75c6e638a76c39d18647681ad4556d7
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081677"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304281"
 ---
-# <a name="how-to-manage-environments"></a>כיצד: לנהל סביבות
+# <a name="manage-environments"></a>ניהול סביבות
 
-מנהלי מערכת [יוצרים](create-environment.md) ומנהלים סביבות. הם יכולים לשנות הגדרות מסוימות בסביבות קיימות. עסק, סוג, אזור, אפשרות אחסון והגדרות Dataverse קבועות לאחר יצירת הסביבה. אם ברצונך לשנות הגדרות אלה, אפס את הסביבה או צור סביבה חדשה.
+מנהלי מערכת [יוצרים](create-environment.md) ומנהלים סביבות. הם יכולים לשנות הגדרות מסוימות בסביבות קיימות. עסק, סוג, אזור, אפשרות אחסון והגדרות Dataverse קבועות לאחר יצירת הסביבה. אם ברצונך לשנות הגדרות אלה, [אפס את הסביבה](#reset-an-existing-environment-preview) או [צור סביבה חדשה](create-environment.md).
 
 ## <a name="edit-an-existing-environment"></a>עריכת סביבה קיימת
 
-באפשרותך לערוך חלק מהפרטים של סביבות קיימות.
+ערוך פרטים של סביבה קיימת כגון השם או הגדרת סביבת ברירת המחדל.
 
 1. בחר את בורר **הסביבה** בכותרת היישום.
 
@@ -32,9 +32,9 @@ ms.locfileid: "9081677"
 
    :::image type="content" source="media/edit-environment.png" alt-text="סמל לעריכת הגדרות הסביבה.":::
 
-1. בתיבה **ערוך סביבה**, באפשרותך לעדכן את הגדרות הסביבה.
+1. בחלונית **ערוך סביבה**, עדכן את הגדרות הסביבה.
 
-כדי ליצור סביבה חדשה, ראה [צור סביבה חדשה](create-environment.md).
+1. בחר **בדיקה וסיום**, לאחר מכן **עדכון** כדי להחיל את השינויים.
 
 ## <a name="change-the-owner-of-an-environment"></a>שינוי הבעלים של הסביבה
 
@@ -44,7 +44,7 @@ ms.locfileid: "9081677"
 
 1. בחר את סמל **עריכה**.
 
-1. בתיבה **ערוך סביבה**, עבור אל הצעד **מידע בסיסי**.
+1. בחלונית **ערוך סביבה**, עבור אל הצעד **מידע בסיסי**.
 
 1. בשדה **שנה את הבעלים של הסביבה**, בחר את הבעלים החדשים של הסביבה.  
 
@@ -52,19 +52,19 @@ ms.locfileid: "9081677"
 
 ## <a name="claim-ownership-of-an-environment"></a>טעינת בעלות על סביבה
 
-אם חשבון המשתש של הבעלים נמחק או מושהה, לסביבה לא יהיה בעלים. כל משתמש עם הרשאות מנהל מערכת יכול לתבוע את הבעלות ולהפוך לבעלים החדש. הוא יכול להמשיך כבעלים של הסביבה או [להעביר את הבעלות למנהל מערכת אחר](#change-the-owner-of-an-environment).
+אם חשבון המשתש של הבעלים נמחק או מושהה, לסביבה לא יהיה בעלים. כל משתמש עם הרשאות מנהל מערכת יכול לתבוע את הבעלות ולהפוך לבעלים החדש. מנהל המערכת שהוא הבעלים יכול להמשיך כבעלים של הסביבה או [להעביר את הבעלות למנהל מערכת אחר](#change-the-owner-of-an-environment).
 
 כדי לתבוע בעלות, בחר את הלחצן **לקחת בעלות** שמופיע בראש כל עמוד ב- Customer Insights כאשר הבעלים המקורי עזב את הארגון.
 
 ## <a name="reset-an-existing-environment-preview"></a>איפוס מסביבה קיימת (Preview)
 
-כבעלים של סביבה, אתה יכול לאפס סביבה למצב ריק אם ברצונך למחוק את כל התצורות ולהסיר את הנתונים שעובדו.
+כבעלים של סביבה,אפס סביבה למצב ריק אם ברצונך למחוק את כל התצורות ולהסיר את הנתונים שעובדו.
 
 1. בחר את בורר **הסביבה** בכותרת היישום.
 
 1. בחר את הסביבה שברצונך לאפס ובחר את שלוש הנקודות האנכיות (&vellip;).
 
-1. בחר את האפשרות **איפוס**.
+1. בחר **אפס (Preview)**.
 
    :::image type="content" source="media/reset-environment.png" alt-text="פקד לאיפוס סביבה.":::
 
@@ -74,19 +74,19 @@ ms.locfileid: "9081677"
 
 ## <a name="delete-an-existing-environment"></a>מחק סביבה קיימת
 
-כבעלים של סביבה, אתה יכול למחוק סביבה שאתה מנהל.
+כבעלים של סביבה, אתה יכול למחוק אותה.
+
+> [!IMPORTANT]
+> מחיקת סביבה אינה מסירה את החיבור לסביבת Dataverse. אם אתה מתכנן לחבר את אותו סביבת Dataverse לסביבת Customer Insights חדשה בעתיד, עליך [להסיר את החיבור הזה לסביבת Dataverse](customer-insights-dataverse.md#remove-an-existing-connection-to-a-dataverse-environment).
 
 1. בחר את בורר **הסביבה** בכותרת היישום.
 
-1. בחר את הסביבה שברצונך לאפס ובחר את שלוש הנקודות האנכיות (&vellip;). 
+1. בחר את הסביבה שברצונך למחוק ובחר את שלוש הנקודות האנכיות (&vellip;). 
 
-1. בחר את האפשרות **מחיקה**.
+1. בחר **מחק**.
 
    :::image type="content" source="media/delete-environment.png" alt-text="פקד למחיקת הסביבה.":::
 
 1. כדי לאשר את המחיקה, הזן את שם הסביבה ובחר **מחק**.
-
-> [!IMPORTANT]
-> מחיקת סביבה אינה מסירה את החיבור לסביבת Dataverse. אם אתה מתכנן לחבר את אותו סביבת Dataverse לסביבת Customer Insights חדשה בעתיד, עליך להסיר את החיבור הזה. למד כיצד [להסיר חיבור קיים לסביבת Dataverse](customer-insights-dataverse.md#remove-an-existing-connection-to-a-dataverse-environment).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

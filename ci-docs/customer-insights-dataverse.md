@@ -1,7 +1,7 @@
 ---
 title: עבודה עם נתונים של Customer Insights ב- Microsoft Dataverse
 description: למד כיצד לחבר בין Customer Insights לבין Microsoft Dataverse ולהבין את ישויות הפלט שמיוצאות אל Dataverse.
-ms.date: 07/15/2022
+ms.date: 08/15/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,25 +11,25 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 89ff629033230de3c6252b6a3a16816d9b3c1287
-ms.sourcegitcommit: 85b198de71ff2916fee5500ed7c37c823c889bbb
+ms.openlocfilehash: 0d536259f310b41fe12922baeebdc4569937db08
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9153405"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9303830"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>עבודה עם נתונים של Customer Insights ב- Microsoft Dataverse
 
-Customer Insights מספקת אפשרות להפוך ישויות פלט לזמינות בתור [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). שילוב זה מאפשר שיתוף נתונים קל ופיתוח מותאם אישית באמצעות גישה לקוד בסיסי/ללא קוד. [ישויות הפלט](#output-entities) זמינות כטבלאות בסביבת Dataverse. אתה יכול להשתמש בנתונים עבור כל יישום אחר המבוסס על טבלאות Dataverse. טבלאות אלה הופכות תרחישים כמו זרימות עבודה אוטומטיות דרך Power Automate או בניית אפליקציות באמצעות Power Apps לזמינים.
+Customer Insights מציע את האפשרות להפוך ישויות פלט לזמינות ב- [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). שילוב זה מאפשר שיתוף נתונים קל ופיתוח מותאם אישית באמצעות גישה לקוד בסיסי/ללא קוד. [ישויות הפלט](#output-entities) זמינות כטבלאות בסביבת Dataverse. אתה יכול להשתמש בנתונים עבור כל יישום אחר המבוסס על טבלאות Dataverse. טבלאות אלה הופכות תרחישים כמו זרימות עבודה אוטומטיות דרך Power Automate או בניית אפליקציות באמצעות Power Apps לזמינים.
 
 חיבור אל סביבת Dataverse משלך גם מאפשר לך [לקלוט נתונים ממקורות נתונים מקומיים באמצעות זרימות נתונים ושערים של Power Platform](connect-power-query.md#add-data-from-on-premises-data-sources).
 
 ## <a name="prerequisites"></a>דרישות מוקדמות
 
 - סביבות Customer Insights ו- Dataverse חייבות להתארח באותו אזור.
-- נדרש לך תפקיד מנהל מערכת גלובלי בסביבת Dataverse. עליך לוודא ש[סביבת Dataverse זו משוייכת](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) לקבוצות אבטחה מסוימות ולוודא שאתה מתווסף לקבוצות אבטחה אלה.
+- תפקיד מנהל מערכת כללי מוגדר בסביבת Dataverse. עליך לוודא ש[סביבת Dataverse זו משוייכת](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) לקבוצות אבטחה מסוימות ולוודא שאתה מתווסף לקבוצות אבטחה אלה.
 - אף סביבה אחרת של Customer Insights לא משויכת לסביבת Dataverse שברצונך לחבר. למד כיצד [להסיר חיבור קיים לסביבת Dataverse](#remove-an-existing-connection-to-a-dataverse-environment).
-- Microsoft Dataverse סביבה יכולה להתחבר רק לחשבון אחסון יחיד. דבר זה חל רק אם אתה מגדיר את הסביבה [לשימוש ב- Azure Data Lake Storage שלך](own-data-lake-storage.md).
+- סביבת Microsoft Dataverse המחוברת לחשבון אחסון יחיד אם הגדרת את הסביבה [לשימוש ב- Azure Data Lake Storage שלך](own-data-lake-storage.md).
 
 ## <a name="dataverse-storage-capacity-entitlement"></a>סביבת קיבולת אחסון של Dataverse
 
@@ -37,7 +37,7 @@ Customer Insights מספקת אפשרות להפוך ישויות פלט לזמ�
 
 **דוגמה:**
 
-בהנחה שאתה מקבל אחסון בנפח ‎15 ‎GB‎ למסד נתונים ואחסון קבצים בנפח ‎20 GB‎ לכל 100,000 פרופילי לקוחות. אם המינוי שלך כולל 300,000 פרופילי לקוחות, קיבולת האחסון הכוללת תהיה ‎45 GB ‏(3 x ‏‎15 GB) לאחסון מסד נתונים ו-‎60 GB לאחסון קבצים (3 x‏ ‎20 GB). באופן דומה, אם יש לך מינוי B2B עם 30,000 חשבונות, קיבולת האחסון הכוללת תהיה ‎45 GB ‏(3 ‏x‏ ‎15 GB) אחסון מסד נתונים ו-‎60 GB לאחסון קבצים (3 x‏ ‎20 GB).
+בהנחה שאתה מקבל אחסון בנפח ‎15 ‎GB‎ למסד נתונים ואחסון קבצים בנפח ‎20 GB‎ לכל 100,000 פרופילי לקוחות. אם המנוי שלך כולל 300,000 פרופילי לקוחות, קיבולת האחסון הכוללת שלך היא 45 ג"ב ‏(3 x‏ 15‏ ג"ב) אחסון במסד נתונים ו-60 ג"ב לאחסון קבצים (3‏ x‎‏ 20 ג"ב). באופן דומה, אם יש לך מנוי 'מעסק לעסק' עם 30 אלף תיקי לקוח, קיבולת האחסון הכוללת שלך היא 45 ג"ב (3‏ x‏ 15 ג"ב) לאחסון מסד נתונים ו-60 ג"ב לאחסון קבצים (3‏ x‏ 20 ג"ב).
 
 קיבולת היומן אינה מצטברת וקבועה עבור הארגון שלך.
 
@@ -47,70 +47,80 @@ Customer Insights מספקת אפשרות להפוך ישויות פלט לזמ�
 
 השלב של **Microsoft Dataverse** מאפשר לך לחבר את Customer Insights אל סביבת ה- Dataverse שלך תוך כדי [יצירת סביבת Customer Insights](create-environment.md).
 
-:::image type="content" source="media/dataverse-provisioning.png" alt-text="שיתוף נתונים עם Microsoft Dataverse מופעל אוטומטית עבור סביבות חדשות ברשת.":::
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="שיתוף נתונים עם Microsoft Dataverse מופעל אוטומטית עבור סביבות חדשות.":::
 
-מנהלי מערכת יכולים להגדיר את Customer Insights להתחבר אל סביבת Dataverse קיימת. על ידי מתן כתובת האתר לסביבת Dataverse, היא מתחברת לסביבת Customer Insights החדשה שלהם. לאחר יצירת החיבור בין Customer Insights ל- Dataverse, אל תשנה את שם הארגון עבור סביבת Dataverse. שם הארגון נמצא בשימוש בכתובת ה- URL של Dataverse ושם שונה מנתק את החיבור עם Customer Insights.
+1. ספק את כתובת ה- URL לסביבת Dataverse שלך או השאר ריק ליצירת כתובות עבורך.
 
-אם אתה לא רוצה להשתמש בסביבת Dataverse קיימת, המערכת יוצרת סביבה חדשה עבור נתוני Customer Insights בדייר שלך. [מנהלי Power Platform יכולים לקבוע מי יכול ליצור ולנהל סביבות](/power-platform/admin/control-environment-creation). כאשר אתה מגדיר סביבת Customer Insights חדשה והמנהל המערכת השבית את היצירה של סביבות Dataverse לכולם מלבד למנהלי מערכת, ייתכן שלא תוכל ליצור סביבה חדשה.
+   > [!NOTE]
+   > לאחר יצירת החיבור בין Customer Insights ל- Dataverse, אל תשנה את שם הארגון עבור סביבת Dataverse. שם הארגון נמצא בשימוש בכתובת ה- URL של Dataverse ושם שונה מנתק את החיבור עם Customer Insights.
 
-**הפוף שיתוף נתונים לזמין** באמצעות Dataverse על ידי בחירה בתיבת הסימון של שיתוף הנתונים.
+   [מנהלי Power Platform יכולים לקבוע מי יכול ליצור ולנהל סביבות Dataverse](/power-platform/admin/control-environment-creation). כאשר אתה מנסה מגדיר סביבת Customer Insights חדשה ולא מצליח, ייתכן שהמנהל המערכת השבית את היצירה של סביבות Dataverse לכולם מלבד למנהלי מערכת.
 
-אם אתה משתמש בחשבון Data Lake Storage משלך, תצטרך את **מזהה ההרשאות**. למידע נוסף על אופן קבלת מזהה ההרשאה, עיין בסעיף הבא.
+1. אם אתה משתמש בחשבון Data Lake Storage משלך:
+   1. בחר **אפשר שיתוף נתונים** עם Dataverse.
+   1. יש להזין את **מזהה ההרשאות**. לקבלת [מזהה ההרשאות  עליך להפוך שיתוף נתונים עם Dataverse מ- Azure Data Lake Storage משלך לזמין](#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
-## <a name="enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview"></a>הפוך שיתוף נתונים מ- Azure Data Lake Storage משלך לזמין באמצעות Dataverse ‏(Preview)
+## <a name="enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview"></a>הפוך שיתוף נתונים מ- Azure Data Lake Storage משלך עם Dataverse לזמין ‏(Preview)
 
-הפיכת שיתוף נתונים באמצעות Microsoft Dataverse לזמין כאשר הסביבה שלך [משתמשת בחשבון Azure Data Lake Storage משלך](own-data-lake-storage.md) מצריכה קונפיגורציה נוספת. למשתמש שמגדיר את סביבת Customer Insights נדרשות לפחות הרשאות **קורא נתונים של Blob אחסון** בגורם המכיל בחשבון *CustomerInsights* בחשבון Azure Data Lake Storage.
+[בחשבון Azure Data Lake Storage שלך](own-data-lake-storage.md), אמת שהגדרת המשתמש ב- Customer Insights כוללת לפחות הרשאות **קורא נתונים של Blob אחסון** בגורם המכיל בחשבון `customerinsights` בחשבון האחסון.
+
+### <a name="limitations"></a>הגבלות
+
+- קיים רק מיפוי אחד לאחד בין ארגון Dataverse וחשבון Azure Data Lake Storage. לאחר חיבור ארגון Dataverse לחשבון אחסון, הוא לא יכול להתחבר לחשבון אחסון אחר. מגבלה זו מונעת אכלוס מספר חשבונות אחסון על-ידי Dataverse.
+- שיתוף נתונים לא יעבוד אם יש צורך בהגדרה של Azure Private Link כדי לגשת לחשבון Azure Data Lake Storage מכיוון שהוא נמצא מאחורי חומת אש. נכון לעכשיו Dataverse אינו תומך בחיבור לנקודות קצה פרטיות דרך קישור פרטי.
+
+### <a name="set-up-security-groups-on-your-own-azure-data-lake-storage"></a>הגדר קבוצות אבטחה ב- Azure Data Lake Storage משלך
 
 1. צור שתי קבוצות אבטחה במנוי Azure שלך - קבוצת אבטחה אחת מסוג **קורא** וקבוצת אבטחה אחת מסוג **משתתף** והגדר את שירות Microsoft Dataverse כבעלים של שתי קבוצות האבטחה.
-2. נהל את רשימת בקרת הגישה (ACL) בגורם המכיל של CustomerInsights בחשבון האחסון שלך באמצעות קבוצות אבטחה אלה. תוסיף את שירות Microsoft Dataverse וכל אפליקציה עסקית מבוססי Dataverse כמו Dynamics 365 Marketing לקבוצה האבטחה **קורא** עם הרשאות **קריאה בלבד**. הוסף *רק* האפליקציית Customers Insights לקבוצת האבטחה **משתתף** כדי להעניק לה הרשאות **קריאה וכתיבה** לכתיבת פרופילים ותובנות.
 
-### <a name="limitations"></a>מגבלות
-
-ישנן שתי מגבלות בעת השימוש ב- Dataverse בחשבון Azure Data Lake Storage משלך:
-
-- יש מיפוי אחד לאחד בין ארגון Dataverse וחשבון Azure Data Lake Storage. לאחר חיבור ארגון Dataverse לחשבון אחסון, הוא לא יכול להתחבר לחשבון אחסון אחר. מגבלה זו מונעת אכלוס מספר חשבונות אחסון על-ידי Dataverse.
-- שיתוף נתונים לא יעבוד אם יש צורך בהגדרה של Azure Private Link כדי לגשת לחשבון Azure Data Lake Storage מכיוון שהוא נמצא מאחורי חומת אש. נכון לעכשיו Dataverse אינו תומך בחיבור לנקודות קצה פרטיות דרך קישור פרטי.
+1. נהל את רשימת בקרת הגישה (ACL) בגורם המכיל של `customerinsights` בחשבון האחסון שלך באמצעות קבוצות אבטחה אלה.
+   1. תוסיף את שירות Microsoft Dataverse וכל אפליקציה עסקית מבוססי Dataverse כמו Dynamics 365 Marketing לקבוצה האבטחה **קורא** עם הרשאות **קריאה בלבד**.
+   1. הוסף *רק* האפליקציית Customers Insights לקבוצת האבטחה **משתתף** כדי להעניק לה הרשאות **קריאה וכתיבה** לכתיבת פרופילים ותובנות.
 
 ### <a name="set-up-powershell"></a>הגדרת PowerShell
 
-כדי להפעיל את הסקריפטים של PowerShell, תחילה עליך להגדיר את PowerShell בהתאם.
+הגדר את PowerShell לביצוע סקריפטים של PowerShell.
 
 1. התקן את הגירסה העדכנית ביותר של [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
    1. במחשב שלך, בחר את מקש Windows במקלדת וחפש **Windows PowerShell‎** ובחר **הפעל בתור מנהל מערכת**.
    1. בחלון PowerShell שנפתח, הזן `Install-Module AzureAD`.
-2. ייבא שלושה מודולים.
-    1. בחלון PowerShell, הזן את `Install-Module -Name Az.Accounts` ובצע את הצעדים הבאים.
-    1. חזור על הפעולה עבור `Install-Module -Name Az.Resources` ועובר `Install-Module -Name Az.Storage`.
 
-### <a name="configuration-steps"></a>שלבי קביעת תצורה
+1. ייבא שלושה מודולים.
+   1. בחלון PowerShell, הזן את `Install-Module -Name Az.Accounts` ובצע את הצעדים הבאים.
+   1. חזור על הפעולה עבור `Install-Module -Name Az.Resources` ועובר `Install-Module -Name Az.Storage`.
+
+### <a name="execute-powershell-scripts-and-obtain-the-permission-identifier"></a>הפעל סקריפטים של PowerShell והשג את מזהה ההרשאה
 
 1. הורד את שני הסקריפטים של PowerShell שאתה צריך להפעיל [ממאגר GitHub](https://github.com/trin-msft/byol) של המנהדס שלנו.
-    1. `CreateSecurityGroups.ps1`
-       - כדי להפעיל סקריפט PowerShell זה, דרושות לך הרשאות של *מנהל דייר* .
-       - סקריפט PowerShell זה יוצר שתי קבוצות אבטחה במנוי Azure שלך. אחד לקבוצת 'קורא' ואחר לקבוצת 'משתתף' ויהפוך את שירות Microsoft Dataverse לבעלים של שתי קבוצות האבטחה האלו.
-       - בצע סקריפט PowerShell זה ב-Windows PowerShell על ידי מתן מזהה המנוי של Azure המכיל את Azure Data Lake Storage שלך. פתח את סקריפט ה- PowerShell בעורך כדי לסקור מידע נוסף ואת הלוגיקה שיושמה.
-       - שמור את שני ערכי מזהי קבוצת האבטחה שנוצרו על ידי הסקריפט הזה מכיוון שנשתמש בהם בסקריפט `ByolSetup.ps1`.
+   - `CreateSecurityGroups.ps1`: דרושות הרשאות מנהל מערכת של דייר.
+   - `ByolSetup.ps1`: דורש הרשאות בעלים של 'נתוני בלוב אחסון' ברמת חשבון האחסון/הגורם המיכל. הסקריפט הזה ייצור עבורך את ההרשאה. ניתן להסיר את הקצאת התפקיד שלך באופן ידני לאחר הפעלה מוצלחת של הסקריפט.
 
-        > [!NOTE]
-        > ניתן להשבית יצירת קבוצת אבטחה בדייר שלך. במקרה כזה, יהיה צורך בהגדרה ידנית ומנהל מערכת Azure AD יצטרך[ להפוך יצירת קבוצת אבטחה לזמינה](/azure/active-directory/enterprise-users/groups-self-service-management).
+1. בצע את `CreateSecurityGroups.ps1` ב- Windows PowerShell על ידי מתן מזהה המינוי של Azure המכיל את ה- Azure Data Lake Storage שלך. פתח את הסקריפט של PowerShell בעורך כדי לסקור מידע נוסף ואת הלוגיקה שיושמה.
 
-    2. `ByolSetup.ps1`
-        - דרושות לך הרשאות *בעל נתונים של Blob האחסון* ברמת גורם מכיל/חשבון האחסון על מנת להפעיל את הסקריפט הזה או שהסקריפט הזה יצור אחד עבורך. ניתן להסיר את הקצאת התפקיד שלך באופן ידני לאחר הפעלה מוצלחת של הסקריפט.
-        - סקריפט PowerShell זה מוסיף את בקרת הגישה מבוססת התפקיד הנדרשת עבור שירות Microsoft Dataverse  וכל אפליקציה עסקית מבוססת Dataverse. הסקריפט גם מעדכן את רשימת בקרת הגישה (ACL) בגורם המכיל של CustomerInsights עבור קבוצות האבטחה שנוצרו באמצעות הסקריפט `CreateSecurityGroups.ps1`. לקבוצה 'משתתף' תהיה הרשאת *rwx* ולקבוצת 'קוראים' תהיה הרשאת *r-x* בלבד.
-        - בצע סקריפט זה של PowerShell ב- Windows PowerShell על ידי מתן מזהה המנוי של Azure המכיל את Azure Data Lake Storage, שם חשבון האחסון, שם קבוצת משאבים וערכי מזהי קבוצות האבטחה 'קורא' ו'משתתף'. פתח את סקריפט ה- PowerShell בעורך כדי לסקור מידע נוסף ואת הלוגיקה שיושמה.
-        - העתק את מחרוזת הפלט לאחר הפעלה מוצלחת של הסקריפט. מחרוזת הפלט נראית כך: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
+   סקריפט זה יוצר שתי קבוצות אבטחה במינוי Azure שלך: אחת עבור קבוצת קורא ואחרת עבור קבוצת 'משתתף'. השירות Microsoft Dataverse הוא הבעלים של שתי קבוצות האבטחה הללו.
 
-2. הזן את מחרוזת הפלט שהועתקה מלמעלה לשדה **מזהה הרשאות** של שלב הגדרת התצורה של הסביבה עבור Microsoft Dataverse.
+1. שמור את שני ערכי קבוצת האבטחה שנוצרו על ידי הסקריפט הזה לשימוש בסקריפט `ByolSetup.ps1`.
 
-:::image type="content" source="media/dataverse-enable-datasharing-BYODL.png" alt-text="אפשרויות הגדרת תצורה להפיכת שיתוף נתונים מ- Azure Data Lake Storage משלך באמצעות Microsoft Dataverse לזמין.":::
+   > [!NOTE]
+   > ניתן להשבית יצירת קבוצת אבטחה בדייר שלך. במקרה כזה, יהיה צורך בהגדרה ידנית ומנהל מערכת Azure AD יצטרך[ להפוך יצירת קבוצת אבטחה לזמינה](/azure/active-directory/enterprise-users/groups-self-service-management).
 
-### <a name="remove-an-existing-connection-to-a-dataverse-environment"></a>הסרת חיבור קיים לסביבת Dataverse
+1. בצע את `ByolSetup.ps1` ב- Windows PowerShell על ידי מתן מזהה המנוי של Azure המכיל את ה- Azure Data Lake Storage שלך, שם חשבון האחסון, שם קבוצת משאבים וערכי מזהי קבוצות האבטחה 'קורא' ו'משתתף'. פתח את הסקריפט של PowerShell בעורך כדי לסקור מידע נוסף ואת הלוגיקה שיושמה.
+
+   סקריפט זה מוסיף את בקרת הגישה מבוססת התפקיד הנדרשת עבור שירות Microsoft Dataverse וכל אפליקציה עסקית מבוססת Dataverse. הסקריפט גם מעדכן את רשימת בקרת הגישה (ACL) בגורם המכיל של `customerinsights` עבור קבוצות האבטחה שנוצרו באמצעות הסקריפט `CreateSecurityGroups.ps1`. לקבוצה 'משתתף' ניתנת הרשאת *rwx* ולקבוצת 'קוראים' תינתן הרשאת *r-x* בלבד.
+
+1. העתק את מחרוזת הפלט שנראית כך: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
+
+1. הזן את מחרוזת הפלט שהועתקה לשדה **מזהה הרשאות** של שלב הגדרת התצורה של הסביבה עבור Microsoft Dataverse.
+
+   :::image type="content" source="media/dataverse-enable-datasharing-BYODL.png" alt-text="אפשרויות הגדרת תצורה להפיכת שיתוף נתונים מ- Azure Data Lake Storage משלך באמצעות Microsoft Dataverse לזמין.":::
+
+## <a name="remove-an-existing-connection-to-a-dataverse-environment"></a>הסרת חיבור קיים לסביבת Dataverse
 
 כאשר מתחברים לסביבת Dataverse, משמעותה של הודעת השגיאה **ארגון CDS זה כבר מחובר למופע אחר של Customer Insights** היא שסביבת Dataverse כבר נמצאת בשימוש בסביבת Customer Insights. אפשר להסיר את החיבור הקיים כמנהל מערכת גלובלי בסביבת Dataverse. אכלוס השינויים עשוי לקחת כמה שעות.
 
 1. עבור אל [Power Apps](https://make.powerapps.com).
 1. בחר את הסביבה מבורר הסביבה.
-1. עבור ל **פתרונות** 
+1. עבור אל **פתרונות**.
 1. הסר או מחק את הפתרון בשם **תוסף לכרטיס לקוח של Dynamics 365 Customer Insights ‏(Preview‏‏‏)**.
 
 או
@@ -155,7 +165,7 @@ Customer Insights מספקת אפשרות להפוך ישויות פלט לזמ�
 
 טבלה זו מכילה פעילויות של משתמשים הזמינות ב- Customer Insights.
 
-| Column            | סוג        | תיאור                                                                              |
+| עמודה‬            | Type        | תיאור‬‏‫‬                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
 | מזהה לקוח        | String      | מזהה פרופיל לקוח                                                                      |
 | ActivityId        | String      | מזהה פנימי של פעילות הלקוח (מפתח ראשי)                                       |
@@ -163,8 +173,8 @@ Customer Insights מספקת אפשרות להפוך ישויות פלט לזמ�
 | SourceActivityId  | String      | מפתח ראשי מישות המקור                                                       |
 | ActivityType      | String      | סוג הפעילות הסמנטית או שם הפעילות המותאמת אישית                                        |
 | ActivityTimeStamp | DATETIME    | חותמת זמן של פעילות                                                                      |
-| תפקיד             | String      | כותרת או שם של הפעילות                                                               |
-| תיאור       | String      | תיאור פעילות                                                                     |
+| שם             | String      | כותרת או שם של הפעילות                                                               |
+| תיאור‬‏‫‬       | String      | תיאור פעילות                                                                     |
 | כתובת URL               | String      | קישור לכתובת URL חיצונית ספציפית לפעילות                                         |
 | SemanticData      | מחרוזת JSON | כוללת רשימה של זוגות מפתח-ערך עבור שדות מיפוי סמנטיים ספציפית לסוג הפעילות |
 | RangeIndex        | String      | חותמת זמן של Unix המשמשת למיון ציר זמן של פעילות ושאילתות טווח יעילות |
@@ -199,7 +209,7 @@ Customer Insights מספקת אפשרות להפוך ישויות פלט לזמ�
 
 טבלה זו מכילה את הפלט של חיזויי המודל.
 
-| Column               | סוג        | תיאור                                          |
+| עמודה‬               | Type        | תיאור‬‏‫‬                                          |
 |----------------------|-------------|------------------------------------------------------|
 | מזהה לקוח           | String      | מזהה פרופיל לקוח                                  |
 | ModelProvider        | String      | שם ספק המודל                                      |
@@ -216,38 +226,10 @@ Customer Insights מספקת אפשרות להפוך ישויות פלט לזמ�
 |--------------------|--------------|-----------------------------|
 | מזהה לקוח        | String       | מזהה פרופיל לקוח        |
 | SegmentProvider      | String       | יישום שמפרסם את הפלחים.      |
-| SegmentMembershipType | String       | סוג הלקוח ברשומת חברות זו בפלח. תומך בסוגים מרובים, כגון לקוח, איש קשר או תיק לקוח. ברירת מחדל: לקוח  |
+| SegmentMembershipType | String       | סוג הלקוח עבור רשומת חברות זו בפלח. תומך בסוגים מרובים, כגון לקוח, איש קשר או תיק לקוח. ברירת מחדל: לקוח  |
 | פלחי שוק       | מחרוזת JSON  | רשימת פלחים ייחודיים שפרופיל הלקוח חבר בהם      |
 | msdynci_identifier  | String   | המזהה הייחודי של רשומת החברות בפלח. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
 | msdynci_segmentmembershipid | Guid      | GUID דטרמיניסטי שנוצר מתוך `msdynci_identifier`          |
 
-<!--
-## FAQ: Update existing environments to use Microsoft Dataverse
 
-Between mid-May 2022 and June 13, 2022, administrators can update the environment settings with a Dataverse environment that Customer Insights can use. On June 13, 2022, your environment will be updated automatically and we'll create a Dataverse environment on your tenant for you.
-
-1. My environment uses my own Azure Data Lake Storage account. Do I still need to update?
-
-   If there's already a Dataverse environment configured in your environment, the update isn't required. If no Dataverse is environment configured, the **Update now** button will create a Dataverse environment and update from the Customer Insights database to a Dataverse database.
-
-1. Will we get extra Dataverse capacity, or will the update use my existing Dataverse capacity?
-
-   - If there's already a Dataverse environment configured in your Customer Insights environment, or connected with other Dynamics 365 or Power Apps applications, the capacity remains unchanged.
-   - If the Dataverse environment is new, it will add new storage and database capacity. The capacity added varies per environment and entitlements. You'll get 3 GB for trial and sandbox environment. Production environments get 15 GB.
-
-1. I proceeded with the update and it seems like nothing happened. Is the update complete?
-
-   If the notification in Customer Insights doesn't show anymore, the update is complete. You can check the status of the update by reviewing your environment settings.
-
-1. Why do I still see the banner after completing the update steps?
-
-   It can happen due to an upgrade or refresh failure. Contact support.
-
-1. I received a "Failed to provision Dataverse environment" error after starting the update. What happened?
-
-   It can happen due to an upgrade or refresh failure. Contact support.
-   Common causes:
-    - Insufficient capacity. There's no more capacity to create more environments. For more information, see [Manage capacity action](/power-platform/admin/capacity-storage#actions-to-take-for-a-storage-capacity-deficit).
-    - Region mismatch between tenant region and Customer Insights environment region in the Australia and India regions.
-    - Insufficient privileges to provision Dataverse. The users starting the update needs a Dynamics 365 admin role.
-    - -->
+[!INCLUDE [footer-include](includes/footer-banner.md)]

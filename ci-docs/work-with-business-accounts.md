@@ -4,21 +4,21 @@ description: קבל מידע על חשבונות עסקיים המהווים ק�
 ms.date: 10/19/2021
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.custom: intro-internal
 ms.author: wimohabb
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-semantic-mapping
 - ci-connections
 - customerInsights
-ms.openlocfilehash: 9bf91671b744198b2f37391edc7abf58eca3c820
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: abb77a720ab737520a905b0c93b65573e669109f
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9053114"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9303917"
 ---
 # <a name="work-with-business-accounts"></a>עבודה עם חשבונות עסקיים
 
@@ -30,7 +30,7 @@ Dynamics 365 Customer Insights מאפשרת לך להגדיר את הסביבה 
 
 באפשרותך [לקלוט נתונים](data-sources.md) עבור חשבונות עסקיים ואנשי קשר קשורים כמקורות נתונים מכל המקורות הנתמכים.
 
-לאחר איחוד הנתונים, [ציין הירארכיות חשבון](relationships.md#set-up-account-hierarchies) כחלק מתצורת הקשר. באפשרותך גם [להגדיר מיפויים סמנטיים](semantic-mappings.md) כדי לחבר ישויות איש קשר וחשבון. 
+ [איחוד](data-unification.md) נתוני תיקי הלקוח שלך ואחריהם נתוני אנשי הקשר כדי לחבר בין ישויות של איש קשר ותיק לקוח.
 
 ## <a name="switch-between-primary-target-audience"></a>מעבר בין קהל היעד הראשי
 
@@ -43,11 +43,12 @@ Dynamics 365 Customer Insights מאפשרת לך להגדיר את הסביבה 
 - [פעילויות](activities.md): תמיכה עבור חשבונות ואנשי קשר קשורים ליצירת פעילויות ולהציג אותן בציר זמן.
 - [קשרים](relationships.md): אשף הפעילות מסייע ביצירת קשרים בין הישויות כך שתצוגת החשבון תוכל להציג את כל הפעילויות מאנשי קשר. אנשי הקשר יכולים להתעמק כדי לראות את תצוגת אנשי הקשר וניתן להשתמש בהירארכיות לצבירות פעילויות בחשבון.
 - [מדידות](measures.md): תומך במדידות שנוצרו מבונה המדידות עם חישוב אחד. הגדרה אופציונלית מאפשרת את הסיכום עבור חשבונות משנה בעת יצירת מדידות.
-- [פלחים](segments.md): תומך בפלחים שנוצרים מאפס עם בונה הפלחים. אופרטורים חדשים מאפשרים לשלב הירארכיה של חשבונות בעת בניית פלחים.
+- [פלחים](segments.md): תומך בפלחים שנוצרים מאפס עם בונה הפלחים. פלחים יכולים להתבסס על תיקי לקוח או אנשי קשר.
 - [קליטת נתונים](data-sources.md): כל התכונות באזור זה זהות עבור חשבונות עסקיים ולקוחות בודדים.
-- [איחוד נתונים](data-unification.md): כל התכונות באזור זה זהות עבור חשבונות עסקיים ולקוחות בודדים.
+- איחוד נתונים של עסק מסוג 'מעסק לעסק' דומה מאוד לאיחוד נתונים לעסק מסוג 'מעסק ללקוח', אך יש לו שלב נוסף לאיחוד אנשי קשר לאחר איחוד תיק הלקוח. ראה [תיקי לקוחות עסקיים (B-to-B)](data-unification.md).
 - [העשרה](enrichment-hub.md): סוגי העשרה מסוימים זמינים רק עבור תרחישי לקוחות בודדים בעוד שאחרים זמינים באופן בלעדי עבור חשבונות עסקיים.
 - [חיזויים ומודלים מוכנים לשימוש](predictions-overview.md): חיזוי נטישת עסקאות מכיל שלבים נוספים עבור חשבונות עסקיים. חיזויים אחרים זמינים רק עבור לקוחות בודדים.
 - [הפעלה וייצוא](export-destinations.md): פעולות ייצוא זמינות עבור חשבונות עסקיים ולקוחות בודדים. פעולות ייצוא מסוימות דורשות תצורה נוספת ופרטי קשר החזויים בפלחים הבסיסיים כדי שיהיו תקפים עבור חשבונות עסקיים.
 - [הגדרות מערכת](system.md) ו[ניהול משתמשים](permissions.md): כל התכונות באזור זה זהות עבור חשבונות עסקיים ולקוחות בודדים.
 
+[!INCLUDE [footer-include](includes/footer-banner.md)]
