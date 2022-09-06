@@ -1,27 +1,27 @@
 ---
 title: דוגמאות לשאילתות OData עבור ממשקי API של Customer Insights
 description: דוגמאות נפוצות של פרוטוקול הנתונים הפתוח (OData) לשאילתה של ממשקי ה-API של Customer Insights כדי לסקור נתונים.
-ms.date: 05/25/2022
+ms.date: 08/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
-ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
+ms.openlocfilehash: 26e56a3bab01ba55284a52e72efbcbfbaadaad6f
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9121563"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387203"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>דוגמאות לשאילתות OData עבור ממשקי API של Customer Insights
 
 פרוטוקול הנתונים הפתוח (OData) הוא פרוטוקול גישה לנתונים הבנוי על פרוטוקולי ליבה כמו HTTP. הוא משתמש במתודולוגיות מקובלות כמו REST עבור האינטרנט. ישנם סוגים שונים של ספריות וכלים שניתן להשתמש בהם כדי לצרוך שירותי OData.
 
-מאמר זה מפרט כמה שאילתות לדוגמה המבוקשות לעתים קרובות כדי לעזור לך בבניית יישומים משלך בהתבסס על [ממשקי API של Customer Insights](apis.md).
+כדי לעזור לך בבניית יישומים משלך בהתבסס על [ממשקי API של Customer Insights](apis.md), תוכל לסקור כמה שאילתות לדוגמה שנשלחות לעתים קרובות.
 
-עליך לשנות את דוגמאות השאילתה כדי לגרום להם לעבוד על סביבות היעד: 
+שנה את דוגמאות השאילתה כדי לגרום להם לעבוד על סביבות היעד:
 
 - {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` כאשר {instanceId} הוא ה- GUID של סביבת Customer Insights שברצונך לבצע שאילתה. האפשרות [פעולת ListAllInstances](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) מאפשרת לך למצוא {InstanceId} שיש לך גישה אליו.
 - {CID}: ‏GUID של רשומת לקוח מאוחדת. דוגמה:`ce759201f786d590bf2134bff576c369`.
@@ -31,7 +31,7 @@ ms.locfileid: "9121563"
 
 ## <a name="customer"></a>לקוח
 
-הטבלה הבאה מכילה קבוצה של שאילתות לדוגמה עבור הישות *לקוח*.
+שאילתות לדוגמה עבור הישות *צרכן*.
 
 |סוג שאילתה |דוגמה  | הערה  |
 |---------|---------|---------|
@@ -46,7 +46,7 @@ ms.locfileid: "9121563"
 
 ## <a name="unified-activity"></a>פעילות מאוחדת
 
-הטבלה הבאה מכילה קבוצה של שאילתות לדוגמה עבור הישות *UnifiedActivity*.
+שאילתות לדוגמה עבור הישות *UnifiedActivity*.
 
 |סוג שאילתה |דוגמה  | הערה  |
 |---------|---------|---------|
@@ -59,7 +59,7 @@ ms.locfileid: "9121563"
 
 ## <a name="other-examples"></a>דוגמאות אחרות
 
-הטבלה הבאה מכילה קבוצה של שאילתות לדוגמה עבור ישות אחרות.
+שאילתות לדוגמה עבור ישויות אחרות.
 
 |סוג שאילתה |דוגמה  | הערה  |
 |---------|---------|---------|

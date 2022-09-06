@@ -1,23 +1,23 @@
 ---
 title: מגבלות שירות ב- Customer Insights
 description: הבן את הגבולות והמגבלות בשירות SaaS של Customer Insights.
-ms.date: 05/28/2022
+ms.date: 08/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6d1b761a5c9f67bfdc7c5b152132c618db3ea36a
-ms.sourcegitcommit: 78ef22cd39a1ebd7525f96829cd79d95f34438b9
+ms.openlocfilehash: 421e1aa41a54a4b8c34ac27fc7c02e510d2bb588
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "8940669"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387157"
 ---
 # <a name="service-limits-in-customer-insights"></a>מגבלות שירות ב- Customer Insights
 
-מאמר זה מתאר את המגבלות המובנות בשירות Customer Insights, שנועדו להבטיח את אמינות השירות ויציבותו. כל בקשה לשינויים יכולה להיעשות דרך [פורום הרעיונות](https://go.microsoft.com/fwlink/?linkid=2074172).
+ ב- Customer Insights יש מגבלות שנועדו להבטיח את האמינות והיציבות של השירות. כל בקשה לשינויים יכולה להיעשות דרך [פורום הרעיונות](https://go.microsoft.com/fwlink/?linkid=2074172).
 
 ## <a name="customer-insights"></a>Customer Insights
 

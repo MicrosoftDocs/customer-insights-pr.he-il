@@ -1,7 +1,7 @@
 ---
 title: עבודה עם ממשקי API של Customer Insights
 description: השתמש בממשקי API והכר מגבלות.
-ms.date: 05/10/2021
+ms.date: 08/31/2022
 ms.reviewer: wimohabb
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 8e8bd590d3bba9dc7b1644b6ff42b9fc53237ca9
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f499bff4a6ac07a88ff0f773b9cee77dc74989e8
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054065"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387341"
 ---
 # <a name="work-with-customer-insights-apis"></a>עבודה עם ממשקי API של Customer Insights
 
@@ -25,45 +25,49 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 > [!IMPORTANT]
 > פרטים על ממשקי API אלה מפורטים ב[הפניית ממשקי API של Customer Insights](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). הם כוללים מידע נוסף על פעולות, פרמטרים ותגובות.
 
-מאמר זה מתאר כיצד לגשת לממשקי ה-API של Customer Insights, ליצור רישום אפליקציות של Azure ולהתחיל בעבודה עם ספריות לקוחות.
+נסה לעבוד עם ממשקי ה-API של Customer Insights, ליצור רישום אפליקציות של Azure ולהתחיל בעבודה עם ספריות לקוחות.
 
 ## <a name="get-started-trying-the-customer-insights-apis"></a>התחל לנסות את ממשקי ה- API של Customer Insights
 
+הפעל את ממשקי ה- API של Customer Insights ונסה אותם. מנהל Customer Insights חייב לאפשר גישת API ל- Customer Insights. לאחר הפעלת הגישה, כל משתמש יכול להשתמש ב- API עם מפתח המנוי.
+
 1. [היכנס](https://home.ci.ai.dynamics.com) אל Customer Insights. אם עדיין אין לך מנוי, [הירשם לגירסת ניסיון של Customer Insights](https://aka.ms/tryci).
 
-1. כדי להפוך ממשקי API לזמינים בסביבת Customer Insights שלך, עבור אל **מנהל מערכת** > **אבטחה**. תזדקק להרשאות מנהל מערכת כדי לעשות זאת.
+1. עבור אל **מנהל מערכת** > **אבטחה**, ולאחר מכן בחר בכרטיסיה **API**.
 
-1. עבור אל הכרטיסיה **ממשקי API** ובחר בלחצן **הפוך לזמין**.    
- 
-   הפעלת ממשקי ה- API יוצרת מפתח מנוי ראשי ומשני עבור המופע שלך המשמש בבקשות ה- API. אתה יכול ליצור מחדש את המפתחות על ידי בחירה ב **יצירה מחדש של המפתח הראשי** או **יצירה מחדש של המפתח המשני** ב **מנהל מערכת** > **אבטחה** > **ממשקי API**.
+1. אם לא הוגדרה גישת API לסביבה, בחר **הפוך לזמין**.
 
-<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
+   הפעלת ממשקי ה- API יוצרת מפתח מנוי ראשי ומשני עבור המופע שלך המשמש בבקשות ה- API. כדי ליצור מחדש את המפתחות, בחר באפשות **יצירה מחדש של המפתח הראשי** או **יצירה מחדש של המפתח המשני** בכרטיסיה **API**.
 
-1. בחר **סקור את ממשקי ה- API שלנו** כדי [לנסות את ממשקי ה- API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
+1. בחר  [**סקור את ממשקי ה- API**](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) כדי לנסות אותם.
 
-1. בחר פעולת API ובחר **נסה זאת**.
+1. חפש ובחר פעולת API ובחר **נסה זאת**.
 
-1. בחלונית הצד, הגדר את הערך בתפריט הנפתח **הרשאה** ל **משתמע**. הכותרת `Authorization` מתווספת עם אסימון נושא. מפתח המנוי שלך יאוכלס אוטומטית.
+   :::image type="content" source="media/try-api.png" alt-text="כיצד לבדוק את ממשקי ה- API.":::
+
+1. בחלונית הצד, הגדר את הערך בתפריט הנפתח **הרשאה** ל **משתמע**. הכותרת `Authorization` מתווספת עם אסימון נושא. מפתח המנוי שלך מאוכלס אוטומטית.
   
 1. לחלופין, הוסף את כל פרמטרי השאילתה הדרושים.
 
 1. גלול לתחתית החלונית הצדדית ובחר **שלח**.
 
-תגובת ה- HTTP תופיע תוך זמן קצר למטה.
-
-<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
+   תגובת ה-HTTP מוצגת בתחתית החלונית.
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>יצירת רישום יישום חדש בפורטל Azure
 
-שלבים אלה עוזרים לך להתחיל להשתמש בממשקי ה- API של Customer Insights ביישום Azure באמצעות הרשאות מוקצות. הקפד להשלים את [מקטע תחילת העבודה](#get-started-trying-the-customer-insights-apis) תחילה.
+צור [רישום אפליקציה](/graph/auth-register-app-v2) כדי להתחיל להשתמש בממשקי ה- API של Customer Insights ביישום Azure באמצעות הרשאות בעלות הקצאה.
+
+1. השלם את [סעיף תחילת העבודה](#get-started-trying-the-customer-insights-apis).
 
 1. היכנס אל [פורטל Azure](https://portal.azure.com) עם החשבון שיכול לגשת לנתוני Customer Insights.
 
-1. משמאל, בחר **רישומי יישום**.
+1. חפש ולאחר מכן בחר **רישומי אפליקציה**.
 
 1. בחר **רישום חדש**, ספק שם יישום ובחר את סוג החשבון.
 
    לבחירתך, הוסף כתובת URL של ניתוב מחדש. http://localhost מספיק לפיתוח יישום במחשב המקומי שלך.
+
+1. בחר **הירשם**.
 
 1. ברישום היישום החדש שלך, עבור אל **הרשאות API**.
 
@@ -71,29 +75,27 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 1. עבור **סוג הרשאה**, בחר **הרשאות שהוקצו** ואז בחר את הרשאת **התחזות למשתמש**.
 
-1. בחר **הוסף הרשאות**. אם אתה זקוק לגישה ל- API מבלי שמשתמש יתחבר, סקור את המקטע [הרשאות יישום משרת לשרת](#server-to-server-application-permissions).
+1. בחר **הוסף הרשאות**.
 
 1. בחר **הענק הסכמת מנהל עבור...** כדי להשלים את רישום היישום.
 
-באפשרותך להשתמש במזהה היישום/לקוח עבור רישום יישום זה עם Microsoft Authentication Library‏ (MSAL) כדי להשיג אסימון נושא לשליחה עם הבקשה שלך ל- API.
+1. כדי לגשת ל- API מבלי שמשתמש יתחבר, עבור אל [הרשאות יישום משרת לשרת](#server-to-server-application-permissions).
+
+באפשרותך להשתמש במזהה היישום/לקוח עבור רישום יישום זה עם [Microsoft Authentication Library‏ (MSAL)](/azure/active-directory/develop/msal-overview) כדי להשיג אסימון נושא לשליחה עם הבקשה שלך ל- API.
 
 <!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
-
-לקבלת מידע נוסף אודות MSAL, ראה [מבט כולל על Microsoft Authentication Library‏ (MSAL)](/azure/active-directory/develop/msal-overview).
-
-לקבלת מידע נוסף על רישום יישומים ב- Azure, ראה [רישום בקשה](/graph/auth-register-app-v2).
 
 למידע על השימוש בממשקי ה- API בספריות הלקוחות שלנו, ראה [ספריות לקוחות של Customer Insights](#customer-insights-client-libraries).
 
 ### <a name="server-to-server-application-permissions"></a>הרשאות יישום של שרת לשרת
 
-[מקטע רישום יישום](#create-a-new-app-registration-in-the-azure-portal) מפרט כיצד יש לרשום יישום שדורש כניסת משתמש עבור אימות. למד כיצד ליצור רישום אפליקציה שאינה זקוקה לאינטראקציה של המשתמש וניתן להפעיל אותה על שרת.
+צור רישום אפליקציה שאינה זקוקה לאינטראקציה של המשתמש וניתן להפעיל אותה על שרת.
 
 1. ברישום היישום שלך בפורטל Azure, עבור אל **הרשאות API**.
 
-1. בחר **הוסף הרשאה**. 
+1. בחר **הוסף הרשאה**.
 
-1. בחר את הכרטיסיה **ממשקי API שהארגון שלי משתמש בהם** ובחר **Dynamics 365 AI for Customer Insights** מתוך הרשימה. 
+1. בחר את הכרטיסיה **ממשקי API שהארגון שלי משתמש בהם** ובחר **Dynamics 365 AI for Customer Insights** מתוך הרשימה.
 
 1. עבור **סוג הרשאה**, בחר **הרשאות של יישומים** ואז בחר את הרשאת **CustomerInsights.Api.All**.
 
@@ -103,25 +105,25 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 
 1. בחר **הענק הסכמת מנהל עבור...** כדי להשלים את רישום היישום.
 
- <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
+   <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
-1. לסיום, עלינו להוסיף את שם רישום היישום כמשתמש ב- Customer Insights.  
-   
-   פתח את Customer Insights, עבור אל **מנהל מערכת** > **אבטחה** ובחר **הוסף משתמש**.
+1. הוסף את שם רישום היישום כמשתמש ב- Customer Insights.
 
-1. חפש את שם רישום היישום שלך, בחר בו מתוך תוצאות החיפוש ובחר **שמור**.
+   1. פתח את Customer Insights, עבור אל **מנהל מערכת** > **אבטחה** ובחר **הוסף משתמשים**.
+
+   1. חפש את שם רישום היישום שלך, בחר בו מתוך תוצאות החיפוש ובחר **שמור**.
 
 ## <a name="sample-queries"></a>שאילתות לדוגמה
 
-ריכזנו רשימה קצרה של שאילתות לדוגמה של OData לעבודה עם ממשקי ה-API: [דוגמאות לשאילתות OData](odata-examples.md).
+לרשימה קצרה של שאילתות לדוגמה של OData לעבודה עם ממשקי ה-API, ראה [דוגמאות לשאילתות OData](odata-examples.md).
 
 ## <a name="customer-insights-client-libraries"></a>ספריות לקוחות של Customer Insights
 
-מקטע זה עוזר לך להתחיל להשתמש בספריות הלקוחות הזמינות לממשקי ה- API של Customer Insights. ניתן למצוא את כל קוד המקור של הספריה והיישומים לדוגמה [בדף GitHub של Customer Insights](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries). 
+התחל להשתמש בספריות הלקוחות הזמינות לממשקי ה- API של Customer Insights. ניתן למצוא את כל קוד המקור של הספריה והיישומים לדוגמה [בדף GitHub של Customer Insights](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries).
 
 ### <a name="c-nuget"></a>C# NuGet
 
-למד כיצד להתחיל להשתמש בספריות הלקוחות של C#‎ דרך NuGet‏.org. לקבלת מידע נוסף על חבילת NuGet, ראה [Microsoft.Dynamics.CustomerInsights.Api](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). נכון לעכשיו, חבילה זו מיועדת למסגרות netstandard2.0 ו- netcoreapp2.0.
+השתמש בספריות לקוח של C# מ-NuGet‏.org. נכון לעכשיו, חבילה זו מיועדת למסגרות netstandard2.0 ו- netcoreapp2.0. למידע נוסף על חבילת NuGet, ראה[Microsoft.Dynamics.CustomerInsights.Api ](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/).
 
 #### <a name="add-the-c-client-library-to-a-c-project"></a>הוסף את ספריית הלקוחות C#‎ לפרוייקט C#‎
 
@@ -130,27 +132,27 @@ Dynamics 365 Customer Insights מספק ממשקי API לבניית יישומי
 1. חפש את **Microsoft.Dynamics.CustomerInsights.Api**.
 
 1. בחר **התקן** כדי להוסיף את החבילה לפרוייקט.
- 
+
    לחלופין, הפעל פקודה זו ב **קונסולת מנהל החבילות של NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
- <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
+   <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### <a name="use-the-c-client-library"></a>השתמש בספריית הלקוחות C#‎
 
 1. השתמש ב- [Microsoft Authentication Library‏ (MSAL)](/azure/active-directory/develop/msal-overview) כדי לקבל `AccessToken` באמצעות [רישום יישום Azure](#create-a-new-app-registration-in-the-azure-portal) הקיים שלך.
 
 1. לאחר רכישה ואימות מוצלחים של אסימון, בנה `HttpClient` חדש או השתמש בקיים, עם **DefaultRequestHeaders "אימות"** שמוגדר ל- **"אסימון גישה" של נושא** ו- **Ocp-Apim-Subscription-Key** שמוגדרת ל [**מפתח מנוי** מסביבת Customer Insights שלך](#get-started-trying-the-customer-insights-apis).   
- 
+
    אפס את הכותרת **הרשאה** במועד המתאים. לדוגמה, כאשר פג תוקף האסימון.
 
 1. העבר `HttpClient` זה אל המבנה של הלקוח `CustomerInsights`.
 
-<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
+   <!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
-1. בצע שיחות עם הלקוח ל"שיטות ההרחבה", למשל `GetAllInstancesAsync`. אם עדיפה גישה ל- `Microsoft.Rest.HttpOperationResponse` הבסיסי, השתמש ב"שיטות הודעת http" - לדוגמה `GetAllInstancesWithHttpMessagesAsync`.
+1. בצע שיחות עם הלקוח ל"שיטות ההרחבה", למשל, `GetAllInstancesAsync`. אם עדיפה לך גישה אל `Microsoft.Rest.HttpOperationResponse` הבסיסי, השתמש ב"שיטות הודעת http", לדוגמה `GetAllInstancesWithHttpMessagesAsync`.
 
-1. התגובה תהיה ככל הנראה מהסוג `object` משום שפעולת השירות יכולה להחזיר סוגים מרובים (לדוגמה, `IList<InstanceInfo>` ו-`ApiErrorResult`). כדי לבדוק את סוג ההחזרה, אתה משתמש באובייקטים בסוגי התגובה שצוינו [בדף פרטי API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) לאותה פעולה.    
-   
+1. התגובה תהיה ככל הנראה מסוג `object`, כי פעולת השירות יכולה להחזיר סוגים מרובים (לדוגמה, `IList<InstanceInfo>` ו-`ApiErrorResult`). כדי לבדוק את סוג ההחזרה, השתמש באובייקטים בסוגי התגובה שצוינו [בדף פרטי API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) לאותה פעולה.
+
    אם יש צורך במידע נוסף על הבקשה, השתמש ב **פעולות שירות של הודעת https** כדי לגשת לאובייקט התגובה הגולמי.
 
 ### <a name="nodejs-package"></a>חבילת NodeJS

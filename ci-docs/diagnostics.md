@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: c573c46fda895d36d29712e75fe28b261c9b399a
+ms.sourcegitcommit: 0b5bfe0145dbd325fa518df4561d6a0a9a352264
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245926"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "9352802"
 ---
 # <a name="export-diagnostic-logs-preview"></a>ייצוא יומני אבחון (Preview)
 
@@ -36,8 +36,8 @@ Customer Insights שולח את יומני האירועים הבאים:
 
 - מנוי [Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/) פעיל.
 - הרשאות [מנהל מערכת](permissions.md#admin) ב- Customer Insights.
+- משאב חוקי ב- Azure שעוקב אחר [דרישות היעד](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) עבור Azure Storage, מרכז האירועים של Azure או Azure Log Analytics.
 - [תפקיד משתתף ומנהל גישת משתמשים](/azure/role-based-access-control/role-assignments-portal) במשאב היעד ב-Azure. המשאב יכול להיות חשבון של Azure Data Lake Storage, מרכז אירועים של Azure או סביבת עבודה ניתוח יומן רישום של Azure. הרשאה זו נחוצה בזמן קביעת הגדרות האבחון ב- Customer Insights, אך ניתן לשנות אותה לאחר הגדרה מוצלחת.
-- עמידה ב[דרישות היעד](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) עבור Azure Storage, מרכז האירועים של Azure או ניתוח יומן הרישום של Azure.
 - לפחות תפקיד של **קורא** בקבוצת המשאבים שאליה שייך המשאב.
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>הגדרת אבחון עם Azure Monitor

@@ -1,19 +1,19 @@
 ---
 title: מה חדש ב- Dynamics 365 Customer Insights
 description: מידע על תכונות חדשות, שיפורים ותיקוני באגים.
-ms.date: 08/03/2022
+ms.date: 08/31/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: a9bb254736ae70589afb267bf0a60206a18a3385
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 1e734464cec1f66428c3a2a2e403437a2a9d8500
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246012"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387295"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>מה חדש ב- Dynamics 365 Customer Insights
 
@@ -23,6 +23,24 @@ ms.locfileid: "9246012"
 
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="august-2022-updates"></a>עדכוני אוגוסט 2022
+
+העדכונים באוגוסט 2022 כוללים תכונות חדשות, דירוגי ביצועים ותיקוני באגים.
+
+### <a name="contact-unification-in-b-to-b-environments"></a>איחוד אנשי קשר בסביבות B-to-B
+
+סביבות B-to-B ב- Customer Insights תומכות כעת בחוויית איחוד נתונים משופרת.
+
+כעת תוכל לאחד אנשי קשר בנוסף לחשבונות כדי לקבל תצוגה מלאה של אנשי הקשר העסקיים שלך. אנשי קשר מאוחדים משויכים לחשבונות מאוחדים והם רשומים כעת בכרטיסי הלקוחות. 
+
+לקבלת מידע נוסף, ראה [יצירת פרופיל איש קשר מאוחד](data-unification-contacts.md).
+
+### <a name="create-and-export-of-segments-based-on-unified-contacts"></a>יצירה וייצוא של פלחים על סמך אנשי קשר מאוחדים
+
+הודות לתכונה החדשה של איחוד אנשי קשר, אתה יכול ליצור פלחים של אנשי קשר באמצעות קריטריונים מאנשי קשר, חשבונות או שניהם. ניתן לייצא פלחים אלו להפעלה בשירותים אחרים.
+
+לקבלת מידע נוסף, ראה [מבט כולל על פעולות ייצוא‬](export-destinations.md).
 
 ## <a name="july-2022-updates"></a>עדכוני יולי 2022
 

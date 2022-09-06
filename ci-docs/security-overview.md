@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ea21163d7dd05370de28ca8340ae9583846adb26
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: d20d57e9b7724e9921f9341eeaa39141b4555ff1
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246063"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387250"
 ---
 # <a name="configure-security-settings"></a>קבע את הגדרות האבטחה
 
@@ -23,7 +23,7 @@ ms.locfileid: "9246063"
 
 הצג ונהל את המפתחות לשימוש [בממשקי ה- API של Customer Insights](apis.md) עם הנתונים בסביבה שלך.
 
-1. עבור אל **מערכת** > **אבטחה**, ולאחר מכן בחר בכרטיסיה **ממשקי API**.
+1. עבור אל **מנהל מערכת** > **אבטחה**, ולאחר מכן בחר בכרטיסיה **API**.
 
 1. אם לא הוגדרה גישת API לסביבה, בחר **הפוך לזמין**. לחלופין, כדי לחסום גישת API לסביבה, בחר **השבת** ואשר.
 
