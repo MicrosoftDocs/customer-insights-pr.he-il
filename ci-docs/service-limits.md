@@ -8,12 +8,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 421e1aa41a54a4b8c34ac27fc7c02e510d2bb588
-ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
+ms.openlocfilehash: 7f38b7d9985368fc38107f1f360f0603a7fcc8e6
+ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387157"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9411741"
 ---
 # <a name="service-limits-in-customer-insights"></a>מגבלות שירות ב- Customer Insights
 
@@ -23,7 +23,7 @@ ms.locfileid: "9387157"
 
 | אזור  | מגבלות  | הערות |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| פלחים, מדידות וחיזויים | 300  | המספר הכולל של [פלחים](segments.md), [מדידות](measures.md) ו[חיזויים](predictions.md) אינו יכול לעלות על 300 בסך הכל.  |
+| פלחים, מדידות וחיזויים | 300  | המספר הכולל של [פלחים](segments.md), [מדידות](measures.md) ו[חיזויים](predictions-overview.md) אינו יכול לעלות על 300 בסך הכל.  |
 | קשרים | 20 רמות עומק של קשרים בנתיבי ישות. | בעת יצירת [פלחים](segments.md) או [מדידות](measures.md) באמצעות ממשק הבנייה, נתיבי הישות יכולים לכלול עד 20 דילוגים של קשרים בין ישות ההתחלה לישות היעד.  |
 
 ## <a name="fair-scheduling-of-jobs"></a>תזמון הוגן של משימות

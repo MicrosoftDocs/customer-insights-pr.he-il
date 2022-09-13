@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: b237c291bb4dd22ca22ab2cdd8b6293490aa83e1
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245834"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396081"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>התחבר לנתונים ב- Azure Data Lake Storage
 
@@ -39,6 +39,8 @@ ms.locfileid: "9245834"
   - קורא נתונים של Blob אחסון
   - בעלי נתונים של Blob אחסון
   - תורם נתונים של Blob אחסון
+
+- המשתמש שמגדיר את החיבור מקור נתונים צריך לפחות הרשאות תורם נתונים של Blob אחסון בחשבון האחסון.
 
 - הנתונים ב- Data Lake Storage צריכים לעמוד בתקן Common Data Model לאחסון הנתונים ולהכיל את המניפסט של ה- Common Data Model כדי לייצג את הסכימה של קבצי הנתונים (csv*‎.‏ או* parquet.). המניפסט חייב לספק את הפרטים של הישויות כגון עמודות של ישויות וסוגי נתונים, ואת מיקום קובץ הנתונים וסוג הקובץ. למידע נוסף ראה [מניפסט Common Data Model](/common-data-model/sdk/manifest). אם המניפסט אינו נמצא, משתמשים שהם מנהלי מערכת בעלי גישה של בעלי נתונים של Blob אחסון או משתתף בנתונים של Blob אחסון יכולים להגדיר את הסכימה בעת עיבוד הנתונים.
 
@@ -62,7 +64,7 @@ ms.locfileid: "9245834"
    > [!NOTE]
    > אתה זקוק לאחד מהתפקידים הבאים או בגורם המכיל או בחשבון האחסון כדי ליצור מקור נתונים:
    >
-   >  - קורא נתונים של Blob האחסון מספיק כדי לקרוא מחשבון אחסון ולהטמיע את הנתונים ב- Customer Insights. 
+   >  - קורא נתונים של Blob האחסון מספיק כדי לקרוא מחשבון אחסון ולהטמיע את הנתונים ב- Customer Insights.
    >  - יש צורך בתפקיד תורם או בעלים של נתונים של Blog אחסון אם ברצונך לערוך את קובצי המניפסט ישירות ב- Customer Insights.  
   
 1. בחר את השם של ה **הגורם המכיל** שמכיל את הנתונים והסיכמה (קובץ model.json או manifest.json) שממנו ייובאו הנתונים, ובחר **הבא**.

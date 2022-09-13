@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2652e0868f5cc514ab6df9c150a9183cf95ae589
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: dd433b57e8695891a08d6f7fdb8c87befd2e1cfa
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246109"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396062"
 ---
 # <a name="real-time-data-ingestion-preview"></a>קליטת נתונים בזמן אמת (תצוגה מקדימה)
 
@@ -82,10 +82,5 @@ ms.locfileid: "9246109"
 באפשרותך לפרסם פעילות בתבנית של מערכת המקור שלך או בתבנית UnifiedActivity. קבל את התבנית על-ידי ביצוע קריאת API ל- /api/instances/{instanceId}/manage/entities/UnifiedActivity.
 
 ניתן למצוא פרטים על ממשק API זה, כולל פרמטרים ותגובות, במקטע **EntityData** ב[הפניה לממשקי API של Customer Insights](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). לקבלת מידע נוסף, עיין בנושא [עבודה עם ממשקי API של Customer Insights](apis.md).
-
-## <a name="understand-your-real-time-usage-with-telemetry"></a>הבן את השימוש שלך בזמן אמת באמצעות טלמטריה
-
-קבל סקירה של היקף הבקשות לממשק ה- API בזמן אמת ומידע על בעיות שהמערכת עלולה להיתקל בהן. באפשרותך [לגשת למדידת השימוש בזמן אמת](system.md#view-api-usage). 
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

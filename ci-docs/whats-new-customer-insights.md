@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 1e734464cec1f66428c3a2a2e403437a2a9d8500
-ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
+ms.openlocfilehash: acba06cba5fb5cbf0bca5aeb30b603003555fc32
+ms.sourcegitcommit: 3ab8f1c0ba5874095a19f0b6367b9a4432f72ed1
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387295"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "9409358"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>מה חדש ב- Dynamics 365 Customer Insights
 
@@ -41,6 +41,14 @@ ms.locfileid: "9387295"
 הודות לתכונה החדשה של איחוד אנשי קשר, אתה יכול ליצור פלחים של אנשי קשר באמצעות קריטריונים מאנשי קשר, חשבונות או שניהם. ניתן לייצא פלחים אלו להפעלה בשירותים אחרים.
 
 לקבלת מידע נוסף, ראה [מבט כולל על פעולות ייצוא‬](export-destinations.md).
+
+### <a name="deployment-regions-aligned-with-microsoft-dataverse"></a>אזורי פריסה מותאמים ל- Microsoft Dataverse
+
+בעת יצירת סביבת Customer Insights חדשה, תוכל לבחור את האזור שבו תרצה שהשירות יתפרס ויתארח. עדכנו את בחירת האזור כך שתתאים ל- Microsoft Dataverse ול- Power Platform.
+
+כעת תוכל לבחור בקלות באותו אזור כמו סביבת Microsoft Dataverse הקיימת שלך או חשבון Azure Data Lake Storage (אם תבחר באפשרות זו), בכפוף לזמינות של Customer Insights באזור זה.
+
+למידע נוסף, ראה [צור סביבה חדשה](create-environment.md) ו[זמינות המוצר לפי גיאוגרפיה](https://dynamics.microsoft.com/availability-reports/).
 
 ## <a name="july-2022-updates"></a>עדכוני יולי 2022
 

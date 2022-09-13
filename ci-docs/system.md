@@ -14,12 +14,12 @@ searchScope:
 - ci-system-general
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2498814a3d2e6330124fb97c036b9b310bcf1f7a
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 6e60bf7c18939a29f660e06989e262deeb59a39b
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246248"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396002"
 ---
 # <a name="view-system-configuration"></a>הצגת תצורת מערכת
 
@@ -38,12 +38,6 @@ ms.locfileid: "9246248"
    - **קריאות API** - תרשים הממחיש את מספר השיחות המצטבר ל- API במסגרת הזמן שנבחרה.
    - **העברת נתונים** - תרשים המציג את כמות הנתונים שהועברו דרך ה- API במסגרת הזמן שנבחרה.
    - **פעולות** - טבלה עם שורות לכל פעולת API זמינה ופרטים אודות השימוש בפעולות. בחר שם פעולה למעבר אל [ההפניה ל- API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
-
-   פעולות שמשתמשות [בקליטת נתונים בזמן אמת](real-time-data-ingestion.md) מכילות סמל משקפת כדי להציג שימוש ב- API בזמן אמת.
-
-   1. בחר במשקפת כדי לפתוח את החלונית **שימוש ב- API בזמן אמת** שמכיל את פרטי השימוש של הפעולה.
-   1. **בחר מסגרת זמן** להצגה.
-   1. השתמש בתיבה **קבץ לפי** כיצד להציג בצורה הטובה ביותר את האינטראקציות שלך בזמן אמת. ניתן לקבץ את הנתונים לפי **שיטת API**, **שם מוסמך של ישות** (ישות שנקלטה), **נוצר על ידי** (מקור האירוע), **תוצאה** (הצלחה או כישלון) או **קודי שגיאה**. הנתונים זמינים כתרשים היסטוריה וכטבלה.
 
 ## <a name="view-system-information"></a>הצגת פרטי מערכת
 

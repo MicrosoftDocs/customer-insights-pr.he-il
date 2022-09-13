@@ -8,12 +8,12 @@ ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: a87af80fa713a1ac70493345c0c920e416692b0f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 32240c8c43751d8514d38b392f23ef4138d50ee2
+ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081697"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9411832"
 ---
 # <a name="predictions-overview"></a>מבט כולל על חיזויים
 
@@ -39,14 +39,11 @@ Dynamics 365 Customer Insights מגיע עם מגוון אפשרויות שמנ�
 
 > [!TIP]
 > אנו ממליצים לרענן באופן קבוע מודלים שמגיעים מוכנים לשימוש בנתונים מעודכנים כדי להבטיח שמאפייניםם במדויק את מקרה השימוש העסקי שלך. הנתונים מתרעננים אד-הוק כאשר המערכת קולטת מקורות נתונים חדשים או מעודכנים. עם זאת, מודלים יכתבו מחדש רק במקרה זה וימשיכו להשתמש בנתוני ההדרכה הקיימים.
-> 
+>
 > אפשר להגדיר **לוח הזמנים לעדכון** על ידי הגדרת לוח הזמנים של הכשרה מחדש של המודל בחוויית התצורה. המודל יוכשר ויכתב מחדש לפי לוח הזמנים הזה, אותו תוכל לשנות בכל עת.
-
 
 ## <a name="azure-machine-learning-integration"></a>שילוב למידת מכונה של Azure
 
 אם ארגון כבר משתמש בתרחישי למידת מכונה המבוססים על חוויות למידת מכונה של Azure, תכונת המודלים המותאמים אישית ב- Customer Insights עוזרת לחבר את הנקודות. צור זרימות עבודה שיעזרו לך לבחור את הנתונים שמהם ברצונך לייצר תובנות ולמפות את התוצאות לפרופילי הלקוחות המאוחדים שלך. למידע נוסף ראה [דגמי למידת מכונה מותאמים אישית](custom-models.md).
 
-## <a name="ai-builder-prediction"></a>חיזוי AI Builder
-
-לפעמים ערכות נתונים אינן שלמות וחסרים בהן ערכים מסוימים. Customer Insights יכול לסייע בחיזוי ערכים חסרים עבור ישות הלקוח והפלחים. למידע נוסף, ראה [השלמת נתונים חלקיים בעזרת חיזויים](predictions.md).
+[!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -160,8 +160,6 @@
           href: sentiment-analysis.md
         - name: השתמש במודלים מותאמים אישית מלמידת מכונה של Azure
           href: custom-models.md
-        - name: השלם נתונים חסרים חלקית
-          href: predictions.md
     - name: מדריכים לדוגמה
       items:
         - name: מדריך לדוגמה לחיזוי CLV

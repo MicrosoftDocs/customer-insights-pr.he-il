@@ -1,7 +1,7 @@
 ---
 title: עבודה עם נתונים של Customer Insights ב- Microsoft Dataverse
 description: למד כיצד לחבר בין Customer Insights לבין Microsoft Dataverse ולהבין את ישויות הפלט שמיוצאות אל Dataverse.
-ms.date: 08/15/2022
+ms.date: 08/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 0d536259f310b41fe12922baeebdc4569937db08
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
+ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9303830"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424310"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>עבודה עם נתונים של Customer Insights ב- Microsoft Dataverse
 
@@ -136,6 +136,7 @@ Customer Insights מציע את האפשרות להפוך ישויות פלט ל
 ישויות פלט מסוימות מ- Customer Insights זמינות כטבלאות ב- Dataverse. הסעיפים הבאים מתארים את הסכימה הצפויה של טבלאות אלה.
 
 - [CustomerProfile](#customerprofile)
+- [ContactProfile](#contactprofile)
 - [AlternateKey](#alternatekey)
 - [UnifiedActivity](#unifiedactivity)
 - [CustomerMeasure](#customermeasure)
@@ -145,21 +146,46 @@ Customer Insights מציע את האפשרות להפוך ישויות פלט ל
 
 ### <a name="customerprofile"></a>CustomerProfile
 
-טבלה זו מכילה את פרופיל הלקוח המאוחד מ- Customer Insights. הסכימה עבור פרופיל לקוח מאוחד תלויה בישויות ובתכונות המשמשות בתהליך איחוד הנתונים. סכימת פרופיל לקוח מכילה בדרך כלל קבוצת משנה של תכונות מ[הגדרת Common Data Model של CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+טבלה זו מכילה את פרופיל הלקוח המאוחד מ- Customer Insights. הסכימה עבור פרופיל לקוח מאוחד תלויה בישויות ובתכונות המשמשות בתהליך איחוד הנתונים. סכימת פרופיל לקוח מכילה בדרך כלל קבוצת משנה של תכונות מ[הגדרת Common Data Model של CustomerProfile](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile). בתרחיש עסק לעסק, פרופיל הלקוח מכיל תיקי לקוח מאוחדים, והסכימה מכילה בדרך כלל תת-קבוצה של התכונות מה[הגדרת Common Data Model של תיק הלקוח](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account).
+
+### <a name="contactprofile"></a>ContactProfile
+
+ContactProfile מכיל מידע מאוחד על איש קשר. אנשי קשר הם [אנשים שמופו לתיק לקוח](data-unification-contacts.md) בתרחיש מעסק לעסק.
+
+| עמודה‬                       | Type                | תיאור‬‏‫‬     |
+| ---------------------------- | ------------------- | --------------- |
+|  BirthDate            | תאריך ושעה       |  תאריך הלידה של איש הקשר               |
+|  עיר                 | טקסט |  העיר בכתובת של איש הקשר               |
+|  ContactId            | טקסט |  מזהה פרופיל איש הקשר               |
+|  ContactProfileId     | מזהה ייחודי   |  GUID עבור איש הקשר               |
+|  CountryOrRegion      | טקסט |  המדינה/אזור של כתובת איש הקשר               |
+|  מזהה לקוח           | טקסט |  מזהה תיק הלקוח שאליו ממופה איש הקשר               |
+|  EntityName           | טקסט |  ישות שממנה מגיעים הנתונים                |
+|  FirstName            | טקסט |  השם הפרטי של איש הקשר               |
+|  מגדר               | טקסט |  המין איש הקשר               |
+|  מזהה                   | טקסט |  GUID דטרמיניסטי מבוסס על `Identifier`               |
+|  מזהה           | טקסט |  מזהה פנימי של פרופיל איש הקשר: `ContactProfile|CustomerId|ContactId`               |
+|  JobTitle             | טקסט |  תיאור התפקיד של איש הקשר               |
+|  LastName             | טקסט |  שם המשפחה של איש הקשר               |
+|  PostalCode           | טקסט |  המיקוד בכתובת של איש הקשר               |
+|  PrimaryEmail         | טקסט |  כתובת הדואר האלקטרוני של איש הקשר               |
+|  PrimaryPhone         | טקסט |  מספר הטלפון של איש הקשר               |
+|  מחוז      | טקסט |  המדינה או המחוז של כתובת איש הקשר               |
+|  StreetAddress        | טקסט |  הכתובת הפיזית של איש הקשר               |
 
 ### <a name="alternatekey"></a>AlternateKey
 
 הטבלה AlternateKey מכילה מפתחות של ישויות שהשתתפו בתהליך האיחוד.
 
-|Column  |סוג  |תיאור  |
+|עמודה‬  |Type  |תיאור‬‏‫‬  |
 |---------|---------|---------|
-|DataSourceName    |String         | שם מקור הנתונים. לדוגמה: `datasource5`        |
-|EntityName        | String        | שם הישות ב- Customer Insights. לדוגמה: `contact1`        |
-|AlternateValue    |String         |מזהה חלופי שממופה למזהה הלקוח. דוגמה: `cntid_1078`         |
-|KeyRing           | טקסט בכמה שורות        | ערך JSON  </br> דוגמה: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
-|מזהה לקוח         | String        | מזהה פרופיל הלקוח המאוחד.         |
-|AlternateKeyId     | GUID         |  GUID דטרמיניסטי של AlternateKey מבוסס על msdynci_identifier       |
-|msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> דוגמה: `testdatasource|contact1|cntid_1078`    |
+|DataSourceName    |טקסט         | שם מקור הנתונים. לדוגמה: `datasource5`        |
+|EntityName        | טקסט        | שם הישות ב- Customer Insights. לדוגמה: `contact1`        |
+|AlternateValue    |טקסט         |מזהה חלופי שממופה למזהה הלקוח. דוגמה: `cntid_1078`         |
+|KeyRing           | טקסט        | ערך JSON  </br> דוגמה: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
+|מזהה לקוח         | טקסט        | מזהה פרופיל הלקוח המאוחד.         |
+|AlternateKeyId     | מזהה ייחודי        |  GUID דטרמיניסטי AlternateKey מבוסס על `Identifier`      |
+|מזהה |   טקסט      |   `DataSourceName|EntityName|AlternateValue`  </br> דוגמה: `testdatasource|contact1|cntid_1078`    |
 
 ### <a name="unifiedactivity"></a>UnifiedActivity
 
@@ -167,43 +193,42 @@ Customer Insights מציע את האפשרות להפוך ישויות פלט ל
 
 | עמודה‬            | Type        | תיאור‬‏‫‬                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
-| מזהה לקוח        | String      | מזהה פרופיל לקוח                                                                      |
-| ActivityId        | String      | מזהה פנימי של פעילות הלקוח (מפתח ראשי)                                       |
-| SourceEntityName  | String      | שם ישות המקור                                                                |
-| SourceActivityId  | String      | מפתח ראשי מישות המקור                                                       |
-| ActivityType      | String      | סוג הפעילות הסמנטית או שם הפעילות המותאמת אישית                                        |
-| ActivityTimeStamp | DATETIME    | חותמת זמן של פעילות                                                                      |
-| שם             | String      | כותרת או שם של הפעילות                                                               |
-| תיאור‬‏‫‬       | String      | תיאור פעילות                                                                     |
-| כתובת URL               | String      | קישור לכתובת URL חיצונית ספציפית לפעילות                                         |
-| SemanticData      | מחרוזת JSON | כוללת רשימה של זוגות מפתח-ערך עבור שדות מיפוי סמנטיים ספציפית לסוג הפעילות |
-| RangeIndex        | String      | חותמת זמן של Unix המשמשת למיון ציר זמן של פעילות ושאילתות טווח יעילות |
-| mydynci_unifiedactivityid   | GUID | מזהה פנימי של פעילות הלקוח (ActivityId) |
+| מזהה לקוח        | טקסט      | מזהה פרופיל לקוח                                                                      |
+| ActivityId        | טקסט      | מזהה פנימי של פעילות הלקוח (מפתח ראשי)                                       |
+| SourceEntityName  | טקסט      | שם ישות המקור                                                                |
+| SourceActivityId  | טקסט      | מפתח ראשי מישות המקור                                                       |
+| ActivityType      | טקסט      | סוג הפעילות הסמנטית או שם הפעילות המותאמת אישית                                        |
+| ActivityTimeStamp | תאריך ושעה    | חותמת זמן של פעילות                                                                      |
+| שם             | טקסט      | כותרת או שם של הפעילות                                                               |
+| תיאור‬‏‫‬       | טקסט      | תיאור פעילות                                                                     |
+| כתובת URL               | טקסט      | קישור לכתובת URL חיצונית ספציפית לפעילות                                         |
+| SemanticData      | טקסט | כוללת רשימה של זוגות מפתח-ערך עבור שדות מיפוי סמנטיים ספציפית לסוג הפעילות |
+| RangeIndex        | טקסט      | חותמת זמן של Unix המשמשת למיון ציר זמן של פעילות ושאילתות טווח יעילות |
+| UnifiedActivityId   | מזהה ייחודי | מזהה פנימי של פעילות הלקוח (ActivityId) |
 
 ### <a name="customermeasure"></a>CustomerMeasure
 
 טבלה זו מכילה את נתוני הפלט של מדדים מבוססי תכונות של לקוח.
 
-| Column             | סוג             | תיאור                 |
+| עמודה‬             | Type             | תיאור‬‏‫‬                 |
 |--------------------|------------------|-----------------------------|
-| מזהה לקוח         | String           | מזהה פרופיל לקוח        |
-| מדידים           | מחרוזת JSON      | כולל רשימה של זוגות מפתח-ערך עבור השם והערכים של המדד ללקוח הנתון | 
-| msdynci_identifier | String           | `Customer_Measure|CustomerId` |
-| msdynci_customermeasureid | GUID      | מזהה פרופיל לקוח |
-
+| מזהה לקוח         | טקסט           | מזהה פרופיל לקוח        |
+| מדידות           | טקסט      | כולל רשימה של זוגות מפתח-ערך עבור השם והערכים של המדד ללקוח הנתון |
+| מזהה | טקסט           | `Customer_Measure|CustomerId` |
+| CustomerMeasureId | מזהה ייחודי     | מזהה פרופיל לקוח |
 
 ### <a name="enrichment"></a>העשרה
 
 טבלה זו מכילה את הפלט של תהליך ההעשרה.
 
-| Column               | סוג             |  תיאור                                          |
+| עמודה‬               | Type             |  תיאור‬‏‫‬                                          |
 |----------------------|------------------|------------------------------------------------------|
-| מזהה לקוח           | String           | מזהה פרופיל לקוח                                 |
-| EnrichmentProvider   | String           | שם הספק להעשרה                                  |
-| EnrichmentType       | String           | סוג ההעשרה                                      |
-| ערכים               | מחרוזת JSON      | רשימת התכונות שנוצרו על-ידי תהליך ההעשרה |
-| msdynci_enrichmentid | GUID             | GUID דטרמיניסטי שנוצר מ- msdynci_identifier |
-| msdynci_identifier   | String           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
+| מזהה לקוח           | טקסט           | מזהה פרופיל לקוח                                 |
+| EnrichmentProvider   | טקסט           | שם הספק להעשרה                                  |
+| EnrichmentType       | טקסט           | סוג ההעשרה                                      |
+| ערכים               | טקסט      | רשימת התכונות שנוצרו על-ידי תהליך ההעשרה |
+| EnrichmentId | מזהה ייחודי            | GUID דטרמיניסטי שנוצר מתוך `Identifier` |
+| מזהה   | טקסט           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
 
 ### <a name="prediction"></a>חיזוי
 
@@ -211,25 +236,24 @@ Customer Insights מציע את האפשרות להפוך ישויות פלט ל
 
 | עמודה‬               | Type        | תיאור‬‏‫‬                                          |
 |----------------------|-------------|------------------------------------------------------|
-| מזהה לקוח           | String      | מזהה פרופיל לקוח                                  |
-| ModelProvider        | String      | שם ספק המודל                                      |
-| מודל                | String      | שם מודל                                                |
-| ערכים               | מחרוזת JSON | רשימת התכונות שנוצרו על-ידי המודל |
-| msdynci_predictionid | GUID        | GUID דטרמיניסטי שנוצר מ- msdynci_identifier | 
-| msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+| מזהה לקוח           | טקסט      | מזהה פרופיל לקוח                                  |
+| ModelProvider        | טקסט      | שם ספק המודל                                      |
+| מודל                | טקסט      | שם מודל                                                |
+| ערכים               | טקסט | רשימת התכונות שנוצרו על-ידי המודל |
+| PredictionId | מזהה ייחודי       | GUID דטרמיניסטי שנוצר מתוך `Identifier` |
+| מזהה   | טקסט      |  `Model|ModelProvider|CustomerId`                      |
 
 ### <a name="segment-membership"></a>חברות בפלח
 
 טבלה זו מכילה מידע על חברות בפלח של פרופילי הלקוחות.
 
-| Column        | Type | Description                        |
+| עמודה‬        | Type | תיאור‬‏‫‬                        |
 |--------------------|--------------|-----------------------------|
-| מזהה לקוח        | String       | מזהה פרופיל לקוח        |
-| SegmentProvider      | String       | יישום שמפרסם את הפלחים.      |
-| SegmentMembershipType | String       | סוג הלקוח עבור רשומת חברות זו בפלח. תומך בסוגים מרובים, כגון לקוח, איש קשר או תיק לקוח. ברירת מחדל: לקוח  |
-| פלחי שוק       | מחרוזת JSON  | רשימת פלחים ייחודיים שפרופיל הלקוח חבר בהם      |
-| msdynci_identifier  | String   | המזהה הייחודי של רשומת החברות בפלח. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
-| msdynci_segmentmembershipid | Guid      | GUID דטרמיניסטי שנוצר מתוך `msdynci_identifier`          |
-
+| מזהה לקוח        | טקסט       | מזהה פרופיל לקוח        |
+| SegmentProvider      | טקסט       | יישום שמפרסם את הפלחים.      |
+| SegmentMembershipType | טקסט       | סוג הלקוח עבור רשומת חברות זו בפלח. תומך בסוגים מרובים, כגון לקוח, איש קשר או תיק לקוח. ברירת מחדל: לקוח  |
+| פלחי שוק       | טקסט  | רשימת פלחים ייחודיים שפרופיל הלקוח חבר בהם      |
+| מזהה  | טקסט   | המזהה הייחודי של רשומת החברות בפלח. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| SegmentMembershipId | מזהה ייחודי      | GUID דטרמיניסטי שנוצר מתוך `Identifier`          |
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
