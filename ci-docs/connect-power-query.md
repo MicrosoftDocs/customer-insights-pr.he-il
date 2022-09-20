@@ -5,19 +5,19 @@ ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
-ms.author: matgos
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 7af51ed04fbd28149ea501c58e6fe71b5fa6d4b6
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 6a25e332bafab414c9def4e1e6b461139dd24ea6
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207046"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463266"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>התחבר למקור נתונים של Power Query
 
@@ -63,7 +63,9 @@ Power Query מציע קשת רחבה של מחברים לקליטת נתונים
 טעינת נתונים עשויה להימשך זמן מה. לאחר רענון מוצלח, ניתן לסקור את הנתונים שעובדו בדף [**ישויות**](entities.md).
 
 > [!CAUTION]
-> מקור נתונים המבוסס על Power Query יוצר [תזרים נתונים ב- Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). אל תשנה את השם של זרימת נתונים במרכז הניהול של Power Platform שנמצא בשימוש ב- Customer Insights. שינוי שם של זרימת נתונים גורם לבעיות בהפניות בין מקור הנתונים של Customer Insights לבין זרימת הנתונים של Dataverse.
+>
+> - מקור נתונים המבוסס על Power Query יוצר [תזרים נתונים ב- Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). אל תשנה את השם של זרימת נתונים במרכז הניהול של Power Platform שנמצא בשימוש ב- Customer Insights. שינוי שם של זרימת נתונים גורם לבעיות בהפניות בין מקור הנתונים של Customer Insights לבין זרימת הנתונים של Dataverse.
+> - להערכות במקביל עבור מקורות נתונים של Power Query ב- Customer Insights יש את אותן [מגבלות רענון כמו Dataflows ב-PowerBI.com](/power-query/power-query-online-limits#refresh-limits). אם רענון נתונים נכשל מכיוון שהגעת למגבלת ההערכה, אנו ממליצים להתאים את לוח הזמנים של הרענון עבור כל זרימת נתונים כדי להבטיח שמקורות הנתונים לא יעובדו בו-זמנית.
 
 ### <a name="available-power-query-data-sources"></a>מקורות נתונים זמינים של  Power Query
 
@@ -77,7 +79,7 @@ Power Query מציע קשת רחבה של מחברים לקליטת נתונים
 
 מקורות נתונים שנוצרים לאחר שיוך Dataverse סביבה עם Customer Insights משתמשים [Power Platform בתזרימי נתונים](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) כברירת מחדל. זרימות נתונים תומכות בקישוריות מקומית באמצעות שער הנתונים. תוכל להסיר וליצור מחדש מקורות נתונים שהתקיימו לפני שיוך Dataverse סביבה [באמצעות שערי נתונים מקומיים](/data-integration/gateway/service-gateway-app).
 
-שערי נתונים מסביבה קיימת של Power BI או של Power Apps יהיו גלויים ותוכל להשתמש בהם מחדש ב- Customer Insights. דף מקורות הנתונים מציג קישורים למעבר אל סביבת Microsoft Power Platform שבה תוכל להציג ולהגדיר את שערי הנתונים המקומיים.
+שערי נתונים מסביבה קיימת של Power BI או Power Apps יהיו גלויים ואפשר לעשות בהן שימוש חוזר ב- Customer Insights אם שער הנתונים וסביבת Customer Insights נמצאים באותו אזור Azure. דף מקורות הנתונים מציג קישורים למעבר אל סביבת Microsoft Power Platform שבה תוכל להציג ולהגדיר את שערי הנתונים המקומיים.
 
 > [!IMPORTANT]
 > ודא שהשערים שלך מעודכנים לגרסה האחרונה. אפשר להתקין עדכון ולהגדיר מחדש שער ישירות מהנחיה המוצגת על מסך השער ישירות או [להוריד את הגרסה העדכנית ביותר](https://powerapps.microsoft.com/downloads/). אם אינך משתמש בגרסת השער העדכנית ביותר, רענון זרימת הנתונים נכשל עם הודעות שגיאה כמו **מילת המפתח אינה נתמכת: מאפייני תצורה. שם פרמטר: מילת מפתח**.

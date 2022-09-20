@@ -13,12 +13,12 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 8b3b6a0d54b80d7df454e9dc925f14cc3c39684c
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 65fd80cc563b8b3b8c8874b66f179f8b0c7a19f0
+ms.sourcegitcommit: fe33cc76d015232ff8737f77193f44f2b884bb6b
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9194924"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473643"
 ---
 # <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>תוספת כרטיס לקוח עבור יישומי Dynamics 365 ‏(Preview)
 
@@ -32,7 +32,8 @@ ms.locfileid: "9194924"
 - כדי שנתוני Dynamics 365 ימפו את לפרופילי הלקוח של Customer Insights, אנחנו ממליצים [לקלוט אותם מיישום Dynamics 365 באמצעות המחבר Microsoft Dataverse](connect-power-query.md). אם אתה משתמש בשיטה אחרת לקליטת אנשי קשר (או חשבונות) של Dynamics 365, ודא שהשדה `contactid` (או `accountid`) מוגדר כ[מפתח ראשי עבור מקור נתונים במהלך תהליך איחוד הנתונים](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 - כל משתמשי Dynamics 365 של התוספת 'כרטיס הלקוח' חייבים [להתווסף כמשתמשים](permissions.md) ב- Customer Insights כדי לראות את הנתונים.
 - [יכולות חיפוש וסינון מוגדר](search-filter-index.md) ב- Customer Insights.
-- כל פקד תוספת מסתמך על נתונים ספציפיים ב- Customer Insights. נתונים ופקדים מסוימים זמינים בסביבות מסוגים ספציפיים בלבד. לפי תצורת התוסף תוכל לדעת אם פקד אינו זמין בשל סוג הסביבה שנבחרה. קבל מידע נוסף על [תרחישי שימוש של סביבה](work-with-business-accounts.md).
+- נתונים ופקדים מסוימים זמינים בסביבות מסוגים ספציפיים בלבד. לפי תצורת התוסף תוכל לדעת אם פקד אינו זמין בשל סוג הסביבה שנבחרה. שגיאה זו תופיע בתוך הפקד בעת עיבודו. קבל מידע נוסף על [תרחישי שימוש של סביבה](work-with-business-accounts.md).
+- כל פקד תוספת מסתמך על נתונים ספציפיים ב- Customer Insights.
   - **פקד מדד**: דורש [מדדי תכונת לקוח מוגדים](measures.md).
   - **בקרת בינה** דורשת נתונים שנוצרו באמצעות [חיזויים או מודלים מותאמים אישית](predictions-overview.md).
   - **פקד פרטי לקוח** מציג את כל השדות מהפרופיל שזמינים בפרופיל הלקוח המאוחד.
