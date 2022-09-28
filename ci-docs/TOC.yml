@@ -7,21 +7,21 @@
 - name: קטלוג למידה
   items:
     - name: הסמכה כמומחה לפלטפורמת נתונים ללקוחות של Microsoft
-      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+      href: /certifications/exams/mb-260?tab=tab-instructor-led
     - name: תחילת העבודה עם Customer Insights
-      href: /learn/modules/get-started-customer-data-platform/
+      href: /training/modules/get-started-customer-data-platform/
     - name: קליטת נתונים
-      href: /learn/modules/ingest-data-customer-insights/
+      href: /training/modules/ingest-data-customer-insights/
     - name: מהו פרופיל לקוח מאוחד
-      href: /learn/modules/unified-customer-profile/
+      href: /training/modules/unified-customer-profile/
     - name: עבודה עם Customer Insights
-      href: /learn/modules/working-with-customer-insights/
+      href: /training/modules/working-with-customer-insights/
     - name: העשרה של נתונים וחיזוי
-      href: /learn/modules/enrich-data/
+      href: /training/modules/enrich-data/
     - name: נהל קשרים חיצוניים
-      href: /learn/modules/configure-third-party-connections/
+      href: /training/modules/configure-third-party-connections/
     - name: ניהול Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
+      href: /training/modules/administer-customer-data-platform/
 - name: גירסת ניסיון ללא תשלום
   items:
     - name: הירשם לקבלת גירסת ניסיון ללא תשלום
@@ -118,6 +118,8 @@
       href: consent-management.md
     - name: שימוש בנתוני אינטרנט להתאמה אישית
       href: unknown-to-known.md
+    - name: ניהול פרופילי לקוחות לא ידועים
+      href: manage-unknown-profiles.md
 - name: פלחי שוק
   items:
     - name: מבט כולל על פלחים
