@@ -1,19 +1,19 @@
 ---
 title: שימוש במודלים מבוססי Azure Machine Learning
 description: השתמש במודלים מבוססי Azure Machine Learning ב- Dynamics 365 Customer Insights.
-ms.date: 12/02/2021
+ms.date: 09/22/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: a1efad2887a02a92ee2960b07b066edc331f3665
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8d9c9324ea4840b585b9af1a58d505ccaea6f18e
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081314"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609826"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>שימוש במודלים מבוססי Azure Machine Learning
 
@@ -35,7 +35,7 @@ ms.locfileid: "9081314"
 ## <a name="work-with-azure-machine-learning-designer"></a>עבודה עם Azure Machine Learning designer
 
 מעצב Azure Machine Learning מספק בד ציור חזותי שבו תוכל לגרור ולשחרר ערכות נתונים ומודולים. ניתן לשלב קו צינור של אצווה שנוצר מה- Designer ב- Customer Insights, אם הוא מוגדר בהתאם. 
-   
+
 ## <a name="working-with-azure-machine-learning-sdk"></a>עבודה עם SDK של Azure Machine Learning
 
 מדעני נתונים ומפתחי AI משתמשים ב- [SDK של Azure Machine Learning](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) כדי לבנות זרימות עבודה של למידת מכונה. נכון לעכשיו, לא ניתן לשלב מודלים שהוכשרו באמצעות ה- SDK ישירות עם Customer Insights. קו צינור של היסק אצווה המשתמש במודל זה נדרש עבור שילוב עם Customer Insights.
@@ -44,17 +44,16 @@ ms.locfileid: "9081314"
 
 ### <a name="dataset-configuration"></a>תצורת ערכת נתונים
 
-עליך ליצור ערכות נתונים כדי להשתמש בנתוני הישות מ- Customer Insights בקו הצינור של היסק האצווה שלך. יש לרשום ערכות נתונים אלה בסביבת העבודה. לעת עתה, אנחנו תומכים רק ב[ערכות נתונים טבלאיות](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) בתבנית ‎.csv יש לבטא בפרמטרים כפרמטר קו צינור את ערכות הנתונים המתאימות לנתוני הישות.
-   
-* פרמטרים של ערכת נתונים ב- Designer
-   
-     ב- Designer, פתח את **בחר עמודות בערכת נתונים** ובחר **הגדר כפרמטר של קו צינור** שבו אתה מספק שם עבור הפרמטר.
+צור ערכות נתונים כדי להשתמש בנתוני הישות מ- Customer Insights בקו הצינור של היסק האצווה שלך. רשום ערכות נתונים אלה בסביבת העבודה. לעת עתה, אנחנו תומכים רק ב[ערכות נתונים טבלאיות](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) בתבנית ‎.csv יש להחיל פרמטרים על ערכות הנתונים התואמות לנתוני היישות כפרמטר קו צינור.
 
-     > [!div class="mx-imgBorder"]
-     > ![ביטוי בפרמטרים של ערכת נתונים ב- Designer.](media/intelligence-designer-dataset-parameters.png "ביטוי בפרמטרים של ערכת נתונים ב- Designer")
-   
-* פרמטר ערכת נתונים ב- SDK‏ (Python)
-   
+- פרמטרים של ערכת נתונים ב- Designer
+
+  ב- Designer, פתח את **בחר עמודות בערכת נתונים** ובחר **הגדר כפרמטר של קו צינור** שבו אתה מספק שם עבור הפרמטר.
+
+  :::image type="content" source="media/intelligence-designer-dataset-parameters.png" alt-text="ביטוי בפרמטרים של ערכת נתונים ב- Designer.":::
+
+- פרמטר ערכת נתונים ב- SDK‏ (Python)
+
    ```python
    HotelStayActivity_dataset = Dataset.get_by_name(ws, name='Hotel Stay Activity Data')
    HotelStayActivity_pipeline_param = PipelineParameter(name="HotelStayActivity_pipeline_param", default_value=HotelStayActivity_dataset)
@@ -63,10 +62,10 @@ ms.locfileid: "9081314"
 
 ### <a name="batch-inference-pipeline"></a>קו צינור של היסק אצווה
   
-* ב- Designer, ניתן להשתמש בקו צינור של הדרכה ליצירה או לעדכון של קו צינור של היסק. נכון לעכשיו, קיימת תמיכה רק בקווי צינור של היסק אצווה.
+- במעצב, השתמש בקו צינור של הדרכה ליצירה או לעדכון של קו צינור של היסק. נכון לעכשיו, קיימת תמיכה רק בקווי צינור של היסק אצווה.
 
-* באמצעות SDK באפשרותך לפרסם את קו הצינור בנקודת קצה. נכון לעכשיו, Customer Insights משתלב עם קו הצינור של ברירת המחדל בנקודת קצה של קו צינור של אצווה בסביבת העבודה של Machine Learning.
-   
+- באמצעות SDK, פרסם את קו הצינור בנקודת קצה. נכון לעכשיו, Customer Insights משתלב עם קו הצינור של ברירת המחדל בנקודת קצה של קו צינור של אצווה בסביבת העבודה של Machine Learning.
+
    ```python
    published_pipeline = pipeline.publish(name="ChurnInferencePipeline", description="Published Churn Inference pipeline")
    pipeline_endpoint = PipelineEndpoint.get(workspace=ws, name="ChurnPipelineEndpoint") 
@@ -75,11 +74,11 @@ ms.locfileid: "9081314"
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>ייבוא נתוני קו צינור אל Customer Insights
 
-* Designer מספק את [המודול 'ייצוא נתונים'](/azure/machine-learning/algorithm-module-reference/export-data) המאפשר ייצוא של פלט קו צינור אל אחסון Azure. נכון לעכשיו, המודול מוכרח להשתמש בסוג מאגר הנתונים **אחסון Blob של Azure** ולבטא בפרמטרים את **מאגר הנתונים** ו **נתיב** יחסי. Customer Insights עוקף את שני הפרמטרים במהלך ביצוע קו הצינור עם מאגר נתונים ונתיב הנגישים למוצר.
-   > [!div class="mx-imgBorder"]
-   > ![תצורת מודול 'ייצוא נתונים'.](media/intelligence-designer-importdata.png "תצורת מודול 'ייצוא נתונים'")
-   
-* בעת כתיבת פלט ההיסק באמצעות קוד, באפשרותך להעלות את הפלט לנתיב בתוך *מאגר נתונים רשום* בסביבת העבודה. אם הנתיב ומאגר הנתונים מבוטאים בפרמטרים בקו הצינור, Customer Insights יוכל לקרוא ולייבא את פלט ההיסק. לעת עתה קיימת תמיכה בפלט טבלאי יחיד בתבנית csv. הנתיב מוכרח לכלול את שם הספריה ואת שם הקובץ.
+- Designer מספק את [המודול 'ייצוא נתונים'](/azure/machine-learning/algorithm-module-reference/export-data) המאפשר ייצוא של פלט קו צינור אל אחסון Azure. נכון לעכשיו, המודול מוכרח להשתמש בסוג מאגר הנתונים **אחסון Blob של Azure** ולבטא בפרמטרים את **מאגר הנתונים** ו **נתיב** יחסי. Customer Insights עוקף את שני הפרמטרים במהלך ביצוע קו הצינור עם מאגר נתונים ונתיב הנגישים למוצר.
+
+  :::image type="content" source="media/intelligence-designer-importdata.png" alt-text="תצורת מודול 'ייצוא נתונים'.":::
+
+- בעת כתיבת פלט ההיסק באמצעות קוד, העלה את הפלט לנתיב בתוך *מאגר נתונים רשום* בסביבת העבודה. אם הנתיב ומאגר הנתונים מבוטאים בפרמטרים בקו הצינור, Customer Insights יוכל לקרוא ולייבא את פלט ההיסק. לעת עתה קיימת תמיכה בפלט טבלאי יחיד בתבנית csv. הנתיב מוכרח לכלול את שם הספריה ואת שם הקובץ.
 
    ```python
    # In Pipeline setup script

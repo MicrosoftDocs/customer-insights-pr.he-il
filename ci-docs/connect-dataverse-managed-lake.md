@@ -1,7 +1,7 @@
 ---
 title: התחבר לנתונים בתוך אגם נתונים מנוהל של Microsoft Dataverse
 description: ייבא נתונים מאגם נתונים מנוהל של Microsoft Dataverse.
-ms.date: 07/26/2022
+ms.date: 08/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,12 +11,12 @@ ms.reviewer: v-wendysmith
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: b21150a1c51bdad35250cae7fde7f38a014ec876
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 0d9612525344c8ac99b6e3edfe33a426dc0a474b
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206954"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609796"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>התחבר לנתונים בתוך אגם נתונים מנוהל של Microsoft Dataverse
 
@@ -70,5 +70,93 @@ ms.locfileid: "9206954"
 1. יש ללחוץ על **שמור** כדי להחיל את השינויים ולחזור לדף **מקורות נתונים**.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupted-data"></a>סיבות נפוצות לשגיאות בקליטת אירועים או נתונים פגומים
+
+הבדיקות הבאות מבוצעות עבור הנתונים שנקלטו כדי לחשוף רשומות פגומות:
+
+- ערך השדה אינו תואם את סוג הנתונים של העמודה שלו.
+- שדות מכילים תווים שגורמים לעמודות לא להתאים לסכימה הצפויה. לדוגמה, מירכאות בתבנית שגויה, מירכאות ללא תו Escape או תווי שורה חדשה.
+- אם מופיעות העמודות datetime/date/datetimeoffset חובה לציין את הפורמט שלהן במודל אם הוא לא תואם לפורמט ISO הסטנדרטי.
+
+### <a name="schema-or-data-type-mismatch"></a>אי התאמה של סכימה או סוג נתונים
+
+אם הנתונים אינם תואמים את הסכימה, הרשומות מסווגות כפגומות. תקן את נתוני המקור או את הסכימה והטמע מחדש את הנתונים.
+
+### <a name="datetime-fields-in-the-wrong-format"></a>התבנית השדה 'תאריך שעה' לא נכונה
+
+שדות התאריך והשעה בישות אינם בפורמט ISO או en-US. פורמט ברירת המחדל של 'תאריך ושעה' ב- Customer Insights הוא פורמט en-US. כל שדות התאריך והשעה בישות חייבים להיות באותו פורמט. האפליקציה Customer Insights תומכת בפורמטים אחרים בתנאי שהערות או תכונות מבוצעות ברמת המקור או הישות במודל או ב- manifest.json. לדוגמה: 
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  ב- manifes.json, ניתן לציין את פורמט התאריך והשעה ברמת הישות או ברמת התכונה. ברמת הישות, השתמש ב-"exhibitsTraits" בישות ב- ‏‎*.manifest.cdm.json כדי להגדיר את פורמט התאריך והשעה. ברמת התכונה, השתמש ב-"appliedTraits" בתכונה ב- entityname.cdm.json.
+
+**Manifest.json ברמת הישות**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**Manifest.json ברמת התכונה**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

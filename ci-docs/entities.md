@@ -1,7 +1,7 @@
 ---
 title: ישויות ב- Customer Insights
 description: הצג נתונים בדף 'ישויות'.
-ms.date: 12/06/2021
+ms.date: 08/04/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-entities
 - customerInsight
-ms.openlocfilehash: 0beaa46d47545ac195ced876b509dfc57821bfaf
-ms.sourcegitcommit: ad74ace653db9a25fce4343adef7db1c9b0d8904
+ms.openlocfilehash: e365945b27e7c985ca5371c6b72619610b6f3af1
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "9183555"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9610099"
 ---
 # <a name="entities-in-customer-insights"></a>ישויות ב- Customer Insights
 
@@ -61,27 +61,5 @@ ms.locfileid: "9183555"
   - **נוצר**: תאריך ושעה של יצירת הישות.
   - **נערך על ידי**: שם האדם שערך את הישות.
   - **נערך**: תאריך ושעה של עריכת הישות.
-
-## <a name="entity-specific-information"></a>מידע ספציפי לישות
-
-המקטע הבא מספק מידע על מספר ישויות שנוצרו על ידי מערכת.
-
-### <a name="corrupted-data-sources"></a>מקורות נתונים פגומים
-
-שדות מתוך מקור נתונים שנקלט יכולים להכיל נתונים פגומים. רשומות עם שדות פגומים נחשפות בישויות שנוצרו על-ידי מערכת. מודעות לרשומות פגומות מסייעת לך לזהות אילו נתונים יש לסקור ולעדכן במערכת המקור. לאחר הרענון הבא של מקור הנתונים, הרשומות המתוקנות נקלטות ל- Customer Insights ומועברות לתהליכים במורד הזרם. 
-
-לדוגמה, בעמודת 'יום הולדת' סוג הנתונים מוגדר כ'תאריך'. ברשומה של לקוח הוזן תאריך יום ההולדת '01/01/19777 '. המערכת תסמן את הרשומה הזו כפגומה. מישהו יוכל לשנות את יום ההולדת במערכת המקור ל- '1977'. לאחר רענון אוטומטי של מקורות נתונים, לשדה יש כעת תבנית חוקית והרשומה תוסר מהישות הפגומה.
-
-עבור אל **נתונים** > **ישויות** וחפש את הישויות הפגומות במקטע **מערכת**. סכימת שמות של ישויות פגומות: 'DataSourceName_EntityName_corrupt'. בחר ישות פגומה כדי לזהות את השדות הפגומים ואת הסיבה ברמת הרשומה הפרטנית.
-
-   :::image type="content" source="media/corruption-reason.png" alt-text="סיבה להשחתה.":::
-
-Customer Insights עדיין מעבד רשומות פגומות. עם זאת, הן עדיין יכולות לגרום לבעיות בעת עבודה עם הנתונים המאוחדים.
-
-הבדיקות הבאות מבוצעות עבור הנתונים שנקלטו כדי לחשוף רשומות פגומות:
-
-- ערך השדה אינו תואם את סוג הנתונים של העמודה שלו.
-- שדות מכילים תווים שגורמים לעמודות לא להתאים לסכימה הצפויה. לדוגמה, מירכאות בתבנית שגויה, מירכאות ללא תו Escape או תווי שורה חדשה.
-- אם מופיעות העמודות datetime/date/datetimeoffset יש לציין את הפורמט שלהן במודל אם הוא לא תואם לפורמט ISO הסטנדרטי.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

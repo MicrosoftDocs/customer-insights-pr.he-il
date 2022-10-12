@@ -1,7 +1,7 @@
 ---
 title: חיבור לתיקיה של Common Data Model באמצעות חשבון Azure Data Lake
 description: עבוד עם נתונים של Common Data Model באמצעות Azure Data Lake Storage.
-ms.date: 07/27/2022
+ms.date: 09/29/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: c12603b9ed8a814356a0f8d0137e97afc749b87c
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9396081"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609943"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>התחבר לנתונים ב- Azure Data Lake Storage
 
@@ -43,6 +43,10 @@ ms.locfileid: "9396081"
 - המשתמש שמגדיר את החיבור מקור נתונים צריך לפחות הרשאות תורם נתונים של Blob אחסון בחשבון האחסון.
 
 - הנתונים ב- Data Lake Storage צריכים לעמוד בתקן Common Data Model לאחסון הנתונים ולהכיל את המניפסט של ה- Common Data Model כדי לייצג את הסכימה של קבצי הנתונים (csv*‎.‏ או* parquet.). המניפסט חייב לספק את הפרטים של הישויות כגון עמודות של ישויות וסוגי נתונים, ואת מיקום קובץ הנתונים וסוג הקובץ. למידע נוסף ראה [מניפסט Common Data Model](/common-data-model/sdk/manifest). אם המניפסט אינו נמצא, משתמשים שהם מנהלי מערכת בעלי גישה של בעלי נתונים של Blob אחסון או משתתף בנתונים של Blob אחסון יכולים להגדיר את הסכימה בעת עיבוד הנתונים.
+
+## <a name="recommendations"></a>המלצות
+
+לביצועים מיטביים, Customer Insights ממליצה על גודל מחיצה של 1GB או פחות ושמספר קבצי המחיצה בתיקייה לא יעלה על 1000.
 
 ## <a name="connect-to-azure-data-lake-storage"></a>התחברות ל- Azure Data Lake Storage
 
@@ -199,5 +203,101 @@ ms.locfileid: "9396081"
 1. יש ללחוץ על **שמור** כדי להחיל את השינויים ולחזור לדף **מקורות נתונים**.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupt-data"></a>סיבות נפוצות לשגיאות בקליטת אירועים או נתונים פגומים
+
+במהלך קליטת נתונים, הסיבות הנפוצות ביותר לכך שרשומה עשויה להיחשב פגומה כוללות:
+
+- סוגי הנתונים וערכי השדות אינם תואמים בין קובץ המקור לסכימה
+- מספר העמודות בקובץ המקור אינו תואם לסכימה
+- שדות מכילים תווים שגורמים לעמודות להתעוות בהשוואה לסכימה הצפויה. לדוגמה: מירכאות בתבנית שגויה, מירכאות ללא תו Escape או תווי שורה חדשה, או תווים לשונית.
+- חסרים קובצי מחיצה
+- אם מופיעות העמודות datetime/date/datetimeoffset יש לציין את הפורמט שלהן בסכימה אם הוא לא תואם לפורמט הסטנדרטי.
+
+### <a name="schema-or-data-type-mismatch"></a>אי התאמה של סכימה או סוג נתונים
+
+אם הנתונים אינם תואמים לסכימה, תהליך ההטמעה יסתיים עם שגיאות. תקן את נתוני המקור או את הסכימה והטמע מחדש את הנתונים.
+
+### <a name="partition-files-are-missing"></a>חסרים קובצי מחיצה
+
+- אם ההטמעה הצליחה ללא רשומות פגומות, אך אינך יכול לראות נתונים כלשהם, ערוך את קובץ model.json או manifest.json כדי לוודא שהמחיצות מצוינות. אחר כך, [רענן את מקור הנתונים](data-sources.md#refresh-data-sources).
+
+- אם הטמעת נתונים מתרחשת במקביל לרענון מקורות נתונים במהלך רענון לוח זמנים אוטומטי, ייתכן שקובצי המחיצה יהיו ריקים או לא זמינים לעיבוד של Customer Insights. כדי ליישר קו עם לוח הזמנים של הרענון במעלה הזרם, שנה את [לוח זמנים לרענון המערכת](schedule-refresh.md) או את לוח הזמנין לרענון של מקור נתונים. התאם את התזמון כך שפעולות הרענון לא יתרחשו בבת אחת ויספקו את הנתונים העדכניים ביותר לעיבוד ב- Customer Insights.
+
+### <a name="datetime-fields-in-the-wrong-format"></a>התבנית השדה 'תאריך שעה' לא נכונה
+
+שדות התאריך והשעה בישות אינם בפורמט ISO 8601 או en-US. פורמט ברירת המחדל של 'תאריך ושעה' ב- Customer Insights הוא פורמט en-US. כל שדות התאריך והשעה בישות חייבים להיות באותו פורמט. האפליקציה Customer Insights תומכת בפורמטים אחרים בתנאי שהערות או תכונות מבוצעות ברמת המקור או הישות במודל או ב- manifest.json. לדוגמה: 
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  ב- manifes.json, ניתן לציין את פורמט התאריך והשעה ברמת הישות או ברמת התכונה. ברמת הישות, השתמש ב-"exhibitsTraits" בישות ב- ‏‎*.manifest.cdm.json כדי להגדיר את פורמט התאריך והשעה. ברמת התכונה, השתמש ב-"appliedTraits" בתכונה ב- entityname.cdm.json.
+
+**Manifest.json ברמת הישות**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**Manifest.json ברמת התכונה**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

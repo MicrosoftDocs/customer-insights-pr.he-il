@@ -1,7 +1,7 @@
 ---
 title: תזמון רענון מערכת
 description: תזמן את הזמן שבו יש לרענן את המערכת
-ms.date: 08/09/2022
+ms.date: 09/27/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
@@ -11,19 +11,19 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: 949ea071ca41127b0c45488d5d7af3f6aa4e1c35
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: 4aac02b570357d2086f7a9d7340b0e4837157a0b
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9395957"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9610329"
 ---
 # <a name="schedule-system-refresh"></a>תזמון רענון מערכת
 
 תזמן רענונים אוטומטיים עבור כל [מקורות הנתונים שנקלטו](data-sources.md). רענונים אוטומטיים עוזרים להבטיח שעדכונים ממקורות הנתונים שלך ישתקפו בפרופילי הלקוחות המאוחדים שלך.
 
 > [!NOTE]
-> מקורות נתונים של Power Query המנוהלים על ידך מתרעננים לפי לוחות זמנים משלהם. כדי לתזמן רענון של מקורות נתונים אלה של Power Query, הגדר את הגדרות הרענון במקור הנתונים הספציפי בדף **מקורות נתונים**.
+> מקורות נתונים של Power Query המנוהלים על ידך מתרעננים לפי לוחות זמנים משלהם. כדי לתזמן רענון של מקורות נתונים אלה של Power Query, הגדר את הגדרות הרענון במקור הנתונים הספציפי בדף **מקורות נתונים**. התאם את התזמון ללוח הזמנים של רענון הנתונים במעלה הזרם כך שהרענונים לא יתרחשו בבת אחת.
 > :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform הגדרות רענון תזרים נתונים.":::
 
 ## <a name="set-system-refresh-schedule"></a>הגדרת לוח זמנים לרענון המערכת
