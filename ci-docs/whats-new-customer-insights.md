@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 2a386d65a5e285d471e9cafc45f247e7b4ae23bb
-ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
+ms.openlocfilehash: dcee60a73e0c32278553253040478c31e45237ae
+ms.sourcegitcommit: 618ef15b434de0a68213383b6521ce2a60753afb
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9609593"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "9638352"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>מה חדש ב- Dynamics 365 Customer Insights
 
@@ -23,6 +23,28 @@ ms.locfileid: "9609593"
 
 > [!TIP]
 > כדי לשלוח בקשות לגבי תכונות וכן הצעות למוצרים ולהצביע עבורן, עבור אל [פורטל הרעיונות של Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="september-2022-updates"></a>עדכוני ספטמבר 2022
+
+העדכונים במהדורת ספטמבר 2022 כוללים תכונות חדשות, שדרוגי ביצועים ותיקוני באגים.
+
+### <a name="export-data-to-hubspot"></a>ייצוא נתונים ל- HubSpot
+
+ייצא פלחים של פרטי Unified Customer Profile ל-HubSpot והשתמש בהם לפעילויות שיווקיות בדואר אלקטרוני.
+
+לקבלת מידע נוסף, ראה [‏‫ייצוא פלחים אל HubSpot](export-hubspot.md).
+
+### <a name="remove-a-unified-field-or-entity-from-data-unification"></a>הסר שדה או ישות מאוחדים מאיחוד הנתונים
+
+אתה יכול להסיר שדות וישויות מתהליך איחוד הנתונים.
+
+למידע נוסף ראה [הסרת שדה מאוחד](data-unification-update.md#remove-a-unified-field).
+
+### <a name="manage-unknown-customer-profiles"></a>ניהול פרופילי לקוחות לא ידועים
+
+התאמה אישית בלתי נשכחת תלויה בעושר ובשלמות של נתוני הלקוח שלך, ו- Customer Insights עוזר לך להגיע ליעדים אלה. אתה יכול לנהל פרופילי לקוחות עבור משתמשים שאין לך מידע לגביהם מלבד מזהה.
+
+למידע נוסף, ראה [ניהול פרופילים לא ידועים באמצעות Customer Insights](manage-unknown-profiles.md).
 
 ## <a name="august-2022-updates"></a>עדכוני אוגוסט 2022
 

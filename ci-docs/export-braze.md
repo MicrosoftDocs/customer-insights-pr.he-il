@@ -1,19 +1,19 @@
 ---
 title: ייצוא פלחים ל- Braze ‏(Preview)
 description: למד כיצד להגדיר את תצורת החיבור ולייצא ל- Braze.
-ms.date: 07/25/2022
+ms.date: 10/06/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 84dc7f13f30e0334d431fe5b5866c7f87e82ab27
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 2f52eb8196e057f934c8d2b5ac0518ce121606b6
+ms.sourcegitcommit: 003c1929f730d7d505c108aba84f6269f4c98978
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195108"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9655275"
 ---
 # <a name="export-segments-to-braze-preview"></a>ייצוא פלחים ל- Braze ‏(Preview)
 
@@ -23,6 +23,7 @@ ms.locfileid: "9195108"
 
 - [חשבון Braze](https://www.braze.com/) ואישורי מנהל מערכת התואמים.
 - [מפתח API של Braze](https://www.braze.com/docs/api/basics/)
+- [נקודת הקצה של Braze REST שלך](https://www.braze.com/docs/api/basics/#api-definitions) 
 - [פלחים מוגדרים](segments.md) ב- Customer Insights.
 - פרטי unified customer profile בפלחים המיוצאים מכילים שדה המייצג כתובת אימייל ומזהה לקוח של Braze.
 
@@ -30,6 +31,7 @@ ms.locfileid: "9195108"
 
 - עד מיליון פרופילי לקוחות אל Braze. השלמת הפעולה עשויה להימשך עד 40 דקות. מספר פרופילי הלקוחות שתוכל לייצא אל Braze תלוי בחוזה שלך עם Braze.
 - פלחים בלבד.
+- קישור פרטי ב- Azure לא נתמך לצורך ייצוא Braze.
 
 ## <a name="set-up-connection-to-braze"></a>הגדרת חיבור ל- Braze
 
@@ -62,6 +64,8 @@ ms.locfileid: "9195108"
 1. בחר **הוסף ייצוא**.
 
 1. בשדה **חיבור לייצוא**, בחר חיבור מתוך מקטע Braze. צור קשר עם מנהל מערכת אם אין חיבור זמין.
+
+1. הזן את נקודת הקצה REST שלך בשדה **שם מארח** בפורמט הבא: `rest.iad-03.braze.com`.
 
 1. הזן שם עבור הייצוא.
 
