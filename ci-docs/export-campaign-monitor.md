@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3c04fc26dc690cf32b45913257e82b9a0f617185
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 82303c7bcb269ee68419c9639ee743e13451f273
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196303"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724685"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>ייצוא פלחים אל Campaign Monitor‏ (Preview)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9196303"
 
 ## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
+- קישור פרטי בשילוב עם Bring your own storage ‏(BYOS) אינו נתמך.
 - עד מיליון פרופילי לקוחות לכל ייצוא אל Campaign Monitor. השלמת הפעולה עשויה להימשך עד 20 דקות. מספר פרופילי הלקוחות שתוכל לייצא אל Campaign Monitor תלוי בחוזה שלך עם Campaign Monitor.
 - פלחים בלבד.
 

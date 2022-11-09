@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 178d2df8edf1abcec72664e19d73a88f2b97f12d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: e62888a6d618fb1154890e607d8c23d3767d35f7
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195567"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725401"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>ייצוא פלחים ל- ActiveCampaign‏ (Preview)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9195567"
 
 ## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
+- קישור פרטי בשילוב עם Bring your own storage ‏(BYOS) אינו נתמך.
 - עד מיליון פרופילי לקוחות לכל ייצוא אל ActiveCampaign. השלמת פעולה זו עשויה להימשך עד 90 דקות. מספר פרופילי הלקוחות שתוכל לייצא אל ActiveCampaign תלוי בחוזה שלך עם ActiveCampaign.
 - פלחים בלבד.
 

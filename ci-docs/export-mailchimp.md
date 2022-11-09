@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 54aec10e24b6356e2e4317cf33e740a1a086a2dd
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: d74672768afec94e899ff0aec8c118c2afcde368
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196855"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725033"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>ייצוא פלחים אל Mailchimp‏ (Preview)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196855"
 
 ## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
+- קישור פרטי בשילוב עם Bring your own storage ‏(BYOS) אינו נתמך.
 - עד מיליון פרופילי לקוחות בכל ייצוא אל MailChimp. פעולה זו עשויה להימשך עד שלוש שעות. מספר פרופילי הלקוחות שתוכל לייצא אל MailChimp תלוי בחוזה שלך עם MailChimp.
 - פלחים בלבד.
 

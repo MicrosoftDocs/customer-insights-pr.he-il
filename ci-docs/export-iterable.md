@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ccf10b6e3a28a75f9d1bd3d8da3bf870ebc2b1b2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 69e2bd207c98fc2530620018bf95dd869d1798f6
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195430"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724547"
 ---
 # <a name="export-segments-to-iterable-preview"></a>ייצוא פלחים ל- Iterable ‏(Preview)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9195430"
 
 ## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
+- קישור פרטי בשילוב עם Bring your own storage ‏(BYOS) אינו נתמך.
 - עד מיליון פרופילי לקוחות אל Iterable. השלמת הפעולה עשויה להימשך עד 30 דקות. מספר פרופילי הלקוחות שתוכל לייצא אל Iterable תלוי בחוזה שלך עם Iterable.
 - פלחים בלבד.
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c23d6d3538c4df6006c14064f95379169af06622
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fb57e2bd70592f4ce4e1a13e21901dc69734f6bf
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196165"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725171"
 ---
 # <a name="export-segments-to-omnisend-preview"></a>ייצוא פלחים ל- Omnisend ‏(Preview)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196165"
 
 ## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
+- קישור פרטי בשילוב עם Bring your own storage ‏(BYOS) אינו נתמך.
 - עד מיליון פרופילי לקוחות בכל ייצוא אל Omnisend. פעולה זו עשויה להימשך עד ארבע שעות. מספר פרופילי הלקוחות שתוכל לייצא אל Omnisend תלוי בחוזה שלך עם Omnisend.
 - פלחים בלבד.
 

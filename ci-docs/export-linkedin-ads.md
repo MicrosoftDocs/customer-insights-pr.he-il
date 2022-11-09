@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 4c3928e05db0ebda262b4ad3e928ce85f70035b9
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: 06eb915e352ad545f95e96e6108be0f81f43a451
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9304704"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725309"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>ייצוא פלחים אל LinkedIn Ads ‏(Preview)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9304704"
 
 ## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
+- קישור פרטי בשילוב עם Bring your own storage ‏(BYOS) אינו נתמך.
 - עד 100,000 פרופילי לקוחות לכל ייצוא אל LinkedIn Ads. השלמת הפעולה עשויה להימשך עד 10 דקות.
 - פלחים בלבד. פלח חייב להכיל לפחות 300 פרופילים ייחודיים.
 

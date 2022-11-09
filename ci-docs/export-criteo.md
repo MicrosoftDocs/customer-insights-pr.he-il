@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d7c8d6f0121fe18a6c886ba3776109a1a592ef33
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 61435030254638965fbeb7980312e73695416aa2
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195337"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724790"
 ---
 # <a name="export-segments-to-criteo-preview"></a>ייצוא פלחים ל- Criteo (תצוגה מקדימה)
 
@@ -27,6 +27,7 @@ ms.locfileid: "9195337"
 
 ## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
+- קישור פרטי בשילוב עם Bring your own storage ‏(BYOS) אינו נתמך.
 - עד מיליון פרופילי לקוחות לכל ייצוא אל Campaign Monitor. השלמת פעולה זו עשויה להימשך עד 30 דקות. מספר פרופילי הלקוחות שתוכל לייצא אל Criteo תלוי בחוזה שלך עם Criteo.
 - פלחים בלבד.
 
@@ -65,8 +66,6 @@ ms.locfileid: "9195337"
 1. הזן שם עבור הייצוא.
 
 1. במקטע **התאמת נתונים**, בשדה **דואר אלקטרוני**, בחר בשדה שמייצג כתובת דואר אלקטרוני של לקוח.
-
-1. לחלופין, יצא **מזהה מפרסם** ו **שם**
 
 1. בחר את הפלחים שברצונך לייצא.
 

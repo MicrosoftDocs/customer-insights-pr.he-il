@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8110eab199920ab8fc2ea15678139faf264a242a
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 81adad4caf2d4c6f792bf920b29fc7c67eef42b0
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195751"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724679"
 ---
 # <a name="export-segments-to-adroll-preview"></a>ייצוא פלחים אל AdRoll‏ (Preview)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9195751"
 
 ## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
+- קישור פרטי בשילוב עם Bring your own storage ‏(BYOS) אינו נתמך.
 - עד 250,000 פרופילי לקוחות לכל ייצוא אל AdRoll. פעולה זו עשויה להימשך עד 10 דקות. מספר פרופילי הלקוחות שתוכל לייצא אל AdRoll תלוי בחוזה שלך עם AdRoll.
 - פלחים בלבד. פלח חייב להכיל לפחות 100 פרופילי לקוחות.
 

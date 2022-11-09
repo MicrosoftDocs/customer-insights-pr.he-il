@@ -8,12 +8,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: fd7498ecf17ef8a3a8f22dcc49ae204bef88b47f
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: a46623e609665f8031f223593a6644147e5209d8
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196579"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725079"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>ייצוא פלחים אל Google Ads‏ (Preview)
 
@@ -30,6 +30,7 @@ ms.locfileid: "9196579"
 
 ## <a name="known-limitations"></a>‏‫מגבלות ידועות‬
 
+- קישור פרטי בשילוב עם Bring your own storage ‏(BYOS) אינו נתמך.
 - יצא עד מיליון פרופילי לקוחות לכל ייצוא אל Google Ads. השלמת הפעולה עשויה להימשך עד 30 דקות עקב מגבלות בצד הספק.
 - פלחים בלבד.
 - התאמה ב- Google Ads יכולה להימשך עד 48 שעות.
