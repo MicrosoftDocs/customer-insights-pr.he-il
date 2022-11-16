@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 7bc0c3614e6dd39fbd65ae098ed679d95d09de9d
-ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
+ms.openlocfilehash: 675fd03c44a7a7a492b111895d79c2e77f93a5b5
+ms.sourcegitcommit: 4ba74816ebfa46412c64c40a61e1f31c4ccc40f2
 ms.translationtype: HT
 ms.contentlocale: he-IL
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9259799"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9738157"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>התחבר למקור הנתונים Azure Synapse Analytics (תצוגה מקדימה)
 
@@ -45,7 +45,7 @@ Azure Synapse Analytics הוא שירות ניתוח ארגוני המאיץ א�
 
 - ה *זהות המנוהלת של סביבת העבודה של [Azure Synapse](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* זקוקה להרשאות מסוג **תורם נתונים של Blob אחסון** בחשבון Azure Data Lake Storage  Gen2 שבו הנתונים ממוקמים ומקושרים אל סביבת העבודה Azure Synapse. למידע נוסף על [השימוש בפורטל Azure כדי להקצות תפקיד Azure לצורך גישה לנתוני Blob ולנתוני תור](/azure/storage/common/storage-auth-aad-rbac-portal) ועל [הרשאות תורם נתונים של Blob אחסון](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- ב- Azure Synapse Workspace, צריך להקצות ל *מנהל השירות עבור Customer Insights* מסוג "Dynamics 365 AI for Customer Insights" את התפקיד **מנהל מערכת של Synapse**. למידע נוסף, ראה [כיצד להגדיר בקרת גישה עבור סביבת העבודה שלך ב- Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
+- ב- Azure Synapse Workspace, צריך להקצות ל *מנהל השירות עבור Customer Insights* מסוג "Dynamics 365 AI for Customer Insights" את התפקיד **מנהל מערכת של Synapse**. ה **משתמש** צריך תפקיד של לפחות **משתתף ב- Synapse** שהוקצה עבור סביבת העבודה. למידע נוסף, ראה [כיצד להגדיר בקרת גישה עבור סביבת העבודה שלך ב- Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
 - אם סביבת Customer Insights שלך מאחסנת נתונים [ב- Azure Data Lake Storage משלך](own-data-lake-storage.md), המשתמש שהגדיר את החיבור ל- Azure Synapse Analytics צריך לפחות את התפקיד המובנה **קורא** בחשבון Data Lake Storage. למידע נוסף, ראה [הקצאת תפקידי Azure באמצעות פורטל Azure](/azure/role-based-access-control/role-assignments-portal).
 
